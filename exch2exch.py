@@ -2,14 +2,14 @@
 
 # -*- coding: utf-8 -*-
 """
-A testbed for URL parsing of the exch2exch project
+A tool to compare the prices of two Bitcoin exchanges.
 
-Created on Tue Jun  6 23:23:43 2017
+Created on Thu Jun  8 08:18:45 2017
 
 @author: hilton
 From 
 * https://docs.python.org/3.4/library/urllib.request.html#module-urllib.request
-* http://www.pythonforbeginners.com/python-on-the-web/how-to-use-urllib2-in-python/]
+* http://www.pythonforbeginners.com/python-on-the-web/how-to-use-urllib2-in-python/
 * https://www.mercadobitcoin.com.br/api-doc/
 """
 
@@ -87,9 +87,9 @@ class Differences:
         self.mb = mb
         self.ok = ok
         
-        self.dmin = mb.getSell () - ok.getSell ()
+        self.dmin = mb.getBuy () - ok.getBuy ()
         
-        self.dmax = mb.getBuy () - ok.getSell ()
+        self.dmax = mb.getSell () - ok.getBuy ()
         
     def getMinDelta (self):
         return self.dmin
@@ -124,13 +124,13 @@ def get_google_rate (url):
     while line != b'':
         ind = line.find (b'currency_converter')
         if ind != -1:
-            print (ind)
-            print (line)
+#            print (ind)
+#            print (line)
             
             fields = line.split ()
-            print (fields[5])
+#            print (fields[5])
             rate = fields[5].split (b'>')[1]
-            print (rate)
+#            print (rate)
             
             break
             
@@ -186,29 +186,29 @@ def get_x_rates (url):
         if ind == -1:
             continue 
         
-        print (line)
+#        print (line)
         
         if line.find (b'from=USD') != -1:
-            print ('\nfields')
+#            print ('\nfields')
             fields = line.split (b'>')
             
-            print (fields[2])
+#            print (fields[2])
             susd = fields[2].split (b'<')[0]
-            print (susd)
+#            print (susd)
             usd = float (susd)
-            print (usd)
-            print ('\n')
+#            print (usd)
+#            print ('\n')
         
         elif line.find (b'from=BRL') != -1:
-            print ('\nfields')
+#            print ('\nfields')
             fields = line.split (b'>')
             
-            print (fields[2])
+#            print (fields[2])
             sbrl = fields[2].split (b'<')[0]
-            print (sbrl)
+#            print (sbrl)
             brl = float (sbrl)
-            print (brl)
-            print ('\n')
+#            print (brl)
+#            print ('\n')
             
     result = (dt, usd, brl)
     
@@ -249,12 +249,8 @@ def get_ok_rates (url):
     return result
     
 u_usd2brl = 'https://www.google.com/finance/converter?a=1&from=USD&to=BRL'
-# rv = get_google_rate (usd2brl)
-# print (rv)
 
 u_brl2usd = 'https://www.google.com/finance/converter?a=1&from=BRL&to=USD'
-# rv = get_google_rate (brl2usd)
-# print (rv)
 
 urls = (u_usd2brl, u_brl2usd)
 
@@ -262,8 +258,6 @@ dt, usd2brl, brl2usd = get_google_rates (urls)
 
 google = Rates (dt, usd2brl, brl2usd, "Google")
 
-#ggl_tupl = (dt, usd2brl, brl2usd)
-#print ("Google: {0}: USD2BRL {1}, BRL2USD {2}".format (*ggl_tupl))
 print (google)
 print ()
 
@@ -276,9 +270,6 @@ url = 'http://www.x-rates.com/table/?from=USD&amount=1'
 dt, brl2usd, usd2brl = get_x_rates (url)
 
 x_rates = Rates (dt, brl2usd, usd2brl, "X-Rates")
-
-# xrt_tupl = dt, usd2brl, brl2usd
-# print ("X-rates: {0}: USD2BRL {1}, BRL2USD {2}".format (*xrt_tupl))
 
 print (x_rates)
 print ()
@@ -325,12 +316,6 @@ ok = XbtPrices (dt, sell, buy, "OkCoin", "USD")
 print (ok)
 print ()
  
-# brl2usd = google.getUsd2Brl ()
-#
-# sell /= brl2usd
-# buy  /= brl2usd 
-# mb_usd = XbtPrices (dt, sell, buy, "MercadoBitcoin", "USD")
-# print (mb_usd)
 
 diff = Differences (google, mb_usd, ok)
 
