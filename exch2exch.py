@@ -13,6 +13,7 @@ From
 * https://www.mercadobitcoin.com.br/api-doc/
 """
 
+import sys            # exit()
 import math           # trunc()  
 import time           # time()  
 import json           # loads()  
@@ -49,10 +50,13 @@ class Rates:
         return result        
         
 class XbtPrices:
-    def __init__ (self, dt, sell, buy, exch, coin):
+    def __init__ (self, dt, sell, buy, high, low, exch, coin):
         self.dt   = dt
         self.sell = sell
         self.buy  = buy
+        self.sell = sell
+        self.high = high
+        self.low  = low
         self.exch = exch
         self.coin = coin
         
@@ -65,6 +69,12 @@ class XbtPrices:
     def getSell (self):
         return self.sell
         
+    def getHigh (self):
+        return self.high
+        
+    def getLow (self):
+        return self.low
+        
     def getExchangeName (self):
         return self.exch
         
@@ -75,9 +85,12 @@ class XbtPrices:
         result = ''
         
         dt, sell, buy = self.dt, self.sell, self.buy
-        exch, coin   = self.exch, self.coin
-        ftpl = exch, dt, sell, coin, buy
-        result = "{0}: {1}: Sell {2:.4f} {3}, Buy {4:.4f} {3}".format (*ftpl)
+        high, low     = self.high, self.low
+        exch, coin    = self.exch, self.coin
+        ftpl = (exch, dt, sell, coin, buy)
+        result  = "{0}: {1}: Sell {2:.4f} {3}, Buy {4:.4f} {3}".format (*ftpl)
+        ftpl    = (low, coin, high)
+        result += "\n\tHigh {0:.4f} {1}, Low {2:.4f} {0}".format (*ftpl)
         
         return result
         
@@ -87,15 +100,23 @@ class Differences:
         self.mb = mb
         self.ok = ok
         
-        self.dmin = mb.getBuy () - ok.getBuy ()
+        self.dmin = mb.getLow ()  - ok.getLow ()   
+        self.dmax = mb.getHigh () - ok.getLow ()
         
-        self.dmax = mb.getSell () - ok.getBuy ()
+        self.gmin = 100.0 * self.dmin / ok.getHigh ()
+        self.gmax = 100.0 * self.dmax / ok.getLow ()
         
     def getMinDelta (self):
         return self.dmin
         
-    def getMaxDelta (self):
+    def getMaxDelta (self): 
         return self.dmax
+        
+    def getMinGain (self):
+        return self.gmin
+        
+    def getMaxGain (self): 
+        return self.gmax
         
     def __str__ (self):
         result = ""
@@ -104,10 +125,17 @@ class Differences:
         mname = self.ok.getExchangeName ()
         sname = self.rates.getServiceName ()
         
-        fmt = "Calculation between {0} and {1} rates, with conversion from {1}"
+        fmt = "Calculation between {0} and {1} rates, with conversion from {2}"
         result = fmt.format (oname, mname, sname)
-        fmt = "\nIntervals: minimum {0:.4f}, maximum {1:.4f}"
+        
+        # TODO create evaluation for 24h and for the most recent sell/buy
+        
+        fmt = "\nLast: minimum {0:.4f}, maximum {1:.4f}"
         result += fmt.format (self.getMinDelta (), self.getMaxDelta ())
+        
+        fmt = "\nGain: minimum {0:.4f} %, maximum {1:.4f} %"
+        result += fmt.format (self.getMinGain (), self.getMaxGain ())
+        
         return result
 
 #        
@@ -124,13 +152,9 @@ def get_google_rate (url):
     while line != b'':
         ind = line.find (b'currency_converter')
         if ind != -1:
-#            print (ind)
-#            print (line)
             
             fields = line.split ()
-#            print (fields[5])
             rate = fields[5].split (b'>')[1]
-#            print (rate)
             
             break
             
@@ -185,30 +209,18 @@ def get_x_rates (url):
         ind = line.find (b'rtRates')
         if ind == -1:
             continue 
-        
-#        print (line)
-        
+                
         if line.find (b'from=USD') != -1:
-#            print ('\nfields')
             fields = line.split (b'>')
             
-#            print (fields[2])
             susd = fields[2].split (b'<')[0]
-#            print (susd)
             usd = float (susd)
-#            print (usd)
-#            print ('\n')
         
         elif line.find (b'from=BRL') != -1:
-#            print ('\nfields')
             fields = line.split (b'>')
             
-#            print (fields[2])
             sbrl = fields[2].split (b'<')[0]
-#            print (sbrl)
             brl = float (sbrl)
-#            print (brl)
-#            print ('\n')
             
     result = (dt, usd, brl)
     
@@ -224,10 +236,12 @@ def get_mb_rates (url):
     ts   = int   (rv['ticker']['date'])
     buy  = float (rv['ticker']['buy'])
     sell = float (rv['ticker']['sell'])
+    high = float (rv['ticker']['high'])
+    low  = float (rv['ticker']['low'])
     
     dt = datetime.datetime.fromtimestamp (float (ts))
     
-    result = (dt, sell, buy)
+    result = (dt, sell, buy, high, low)
     
     return result
 
@@ -241,82 +255,85 @@ def get_ok_rates (url):
     ts   = int   (rv['date'])
     buy  = float (rv['ticker']['buy'])
     sell = float (rv['ticker']['sell'])
+    high = float (rv['ticker']['high'])
+    low  = float (rv['ticker']['low'])
     
     dt = datetime.datetime.fromtimestamp (float (ts))
     
-    result = (dt, sell, buy)
+    result = (dt, sell, buy, high, low)
     
     return result
+
+def main ():
+    u_usd2brl = 'https://www.google.com/finance/converter?a=1&from=USD&to=BRL'
+    u_brl2usd = 'https://www.google.com/finance/converter?a=1&from=BRL&to=USD'
+    u_mb      = 'https://www.mercadobitcoin.net/api/ticker/'
+    u_xrates  = 'http://www.x-rates.com/table/?from=USD&amount=1'
+    u_ok      = 'https://www.okcoin.com/api/v1/ticker.do?symbol=btc_usd'
     
-u_usd2brl = 'https://www.google.com/finance/converter?a=1&from=USD&to=BRL'
-
-u_brl2usd = 'https://www.google.com/finance/converter?a=1&from=BRL&to=USD'
-
-urls = (u_usd2brl, u_brl2usd)
-
-dt, usd2brl, brl2usd = get_google_rates (urls)
-
-google = Rates (dt, usd2brl, brl2usd, "Google")
-
-print (google)
-print ()
-
-#
-#
-# X-rates section 
-# 
-
-url = 'http://www.x-rates.com/table/?from=USD&amount=1'
-dt, brl2usd, usd2brl = get_x_rates (url)
-
-x_rates = Rates (dt, brl2usd, usd2brl, "X-Rates")
-
-print (x_rates)
-print ()
-
-# TODO calculate avg USD2BRL rate
-
-#
-#
-# MercadoBitcoin section 
-# 
-
-u_mb = 'https://www.mercadobitcoin.net/api/ticker/'
-
-mb_tupl = get_mb_rates (u_mb)
-dt, sell, buy = mb_tupl
-
-mb = XbtPrices (dt, sell, buy, "MercadoBitcoin", "BRL")
-
-# print ("MercadoBitcoin: {0}: Sell {1} BRL, Buy {2} BRL".format (mb))
-print (mb)
- 
-brl2usd = google.getUsd2Brl ()
-
-sell /= brl2usd
-buy  /= brl2usd 
-mb_usd = XbtPrices (dt, sell, buy, "MercadoBitcoin", "USD")
-print (mb_usd)
-print ()
-
-#
-#
-# OkCoin section 
-# 
-
-
-u_ok = 'https://www.okcoin.com/api/v1/ticker.do?symbol=btc_usd'
-
-ok_tupl = get_ok_rates (u_ok)
-dt, sell, buy = ok_tupl
-
-ok = XbtPrices (dt, sell, buy, "OkCoin", "USD")
-
-# print ("MercadoBitcoin: {0}: Sell {1} BRL, Buy {2} BRL".format (mb))
-print (ok)
-print ()
- 
-
-diff = Differences (google, mb_usd, ok)
-
-print (diff)
+    urls = (u_usd2brl, u_brl2usd)
+    
+    dt, usd2brl, brl2usd = get_google_rates (urls)
+    
+    google = Rates (dt, usd2brl, brl2usd, "Google")
+    
+    print ("{0}\n".format (google))
+    
+    #
+    #
+    # X-rates section 
+    # 
+    
+    dt, brl2usd, usd2brl = get_x_rates (u_xrates)
+    
+    x_rates = Rates (dt, brl2usd, usd2brl, "X-Rates")
+    
+    print ("{0}\n".format (x_rates))
+    
+    # TODO calculate avg USD2BRL rate
+    
+    #
+    #
+    # MercadoBitcoin section 
+    # 
+        
+    mb_tupl = get_mb_rates (u_mb)
+    dt, sell, buy, high, low = mb_tupl
+    
+    mb = XbtPrices (dt, sell, buy, high, low, "MercadoBitcoin", "BRL")
+    
+    # print ("MercadoBitcoin: {0}: Sell {1} BRL, Buy {2} BRL".format (mb))
+    print (mb)
+     
+    brl2usd = google.getUsd2Brl ()
+    
+    sell /= brl2usd
+    buy  /= brl2usd 
+    high /= brl2usd
+    low  /= brl2usd 
+    mb_usd = XbtPrices (dt, sell, buy, high, low, "MercadoBitcoin", "USD")
+    print ("{0}\n".format (mb_usd))
+    
+    #
+    #
+    # OkCoin section 
+    # 
+    
+        
+    ok_tupl = get_ok_rates (u_ok)
+    dt, sell, buy, high, low = ok_tupl
+    
+    ok = XbtPrices (dt, sell, buy, high, low, "OkCoin", "USD")
+    
+    # print ("MercadoBitcoin: {0}: Sell {1} BRL, Buy {2} BRL".format (mb))
+    print ("{0}\n".format (ok))
+     
+    
+    diff = Differences (google, mb_usd, ok)
+    
+    print (diff)
+    
+    return 0
+    
+if __name__ == '__main__':
+    sys.exit (main ())
