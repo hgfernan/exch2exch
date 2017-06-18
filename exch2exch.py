@@ -2,7 +2,7 @@
 
 # -*- coding: utf-8 -*-
 """
-A tool to compare the prices of two Bitcoin exchanges.
+A tool to compare the prices of two Bitcoin exchanges. 
 
 Created on Thu Jun  8 08:18:45 2017
 
@@ -11,6 +11,7 @@ From
 * https://docs.python.org/3.4/library/urllib.request.html#module-urllib.request
 * http://www.pythonforbeginners.com/python-on-the-web/how-to-use-urllib2-in-python/
 * https://www.mercadobitcoin.com.br/api-doc/
+* https://blinktrade.com/docs/
 """
 
 import sys            # exit()
@@ -19,6 +20,8 @@ import time           # time()
 import json           # loads()  
 import datetime       # class Datetime  
 import urllib.request # class Request, urlopen()
+
+import exchange       # classes MercadoBitcoin, OkCoin
 
 class Rates:
     def __init__ (self, dt, usd2brl, brl2usd, service):
@@ -265,6 +268,8 @@ def get_ok_rates (url):
     return result
 
 def main ():
+    # TODO parse command line 
+
     u_usd2brl = 'https://www.google.com/finance/converter?a=1&from=USD&to=BRL'
     u_brl2usd = 'https://www.google.com/finance/converter?a=1&from=BRL&to=USD'
     u_mb      = 'https://www.mercadobitcoin.net/api/ticker/'
@@ -296,8 +301,11 @@ def main ():
     #
     # MercadoBitcoin section 
     # 
-        
-    mb_tupl = get_mb_rates (u_mb)
+    
+    mb = exchange.MercadoBitcoin ()    
+#    mb_tupl = get_mb_rates (u_mb)
+    mb_tupl = mb.get_ticker ()
+    
     dt, sell, buy, high, low = mb_tupl
     
     mb = XbtPrices (dt, sell, buy, high, low, "MercadoBitcoin", "BRL")
@@ -319,8 +327,11 @@ def main ():
     # OkCoin section 
     # 
     
-        
-    ok_tupl = get_ok_rates (u_ok)
+
+    ok = exchange.OkCoin ()        
+#    ok_tupl = get_ok_rates (u_ok)
+    ok_tupl = ok.get_ticker ()
+    
     dt, sell, buy, high, low = ok_tupl
     
     ok = XbtPrices (dt, sell, buy, high, low, "OkCoin", "USD")

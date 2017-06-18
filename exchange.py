@@ -1,8 +1,15 @@
 # -*- coding: utf-8 -*-
 """
+Classes to get data from selected Bitcoin exchanges.
+
 Created on Sat Jun 17 13:01:13 2017
 
 @author: hilton
+From 
+* https://docs.python.org/3.4/library/urllib.request.html#module-urllib.request
+* http://www.pythonforbeginners.com/python-on-the-web/how-to-use-urllib2-in-python/
+* https://www.mercadobitcoin.com.br/api-doc/
+* https://blinktrade.com/docs/
 """
 
 import sys            # exit()
@@ -51,7 +58,7 @@ class FoxBit (Exchange):
     URL = 'https://api.blinktrade.com/api/v1/BRL/ticker?crypto_currency=BTC'
     
     def __init__ (self):
-        super ().process_url ()
+        super ().__init__ ()
         
     def process_json (self):
         # TODO get the date from the computer ?
@@ -78,9 +85,11 @@ class MercadoBitcoin (Exchange):
     URL = 'https://www.mercadobitcoin.net/api/ticker/'
     
     def __init__ (self):
-        super ().process_url ()
+        super ().__init__ ()
         
     def process_json (self):
+        myClass = type (self).__name__
+        print ("{0}.process_json ()".format (myClass))
         self.ts   = int   (self.json['ticker']['date'])
         self.buy  = float (self.json['ticker']['buy'])
         self.sell = float (self.json['ticker']['sell'])
@@ -104,7 +113,7 @@ class OkCoin (Exchange):
     URL = 'https://www.okcoin.com/api/v1/ticker.do?symbol=btc_usd'
     
     def __init__ (self):
-        super ().process_url ()
+        super ().__init__ ()
         
     def process_json (self):
         self.ts   = int   (self.json['date'])
