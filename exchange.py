@@ -17,15 +17,22 @@ import json           # load()
 import datetime       # class datetime
 import urllib.request # urlopen()
 
+# TODO refactor classes so they are lazy -- work only when necessary
+
 class Exchange:
-    URL = ''
+    U_TICKER = ''
+    U_TRADES = ''
+    U_ORDRBK = ''
+
+# TODO implement
     
     def __init__ (self):
-        self.process_url ()
-        self.process_json ()
+#        self.process_url ()
+#        self.process_json ()
+        pass
     
     def process_url (self):
-        url = self.__class__.URL
+        url = self.__class__.U_TICKER
 #        print (url)
         f = urllib.request.urlopen (url)
         
@@ -40,6 +47,10 @@ class Exchange:
         pass
     
     def get_ticker (self):
+        self.process_url ()
+        self.process_json ()
+    
+    def get_exch_name (self):
         # TODO raise exception
         pass
         
@@ -55,7 +66,7 @@ class Exchange:
         return result
         
 class FoxBit (Exchange):
-    URL = 'https://api.blinktrade.com/api/v1/BRL/ticker?crypto_currency=BTC'
+    U_TICKER = 'https://api.blinktrade.com/api/v1/BRL/ticker?crypto_currency=BTC'
     
     def __init__ (self):
         super ().__init__ ()
@@ -69,8 +80,11 @@ class FoxBit (Exchange):
         self.low  = float (self.json['low'])
     
         self.dt = datetime.datetime.now ()
+        # TODO generate ts from dt
      
     def get_ticker (self):
+        super ().get_ticker ()
+        
         buy  = self.buy
         sell = self.sell
         high = self.high
@@ -80,16 +94,19 @@ class FoxBit (Exchange):
         result = (dt, sell, buy, high, low)
         
         return result
-        
+    
+    def get_exch_name (self):
+        return "FoxBit"
+                
 class MercadoBitcoin (Exchange):
-    URL = 'https://www.mercadobitcoin.net/api/ticker/'
+    U_TICKER = 'https://www.mercadobitcoin.net/api/ticker/'
     
     def __init__ (self):
         super ().__init__ ()
         
     def process_json (self):
-        myClass = type (self).__name__
-        print ("{0}.process_json ()".format (myClass))
+#        myClass = type (self).__name__
+#        print ("{0}.process_json ()".format (myClass))
         self.ts   = int   (self.json['ticker']['date'])
         self.buy  = float (self.json['ticker']['buy'])
         self.sell = float (self.json['ticker']['sell'])
@@ -99,6 +116,8 @@ class MercadoBitcoin (Exchange):
         self.dt = datetime.datetime.fromtimestamp (float (self.ts))
     
     def get_ticker (self):
+        super ().get_ticker ()
+        
         buy  = self.buy
         sell = self.sell
         high = self.high
@@ -108,9 +127,12 @@ class MercadoBitcoin (Exchange):
         result = (dt, sell, buy, high, low)
         
         return result
+    
+    def get_exch_name (self):
+        return "Mercado Bitcoin"
         
 class OkCoin (Exchange):
-    URL = 'https://www.okcoin.com/api/v1/ticker.do?symbol=btc_usd'
+    U_TICKER = 'https://www.okcoin.com/api/v1/ticker.do?symbol=btc_usd'
     
     def __init__ (self):
         super ().__init__ ()
@@ -125,6 +147,8 @@ class OkCoin (Exchange):
         self.dt = datetime.datetime.fromtimestamp (float (self.ts))
     
     def get_ticker (self):
+        super ().get_ticker ()
+        
         buy  = self.buy
         sell = self.sell
         high = self.high
@@ -134,15 +158,20 @@ class OkCoin (Exchange):
         result = (dt, sell, buy, high, low)
         
         return result
+    
+    def get_exch_name (self):
+        return "OkCoin"
 
 def main ():
-    f = FoxBit ()
-    m = MercadoBitcoin ()
-    o = OkCoin ()
+    exchanges = []
+    exchanges.append (FoxBit ())
+    exchanges.append (MercadoBitcoin ())
+    exchanges.append (OkCoin ())
     
-    print ("FoxBit: {0}"         .format (f))
-    print ("Mercado Bitcoin: {0}".format (m))
-    print ("OkCoin: {0}"         .format (o))
+    for exch in exchanges:
+        exch.get_ticker ()
+        
+        print ("{0}: {1}".format (exch.get_exch_name (), exch))
     
     return 0
     

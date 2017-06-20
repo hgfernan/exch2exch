@@ -1,0 +1,26 @@
+var searchData=
+[
+  ['get_5fgoogle_5frate',['get_google_rate',['../namespaceexch2exch.html#ab44bbb7377e2ea808af430246d925cd2',1,'exch2exch.get_google_rate()'],['../namespaceraw__urlparser.html#a27ce239a7915c6468e00168213575365',1,'raw_urlparser.get_google_rate()']]],
+  ['get_5fgoogle_5frates',['get_google_rates',['../namespaceexch2exch.html#a72e4d9fae01812560db07229c05efbc6',1,'exch2exch.get_google_rates()'],['../namespaceraw__urlparser.html#a503f638b00ab579b8b829e1dbb95e547',1,'raw_urlparser.get_google_rates()']]],
+  ['get_5fmb_5frates',['get_mb_rates',['../namespaceexch2exch.html#a69c86b486350c524c85fca367aad82f2',1,'exch2exch.get_mb_rates()'],['../namespaceraw__urlparser.html#a56532368ca9848b5f2ab298e3e6232bb',1,'raw_urlparser.get_mb_rates()']]],
+  ['get_5fok_5frates',['get_ok_rates',['../namespaceexch2exch.html#a7e83d805e732ce4344cb3a6edc5d98be',1,'exch2exch.get_ok_rates()'],['../namespaceraw__urlparser.html#a3a9d9300bd89d803ca1fddb78145f58e',1,'raw_urlparser.get_ok_rates()']]],
+  ['get_5fticker',['get_ticker',['../classexchange_1_1_exchange.html#acd7e3233946da3b9d452f9505cd58033',1,'exchange.Exchange.get_ticker()'],['../classexchange_1_1_fox_bit.html#a4a2bd57624f0aed8e1bf22ce6399bd3e',1,'exchange.FoxBit.get_ticker()'],['../classexchange_1_1_mercado_bitcoin.html#ae651664c24cb7b31973cdf2cdf281628',1,'exchange.MercadoBitcoin.get_ticker()'],['../classexchange_1_1_ok_coin.html#ae4fed29a4c9e9466849b05f4c0537eba',1,'exchange.OkCoin.get_ticker()']]],
+  ['get_5fx_5frates',['get_x_rates',['../namespaceexch2exch.html#a0fe4c93bea8fee4212c19f045c72b43b',1,'exch2exch.get_x_rates()'],['../namespaceraw__urlparser.html#a264ca664879b007ee92399e30ec0d9bc',1,'raw_urlparser.get_x_rates()']]],
+  ['getbrl2usd',['getBrl2Usd',['../classexch2exch_1_1_rates.html#ae5e570daf9d176e3455bc98fc19e2b2c',1,'exch2exch.Rates.getBrl2Usd()'],['../classraw__urlparser_1_1_rates.html#a435ff5562321da275bb95823a346bc5c',1,'raw_urlparser.Rates.getBrl2Usd()']]],
+  ['getbuy',['getBuy',['../classexch2exch_1_1_xbt_prices.html#a6a2f6cbf5d274887ffcbfbe2eb77b358',1,'exch2exch.XbtPrices.getBuy()'],['../classraw__urlparser_1_1_xbt_prices.html#a50f893a39919d2d0e00e53c6288b68a3',1,'raw_urlparser.XbtPrices.getBuy()']]],
+  ['getcoinname',['getCoinName',['../classexch2exch_1_1_xbt_prices.html#a657bf3d6e75d3bfe1fe408862b2a78cd',1,'exch2exch.XbtPrices.getCoinName()'],['../classraw__urlparser_1_1_xbt_prices.html#a0790deb0fc5582520e2a3249c14a496a',1,'raw_urlparser.XbtPrices.getCoinName()']]],
+  ['getdatetime',['getDateTime',['../classexch2exch_1_1_xbt_prices.html#ad1c937977f274b7a8ddb5868825ad592',1,'exch2exch.XbtPrices.getDateTime()'],['../classraw__urlparser_1_1_xbt_prices.html#a83c01863eb94413a16ea00cb679245bc',1,'raw_urlparser.XbtPrices.getDateTime()']]],
+  ['getexchangename',['getExchangeName',['../classexch2exch_1_1_xbt_prices.html#a5c1eb62a961be8c36b93c0b1951d0b8d',1,'exch2exch.XbtPrices.getExchangeName()'],['../classraw__urlparser_1_1_xbt_prices.html#a3a8466753538f1491b67174540c32758',1,'raw_urlparser.XbtPrices.getExchangeName()']]],
+  ['gethigh',['getHigh',['../classexch2exch_1_1_xbt_prices.html#a173ced43a9edb648a129dfa9ba4a4d66',1,'exch2exch::XbtPrices']]],
+  ['getlow',['getLow',['../classexch2exch_1_1_xbt_prices.html#a38ab2c32172fd95a1bb9fe103b6d59cd',1,'exch2exch::XbtPrices']]],
+  ['getmaxdelta',['getMaxDelta',['../classexch2exch_1_1_differences.html#a3083b0bcc349937fb7ad708bc683e3d4',1,'exch2exch.Differences.getMaxDelta()'],['../classraw__urlparser_1_1_differences.html#a6cad9a98b3d3c48b41d752b6bce8776e',1,'raw_urlparser.Differences.getMaxDelta()']]],
+  ['getmaxgain',['getMaxGain',['../classexch2exch_1_1_differences.html#a83359c7999d33257746aa09f653e41fa',1,'exch2exch::Differences']]],
+  ['getmindelta',['getMinDelta',['../classexch2exch_1_1_differences.html#ae6156c3361371d1688de9b334ef7dc8d',1,'exch2exch.Differences.getMinDelta()'],['../classraw__urlparser_1_1_differences.html#ab80ae6b8351413164c04cda59d316a31',1,'raw_urlparser.Differences.getMinDelta()']]],
+  ['getmingain',['getMinGain',['../classexch2exch_1_1_differences.html#a3c7fc587dedfda0e303260f244021017',1,'exch2exch::Differences']]],
+  ['getsell',['getSell',['../classexch2exch_1_1_xbt_prices.html#abcd54a52079952f45b5f29f3ffcd83b5',1,'exch2exch.XbtPrices.getSell()'],['../classraw__urlparser_1_1_xbt_prices.html#a141a6794eea34f738070970fefc0f854',1,'raw_urlparser.XbtPrices.getSell()']]],
+  ['getservicename',['getServiceName',['../classexch2exch_1_1_rates.html#a8ec48a9ebb71f923056205ad79679eeb',1,'exch2exch.Rates.getServiceName()'],['../classraw__urlparser_1_1_rates.html#a4579624e853a4d83c5b7df9c390de5b5',1,'raw_urlparser.Rates.getServiceName()']]],
+  ['getusd2brl',['getUsd2Brl',['../classexch2exch_1_1_rates.html#a1b3705806d2321660c4c2753474f403d',1,'exch2exch.Rates.getUsd2Brl()'],['../classraw__urlparser_1_1_rates.html#aaf3f32369f17da5fc903a7a51feca25f',1,'raw_urlparser.Rates.getUsd2Brl()']]],
+  ['gmax',['gmax',['../classexch2exch_1_1_differences.html#a569f2a6fa0e33ad725c3c3ada259ddcc',1,'exch2exch::Differences']]],
+  ['gmin',['gmin',['../classexch2exch_1_1_differences.html#a33c9add531b5b46c49ae322657343382',1,'exch2exch::Differences']]],
+  ['google',['google',['../namespaceraw__urlparser.html#a8d7c05a0ed7b2f3a3014caa73a2999d1',1,'raw_urlparser']]]
+];

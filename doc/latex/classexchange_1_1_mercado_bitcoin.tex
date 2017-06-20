@@ -1,0 +1,216 @@
+\hypertarget{classexchange_1_1_mercado_bitcoin}{\section{exchange.\-Mercado\-Bitcoin Class Reference}
+\label{classexchange_1_1_mercado_bitcoin}\index{exchange.\-Mercado\-Bitcoin@{exchange.\-Mercado\-Bitcoin}}
+}
+
+
+Inheritance diagram for exchange.\-Mercado\-Bitcoin\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=208pt]{classexchange_1_1_mercado_bitcoin__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for exchange.\-Mercado\-Bitcoin\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=208pt]{classexchange_1_1_mercado_bitcoin__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classexchange_1_1_mercado_bitcoin_ad9e1645fbd904d31d0db7728a2470a90}{\-\_\-\-\_\-init\-\_\-\-\_\-}
+\item 
+def \hyperlink{classexchange_1_1_mercado_bitcoin_a265e83673337b0b06cb4566ee0903e2f}{process\-\_\-json}
+\item 
+def \hyperlink{classexchange_1_1_mercado_bitcoin_ae651664c24cb7b31973cdf2cdf281628}{get\-\_\-ticker}
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classexchange_1_1_mercado_bitcoin_ac4630b08e08f9eeb9dad838dc9dc0cda}{ts}
+\item 
+\hyperlink{classexchange_1_1_mercado_bitcoin_ada27b62a35286b9f5dbb54590c5bacd2}{buy}
+\item 
+\hyperlink{classexchange_1_1_mercado_bitcoin_a9982c7a3f6103c88c64160a5854c35cd}{sell}
+\item 
+\hyperlink{classexchange_1_1_mercado_bitcoin_a0b9c2d465601a48e3b8838354e931c39}{high}
+\item 
+\hyperlink{classexchange_1_1_mercado_bitcoin_aaa3aae824bfc5ba3b7dc5252e9554713}{low}
+\item 
+\hyperlink{classexchange_1_1_mercado_bitcoin_aeee983ba4f72223a11fb914d22902c56}{dt}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+string \hyperlink{classexchange_1_1_mercado_bitcoin_a310b7df5ae9e8a46bad918428c67d4e8}{U\-\_\-\-T\-I\-C\-K\-E\-R} = 'https\-://www.\-mercadobitcoin.\-net/api/ticker/'
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 90 of file exchange.\-py.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classexchange_1_1_mercado_bitcoin_ad9e1645fbd904d31d0db7728a2470a90}{\index{exchange\-::\-Mercado\-Bitcoin@{exchange\-::\-Mercado\-Bitcoin}!\-\_\-\-\_\-init\-\_\-\-\_\-@{\-\_\-\-\_\-init\-\_\-\-\_\-}}
+\index{\-\_\-\-\_\-init\-\_\-\-\_\-@{\-\_\-\-\_\-init\-\_\-\-\_\-}!exchange::MercadoBitcoin@{exchange\-::\-Mercado\-Bitcoin}}
+\subsubsection[{\-\_\-\-\_\-init\-\_\-\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}def exchange.\-Mercado\-Bitcoin.\-\_\-\-\_\-init\-\_\-\-\_\- (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}\label{classexchange_1_1_mercado_bitcoin_ad9e1645fbd904d31d0db7728a2470a90}
+
+
+Definition at line 93 of file exchange.\-py.
+
+
+\begin{DoxyCode}
+93 
+94     \textcolor{keyword}{def }\hyperlink{classexchange_1_1_mercado_bitcoin_ad9e1645fbd904d31d0db7728a2470a90}{\_\_init\_\_} (self):
+95         super ().\_\_init\_\_ ()
+        
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classexchange_1_1_mercado_bitcoin_ae651664c24cb7b31973cdf2cdf281628}{\index{exchange\-::\-Mercado\-Bitcoin@{exchange\-::\-Mercado\-Bitcoin}!get\-\_\-ticker@{get\-\_\-ticker}}
+\index{get\-\_\-ticker@{get\-\_\-ticker}!exchange::MercadoBitcoin@{exchange\-::\-Mercado\-Bitcoin}}
+\subsubsection[{get\-\_\-ticker}]{\setlength{\rightskip}{0pt plus 5cm}def exchange.\-Mercado\-Bitcoin.\-get\-\_\-ticker (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}\label{classexchange_1_1_mercado_bitcoin_ae651664c24cb7b31973cdf2cdf281628}
+
+
+Definition at line 107 of file exchange.\-py.
+
+
+
+References exch2exch.\-Xbt\-Prices.\-buy, exchange.\-Fox\-Bit.\-buy, exchange.\-Mercado\-Bitcoin.\-buy, exch2exch.\-Rates.\-dt, exch2exch.\-Xbt\-Prices.\-dt, exchange.\-Fox\-Bit.\-dt, exchange.\-Mercado\-Bitcoin.\-dt, exch2exch.\-Xbt\-Prices.\-high, exchange.\-Fox\-Bit.\-high, exchange.\-Mercado\-Bitcoin.\-high, exch2exch.\-Xbt\-Prices.\-low, exchange.\-Fox\-Bit.\-low, exchange.\-Mercado\-Bitcoin.\-low, exch2exch.\-Xbt\-Prices.\-sell, exchange.\-Fox\-Bit.\-sell, and exchange.\-Mercado\-Bitcoin.\-sell.
+
+
+\begin{DoxyCode}
+107 
+108     \textcolor{keyword}{def }\hyperlink{classexchange_1_1_mercado_bitcoin_ae651664c24cb7b31973cdf2cdf281628}{get\_ticker} (self):
+109         buy  = self.\hyperlink{classexchange_1_1_mercado_bitcoin_ada27b62a35286b9f5dbb54590c5bacd2}{buy}
+110         sell = self.\hyperlink{classexchange_1_1_mercado_bitcoin_a9982c7a3f6103c88c64160a5854c35cd}{sell}
+111         high = self.\hyperlink{classexchange_1_1_mercado_bitcoin_a0b9c2d465601a48e3b8838354e931c39}{high}
+112         low  = self.\hyperlink{classexchange_1_1_mercado_bitcoin_aaa3aae824bfc5ba3b7dc5252e9554713}{low}
+113         dt   = self.\hyperlink{classexchange_1_1_mercado_bitcoin_aeee983ba4f72223a11fb914d22902c56}{dt}
+114         
+115         result = (dt, sell, buy, high, low)
+116         
+117         \textcolor{keywordflow}{return} result
+        
+\end{DoxyCode}
+\hypertarget{classexchange_1_1_mercado_bitcoin_a265e83673337b0b06cb4566ee0903e2f}{\index{exchange\-::\-Mercado\-Bitcoin@{exchange\-::\-Mercado\-Bitcoin}!process\-\_\-json@{process\-\_\-json}}
+\index{process\-\_\-json@{process\-\_\-json}!exchange::MercadoBitcoin@{exchange\-::\-Mercado\-Bitcoin}}
+\subsubsection[{process\-\_\-json}]{\setlength{\rightskip}{0pt plus 5cm}def exchange.\-Mercado\-Bitcoin.\-process\-\_\-json (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}\label{classexchange_1_1_mercado_bitcoin_a265e83673337b0b06cb4566ee0903e2f}
+
+
+Definition at line 96 of file exchange.\-py.
+
+
+\begin{DoxyCode}
+96 
+97     \textcolor{keyword}{def }\hyperlink{classexchange_1_1_mercado_bitcoin_a265e83673337b0b06cb4566ee0903e2f}{process\_json} (self):
+98 \textcolor{comment}{#        myClass = type (self).\_\_name\_\_}
+99 \textcolor{comment}{#        print ("\{0\}.process\_json ()".format (myClass))}
+100         self.\hyperlink{classexchange_1_1_mercado_bitcoin_ac4630b08e08f9eeb9dad838dc9dc0cda}{ts}   = int   (self.\hyperlink{classexchange_1_1_exchange_a6ce8e0779d98031b1cd9200d2a0fa5ad}{json}[\textcolor{stringliteral}{'ticker'}][\textcolor{stringliteral}{'date'}])
+101         self.\hyperlink{classexchange_1_1_mercado_bitcoin_ada27b62a35286b9f5dbb54590c5bacd2}{buy}  = float (self.\hyperlink{classexchange_1_1_exchange_a6ce8e0779d98031b1cd9200d2a0fa5ad}{json}[\textcolor{stringliteral}{'ticker'}][\textcolor{stringliteral}{'buy'}])
+102         self.\hyperlink{classexchange_1_1_mercado_bitcoin_a9982c7a3f6103c88c64160a5854c35cd}{sell} = float (self.\hyperlink{classexchange_1_1_exchange_a6ce8e0779d98031b1cd9200d2a0fa5ad}{json}[\textcolor{stringliteral}{'ticker'}][\textcolor{stringliteral}{'sell'}])
+103         self.\hyperlink{classexchange_1_1_mercado_bitcoin_a0b9c2d465601a48e3b8838354e931c39}{high} = float (self.\hyperlink{classexchange_1_1_exchange_a6ce8e0779d98031b1cd9200d2a0fa5ad}{json}[\textcolor{stringliteral}{'ticker'}][\textcolor{stringliteral}{'high'}])
+104         self.\hyperlink{classexchange_1_1_mercado_bitcoin_aaa3aae824bfc5ba3b7dc5252e9554713}{low}  = float (self.\hyperlink{classexchange_1_1_exchange_a6ce8e0779d98031b1cd9200d2a0fa5ad}{json}[\textcolor{stringliteral}{'ticker'}][\textcolor{stringliteral}{'low'}])
+105     
+106         self.\hyperlink{classexchange_1_1_mercado_bitcoin_aeee983ba4f72223a11fb914d22902c56}{dt} = datetime.datetime.fromtimestamp (float (self.\hyperlink{classexchange_1_1_mercado_bitcoin_ac4630b08e08f9eeb9dad838dc9dc0cda}{ts}))
+    
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classexchange_1_1_mercado_bitcoin_ada27b62a35286b9f5dbb54590c5bacd2}{\index{exchange\-::\-Mercado\-Bitcoin@{exchange\-::\-Mercado\-Bitcoin}!buy@{buy}}
+\index{buy@{buy}!exchange::MercadoBitcoin@{exchange\-::\-Mercado\-Bitcoin}}
+\subsubsection[{buy}]{\setlength{\rightskip}{0pt plus 5cm}exchange.\-Mercado\-Bitcoin.\-buy}}\label{classexchange_1_1_mercado_bitcoin_ada27b62a35286b9f5dbb54590c5bacd2}
+
+
+Definition at line 100 of file exchange.\-py.
+
+
+
+Referenced by raw\-\_\-urlparser.\-Xbt\-Prices.\-\_\-\-\_\-str\-\_\-\-\_\-(), exchange.\-Mercado\-Bitcoin.\-get\-\_\-ticker(), exchange.\-Ok\-Coin.\-get\-\_\-ticker(), and raw\-\_\-urlparser.\-Xbt\-Prices.\-get\-Buy().
+
+\hypertarget{classexchange_1_1_mercado_bitcoin_aeee983ba4f72223a11fb914d22902c56}{\index{exchange\-::\-Mercado\-Bitcoin@{exchange\-::\-Mercado\-Bitcoin}!dt@{dt}}
+\index{dt@{dt}!exchange::MercadoBitcoin@{exchange\-::\-Mercado\-Bitcoin}}
+\subsubsection[{dt}]{\setlength{\rightskip}{0pt plus 5cm}exchange.\-Mercado\-Bitcoin.\-dt}}\label{classexchange_1_1_mercado_bitcoin_aeee983ba4f72223a11fb914d22902c56}
+
+
+Definition at line 105 of file exchange.\-py.
+
+
+
+Referenced by raw\-\_\-urlparser.\-Rates.\-\_\-\-\_\-str\-\_\-\-\_\-(), raw\-\_\-urlparser.\-Xbt\-Prices.\-\_\-\-\_\-str\-\_\-\-\_\-(), exchange.\-Mercado\-Bitcoin.\-get\-\_\-ticker(), exchange.\-Ok\-Coin.\-get\-\_\-ticker(), and raw\-\_\-urlparser.\-Xbt\-Prices.\-get\-Date\-Time().
+
+\hypertarget{classexchange_1_1_mercado_bitcoin_a0b9c2d465601a48e3b8838354e931c39}{\index{exchange\-::\-Mercado\-Bitcoin@{exchange\-::\-Mercado\-Bitcoin}!high@{high}}
+\index{high@{high}!exchange::MercadoBitcoin@{exchange\-::\-Mercado\-Bitcoin}}
+\subsubsection[{high}]{\setlength{\rightskip}{0pt plus 5cm}exchange.\-Mercado\-Bitcoin.\-high}}\label{classexchange_1_1_mercado_bitcoin_a0b9c2d465601a48e3b8838354e931c39}
+
+
+Definition at line 102 of file exchange.\-py.
+
+
+
+Referenced by exchange.\-Mercado\-Bitcoin.\-get\-\_\-ticker(), and exchange.\-Ok\-Coin.\-get\-\_\-ticker().
+
+\hypertarget{classexchange_1_1_mercado_bitcoin_aaa3aae824bfc5ba3b7dc5252e9554713}{\index{exchange\-::\-Mercado\-Bitcoin@{exchange\-::\-Mercado\-Bitcoin}!low@{low}}
+\index{low@{low}!exchange::MercadoBitcoin@{exchange\-::\-Mercado\-Bitcoin}}
+\subsubsection[{low}]{\setlength{\rightskip}{0pt plus 5cm}exchange.\-Mercado\-Bitcoin.\-low}}\label{classexchange_1_1_mercado_bitcoin_aaa3aae824bfc5ba3b7dc5252e9554713}
+
+
+Definition at line 103 of file exchange.\-py.
+
+
+
+Referenced by exchange.\-Mercado\-Bitcoin.\-get\-\_\-ticker(), and exchange.\-Ok\-Coin.\-get\-\_\-ticker().
+
+\hypertarget{classexchange_1_1_mercado_bitcoin_a9982c7a3f6103c88c64160a5854c35cd}{\index{exchange\-::\-Mercado\-Bitcoin@{exchange\-::\-Mercado\-Bitcoin}!sell@{sell}}
+\index{sell@{sell}!exchange::MercadoBitcoin@{exchange\-::\-Mercado\-Bitcoin}}
+\subsubsection[{sell}]{\setlength{\rightskip}{0pt plus 5cm}exchange.\-Mercado\-Bitcoin.\-sell}}\label{classexchange_1_1_mercado_bitcoin_a9982c7a3f6103c88c64160a5854c35cd}
+
+
+Definition at line 101 of file exchange.\-py.
+
+
+
+Referenced by raw\-\_\-urlparser.\-Xbt\-Prices.\-\_\-\-\_\-str\-\_\-\-\_\-(), exchange.\-Mercado\-Bitcoin.\-get\-\_\-ticker(), exchange.\-Ok\-Coin.\-get\-\_\-ticker(), and raw\-\_\-urlparser.\-Xbt\-Prices.\-get\-Sell().
+
+\hypertarget{classexchange_1_1_mercado_bitcoin_ac4630b08e08f9eeb9dad838dc9dc0cda}{\index{exchange\-::\-Mercado\-Bitcoin@{exchange\-::\-Mercado\-Bitcoin}!ts@{ts}}
+\index{ts@{ts}!exchange::MercadoBitcoin@{exchange\-::\-Mercado\-Bitcoin}}
+\subsubsection[{ts}]{\setlength{\rightskip}{0pt plus 5cm}exchange.\-Mercado\-Bitcoin.\-ts}}\label{classexchange_1_1_mercado_bitcoin_ac4630b08e08f9eeb9dad838dc9dc0cda}
+
+
+Definition at line 99 of file exchange.\-py.
+
+\hypertarget{classexchange_1_1_mercado_bitcoin_a310b7df5ae9e8a46bad918428c67d4e8}{\index{exchange\-::\-Mercado\-Bitcoin@{exchange\-::\-Mercado\-Bitcoin}!U\-\_\-\-T\-I\-C\-K\-E\-R@{U\-\_\-\-T\-I\-C\-K\-E\-R}}
+\index{U\-\_\-\-T\-I\-C\-K\-E\-R@{U\-\_\-\-T\-I\-C\-K\-E\-R}!exchange::MercadoBitcoin@{exchange\-::\-Mercado\-Bitcoin}}
+\subsubsection[{U\-\_\-\-T\-I\-C\-K\-E\-R}]{\setlength{\rightskip}{0pt plus 5cm}string exchange.\-Mercado\-Bitcoin.\-U\-\_\-\-T\-I\-C\-K\-E\-R = 'https\-://www.\-mercadobitcoin.\-net/api/ticker/'\hspace{0.3cm}{\ttfamily [static]}}}\label{classexchange_1_1_mercado_bitcoin_a310b7df5ae9e8a46bad918428c67d4e8}
+
+
+Definition at line 91 of file exchange.\-py.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/home/hilton/github/exch2exh/\hyperlink{exchange_8py}{exchange.\-py}\end{DoxyCompactItemize}

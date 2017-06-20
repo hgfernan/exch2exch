@@ -272,9 +272,9 @@ def main ():
 
     u_usd2brl = 'https://www.google.com/finance/converter?a=1&from=USD&to=BRL'
     u_brl2usd = 'https://www.google.com/finance/converter?a=1&from=BRL&to=USD'
-    u_mb      = 'https://www.mercadobitcoin.net/api/ticker/'
+#    u_mb      = 'https://www.mercadobitcoin.net/api/ticker/'
     u_xrates  = 'http://www.x-rates.com/table/?from=USD&amount=1'
-    u_ok      = 'https://www.okcoin.com/api/v1/ticker.do?symbol=btc_usd'
+#    u_ok      = 'https://www.okcoin.com/api/v1/ticker.do?symbol=btc_usd'
     
     urls = (u_usd2brl, u_brl2usd)
     

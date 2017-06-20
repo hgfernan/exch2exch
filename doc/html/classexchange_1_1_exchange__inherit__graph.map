@@ -1,0 +1,5 @@
+<map id="exchange.Exchange" name="exchange.Exchange">
+<area shape="rect" id="node2" href="$classexchange_1_1_fox_bit.html" title="exchange.FoxBit" alt="" coords="5,80,125,107"/>
+<area shape="rect" id="node3" href="$classexchange_1_1_mercado_bitcoin.html" title="exchange.MercadoBitcoin" alt="" coords="150,80,321,107"/>
+<area shape="rect" id="node4" href="$classexchange_1_1_ok_coin.html" title="exchange.OkCoin" alt="" coords="346,80,472,107"/>
+</map>

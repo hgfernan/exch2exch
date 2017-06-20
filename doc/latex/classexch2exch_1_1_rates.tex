@@ -1,0 +1,215 @@
+\hypertarget{classexch2exch_1_1_rates}{\section{exch2exch.\-Rates Class Reference}
+\label{classexch2exch_1_1_rates}\index{exch2exch.\-Rates@{exch2exch.\-Rates}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classexch2exch_1_1_rates_adf2f5038d3b15e4b434ae3d32527ebe2}{\-\_\-\-\_\-init\-\_\-\-\_\-}
+\item 
+def \hyperlink{classexch2exch_1_1_rates_ae5e570daf9d176e3455bc98fc19e2b2c}{get\-Brl2\-Usd}
+\item 
+def \hyperlink{classexch2exch_1_1_rates_a1b3705806d2321660c4c2753474f403d}{get\-Usd2\-Brl}
+\item 
+def \hyperlink{classexch2exch_1_1_rates_a8ec48a9ebb71f923056205ad79679eeb}{get\-Service\-Name}
+\item 
+def \hyperlink{classexch2exch_1_1_rates_ac50b5d57f05657995ea0152bc4f195e9}{\-\_\-\-\_\-str\-\_\-\-\_\-}
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classexch2exch_1_1_rates_acb12f83bce4393714ec30351a1d636c2}{dt}
+\item 
+\hyperlink{classexch2exch_1_1_rates_ab79ad6e4a42ca358e6b39c825a4b8a0b}{usd2brl}
+\item 
+\hyperlink{classexch2exch_1_1_rates_acc018dea09e825e18e91c73c5c63ab78}{brl2usd}
+\item 
+\hyperlink{classexch2exch_1_1_rates_a94c1394b9259d6a7c8f3c12bbd20e685}{service}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 26 of file exch2exch.\-py.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classexch2exch_1_1_rates_adf2f5038d3b15e4b434ae3d32527ebe2}{\index{exch2exch\-::\-Rates@{exch2exch\-::\-Rates}!\-\_\-\-\_\-init\-\_\-\-\_\-@{\-\_\-\-\_\-init\-\_\-\-\_\-}}
+\index{\-\_\-\-\_\-init\-\_\-\-\_\-@{\-\_\-\-\_\-init\-\_\-\-\_\-}!exch2exch::Rates@{exch2exch\-::\-Rates}}
+\subsubsection[{\-\_\-\-\_\-init\-\_\-\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}def exch2exch.\-Rates.\-\_\-\-\_\-init\-\_\-\-\_\- (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{dt, }
+\item[{}]{usd2brl, }
+\item[{}]{brl2usd, }
+\item[{}]{service}
+\end{DoxyParamCaption}
+)}}\label{classexch2exch_1_1_rates_adf2f5038d3b15e4b434ae3d32527ebe2}
+
+
+Definition at line 27 of file exch2exch.\-py.
+
+
+\begin{DoxyCode}
+27 
+28     \textcolor{keyword}{def }\hyperlink{classexch2exch_1_1_rates_adf2f5038d3b15e4b434ae3d32527ebe2}{\_\_init\_\_} (self, dt, usd2brl, brl2usd, service):
+29         self.\hyperlink{classexch2exch_1_1_rates_acb12f83bce4393714ec30351a1d636c2}{dt}  = dt
+30         self.\hyperlink{classexch2exch_1_1_rates_ab79ad6e4a42ca358e6b39c825a4b8a0b}{usd2brl} = usd2brl
+31         self.\hyperlink{classexch2exch_1_1_rates_acc018dea09e825e18e91c73c5c63ab78}{brl2usd} = brl2usd
+32         self.\hyperlink{classexch2exch_1_1_rates_a94c1394b9259d6a7c8f3c12bbd20e685}{service} = service
+    
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classexch2exch_1_1_rates_ac50b5d57f05657995ea0152bc4f195e9}{\index{exch2exch\-::\-Rates@{exch2exch\-::\-Rates}!\-\_\-\-\_\-str\-\_\-\-\_\-@{\-\_\-\-\_\-str\-\_\-\-\_\-}}
+\index{\-\_\-\-\_\-str\-\_\-\-\_\-@{\-\_\-\-\_\-str\-\_\-\-\_\-}!exch2exch::Rates@{exch2exch\-::\-Rates}}
+\subsubsection[{\-\_\-\-\_\-str\-\_\-\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}def exch2exch.\-Rates.\-\_\-\-\_\-str\-\_\-\-\_\- (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}\label{classexch2exch_1_1_rates_ac50b5d57f05657995ea0152bc4f195e9}
+
+
+Definition at line 42 of file exch2exch.\-py.
+
+
+
+References exch2exch.\-Rates.\-brl2usd, exch2exch.\-Rates.\-dt, exch2exch.\-Rates.\-service, and exch2exch.\-Rates.\-usd2brl.
+
+
+\begin{DoxyCode}
+42 
+43     \textcolor{keyword}{def }\hyperlink{classexch2exch_1_1_rates_ac50b5d57f05657995ea0152bc4f195e9}{\_\_str\_\_} (self):
+44         result = \textcolor{stringliteral}{''}
+45 
+46         service = self.\hyperlink{classexch2exch_1_1_rates_a94c1394b9259d6a7c8f3c12bbd20e685}{service}
+47         dt      = self.\hyperlink{classexch2exch_1_1_rates_acb12f83bce4393714ec30351a1d636c2}{dt}
+48         usd2brl = self.\hyperlink{classexch2exch_1_1_rates_ab79ad6e4a42ca358e6b39c825a4b8a0b}{usd2brl}
+49         brl2usd = self.\hyperlink{classexch2exch_1_1_rates_acc018dea09e825e18e91c73c5c63ab78}{brl2usd}
+50         ftupl = (service, dt, usd2brl, brl2usd)
+51         
+52         result = \textcolor{stringliteral}{"\{0\}: \{1\}: USD2BRL \{2:.4f\}, BRL2USD \{3:.4f\}"}.format (*ftupl)
+53 
+54         \textcolor{keywordflow}{return} result        
+        
+\end{DoxyCode}
+\hypertarget{classexch2exch_1_1_rates_ae5e570daf9d176e3455bc98fc19e2b2c}{\index{exch2exch\-::\-Rates@{exch2exch\-::\-Rates}!get\-Brl2\-Usd@{get\-Brl2\-Usd}}
+\index{get\-Brl2\-Usd@{get\-Brl2\-Usd}!exch2exch::Rates@{exch2exch\-::\-Rates}}
+\subsubsection[{get\-Brl2\-Usd}]{\setlength{\rightskip}{0pt plus 5cm}def exch2exch.\-Rates.\-get\-Brl2\-Usd (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}\label{classexch2exch_1_1_rates_ae5e570daf9d176e3455bc98fc19e2b2c}
+
+
+Definition at line 33 of file exch2exch.\-py.
+
+
+
+References exch2exch.\-Rates.\-brl2usd.
+
+
+\begin{DoxyCode}
+33 
+34     \textcolor{keyword}{def }\hyperlink{classexch2exch_1_1_rates_ae5e570daf9d176e3455bc98fc19e2b2c}{getBrl2Usd} (self):
+35         \textcolor{keywordflow}{return} self.\hyperlink{classexch2exch_1_1_rates_acc018dea09e825e18e91c73c5c63ab78}{brl2usd}
+    
+\end{DoxyCode}
+\hypertarget{classexch2exch_1_1_rates_a8ec48a9ebb71f923056205ad79679eeb}{\index{exch2exch\-::\-Rates@{exch2exch\-::\-Rates}!get\-Service\-Name@{get\-Service\-Name}}
+\index{get\-Service\-Name@{get\-Service\-Name}!exch2exch::Rates@{exch2exch\-::\-Rates}}
+\subsubsection[{get\-Service\-Name}]{\setlength{\rightskip}{0pt plus 5cm}def exch2exch.\-Rates.\-get\-Service\-Name (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}\label{classexch2exch_1_1_rates_a8ec48a9ebb71f923056205ad79679eeb}
+
+
+Definition at line 39 of file exch2exch.\-py.
+
+
+
+References exch2exch.\-Rates.\-service.
+
+
+\begin{DoxyCode}
+39 
+40     \textcolor{keyword}{def }\hyperlink{classexch2exch_1_1_rates_a8ec48a9ebb71f923056205ad79679eeb}{getServiceName} (self):
+41         \textcolor{keywordflow}{return} self.\hyperlink{classexch2exch_1_1_rates_a94c1394b9259d6a7c8f3c12bbd20e685}{service}
+        
+\end{DoxyCode}
+\hypertarget{classexch2exch_1_1_rates_a1b3705806d2321660c4c2753474f403d}{\index{exch2exch\-::\-Rates@{exch2exch\-::\-Rates}!get\-Usd2\-Brl@{get\-Usd2\-Brl}}
+\index{get\-Usd2\-Brl@{get\-Usd2\-Brl}!exch2exch::Rates@{exch2exch\-::\-Rates}}
+\subsubsection[{get\-Usd2\-Brl}]{\setlength{\rightskip}{0pt plus 5cm}def exch2exch.\-Rates.\-get\-Usd2\-Brl (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}\label{classexch2exch_1_1_rates_a1b3705806d2321660c4c2753474f403d}
+
+
+Definition at line 36 of file exch2exch.\-py.
+
+
+
+References exch2exch.\-Rates.\-usd2brl.
+
+
+\begin{DoxyCode}
+36 
+37     \textcolor{keyword}{def }\hyperlink{classexch2exch_1_1_rates_a1b3705806d2321660c4c2753474f403d}{getUsd2Brl} (self):
+38         \textcolor{keywordflow}{return} self.\hyperlink{classexch2exch_1_1_rates_ab79ad6e4a42ca358e6b39c825a4b8a0b}{usd2brl}
+    
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classexch2exch_1_1_rates_acc018dea09e825e18e91c73c5c63ab78}{\index{exch2exch\-::\-Rates@{exch2exch\-::\-Rates}!brl2usd@{brl2usd}}
+\index{brl2usd@{brl2usd}!exch2exch::Rates@{exch2exch\-::\-Rates}}
+\subsubsection[{brl2usd}]{\setlength{\rightskip}{0pt plus 5cm}exch2exch.\-Rates.\-brl2usd}}\label{classexch2exch_1_1_rates_acc018dea09e825e18e91c73c5c63ab78}
+
+
+Definition at line 30 of file exch2exch.\-py.
+
+
+
+Referenced by raw\-\_\-urlparser.\-Rates.\-\_\-\-\_\-str\-\_\-\-\_\-(), exch2exch.\-Rates.\-\_\-\-\_\-str\-\_\-\-\_\-(), raw\-\_\-urlparser.\-Rates.\-get\-Brl2\-Usd(), and exch2exch.\-Rates.\-get\-Brl2\-Usd().
+
+\hypertarget{classexch2exch_1_1_rates_acb12f83bce4393714ec30351a1d636c2}{\index{exch2exch\-::\-Rates@{exch2exch\-::\-Rates}!dt@{dt}}
+\index{dt@{dt}!exch2exch::Rates@{exch2exch\-::\-Rates}}
+\subsubsection[{dt}]{\setlength{\rightskip}{0pt plus 5cm}exch2exch.\-Rates.\-dt}}\label{classexch2exch_1_1_rates_acb12f83bce4393714ec30351a1d636c2}
+
+
+Definition at line 28 of file exch2exch.\-py.
+
+
+
+Referenced by raw\-\_\-urlparser.\-Rates.\-\_\-\-\_\-str\-\_\-\-\_\-(), exch2exch.\-Rates.\-\_\-\-\_\-str\-\_\-\-\_\-(), raw\-\_\-urlparser.\-Xbt\-Prices.\-\_\-\-\_\-str\-\_\-\-\_\-(), exch2exch.\-Xbt\-Prices.\-\_\-\-\_\-str\-\_\-\-\_\-(), exchange.\-Fox\-Bit.\-get\-\_\-ticker(), exchange.\-Mercado\-Bitcoin.\-get\-\_\-ticker(), exchange.\-Ok\-Coin.\-get\-\_\-ticker(), raw\-\_\-urlparser.\-Xbt\-Prices.\-get\-Date\-Time(), and exch2exch.\-Xbt\-Prices.\-get\-Date\-Time().
+
+\hypertarget{classexch2exch_1_1_rates_a94c1394b9259d6a7c8f3c12bbd20e685}{\index{exch2exch\-::\-Rates@{exch2exch\-::\-Rates}!service@{service}}
+\index{service@{service}!exch2exch::Rates@{exch2exch\-::\-Rates}}
+\subsubsection[{service}]{\setlength{\rightskip}{0pt plus 5cm}exch2exch.\-Rates.\-service}}\label{classexch2exch_1_1_rates_a94c1394b9259d6a7c8f3c12bbd20e685}
+
+
+Definition at line 31 of file exch2exch.\-py.
+
+
+
+Referenced by raw\-\_\-urlparser.\-Rates.\-\_\-\-\_\-str\-\_\-\-\_\-(), exch2exch.\-Rates.\-\_\-\-\_\-str\-\_\-\-\_\-(), raw\-\_\-urlparser.\-Rates.\-get\-Service\-Name(), and exch2exch.\-Rates.\-get\-Service\-Name().
+
+\hypertarget{classexch2exch_1_1_rates_ab79ad6e4a42ca358e6b39c825a4b8a0b}{\index{exch2exch\-::\-Rates@{exch2exch\-::\-Rates}!usd2brl@{usd2brl}}
+\index{usd2brl@{usd2brl}!exch2exch::Rates@{exch2exch\-::\-Rates}}
+\subsubsection[{usd2brl}]{\setlength{\rightskip}{0pt plus 5cm}exch2exch.\-Rates.\-usd2brl}}\label{classexch2exch_1_1_rates_ab79ad6e4a42ca358e6b39c825a4b8a0b}
+
+
+Definition at line 29 of file exch2exch.\-py.
+
+
+
+Referenced by raw\-\_\-urlparser.\-Rates.\-\_\-\-\_\-str\-\_\-\-\_\-(), exch2exch.\-Rates.\-\_\-\-\_\-str\-\_\-\-\_\-(), raw\-\_\-urlparser.\-Rates.\-get\-Usd2\-Brl(), and exch2exch.\-Rates.\-get\-Usd2\-Brl().
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/home/hilton/github/exch2exh/\hyperlink{exch2exch_8py}{exch2exch.\-py}\end{DoxyCompactItemize}

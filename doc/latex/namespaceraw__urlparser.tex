@@ -1,0 +1,377 @@
+\hypertarget{namespaceraw__urlparser}{\section{raw\-\_\-urlparser Namespace Reference}
+\label{namespaceraw__urlparser}\index{raw\-\_\-urlparser@{raw\-\_\-urlparser}}
+}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classraw__urlparser_1_1_rates}{Rates}
+\item 
+class \hyperlink{classraw__urlparser_1_1_xbt_prices}{Xbt\-Prices}
+\item 
+class \hyperlink{classraw__urlparser_1_1_differences}{Differences}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespaceraw__urlparser_a27ce239a7915c6468e00168213575365}{get\-\_\-google\-\_\-rate}
+\item 
+def \hyperlink{namespaceraw__urlparser_a503f638b00ab579b8b829e1dbb95e547}{get\-\_\-google\-\_\-rates}
+\item 
+def \hyperlink{namespaceraw__urlparser_a264ca664879b007ee92399e30ec0d9bc}{get\-\_\-x\-\_\-rates}
+\item 
+def \hyperlink{namespaceraw__urlparser_a56532368ca9848b5f2ab298e3e6232bb}{get\-\_\-mb\-\_\-rates}
+\item 
+def \hyperlink{namespaceraw__urlparser_a3a9d9300bd89d803ca1fddb78145f58e}{get\-\_\-ok\-\_\-rates}
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+string \hyperlink{namespaceraw__urlparser_a63e1f0abe7b1f43c4891ce9aec98261d}{u\-\_\-usd2brl} = 'https\-://www.\-google.\-com/finance/converter?a=1\&from=U\-S\-D\&to=B\-R\-L'
+\item 
+string \hyperlink{namespaceraw__urlparser_a876711ddd7ebb3991a35cc1768d1d22c}{u\-\_\-brl2usd} = 'https\-://www.\-google.\-com/finance/converter?a=1\&from=B\-R\-L\&to=U\-S\-D'
+\item 
+tuple \hyperlink{namespaceraw__urlparser_aded92a1146e1ce1f14fd79a361f947f9}{urls} = (\hyperlink{namespaceraw__urlparser_a63e1f0abe7b1f43c4891ce9aec98261d}{u\-\_\-usd2brl}, \hyperlink{namespaceraw__urlparser_a876711ddd7ebb3991a35cc1768d1d22c}{u\-\_\-brl2usd})
+\item 
+tuple \hyperlink{namespaceraw__urlparser_a8d7c05a0ed7b2f3a3014caa73a2999d1}{google} = \hyperlink{classraw__urlparser_1_1_rates}{Rates}(dt, usd2brl, \hyperlink{namespaceraw__urlparser_a382c2b22f2386b1e493674c7d72b9b95}{brl2usd}, \char`\"{}Google\char`\"{})
+\item 
+string \hyperlink{namespaceraw__urlparser_a9242b893f4f49ef7cc0d4e599b70daa4}{url} = 'http\-://www.\-x-\/rates.\-com/table/?from=U\-S\-D\&amount=1'
+\item 
+tuple \hyperlink{namespaceraw__urlparser_a26bc8d57698e57014b8c066074fb9937}{x\-\_\-rates} = \hyperlink{classraw__urlparser_1_1_rates}{Rates}(dt, \hyperlink{namespaceraw__urlparser_a382c2b22f2386b1e493674c7d72b9b95}{brl2usd}, usd2brl, \char`\"{}X-\/\hyperlink{classraw__urlparser_1_1_rates}{Rates}\char`\"{})
+\item 
+string \hyperlink{namespaceraw__urlparser_a9a840f174b92a24c415b88c87e84b73d}{u\-\_\-mb} = 'https\-://www.\-mercadobitcoin.\-net/api/ticker/'
+\item 
+tuple \hyperlink{namespaceraw__urlparser_ac8242502920772d4c44b42f24492acd5}{mb\-\_\-tupl} = \hyperlink{namespaceraw__urlparser_a56532368ca9848b5f2ab298e3e6232bb}{get\-\_\-mb\-\_\-rates}(\hyperlink{namespaceraw__urlparser_a9a840f174b92a24c415b88c87e84b73d}{u\-\_\-mb})
+\item 
+tuple \hyperlink{namespaceraw__urlparser_a964275295a1dcba5dbdc3b113a75c4bb}{mb} = \hyperlink{classraw__urlparser_1_1_xbt_prices}{Xbt\-Prices}(dt, sell, buy, \char`\"{}Mercado\-Bitcoin\char`\"{}, \char`\"{}B\-R\-L\char`\"{})
+\item 
+tuple \hyperlink{namespaceraw__urlparser_a382c2b22f2386b1e493674c7d72b9b95}{brl2usd} = google.\-get\-Usd2\-Brl()
+\item 
+tuple \hyperlink{namespaceraw__urlparser_a49f2920b4f7718df58d6d996a1306f32}{mb\-\_\-usd} = \hyperlink{classraw__urlparser_1_1_xbt_prices}{Xbt\-Prices}(dt, sell, buy, \char`\"{}Mercado\-Bitcoin\char`\"{}, \char`\"{}U\-S\-D\char`\"{})
+\item 
+string \hyperlink{namespaceraw__urlparser_a22c1a17803a88426d38d70ad6d4290d2}{u\-\_\-ok} = 'https\-://www.\-okcoin.\-com/api/v1/ticker.\-do?symbol=btc\-\_\-usd'
+\item 
+tuple \hyperlink{namespaceraw__urlparser_a8c2d43346322c5d31fa8cb1a9cf5c121}{ok\-\_\-tupl} = \hyperlink{namespaceraw__urlparser_a3a9d9300bd89d803ca1fddb78145f58e}{get\-\_\-ok\-\_\-rates}(\hyperlink{namespaceraw__urlparser_a22c1a17803a88426d38d70ad6d4290d2}{u\-\_\-ok})
+\item 
+tuple \hyperlink{namespaceraw__urlparser_ac9d30be4f20423526dc111ebaba51cfe}{ok} = \hyperlink{classraw__urlparser_1_1_xbt_prices}{Xbt\-Prices}(dt, sell, buy, \char`\"{}Ok\-Coin\char`\"{}, \char`\"{}U\-S\-D\char`\"{})
+\item 
+tuple \hyperlink{namespaceraw__urlparser_a2a48999f60075fd5b96e6d540cce34c9}{diff} = \hyperlink{classraw__urlparser_1_1_differences}{Differences}(\hyperlink{namespaceraw__urlparser_a8d7c05a0ed7b2f3a3014caa73a2999d1}{google}, \hyperlink{namespaceraw__urlparser_a49f2920b4f7718df58d6d996a1306f32}{mb\-\_\-usd}, \hyperlink{namespaceraw__urlparser_ac9d30be4f20423526dc111ebaba51cfe}{ok})
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{namespaceraw__urlparser_a27ce239a7915c6468e00168213575365}{\index{raw\-\_\-urlparser@{raw\-\_\-urlparser}!get\-\_\-google\-\_\-rate@{get\-\_\-google\-\_\-rate}}
+\index{get\-\_\-google\-\_\-rate@{get\-\_\-google\-\_\-rate}!raw_urlparser@{raw\-\_\-urlparser}}
+\subsubsection[{get\-\_\-google\-\_\-rate}]{\setlength{\rightskip}{0pt plus 5cm}def raw\-\_\-urlparser.\-get\-\_\-google\-\_\-rate (
+\begin{DoxyParamCaption}
+\item[{}]{url}
+\end{DoxyParamCaption}
+)}}\label{namespaceraw__urlparser_a27ce239a7915c6468e00168213575365}
+
+
+Definition at line 118 of file raw\-\_\-urlparser.\-py.
+
+
+\begin{DoxyCode}
+118 
+119 \textcolor{keyword}{def }\hyperlink{namespaceraw__urlparser_a27ce239a7915c6468e00168213575365}{get\_google\_rate} (url):
+120     result = 0
+121 
+122     f = urllib.request.urlopen (url)
+123     
+124     line = f.readline ()
+125     \textcolor{keywordflow}{while} line != b\textcolor{stringliteral}{''}:
+126         ind = line.find (b\textcolor{stringliteral}{'currency\_converter'})
+127         \textcolor{keywordflow}{if} ind != -1:
+128             \textcolor{keywordflow}{print} (ind)
+129             \textcolor{keywordflow}{print} (line)
+130             
+131             fields = line.split ()
+132             \textcolor{keywordflow}{print} (fields[5])
+133             rate = fields[5].split (b\textcolor{stringliteral}{'>'})[1]
+134             \textcolor{keywordflow}{print} (rate)
+135             
+136             \textcolor{keywordflow}{break}
+137             
+138         line = f.readline ()
+139     
+140     result = float (rate)
+141     
+142     \textcolor{keywordflow}{return} result
+    
+\end{DoxyCode}
+\hypertarget{namespaceraw__urlparser_a503f638b00ab579b8b829e1dbb95e547}{\index{raw\-\_\-urlparser@{raw\-\_\-urlparser}!get\-\_\-google\-\_\-rates@{get\-\_\-google\-\_\-rates}}
+\index{get\-\_\-google\-\_\-rates@{get\-\_\-google\-\_\-rates}!raw_urlparser@{raw\-\_\-urlparser}}
+\subsubsection[{get\-\_\-google\-\_\-rates}]{\setlength{\rightskip}{0pt plus 5cm}def raw\-\_\-urlparser.\-get\-\_\-google\-\_\-rates (
+\begin{DoxyParamCaption}
+\item[{}]{urls}
+\end{DoxyParamCaption}
+)}}\label{namespaceraw__urlparser_a503f638b00ab579b8b829e1dbb95e547}
+
+
+Definition at line 143 of file raw\-\_\-urlparser.\-py.
+
+
+\begin{DoxyCode}
+143 
+144 \textcolor{keyword}{def }\hyperlink{namespaceraw__urlparser_a503f638b00ab579b8b829e1dbb95e547}{get\_google\_rates} (urls):
+145     ts = math.trunc (time.time () + 0.5)
+146     dt = datetime.datetime.fromtimestamp (ts)
+147     
+148     \textcolor{comment}{# TODO round the seconds fraction}
+149     
+150     usd2brl = urls[0]
+151     brl2usd = urls[1]
+152     
+153     usd = 0
+154     brl = 0
+155     
+156     usd = get\_google\_rate (usd2brl)
+157     brl = get\_google\_rate (brl2usd)
+158     
+159     result = (dt, usd, brl)
+160     
+161     \textcolor{keywordflow}{return} result
+        
+\end{DoxyCode}
+\hypertarget{namespaceraw__urlparser_a56532368ca9848b5f2ab298e3e6232bb}{\index{raw\-\_\-urlparser@{raw\-\_\-urlparser}!get\-\_\-mb\-\_\-rates@{get\-\_\-mb\-\_\-rates}}
+\index{get\-\_\-mb\-\_\-rates@{get\-\_\-mb\-\_\-rates}!raw_urlparser@{raw\-\_\-urlparser}}
+\subsubsection[{get\-\_\-mb\-\_\-rates}]{\setlength{\rightskip}{0pt plus 5cm}def raw\-\_\-urlparser.\-get\-\_\-mb\-\_\-rates (
+\begin{DoxyParamCaption}
+\item[{}]{url}
+\end{DoxyParamCaption}
+)}}\label{namespaceraw__urlparser_a56532368ca9848b5f2ab298e3e6232bb}
+
+
+Definition at line 217 of file raw\-\_\-urlparser.\-py.
+
+
+\begin{DoxyCode}
+217 
+218 \textcolor{keyword}{def }\hyperlink{namespaceraw__urlparser_a56532368ca9848b5f2ab298e3e6232bb}{get\_mb\_rates} (url):
+219     f = urllib.request.urlopen (url)
+220     
+221     line = f.readline ()
+222     
+223     rv = json.loads (line.decode (encoding=\textcolor{stringliteral}{'utf-8'}))
+224     
+225     ts   = int   (rv[\textcolor{stringliteral}{'ticker'}][\textcolor{stringliteral}{'date'}])
+226     buy  = float (rv[\textcolor{stringliteral}{'ticker'}][\textcolor{stringliteral}{'buy'}])
+227     sell = float (rv[\textcolor{stringliteral}{'ticker'}][\textcolor{stringliteral}{'sell'}])
+228     
+229     dt = datetime.datetime.fromtimestamp (float (ts))
+230     
+231     result = (dt, sell, buy)
+232     
+233     \textcolor{keywordflow}{return} result
+
+\end{DoxyCode}
+\hypertarget{namespaceraw__urlparser_a3a9d9300bd89d803ca1fddb78145f58e}{\index{raw\-\_\-urlparser@{raw\-\_\-urlparser}!get\-\_\-ok\-\_\-rates@{get\-\_\-ok\-\_\-rates}}
+\index{get\-\_\-ok\-\_\-rates@{get\-\_\-ok\-\_\-rates}!raw_urlparser@{raw\-\_\-urlparser}}
+\subsubsection[{get\-\_\-ok\-\_\-rates}]{\setlength{\rightskip}{0pt plus 5cm}def raw\-\_\-urlparser.\-get\-\_\-ok\-\_\-rates (
+\begin{DoxyParamCaption}
+\item[{}]{url}
+\end{DoxyParamCaption}
+)}}\label{namespaceraw__urlparser_a3a9d9300bd89d803ca1fddb78145f58e}
+
+
+Definition at line 234 of file raw\-\_\-urlparser.\-py.
+
+
+\begin{DoxyCode}
+234 
+235 \textcolor{keyword}{def }\hyperlink{namespaceraw__urlparser_a3a9d9300bd89d803ca1fddb78145f58e}{get\_ok\_rates} (url):
+236     f = urllib.request.urlopen (url)
+237     
+238     line = f.readline ()
+239     
+240     rv = json.loads (line.decode (encoding=\textcolor{stringliteral}{'utf-8'}))
+241     
+242     ts   = int   (rv[\textcolor{stringliteral}{'date'}])
+243     buy  = float (rv[\textcolor{stringliteral}{'ticker'}][\textcolor{stringliteral}{'buy'}])
+244     sell = float (rv[\textcolor{stringliteral}{'ticker'}][\textcolor{stringliteral}{'sell'}])
+245     
+246     dt = datetime.datetime.fromtimestamp (float (ts))
+247     
+248     result = (dt, sell, buy)
+249     
+250     \textcolor{keywordflow}{return} result
+    
+\end{DoxyCode}
+\hypertarget{namespaceraw__urlparser_a264ca664879b007ee92399e30ec0d9bc}{\index{raw\-\_\-urlparser@{raw\-\_\-urlparser}!get\-\_\-x\-\_\-rates@{get\-\_\-x\-\_\-rates}}
+\index{get\-\_\-x\-\_\-rates@{get\-\_\-x\-\_\-rates}!raw_urlparser@{raw\-\_\-urlparser}}
+\subsubsection[{get\-\_\-x\-\_\-rates}]{\setlength{\rightskip}{0pt plus 5cm}def raw\-\_\-urlparser.\-get\-\_\-x\-\_\-rates (
+\begin{DoxyParamCaption}
+\item[{}]{url}
+\end{DoxyParamCaption}
+)}}\label{namespaceraw__urlparser_a264ca664879b007ee92399e30ec0d9bc}
+
+
+Definition at line 162 of file raw\-\_\-urlparser.\-py.
+
+
+\begin{DoxyCode}
+162 
+163 \textcolor{keyword}{def }\hyperlink{namespaceraw__urlparser_a264ca664879b007ee92399e30ec0d9bc}{get\_x\_rates} (url):
+164     ts = math.trunc (time.time () + 0.5)
+165     dt = datetime.datetime.fromtimestamp (ts)
+166     
+167     \textcolor{comment}{# TODO round the seconds fraction}
+168     
+169     \textcolor{comment}{# Adding a fake browser User-Agent to make site x-rates.com happy}
+170     headers = \{\textcolor{stringliteral}{'User-Agent'} : \textcolor{stringliteral}{'Mozilla 5.10'}\}
+171         
+172     \textcolor{comment}{# Create the Request, joining URL and User-Agent}
+173     request = urllib.request.Request (url, headers = headers)
+174 
+175     \textcolor{comment}{# Open the URL as file}
+176     f = urllib.request.urlopen (request)
+177     
+178     \textcolor{comment}{# Input over the file to get the rates}
+179     line = \textcolor{keywordtype}{None}
+180     \textcolor{keywordflow}{while} line != b\textcolor{stringliteral}{''}:
+181         line = f.readline ()
+182         ind = line.find (b\textcolor{stringliteral}{'BRL'})
+183         \textcolor{keywordflow}{if} ind == -1:
+184             \textcolor{keywordflow}{continue} 
+185         
+186         ind = line.find (b\textcolor{stringliteral}{'rtRates'})
+187         \textcolor{keywordflow}{if} ind == -1:
+188             \textcolor{keywordflow}{continue} 
+189         
+190         \textcolor{keywordflow}{print} (line)
+191         
+192         \textcolor{keywordflow}{if} line.find (b\textcolor{stringliteral}{'from=USD'}) != -1:
+193             \textcolor{keywordflow}{print} (\textcolor{stringliteral}{'\(\backslash\)nfields'})
+194             fields = line.split (b\textcolor{stringliteral}{'>'})
+195             
+196             \textcolor{keywordflow}{print} (fields[2])
+197             susd = fields[2].split (b\textcolor{stringliteral}{'<'})[0]
+198             \textcolor{keywordflow}{print} (susd)
+199             usd = float (susd)
+200             \textcolor{keywordflow}{print} (usd)
+201             \textcolor{keywordflow}{print} (\textcolor{stringliteral}{'\(\backslash\)n'})
+202         
+203         \textcolor{keywordflow}{elif} line.find (b\textcolor{stringliteral}{'from=BRL'}) != -1:
+204             \textcolor{keywordflow}{print} (\textcolor{stringliteral}{'\(\backslash\)nfields'})
+205             fields = line.split (b\textcolor{stringliteral}{'>'})
+206             
+207             \textcolor{keywordflow}{print} (fields[2])
+208             sbrl = fields[2].split (b\textcolor{stringliteral}{'<'})[0]
+209             \textcolor{keywordflow}{print} (sbrl)
+210             brl = float (sbrl)
+211             \textcolor{keywordflow}{print} (brl)
+212             \textcolor{keywordflow}{print} (\textcolor{stringliteral}{'\(\backslash\)n'})
+213             
+214     result = (dt, usd, brl)
+215     
+216     \textcolor{keywordflow}{return} result
+
+\end{DoxyCode}
+
+
+\subsection{Variable Documentation}
+\hypertarget{namespaceraw__urlparser_a382c2b22f2386b1e493674c7d72b9b95}{\index{raw\-\_\-urlparser@{raw\-\_\-urlparser}!brl2usd@{brl2usd}}
+\index{brl2usd@{brl2usd}!raw_urlparser@{raw\-\_\-urlparser}}
+\subsubsection[{brl2usd}]{\setlength{\rightskip}{0pt plus 5cm}tuple raw\-\_\-urlparser.\-brl2usd = google.\-get\-Usd2\-Brl()}}\label{namespaceraw__urlparser_a382c2b22f2386b1e493674c7d72b9b95}
+
+
+Definition at line 303 of file raw\-\_\-urlparser.\-py.
+
+\hypertarget{namespaceraw__urlparser_a2a48999f60075fd5b96e6d540cce34c9}{\index{raw\-\_\-urlparser@{raw\-\_\-urlparser}!diff@{diff}}
+\index{diff@{diff}!raw_urlparser@{raw\-\_\-urlparser}}
+\subsubsection[{diff}]{\setlength{\rightskip}{0pt plus 5cm}tuple raw\-\_\-urlparser.\-diff = {\bf Differences}({\bf google}, {\bf mb\-\_\-usd}, {\bf ok})}}\label{namespaceraw__urlparser_a2a48999f60075fd5b96e6d540cce34c9}
+
+
+Definition at line 335 of file raw\-\_\-urlparser.\-py.
+
+\hypertarget{namespaceraw__urlparser_a8d7c05a0ed7b2f3a3014caa73a2999d1}{\index{raw\-\_\-urlparser@{raw\-\_\-urlparser}!google@{google}}
+\index{google@{google}!raw_urlparser@{raw\-\_\-urlparser}}
+\subsubsection[{google}]{\setlength{\rightskip}{0pt plus 5cm}tuple raw\-\_\-urlparser.\-google = {\bf Rates}(dt, usd2brl, {\bf brl2usd}, \char`\"{}Google\char`\"{})}}\label{namespaceraw__urlparser_a8d7c05a0ed7b2f3a3014caa73a2999d1}
+
+
+Definition at line 263 of file raw\-\_\-urlparser.\-py.
+
+\hypertarget{namespaceraw__urlparser_a964275295a1dcba5dbdc3b113a75c4bb}{\index{raw\-\_\-urlparser@{raw\-\_\-urlparser}!mb@{mb}}
+\index{mb@{mb}!raw_urlparser@{raw\-\_\-urlparser}}
+\subsubsection[{mb}]{\setlength{\rightskip}{0pt plus 5cm}tuple raw\-\_\-urlparser.\-mb = {\bf Xbt\-Prices}(dt, sell, buy, \char`\"{}Mercado\-Bitcoin\char`\"{}, \char`\"{}B\-R\-L\char`\"{})}}\label{namespaceraw__urlparser_a964275295a1dcba5dbdc3b113a75c4bb}
+
+
+Definition at line 298 of file raw\-\_\-urlparser.\-py.
+
+\hypertarget{namespaceraw__urlparser_ac8242502920772d4c44b42f24492acd5}{\index{raw\-\_\-urlparser@{raw\-\_\-urlparser}!mb\-\_\-tupl@{mb\-\_\-tupl}}
+\index{mb\-\_\-tupl@{mb\-\_\-tupl}!raw_urlparser@{raw\-\_\-urlparser}}
+\subsubsection[{mb\-\_\-tupl}]{\setlength{\rightskip}{0pt plus 5cm}tuple raw\-\_\-urlparser.\-mb\-\_\-tupl = {\bf get\-\_\-mb\-\_\-rates}({\bf u\-\_\-mb})}}\label{namespaceraw__urlparser_ac8242502920772d4c44b42f24492acd5}
+
+
+Definition at line 295 of file raw\-\_\-urlparser.\-py.
+
+\hypertarget{namespaceraw__urlparser_a49f2920b4f7718df58d6d996a1306f32}{\index{raw\-\_\-urlparser@{raw\-\_\-urlparser}!mb\-\_\-usd@{mb\-\_\-usd}}
+\index{mb\-\_\-usd@{mb\-\_\-usd}!raw_urlparser@{raw\-\_\-urlparser}}
+\subsubsection[{mb\-\_\-usd}]{\setlength{\rightskip}{0pt plus 5cm}tuple raw\-\_\-urlparser.\-mb\-\_\-usd = {\bf Xbt\-Prices}(dt, sell, buy, \char`\"{}Mercado\-Bitcoin\char`\"{}, \char`\"{}U\-S\-D\char`\"{})}}\label{namespaceraw__urlparser_a49f2920b4f7718df58d6d996a1306f32}
+
+
+Definition at line 307 of file raw\-\_\-urlparser.\-py.
+
+\hypertarget{namespaceraw__urlparser_ac9d30be4f20423526dc111ebaba51cfe}{\index{raw\-\_\-urlparser@{raw\-\_\-urlparser}!ok@{ok}}
+\index{ok@{ok}!raw_urlparser@{raw\-\_\-urlparser}}
+\subsubsection[{ok}]{\setlength{\rightskip}{0pt plus 5cm}tuple raw\-\_\-urlparser.\-ok = {\bf Xbt\-Prices}(dt, sell, buy, \char`\"{}Ok\-Coin\char`\"{}, \char`\"{}U\-S\-D\char`\"{})}}\label{namespaceraw__urlparser_ac9d30be4f20423526dc111ebaba51cfe}
+
+
+Definition at line 322 of file raw\-\_\-urlparser.\-py.
+
+\hypertarget{namespaceraw__urlparser_a8c2d43346322c5d31fa8cb1a9cf5c121}{\index{raw\-\_\-urlparser@{raw\-\_\-urlparser}!ok\-\_\-tupl@{ok\-\_\-tupl}}
+\index{ok\-\_\-tupl@{ok\-\_\-tupl}!raw_urlparser@{raw\-\_\-urlparser}}
+\subsubsection[{ok\-\_\-tupl}]{\setlength{\rightskip}{0pt plus 5cm}tuple raw\-\_\-urlparser.\-ok\-\_\-tupl = {\bf get\-\_\-ok\-\_\-rates}({\bf u\-\_\-ok})}}\label{namespaceraw__urlparser_a8c2d43346322c5d31fa8cb1a9cf5c121}
+
+
+Definition at line 319 of file raw\-\_\-urlparser.\-py.
+
+\hypertarget{namespaceraw__urlparser_a876711ddd7ebb3991a35cc1768d1d22c}{\index{raw\-\_\-urlparser@{raw\-\_\-urlparser}!u\-\_\-brl2usd@{u\-\_\-brl2usd}}
+\index{u\-\_\-brl2usd@{u\-\_\-brl2usd}!raw_urlparser@{raw\-\_\-urlparser}}
+\subsubsection[{u\-\_\-brl2usd}]{\setlength{\rightskip}{0pt plus 5cm}string raw\-\_\-urlparser.\-u\-\_\-brl2usd = 'https\-://www.\-google.\-com/finance/converter?a=1\&from=B\-R\-L\&to=U\-S\-D'}}\label{namespaceraw__urlparser_a876711ddd7ebb3991a35cc1768d1d22c}
+
+
+Definition at line 255 of file raw\-\_\-urlparser.\-py.
+
+\hypertarget{namespaceraw__urlparser_a9a840f174b92a24c415b88c87e84b73d}{\index{raw\-\_\-urlparser@{raw\-\_\-urlparser}!u\-\_\-mb@{u\-\_\-mb}}
+\index{u\-\_\-mb@{u\-\_\-mb}!raw_urlparser@{raw\-\_\-urlparser}}
+\subsubsection[{u\-\_\-mb}]{\setlength{\rightskip}{0pt plus 5cm}string raw\-\_\-urlparser.\-u\-\_\-mb = 'https\-://www.\-mercadobitcoin.\-net/api/ticker/'}}\label{namespaceraw__urlparser_a9a840f174b92a24c415b88c87e84b73d}
+
+
+Definition at line 293 of file raw\-\_\-urlparser.\-py.
+
+\hypertarget{namespaceraw__urlparser_a22c1a17803a88426d38d70ad6d4290d2}{\index{raw\-\_\-urlparser@{raw\-\_\-urlparser}!u\-\_\-ok@{u\-\_\-ok}}
+\index{u\-\_\-ok@{u\-\_\-ok}!raw_urlparser@{raw\-\_\-urlparser}}
+\subsubsection[{u\-\_\-ok}]{\setlength{\rightskip}{0pt plus 5cm}string raw\-\_\-urlparser.\-u\-\_\-ok = 'https\-://www.\-okcoin.\-com/api/v1/ticker.\-do?symbol=btc\-\_\-usd'}}\label{namespaceraw__urlparser_a22c1a17803a88426d38d70ad6d4290d2}
+
+
+Definition at line 317 of file raw\-\_\-urlparser.\-py.
+
+\hypertarget{namespaceraw__urlparser_a63e1f0abe7b1f43c4891ce9aec98261d}{\index{raw\-\_\-urlparser@{raw\-\_\-urlparser}!u\-\_\-usd2brl@{u\-\_\-usd2brl}}
+\index{u\-\_\-usd2brl@{u\-\_\-usd2brl}!raw_urlparser@{raw\-\_\-urlparser}}
+\subsubsection[{u\-\_\-usd2brl}]{\setlength{\rightskip}{0pt plus 5cm}string raw\-\_\-urlparser.\-u\-\_\-usd2brl = 'https\-://www.\-google.\-com/finance/converter?a=1\&from=U\-S\-D\&to=B\-R\-L'}}\label{namespaceraw__urlparser_a63e1f0abe7b1f43c4891ce9aec98261d}
+
+
+Definition at line 251 of file raw\-\_\-urlparser.\-py.
+
+\hypertarget{namespaceraw__urlparser_a9242b893f4f49ef7cc0d4e599b70daa4}{\index{raw\-\_\-urlparser@{raw\-\_\-urlparser}!url@{url}}
+\index{url@{url}!raw_urlparser@{raw\-\_\-urlparser}}
+\subsubsection[{url}]{\setlength{\rightskip}{0pt plus 5cm}string raw\-\_\-urlparser.\-url = 'http\-://www.\-x-\/rates.\-com/table/?from=U\-S\-D\&amount=1'}}\label{namespaceraw__urlparser_a9242b893f4f49ef7cc0d4e599b70daa4}
+
+
+Definition at line 275 of file raw\-\_\-urlparser.\-py.
+
+\hypertarget{namespaceraw__urlparser_aded92a1146e1ce1f14fd79a361f947f9}{\index{raw\-\_\-urlparser@{raw\-\_\-urlparser}!urls@{urls}}
+\index{urls@{urls}!raw_urlparser@{raw\-\_\-urlparser}}
+\subsubsection[{urls}]{\setlength{\rightskip}{0pt plus 5cm}tuple raw\-\_\-urlparser.\-urls = ({\bf u\-\_\-usd2brl}, {\bf u\-\_\-brl2usd})}}\label{namespaceraw__urlparser_aded92a1146e1ce1f14fd79a361f947f9}
+
+
+Definition at line 259 of file raw\-\_\-urlparser.\-py.
+
+\hypertarget{namespaceraw__urlparser_a26bc8d57698e57014b8c066074fb9937}{\index{raw\-\_\-urlparser@{raw\-\_\-urlparser}!x\-\_\-rates@{x\-\_\-rates}}
+\index{x\-\_\-rates@{x\-\_\-rates}!raw_urlparser@{raw\-\_\-urlparser}}
+\subsubsection[{x\-\_\-rates}]{\setlength{\rightskip}{0pt plus 5cm}tuple raw\-\_\-urlparser.\-x\-\_\-rates = {\bf Rates}(dt, {\bf brl2usd}, usd2brl, \char`\"{}X-\/{\bf Rates}\char`\"{})}}\label{namespaceraw__urlparser_a26bc8d57698e57014b8c066074fb9937}
+
+
+Definition at line 278 of file raw\-\_\-urlparser.\-py.
+
