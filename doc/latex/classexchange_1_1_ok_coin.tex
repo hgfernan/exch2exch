@@ -26,24 +26,26 @@ Collaboration diagram for exchange.\-Ok\-Coin\-:
 \item 
 def \hyperlink{classexchange_1_1_ok_coin_a2df16234d373d0ac04a019917e612b70}{\-\_\-\-\_\-init\-\_\-\-\_\-}
 \item 
-def \hyperlink{classexchange_1_1_ok_coin_accf1d2bd5080a096f37fe64282acf915}{process\-\_\-json}
+def \hyperlink{classexchange_1_1_ok_coin_a563fd2032e890cb41592fad56ddf704e}{get\-\_\-exch\-\_\-name}
 \item 
 def \hyperlink{classexchange_1_1_ok_coin_ae4fed29a4c9e9466849b05f4c0537eba}{get\-\_\-ticker}
+\item 
+def \hyperlink{classexchange_1_1_ok_coin_a68de0ed0c8e15df62ee3c116127d960b}{process\-\_\-ticker}
 \end{DoxyCompactItemize}
 \subsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classexchange_1_1_ok_coin_a0fe6263a7f58a6fa8a688929976b7e4a}{ts}
-\item 
 \hyperlink{classexchange_1_1_ok_coin_aaf828e37142a83cbfb12d193313f6d43}{buy}
 \item 
-\hyperlink{classexchange_1_1_ok_coin_aadb487d2e2f277374a747e1bcb0bd40b}{sell}
+\hyperlink{classexchange_1_1_ok_coin_ade9d7cddcfa54f2b1ba5452854bfd48b}{dt}
 \item 
 \hyperlink{classexchange_1_1_ok_coin_af9d9dbcfc86404510e7f9a5704e8eecd}{high}
 \item 
 \hyperlink{classexchange_1_1_ok_coin_a1afa53e0ad63830d0585288abea42094}{low}
 \item 
-\hyperlink{classexchange_1_1_ok_coin_ade9d7cddcfa54f2b1ba5452854bfd48b}{dt}
+\hyperlink{classexchange_1_1_ok_coin_aadb487d2e2f277374a747e1bcb0bd40b}{sell}
+\item 
+\hyperlink{classexchange_1_1_ok_coin_a0fe6263a7f58a6fa8a688929976b7e4a}{ts}
 \end{DoxyCompactItemize}
 \subsection*{Static Public Attributes}
 \begin{DoxyCompactItemize}
@@ -55,7 +57,7 @@ string \hyperlink{classexchange_1_1_ok_coin_a81305ced2eb23b94feb7195d1d42afc2}{U
 \subsection{Detailed Description}
 
 
-Definition at line 118 of file exchange.\-py.
+Definition at line 174 of file exchange.\-py.
 
 
 
@@ -69,18 +71,36 @@ Definition at line 118 of file exchange.\-py.
 )}}\label{classexchange_1_1_ok_coin_a2df16234d373d0ac04a019917e612b70}
 
 
-Definition at line 121 of file exchange.\-py.
+Definition at line 177 of file exchange.\-py.
 
 
 \begin{DoxyCode}
-121 
-122     \textcolor{keyword}{def }\hyperlink{classexchange_1_1_ok_coin_a2df16234d373d0ac04a019917e612b70}{\_\_init\_\_} (self):
-123         super ().\_\_init\_\_ ()
+177 
+178     \textcolor{keyword}{def }\hyperlink{classexchange_1_1_ok_coin_a2df16234d373d0ac04a019917e612b70}{\_\_init\_\_} (self):
+179         super ().\_\_init\_\_ ()
         
 \end{DoxyCode}
 
 
 \subsection{Member Function Documentation}
+\hypertarget{classexchange_1_1_ok_coin_a563fd2032e890cb41592fad56ddf704e}{\index{exchange\-::\-Ok\-Coin@{exchange\-::\-Ok\-Coin}!get\-\_\-exch\-\_\-name@{get\-\_\-exch\-\_\-name}}
+\index{get\-\_\-exch\-\_\-name@{get\-\_\-exch\-\_\-name}!exchange::OkCoin@{exchange\-::\-Ok\-Coin}}
+\subsubsection[{get\-\_\-exch\-\_\-name}]{\setlength{\rightskip}{0pt plus 5cm}def exchange.\-Ok\-Coin.\-get\-\_\-exch\-\_\-name (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}\label{classexchange_1_1_ok_coin_a563fd2032e890cb41592fad56ddf704e}
+
+
+Definition at line 202 of file exchange.\-py.
+
+
+\begin{DoxyCode}
+202 
+203     \textcolor{keyword}{def }\hyperlink{classexchange_1_1_ok_coin_a563fd2032e890cb41592fad56ddf704e}{get\_exch\_name} (self):
+204         \textcolor{keywordflow}{return} \textcolor{stringliteral}{"OkCoin"}
+
+\end{DoxyCode}
 \hypertarget{classexchange_1_1_ok_coin_ae4fed29a4c9e9466849b05f4c0537eba}{\index{exchange\-::\-Ok\-Coin@{exchange\-::\-Ok\-Coin}!get\-\_\-ticker@{get\-\_\-ticker}}
 \index{get\-\_\-ticker@{get\-\_\-ticker}!exchange::OkCoin@{exchange\-::\-Ok\-Coin}}
 \subsubsection[{get\-\_\-ticker}]{\setlength{\rightskip}{0pt plus 5cm}def exchange.\-Ok\-Coin.\-get\-\_\-ticker (
@@ -90,7 +110,7 @@ Definition at line 121 of file exchange.\-py.
 )}}\label{classexchange_1_1_ok_coin_ae4fed29a4c9e9466849b05f4c0537eba}
 
 
-Definition at line 133 of file exchange.\-py.
+Definition at line 189 of file exchange.\-py.
 
 
 
@@ -98,41 +118,43 @@ References exch2exch.\-Xbt\-Prices.\-buy, exchange.\-Fox\-Bit.\-buy, exchange.\-
 
 
 \begin{DoxyCode}
-133 
-134     \textcolor{keyword}{def }\hyperlink{classexchange_1_1_ok_coin_ae4fed29a4c9e9466849b05f4c0537eba}{get\_ticker} (self):
-135         buy  = self.\hyperlink{classexchange_1_1_ok_coin_aaf828e37142a83cbfb12d193313f6d43}{buy}
-136         sell = self.\hyperlink{classexchange_1_1_ok_coin_aadb487d2e2f277374a747e1bcb0bd40b}{sell}
-137         high = self.\hyperlink{classexchange_1_1_ok_coin_af9d9dbcfc86404510e7f9a5704e8eecd}{high}
-138         low  = self.\hyperlink{classexchange_1_1_ok_coin_a1afa53e0ad63830d0585288abea42094}{low}
-139         dt   = self.\hyperlink{classexchange_1_1_ok_coin_ade9d7cddcfa54f2b1ba5452854bfd48b}{dt}
-140         
-141         result = (dt, sell, buy, high, low)
-142         
-143         \textcolor{keywordflow}{return} result
-
+189 
+190     \textcolor{keyword}{def }\hyperlink{classexchange_1_1_ok_coin_ae4fed29a4c9e9466849b05f4c0537eba}{get\_ticker} (self):
+191         super ().get\_ticker ()
+192         
+193         buy  = self.\hyperlink{classexchange_1_1_ok_coin_aaf828e37142a83cbfb12d193313f6d43}{buy}
+194         sell = self.\hyperlink{classexchange_1_1_ok_coin_aadb487d2e2f277374a747e1bcb0bd40b}{sell}
+195         high = self.\hyperlink{classexchange_1_1_ok_coin_af9d9dbcfc86404510e7f9a5704e8eecd}{high}
+196         low  = self.\hyperlink{classexchange_1_1_ok_coin_a1afa53e0ad63830d0585288abea42094}{low}
+197         dt   = self.\hyperlink{classexchange_1_1_ok_coin_ade9d7cddcfa54f2b1ba5452854bfd48b}{dt}
+198         
+199         result = (dt, sell, buy, high, low)
+200         
+201         \textcolor{keywordflow}{return} result
+    
 \end{DoxyCode}
-\hypertarget{classexchange_1_1_ok_coin_accf1d2bd5080a096f37fe64282acf915}{\index{exchange\-::\-Ok\-Coin@{exchange\-::\-Ok\-Coin}!process\-\_\-json@{process\-\_\-json}}
-\index{process\-\_\-json@{process\-\_\-json}!exchange::OkCoin@{exchange\-::\-Ok\-Coin}}
-\subsubsection[{process\-\_\-json}]{\setlength{\rightskip}{0pt plus 5cm}def exchange.\-Ok\-Coin.\-process\-\_\-json (
+\hypertarget{classexchange_1_1_ok_coin_a68de0ed0c8e15df62ee3c116127d960b}{\index{exchange\-::\-Ok\-Coin@{exchange\-::\-Ok\-Coin}!process\-\_\-ticker@{process\-\_\-ticker}}
+\index{process\-\_\-ticker@{process\-\_\-ticker}!exchange::OkCoin@{exchange\-::\-Ok\-Coin}}
+\subsubsection[{process\-\_\-ticker}]{\setlength{\rightskip}{0pt plus 5cm}def exchange.\-Ok\-Coin.\-process\-\_\-ticker (
 \begin{DoxyParamCaption}
 \item[{}]{self}
 \end{DoxyParamCaption}
-)}}\label{classexchange_1_1_ok_coin_accf1d2bd5080a096f37fe64282acf915}
+)}}\label{classexchange_1_1_ok_coin_a68de0ed0c8e15df62ee3c116127d960b}
 
 
-Definition at line 124 of file exchange.\-py.
+Definition at line 180 of file exchange.\-py.
 
 
 \begin{DoxyCode}
-124 
-125     \textcolor{keyword}{def }\hyperlink{classexchange_1_1_ok_coin_accf1d2bd5080a096f37fe64282acf915}{process\_json} (self):
-126         self.\hyperlink{classexchange_1_1_ok_coin_a0fe6263a7f58a6fa8a688929976b7e4a}{ts}   = int   (self.\hyperlink{classexchange_1_1_exchange_a6ce8e0779d98031b1cd9200d2a0fa5ad}{json}[\textcolor{stringliteral}{'date'}])
-127         self.\hyperlink{classexchange_1_1_ok_coin_aaf828e37142a83cbfb12d193313f6d43}{buy}  = float (self.\hyperlink{classexchange_1_1_exchange_a6ce8e0779d98031b1cd9200d2a0fa5ad}{json}[\textcolor{stringliteral}{'ticker'}][\textcolor{stringliteral}{'buy'}])
-128         self.\hyperlink{classexchange_1_1_ok_coin_aadb487d2e2f277374a747e1bcb0bd40b}{sell} = float (self.\hyperlink{classexchange_1_1_exchange_a6ce8e0779d98031b1cd9200d2a0fa5ad}{json}[\textcolor{stringliteral}{'ticker'}][\textcolor{stringliteral}{'sell'}])
-129         self.\hyperlink{classexchange_1_1_ok_coin_af9d9dbcfc86404510e7f9a5704e8eecd}{high} = float (self.\hyperlink{classexchange_1_1_exchange_a6ce8e0779d98031b1cd9200d2a0fa5ad}{json}[\textcolor{stringliteral}{'ticker'}][\textcolor{stringliteral}{'high'}])
-130         self.\hyperlink{classexchange_1_1_ok_coin_a1afa53e0ad63830d0585288abea42094}{low}  = float (self.\hyperlink{classexchange_1_1_exchange_a6ce8e0779d98031b1cd9200d2a0fa5ad}{json}[\textcolor{stringliteral}{'ticker'}][\textcolor{stringliteral}{'low'}])
-131     
-132         self.\hyperlink{classexchange_1_1_ok_coin_ade9d7cddcfa54f2b1ba5452854bfd48b}{dt} = datetime.datetime.fromtimestamp (float (self.\hyperlink{classexchange_1_1_ok_coin_a0fe6263a7f58a6fa8a688929976b7e4a}{ts}))
+180 
+181     \textcolor{keyword}{def }\hyperlink{classexchange_1_1_ok_coin_a68de0ed0c8e15df62ee3c116127d960b}{process\_ticker} (self):
+182         self.\hyperlink{classexchange_1_1_ok_coin_a0fe6263a7f58a6fa8a688929976b7e4a}{ts}   = int   (self.\hyperlink{classexchange_1_1_exchange_a7cf9e52f993627955a2e242c388daaeb}{ticker}[\textcolor{stringliteral}{'date'}])
+183         self.\hyperlink{classexchange_1_1_ok_coin_aaf828e37142a83cbfb12d193313f6d43}{buy}  = float (self.\hyperlink{classexchange_1_1_exchange_a7cf9e52f993627955a2e242c388daaeb}{ticker}[\textcolor{stringliteral}{'ticker'}][\textcolor{stringliteral}{'buy'}])
+184         self.\hyperlink{classexchange_1_1_ok_coin_aadb487d2e2f277374a747e1bcb0bd40b}{sell} = float (self.\hyperlink{classexchange_1_1_exchange_a7cf9e52f993627955a2e242c388daaeb}{ticker}[\textcolor{stringliteral}{'ticker'}][\textcolor{stringliteral}{'sell'}])
+185         self.\hyperlink{classexchange_1_1_ok_coin_af9d9dbcfc86404510e7f9a5704e8eecd}{high} = float (self.\hyperlink{classexchange_1_1_exchange_a7cf9e52f993627955a2e242c388daaeb}{ticker}[\textcolor{stringliteral}{'ticker'}][\textcolor{stringliteral}{'high'}])
+186         self.\hyperlink{classexchange_1_1_ok_coin_a1afa53e0ad63830d0585288abea42094}{low}  = float (self.\hyperlink{classexchange_1_1_exchange_a7cf9e52f993627955a2e242c388daaeb}{ticker}[\textcolor{stringliteral}{'ticker'}][\textcolor{stringliteral}{'low'}])
+187     
+188         self.\hyperlink{classexchange_1_1_ok_coin_ade9d7cddcfa54f2b1ba5452854bfd48b}{dt} = datetime.datetime.fromtimestamp (float (self.\hyperlink{classexchange_1_1_ok_coin_a0fe6263a7f58a6fa8a688929976b7e4a}{ts}))
     
 \end{DoxyCode}
 
@@ -143,7 +165,7 @@ Definition at line 124 of file exchange.\-py.
 \subsubsection[{buy}]{\setlength{\rightskip}{0pt plus 5cm}exchange.\-Ok\-Coin.\-buy}}\label{classexchange_1_1_ok_coin_aaf828e37142a83cbfb12d193313f6d43}
 
 
-Definition at line 126 of file exchange.\-py.
+Definition at line 182 of file exchange.\-py.
 
 
 
@@ -154,7 +176,7 @@ Referenced by raw\-\_\-urlparser.\-Xbt\-Prices.\-\_\-\-\_\-str\-\_\-\-\_\-(), ex
 \subsubsection[{dt}]{\setlength{\rightskip}{0pt plus 5cm}exchange.\-Ok\-Coin.\-dt}}\label{classexchange_1_1_ok_coin_ade9d7cddcfa54f2b1ba5452854bfd48b}
 
 
-Definition at line 131 of file exchange.\-py.
+Definition at line 187 of file exchange.\-py.
 
 
 
@@ -165,7 +187,7 @@ Referenced by raw\-\_\-urlparser.\-Rates.\-\_\-\-\_\-str\-\_\-\-\_\-(), raw\-\_\
 \subsubsection[{high}]{\setlength{\rightskip}{0pt plus 5cm}exchange.\-Ok\-Coin.\-high}}\label{classexchange_1_1_ok_coin_af9d9dbcfc86404510e7f9a5704e8eecd}
 
 
-Definition at line 128 of file exchange.\-py.
+Definition at line 184 of file exchange.\-py.
 
 
 
@@ -176,7 +198,7 @@ Referenced by exchange.\-Ok\-Coin.\-get\-\_\-ticker().
 \subsubsection[{low}]{\setlength{\rightskip}{0pt plus 5cm}exchange.\-Ok\-Coin.\-low}}\label{classexchange_1_1_ok_coin_a1afa53e0ad63830d0585288abea42094}
 
 
-Definition at line 129 of file exchange.\-py.
+Definition at line 185 of file exchange.\-py.
 
 
 
@@ -187,7 +209,7 @@ Referenced by exchange.\-Ok\-Coin.\-get\-\_\-ticker().
 \subsubsection[{sell}]{\setlength{\rightskip}{0pt plus 5cm}exchange.\-Ok\-Coin.\-sell}}\label{classexchange_1_1_ok_coin_aadb487d2e2f277374a747e1bcb0bd40b}
 
 
-Definition at line 127 of file exchange.\-py.
+Definition at line 183 of file exchange.\-py.
 
 
 
@@ -198,14 +220,14 @@ Referenced by raw\-\_\-urlparser.\-Xbt\-Prices.\-\_\-\-\_\-str\-\_\-\-\_\-(), ex
 \subsubsection[{ts}]{\setlength{\rightskip}{0pt plus 5cm}exchange.\-Ok\-Coin.\-ts}}\label{classexchange_1_1_ok_coin_a0fe6263a7f58a6fa8a688929976b7e4a}
 
 
-Definition at line 125 of file exchange.\-py.
+Definition at line 181 of file exchange.\-py.
 
 \hypertarget{classexchange_1_1_ok_coin_a81305ced2eb23b94feb7195d1d42afc2}{\index{exchange\-::\-Ok\-Coin@{exchange\-::\-Ok\-Coin}!U\-\_\-\-T\-I\-C\-K\-E\-R@{U\-\_\-\-T\-I\-C\-K\-E\-R}}
 \index{U\-\_\-\-T\-I\-C\-K\-E\-R@{U\-\_\-\-T\-I\-C\-K\-E\-R}!exchange::OkCoin@{exchange\-::\-Ok\-Coin}}
 \subsubsection[{U\-\_\-\-T\-I\-C\-K\-E\-R}]{\setlength{\rightskip}{0pt plus 5cm}string exchange.\-Ok\-Coin.\-U\-\_\-\-T\-I\-C\-K\-E\-R = 'https\-://www.\-okcoin.\-com/api/v1/ticker.\-do?symbol=btc\-\_\-usd'\hspace{0.3cm}{\ttfamily [static]}}}\label{classexchange_1_1_ok_coin_a81305ced2eb23b94feb7195d1d42afc2}
 
 
-Definition at line 119 of file exchange.\-py.
+Definition at line 175 of file exchange.\-py.
 
 
 

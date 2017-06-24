@@ -26,34 +26,40 @@ Collaboration diagram for exchange.\-Fox\-Bit\-:
 \item 
 def \hyperlink{classexchange_1_1_fox_bit_aeeafe8e1c8237d514ce89c97727ed61d}{\-\_\-\-\_\-init\-\_\-\-\_\-}
 \item 
-def \hyperlink{classexchange_1_1_fox_bit_a39b6db26f882648f4dfb25d78608ed1d}{process\-\_\-json}
+def \hyperlink{classexchange_1_1_fox_bit_a9a72f6a5be4e42688d38f83bcd80aab3}{get\-\_\-exch\-\_\-name}
 \item 
 def \hyperlink{classexchange_1_1_fox_bit_a4a2bd57624f0aed8e1bf22ce6399bd3e}{get\-\_\-ticker}
+\item 
+def \hyperlink{classexchange_1_1_fox_bit_ae9e9965d6e92ab9413e17637ea22feb7}{get\-\_\-trades}
+\item 
+def \hyperlink{classexchange_1_1_fox_bit_a048fcf7385a868f1834ad3898bdfec2d}{process\-\_\-ticker}
+\item 
+def \hyperlink{classexchange_1_1_fox_bit_a02f1d212907016aa1da6bac19821ea43}{process\-\_\-trades}
 \end{DoxyCompactItemize}
 \subsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
 \hyperlink{classexchange_1_1_fox_bit_acb7e709cc05e8314b1bdacd32e4dfc80}{buy}
 \item 
-\hyperlink{classexchange_1_1_fox_bit_ac1fae4ef7a43254b71d7173a5cc6eeaf}{sell}
+\hyperlink{classexchange_1_1_fox_bit_a363f8488eb0423f88519c085ae6f168f}{dt}
 \item 
 \hyperlink{classexchange_1_1_fox_bit_a4f6dfaecbcc17ceadddf52d266d9c00d}{high}
 \item 
 \hyperlink{classexchange_1_1_fox_bit_acd666444cff98fe477651120ddb0f915}{low}
 \item 
-\hyperlink{classexchange_1_1_fox_bit_a363f8488eb0423f88519c085ae6f168f}{dt}
+\hyperlink{classexchange_1_1_fox_bit_ac1fae4ef7a43254b71d7173a5cc6eeaf}{sell}
 \end{DoxyCompactItemize}
 \subsection*{Static Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-string \hyperlink{classexchange_1_1_fox_bit_a7ba3f64a2b55479da2239393c6140ec8}{U\-\_\-\-T\-I\-C\-K\-E\-R} = 'https\-://api.\-blinktrade.\-com/api/v1/B\-R\-L/ticker?crypto\-\_\-currency=B\-T\-C'
+string \hyperlink{classexchange_1_1_fox_bit_a7ba3f64a2b55479da2239393c6140ec8}{U\-\_\-\-T\-I\-C\-K\-E\-R} = 'https\-://api.\-blinktrade.\-com/api/v1/B\-R\-L/\hyperlink{classexchange_1_1_exchange_a7cf9e52f993627955a2e242c388daaeb}{ticker}?crypto\-\_\-currency=B\-T\-C'
 \end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
 
 
-Definition at line 63 of file exchange.\-py.
+Definition at line 87 of file exchange.\-py.
 
 
 
@@ -67,18 +73,36 @@ Definition at line 63 of file exchange.\-py.
 )}}\label{classexchange_1_1_fox_bit_aeeafe8e1c8237d514ce89c97727ed61d}
 
 
-Definition at line 66 of file exchange.\-py.
+Definition at line 90 of file exchange.\-py.
 
 
 \begin{DoxyCode}
-66 
-67     \textcolor{keyword}{def }\hyperlink{classexchange_1_1_fox_bit_aeeafe8e1c8237d514ce89c97727ed61d}{\_\_init\_\_} (self):
-68         super ().\_\_init\_\_ ()
+90 
+91     \textcolor{keyword}{def }\hyperlink{classexchange_1_1_fox_bit_aeeafe8e1c8237d514ce89c97727ed61d}{\_\_init\_\_} (self):
+92         super ().\_\_init\_\_ ()
         
 \end{DoxyCode}
 
 
 \subsection{Member Function Documentation}
+\hypertarget{classexchange_1_1_fox_bit_a9a72f6a5be4e42688d38f83bcd80aab3}{\index{exchange\-::\-Fox\-Bit@{exchange\-::\-Fox\-Bit}!get\-\_\-exch\-\_\-name@{get\-\_\-exch\-\_\-name}}
+\index{get\-\_\-exch\-\_\-name@{get\-\_\-exch\-\_\-name}!exchange::FoxBit@{exchange\-::\-Fox\-Bit}}
+\subsubsection[{get\-\_\-exch\-\_\-name}]{\setlength{\rightskip}{0pt plus 5cm}def exchange.\-Fox\-Bit.\-get\-\_\-exch\-\_\-name (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}\label{classexchange_1_1_fox_bit_a9a72f6a5be4e42688d38f83bcd80aab3}
+
+
+Definition at line 136 of file exchange.\-py.
+
+
+\begin{DoxyCode}
+136 
+137     \textcolor{keyword}{def }\hyperlink{classexchange_1_1_fox_bit_a9a72f6a5be4e42688d38f83bcd80aab3}{get\_exch\_name} (self):
+138         \textcolor{keywordflow}{return} \textcolor{stringliteral}{"FoxBit"}
+                
+\end{DoxyCode}
 \hypertarget{classexchange_1_1_fox_bit_a4a2bd57624f0aed8e1bf22ce6399bd3e}{\index{exchange\-::\-Fox\-Bit@{exchange\-::\-Fox\-Bit}!get\-\_\-ticker@{get\-\_\-ticker}}
 \index{get\-\_\-ticker@{get\-\_\-ticker}!exchange::FoxBit@{exchange\-::\-Fox\-Bit}}
 \subsubsection[{get\-\_\-ticker}]{\setlength{\rightskip}{0pt plus 5cm}def exchange.\-Fox\-Bit.\-get\-\_\-ticker (
@@ -88,7 +112,39 @@ Definition at line 66 of file exchange.\-py.
 )}}\label{classexchange_1_1_fox_bit_a4a2bd57624f0aed8e1bf22ce6399bd3e}
 
 
-Definition at line 79 of file exchange.\-py.
+Definition at line 99 of file exchange.\-py.
+
+
+
+References exchange.\-Exchange.\-ticker.
+
+
+\begin{DoxyCode}
+99 
+100     \textcolor{keyword}{def }\hyperlink{classexchange_1_1_fox_bit_a4a2bd57624f0aed8e1bf22ce6399bd3e}{get\_ticker} (self):
+101         super ().get\_ticker ()
+102         
+103         buy  = float (self.\hyperlink{classexchange_1_1_exchange_a7cf9e52f993627955a2e242c388daaeb}{ticker}[\textcolor{stringliteral}{'buy'}])
+104         sell = float (self.\hyperlink{classexchange_1_1_exchange_a7cf9e52f993627955a2e242c388daaeb}{ticker}[\textcolor{stringliteral}{'sell'}])
+105         high = float (self.\hyperlink{classexchange_1_1_exchange_a7cf9e52f993627955a2e242c388daaeb}{ticker}[\textcolor{stringliteral}{'high'}])
+106         low  = float (self.\hyperlink{classexchange_1_1_exchange_a7cf9e52f993627955a2e242c388daaeb}{ticker}[\textcolor{stringliteral}{'low'}])
+107         dt   = self.\hyperlink{classexchange_1_1_exchange_a7cf9e52f993627955a2e242c388daaeb}{ticker}[\textcolor{stringliteral}{'date'}]
+108         
+109         result = (dt, sell, buy, high, low)
+110         
+111         \textcolor{keywordflow}{return} result
+        
+\end{DoxyCode}
+\hypertarget{classexchange_1_1_fox_bit_ae9e9965d6e92ab9413e17637ea22feb7}{\index{exchange\-::\-Fox\-Bit@{exchange\-::\-Fox\-Bit}!get\-\_\-trades@{get\-\_\-trades}}
+\index{get\-\_\-trades@{get\-\_\-trades}!exchange::FoxBit@{exchange\-::\-Fox\-Bit}}
+\subsubsection[{get\-\_\-trades}]{\setlength{\rightskip}{0pt plus 5cm}def exchange.\-Fox\-Bit.\-get\-\_\-trades (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}\label{classexchange_1_1_fox_bit_ae9e9965d6e92ab9413e17637ea22feb7}
+
+
+Definition at line 123 of file exchange.\-py.
 
 
 
@@ -96,42 +152,70 @@ References exch2exch.\-Xbt\-Prices.\-buy, exchange.\-Fox\-Bit.\-buy, exch2exch.\
 
 
 \begin{DoxyCode}
-79 
-80     \textcolor{keyword}{def }\hyperlink{classexchange_1_1_fox_bit_a4a2bd57624f0aed8e1bf22ce6399bd3e}{get\_ticker} (self):
-81         buy  = self.\hyperlink{classexchange_1_1_fox_bit_acb7e709cc05e8314b1bdacd32e4dfc80}{buy}
-82         sell = self.\hyperlink{classexchange_1_1_fox_bit_ac1fae4ef7a43254b71d7173a5cc6eeaf}{sell}
-83         high = self.\hyperlink{classexchange_1_1_fox_bit_a4f6dfaecbcc17ceadddf52d266d9c00d}{high}
-84         low  = self.\hyperlink{classexchange_1_1_fox_bit_acd666444cff98fe477651120ddb0f915}{low}
-85         dt   = self.\hyperlink{classexchange_1_1_fox_bit_a363f8488eb0423f88519c085ae6f168f}{dt}
-86         
-87         result = (dt, sell, buy, high, low)
-88         
-89         \textcolor{keywordflow}{return} result
-        
+123 
+124     \textcolor{keyword}{def }\hyperlink{classexchange_1_1_fox_bit_ae9e9965d6e92ab9413e17637ea22feb7}{get\_trades} (self):
+125         super ().get\_ticker ()
+126         
+127         buy  = self.\hyperlink{classexchange_1_1_fox_bit_acb7e709cc05e8314b1bdacd32e4dfc80}{buy}
+128         sell = self.\hyperlink{classexchange_1_1_fox_bit_ac1fae4ef7a43254b71d7173a5cc6eeaf}{sell}
+129         high = self.\hyperlink{classexchange_1_1_fox_bit_a4f6dfaecbcc17ceadddf52d266d9c00d}{high}
+130         low  = self.\hyperlink{classexchange_1_1_fox_bit_acd666444cff98fe477651120ddb0f915}{low}
+131         dt   = self.\hyperlink{classexchange_1_1_fox_bit_a363f8488eb0423f88519c085ae6f168f}{dt}
+132         
+133         result = (dt, sell, buy, high, low)
+134         
+135         \textcolor{keywordflow}{return} result
+    
 \end{DoxyCode}
-\hypertarget{classexchange_1_1_fox_bit_a39b6db26f882648f4dfb25d78608ed1d}{\index{exchange\-::\-Fox\-Bit@{exchange\-::\-Fox\-Bit}!process\-\_\-json@{process\-\_\-json}}
-\index{process\-\_\-json@{process\-\_\-json}!exchange::FoxBit@{exchange\-::\-Fox\-Bit}}
-\subsubsection[{process\-\_\-json}]{\setlength{\rightskip}{0pt plus 5cm}def exchange.\-Fox\-Bit.\-process\-\_\-json (
+\hypertarget{classexchange_1_1_fox_bit_a048fcf7385a868f1834ad3898bdfec2d}{\index{exchange\-::\-Fox\-Bit@{exchange\-::\-Fox\-Bit}!process\-\_\-ticker@{process\-\_\-ticker}}
+\index{process\-\_\-ticker@{process\-\_\-ticker}!exchange::FoxBit@{exchange\-::\-Fox\-Bit}}
+\subsubsection[{process\-\_\-ticker}]{\setlength{\rightskip}{0pt plus 5cm}def exchange.\-Fox\-Bit.\-process\-\_\-ticker (
 \begin{DoxyParamCaption}
 \item[{}]{self}
 \end{DoxyParamCaption}
-)}}\label{classexchange_1_1_fox_bit_a39b6db26f882648f4dfb25d78608ed1d}
+)}}\label{classexchange_1_1_fox_bit_a048fcf7385a868f1834ad3898bdfec2d}
 
 
-Definition at line 69 of file exchange.\-py.
+Definition at line 93 of file exchange.\-py.
+
+
+
+References exchange.\-Exchange.\-ticker.
 
 
 \begin{DoxyCode}
-69 
-70     \textcolor{keyword}{def }\hyperlink{classexchange_1_1_fox_bit_a39b6db26f882648f4dfb25d78608ed1d}{process\_json} (self):
-71         \textcolor{comment}{# TODO get the date from the computer ?}
-72 \textcolor{comment}{#        self.ts   = int   (self.json['date'])}
-73         self.\hyperlink{classexchange_1_1_fox_bit_acb7e709cc05e8314b1bdacd32e4dfc80}{buy}  = float (self.\hyperlink{classexchange_1_1_exchange_a6ce8e0779d98031b1cd9200d2a0fa5ad}{json}[\textcolor{stringliteral}{'buy'}])
-74         self.\hyperlink{classexchange_1_1_fox_bit_ac1fae4ef7a43254b71d7173a5cc6eeaf}{sell} = float (self.\hyperlink{classexchange_1_1_exchange_a6ce8e0779d98031b1cd9200d2a0fa5ad}{json}[\textcolor{stringliteral}{'sell'}])
-75         self.\hyperlink{classexchange_1_1_fox_bit_a4f6dfaecbcc17ceadddf52d266d9c00d}{high} = float (self.\hyperlink{classexchange_1_1_exchange_a6ce8e0779d98031b1cd9200d2a0fa5ad}{json}[\textcolor{stringliteral}{'high'}])
-76         self.\hyperlink{classexchange_1_1_fox_bit_acd666444cff98fe477651120ddb0f915}{low}  = float (self.\hyperlink{classexchange_1_1_exchange_a6ce8e0779d98031b1cd9200d2a0fa5ad}{json}[\textcolor{stringliteral}{'low'}])
-77     
-78         self.\hyperlink{classexchange_1_1_fox_bit_a363f8488eb0423f88519c085ae6f168f}{dt} = datetime.datetime.now ()
+93 
+94     \textcolor{keyword}{def }\hyperlink{classexchange_1_1_fox_bit_a048fcf7385a868f1834ad3898bdfec2d}{process\_ticker} (self):
+95         \textcolor{comment}{# TODO get the date from the computer ?}
+96 \textcolor{comment}{#        self.ts   = int   (self.ticker['date'])}
+97         self.\hyperlink{classexchange_1_1_exchange_a7cf9e52f993627955a2e242c388daaeb}{ticker}[\textcolor{stringliteral}{'date'}] = datetime.datetime.now ()
+98         \textcolor{comment}{# TODO generate ts from dt}
+     
+\end{DoxyCode}
+\hypertarget{classexchange_1_1_fox_bit_a02f1d212907016aa1da6bac19821ea43}{\index{exchange\-::\-Fox\-Bit@{exchange\-::\-Fox\-Bit}!process\-\_\-trades@{process\-\_\-trades}}
+\index{process\-\_\-trades@{process\-\_\-trades}!exchange::FoxBit@{exchange\-::\-Fox\-Bit}}
+\subsubsection[{process\-\_\-trades}]{\setlength{\rightskip}{0pt plus 5cm}def exchange.\-Fox\-Bit.\-process\-\_\-trades (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}\label{classexchange_1_1_fox_bit_a02f1d212907016aa1da6bac19821ea43}
+
+
+Definition at line 112 of file exchange.\-py.
+
+
+\begin{DoxyCode}
+112 
+113     \textcolor{keyword}{def }\hyperlink{classexchange_1_1_fox_bit_a02f1d212907016aa1da6bac19821ea43}{process\_trades} (self):
+114         \textcolor{comment}{# TODO get the date from the computer ?}
+115 \textcolor{comment}{#        self.ts   = int   (self.ticker['date'])}
+116         self.\hyperlink{classexchange_1_1_fox_bit_acb7e709cc05e8314b1bdacd32e4dfc80}{buy}  = float (self.\hyperlink{classexchange_1_1_exchange_a7cf9e52f993627955a2e242c388daaeb}{ticker}[\textcolor{stringliteral}{'buy'}])
+117         self.\hyperlink{classexchange_1_1_fox_bit_ac1fae4ef7a43254b71d7173a5cc6eeaf}{sell} = float (self.\hyperlink{classexchange_1_1_exchange_a7cf9e52f993627955a2e242c388daaeb}{ticker}[\textcolor{stringliteral}{'sell'}])
+118         self.\hyperlink{classexchange_1_1_fox_bit_a4f6dfaecbcc17ceadddf52d266d9c00d}{high} = float (self.\hyperlink{classexchange_1_1_exchange_a7cf9e52f993627955a2e242c388daaeb}{ticker}[\textcolor{stringliteral}{'high'}])
+119         self.\hyperlink{classexchange_1_1_fox_bit_acd666444cff98fe477651120ddb0f915}{low}  = float (self.\hyperlink{classexchange_1_1_exchange_a7cf9e52f993627955a2e242c388daaeb}{ticker}[\textcolor{stringliteral}{'low'}])
+120     
+121         self.\hyperlink{classexchange_1_1_fox_bit_a363f8488eb0423f88519c085ae6f168f}{dt} = datetime.datetime.now ()
+122         \textcolor{comment}{# TODO generate ts from dt}
      
 \end{DoxyCode}
 
@@ -142,62 +226,62 @@ Definition at line 69 of file exchange.\-py.
 \subsubsection[{buy}]{\setlength{\rightskip}{0pt plus 5cm}exchange.\-Fox\-Bit.\-buy}}\label{classexchange_1_1_fox_bit_acb7e709cc05e8314b1bdacd32e4dfc80}
 
 
-Definition at line 72 of file exchange.\-py.
+Definition at line 115 of file exchange.\-py.
 
 
 
-Referenced by raw\-\_\-urlparser.\-Xbt\-Prices.\-\_\-\-\_\-str\-\_\-\-\_\-(), exchange.\-Fox\-Bit.\-get\-\_\-ticker(), exchange.\-Mercado\-Bitcoin.\-get\-\_\-ticker(), exchange.\-Ok\-Coin.\-get\-\_\-ticker(), and raw\-\_\-urlparser.\-Xbt\-Prices.\-get\-Buy().
+Referenced by raw\-\_\-urlparser.\-Xbt\-Prices.\-\_\-\-\_\-str\-\_\-\-\_\-(), exchange.\-Mercado\-Bitcoin.\-get\-\_\-ticker(), exchange.\-Ok\-Coin.\-get\-\_\-ticker(), exchange.\-Fox\-Bit.\-get\-\_\-trades(), and raw\-\_\-urlparser.\-Xbt\-Prices.\-get\-Buy().
 
 \hypertarget{classexchange_1_1_fox_bit_a363f8488eb0423f88519c085ae6f168f}{\index{exchange\-::\-Fox\-Bit@{exchange\-::\-Fox\-Bit}!dt@{dt}}
 \index{dt@{dt}!exchange::FoxBit@{exchange\-::\-Fox\-Bit}}
 \subsubsection[{dt}]{\setlength{\rightskip}{0pt plus 5cm}exchange.\-Fox\-Bit.\-dt}}\label{classexchange_1_1_fox_bit_a363f8488eb0423f88519c085ae6f168f}
 
 
-Definition at line 77 of file exchange.\-py.
+Definition at line 120 of file exchange.\-py.
 
 
 
-Referenced by raw\-\_\-urlparser.\-Rates.\-\_\-\-\_\-str\-\_\-\-\_\-(), raw\-\_\-urlparser.\-Xbt\-Prices.\-\_\-\-\_\-str\-\_\-\-\_\-(), exchange.\-Fox\-Bit.\-get\-\_\-ticker(), exchange.\-Mercado\-Bitcoin.\-get\-\_\-ticker(), exchange.\-Ok\-Coin.\-get\-\_\-ticker(), and raw\-\_\-urlparser.\-Xbt\-Prices.\-get\-Date\-Time().
+Referenced by raw\-\_\-urlparser.\-Rates.\-\_\-\-\_\-str\-\_\-\-\_\-(), raw\-\_\-urlparser.\-Xbt\-Prices.\-\_\-\-\_\-str\-\_\-\-\_\-(), exchange.\-Mercado\-Bitcoin.\-get\-\_\-ticker(), exchange.\-Ok\-Coin.\-get\-\_\-ticker(), exchange.\-Fox\-Bit.\-get\-\_\-trades(), and raw\-\_\-urlparser.\-Xbt\-Prices.\-get\-Date\-Time().
 
 \hypertarget{classexchange_1_1_fox_bit_a4f6dfaecbcc17ceadddf52d266d9c00d}{\index{exchange\-::\-Fox\-Bit@{exchange\-::\-Fox\-Bit}!high@{high}}
 \index{high@{high}!exchange::FoxBit@{exchange\-::\-Fox\-Bit}}
 \subsubsection[{high}]{\setlength{\rightskip}{0pt plus 5cm}exchange.\-Fox\-Bit.\-high}}\label{classexchange_1_1_fox_bit_a4f6dfaecbcc17ceadddf52d266d9c00d}
 
 
-Definition at line 74 of file exchange.\-py.
+Definition at line 117 of file exchange.\-py.
 
 
 
-Referenced by exchange.\-Fox\-Bit.\-get\-\_\-ticker(), exchange.\-Mercado\-Bitcoin.\-get\-\_\-ticker(), and exchange.\-Ok\-Coin.\-get\-\_\-ticker().
+Referenced by exchange.\-Mercado\-Bitcoin.\-get\-\_\-ticker(), exchange.\-Ok\-Coin.\-get\-\_\-ticker(), and exchange.\-Fox\-Bit.\-get\-\_\-trades().
 
 \hypertarget{classexchange_1_1_fox_bit_acd666444cff98fe477651120ddb0f915}{\index{exchange\-::\-Fox\-Bit@{exchange\-::\-Fox\-Bit}!low@{low}}
 \index{low@{low}!exchange::FoxBit@{exchange\-::\-Fox\-Bit}}
 \subsubsection[{low}]{\setlength{\rightskip}{0pt plus 5cm}exchange.\-Fox\-Bit.\-low}}\label{classexchange_1_1_fox_bit_acd666444cff98fe477651120ddb0f915}
 
 
-Definition at line 75 of file exchange.\-py.
+Definition at line 118 of file exchange.\-py.
 
 
 
-Referenced by exchange.\-Fox\-Bit.\-get\-\_\-ticker(), exchange.\-Mercado\-Bitcoin.\-get\-\_\-ticker(), and exchange.\-Ok\-Coin.\-get\-\_\-ticker().
+Referenced by exchange.\-Mercado\-Bitcoin.\-get\-\_\-ticker(), exchange.\-Ok\-Coin.\-get\-\_\-ticker(), and exchange.\-Fox\-Bit.\-get\-\_\-trades().
 
 \hypertarget{classexchange_1_1_fox_bit_ac1fae4ef7a43254b71d7173a5cc6eeaf}{\index{exchange\-::\-Fox\-Bit@{exchange\-::\-Fox\-Bit}!sell@{sell}}
 \index{sell@{sell}!exchange::FoxBit@{exchange\-::\-Fox\-Bit}}
 \subsubsection[{sell}]{\setlength{\rightskip}{0pt plus 5cm}exchange.\-Fox\-Bit.\-sell}}\label{classexchange_1_1_fox_bit_ac1fae4ef7a43254b71d7173a5cc6eeaf}
 
 
-Definition at line 73 of file exchange.\-py.
+Definition at line 116 of file exchange.\-py.
 
 
 
-Referenced by raw\-\_\-urlparser.\-Xbt\-Prices.\-\_\-\-\_\-str\-\_\-\-\_\-(), exchange.\-Fox\-Bit.\-get\-\_\-ticker(), exchange.\-Mercado\-Bitcoin.\-get\-\_\-ticker(), exchange.\-Ok\-Coin.\-get\-\_\-ticker(), and raw\-\_\-urlparser.\-Xbt\-Prices.\-get\-Sell().
+Referenced by raw\-\_\-urlparser.\-Xbt\-Prices.\-\_\-\-\_\-str\-\_\-\-\_\-(), exchange.\-Mercado\-Bitcoin.\-get\-\_\-ticker(), exchange.\-Ok\-Coin.\-get\-\_\-ticker(), exchange.\-Fox\-Bit.\-get\-\_\-trades(), and raw\-\_\-urlparser.\-Xbt\-Prices.\-get\-Sell().
 
 \hypertarget{classexchange_1_1_fox_bit_a7ba3f64a2b55479da2239393c6140ec8}{\index{exchange\-::\-Fox\-Bit@{exchange\-::\-Fox\-Bit}!U\-\_\-\-T\-I\-C\-K\-E\-R@{U\-\_\-\-T\-I\-C\-K\-E\-R}}
 \index{U\-\_\-\-T\-I\-C\-K\-E\-R@{U\-\_\-\-T\-I\-C\-K\-E\-R}!exchange::FoxBit@{exchange\-::\-Fox\-Bit}}
-\subsubsection[{U\-\_\-\-T\-I\-C\-K\-E\-R}]{\setlength{\rightskip}{0pt plus 5cm}string exchange.\-Fox\-Bit.\-U\-\_\-\-T\-I\-C\-K\-E\-R = 'https\-://api.\-blinktrade.\-com/api/v1/B\-R\-L/ticker?crypto\-\_\-currency=B\-T\-C'\hspace{0.3cm}{\ttfamily [static]}}}\label{classexchange_1_1_fox_bit_a7ba3f64a2b55479da2239393c6140ec8}
+\subsubsection[{U\-\_\-\-T\-I\-C\-K\-E\-R}]{\setlength{\rightskip}{0pt plus 5cm}string exchange.\-Fox\-Bit.\-U\-\_\-\-T\-I\-C\-K\-E\-R = 'https\-://api.\-blinktrade.\-com/api/v1/B\-R\-L/{\bf ticker}?crypto\-\_\-currency=B\-T\-C'\hspace{0.3cm}{\ttfamily [static]}}}\label{classexchange_1_1_fox_bit_a7ba3f64a2b55479da2239393c6140ec8}
 
 
-Definition at line 64 of file exchange.\-py.
+Definition at line 88 of file exchange.\-py.
 
 
 

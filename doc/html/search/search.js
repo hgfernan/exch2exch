@@ -7,12 +7,12 @@
 
 var indexSectionsWithContent =
 {
-  0: "_bcdefghjlmoprstux",
+  0: "_bcdefghlmoprstux",
   1: "defmorx",
   2: "er",
   3: "er",
-  4: "_gmp",
-  5: "bcdeghjlmorstux",
+  4: "_dgmp",
+  5: "bcdeghlmorstux",
   6: "r"
 };
 

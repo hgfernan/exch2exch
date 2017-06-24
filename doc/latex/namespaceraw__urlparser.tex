@@ -4,11 +4,11 @@
 \subsection*{Classes}
 \begin{DoxyCompactItemize}
 \item 
+class \hyperlink{classraw__urlparser_1_1_differences}{Differences}
+\item 
 class \hyperlink{classraw__urlparser_1_1_rates}{Rates}
 \item 
 class \hyperlink{classraw__urlparser_1_1_xbt_prices}{Xbt\-Prices}
-\item 
-class \hyperlink{classraw__urlparser_1_1_differences}{Differences}
 \end{DoxyCompactItemize}
 \subsection*{Functions}
 \begin{DoxyCompactItemize}
@@ -17,44 +17,44 @@ def \hyperlink{namespaceraw__urlparser_a27ce239a7915c6468e00168213575365}{get\-\
 \item 
 def \hyperlink{namespaceraw__urlparser_a503f638b00ab579b8b829e1dbb95e547}{get\-\_\-google\-\_\-rates}
 \item 
-def \hyperlink{namespaceraw__urlparser_a264ca664879b007ee92399e30ec0d9bc}{get\-\_\-x\-\_\-rates}
-\item 
 def \hyperlink{namespaceraw__urlparser_a56532368ca9848b5f2ab298e3e6232bb}{get\-\_\-mb\-\_\-rates}
 \item 
 def \hyperlink{namespaceraw__urlparser_a3a9d9300bd89d803ca1fddb78145f58e}{get\-\_\-ok\-\_\-rates}
+\item 
+def \hyperlink{namespaceraw__urlparser_a264ca664879b007ee92399e30ec0d9bc}{get\-\_\-x\-\_\-rates}
 \end{DoxyCompactItemize}
 \subsection*{Variables}
 \begin{DoxyCompactItemize}
 \item 
-string \hyperlink{namespaceraw__urlparser_a63e1f0abe7b1f43c4891ce9aec98261d}{u\-\_\-usd2brl} = 'https\-://www.\-google.\-com/finance/converter?a=1\&from=U\-S\-D\&to=B\-R\-L'
+tuple \hyperlink{namespaceraw__urlparser_a382c2b22f2386b1e493674c7d72b9b95}{brl2usd} = google.\-get\-Usd2\-Brl()
 \item 
-string \hyperlink{namespaceraw__urlparser_a876711ddd7ebb3991a35cc1768d1d22c}{u\-\_\-brl2usd} = 'https\-://www.\-google.\-com/finance/converter?a=1\&from=B\-R\-L\&to=U\-S\-D'
-\item 
-tuple \hyperlink{namespaceraw__urlparser_aded92a1146e1ce1f14fd79a361f947f9}{urls} = (\hyperlink{namespaceraw__urlparser_a63e1f0abe7b1f43c4891ce9aec98261d}{u\-\_\-usd2brl}, \hyperlink{namespaceraw__urlparser_a876711ddd7ebb3991a35cc1768d1d22c}{u\-\_\-brl2usd})
+tuple \hyperlink{namespaceraw__urlparser_a2a48999f60075fd5b96e6d540cce34c9}{diff} = \hyperlink{classraw__urlparser_1_1_differences}{Differences}(\hyperlink{namespaceraw__urlparser_a8d7c05a0ed7b2f3a3014caa73a2999d1}{google}, \hyperlink{namespaceraw__urlparser_a49f2920b4f7718df58d6d996a1306f32}{mb\-\_\-usd}, \hyperlink{namespaceraw__urlparser_ac9d30be4f20423526dc111ebaba51cfe}{ok})
 \item 
 tuple \hyperlink{namespaceraw__urlparser_a8d7c05a0ed7b2f3a3014caa73a2999d1}{google} = \hyperlink{classraw__urlparser_1_1_rates}{Rates}(dt, usd2brl, \hyperlink{namespaceraw__urlparser_a382c2b22f2386b1e493674c7d72b9b95}{brl2usd}, \char`\"{}Google\char`\"{})
 \item 
-string \hyperlink{namespaceraw__urlparser_a9242b893f4f49ef7cc0d4e599b70daa4}{url} = 'http\-://www.\-x-\/rates.\-com/table/?from=U\-S\-D\&amount=1'
-\item 
-tuple \hyperlink{namespaceraw__urlparser_a26bc8d57698e57014b8c066074fb9937}{x\-\_\-rates} = \hyperlink{classraw__urlparser_1_1_rates}{Rates}(dt, \hyperlink{namespaceraw__urlparser_a382c2b22f2386b1e493674c7d72b9b95}{brl2usd}, usd2brl, \char`\"{}X-\/\hyperlink{classraw__urlparser_1_1_rates}{Rates}\char`\"{})
-\item 
-string \hyperlink{namespaceraw__urlparser_a9a840f174b92a24c415b88c87e84b73d}{u\-\_\-mb} = 'https\-://www.\-mercadobitcoin.\-net/api/ticker/'
+tuple \hyperlink{namespaceraw__urlparser_a964275295a1dcba5dbdc3b113a75c4bb}{mb} = \hyperlink{classraw__urlparser_1_1_xbt_prices}{Xbt\-Prices}(dt, sell, buy, \char`\"{}Mercado\-Bitcoin\char`\"{}, \char`\"{}B\-R\-L\char`\"{})
 \item 
 tuple \hyperlink{namespaceraw__urlparser_ac8242502920772d4c44b42f24492acd5}{mb\-\_\-tupl} = \hyperlink{namespaceraw__urlparser_a56532368ca9848b5f2ab298e3e6232bb}{get\-\_\-mb\-\_\-rates}(\hyperlink{namespaceraw__urlparser_a9a840f174b92a24c415b88c87e84b73d}{u\-\_\-mb})
 \item 
-tuple \hyperlink{namespaceraw__urlparser_a964275295a1dcba5dbdc3b113a75c4bb}{mb} = \hyperlink{classraw__urlparser_1_1_xbt_prices}{Xbt\-Prices}(dt, sell, buy, \char`\"{}Mercado\-Bitcoin\char`\"{}, \char`\"{}B\-R\-L\char`\"{})
-\item 
-tuple \hyperlink{namespaceraw__urlparser_a382c2b22f2386b1e493674c7d72b9b95}{brl2usd} = google.\-get\-Usd2\-Brl()
-\item 
 tuple \hyperlink{namespaceraw__urlparser_a49f2920b4f7718df58d6d996a1306f32}{mb\-\_\-usd} = \hyperlink{classraw__urlparser_1_1_xbt_prices}{Xbt\-Prices}(dt, sell, buy, \char`\"{}Mercado\-Bitcoin\char`\"{}, \char`\"{}U\-S\-D\char`\"{})
-\item 
-string \hyperlink{namespaceraw__urlparser_a22c1a17803a88426d38d70ad6d4290d2}{u\-\_\-ok} = 'https\-://www.\-okcoin.\-com/api/v1/ticker.\-do?symbol=btc\-\_\-usd'
-\item 
-tuple \hyperlink{namespaceraw__urlparser_a8c2d43346322c5d31fa8cb1a9cf5c121}{ok\-\_\-tupl} = \hyperlink{namespaceraw__urlparser_a3a9d9300bd89d803ca1fddb78145f58e}{get\-\_\-ok\-\_\-rates}(\hyperlink{namespaceraw__urlparser_a22c1a17803a88426d38d70ad6d4290d2}{u\-\_\-ok})
 \item 
 tuple \hyperlink{namespaceraw__urlparser_ac9d30be4f20423526dc111ebaba51cfe}{ok} = \hyperlink{classraw__urlparser_1_1_xbt_prices}{Xbt\-Prices}(dt, sell, buy, \char`\"{}Ok\-Coin\char`\"{}, \char`\"{}U\-S\-D\char`\"{})
 \item 
-tuple \hyperlink{namespaceraw__urlparser_a2a48999f60075fd5b96e6d540cce34c9}{diff} = \hyperlink{classraw__urlparser_1_1_differences}{Differences}(\hyperlink{namespaceraw__urlparser_a8d7c05a0ed7b2f3a3014caa73a2999d1}{google}, \hyperlink{namespaceraw__urlparser_a49f2920b4f7718df58d6d996a1306f32}{mb\-\_\-usd}, \hyperlink{namespaceraw__urlparser_ac9d30be4f20423526dc111ebaba51cfe}{ok})
+tuple \hyperlink{namespaceraw__urlparser_a8c2d43346322c5d31fa8cb1a9cf5c121}{ok\-\_\-tupl} = \hyperlink{namespaceraw__urlparser_a3a9d9300bd89d803ca1fddb78145f58e}{get\-\_\-ok\-\_\-rates}(\hyperlink{namespaceraw__urlparser_a22c1a17803a88426d38d70ad6d4290d2}{u\-\_\-ok})
+\item 
+string \hyperlink{namespaceraw__urlparser_a876711ddd7ebb3991a35cc1768d1d22c}{u\-\_\-brl2usd} = 'https\-://www.\-google.\-com/finance/converter?a=1\&from=B\-R\-L\&to=U\-S\-D'
+\item 
+string \hyperlink{namespaceraw__urlparser_a9a840f174b92a24c415b88c87e84b73d}{u\-\_\-mb} = 'https\-://www.\-mercadobitcoin.\-net/api/ticker/'
+\item 
+string \hyperlink{namespaceraw__urlparser_a22c1a17803a88426d38d70ad6d4290d2}{u\-\_\-ok} = 'https\-://www.\-okcoin.\-com/api/v1/ticker.\-do?symbol=btc\-\_\-usd'
+\item 
+string \hyperlink{namespaceraw__urlparser_a63e1f0abe7b1f43c4891ce9aec98261d}{u\-\_\-usd2brl} = 'https\-://www.\-google.\-com/finance/converter?a=1\&from=U\-S\-D\&to=B\-R\-L'
+\item 
+string \hyperlink{namespaceraw__urlparser_a9242b893f4f49ef7cc0d4e599b70daa4}{url} = 'http\-://www.\-x-\/rates.\-com/table/?from=U\-S\-D\&amount=1'
+\item 
+tuple \hyperlink{namespaceraw__urlparser_aded92a1146e1ce1f14fd79a361f947f9}{urls} = (\hyperlink{namespaceraw__urlparser_a63e1f0abe7b1f43c4891ce9aec98261d}{u\-\_\-usd2brl}, \hyperlink{namespaceraw__urlparser_a876711ddd7ebb3991a35cc1768d1d22c}{u\-\_\-brl2usd})
+\item 
+tuple \hyperlink{namespaceraw__urlparser_a26bc8d57698e57014b8c066074fb9937}{x\-\_\-rates} = \hyperlink{classraw__urlparser_1_1_rates}{Rates}(dt, \hyperlink{namespaceraw__urlparser_a382c2b22f2386b1e493674c7d72b9b95}{brl2usd}, usd2brl, \char`\"{}X-\/\hyperlink{classraw__urlparser_1_1_rates}{Rates}\char`\"{})
 \end{DoxyCompactItemize}
 
 

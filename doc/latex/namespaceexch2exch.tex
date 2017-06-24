@@ -4,11 +4,11 @@
 \subsection*{Classes}
 \begin{DoxyCompactItemize}
 \item 
+class \hyperlink{classexch2exch_1_1_differences}{Differences}
+\item 
 class \hyperlink{classexch2exch_1_1_rates}{Rates}
 \item 
 class \hyperlink{classexch2exch_1_1_xbt_prices}{Xbt\-Prices}
-\item 
-class \hyperlink{classexch2exch_1_1_differences}{Differences}
 \end{DoxyCompactItemize}
 \subsection*{Functions}
 \begin{DoxyCompactItemize}
@@ -17,11 +17,11 @@ def \hyperlink{namespaceexch2exch_ab44bbb7377e2ea808af430246d925cd2}{get\-\_\-go
 \item 
 def \hyperlink{namespaceexch2exch_a72e4d9fae01812560db07229c05efbc6}{get\-\_\-google\-\_\-rates}
 \item 
-def \hyperlink{namespaceexch2exch_a0fe4c93bea8fee4212c19f045c72b43b}{get\-\_\-x\-\_\-rates}
-\item 
 def \hyperlink{namespaceexch2exch_a69c86b486350c524c85fca367aad82f2}{get\-\_\-mb\-\_\-rates}
 \item 
 def \hyperlink{namespaceexch2exch_a7e83d805e732ce4344cb3a6edc5d98be}{get\-\_\-ok\-\_\-rates}
+\item 
+def \hyperlink{namespaceexch2exch_a0fe4c93bea8fee4212c19f045c72b43b}{get\-\_\-x\-\_\-rates}
 \item 
 def \hyperlink{namespaceexch2exch_a559f55b08d308a647cc4afa3620e2da8}{main}
 \end{DoxyCompactItemize}
@@ -243,9 +243,9 @@ Definition at line 270 of file exch2exch.\-py.
 273 
 274     u\_usd2brl = \textcolor{stringliteral}{'https://www.google.com/finance/converter?a=1&from=USD&to=BRL'}
 275     u\_brl2usd = \textcolor{stringliteral}{'https://www.google.com/finance/converter?a=1&from=BRL&to=USD'}
-276     u\_mb      = \textcolor{stringliteral}{'https://www.mercadobitcoin.net/api/ticker/'}
+276 \textcolor{comment}{#    u\_mb      = 'https://www.mercadobitcoin.net/api/ticker/'}
 277     u\_xrates  = \textcolor{stringliteral}{'http://www.x-rates.com/table/?from=USD&amount=1'}
-278     u\_ok      = \textcolor{stringliteral}{'https://www.okcoin.com/api/v1/ticker.do?symbol=btc\_usd'}
+278 \textcolor{comment}{#    u\_ok      = 'https://www.okcoin.com/api/v1/ticker.do?symbol=btc\_usd'}
 279     
 280     urls = (u\_usd2brl, u\_brl2usd)
 281     

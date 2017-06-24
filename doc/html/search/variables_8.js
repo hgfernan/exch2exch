@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['mb',['mb',['../classexch2exch_1_1_differences.html#a81c81e9c15b5ea8a5d39bb99d85250e1',1,'exch2exch.Differences.mb()'],['../classraw__urlparser_1_1_differences.html#ab4c3073b8c569b7791ab3b8e21e9b364',1,'raw_urlparser.Differences.mb()'],['../namespaceraw__urlparser.html#a964275295a1dcba5dbdc3b113a75c4bb',1,'raw_urlparser.mb()']]],
-  ['mb_5ftupl',['mb_tupl',['../namespaceraw__urlparser.html#ac8242502920772d4c44b42f24492acd5',1,'raw_urlparser']]],
-  ['mb_5fusd',['mb_usd',['../namespaceraw__urlparser.html#a49f2920b4f7718df58d6d996a1306f32',1,'raw_urlparser']]]
+  ['ok',['ok',['../classexch2exch_1_1_differences.html#a6de3ee563584c83a97ba815db8ec7831',1,'exch2exch.Differences.ok()'],['../classraw__urlparser_1_1_differences.html#a46fe97bedb977585a0b27d7408ace118',1,'raw_urlparser.Differences.ok()'],['../namespaceraw__urlparser.html#ac9d30be4f20423526dc111ebaba51cfe',1,'raw_urlparser.ok()']]],
+  ['ok_5ftupl',['ok_tupl',['../namespaceraw__urlparser.html#a8c2d43346322c5d31fa8cb1a9cf5c121',1,'raw_urlparser']]]
 ];

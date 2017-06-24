@@ -29,20 +29,22 @@ def \hyperlink{namespaceexchange_adf14f1c5a512c2d8a7ece6e64e546916}{main}
 )}}\label{namespaceexchange_adf14f1c5a512c2d8a7ece6e64e546916}
 
 
-Definition at line 144 of file exchange.\-py.
+Definition at line 205 of file exchange.\-py.
 
 
 \begin{DoxyCode}
-144 
-145 \textcolor{keyword}{def }\hyperlink{namespaceexchange_adf14f1c5a512c2d8a7ece6e64e546916}{main} ():
-146     f = FoxBit ()
-147     m = MercadoBitcoin ()
-148     o = OkCoin ()
-149     
-150     \textcolor{keywordflow}{print} (\textcolor{stringliteral}{"FoxBit: \{0\}"}         .format (f))
-151     \textcolor{keywordflow}{print} (\textcolor{stringliteral}{"Mercado Bitcoin: \{0\}"}.format (m))
-152     \textcolor{keywordflow}{print} (\textcolor{stringliteral}{"OkCoin: \{0\}"}         .format (o))
-153     
-154     \textcolor{keywordflow}{return} 0
+205 
+206 \textcolor{keyword}{def }\hyperlink{namespaceexchange_adf14f1c5a512c2d8a7ece6e64e546916}{main} ():
+207     exchanges = []
+208     exchanges.append (FoxBit ())
+209     exchanges.append (MercadoBitcoin ())
+210     exchanges.append (OkCoin ())
+211     
+212     \textcolor{keywordflow}{for} exch \textcolor{keywordflow}{in} exchanges:
+213         exch.get\_ticker ()
+214         
+215         \textcolor{keywordflow}{print} (\textcolor{stringliteral}{"\{0\}: \{1\}"}.format (exch.get\_exch\_name (), exch))
+216     
+217     \textcolor{keywordflow}{return} 0
     
 \end{DoxyCode}

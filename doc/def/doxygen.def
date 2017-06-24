@@ -1,0 +1,4691 @@
+AutoGen Definitions dummy;
+class = {
+  cp-id     = 'classexch2exch_1_1_differences';
+  cp-name   = 'exch2exch::Differences';
+  cp-section = {
+    sec-kind = 'public-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classexch2exch_1_1_differences_1a233d3aa10e3542a0d8229b299384b2b8';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+def
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = '__init__';
+      sec-mem-desc-file = '/home/hilton/github/exch2exh/exch2exch.py';
+      sec-mem-desc-line = '101';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classexch2exch_1_1_differences_1a4dbc60a284d9679bb9682d46112ee1bf';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+def
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = '__str__';
+      sec-mem-desc-file = '/home/hilton/github/exch2exh/exch2exch.py';
+      sec-mem-desc-line = '124';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'exch2exch_8py_1a3083b0bcc349937fb7ad708bc683e3d4';
+        sec-mem-ref-line = '115';
+        sec-mem-ref-name = 'exch2exch.Differences::getMaxDelta';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'exch2exch_8py_1a83359c7999d33257746aa09f653e41fa';
+        sec-mem-ref-line = '121';
+        sec-mem-ref-name = 'exch2exch.Differences::getMaxGain';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'exch2exch_8py_1ae6156c3361371d1688de9b334ef7dc8d';
+        sec-mem-ref-line = '112';
+        sec-mem-ref-name = 'exch2exch.Differences::getMinDelta';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'exch2exch_8py_1a3c7fc587dedfda0e303260f244021017';
+        sec-mem-ref-line = '118';
+        sec-mem-ref-name = 'exch2exch.Differences::getMinGain';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classexch2exch_1_1_differences_1a3083b0bcc349937fb7ad708bc683e3d4';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+def
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'getMaxDelta';
+      sec-mem-desc-file = '/home/hilton/github/exch2exh/exch2exch.py';
+      sec-mem-desc-line = '115';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'exch2exch_8py_1a261a74cc25d77b2608898fa5611f9f0b';
+        sec-mem-ref-line = '107';
+        sec-mem-ref-name = 'exch2exch.Differences::dmax';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'raw__urlparser_8py_1a1db8d30e42716215ae4348c8182c3b7a';
+        sec-mem-ref-line = '100';
+        sec-mem-ref-name = 'raw_urlparser.Differences::__str__';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'exch2exch_8py_1a4dbc60a284d9679bb9682d46112ee1bf';
+        sec-mem-ref-line = '124';
+        sec-mem-ref-name = 'exch2exch.Differences::__str__';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classexch2exch_1_1_differences_1a83359c7999d33257746aa09f653e41fa';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+def
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'getMaxGain';
+      sec-mem-desc-file = '/home/hilton/github/exch2exh/exch2exch.py';
+      sec-mem-desc-line = '121';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'exch2exch_8py_1a569f2a6fa0e33ad725c3c3ada259ddcc';
+        sec-mem-ref-line = '110';
+        sec-mem-ref-name = 'exch2exch.Differences::gmax';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'exch2exch_8py_1a4dbc60a284d9679bb9682d46112ee1bf';
+        sec-mem-ref-line = '124';
+        sec-mem-ref-name = 'exch2exch.Differences::__str__';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classexch2exch_1_1_differences_1ae6156c3361371d1688de9b334ef7dc8d';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+def
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'getMinDelta';
+      sec-mem-desc-file = '/home/hilton/github/exch2exh/exch2exch.py';
+      sec-mem-desc-line = '112';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'exch2exch_8py_1a7825bfca16b5775aa770c8810412b215';
+        sec-mem-ref-line = '106';
+        sec-mem-ref-name = 'exch2exch.Differences::dmin';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'raw__urlparser_8py_1a1db8d30e42716215ae4348c8182c3b7a';
+        sec-mem-ref-line = '100';
+        sec-mem-ref-name = 'raw_urlparser.Differences::__str__';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'exch2exch_8py_1a4dbc60a284d9679bb9682d46112ee1bf';
+        sec-mem-ref-line = '124';
+        sec-mem-ref-name = 'exch2exch.Differences::__str__';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classexch2exch_1_1_differences_1a3c7fc587dedfda0e303260f244021017';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+def
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'getMinGain';
+      sec-mem-desc-file = '/home/hilton/github/exch2exh/exch2exch.py';
+      sec-mem-desc-line = '118';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'exch2exch_8py_1a33c9add531b5b46c49ae322657343382';
+        sec-mem-ref-line = '109';
+        sec-mem-ref-name = 'exch2exch.Differences::gmin';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'exch2exch_8py_1a4dbc60a284d9679bb9682d46112ee1bf';
+        sec-mem-ref-line = '124';
+        sec-mem-ref-name = 'exch2exch.Differences::__str__';
+    };
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'public-attrib';
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classexch2exch_1_1_differences_1a261a74cc25d77b2608898fa5611f9f0b';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'dmax';
+      sec-mem-desc-file = '/home/hilton/github/exch2exh/exch2exch.py';
+      sec-mem-desc-line = '107';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'raw__urlparser_8py_1a6cad9a98b3d3c48b41d752b6bce8776e';
+        sec-mem-ref-line = '97';
+        sec-mem-ref-name = 'raw_urlparser.Differences::getMaxDelta';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'exch2exch_8py_1a3083b0bcc349937fb7ad708bc683e3d4';
+        sec-mem-ref-line = '115';
+        sec-mem-ref-name = 'exch2exch.Differences::getMaxDelta';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classexch2exch_1_1_differences_1a7825bfca16b5775aa770c8810412b215';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'dmin';
+      sec-mem-desc-file = '/home/hilton/github/exch2exh/exch2exch.py';
+      sec-mem-desc-line = '106';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'raw__urlparser_8py_1ab80ae6b8351413164c04cda59d316a31';
+        sec-mem-ref-line = '94';
+        sec-mem-ref-name = 'raw_urlparser.Differences::getMinDelta';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'exch2exch_8py_1ae6156c3361371d1688de9b334ef7dc8d';
+        sec-mem-ref-line = '112';
+        sec-mem-ref-name = 'exch2exch.Differences::getMinDelta';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classexch2exch_1_1_differences_1a569f2a6fa0e33ad725c3c3ada259ddcc';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'gmax';
+      sec-mem-desc-file = '/home/hilton/github/exch2exh/exch2exch.py';
+      sec-mem-desc-line = '110';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'exch2exch_8py_1a83359c7999d33257746aa09f653e41fa';
+        sec-mem-ref-line = '121';
+        sec-mem-ref-name = 'exch2exch.Differences::getMaxGain';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classexch2exch_1_1_differences_1a33c9add531b5b46c49ae322657343382';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'gmin';
+      sec-mem-desc-file = '/home/hilton/github/exch2exh/exch2exch.py';
+      sec-mem-desc-line = '109';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'exch2exch_8py_1a3c7fc587dedfda0e303260f244021017';
+        sec-mem-ref-line = '118';
+        sec-mem-ref-name = 'exch2exch.Differences::getMinGain';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classexch2exch_1_1_differences_1a81c81e9c15b5ea8a5d39bb99d85250e1';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'mb';
+      sec-mem-desc-file = '/home/hilton/github/exch2exh/exch2exch.py';
+      sec-mem-desc-line = '103';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classexch2exch_1_1_differences_1a6de3ee563584c83a97ba815db8ec7831';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'ok';
+      sec-mem-desc-file = '/home/hilton/github/exch2exh/exch2exch.py';
+      sec-mem-desc-line = '104';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classexch2exch_1_1_differences_1a64aec2fc7f20028f0bd834908cbea116';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'rates';
+      sec-mem-desc-file = '/home/hilton/github/exch2exh/exch2exch.py';
+      sec-mem-desc-line = '102';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-filename  = '/home/hilton/github/exch2exh/exch2exch.py';
+  cp-fileline  = '100';
+  cp-briefdesc = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* class */
+class = {
+  cp-id     = 'classraw__urlparser_1_1_differences';
+  cp-name   = 'raw_urlparser::Differences';
+  cp-section = {
+    sec-kind = 'public-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classraw__urlparser_1_1_differences_1a9aa766af44c2b787343ffcbf466e1a83';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+def
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = '__init__';
+      sec-mem-desc-file = '/home/hilton/github/exch2exh/raw_urlparser.py';
+      sec-mem-desc-line = '85';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classraw__urlparser_1_1_differences_1a1db8d30e42716215ae4348c8182c3b7a';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+def
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = '__str__';
+      sec-mem-desc-file = '/home/hilton/github/exch2exh/raw_urlparser.py';
+      sec-mem-desc-line = '100';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'raw__urlparser_8py_1a6cad9a98b3d3c48b41d752b6bce8776e';
+        sec-mem-ref-line = '97';
+        sec-mem-ref-name = 'raw_urlparser.Differences::getMaxDelta';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'exch2exch_8py_1a3083b0bcc349937fb7ad708bc683e3d4';
+        sec-mem-ref-line = '115';
+        sec-mem-ref-name = 'exch2exch.Differences::getMaxDelta';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'raw__urlparser_8py_1ab80ae6b8351413164c04cda59d316a31';
+        sec-mem-ref-line = '94';
+        sec-mem-ref-name = 'raw_urlparser.Differences::getMinDelta';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'exch2exch_8py_1ae6156c3361371d1688de9b334ef7dc8d';
+        sec-mem-ref-line = '112';
+        sec-mem-ref-name = 'exch2exch.Differences::getMinDelta';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classraw__urlparser_1_1_differences_1a6cad9a98b3d3c48b41d752b6bce8776e';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+def
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'getMaxDelta';
+      sec-mem-desc-file = '/home/hilton/github/exch2exh/raw_urlparser.py';
+      sec-mem-desc-line = '97';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'raw__urlparser_8py_1ad2b06158b655136bc7743dc6ac8d1e2a';
+        sec-mem-ref-line = '92';
+        sec-mem-ref-name = 'raw_urlparser.Differences::dmax';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'exch2exch_8py_1a261a74cc25d77b2608898fa5611f9f0b';
+        sec-mem-ref-line = '107';
+        sec-mem-ref-name = 'exch2exch.Differences::dmax';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'raw__urlparser_8py_1a1db8d30e42716215ae4348c8182c3b7a';
+        sec-mem-ref-line = '100';
+        sec-mem-ref-name = 'raw_urlparser.Differences::__str__';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classraw__urlparser_1_1_differences_1ab80ae6b8351413164c04cda59d316a31';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+def
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'getMinDelta';
+      sec-mem-desc-file = '/home/hilton/github/exch2exh/raw_urlparser.py';
+      sec-mem-desc-line = '94';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'raw__urlparser_8py_1af8457a8e542de086595e7fbbffdf713c';
+        sec-mem-ref-line = '90';
+        sec-mem-ref-name = 'raw_urlparser.Differences::dmin';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'exch2exch_8py_1a7825bfca16b5775aa770c8810412b215';
+        sec-mem-ref-line = '106';
+        sec-mem-ref-name = 'exch2exch.Differences::dmin';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'raw__urlparser_8py_1a1db8d30e42716215ae4348c8182c3b7a';
+        sec-mem-ref-line = '100';
+        sec-mem-ref-name = 'raw_urlparser.Differences::__str__';
+    };
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'public-attrib';
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classraw__urlparser_1_1_differences_1ad2b06158b655136bc7743dc6ac8d1e2a';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'dmax';
+      sec-mem-desc-file = '/home/hilton/github/exch2exh/raw_urlparser.py';
+      sec-mem-desc-line = '92';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'raw__urlparser_8py_1a6cad9a98b3d3c48b41d752b6bce8776e';
+        sec-mem-ref-line = '97';
+        sec-mem-ref-name = 'raw_urlparser.Differences::getMaxDelta';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classraw__urlparser_1_1_differences_1af8457a8e542de086595e7fbbffdf713c';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'dmin';
+      sec-mem-desc-file = '/home/hilton/github/exch2exh/raw_urlparser.py';
+      sec-mem-desc-line = '90';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'raw__urlparser_8py_1ab80ae6b8351413164c04cda59d316a31';
+        sec-mem-ref-line = '94';
+        sec-mem-ref-name = 'raw_urlparser.Differences::getMinDelta';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classraw__urlparser_1_1_differences_1ab4c3073b8c569b7791ab3b8e21e9b364';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'mb';
+      sec-mem-desc-file = '/home/hilton/github/exch2exh/raw_urlparser.py';
+      sec-mem-desc-line = '87';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classraw__urlparser_1_1_differences_1a46fe97bedb977585a0b27d7408ace118';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'ok';
+      sec-mem-desc-file = '/home/hilton/github/exch2exh/raw_urlparser.py';
+      sec-mem-desc-line = '88';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classraw__urlparser_1_1_differences_1ad4e7eadb659a1cdcba90793cc52af174';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'rates';
+      sec-mem-desc-file = '/home/hilton/github/exch2exh/raw_urlparser.py';
+      sec-mem-desc-line = '86';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-filename  = '/home/hilton/github/exch2exh/raw_urlparser.py';
+  cp-fileline  = '84';
+  cp-briefdesc = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* class */
+class = {
+  cp-id     = 'classexchange_1_1_exchange';
+  cp-name   = 'exchange::Exchange';
+  cp-ref     = {
+    ref-type = derived;
+    ref-id   = 'classexchange_1_1_fox_bit';
+    ref-prot = public;
+    ref-virt = non-virtual;
+  };
+  cp-ref     = {
+    ref-type = derived;
+    ref-id   = 'classexchange_1_1_mercado_bitcoin';
+    ref-prot = public;
+    ref-virt = non-virtual;
+  };
+  cp-ref     = {
+    ref-type = derived;
+    ref-id   = 'classexchange_1_1_ok_coin';
+    ref-prot = public;
+    ref-virt = non-virtual;
+  };
+  cp-section = {
+    sec-kind = 'public-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classexchange_1_1_exchange_1a75e4957e085558959dc606fcc7cca55d';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+def
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = '__init__';
+      sec-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
+      sec-mem-desc-line = '29';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classexchange_1_1_exchange_1a0ad3ad8c4feaabd714bd93ad5c7e9ffd';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+def
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = '__repr__';
+      sec-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
+      sec-mem-desc-line = '81';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classexchange_1_1_exchange_1a24c728f6cb4700a285bae3cf902580ee';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+def
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = '__str__';
+      sec-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
+      sec-mem-desc-line = '76';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'exchange_8py_1a7cf9e52f993627955a2e242c388daaeb';
+        sec-mem-ref-line = '42';
+        sec-mem-ref-name = 'exchange.Exchange::ticker';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classexchange_1_1_exchange_1a617fe5e236e61725b62f0865eb3cb613';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+def
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'dnload_ticker';
+      sec-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
+      sec-mem-desc-line = '34';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'exchange_8py_1acd7e3233946da3b9d452f9505cd58033';
+        sec-mem-ref-line = '49';
+        sec-mem-ref-name = 'exchange.Exchange::get_ticker';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classexchange_1_1_exchange_1a89a7e4ad373dfcf9686f9f87404e464f';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+def
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'dnload_trades';
+      sec-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
+      sec-mem-desc-line = '53';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'exchange_8py_1a522c44739df2164c6e8e9457516645e5';
+        sec-mem-ref-line = '68';
+        sec-mem-ref-name = 'exchange.Exchange::get_trades';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classexchange_1_1_exchange_1a0db59994432848ffdf942dce8b82369b';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+def
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'get_exch_name';
+      sec-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
+      sec-mem-desc-line = '72';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classexchange_1_1_exchange_1acd7e3233946da3b9d452f9505cd58033';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+def
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'get_ticker';
+      sec-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
+      sec-mem-desc-line = '49';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'exchange_8py_1a617fe5e236e61725b62f0865eb3cb613';
+        sec-mem-ref-line = '34';
+        sec-mem-ref-name = 'exchange.Exchange::dnload_ticker';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'exchange_8py_1a8243e9912c623049658aabc30b72b55a';
+        sec-mem-ref-line = '45';
+        sec-mem-ref-name = 'exchange.Exchange::process_ticker';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classexchange_1_1_exchange_1a522c44739df2164c6e8e9457516645e5';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+def
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'get_trades';
+      sec-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
+      sec-mem-desc-line = '68';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'exchange_8py_1a89a7e4ad373dfcf9686f9f87404e464f';
+        sec-mem-ref-line = '53';
+        sec-mem-ref-name = 'exchange.Exchange::dnload_trades';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'exchange_8py_1a182c849cfda71ffb325d1dc54bb29f5d';
+        sec-mem-ref-line = '64';
+        sec-mem-ref-name = 'exchange.Exchange::process_trades';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classexchange_1_1_exchange_1a8243e9912c623049658aabc30b72b55a';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+def
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'process_ticker';
+      sec-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
+      sec-mem-desc-line = '45';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'exchange_8py_1acd7e3233946da3b9d452f9505cd58033';
+        sec-mem-ref-line = '49';
+        sec-mem-ref-name = 'exchange.Exchange::get_ticker';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classexchange_1_1_exchange_1a182c849cfda71ffb325d1dc54bb29f5d';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+def
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'process_trades';
+      sec-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
+      sec-mem-desc-line = '64';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'exchange_8py_1a522c44739df2164c6e8e9457516645e5';
+        sec-mem-ref-line = '68';
+        sec-mem-ref-name = 'exchange.Exchange::get_trades';
+    };
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'public-attrib';
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classexchange_1_1_exchange_1a7cf9e52f993627955a2e242c388daaeb';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'ticker';
+      sec-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
+      sec-mem-desc-line = '42';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'exchange_8py_1a24c728f6cb4700a285bae3cf902580ee';
+        sec-mem-ref-line = '76';
+        sec-mem-ref-name = 'exchange.Exchange::__str__';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'exchange_8py_1a4a2bd57624f0aed8e1bf22ce6399bd3e';
+        sec-mem-ref-line = '99';
+        sec-mem-ref-name = 'exchange.FoxBit::get_ticker';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'exchange_8py_1a048fcf7385a868f1834ad3898bdfec2d';
+        sec-mem-ref-line = '93';
+        sec-mem-ref-name = 'exchange.FoxBit::process_ticker';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classexchange_1_1_exchange_1a30e87a377320ce05bd956fb014683641';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'trades';
+      sec-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
+      sec-mem-desc-line = '61';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'public-static-attrib';
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classexchange_1_1_exchange_1a83174d2fe96a1c737231d3b8b18d9807';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+string
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'U_ORDRBK';
+      sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= ''
+_EnD_oF_dEf_TeXt_;
+      sec-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
+      sec-mem-desc-line = '25';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classexchange_1_1_exchange_1ab16df02480d727c533b02b5b7afa053b';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+string
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'U_TICKER';
+      sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= ''
+_EnD_oF_dEf_TeXt_;
+      sec-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
+      sec-mem-desc-line = '23';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classexchange_1_1_exchange_1aafa0e023de170f51cbf9d48e1154587a';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+string
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'U_TRADES';
+      sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= ''
+_EnD_oF_dEf_TeXt_;
+      sec-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
+      sec-mem-desc-line = '24';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-filename  = '/home/hilton/github/exch2exh/exchange.py';
+  cp-fileline  = '22';
+  cp-briefdesc = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-inheritancegraph = <<_EnD_oF_dEf_TeXt_
+      node = {
+        node-id    = 33;
+        node-label = 'exchange.Exchange';
+        node-link = {
+          node-link-id = 'classexchange_1_1_exchange';
+        };
+      }; /* node */
+      node = {
+        node-id    = 35;
+        node-label = 'exchange.MercadoBitcoin';
+        node-link = {
+          node-link-id = 'classexchange_1_1_mercado_bitcoin';
+        };
+        node-child = {
+          child-id = '33';
+          relation = public-inheritance;
+        }; /* node-child */
+      }; /* node */
+      node = {
+        node-id    = 36;
+        node-label = 'exchange.OkCoin';
+        node-link = {
+          node-link-id = 'classexchange_1_1_ok_coin';
+        };
+        node-child = {
+          child-id = '33';
+          relation = public-inheritance;
+        }; /* node-child */
+      }; /* node */
+      node = {
+        node-id    = 34;
+        node-label = 'exchange.FoxBit';
+        node-link = {
+          node-link-id = 'classexchange_1_1_fox_bit';
+        };
+        node-child = {
+          child-id = '33';
+          relation = public-inheritance;
+        }; /* node-child */
+      }; /* node */
+
+_EnD_oF_dEf_TeXt_;
+}; /* class */
+class = {
+  cp-id     = 'classexchange_1_1_fox_bit';
+  cp-name   = 'exchange::FoxBit';
+  cp-ref     = {
+    ref-type = base;
+    ref-id   = 'classexchange_1_1_exchange';
+    ref-prot = public;
+    ref-virt = non-virtual;
+  };
+  cp-section = {
+    sec-kind = 'public-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classexchange_1_1_fox_bit_1aeeafe8e1c8237d514ce89c97727ed61d';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+def
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = '__init__';
+      sec-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
+      sec-mem-desc-line = '90';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classexchange_1_1_fox_bit_1a9a72f6a5be4e42688d38f83bcd80aab3';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+def
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'get_exch_name';
+      sec-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
+      sec-mem-desc-line = '136';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classexchange_1_1_fox_bit_1a4a2bd57624f0aed8e1bf22ce6399bd3e';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+def
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'get_ticker';
+      sec-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
+      sec-mem-desc-line = '99';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'exchange_8py_1a7cf9e52f993627955a2e242c388daaeb';
+        sec-mem-ref-line = '42';
+        sec-mem-ref-name = 'exchange.Exchange::ticker';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classexchange_1_1_fox_bit_1ae9e9965d6e92ab9413e17637ea22feb7';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+def
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'get_trades';
+      sec-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
+      sec-mem-desc-line = '123';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'exch2exch_8py_1a8f1d8ac0ef114ea3645314578697b7ac';
+        sec-mem-ref-line = '59';
+        sec-mem-ref-name = 'exch2exch.XbtPrices::buy';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'exchange_8py_1acb7e709cc05e8314b1bdacd32e4dfc80';
+        sec-mem-ref-line = '115';
+        sec-mem-ref-name = 'exchange.FoxBit::buy';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'exch2exch_8py_1acb12f83bce4393714ec30351a1d636c2';
+        sec-mem-ref-line = '28';
+        sec-mem-ref-name = 'exch2exch.Rates::dt';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'exch2exch_8py_1af9f916c683c48631c97f1c5d91447751';
+        sec-mem-ref-line = '57';
+        sec-mem-ref-name = 'exch2exch.XbtPrices::dt';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'exchange_8py_1a363f8488eb0423f88519c085ae6f168f';
+        sec-mem-ref-line = '120';
+        sec-mem-ref-name = 'exchange.FoxBit::dt';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'exch2exch_8py_1aeae6235417d65d9e9c768a51c38d5388';
+        sec-mem-ref-line = '61';
+        sec-mem-ref-name = 'exch2exch.XbtPrices::high';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'exchange_8py_1a4f6dfaecbcc17ceadddf52d266d9c00d';
+        sec-mem-ref-line = '117';
+        sec-mem-ref-name = 'exchange.FoxBit::high';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'exch2exch_8py_1a8cef13f833a894d4fc5b8296bb4906fa';
+        sec-mem-ref-line = '62';
+        sec-mem-ref-name = 'exch2exch.XbtPrices::low';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'exchange_8py_1acd666444cff98fe477651120ddb0f915';
+        sec-mem-ref-line = '118';
+        sec-mem-ref-name = 'exchange.FoxBit::low';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'exch2exch_8py_1a06fd0cfb03d485af3364a0d86fbe5385';
+        sec-mem-ref-line = '58';
+        sec-mem-ref-name = 'exch2exch.XbtPrices::sell';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'exchange_8py_1ac1fae4ef7a43254b71d7173a5cc6eeaf';
+        sec-mem-ref-line = '116';
+        sec-mem-ref-name = 'exchange.FoxBit::sell';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classexchange_1_1_fox_bit_1a048fcf7385a868f1834ad3898bdfec2d';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+def
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'process_ticker';
+      sec-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
+      sec-mem-desc-line = '93';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'exchange_8py_1a7cf9e52f993627955a2e242c388daaeb';
+        sec-mem-ref-line = '42';
+        sec-mem-ref-name = 'exchange.Exchange::ticker';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classexchange_1_1_fox_bit_1a02f1d212907016aa1da6bac19821ea43';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+def
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'process_trades';
+      sec-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
+      sec-mem-desc-line = '112';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'public-attrib';
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classexchange_1_1_fox_bit_1acb7e709cc05e8314b1bdacd32e4dfc80';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'buy';
+      sec-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
+      sec-mem-desc-line = '115';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'raw__urlparser_8py_1a271c6108e7daef6fa321171e294df088';
+        sec-mem-ref-line = '74';
+        sec-mem-ref-name = 'raw_urlparser.XbtPrices::__str__';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'exchange_8py_1ae651664c24cb7b31973cdf2cdf281628';
+        sec-mem-ref-line = '158';
+        sec-mem-ref-name = 'exchange.MercadoBitcoin::get_ticker';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'exchange_8py_1ae4fed29a4c9e9466849b05f4c0537eba';
+        sec-mem-ref-line = '189';
+        sec-mem-ref-name = 'exchange.OkCoin::get_ticker';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'exchange_8py_1ae9e9965d6e92ab9413e17637ea22feb7';
+        sec-mem-ref-line = '123';
+        sec-mem-ref-name = 'exchange.FoxBit::get_trades';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'raw__urlparser_8py_1a50f893a39919d2d0e00e53c6288b68a3';
+        sec-mem-ref-line = '62';
+        sec-mem-ref-name = 'raw_urlparser.XbtPrices::getBuy';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classexchange_1_1_fox_bit_1a363f8488eb0423f88519c085ae6f168f';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'dt';
+      sec-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
+      sec-mem-desc-line = '120';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'raw__urlparser_8py_1a166ead3ebf1546ec2ea3eb299d524a30';
+        sec-mem-ref-line = '38';
+        sec-mem-ref-name = 'raw_urlparser.Rates::__str__';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'raw__urlparser_8py_1a271c6108e7daef6fa321171e294df088';
+        sec-mem-ref-line = '74';
+        sec-mem-ref-name = 'raw_urlparser.XbtPrices::__str__';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'exchange_8py_1ae651664c24cb7b31973cdf2cdf281628';
+        sec-mem-ref-line = '158';
+        sec-mem-ref-name = 'exchange.MercadoBitcoin::get_ticker';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'exchange_8py_1ae4fed29a4c9e9466849b05f4c0537eba';
+        sec-mem-ref-line = '189';
+        sec-mem-ref-name = 'exchange.OkCoin::get_ticker';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'exchange_8py_1ae9e9965d6e92ab9413e17637ea22feb7';
+        sec-mem-ref-line = '123';
+        sec-mem-ref-name = 'exchange.FoxBit::get_trades';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'raw__urlparser_8py_1a83c01863eb94413a16ea00cb679245bc';
+        sec-mem-ref-line = '59';
+        sec-mem-ref-name = 'raw_urlparser.XbtPrices::getDateTime';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classexchange_1_1_fox_bit_1a4f6dfaecbcc17ceadddf52d266d9c00d';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'high';
+      sec-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
+      sec-mem-desc-line = '117';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'exchange_8py_1ae651664c24cb7b31973cdf2cdf281628';
+        sec-mem-ref-line = '158';
+        sec-mem-ref-name = 'exchange.MercadoBitcoin::get_ticker';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'exchange_8py_1ae4fed29a4c9e9466849b05f4c0537eba';
+        sec-mem-ref-line = '189';
+        sec-mem-ref-name = 'exchange.OkCoin::get_ticker';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'exchange_8py_1ae9e9965d6e92ab9413e17637ea22feb7';
+        sec-mem-ref-line = '123';
+        sec-mem-ref-name = 'exchange.FoxBit::get_trades';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classexchange_1_1_fox_bit_1acd666444cff98fe477651120ddb0f915';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'low';
+      sec-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
+      sec-mem-desc-line = '118';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'exchange_8py_1ae651664c24cb7b31973cdf2cdf281628';
+        sec-mem-ref-line = '158';
+        sec-mem-ref-name = 'exchange.MercadoBitcoin::get_ticker';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'exchange_8py_1ae4fed29a4c9e9466849b05f4c0537eba';
+        sec-mem-ref-line = '189';
+        sec-mem-ref-name = 'exchange.OkCoin::get_ticker';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'exchange_8py_1ae9e9965d6e92ab9413e17637ea22feb7';
+        sec-mem-ref-line = '123';
+        sec-mem-ref-name = 'exchange.FoxBit::get_trades';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classexchange_1_1_fox_bit_1ac1fae4ef7a43254b71d7173a5cc6eeaf';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'sell';
+      sec-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
+      sec-mem-desc-line = '116';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'raw__urlparser_8py_1a271c6108e7daef6fa321171e294df088';
+        sec-mem-ref-line = '74';
+        sec-mem-ref-name = 'raw_urlparser.XbtPrices::__str__';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'exchange_8py_1ae651664c24cb7b31973cdf2cdf281628';
+        sec-mem-ref-line = '158';
+        sec-mem-ref-name = 'exchange.MercadoBitcoin::get_ticker';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'exchange_8py_1ae4fed29a4c9e9466849b05f4c0537eba';
+        sec-mem-ref-line = '189';
+        sec-mem-ref-name = 'exchange.OkCoin::get_ticker';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'exchange_8py_1ae9e9965d6e92ab9413e17637ea22feb7';
+        sec-mem-ref-line = '123';
+        sec-mem-ref-name = 'exchange.FoxBit::get_trades';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'raw__urlparser_8py_1a141a6794eea34f738070970fefc0f854';
+        sec-mem-ref-line = '65';
+        sec-mem-ref-name = 'raw_urlparser.XbtPrices::getSell';
+    };
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'public-static-attrib';
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classexchange_1_1_fox_bit_1a7ba3f64a2b55479da2239393c6140ec8';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+string
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'U_TICKER';
+      sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= 'https://api.blinktrade.com/api/v1/BRL/ticker?crypto_currency=BTC'
+_EnD_oF_dEf_TeXt_;
+      sec-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
+      sec-mem-desc-line = '88';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-filename  = '/home/hilton/github/exch2exh/exchange.py';
+  cp-fileline  = '87';
+  cp-briefdesc = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-inheritancegraph = <<_EnD_oF_dEf_TeXt_
+      node = {
+        node-id    = 39;
+        node-label = 'exchange.Exchange';
+        node-link = {
+          node-link-id = 'classexchange_1_1_exchange';
+        };
+      }; /* node */
+      node = {
+        node-id    = 38;
+        node-label = 'exchange.FoxBit';
+        node-link = {
+          node-link-id = 'classexchange_1_1_fox_bit';
+        };
+        node-child = {
+          child-id = '39';
+          relation = public-inheritance;
+        }; /* node-child */
+      }; /* node */
+
+_EnD_oF_dEf_TeXt_;
+  cp-collaborationgraph = <<_EnD_oF_dEf_TeXt_
+      node = {
+        node-id    = 41;
+        node-label = 'exchange.Exchange';
+        node-link = {
+          node-link-id = 'classexchange_1_1_exchange';
+        };
+      }; /* node */
+      node = {
+        node-id    = 40;
+        node-label = 'exchange.FoxBit';
+        node-link = {
+          node-link-id = 'classexchange_1_1_fox_bit';
+        };
+        node-child = {
+          child-id = '41';
+          relation = public-inheritance;
+        }; /* node-child */
+      }; /* node */
+
+_EnD_oF_dEf_TeXt_;
+}; /* class */
+class = {
+  cp-id     = 'classexchange_1_1_mercado_bitcoin';
+  cp-name   = 'exchange::MercadoBitcoin';
+  cp-ref     = {
+    ref-type = base;
+    ref-id   = 'classexchange_1_1_exchange';
+    ref-prot = public;
+    ref-virt = non-virtual;
+  };
+  cp-section = {
+    sec-kind = 'public-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classexchange_1_1_mercado_bitcoin_1ad9e1645fbd904d31d0db7728a2470a90';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+def
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = '__init__';
+      sec-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
+      sec-mem-desc-line = '144';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classexchange_1_1_mercado_bitcoin_1a5f11d825752724de5c31262447f03781';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+def
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'get_exch_name';
+      sec-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
+      sec-mem-desc-line = '171';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classexchange_1_1_mercado_bitcoin_1ae651664c24cb7b31973cdf2cdf281628';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+def
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'get_ticker';
+      sec-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
+      sec-mem-desc-line = '158';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'exch2exch_8py_1a8f1d8ac0ef114ea3645314578697b7ac';
+        sec-mem-ref-line = '59';
+        sec-mem-ref-name = 'exch2exch.XbtPrices::buy';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'exchange_8py_1acb7e709cc05e8314b1bdacd32e4dfc80';
+        sec-mem-ref-line = '115';
+        sec-mem-ref-name = 'exchange.FoxBit::buy';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'exchange_8py_1ada27b62a35286b9f5dbb54590c5bacd2';
+        sec-mem-ref-line = '151';
+        sec-mem-ref-name = 'exchange.MercadoBitcoin::buy';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'exch2exch_8py_1acb12f83bce4393714ec30351a1d636c2';
+        sec-mem-ref-line = '28';
+        sec-mem-ref-name = 'exch2exch.Rates::dt';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'exch2exch_8py_1af9f916c683c48631c97f1c5d91447751';
+        sec-mem-ref-line = '57';
+        sec-mem-ref-name = 'exch2exch.XbtPrices::dt';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'exchange_8py_1a363f8488eb0423f88519c085ae6f168f';
+        sec-mem-ref-line = '120';
+        sec-mem-ref-name = 'exchange.FoxBit::dt';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'exchange_8py_1aeee983ba4f72223a11fb914d22902c56';
+        sec-mem-ref-line = '156';
+        sec-mem-ref-name = 'exchange.MercadoBitcoin::dt';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'exch2exch_8py_1aeae6235417d65d9e9c768a51c38d5388';
+        sec-mem-ref-line = '61';
+        sec-mem-ref-name = 'exch2exch.XbtPrices::high';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'exchange_8py_1a4f6dfaecbcc17ceadddf52d266d9c00d';
+        sec-mem-ref-line = '117';
+        sec-mem-ref-name = 'exchange.FoxBit::high';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'exchange_8py_1a0b9c2d465601a48e3b8838354e931c39';
+        sec-mem-ref-line = '153';
+        sec-mem-ref-name = 'exchange.MercadoBitcoin::high';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'exch2exch_8py_1a8cef13f833a894d4fc5b8296bb4906fa';
+        sec-mem-ref-line = '62';
+        sec-mem-ref-name = 'exch2exch.XbtPrices::low';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'exchange_8py_1acd666444cff98fe477651120ddb0f915';
+        sec-mem-ref-line = '118';
+        sec-mem-ref-name = 'exchange.FoxBit::low';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'exchange_8py_1aaa3aae824bfc5ba3b7dc5252e9554713';
+        sec-mem-ref-line = '154';
+        sec-mem-ref-name = 'exchange.MercadoBitcoin::low';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'exch2exch_8py_1a06fd0cfb03d485af3364a0d86fbe5385';
+        sec-mem-ref-line = '58';
+        sec-mem-ref-name = 'exch2exch.XbtPrices::sell';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'exchange_8py_1ac1fae4ef7a43254b71d7173a5cc6eeaf';
+        sec-mem-ref-line = '116';
+        sec-mem-ref-name = 'exchange.FoxBit::sell';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'exchange_8py_1a9982c7a3f6103c88c64160a5854c35cd';
+        sec-mem-ref-line = '152';
+        sec-mem-ref-name = 'exchange.MercadoBitcoin::sell';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classexchange_1_1_mercado_bitcoin_1a1ca10d96c4b4a39236c8312857046994';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+def
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'process_ticker';
+      sec-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
+      sec-mem-desc-line = '147';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'public-attrib';
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classexchange_1_1_mercado_bitcoin_1ada27b62a35286b9f5dbb54590c5bacd2';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'buy';
+      sec-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
+      sec-mem-desc-line = '151';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'raw__urlparser_8py_1a271c6108e7daef6fa321171e294df088';
+        sec-mem-ref-line = '74';
+        sec-mem-ref-name = 'raw_urlparser.XbtPrices::__str__';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'exchange_8py_1ae651664c24cb7b31973cdf2cdf281628';
+        sec-mem-ref-line = '158';
+        sec-mem-ref-name = 'exchange.MercadoBitcoin::get_ticker';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'exchange_8py_1ae4fed29a4c9e9466849b05f4c0537eba';
+        sec-mem-ref-line = '189';
+        sec-mem-ref-name = 'exchange.OkCoin::get_ticker';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'raw__urlparser_8py_1a50f893a39919d2d0e00e53c6288b68a3';
+        sec-mem-ref-line = '62';
+        sec-mem-ref-name = 'raw_urlparser.XbtPrices::getBuy';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classexchange_1_1_mercado_bitcoin_1aeee983ba4f72223a11fb914d22902c56';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'dt';
+      sec-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
+      sec-mem-desc-line = '156';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'raw__urlparser_8py_1a166ead3ebf1546ec2ea3eb299d524a30';
+        sec-mem-ref-line = '38';
+        sec-mem-ref-name = 'raw_urlparser.Rates::__str__';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'raw__urlparser_8py_1a271c6108e7daef6fa321171e294df088';
+        sec-mem-ref-line = '74';
+        sec-mem-ref-name = 'raw_urlparser.XbtPrices::__str__';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'exchange_8py_1ae651664c24cb7b31973cdf2cdf281628';
+        sec-mem-ref-line = '158';
+        sec-mem-ref-name = 'exchange.MercadoBitcoin::get_ticker';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'exchange_8py_1ae4fed29a4c9e9466849b05f4c0537eba';
+        sec-mem-ref-line = '189';
+        sec-mem-ref-name = 'exchange.OkCoin::get_ticker';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'raw__urlparser_8py_1a83c01863eb94413a16ea00cb679245bc';
+        sec-mem-ref-line = '59';
+        sec-mem-ref-name = 'raw_urlparser.XbtPrices::getDateTime';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classexchange_1_1_mercado_bitcoin_1a0b9c2d465601a48e3b8838354e931c39';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'high';
+      sec-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
+      sec-mem-desc-line = '153';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'exchange_8py_1ae651664c24cb7b31973cdf2cdf281628';
+        sec-mem-ref-line = '158';
+        sec-mem-ref-name = 'exchange.MercadoBitcoin::get_ticker';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'exchange_8py_1ae4fed29a4c9e9466849b05f4c0537eba';
+        sec-mem-ref-line = '189';
+        sec-mem-ref-name = 'exchange.OkCoin::get_ticker';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classexchange_1_1_mercado_bitcoin_1aaa3aae824bfc5ba3b7dc5252e9554713';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'low';
+      sec-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
+      sec-mem-desc-line = '154';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'exchange_8py_1ae651664c24cb7b31973cdf2cdf281628';
+        sec-mem-ref-line = '158';
+        sec-mem-ref-name = 'exchange.MercadoBitcoin::get_ticker';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'exchange_8py_1ae4fed29a4c9e9466849b05f4c0537eba';
+        sec-mem-ref-line = '189';
+        sec-mem-ref-name = 'exchange.OkCoin::get_ticker';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classexchange_1_1_mercado_bitcoin_1a9982c7a3f6103c88c64160a5854c35cd';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'sell';
+      sec-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
+      sec-mem-desc-line = '152';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'raw__urlparser_8py_1a271c6108e7daef6fa321171e294df088';
+        sec-mem-ref-line = '74';
+        sec-mem-ref-name = 'raw_urlparser.XbtPrices::__str__';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'exchange_8py_1ae651664c24cb7b31973cdf2cdf281628';
+        sec-mem-ref-line = '158';
+        sec-mem-ref-name = 'exchange.MercadoBitcoin::get_ticker';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'exchange_8py_1ae4fed29a4c9e9466849b05f4c0537eba';
+        sec-mem-ref-line = '189';
+        sec-mem-ref-name = 'exchange.OkCoin::get_ticker';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'raw__urlparser_8py_1a141a6794eea34f738070970fefc0f854';
+        sec-mem-ref-line = '65';
+        sec-mem-ref-name = 'raw_urlparser.XbtPrices::getSell';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classexchange_1_1_mercado_bitcoin_1ac4630b08e08f9eeb9dad838dc9dc0cda';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'ts';
+      sec-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
+      sec-mem-desc-line = '150';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'public-static-attrib';
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classexchange_1_1_mercado_bitcoin_1a7dd22c2c0261557a694678d8057d2547';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+string
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'U_ORDRBK';
+      sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= 'https://www.okcoin.com/api/v1/depth.do?symbol=btc_usd'
+_EnD_oF_dEf_TeXt_;
+      sec-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
+      sec-mem-desc-line = '141';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classexchange_1_1_mercado_bitcoin_1a310b7df5ae9e8a46bad918428c67d4e8';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+string
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'U_TICKER';
+      sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= 'https://www.mercadobitcoin.net/api/ticker/'
+_EnD_oF_dEf_TeXt_;
+      sec-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
+      sec-mem-desc-line = '140';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classexchange_1_1_mercado_bitcoin_1a20ad6407ef07ab8a55d3c022d1512a5d';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+string
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'U_TRADES';
+      sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= 'https://www.okcoin.com/api/v1/trades.do?symbol=btc_usd'
+_EnD_oF_dEf_TeXt_;
+      sec-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
+      sec-mem-desc-line = '142';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-filename  = '/home/hilton/github/exch2exh/exchange.py';
+  cp-fileline  = '139';
+  cp-briefdesc = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-inheritancegraph = <<_EnD_oF_dEf_TeXt_
+      node = {
+        node-id    = 43;
+        node-label = 'exchange.Exchange';
+        node-link = {
+          node-link-id = 'classexchange_1_1_exchange';
+        };
+      }; /* node */
+      node = {
+        node-id    = 42;
+        node-label = 'exchange.MercadoBitcoin';
+        node-link = {
+          node-link-id = 'classexchange_1_1_mercado_bitcoin';
+        };
+        node-child = {
+          child-id = '43';
+          relation = public-inheritance;
+        }; /* node-child */
+      }; /* node */
+
+_EnD_oF_dEf_TeXt_;
+  cp-collaborationgraph = <<_EnD_oF_dEf_TeXt_
+      node = {
+        node-id    = 45;
+        node-label = 'exchange.Exchange';
+        node-link = {
+          node-link-id = 'classexchange_1_1_exchange';
+        };
+      }; /* node */
+      node = {
+        node-id    = 44;
+        node-label = 'exchange.MercadoBitcoin';
+        node-link = {
+          node-link-id = 'classexchange_1_1_mercado_bitcoin';
+        };
+        node-child = {
+          child-id = '45';
+          relation = public-inheritance;
+        }; /* node-child */
+      }; /* node */
+
+_EnD_oF_dEf_TeXt_;
+}; /* class */
+class = {
+  cp-id     = 'classexchange_1_1_ok_coin';
+  cp-name   = 'exchange::OkCoin';
+  cp-ref     = {
+    ref-type = base;
+    ref-id   = 'classexchange_1_1_exchange';
+    ref-prot = public;
+    ref-virt = non-virtual;
+  };
+  cp-section = {
+    sec-kind = 'public-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classexchange_1_1_ok_coin_1a2df16234d373d0ac04a019917e612b70';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+def
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = '__init__';
+      sec-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
+      sec-mem-desc-line = '177';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classexchange_1_1_ok_coin_1a563fd2032e890cb41592fad56ddf704e';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+def
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'get_exch_name';
+      sec-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
+      sec-mem-desc-line = '202';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classexchange_1_1_ok_coin_1ae4fed29a4c9e9466849b05f4c0537eba';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+def
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'get_ticker';
+      sec-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
+      sec-mem-desc-line = '189';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'exch2exch_8py_1a8f1d8ac0ef114ea3645314578697b7ac';
+        sec-mem-ref-line = '59';
+        sec-mem-ref-name = 'exch2exch.XbtPrices::buy';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'exchange_8py_1acb7e709cc05e8314b1bdacd32e4dfc80';
+        sec-mem-ref-line = '115';
+        sec-mem-ref-name = 'exchange.FoxBit::buy';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'exchange_8py_1ada27b62a35286b9f5dbb54590c5bacd2';
+        sec-mem-ref-line = '151';
+        sec-mem-ref-name = 'exchange.MercadoBitcoin::buy';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'exchange_8py_1aaf828e37142a83cbfb12d193313f6d43';
+        sec-mem-ref-line = '182';
+        sec-mem-ref-name = 'exchange.OkCoin::buy';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'exch2exch_8py_1acb12f83bce4393714ec30351a1d636c2';
+        sec-mem-ref-line = '28';
+        sec-mem-ref-name = 'exch2exch.Rates::dt';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'exch2exch_8py_1af9f916c683c48631c97f1c5d91447751';
+        sec-mem-ref-line = '57';
+        sec-mem-ref-name = 'exch2exch.XbtPrices::dt';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'exchange_8py_1a363f8488eb0423f88519c085ae6f168f';
+        sec-mem-ref-line = '120';
+        sec-mem-ref-name = 'exchange.FoxBit::dt';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'exchange_8py_1aeee983ba4f72223a11fb914d22902c56';
+        sec-mem-ref-line = '156';
+        sec-mem-ref-name = 'exchange.MercadoBitcoin::dt';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'exchange_8py_1ade9d7cddcfa54f2b1ba5452854bfd48b';
+        sec-mem-ref-line = '187';
+        sec-mem-ref-name = 'exchange.OkCoin::dt';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'exch2exch_8py_1aeae6235417d65d9e9c768a51c38d5388';
+        sec-mem-ref-line = '61';
+        sec-mem-ref-name = 'exch2exch.XbtPrices::high';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'exchange_8py_1a4f6dfaecbcc17ceadddf52d266d9c00d';
+        sec-mem-ref-line = '117';
+        sec-mem-ref-name = 'exchange.FoxBit::high';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'exchange_8py_1a0b9c2d465601a48e3b8838354e931c39';
+        sec-mem-ref-line = '153';
+        sec-mem-ref-name = 'exchange.MercadoBitcoin::high';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'exchange_8py_1af9d9dbcfc86404510e7f9a5704e8eecd';
+        sec-mem-ref-line = '184';
+        sec-mem-ref-name = 'exchange.OkCoin::high';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'exch2exch_8py_1a8cef13f833a894d4fc5b8296bb4906fa';
+        sec-mem-ref-line = '62';
+        sec-mem-ref-name = 'exch2exch.XbtPrices::low';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'exchange_8py_1acd666444cff98fe477651120ddb0f915';
+        sec-mem-ref-line = '118';
+        sec-mem-ref-name = 'exchange.FoxBit::low';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'exchange_8py_1aaa3aae824bfc5ba3b7dc5252e9554713';
+        sec-mem-ref-line = '154';
+        sec-mem-ref-name = 'exchange.MercadoBitcoin::low';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'exchange_8py_1a1afa53e0ad63830d0585288abea42094';
+        sec-mem-ref-line = '185';
+        sec-mem-ref-name = 'exchange.OkCoin::low';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'exch2exch_8py_1a06fd0cfb03d485af3364a0d86fbe5385';
+        sec-mem-ref-line = '58';
+        sec-mem-ref-name = 'exch2exch.XbtPrices::sell';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'exchange_8py_1ac1fae4ef7a43254b71d7173a5cc6eeaf';
+        sec-mem-ref-line = '116';
+        sec-mem-ref-name = 'exchange.FoxBit::sell';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'exchange_8py_1a9982c7a3f6103c88c64160a5854c35cd';
+        sec-mem-ref-line = '152';
+        sec-mem-ref-name = 'exchange.MercadoBitcoin::sell';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'exchange_8py_1aadb487d2e2f277374a747e1bcb0bd40b';
+        sec-mem-ref-line = '183';
+        sec-mem-ref-name = 'exchange.OkCoin::sell';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classexchange_1_1_ok_coin_1a68de0ed0c8e15df62ee3c116127d960b';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+def
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'process_ticker';
+      sec-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
+      sec-mem-desc-line = '180';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'public-attrib';
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classexchange_1_1_ok_coin_1aaf828e37142a83cbfb12d193313f6d43';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'buy';
+      sec-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
+      sec-mem-desc-line = '182';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'raw__urlparser_8py_1a271c6108e7daef6fa321171e294df088';
+        sec-mem-ref-line = '74';
+        sec-mem-ref-name = 'raw_urlparser.XbtPrices::__str__';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'exchange_8py_1ae4fed29a4c9e9466849b05f4c0537eba';
+        sec-mem-ref-line = '189';
+        sec-mem-ref-name = 'exchange.OkCoin::get_ticker';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'raw__urlparser_8py_1a50f893a39919d2d0e00e53c6288b68a3';
+        sec-mem-ref-line = '62';
+        sec-mem-ref-name = 'raw_urlparser.XbtPrices::getBuy';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classexchange_1_1_ok_coin_1ade9d7cddcfa54f2b1ba5452854bfd48b';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'dt';
+      sec-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
+      sec-mem-desc-line = '187';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'raw__urlparser_8py_1a166ead3ebf1546ec2ea3eb299d524a30';
+        sec-mem-ref-line = '38';
+        sec-mem-ref-name = 'raw_urlparser.Rates::__str__';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'raw__urlparser_8py_1a271c6108e7daef6fa321171e294df088';
+        sec-mem-ref-line = '74';
+        sec-mem-ref-name = 'raw_urlparser.XbtPrices::__str__';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'exchange_8py_1ae4fed29a4c9e9466849b05f4c0537eba';
+        sec-mem-ref-line = '189';
+        sec-mem-ref-name = 'exchange.OkCoin::get_ticker';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'raw__urlparser_8py_1a83c01863eb94413a16ea00cb679245bc';
+        sec-mem-ref-line = '59';
+        sec-mem-ref-name = 'raw_urlparser.XbtPrices::getDateTime';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classexchange_1_1_ok_coin_1af9d9dbcfc86404510e7f9a5704e8eecd';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'high';
+      sec-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
+      sec-mem-desc-line = '184';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'exchange_8py_1ae4fed29a4c9e9466849b05f4c0537eba';
+        sec-mem-ref-line = '189';
+        sec-mem-ref-name = 'exchange.OkCoin::get_ticker';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classexchange_1_1_ok_coin_1a1afa53e0ad63830d0585288abea42094';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'low';
+      sec-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
+      sec-mem-desc-line = '185';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'exchange_8py_1ae4fed29a4c9e9466849b05f4c0537eba';
+        sec-mem-ref-line = '189';
+        sec-mem-ref-name = 'exchange.OkCoin::get_ticker';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classexchange_1_1_ok_coin_1aadb487d2e2f277374a747e1bcb0bd40b';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'sell';
+      sec-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
+      sec-mem-desc-line = '183';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'raw__urlparser_8py_1a271c6108e7daef6fa321171e294df088';
+        sec-mem-ref-line = '74';
+        sec-mem-ref-name = 'raw_urlparser.XbtPrices::__str__';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'exchange_8py_1ae4fed29a4c9e9466849b05f4c0537eba';
+        sec-mem-ref-line = '189';
+        sec-mem-ref-name = 'exchange.OkCoin::get_ticker';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'raw__urlparser_8py_1a141a6794eea34f738070970fefc0f854';
+        sec-mem-ref-line = '65';
+        sec-mem-ref-name = 'raw_urlparser.XbtPrices::getSell';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classexchange_1_1_ok_coin_1a0fe6263a7f58a6fa8a688929976b7e4a';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'ts';
+      sec-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
+      sec-mem-desc-line = '181';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'public-static-attrib';
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classexchange_1_1_ok_coin_1a81305ced2eb23b94feb7195d1d42afc2';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+string
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'U_TICKER';
+      sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= 'https://www.okcoin.com/api/v1/ticker.do?symbol=btc_usd'
+_EnD_oF_dEf_TeXt_;
+      sec-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
+      sec-mem-desc-line = '175';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-filename  = '/home/hilton/github/exch2exh/exchange.py';
+  cp-fileline  = '174';
+  cp-briefdesc = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-inheritancegraph = <<_EnD_oF_dEf_TeXt_
+      node = {
+        node-id    = 47;
+        node-label = 'exchange.Exchange';
+        node-link = {
+          node-link-id = 'classexchange_1_1_exchange';
+        };
+      }; /* node */
+      node = {
+        node-id    = 46;
+        node-label = 'exchange.OkCoin';
+        node-link = {
+          node-link-id = 'classexchange_1_1_ok_coin';
+        };
+        node-child = {
+          child-id = '47';
+          relation = public-inheritance;
+        }; /* node-child */
+      }; /* node */
+
+_EnD_oF_dEf_TeXt_;
+  cp-collaborationgraph = <<_EnD_oF_dEf_TeXt_
+      node = {
+        node-id    = 49;
+        node-label = 'exchange.Exchange';
+        node-link = {
+          node-link-id = 'classexchange_1_1_exchange';
+        };
+      }; /* node */
+      node = {
+        node-id    = 48;
+        node-label = 'exchange.OkCoin';
+        node-link = {
+          node-link-id = 'classexchange_1_1_ok_coin';
+        };
+        node-child = {
+          child-id = '49';
+          relation = public-inheritance;
+        }; /* node-child */
+      }; /* node */
+
+_EnD_oF_dEf_TeXt_;
+}; /* class */
+class = {
+  cp-id     = 'classraw__urlparser_1_1_rates';
+  cp-name   = 'raw_urlparser::Rates';
+  cp-section = {
+    sec-kind = 'public-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classraw__urlparser_1_1_rates_1a2de6334a686a8a81c619d99de46e43df';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+def
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = '__init__';
+      sec-mem-desc-file = '/home/hilton/github/exch2exh/raw_urlparser.py';
+      sec-mem-desc-line = '23';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classraw__urlparser_1_1_rates_1a166ead3ebf1546ec2ea3eb299d524a30';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+def
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = '__str__';
+      sec-mem-desc-file = '/home/hilton/github/exch2exh/raw_urlparser.py';
+      sec-mem-desc-line = '38';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'raw__urlparser_8py_1adc9df007bec75344f9f89cb631d1aeb3';
+        sec-mem-ref-line = '26';
+        sec-mem-ref-name = 'raw_urlparser.Rates::brl2usd';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'exch2exch_8py_1acc018dea09e825e18e91c73c5c63ab78';
+        sec-mem-ref-line = '30';
+        sec-mem-ref-name = 'exch2exch.Rates::brl2usd';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'raw__urlparser_8py_1a09b3c7cb595f3135c3eda648b1bb4c3f';
+        sec-mem-ref-line = '24';
+        sec-mem-ref-name = 'raw_urlparser.Rates::dt';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'exch2exch_8py_1acb12f83bce4393714ec30351a1d636c2';
+        sec-mem-ref-line = '28';
+        sec-mem-ref-name = 'exch2exch.Rates::dt';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'exch2exch_8py_1af9f916c683c48631c97f1c5d91447751';
+        sec-mem-ref-line = '57';
+        sec-mem-ref-name = 'exch2exch.XbtPrices::dt';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'exchange_8py_1a363f8488eb0423f88519c085ae6f168f';
+        sec-mem-ref-line = '120';
+        sec-mem-ref-name = 'exchange.FoxBit::dt';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'exchange_8py_1aeee983ba4f72223a11fb914d22902c56';
+        sec-mem-ref-line = '156';
+        sec-mem-ref-name = 'exchange.MercadoBitcoin::dt';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'exchange_8py_1ade9d7cddcfa54f2b1ba5452854bfd48b';
+        sec-mem-ref-line = '187';
+        sec-mem-ref-name = 'exchange.OkCoin::dt';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'raw__urlparser_8py_1acb05316e95a39bc42590a882712f854b';
+        sec-mem-ref-line = '27';
+        sec-mem-ref-name = 'raw_urlparser.Rates::service';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'exch2exch_8py_1a94c1394b9259d6a7c8f3c12bbd20e685';
+        sec-mem-ref-line = '31';
+        sec-mem-ref-name = 'exch2exch.Rates::service';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'raw__urlparser_8py_1a52d9b688be8385a87783b27839749b4a';
+        sec-mem-ref-line = '25';
+        sec-mem-ref-name = 'raw_urlparser.Rates::usd2brl';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'exch2exch_8py_1ab79ad6e4a42ca358e6b39c825a4b8a0b';
+        sec-mem-ref-line = '29';
+        sec-mem-ref-name = 'exch2exch.Rates::usd2brl';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classraw__urlparser_1_1_rates_1a435ff5562321da275bb95823a346bc5c';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+def
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'getBrl2Usd';
+      sec-mem-desc-file = '/home/hilton/github/exch2exh/raw_urlparser.py';
+      sec-mem-desc-line = '29';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'raw__urlparser_8py_1adc9df007bec75344f9f89cb631d1aeb3';
+        sec-mem-ref-line = '26';
+        sec-mem-ref-name = 'raw_urlparser.Rates::brl2usd';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'exch2exch_8py_1acc018dea09e825e18e91c73c5c63ab78';
+        sec-mem-ref-line = '30';
+        sec-mem-ref-name = 'exch2exch.Rates::brl2usd';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classraw__urlparser_1_1_rates_1a4579624e853a4d83c5b7df9c390de5b5';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+def
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'getServiceName';
+      sec-mem-desc-file = '/home/hilton/github/exch2exh/raw_urlparser.py';
+      sec-mem-desc-line = '35';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'raw__urlparser_8py_1acb05316e95a39bc42590a882712f854b';
+        sec-mem-ref-line = '27';
+        sec-mem-ref-name = 'raw_urlparser.Rates::service';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'exch2exch_8py_1a94c1394b9259d6a7c8f3c12bbd20e685';
+        sec-mem-ref-line = '31';
+        sec-mem-ref-name = 'exch2exch.Rates::service';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classraw__urlparser_1_1_rates_1aaf3f32369f17da5fc903a7a51feca25f';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+def
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'getUsd2Brl';
+      sec-mem-desc-file = '/home/hilton/github/exch2exh/raw_urlparser.py';
+      sec-mem-desc-line = '32';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'raw__urlparser_8py_1a52d9b688be8385a87783b27839749b4a';
+        sec-mem-ref-line = '25';
+        sec-mem-ref-name = 'raw_urlparser.Rates::usd2brl';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'exch2exch_8py_1ab79ad6e4a42ca358e6b39c825a4b8a0b';
+        sec-mem-ref-line = '29';
+        sec-mem-ref-name = 'exch2exch.Rates::usd2brl';
+    };
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'public-attrib';
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classraw__urlparser_1_1_rates_1adc9df007bec75344f9f89cb631d1aeb3';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'brl2usd';
+      sec-mem-desc-file = '/home/hilton/github/exch2exh/raw_urlparser.py';
+      sec-mem-desc-line = '26';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'raw__urlparser_8py_1a166ead3ebf1546ec2ea3eb299d524a30';
+        sec-mem-ref-line = '38';
+        sec-mem-ref-name = 'raw_urlparser.Rates::__str__';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'raw__urlparser_8py_1a435ff5562321da275bb95823a346bc5c';
+        sec-mem-ref-line = '29';
+        sec-mem-ref-name = 'raw_urlparser.Rates::getBrl2Usd';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classraw__urlparser_1_1_rates_1a09b3c7cb595f3135c3eda648b1bb4c3f';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'dt';
+      sec-mem-desc-file = '/home/hilton/github/exch2exh/raw_urlparser.py';
+      sec-mem-desc-line = '24';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'raw__urlparser_8py_1a166ead3ebf1546ec2ea3eb299d524a30';
+        sec-mem-ref-line = '38';
+        sec-mem-ref-name = 'raw_urlparser.Rates::__str__';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'raw__urlparser_8py_1a271c6108e7daef6fa321171e294df088';
+        sec-mem-ref-line = '74';
+        sec-mem-ref-name = 'raw_urlparser.XbtPrices::__str__';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'raw__urlparser_8py_1a83c01863eb94413a16ea00cb679245bc';
+        sec-mem-ref-line = '59';
+        sec-mem-ref-name = 'raw_urlparser.XbtPrices::getDateTime';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classraw__urlparser_1_1_rates_1acb05316e95a39bc42590a882712f854b';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'service';
+      sec-mem-desc-file = '/home/hilton/github/exch2exh/raw_urlparser.py';
+      sec-mem-desc-line = '27';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'raw__urlparser_8py_1a166ead3ebf1546ec2ea3eb299d524a30';
+        sec-mem-ref-line = '38';
+        sec-mem-ref-name = 'raw_urlparser.Rates::__str__';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'raw__urlparser_8py_1a4579624e853a4d83c5b7df9c390de5b5';
+        sec-mem-ref-line = '35';
+        sec-mem-ref-name = 'raw_urlparser.Rates::getServiceName';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classraw__urlparser_1_1_rates_1a52d9b688be8385a87783b27839749b4a';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'usd2brl';
+      sec-mem-desc-file = '/home/hilton/github/exch2exh/raw_urlparser.py';
+      sec-mem-desc-line = '25';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'raw__urlparser_8py_1a166ead3ebf1546ec2ea3eb299d524a30';
+        sec-mem-ref-line = '38';
+        sec-mem-ref-name = 'raw_urlparser.Rates::__str__';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'raw__urlparser_8py_1aaf3f32369f17da5fc903a7a51feca25f';
+        sec-mem-ref-line = '32';
+        sec-mem-ref-name = 'raw_urlparser.Rates::getUsd2Brl';
+    };
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-filename  = '/home/hilton/github/exch2exh/raw_urlparser.py';
+  cp-fileline  = '22';
+  cp-briefdesc = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* class */
+class = {
+  cp-id     = 'classexch2exch_1_1_rates';
+  cp-name   = 'exch2exch::Rates';
+  cp-section = {
+    sec-kind = 'public-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classexch2exch_1_1_rates_1adf2f5038d3b15e4b434ae3d32527ebe2';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+def
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = '__init__';
+      sec-mem-desc-file = '/home/hilton/github/exch2exh/exch2exch.py';
+      sec-mem-desc-line = '27';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classexch2exch_1_1_rates_1ac50b5d57f05657995ea0152bc4f195e9';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+def
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = '__str__';
+      sec-mem-desc-file = '/home/hilton/github/exch2exh/exch2exch.py';
+      sec-mem-desc-line = '42';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'exch2exch_8py_1acc018dea09e825e18e91c73c5c63ab78';
+        sec-mem-ref-line = '30';
+        sec-mem-ref-name = 'exch2exch.Rates::brl2usd';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'exch2exch_8py_1acb12f83bce4393714ec30351a1d636c2';
+        sec-mem-ref-line = '28';
+        sec-mem-ref-name = 'exch2exch.Rates::dt';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'exch2exch_8py_1a94c1394b9259d6a7c8f3c12bbd20e685';
+        sec-mem-ref-line = '31';
+        sec-mem-ref-name = 'exch2exch.Rates::service';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'exch2exch_8py_1ab79ad6e4a42ca358e6b39c825a4b8a0b';
+        sec-mem-ref-line = '29';
+        sec-mem-ref-name = 'exch2exch.Rates::usd2brl';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classexch2exch_1_1_rates_1ae5e570daf9d176e3455bc98fc19e2b2c';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+def
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'getBrl2Usd';
+      sec-mem-desc-file = '/home/hilton/github/exch2exh/exch2exch.py';
+      sec-mem-desc-line = '33';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'exch2exch_8py_1acc018dea09e825e18e91c73c5c63ab78';
+        sec-mem-ref-line = '30';
+        sec-mem-ref-name = 'exch2exch.Rates::brl2usd';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classexch2exch_1_1_rates_1a8ec48a9ebb71f923056205ad79679eeb';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+def
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'getServiceName';
+      sec-mem-desc-file = '/home/hilton/github/exch2exh/exch2exch.py';
+      sec-mem-desc-line = '39';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'exch2exch_8py_1a94c1394b9259d6a7c8f3c12bbd20e685';
+        sec-mem-ref-line = '31';
+        sec-mem-ref-name = 'exch2exch.Rates::service';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classexch2exch_1_1_rates_1a1b3705806d2321660c4c2753474f403d';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+def
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'getUsd2Brl';
+      sec-mem-desc-file = '/home/hilton/github/exch2exh/exch2exch.py';
+      sec-mem-desc-line = '36';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'exch2exch_8py_1ab79ad6e4a42ca358e6b39c825a4b8a0b';
+        sec-mem-ref-line = '29';
+        sec-mem-ref-name = 'exch2exch.Rates::usd2brl';
+    };
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'public-attrib';
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classexch2exch_1_1_rates_1acc018dea09e825e18e91c73c5c63ab78';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'brl2usd';
+      sec-mem-desc-file = '/home/hilton/github/exch2exh/exch2exch.py';
+      sec-mem-desc-line = '30';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'raw__urlparser_8py_1a166ead3ebf1546ec2ea3eb299d524a30';
+        sec-mem-ref-line = '38';
+        sec-mem-ref-name = 'raw_urlparser.Rates::__str__';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'exch2exch_8py_1ac50b5d57f05657995ea0152bc4f195e9';
+        sec-mem-ref-line = '42';
+        sec-mem-ref-name = 'exch2exch.Rates::__str__';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'raw__urlparser_8py_1a435ff5562321da275bb95823a346bc5c';
+        sec-mem-ref-line = '29';
+        sec-mem-ref-name = 'raw_urlparser.Rates::getBrl2Usd';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'exch2exch_8py_1ae5e570daf9d176e3455bc98fc19e2b2c';
+        sec-mem-ref-line = '33';
+        sec-mem-ref-name = 'exch2exch.Rates::getBrl2Usd';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classexch2exch_1_1_rates_1acb12f83bce4393714ec30351a1d636c2';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'dt';
+      sec-mem-desc-file = '/home/hilton/github/exch2exh/exch2exch.py';
+      sec-mem-desc-line = '28';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'raw__urlparser_8py_1a166ead3ebf1546ec2ea3eb299d524a30';
+        sec-mem-ref-line = '38';
+        sec-mem-ref-name = 'raw_urlparser.Rates::__str__';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'exch2exch_8py_1ac50b5d57f05657995ea0152bc4f195e9';
+        sec-mem-ref-line = '42';
+        sec-mem-ref-name = 'exch2exch.Rates::__str__';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'raw__urlparser_8py_1a271c6108e7daef6fa321171e294df088';
+        sec-mem-ref-line = '74';
+        sec-mem-ref-name = 'raw_urlparser.XbtPrices::__str__';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'exch2exch_8py_1a5558eba2560c7d37c5308b7071f5c583';
+        sec-mem-ref-line = '87';
+        sec-mem-ref-name = 'exch2exch.XbtPrices::__str__';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'exchange_8py_1ae651664c24cb7b31973cdf2cdf281628';
+        sec-mem-ref-line = '158';
+        sec-mem-ref-name = 'exchange.MercadoBitcoin::get_ticker';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'exchange_8py_1ae4fed29a4c9e9466849b05f4c0537eba';
+        sec-mem-ref-line = '189';
+        sec-mem-ref-name = 'exchange.OkCoin::get_ticker';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'exchange_8py_1ae9e9965d6e92ab9413e17637ea22feb7';
+        sec-mem-ref-line = '123';
+        sec-mem-ref-name = 'exchange.FoxBit::get_trades';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'raw__urlparser_8py_1a83c01863eb94413a16ea00cb679245bc';
+        sec-mem-ref-line = '59';
+        sec-mem-ref-name = 'raw_urlparser.XbtPrices::getDateTime';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'exch2exch_8py_1ad1c937977f274b7a8ddb5868825ad592';
+        sec-mem-ref-line = '66';
+        sec-mem-ref-name = 'exch2exch.XbtPrices::getDateTime';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classexch2exch_1_1_rates_1a94c1394b9259d6a7c8f3c12bbd20e685';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'service';
+      sec-mem-desc-file = '/home/hilton/github/exch2exh/exch2exch.py';
+      sec-mem-desc-line = '31';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'raw__urlparser_8py_1a166ead3ebf1546ec2ea3eb299d524a30';
+        sec-mem-ref-line = '38';
+        sec-mem-ref-name = 'raw_urlparser.Rates::__str__';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'exch2exch_8py_1ac50b5d57f05657995ea0152bc4f195e9';
+        sec-mem-ref-line = '42';
+        sec-mem-ref-name = 'exch2exch.Rates::__str__';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'raw__urlparser_8py_1a4579624e853a4d83c5b7df9c390de5b5';
+        sec-mem-ref-line = '35';
+        sec-mem-ref-name = 'raw_urlparser.Rates::getServiceName';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'exch2exch_8py_1a8ec48a9ebb71f923056205ad79679eeb';
+        sec-mem-ref-line = '39';
+        sec-mem-ref-name = 'exch2exch.Rates::getServiceName';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classexch2exch_1_1_rates_1ab79ad6e4a42ca358e6b39c825a4b8a0b';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'usd2brl';
+      sec-mem-desc-file = '/home/hilton/github/exch2exh/exch2exch.py';
+      sec-mem-desc-line = '29';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'raw__urlparser_8py_1a166ead3ebf1546ec2ea3eb299d524a30';
+        sec-mem-ref-line = '38';
+        sec-mem-ref-name = 'raw_urlparser.Rates::__str__';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'exch2exch_8py_1ac50b5d57f05657995ea0152bc4f195e9';
+        sec-mem-ref-line = '42';
+        sec-mem-ref-name = 'exch2exch.Rates::__str__';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'raw__urlparser_8py_1aaf3f32369f17da5fc903a7a51feca25f';
+        sec-mem-ref-line = '32';
+        sec-mem-ref-name = 'raw_urlparser.Rates::getUsd2Brl';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'exch2exch_8py_1a1b3705806d2321660c4c2753474f403d';
+        sec-mem-ref-line = '36';
+        sec-mem-ref-name = 'exch2exch.Rates::getUsd2Brl';
+    };
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-filename  = '/home/hilton/github/exch2exh/exch2exch.py';
+  cp-fileline  = '26';
+  cp-briefdesc = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* class */
+class = {
+  cp-id     = 'classexch2exch_1_1_xbt_prices';
+  cp-name   = 'exch2exch::XbtPrices';
+  cp-section = {
+    sec-kind = 'public-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classexch2exch_1_1_xbt_prices_1a58a46b0407bcf03e0b7258fc20ba6de0';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+def
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = '__init__';
+      sec-mem-desc-file = '/home/hilton/github/exch2exh/exch2exch.py';
+      sec-mem-desc-line = '56';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classexch2exch_1_1_xbt_prices_1a5558eba2560c7d37c5308b7071f5c583';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+def
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = '__str__';
+      sec-mem-desc-file = '/home/hilton/github/exch2exh/exch2exch.py';
+      sec-mem-desc-line = '87';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'exch2exch_8py_1a8f1d8ac0ef114ea3645314578697b7ac';
+        sec-mem-ref-line = '59';
+        sec-mem-ref-name = 'exch2exch.XbtPrices::buy';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'exch2exch_8py_1a1191c8825e8f1333b4100b89fa2be053';
+        sec-mem-ref-line = '64';
+        sec-mem-ref-name = 'exch2exch.XbtPrices::coin';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'exch2exch_8py_1acb12f83bce4393714ec30351a1d636c2';
+        sec-mem-ref-line = '28';
+        sec-mem-ref-name = 'exch2exch.Rates::dt';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'exch2exch_8py_1af9f916c683c48631c97f1c5d91447751';
+        sec-mem-ref-line = '57';
+        sec-mem-ref-name = 'exch2exch.XbtPrices::dt';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'exch2exch_8py_1a72caf3a29017a1ceaf4367240a46b360';
+        sec-mem-ref-line = '63';
+        sec-mem-ref-name = 'exch2exch.XbtPrices::exch';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'exch2exch_8py_1aeae6235417d65d9e9c768a51c38d5388';
+        sec-mem-ref-line = '61';
+        sec-mem-ref-name = 'exch2exch.XbtPrices::high';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'exch2exch_8py_1a8cef13f833a894d4fc5b8296bb4906fa';
+        sec-mem-ref-line = '62';
+        sec-mem-ref-name = 'exch2exch.XbtPrices::low';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'exch2exch_8py_1a06fd0cfb03d485af3364a0d86fbe5385';
+        sec-mem-ref-line = '58';
+        sec-mem-ref-name = 'exch2exch.XbtPrices::sell';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classexch2exch_1_1_xbt_prices_1a6a2f6cbf5d274887ffcbfbe2eb77b358';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+def
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'getBuy';
+      sec-mem-desc-file = '/home/hilton/github/exch2exh/exch2exch.py';
+      sec-mem-desc-line = '69';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'exch2exch_8py_1a8f1d8ac0ef114ea3645314578697b7ac';
+        sec-mem-ref-line = '59';
+        sec-mem-ref-name = 'exch2exch.XbtPrices::buy';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classexch2exch_1_1_xbt_prices_1a657bf3d6e75d3bfe1fe408862b2a78cd';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+def
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'getCoinName';
+      sec-mem-desc-file = '/home/hilton/github/exch2exh/exch2exch.py';
+      sec-mem-desc-line = '84';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'exch2exch_8py_1a1191c8825e8f1333b4100b89fa2be053';
+        sec-mem-ref-line = '64';
+        sec-mem-ref-name = 'exch2exch.XbtPrices::coin';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classexch2exch_1_1_xbt_prices_1ad1c937977f274b7a8ddb5868825ad592';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+def
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'getDateTime';
+      sec-mem-desc-file = '/home/hilton/github/exch2exh/exch2exch.py';
+      sec-mem-desc-line = '66';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'exch2exch_8py_1acb12f83bce4393714ec30351a1d636c2';
+        sec-mem-ref-line = '28';
+        sec-mem-ref-name = 'exch2exch.Rates::dt';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'exch2exch_8py_1af9f916c683c48631c97f1c5d91447751';
+        sec-mem-ref-line = '57';
+        sec-mem-ref-name = 'exch2exch.XbtPrices::dt';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classexch2exch_1_1_xbt_prices_1a5c1eb62a961be8c36b93c0b1951d0b8d';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+def
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'getExchangeName';
+      sec-mem-desc-file = '/home/hilton/github/exch2exh/exch2exch.py';
+      sec-mem-desc-line = '81';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'exch2exch_8py_1a72caf3a29017a1ceaf4367240a46b360';
+        sec-mem-ref-line = '63';
+        sec-mem-ref-name = 'exch2exch.XbtPrices::exch';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classexch2exch_1_1_xbt_prices_1a173ced43a9edb648a129dfa9ba4a4d66';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+def
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'getHigh';
+      sec-mem-desc-file = '/home/hilton/github/exch2exh/exch2exch.py';
+      sec-mem-desc-line = '75';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'exch2exch_8py_1aeae6235417d65d9e9c768a51c38d5388';
+        sec-mem-ref-line = '61';
+        sec-mem-ref-name = 'exch2exch.XbtPrices::high';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classexch2exch_1_1_xbt_prices_1a38ab2c32172fd95a1bb9fe103b6d59cd';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+def
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'getLow';
+      sec-mem-desc-file = '/home/hilton/github/exch2exh/exch2exch.py';
+      sec-mem-desc-line = '78';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'exch2exch_8py_1a8cef13f833a894d4fc5b8296bb4906fa';
+        sec-mem-ref-line = '62';
+        sec-mem-ref-name = 'exch2exch.XbtPrices::low';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classexch2exch_1_1_xbt_prices_1abcd54a52079952f45b5f29f3ffcd83b5';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+def
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'getSell';
+      sec-mem-desc-file = '/home/hilton/github/exch2exh/exch2exch.py';
+      sec-mem-desc-line = '72';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'exch2exch_8py_1a06fd0cfb03d485af3364a0d86fbe5385';
+        sec-mem-ref-line = '58';
+        sec-mem-ref-name = 'exch2exch.XbtPrices::sell';
+    };
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'public-attrib';
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classexch2exch_1_1_xbt_prices_1a8f1d8ac0ef114ea3645314578697b7ac';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'buy';
+      sec-mem-desc-file = '/home/hilton/github/exch2exh/exch2exch.py';
+      sec-mem-desc-line = '59';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'raw__urlparser_8py_1a271c6108e7daef6fa321171e294df088';
+        sec-mem-ref-line = '74';
+        sec-mem-ref-name = 'raw_urlparser.XbtPrices::__str__';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'exch2exch_8py_1a5558eba2560c7d37c5308b7071f5c583';
+        sec-mem-ref-line = '87';
+        sec-mem-ref-name = 'exch2exch.XbtPrices::__str__';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'exchange_8py_1ae651664c24cb7b31973cdf2cdf281628';
+        sec-mem-ref-line = '158';
+        sec-mem-ref-name = 'exchange.MercadoBitcoin::get_ticker';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'exchange_8py_1ae4fed29a4c9e9466849b05f4c0537eba';
+        sec-mem-ref-line = '189';
+        sec-mem-ref-name = 'exchange.OkCoin::get_ticker';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'exchange_8py_1ae9e9965d6e92ab9413e17637ea22feb7';
+        sec-mem-ref-line = '123';
+        sec-mem-ref-name = 'exchange.FoxBit::get_trades';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'raw__urlparser_8py_1a50f893a39919d2d0e00e53c6288b68a3';
+        sec-mem-ref-line = '62';
+        sec-mem-ref-name = 'raw_urlparser.XbtPrices::getBuy';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'exch2exch_8py_1a6a2f6cbf5d274887ffcbfbe2eb77b358';
+        sec-mem-ref-line = '69';
+        sec-mem-ref-name = 'exch2exch.XbtPrices::getBuy';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classexch2exch_1_1_xbt_prices_1a1191c8825e8f1333b4100b89fa2be053';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'coin';
+      sec-mem-desc-file = '/home/hilton/github/exch2exh/exch2exch.py';
+      sec-mem-desc-line = '64';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'raw__urlparser_8py_1a271c6108e7daef6fa321171e294df088';
+        sec-mem-ref-line = '74';
+        sec-mem-ref-name = 'raw_urlparser.XbtPrices::__str__';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'exch2exch_8py_1a5558eba2560c7d37c5308b7071f5c583';
+        sec-mem-ref-line = '87';
+        sec-mem-ref-name = 'exch2exch.XbtPrices::__str__';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'raw__urlparser_8py_1a0790deb0fc5582520e2a3249c14a496a';
+        sec-mem-ref-line = '71';
+        sec-mem-ref-name = 'raw_urlparser.XbtPrices::getCoinName';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'exch2exch_8py_1a657bf3d6e75d3bfe1fe408862b2a78cd';
+        sec-mem-ref-line = '84';
+        sec-mem-ref-name = 'exch2exch.XbtPrices::getCoinName';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classexch2exch_1_1_xbt_prices_1af9f916c683c48631c97f1c5d91447751';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'dt';
+      sec-mem-desc-file = '/home/hilton/github/exch2exh/exch2exch.py';
+      sec-mem-desc-line = '57';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'raw__urlparser_8py_1a166ead3ebf1546ec2ea3eb299d524a30';
+        sec-mem-ref-line = '38';
+        sec-mem-ref-name = 'raw_urlparser.Rates::__str__';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'raw__urlparser_8py_1a271c6108e7daef6fa321171e294df088';
+        sec-mem-ref-line = '74';
+        sec-mem-ref-name = 'raw_urlparser.XbtPrices::__str__';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'exch2exch_8py_1a5558eba2560c7d37c5308b7071f5c583';
+        sec-mem-ref-line = '87';
+        sec-mem-ref-name = 'exch2exch.XbtPrices::__str__';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'exchange_8py_1ae651664c24cb7b31973cdf2cdf281628';
+        sec-mem-ref-line = '158';
+        sec-mem-ref-name = 'exchange.MercadoBitcoin::get_ticker';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'exchange_8py_1ae4fed29a4c9e9466849b05f4c0537eba';
+        sec-mem-ref-line = '189';
+        sec-mem-ref-name = 'exchange.OkCoin::get_ticker';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'exchange_8py_1ae9e9965d6e92ab9413e17637ea22feb7';
+        sec-mem-ref-line = '123';
+        sec-mem-ref-name = 'exchange.FoxBit::get_trades';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'raw__urlparser_8py_1a83c01863eb94413a16ea00cb679245bc';
+        sec-mem-ref-line = '59';
+        sec-mem-ref-name = 'raw_urlparser.XbtPrices::getDateTime';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'exch2exch_8py_1ad1c937977f274b7a8ddb5868825ad592';
+        sec-mem-ref-line = '66';
+        sec-mem-ref-name = 'exch2exch.XbtPrices::getDateTime';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classexch2exch_1_1_xbt_prices_1a72caf3a29017a1ceaf4367240a46b360';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'exch';
+      sec-mem-desc-file = '/home/hilton/github/exch2exh/exch2exch.py';
+      sec-mem-desc-line = '63';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'raw__urlparser_8py_1a271c6108e7daef6fa321171e294df088';
+        sec-mem-ref-line = '74';
+        sec-mem-ref-name = 'raw_urlparser.XbtPrices::__str__';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'exch2exch_8py_1a5558eba2560c7d37c5308b7071f5c583';
+        sec-mem-ref-line = '87';
+        sec-mem-ref-name = 'exch2exch.XbtPrices::__str__';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'raw__urlparser_8py_1a3a8466753538f1491b67174540c32758';
+        sec-mem-ref-line = '68';
+        sec-mem-ref-name = 'raw_urlparser.XbtPrices::getExchangeName';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'exch2exch_8py_1a5c1eb62a961be8c36b93c0b1951d0b8d';
+        sec-mem-ref-line = '81';
+        sec-mem-ref-name = 'exch2exch.XbtPrices::getExchangeName';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classexch2exch_1_1_xbt_prices_1aeae6235417d65d9e9c768a51c38d5388';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'high';
+      sec-mem-desc-file = '/home/hilton/github/exch2exh/exch2exch.py';
+      sec-mem-desc-line = '61';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'exch2exch_8py_1a5558eba2560c7d37c5308b7071f5c583';
+        sec-mem-ref-line = '87';
+        sec-mem-ref-name = 'exch2exch.XbtPrices::__str__';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'exchange_8py_1ae651664c24cb7b31973cdf2cdf281628';
+        sec-mem-ref-line = '158';
+        sec-mem-ref-name = 'exchange.MercadoBitcoin::get_ticker';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'exchange_8py_1ae4fed29a4c9e9466849b05f4c0537eba';
+        sec-mem-ref-line = '189';
+        sec-mem-ref-name = 'exchange.OkCoin::get_ticker';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'exchange_8py_1ae9e9965d6e92ab9413e17637ea22feb7';
+        sec-mem-ref-line = '123';
+        sec-mem-ref-name = 'exchange.FoxBit::get_trades';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'exch2exch_8py_1a173ced43a9edb648a129dfa9ba4a4d66';
+        sec-mem-ref-line = '75';
+        sec-mem-ref-name = 'exch2exch.XbtPrices::getHigh';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classexch2exch_1_1_xbt_prices_1a8cef13f833a894d4fc5b8296bb4906fa';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'low';
+      sec-mem-desc-file = '/home/hilton/github/exch2exh/exch2exch.py';
+      sec-mem-desc-line = '62';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'exch2exch_8py_1a5558eba2560c7d37c5308b7071f5c583';
+        sec-mem-ref-line = '87';
+        sec-mem-ref-name = 'exch2exch.XbtPrices::__str__';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'exchange_8py_1ae651664c24cb7b31973cdf2cdf281628';
+        sec-mem-ref-line = '158';
+        sec-mem-ref-name = 'exchange.MercadoBitcoin::get_ticker';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'exchange_8py_1ae4fed29a4c9e9466849b05f4c0537eba';
+        sec-mem-ref-line = '189';
+        sec-mem-ref-name = 'exchange.OkCoin::get_ticker';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'exchange_8py_1ae9e9965d6e92ab9413e17637ea22feb7';
+        sec-mem-ref-line = '123';
+        sec-mem-ref-name = 'exchange.FoxBit::get_trades';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'exch2exch_8py_1a38ab2c32172fd95a1bb9fe103b6d59cd';
+        sec-mem-ref-line = '78';
+        sec-mem-ref-name = 'exch2exch.XbtPrices::getLow';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classexch2exch_1_1_xbt_prices_1a06fd0cfb03d485af3364a0d86fbe5385';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'sell';
+      sec-mem-desc-file = '/home/hilton/github/exch2exh/exch2exch.py';
+      sec-mem-desc-line = '58';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'raw__urlparser_8py_1a271c6108e7daef6fa321171e294df088';
+        sec-mem-ref-line = '74';
+        sec-mem-ref-name = 'raw_urlparser.XbtPrices::__str__';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'exch2exch_8py_1a5558eba2560c7d37c5308b7071f5c583';
+        sec-mem-ref-line = '87';
+        sec-mem-ref-name = 'exch2exch.XbtPrices::__str__';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'exchange_8py_1ae651664c24cb7b31973cdf2cdf281628';
+        sec-mem-ref-line = '158';
+        sec-mem-ref-name = 'exchange.MercadoBitcoin::get_ticker';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'exchange_8py_1ae4fed29a4c9e9466849b05f4c0537eba';
+        sec-mem-ref-line = '189';
+        sec-mem-ref-name = 'exchange.OkCoin::get_ticker';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'exchange_8py_1ae9e9965d6e92ab9413e17637ea22feb7';
+        sec-mem-ref-line = '123';
+        sec-mem-ref-name = 'exchange.FoxBit::get_trades';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'raw__urlparser_8py_1a141a6794eea34f738070970fefc0f854';
+        sec-mem-ref-line = '65';
+        sec-mem-ref-name = 'raw_urlparser.XbtPrices::getSell';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'exch2exch_8py_1abcd54a52079952f45b5f29f3ffcd83b5';
+        sec-mem-ref-line = '72';
+        sec-mem-ref-name = 'exch2exch.XbtPrices::getSell';
+    };
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-filename  = '/home/hilton/github/exch2exh/exch2exch.py';
+  cp-fileline  = '55';
+  cp-briefdesc = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* class */
+class = {
+  cp-id     = 'classraw__urlparser_1_1_xbt_prices';
+  cp-name   = 'raw_urlparser::XbtPrices';
+  cp-section = {
+    sec-kind = 'public-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classraw__urlparser_1_1_xbt_prices_1aea4d8c7d904f5aeaf71d4e60191aff23';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+def
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = '__init__';
+      sec-mem-desc-file = '/home/hilton/github/exch2exh/raw_urlparser.py';
+      sec-mem-desc-line = '52';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classraw__urlparser_1_1_xbt_prices_1a271c6108e7daef6fa321171e294df088';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+def
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = '__str__';
+      sec-mem-desc-file = '/home/hilton/github/exch2exh/raw_urlparser.py';
+      sec-mem-desc-line = '74';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'raw__urlparser_8py_1a87eba659d6598ffd66c694535e1b7a7a';
+        sec-mem-ref-line = '55';
+        sec-mem-ref-name = 'raw_urlparser.XbtPrices::buy';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'exch2exch_8py_1a8f1d8ac0ef114ea3645314578697b7ac';
+        sec-mem-ref-line = '59';
+        sec-mem-ref-name = 'exch2exch.XbtPrices::buy';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'exchange_8py_1acb7e709cc05e8314b1bdacd32e4dfc80';
+        sec-mem-ref-line = '115';
+        sec-mem-ref-name = 'exchange.FoxBit::buy';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'exchange_8py_1ada27b62a35286b9f5dbb54590c5bacd2';
+        sec-mem-ref-line = '151';
+        sec-mem-ref-name = 'exchange.MercadoBitcoin::buy';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'exchange_8py_1aaf828e37142a83cbfb12d193313f6d43';
+        sec-mem-ref-line = '182';
+        sec-mem-ref-name = 'exchange.OkCoin::buy';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'raw__urlparser_8py_1a8d253ccd987bce28e3aaba7a9c486e5f';
+        sec-mem-ref-line = '57';
+        sec-mem-ref-name = 'raw_urlparser.XbtPrices::coin';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'exch2exch_8py_1a1191c8825e8f1333b4100b89fa2be053';
+        sec-mem-ref-line = '64';
+        sec-mem-ref-name = 'exch2exch.XbtPrices::coin';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'raw__urlparser_8py_1a09b3c7cb595f3135c3eda648b1bb4c3f';
+        sec-mem-ref-line = '24';
+        sec-mem-ref-name = 'raw_urlparser.Rates::dt';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'exch2exch_8py_1acb12f83bce4393714ec30351a1d636c2';
+        sec-mem-ref-line = '28';
+        sec-mem-ref-name = 'exch2exch.Rates::dt';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'raw__urlparser_8py_1ae094aa3e73d21d0be219a085f09bcf13';
+        sec-mem-ref-line = '53';
+        sec-mem-ref-name = 'raw_urlparser.XbtPrices::dt';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'exch2exch_8py_1af9f916c683c48631c97f1c5d91447751';
+        sec-mem-ref-line = '57';
+        sec-mem-ref-name = 'exch2exch.XbtPrices::dt';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'exchange_8py_1a363f8488eb0423f88519c085ae6f168f';
+        sec-mem-ref-line = '120';
+        sec-mem-ref-name = 'exchange.FoxBit::dt';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'exchange_8py_1aeee983ba4f72223a11fb914d22902c56';
+        sec-mem-ref-line = '156';
+        sec-mem-ref-name = 'exchange.MercadoBitcoin::dt';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'exchange_8py_1ade9d7cddcfa54f2b1ba5452854bfd48b';
+        sec-mem-ref-line = '187';
+        sec-mem-ref-name = 'exchange.OkCoin::dt';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'raw__urlparser_8py_1a016bbd95465aaa14b5c434047df7b7fb';
+        sec-mem-ref-line = '56';
+        sec-mem-ref-name = 'raw_urlparser.XbtPrices::exch';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'exch2exch_8py_1a72caf3a29017a1ceaf4367240a46b360';
+        sec-mem-ref-line = '63';
+        sec-mem-ref-name = 'exch2exch.XbtPrices::exch';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'raw__urlparser_8py_1a22b483cac27a5b17f9e7b265c219bb99';
+        sec-mem-ref-line = '54';
+        sec-mem-ref-name = 'raw_urlparser.XbtPrices::sell';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'exch2exch_8py_1a06fd0cfb03d485af3364a0d86fbe5385';
+        sec-mem-ref-line = '58';
+        sec-mem-ref-name = 'exch2exch.XbtPrices::sell';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'exchange_8py_1ac1fae4ef7a43254b71d7173a5cc6eeaf';
+        sec-mem-ref-line = '116';
+        sec-mem-ref-name = 'exchange.FoxBit::sell';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'exchange_8py_1a9982c7a3f6103c88c64160a5854c35cd';
+        sec-mem-ref-line = '152';
+        sec-mem-ref-name = 'exchange.MercadoBitcoin::sell';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'exchange_8py_1aadb487d2e2f277374a747e1bcb0bd40b';
+        sec-mem-ref-line = '183';
+        sec-mem-ref-name = 'exchange.OkCoin::sell';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classraw__urlparser_1_1_xbt_prices_1a50f893a39919d2d0e00e53c6288b68a3';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+def
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'getBuy';
+      sec-mem-desc-file = '/home/hilton/github/exch2exh/raw_urlparser.py';
+      sec-mem-desc-line = '62';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'raw__urlparser_8py_1a87eba659d6598ffd66c694535e1b7a7a';
+        sec-mem-ref-line = '55';
+        sec-mem-ref-name = 'raw_urlparser.XbtPrices::buy';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'exch2exch_8py_1a8f1d8ac0ef114ea3645314578697b7ac';
+        sec-mem-ref-line = '59';
+        sec-mem-ref-name = 'exch2exch.XbtPrices::buy';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'exchange_8py_1acb7e709cc05e8314b1bdacd32e4dfc80';
+        sec-mem-ref-line = '115';
+        sec-mem-ref-name = 'exchange.FoxBit::buy';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'exchange_8py_1ada27b62a35286b9f5dbb54590c5bacd2';
+        sec-mem-ref-line = '151';
+        sec-mem-ref-name = 'exchange.MercadoBitcoin::buy';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'exchange_8py_1aaf828e37142a83cbfb12d193313f6d43';
+        sec-mem-ref-line = '182';
+        sec-mem-ref-name = 'exchange.OkCoin::buy';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classraw__urlparser_1_1_xbt_prices_1a0790deb0fc5582520e2a3249c14a496a';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+def
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'getCoinName';
+      sec-mem-desc-file = '/home/hilton/github/exch2exh/raw_urlparser.py';
+      sec-mem-desc-line = '71';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'raw__urlparser_8py_1a8d253ccd987bce28e3aaba7a9c486e5f';
+        sec-mem-ref-line = '57';
+        sec-mem-ref-name = 'raw_urlparser.XbtPrices::coin';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'exch2exch_8py_1a1191c8825e8f1333b4100b89fa2be053';
+        sec-mem-ref-line = '64';
+        sec-mem-ref-name = 'exch2exch.XbtPrices::coin';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classraw__urlparser_1_1_xbt_prices_1a83c01863eb94413a16ea00cb679245bc';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+def
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'getDateTime';
+      sec-mem-desc-file = '/home/hilton/github/exch2exh/raw_urlparser.py';
+      sec-mem-desc-line = '59';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'raw__urlparser_8py_1a09b3c7cb595f3135c3eda648b1bb4c3f';
+        sec-mem-ref-line = '24';
+        sec-mem-ref-name = 'raw_urlparser.Rates::dt';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'exch2exch_8py_1acb12f83bce4393714ec30351a1d636c2';
+        sec-mem-ref-line = '28';
+        sec-mem-ref-name = 'exch2exch.Rates::dt';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'raw__urlparser_8py_1ae094aa3e73d21d0be219a085f09bcf13';
+        sec-mem-ref-line = '53';
+        sec-mem-ref-name = 'raw_urlparser.XbtPrices::dt';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'exch2exch_8py_1af9f916c683c48631c97f1c5d91447751';
+        sec-mem-ref-line = '57';
+        sec-mem-ref-name = 'exch2exch.XbtPrices::dt';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'exchange_8py_1a363f8488eb0423f88519c085ae6f168f';
+        sec-mem-ref-line = '120';
+        sec-mem-ref-name = 'exchange.FoxBit::dt';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'exchange_8py_1aeee983ba4f72223a11fb914d22902c56';
+        sec-mem-ref-line = '156';
+        sec-mem-ref-name = 'exchange.MercadoBitcoin::dt';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'exchange_8py_1ade9d7cddcfa54f2b1ba5452854bfd48b';
+        sec-mem-ref-line = '187';
+        sec-mem-ref-name = 'exchange.OkCoin::dt';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classraw__urlparser_1_1_xbt_prices_1a3a8466753538f1491b67174540c32758';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+def
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'getExchangeName';
+      sec-mem-desc-file = '/home/hilton/github/exch2exh/raw_urlparser.py';
+      sec-mem-desc-line = '68';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'raw__urlparser_8py_1a016bbd95465aaa14b5c434047df7b7fb';
+        sec-mem-ref-line = '56';
+        sec-mem-ref-name = 'raw_urlparser.XbtPrices::exch';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'exch2exch_8py_1a72caf3a29017a1ceaf4367240a46b360';
+        sec-mem-ref-line = '63';
+        sec-mem-ref-name = 'exch2exch.XbtPrices::exch';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classraw__urlparser_1_1_xbt_prices_1a141a6794eea34f738070970fefc0f854';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+def
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'getSell';
+      sec-mem-desc-file = '/home/hilton/github/exch2exh/raw_urlparser.py';
+      sec-mem-desc-line = '65';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'raw__urlparser_8py_1a22b483cac27a5b17f9e7b265c219bb99';
+        sec-mem-ref-line = '54';
+        sec-mem-ref-name = 'raw_urlparser.XbtPrices::sell';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'exch2exch_8py_1a06fd0cfb03d485af3364a0d86fbe5385';
+        sec-mem-ref-line = '58';
+        sec-mem-ref-name = 'exch2exch.XbtPrices::sell';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'exchange_8py_1ac1fae4ef7a43254b71d7173a5cc6eeaf';
+        sec-mem-ref-line = '116';
+        sec-mem-ref-name = 'exchange.FoxBit::sell';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'exchange_8py_1a9982c7a3f6103c88c64160a5854c35cd';
+        sec-mem-ref-line = '152';
+        sec-mem-ref-name = 'exchange.MercadoBitcoin::sell';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = 'exchange_8py_1aadb487d2e2f277374a747e1bcb0bd40b';
+        sec-mem-ref-line = '183';
+        sec-mem-ref-name = 'exchange.OkCoin::sell';
+    };
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'public-attrib';
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classraw__urlparser_1_1_xbt_prices_1a87eba659d6598ffd66c694535e1b7a7a';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'buy';
+      sec-mem-desc-file = '/home/hilton/github/exch2exh/raw_urlparser.py';
+      sec-mem-desc-line = '55';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'raw__urlparser_8py_1a271c6108e7daef6fa321171e294df088';
+        sec-mem-ref-line = '74';
+        sec-mem-ref-name = 'raw_urlparser.XbtPrices::__str__';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'raw__urlparser_8py_1a50f893a39919d2d0e00e53c6288b68a3';
+        sec-mem-ref-line = '62';
+        sec-mem-ref-name = 'raw_urlparser.XbtPrices::getBuy';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classraw__urlparser_1_1_xbt_prices_1a8d253ccd987bce28e3aaba7a9c486e5f';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'coin';
+      sec-mem-desc-file = '/home/hilton/github/exch2exh/raw_urlparser.py';
+      sec-mem-desc-line = '57';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'raw__urlparser_8py_1a271c6108e7daef6fa321171e294df088';
+        sec-mem-ref-line = '74';
+        sec-mem-ref-name = 'raw_urlparser.XbtPrices::__str__';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'raw__urlparser_8py_1a0790deb0fc5582520e2a3249c14a496a';
+        sec-mem-ref-line = '71';
+        sec-mem-ref-name = 'raw_urlparser.XbtPrices::getCoinName';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classraw__urlparser_1_1_xbt_prices_1ae094aa3e73d21d0be219a085f09bcf13';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'dt';
+      sec-mem-desc-file = '/home/hilton/github/exch2exh/raw_urlparser.py';
+      sec-mem-desc-line = '53';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'raw__urlparser_8py_1a271c6108e7daef6fa321171e294df088';
+        sec-mem-ref-line = '74';
+        sec-mem-ref-name = 'raw_urlparser.XbtPrices::__str__';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'raw__urlparser_8py_1a83c01863eb94413a16ea00cb679245bc';
+        sec-mem-ref-line = '59';
+        sec-mem-ref-name = 'raw_urlparser.XbtPrices::getDateTime';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classraw__urlparser_1_1_xbt_prices_1a016bbd95465aaa14b5c434047df7b7fb';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'exch';
+      sec-mem-desc-file = '/home/hilton/github/exch2exh/raw_urlparser.py';
+      sec-mem-desc-line = '56';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'raw__urlparser_8py_1a271c6108e7daef6fa321171e294df088';
+        sec-mem-ref-line = '74';
+        sec-mem-ref-name = 'raw_urlparser.XbtPrices::__str__';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'raw__urlparser_8py_1a3a8466753538f1491b67174540c32758';
+        sec-mem-ref-line = '68';
+        sec-mem-ref-name = 'raw_urlparser.XbtPrices::getExchangeName';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'classraw__urlparser_1_1_xbt_prices_1a22b483cac27a5b17f9e7b265c219bb99';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'sell';
+      sec-mem-desc-file = '/home/hilton/github/exch2exh/raw_urlparser.py';
+      sec-mem-desc-line = '54';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'raw__urlparser_8py_1a271c6108e7daef6fa321171e294df088';
+        sec-mem-ref-line = '74';
+        sec-mem-ref-name = 'raw_urlparser.XbtPrices::__str__';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = 'raw__urlparser_8py_1a141a6794eea34f738070970fefc0f854';
+        sec-mem-ref-line = '65';
+        sec-mem-ref-name = 'raw_urlparser.XbtPrices::getSell';
+    };
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-filename  = '/home/hilton/github/exch2exh/raw_urlparser.py';
+  cp-fileline  = '51';
+  cp-briefdesc = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* class */
+file = {
+  file-id   = 'exch2exch_8py';
+  file-name = 'exch2exch.py';
+    func = {
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'namespaceexch2exch_1ab44bbb7377e2ea808af430246d925cd2';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+def
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'get_google_rate';
+      func-mem-desc-file = '/home/hilton/github/exch2exh/exch2exch.py';
+      func-mem-desc-line = '149';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* func-member */
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'namespaceexch2exch_1a72e4d9fae01812560db07229c05efbc6';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+def
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'get_google_rates';
+      func-mem-desc-file = '/home/hilton/github/exch2exh/exch2exch.py';
+      func-mem-desc-line = '170';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* func-member */
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'namespaceexch2exch_1a69c86b486350c524c85fca367aad82f2';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+def
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'get_mb_rates';
+      func-mem-desc-file = '/home/hilton/github/exch2exh/exch2exch.py';
+      func-mem-desc-line = '232';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* func-member */
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'namespaceexch2exch_1a7e83d805e732ce4344cb3a6edc5d98be';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+def
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'get_ok_rates';
+      func-mem-desc-file = '/home/hilton/github/exch2exh/exch2exch.py';
+      func-mem-desc-line = '251';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* func-member */
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'namespaceexch2exch_1a0fe4c93bea8fee4212c19f045c72b43b';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+def
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'get_x_rates';
+      func-mem-desc-file = '/home/hilton/github/exch2exh/exch2exch.py';
+      func-mem-desc-line = '189';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* func-member */
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'namespaceexch2exch_1a559f55b08d308a647cc4afa3620e2da8';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+def
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'main';
+      func-mem-desc-file = '/home/hilton/github/exch2exh/exch2exch.py';
+      func-mem-desc-line = '270';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* func-member */
+    };
+  file-full-name  = '/home/hilton/github/exch2exh/exch2exch.py';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = 'exchange_8py';
+  file-name = 'exchange.py';
+    func = {
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'namespaceexchange_1adf14f1c5a512c2d8a7ece6e64e546916';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+def
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'main';
+      func-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
+      func-mem-desc-line = '205';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* func-member */
+    };
+  file-full-name  = '/home/hilton/github/exch2exh/exchange.py';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = 'raw__urlparser_8py';
+  file-name = 'raw_urlparser.py';
+    func = {
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'namespaceraw__urlparser_1a27ce239a7915c6468e00168213575365';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+def
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'get_google_rate';
+      func-mem-desc-file = '/home/hilton/github/exch2exh/raw_urlparser.py';
+      func-mem-desc-line = '118';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* func-member */
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'namespaceraw__urlparser_1a503f638b00ab579b8b829e1dbb95e547';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+def
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'get_google_rates';
+      func-mem-desc-file = '/home/hilton/github/exch2exh/raw_urlparser.py';
+      func-mem-desc-line = '143';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* func-member */
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'namespaceraw__urlparser_1a56532368ca9848b5f2ab298e3e6232bb';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+def
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'get_mb_rates';
+      func-mem-desc-file = '/home/hilton/github/exch2exh/raw_urlparser.py';
+      func-mem-desc-line = '217';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* func-member */
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'namespaceraw__urlparser_1a3a9d9300bd89d803ca1fddb78145f58e';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+def
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'get_ok_rates';
+      func-mem-desc-file = '/home/hilton/github/exch2exh/raw_urlparser.py';
+      func-mem-desc-line = '234';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* func-member */
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = 'namespaceraw__urlparser_1a264ca664879b007ee92399e30ec0d9bc';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+def
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'get_x_rates';
+      func-mem-desc-file = '/home/hilton/github/exch2exh/raw_urlparser.py';
+      func-mem-desc-line = '162';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* func-member */
+    };
+    var = {
+    var-member = {
+      var-mem-kind = 'variable';
+      var-mem-id   = 'namespaceraw__urlparser_1a382c2b22f2386b1e493674c7d72b9b95';
+      var-mem-virt = normal;
+      var-mem-prot = public;
+      var-mem-type = <<_EnD_oF_dEf_TeXt_
+tuple
+_EnD_oF_dEf_TeXt_;
+      var-mem-name = 'brl2usd';
+      var-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= google.getUsd2Brl()
+_EnD_oF_dEf_TeXt_;
+      var-mem-desc-file = '/home/hilton/github/exch2exh/raw_urlparser.py';
+      var-mem-desc-line = '303';
+      var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      var-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* var-member */
+    var-member = {
+      var-mem-kind = 'variable';
+      var-mem-id   = 'namespaceraw__urlparser_1a2a48999f60075fd5b96e6d540cce34c9';
+      var-mem-virt = normal;
+      var-mem-prot = public;
+      var-mem-type = <<_EnD_oF_dEf_TeXt_
+tuple
+_EnD_oF_dEf_TeXt_;
+      var-mem-name = 'diff';
+      var-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= Differences(google, mb_usd, ok)
+_EnD_oF_dEf_TeXt_;
+      var-mem-desc-file = '/home/hilton/github/exch2exh/raw_urlparser.py';
+      var-mem-desc-line = '335';
+      var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      var-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* var-member */
+    var-member = {
+      var-mem-kind = 'variable';
+      var-mem-id   = 'namespaceraw__urlparser_1a8d7c05a0ed7b2f3a3014caa73a2999d1';
+      var-mem-virt = normal;
+      var-mem-prot = public;
+      var-mem-type = <<_EnD_oF_dEf_TeXt_
+tuple
+_EnD_oF_dEf_TeXt_;
+      var-mem-name = 'google';
+      var-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= Rates(dt, usd2brl, brl2usd, "Google")
+_EnD_oF_dEf_TeXt_;
+      var-mem-desc-file = '/home/hilton/github/exch2exh/raw_urlparser.py';
+      var-mem-desc-line = '263';
+      var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      var-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* var-member */
+    var-member = {
+      var-mem-kind = 'variable';
+      var-mem-id   = 'namespaceraw__urlparser_1a964275295a1dcba5dbdc3b113a75c4bb';
+      var-mem-virt = normal;
+      var-mem-prot = public;
+      var-mem-type = <<_EnD_oF_dEf_TeXt_
+tuple
+_EnD_oF_dEf_TeXt_;
+      var-mem-name = 'mb';
+      var-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= XbtPrices(dt, sell, buy, "MercadoBitcoin", "BRL")
+_EnD_oF_dEf_TeXt_;
+      var-mem-desc-file = '/home/hilton/github/exch2exh/raw_urlparser.py';
+      var-mem-desc-line = '298';
+      var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      var-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* var-member */
+    var-member = {
+      var-mem-kind = 'variable';
+      var-mem-id   = 'namespaceraw__urlparser_1ac8242502920772d4c44b42f24492acd5';
+      var-mem-virt = normal;
+      var-mem-prot = public;
+      var-mem-type = <<_EnD_oF_dEf_TeXt_
+tuple
+_EnD_oF_dEf_TeXt_;
+      var-mem-name = 'mb_tupl';
+      var-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= get_mb_rates(u_mb)
+_EnD_oF_dEf_TeXt_;
+      var-mem-desc-file = '/home/hilton/github/exch2exh/raw_urlparser.py';
+      var-mem-desc-line = '295';
+      var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      var-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* var-member */
+    var-member = {
+      var-mem-kind = 'variable';
+      var-mem-id   = 'namespaceraw__urlparser_1a49f2920b4f7718df58d6d996a1306f32';
+      var-mem-virt = normal;
+      var-mem-prot = public;
+      var-mem-type = <<_EnD_oF_dEf_TeXt_
+tuple
+_EnD_oF_dEf_TeXt_;
+      var-mem-name = 'mb_usd';
+      var-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= XbtPrices(dt, sell, buy, "MercadoBitcoin", "USD")
+_EnD_oF_dEf_TeXt_;
+      var-mem-desc-file = '/home/hilton/github/exch2exh/raw_urlparser.py';
+      var-mem-desc-line = '307';
+      var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      var-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* var-member */
+    var-member = {
+      var-mem-kind = 'variable';
+      var-mem-id   = 'namespaceraw__urlparser_1ac9d30be4f20423526dc111ebaba51cfe';
+      var-mem-virt = normal;
+      var-mem-prot = public;
+      var-mem-type = <<_EnD_oF_dEf_TeXt_
+tuple
+_EnD_oF_dEf_TeXt_;
+      var-mem-name = 'ok';
+      var-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= XbtPrices(dt, sell, buy, "OkCoin", "USD")
+_EnD_oF_dEf_TeXt_;
+      var-mem-desc-file = '/home/hilton/github/exch2exh/raw_urlparser.py';
+      var-mem-desc-line = '322';
+      var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      var-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* var-member */
+    var-member = {
+      var-mem-kind = 'variable';
+      var-mem-id   = 'namespaceraw__urlparser_1a8c2d43346322c5d31fa8cb1a9cf5c121';
+      var-mem-virt = normal;
+      var-mem-prot = public;
+      var-mem-type = <<_EnD_oF_dEf_TeXt_
+tuple
+_EnD_oF_dEf_TeXt_;
+      var-mem-name = 'ok_tupl';
+      var-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= get_ok_rates(u_ok)
+_EnD_oF_dEf_TeXt_;
+      var-mem-desc-file = '/home/hilton/github/exch2exh/raw_urlparser.py';
+      var-mem-desc-line = '319';
+      var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      var-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* var-member */
+    var-member = {
+      var-mem-kind = 'variable';
+      var-mem-id   = 'namespaceraw__urlparser_1a876711ddd7ebb3991a35cc1768d1d22c';
+      var-mem-virt = normal;
+      var-mem-prot = public;
+      var-mem-type = <<_EnD_oF_dEf_TeXt_
+string
+_EnD_oF_dEf_TeXt_;
+      var-mem-name = 'u_brl2usd';
+      var-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= 'https://www.google.com/finance/converter?a=1&from=BRL&to=USD'
+_EnD_oF_dEf_TeXt_;
+      var-mem-desc-file = '/home/hilton/github/exch2exh/raw_urlparser.py';
+      var-mem-desc-line = '255';
+      var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      var-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* var-member */
+    var-member = {
+      var-mem-kind = 'variable';
+      var-mem-id   = 'namespaceraw__urlparser_1a9a840f174b92a24c415b88c87e84b73d';
+      var-mem-virt = normal;
+      var-mem-prot = public;
+      var-mem-type = <<_EnD_oF_dEf_TeXt_
+string
+_EnD_oF_dEf_TeXt_;
+      var-mem-name = 'u_mb';
+      var-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= 'https://www.mercadobitcoin.net/api/ticker/'
+_EnD_oF_dEf_TeXt_;
+      var-mem-desc-file = '/home/hilton/github/exch2exh/raw_urlparser.py';
+      var-mem-desc-line = '293';
+      var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      var-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* var-member */
+    var-member = {
+      var-mem-kind = 'variable';
+      var-mem-id   = 'namespaceraw__urlparser_1a22c1a17803a88426d38d70ad6d4290d2';
+      var-mem-virt = normal;
+      var-mem-prot = public;
+      var-mem-type = <<_EnD_oF_dEf_TeXt_
+string
+_EnD_oF_dEf_TeXt_;
+      var-mem-name = 'u_ok';
+      var-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= 'https://www.okcoin.com/api/v1/ticker.do?symbol=btc_usd'
+_EnD_oF_dEf_TeXt_;
+      var-mem-desc-file = '/home/hilton/github/exch2exh/raw_urlparser.py';
+      var-mem-desc-line = '317';
+      var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      var-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* var-member */
+    var-member = {
+      var-mem-kind = 'variable';
+      var-mem-id   = 'namespaceraw__urlparser_1a63e1f0abe7b1f43c4891ce9aec98261d';
+      var-mem-virt = normal;
+      var-mem-prot = public;
+      var-mem-type = <<_EnD_oF_dEf_TeXt_
+string
+_EnD_oF_dEf_TeXt_;
+      var-mem-name = 'u_usd2brl';
+      var-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= 'https://www.google.com/finance/converter?a=1&from=USD&to=BRL'
+_EnD_oF_dEf_TeXt_;
+      var-mem-desc-file = '/home/hilton/github/exch2exh/raw_urlparser.py';
+      var-mem-desc-line = '251';
+      var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      var-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* var-member */
+    var-member = {
+      var-mem-kind = 'variable';
+      var-mem-id   = 'namespaceraw__urlparser_1a9242b893f4f49ef7cc0d4e599b70daa4';
+      var-mem-virt = normal;
+      var-mem-prot = public;
+      var-mem-type = <<_EnD_oF_dEf_TeXt_
+string
+_EnD_oF_dEf_TeXt_;
+      var-mem-name = 'url';
+      var-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= 'http://www.x-rates.com/table/?from=USD&amount=1'
+_EnD_oF_dEf_TeXt_;
+      var-mem-desc-file = '/home/hilton/github/exch2exh/raw_urlparser.py';
+      var-mem-desc-line = '275';
+      var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      var-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* var-member */
+    var-member = {
+      var-mem-kind = 'variable';
+      var-mem-id   = 'namespaceraw__urlparser_1aded92a1146e1ce1f14fd79a361f947f9';
+      var-mem-virt = normal;
+      var-mem-prot = public;
+      var-mem-type = <<_EnD_oF_dEf_TeXt_
+tuple
+_EnD_oF_dEf_TeXt_;
+      var-mem-name = 'urls';
+      var-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= (u_usd2brl, u_brl2usd)
+_EnD_oF_dEf_TeXt_;
+      var-mem-desc-file = '/home/hilton/github/exch2exh/raw_urlparser.py';
+      var-mem-desc-line = '259';
+      var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      var-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* var-member */
+    var-member = {
+      var-mem-kind = 'variable';
+      var-mem-id   = 'namespaceraw__urlparser_1a26bc8d57698e57014b8c066074fb9937';
+      var-mem-virt = normal;
+      var-mem-prot = public;
+      var-mem-type = <<_EnD_oF_dEf_TeXt_
+tuple
+_EnD_oF_dEf_TeXt_;
+      var-mem-name = 'x_rates';
+      var-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= Rates(dt, brl2usd, usd2brl, "X-Rates")
+_EnD_oF_dEf_TeXt_;
+      var-mem-desc-file = '/home/hilton/github/exch2exh/raw_urlparser.py';
+      var-mem-desc-line = '278';
+      var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      var-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* var-member */
+    };
+  file-full-name  = '/home/hilton/github/exch2exh/raw_urlparser.py';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = '_r_e_a_d_m_e_8md';
+  file-name = 'README.md';
+  file-full-name  = '/home/hilton/github/exch2exh/README.md';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */

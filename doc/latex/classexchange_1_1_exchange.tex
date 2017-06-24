@@ -16,29 +16,39 @@ Inheritance diagram for exchange.\-Exchange\-:
 \item 
 def \hyperlink{classexchange_1_1_exchange_a75e4957e085558959dc606fcc7cca55d}{\-\_\-\-\_\-init\-\_\-\-\_\-}
 \item 
-def \hyperlink{classexchange_1_1_exchange_ad475e9251f614da675eb76d89a649dcf}{process\-\_\-url}
-\item 
-def \hyperlink{classexchange_1_1_exchange_a8d8b333b89276d19200710edecad8daf}{process\-\_\-json}
-\item 
-def \hyperlink{classexchange_1_1_exchange_acd7e3233946da3b9d452f9505cd58033}{get\-\_\-ticker}
+def \hyperlink{classexchange_1_1_exchange_a0ad3ad8c4feaabd714bd93ad5c7e9ffd}{\-\_\-\-\_\-repr\-\_\-\-\_\-}
 \item 
 def \hyperlink{classexchange_1_1_exchange_a24c728f6cb4700a285bae3cf902580ee}{\-\_\-\-\_\-str\-\_\-\-\_\-}
 \item 
-def \hyperlink{classexchange_1_1_exchange_a0ad3ad8c4feaabd714bd93ad5c7e9ffd}{\-\_\-\-\_\-repr\-\_\-\-\_\-}
+def \hyperlink{classexchange_1_1_exchange_a617fe5e236e61725b62f0865eb3cb613}{dnload\-\_\-ticker}
+\item 
+def \hyperlink{classexchange_1_1_exchange_a89a7e4ad373dfcf9686f9f87404e464f}{dnload\-\_\-trades}
+\item 
+def \hyperlink{classexchange_1_1_exchange_a0db59994432848ffdf942dce8b82369b}{get\-\_\-exch\-\_\-name}
+\item 
+def \hyperlink{classexchange_1_1_exchange_acd7e3233946da3b9d452f9505cd58033}{get\-\_\-ticker}
+\item 
+def \hyperlink{classexchange_1_1_exchange_a522c44739df2164c6e8e9457516645e5}{get\-\_\-trades}
+\item 
+def \hyperlink{classexchange_1_1_exchange_a8243e9912c623049658aabc30b72b55a}{process\-\_\-ticker}
+\item 
+def \hyperlink{classexchange_1_1_exchange_a182c849cfda71ffb325d1dc54bb29f5d}{process\-\_\-trades}
 \end{DoxyCompactItemize}
 \subsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classexchange_1_1_exchange_a6ce8e0779d98031b1cd9200d2a0fa5ad}{json}
+\hyperlink{classexchange_1_1_exchange_a7cf9e52f993627955a2e242c388daaeb}{ticker}
+\item 
+\hyperlink{classexchange_1_1_exchange_a30e87a377320ce05bd956fb014683641}{trades}
 \end{DoxyCompactItemize}
 \subsection*{Static Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
+string \hyperlink{classexchange_1_1_exchange_a83174d2fe96a1c737231d3b8b18d9807}{U\-\_\-\-O\-R\-D\-R\-B\-K} = ''
+\item 
 string \hyperlink{classexchange_1_1_exchange_ab16df02480d727c533b02b5b7afa053b}{U\-\_\-\-T\-I\-C\-K\-E\-R} = ''
 \item 
 string \hyperlink{classexchange_1_1_exchange_aafa0e023de170f51cbf9d48e1154587a}{U\-\_\-\-T\-R\-A\-D\-E\-S} = ''
-\item 
-string \hyperlink{classexchange_1_1_exchange_a83174d2fe96a1c737231d3b8b18d9807}{U\-\_\-\-O\-R\-D\-R\-B\-K} = ''
 \end{DoxyCompactItemize}
 
 
@@ -62,29 +72,14 @@ Definition at line 22 of file exchange.\-py.
 Definition at line 29 of file exchange.\-py.
 
 
-
-References exchange.\-Exchange.\-process\-\_\-json(), and exchange.\-Exchange.\-process\-\_\-url().
-
-
 \begin{DoxyCode}
 29 
 30     \textcolor{keyword}{def }\hyperlink{classexchange_1_1_exchange_a75e4957e085558959dc606fcc7cca55d}{\_\_init\_\_} (self):
-31         self.\hyperlink{classexchange_1_1_exchange_ad475e9251f614da675eb76d89a649dcf}{process\_url} ()
-32         self.\hyperlink{classexchange_1_1_exchange_a8d8b333b89276d19200710edecad8daf}{process\_json} ()
+31 \textcolor{comment}{#        self.dnload\_ticker ()}
+32 \textcolor{comment}{#        self.process\_ticker ()}
+33         \textcolor{keywordflow}{pass}
     
 \end{DoxyCode}
-
-
-Here is the call graph for this function\-:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{classexchange_1_1_exchange_a75e4957e085558959dc606fcc7cca55d_cgraph}
-\end{center}
-\end{figure}
-
-
 
 
 \subsection{Member Function Documentation}
@@ -97,16 +92,16 @@ Here is the call graph for this function\-:
 )}}\label{classexchange_1_1_exchange_a0ad3ad8c4feaabd714bd93ad5c7e9ffd}
 
 
-Definition at line 57 of file exchange.\-py.
+Definition at line 81 of file exchange.\-py.
 
 
 \begin{DoxyCode}
-57 
-58     \textcolor{keyword}{def }\hyperlink{classexchange_1_1_exchange_a0ad3ad8c4feaabd714bd93ad5c7e9ffd}{\_\_repr\_\_} (self):
-59         result = \textcolor{stringliteral}{"\{0\} ()"}.format (type (self).\_\_name\_\_)
-60         
-61         \textcolor{comment}{# Normal function termination}
-62         \textcolor{keywordflow}{return} result
+81 
+82     \textcolor{keyword}{def }\hyperlink{classexchange_1_1_exchange_a0ad3ad8c4feaabd714bd93ad5c7e9ffd}{\_\_repr\_\_} (self):
+83         result = \textcolor{stringliteral}{"\{0\} ()"}.format (type (self).\_\_name\_\_)
+84         
+85         \textcolor{comment}{# Normal function termination}
+86         \textcolor{keywordflow}{return} result
         
 \end{DoxyCode}
 \hypertarget{classexchange_1_1_exchange_a24c728f6cb4700a285bae3cf902580ee}{\index{exchange\-::\-Exchange@{exchange\-::\-Exchange}!\-\_\-\-\_\-str\-\_\-\-\_\-@{\-\_\-\-\_\-str\-\_\-\-\_\-}}
@@ -118,15 +113,86 @@ Definition at line 57 of file exchange.\-py.
 )}}\label{classexchange_1_1_exchange_a24c728f6cb4700a285bae3cf902580ee}
 
 
-Definition at line 52 of file exchange.\-py.
+Definition at line 76 of file exchange.\-py.
 
 
 \begin{DoxyCode}
-52 
-53     \textcolor{keyword}{def }\hyperlink{classexchange_1_1_exchange_a24c728f6cb4700a285bae3cf902580ee}{\_\_str\_\_} (self):
-54         result = str (self.\hyperlink{classexchange_1_1_exchange_a6ce8e0779d98031b1cd9200d2a0fa5ad}{json})
-55     
-56         \textcolor{keywordflow}{return} result
+76 
+77     \textcolor{keyword}{def }\hyperlink{classexchange_1_1_exchange_a24c728f6cb4700a285bae3cf902580ee}{\_\_str\_\_} (self):
+78         result = str (self.\hyperlink{classexchange_1_1_exchange_a7cf9e52f993627955a2e242c388daaeb}{ticker})
+79     
+80         \textcolor{keywordflow}{return} result
+        
+\end{DoxyCode}
+\hypertarget{classexchange_1_1_exchange_a617fe5e236e61725b62f0865eb3cb613}{\index{exchange\-::\-Exchange@{exchange\-::\-Exchange}!dnload\-\_\-ticker@{dnload\-\_\-ticker}}
+\index{dnload\-\_\-ticker@{dnload\-\_\-ticker}!exchange::Exchange@{exchange\-::\-Exchange}}
+\subsubsection[{dnload\-\_\-ticker}]{\setlength{\rightskip}{0pt plus 5cm}def exchange.\-Exchange.\-dnload\-\_\-ticker (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}\label{classexchange_1_1_exchange_a617fe5e236e61725b62f0865eb3cb613}
+
+
+Definition at line 34 of file exchange.\-py.
+
+
+\begin{DoxyCode}
+34 
+35     \textcolor{keyword}{def }\hyperlink{classexchange_1_1_exchange_a617fe5e236e61725b62f0865eb3cb613}{dnload\_ticker} (self):
+36         url = self.\_\_class\_\_.U\_TICKER
+37 \textcolor{comment}{#        print (url)}
+38         f = urllib.request.urlopen (url)
+39         
+40         line = f.readline ()
+41 \textcolor{comment}{#        print (line)}
+42         
+43         self.\hyperlink{classexchange_1_1_exchange_a7cf9e52f993627955a2e242c388daaeb}{ticker} = json.loads (line.decode (encoding=\textcolor{stringliteral}{'utf-8'}))
+44 \textcolor{comment}{#        print (self.ticker)}
+        
+\end{DoxyCode}
+\hypertarget{classexchange_1_1_exchange_a89a7e4ad373dfcf9686f9f87404e464f}{\index{exchange\-::\-Exchange@{exchange\-::\-Exchange}!dnload\-\_\-trades@{dnload\-\_\-trades}}
+\index{dnload\-\_\-trades@{dnload\-\_\-trades}!exchange::Exchange@{exchange\-::\-Exchange}}
+\subsubsection[{dnload\-\_\-trades}]{\setlength{\rightskip}{0pt plus 5cm}def exchange.\-Exchange.\-dnload\-\_\-trades (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}\label{classexchange_1_1_exchange_a89a7e4ad373dfcf9686f9f87404e464f}
+
+
+Definition at line 53 of file exchange.\-py.
+
+
+\begin{DoxyCode}
+53 
+54     \textcolor{keyword}{def }\hyperlink{classexchange_1_1_exchange_a89a7e4ad373dfcf9686f9f87404e464f}{dnload\_trades} (self):
+55         url = self.\_\_class\_\_.U\_TRADES
+56 \textcolor{comment}{#        print (url)}
+57         f = urllib.request.urlopen (url)
+58         
+59         line = f.readline ()
+60 \textcolor{comment}{#        print (line)}
+61         
+62         self.\hyperlink{classexchange_1_1_exchange_a30e87a377320ce05bd956fb014683641}{trades} = json.loads (line.decode (encoding=\textcolor{stringliteral}{'utf-8'}))
+63 \textcolor{comment}{#        print (self.ticker)}
+        
+\end{DoxyCode}
+\hypertarget{classexchange_1_1_exchange_a0db59994432848ffdf942dce8b82369b}{\index{exchange\-::\-Exchange@{exchange\-::\-Exchange}!get\-\_\-exch\-\_\-name@{get\-\_\-exch\-\_\-name}}
+\index{get\-\_\-exch\-\_\-name@{get\-\_\-exch\-\_\-name}!exchange::Exchange@{exchange\-::\-Exchange}}
+\subsubsection[{get\-\_\-exch\-\_\-name}]{\setlength{\rightskip}{0pt plus 5cm}def exchange.\-Exchange.\-get\-\_\-exch\-\_\-name (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}\label{classexchange_1_1_exchange_a0db59994432848ffdf942dce8b82369b}
+
+
+Definition at line 72 of file exchange.\-py.
+
+
+\begin{DoxyCode}
+72 
+73     \textcolor{keyword}{def }\hyperlink{classexchange_1_1_exchange_a0db59994432848ffdf942dce8b82369b}{get\_exch\_name} (self):
+74         \textcolor{comment}{# TODO raise exception}
+75         \textcolor{keywordflow}{pass}
         
 \end{DoxyCode}
 \hypertarget{classexchange_1_1_exchange_acd7e3233946da3b9d452f9505cd58033}{\index{exchange\-::\-Exchange@{exchange\-::\-Exchange}!get\-\_\-ticker@{get\-\_\-ticker}}
@@ -138,37 +204,80 @@ Definition at line 52 of file exchange.\-py.
 )}}\label{classexchange_1_1_exchange_acd7e3233946da3b9d452f9505cd58033}
 
 
-Definition at line 48 of file exchange.\-py.
+Definition at line 49 of file exchange.\-py.
 
 
 \begin{DoxyCode}
-48 
-49     \textcolor{keyword}{def }\hyperlink{classexchange_1_1_exchange_acd7e3233946da3b9d452f9505cd58033}{get\_ticker} (self):
-50         \textcolor{comment}{# TODO raise exception}
-51         \textcolor{keywordflow}{pass}
-        
+49 
+50     \textcolor{keyword}{def }\hyperlink{classexchange_1_1_exchange_acd7e3233946da3b9d452f9505cd58033}{get\_ticker} (self):
+51         self.\hyperlink{classexchange_1_1_exchange_a617fe5e236e61725b62f0865eb3cb613}{dnload\_ticker} ()
+52         self.\hyperlink{classexchange_1_1_exchange_a8243e9912c623049658aabc30b72b55a}{process\_ticker} ()
+    
 \end{DoxyCode}
-\hypertarget{classexchange_1_1_exchange_a8d8b333b89276d19200710edecad8daf}{\index{exchange\-::\-Exchange@{exchange\-::\-Exchange}!process\-\_\-json@{process\-\_\-json}}
-\index{process\-\_\-json@{process\-\_\-json}!exchange::Exchange@{exchange\-::\-Exchange}}
-\subsubsection[{process\-\_\-json}]{\setlength{\rightskip}{0pt plus 5cm}def exchange.\-Exchange.\-process\-\_\-json (
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classexchange_1_1_exchange_acd7e3233946da3b9d452f9505cd58033_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classexchange_1_1_exchange_a522c44739df2164c6e8e9457516645e5}{\index{exchange\-::\-Exchange@{exchange\-::\-Exchange}!get\-\_\-trades@{get\-\_\-trades}}
+\index{get\-\_\-trades@{get\-\_\-trades}!exchange::Exchange@{exchange\-::\-Exchange}}
+\subsubsection[{get\-\_\-trades}]{\setlength{\rightskip}{0pt plus 5cm}def exchange.\-Exchange.\-get\-\_\-trades (
 \begin{DoxyParamCaption}
 \item[{}]{self}
 \end{DoxyParamCaption}
-)}}\label{classexchange_1_1_exchange_a8d8b333b89276d19200710edecad8daf}
+)}}\label{classexchange_1_1_exchange_a522c44739df2164c6e8e9457516645e5}
 
 
-Definition at line 44 of file exchange.\-py.
-
-
-
-Referenced by exchange.\-Exchange.\-\_\-\-\_\-init\-\_\-\-\_\-().
+Definition at line 68 of file exchange.\-py.
 
 
 \begin{DoxyCode}
-44 
-45     \textcolor{keyword}{def }\hyperlink{classexchange_1_1_exchange_a8d8b333b89276d19200710edecad8daf}{process\_json} (self):
-46         \textcolor{comment}{# TODO raise exception}
-47         \textcolor{keywordflow}{pass}
+68 
+69     \textcolor{keyword}{def }\hyperlink{classexchange_1_1_exchange_a522c44739df2164c6e8e9457516645e5}{get\_trades} (self):
+70         self.\hyperlink{classexchange_1_1_exchange_a89a7e4ad373dfcf9686f9f87404e464f}{dnload\_trades} ()
+71         self.\hyperlink{classexchange_1_1_exchange_a182c849cfda71ffb325d1dc54bb29f5d}{process\_trades} ()
+    
+\end{DoxyCode}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classexchange_1_1_exchange_a522c44739df2164c6e8e9457516645e5_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classexchange_1_1_exchange_a8243e9912c623049658aabc30b72b55a}{\index{exchange\-::\-Exchange@{exchange\-::\-Exchange}!process\-\_\-ticker@{process\-\_\-ticker}}
+\index{process\-\_\-ticker@{process\-\_\-ticker}!exchange::Exchange@{exchange\-::\-Exchange}}
+\subsubsection[{process\-\_\-ticker}]{\setlength{\rightskip}{0pt plus 5cm}def exchange.\-Exchange.\-process\-\_\-ticker (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}\label{classexchange_1_1_exchange_a8243e9912c623049658aabc30b72b55a}
+
+
+Definition at line 45 of file exchange.\-py.
+
+
+
+Referenced by exchange.\-Exchange.\-get\-\_\-ticker().
+
+
+\begin{DoxyCode}
+45 
+46     \textcolor{keyword}{def }\hyperlink{classexchange_1_1_exchange_a8243e9912c623049658aabc30b72b55a}{process\_ticker} (self):
+47         \textcolor{comment}{# TODO raise exception}
+48         \textcolor{keywordflow}{pass}
     
 \end{DoxyCode}
 
@@ -178,40 +287,33 @@ Here is the caller graph for this function\-:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{classexchange_1_1_exchange_a8d8b333b89276d19200710edecad8daf_icgraph}
+\includegraphics[width=350pt]{classexchange_1_1_exchange_a8243e9912c623049658aabc30b72b55a_icgraph}
 \end{center}
 \end{figure}
 
 
-\hypertarget{classexchange_1_1_exchange_ad475e9251f614da675eb76d89a649dcf}{\index{exchange\-::\-Exchange@{exchange\-::\-Exchange}!process\-\_\-url@{process\-\_\-url}}
-\index{process\-\_\-url@{process\-\_\-url}!exchange::Exchange@{exchange\-::\-Exchange}}
-\subsubsection[{process\-\_\-url}]{\setlength{\rightskip}{0pt plus 5cm}def exchange.\-Exchange.\-process\-\_\-url (
+\hypertarget{classexchange_1_1_exchange_a182c849cfda71ffb325d1dc54bb29f5d}{\index{exchange\-::\-Exchange@{exchange\-::\-Exchange}!process\-\_\-trades@{process\-\_\-trades}}
+\index{process\-\_\-trades@{process\-\_\-trades}!exchange::Exchange@{exchange\-::\-Exchange}}
+\subsubsection[{process\-\_\-trades}]{\setlength{\rightskip}{0pt plus 5cm}def exchange.\-Exchange.\-process\-\_\-trades (
 \begin{DoxyParamCaption}
 \item[{}]{self}
 \end{DoxyParamCaption}
-)}}\label{classexchange_1_1_exchange_ad475e9251f614da675eb76d89a649dcf}
+)}}\label{classexchange_1_1_exchange_a182c849cfda71ffb325d1dc54bb29f5d}
 
 
-Definition at line 33 of file exchange.\-py.
+Definition at line 64 of file exchange.\-py.
 
 
 
-Referenced by exchange.\-Exchange.\-\_\-\-\_\-init\-\_\-\-\_\-().
+Referenced by exchange.\-Exchange.\-get\-\_\-trades().
 
 
 \begin{DoxyCode}
-33 
-34     \textcolor{keyword}{def }\hyperlink{classexchange_1_1_exchange_ad475e9251f614da675eb76d89a649dcf}{process\_url} (self):
-35         url = self.\_\_class\_\_.U\_TICKER
-36 \textcolor{comment}{#        print (url)}
-37         f = urllib.request.urlopen (url)
-38         
-39         line = f.readline ()
-40 \textcolor{comment}{#        print (line)}
-41         
-42         self.\hyperlink{classexchange_1_1_exchange_a6ce8e0779d98031b1cd9200d2a0fa5ad}{json} = json.loads (line.decode (encoding=\textcolor{stringliteral}{'utf-8'}))
-43 \textcolor{comment}{#        print (self.json)}
-        
+64 
+65     \textcolor{keyword}{def }\hyperlink{classexchange_1_1_exchange_a182c849cfda71ffb325d1dc54bb29f5d}{process\_trades} (self):
+66         \textcolor{comment}{# TODO raise exception}
+67         \textcolor{keywordflow}{pass}
+    
 \end{DoxyCode}
 
 
@@ -220,7 +322,7 @@ Here is the caller graph for this function\-:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{classexchange_1_1_exchange_ad475e9251f614da675eb76d89a649dcf_icgraph}
+\includegraphics[width=350pt]{classexchange_1_1_exchange_a182c849cfda71ffb325d1dc54bb29f5d_icgraph}
 \end{center}
 \end{figure}
 
@@ -228,16 +330,23 @@ Here is the caller graph for this function\-:
 
 
 \subsection{Member Data Documentation}
-\hypertarget{classexchange_1_1_exchange_a6ce8e0779d98031b1cd9200d2a0fa5ad}{\index{exchange\-::\-Exchange@{exchange\-::\-Exchange}!json@{json}}
-\index{json@{json}!exchange::Exchange@{exchange\-::\-Exchange}}
-\subsubsection[{json}]{\setlength{\rightskip}{0pt plus 5cm}exchange.\-Exchange.\-json}}\label{classexchange_1_1_exchange_a6ce8e0779d98031b1cd9200d2a0fa5ad}
+\hypertarget{classexchange_1_1_exchange_a7cf9e52f993627955a2e242c388daaeb}{\index{exchange\-::\-Exchange@{exchange\-::\-Exchange}!ticker@{ticker}}
+\index{ticker@{ticker}!exchange::Exchange@{exchange\-::\-Exchange}}
+\subsubsection[{ticker}]{\setlength{\rightskip}{0pt plus 5cm}exchange.\-Exchange.\-ticker}}\label{classexchange_1_1_exchange_a7cf9e52f993627955a2e242c388daaeb}
 
 
-Definition at line 41 of file exchange.\-py.
+Definition at line 42 of file exchange.\-py.
 
 
 
-Referenced by exchange.\-Exchange.\-\_\-\-\_\-str\-\_\-\-\_\-().
+Referenced by exchange.\-Exchange.\-\_\-\-\_\-str\-\_\-\-\_\-(), exchange.\-Fox\-Bit.\-get\-\_\-ticker(), and exchange.\-Fox\-Bit.\-process\-\_\-ticker().
+
+\hypertarget{classexchange_1_1_exchange_a30e87a377320ce05bd956fb014683641}{\index{exchange\-::\-Exchange@{exchange\-::\-Exchange}!trades@{trades}}
+\index{trades@{trades}!exchange::Exchange@{exchange\-::\-Exchange}}
+\subsubsection[{trades}]{\setlength{\rightskip}{0pt plus 5cm}exchange.\-Exchange.\-trades}}\label{classexchange_1_1_exchange_a30e87a377320ce05bd956fb014683641}
+
+
+Definition at line 61 of file exchange.\-py.
 
 \hypertarget{classexchange_1_1_exchange_a83174d2fe96a1c737231d3b8b18d9807}{\index{exchange\-::\-Exchange@{exchange\-::\-Exchange}!U\-\_\-\-O\-R\-D\-R\-B\-K@{U\-\_\-\-O\-R\-D\-R\-B\-K}}
 \index{U\-\_\-\-O\-R\-D\-R\-B\-K@{U\-\_\-\-O\-R\-D\-R\-B\-K}!exchange::Exchange@{exchange\-::\-Exchange}}

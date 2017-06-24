@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">exch2exch
-   &#160;<span id="projectnumber">0.10</span>
+   &#160;<span id="projectnumber">0.11</span>
    </div>
    <div id="projectbrief">A tool to compare the prices of two Bitcoin exchanges</div>
   </td>
@@ -121,27 +121,29 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="exchange_8py_source.html#l00144">144</a> of file <a class="el" href="exchange_8py_source.html">exchange.py</a>.</p>
-<div class="fragment"><div class="line"><a name="l00144"></a><span class="lineno"><a class="line" href="namespaceexchange.html#adf14f1c5a512c2d8a7ece6e64e546916">  144</a></span>&#160;</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;<span class="keyword">def </span><a class="code" href="namespaceexchange.html#adf14f1c5a512c2d8a7ece6e64e546916">main</a> ():</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    f = FoxBit ()</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    m = MercadoBitcoin ()</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    o = OkCoin ()</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    </div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    <span class="keywordflow">print</span> (<span class="stringliteral">&quot;FoxBit: {0}&quot;</span>         .format (f))</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    <span class="keywordflow">print</span> (<span class="stringliteral">&quot;Mercado Bitcoin: {0}&quot;</span>.format (m))</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    <span class="keywordflow">print</span> (<span class="stringliteral">&quot;OkCoin: {0}&quot;</span>         .format (o))</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    </div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    <span class="keywordflow">return</span> 0</div>
+<p>Definition at line <a class="el" href="exchange_8py_source.html#l00205">205</a> of file <a class="el" href="exchange_8py_source.html">exchange.py</a>.</p>
+<div class="fragment"><div class="line"><a name="l00205"></a><span class="lineno"><a class="line" href="namespaceexchange.html#adf14f1c5a512c2d8a7ece6e64e546916">  205</a></span>&#160;</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;<span class="keyword">def </span><a class="code" href="namespaceexchange.html#adf14f1c5a512c2d8a7ece6e64e546916">main</a> ():</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    exchanges = []</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;    exchanges.append (FoxBit ())</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;    exchanges.append (MercadoBitcoin ())</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;    exchanges.append (OkCoin ())</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;    </div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;    <span class="keywordflow">for</span> exch <span class="keywordflow">in</span> exchanges:</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;        exch.get_ticker ()</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;        </div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;        <span class="keywordflow">print</span> (<span class="stringliteral">&quot;{0}: {1}&quot;</span>.format (exch.get_exch_name (), exch))</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;    </div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;    <span class="keywordflow">return</span> 0</div>
     </div>
-<div class="ttc" id="namespaceexchange_html_adf14f1c5a512c2d8a7ece6e64e546916"><div class="ttname"><a href="namespaceexchange.html#adf14f1c5a512c2d8a7ece6e64e546916">exchange.main</a></div><div class="ttdeci">def main</div><div class="ttdef"><b>Definition:</b> <a href="exchange_8py_source.html#l00144">exchange.py:144</a></div></div>
+<div class="ttc" id="namespaceexchange_html_adf14f1c5a512c2d8a7ece6e64e546916"><div class="ttname"><a href="namespaceexchange.html#adf14f1c5a512c2d8a7ece6e64e546916">exchange.main</a></div><div class="ttdeci">def main</div><div class="ttdef"><b>Definition:</b> <a href="exchange_8py_source.html#l00205">exchange.py:205</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jun 18 2017 17:34:27 for exch2exch by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jun 24 2017 12:40:15 for exch2exch by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

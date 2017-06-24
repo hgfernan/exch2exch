@@ -27,11 +27,11 @@ class Exchange:
 # TODO implement
     
     def __init__ (self):
-#        self.process_url ()
-#        self.process_json ()
+#        self.dnload_ticker ()
+#        self.process_ticker ()
         pass
     
-    def process_url (self):
+    def dnload_ticker (self):
         url = self.__class__.U_TICKER
 #        print (url)
         f = urllib.request.urlopen (url)
@@ -39,23 +39,42 @@ class Exchange:
         line = f.readline ()
 #        print (line)
         
-        self.json = json.loads (line.decode (encoding='utf-8'))
-#        print (self.json)
+        self.ticker = json.loads (line.decode (encoding='utf-8'))
+#        print (self.ticker)
         
-    def process_json (self):
+    def process_ticker (self):
         # TODO raise exception
         pass
     
     def get_ticker (self):
-        self.process_url ()
-        self.process_json ()
+        self.dnload_ticker ()
+        self.process_ticker ()
+    
+    def dnload_trades (self):
+        url = self.__class__.U_TRADES
+#        print (url)
+        f = urllib.request.urlopen (url)
+        
+        line = f.readline ()
+#        print (line)
+        
+        self.trades = json.loads (line.decode (encoding='utf-8'))
+#        print (self.ticker)
+        
+    def process_trades (self):
+        # TODO raise exception
+        pass
+    
+    def get_trades (self):
+        self.dnload_trades ()
+        self.process_trades ()
     
     def get_exch_name (self):
         # TODO raise exception
         pass
         
     def __str__ (self):
-        result = str (self.json)
+        result = str (self.ticker)
     
         return result
         
@@ -71,18 +90,37 @@ class FoxBit (Exchange):
     def __init__ (self):
         super ().__init__ ()
         
-    def process_json (self):
+    def process_ticker (self):
         # TODO get the date from the computer ?
-#        self.ts   = int   (self.json['date'])
-        self.buy  = float (self.json['buy'])
-        self.sell = float (self.json['sell'])
-        self.high = float (self.json['high'])
-        self.low  = float (self.json['low'])
+#        self.ts   = int   (self.ticker['date'])
+        self.ticker['date'] = datetime.datetime.now ()
+        # TODO generate ts from dt
+     
+    def get_ticker (self):
+        super ().get_ticker ()
+        
+        buy  = float (self.ticker['buy'])
+        sell = float (self.ticker['sell'])
+        high = float (self.ticker['high'])
+        low  = float (self.ticker['low'])
+        dt   = self.ticker['date']
+        
+        result = (dt, sell, buy, high, low)
+        
+        return result
+        
+    def process_trades (self):
+        # TODO get the date from the computer ?
+#        self.ts   = int   (self.ticker['date'])
+        self.buy  = float (self.ticker['buy'])
+        self.sell = float (self.ticker['sell'])
+        self.high = float (self.ticker['high'])
+        self.low  = float (self.ticker['low'])
     
         self.dt = datetime.datetime.now ()
         # TODO generate ts from dt
      
-    def get_ticker (self):
+    def get_trades (self):
         super ().get_ticker ()
         
         buy  = self.buy
@@ -100,18 +138,20 @@ class FoxBit (Exchange):
                 
 class MercadoBitcoin (Exchange):
     U_TICKER = 'https://www.mercadobitcoin.net/api/ticker/'
+    U_ORDRBK = 'https://www.okcoin.com/api/v1/depth.do?symbol=btc_usd'
+    U_TRADES = 'https://www.okcoin.com/api/v1/trades.do?symbol=btc_usd'
     
     def __init__ (self):
         super ().__init__ ()
         
-    def process_json (self):
+    def process_ticker (self):
 #        myClass = type (self).__name__
-#        print ("{0}.process_json ()".format (myClass))
-        self.ts   = int   (self.json['ticker']['date'])
-        self.buy  = float (self.json['ticker']['buy'])
-        self.sell = float (self.json['ticker']['sell'])
-        self.high = float (self.json['ticker']['high'])
-        self.low  = float (self.json['ticker']['low'])
+#        print ("{0}.process_ticker ()".format (myClass))
+        self.ts   = int   (self.ticker['ticker']['date'])
+        self.buy  = float (self.ticker['ticker']['buy'])
+        self.sell = float (self.ticker['ticker']['sell'])
+        self.high = float (self.ticker['ticker']['high'])
+        self.low  = float (self.ticker['ticker']['low'])
     
         self.dt = datetime.datetime.fromtimestamp (float (self.ts))
     
@@ -137,12 +177,12 @@ class OkCoin (Exchange):
     def __init__ (self):
         super ().__init__ ()
         
-    def process_json (self):
-        self.ts   = int   (self.json['date'])
-        self.buy  = float (self.json['ticker']['buy'])
-        self.sell = float (self.json['ticker']['sell'])
-        self.high = float (self.json['ticker']['high'])
-        self.low  = float (self.json['ticker']['low'])
+    def process_ticker (self):
+        self.ts   = int   (self.ticker['date'])
+        self.buy  = float (self.ticker['ticker']['buy'])
+        self.sell = float (self.ticker['ticker']['sell'])
+        self.high = float (self.ticker['ticker']['high'])
+        self.low  = float (self.ticker['ticker']['low'])
     
         self.dt = datetime.datetime.fromtimestamp (float (self.ts))
     

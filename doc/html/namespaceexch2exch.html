@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">exch2exch
-   &#160;<span id="projectnumber">0.10</span>
+   &#160;<span id="projectnumber">0.11</span>
    </div>
    <div id="projectbrief">A tool to compare the prices of two Bitcoin exchanges</div>
   </td>
@@ -93,11 +93,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexch2exch_1_1_differences.html">Differences</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexch2exch_1_1_rates.html">Rates</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexch2exch_1_1_xbt_prices.html">XbtPrices</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexch2exch_1_1_differences.html">Differences</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
@@ -106,12 +106,12 @@ Functions</h2></td></tr>
 <tr class="separator:ab44bbb7377e2ea808af430246d925cd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a72e4d9fae01812560db07229c05efbc6"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceexch2exch.html#a72e4d9fae01812560db07229c05efbc6">get_google_rates</a></td></tr>
 <tr class="separator:a72e4d9fae01812560db07229c05efbc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0fe4c93bea8fee4212c19f045c72b43b"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceexch2exch.html#a0fe4c93bea8fee4212c19f045c72b43b">get_x_rates</a></td></tr>
-<tr class="separator:a0fe4c93bea8fee4212c19f045c72b43b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a69c86b486350c524c85fca367aad82f2"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceexch2exch.html#a69c86b486350c524c85fca367aad82f2">get_mb_rates</a></td></tr>
 <tr class="separator:a69c86b486350c524c85fca367aad82f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7e83d805e732ce4344cb3a6edc5d98be"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceexch2exch.html#a7e83d805e732ce4344cb3a6edc5d98be">get_ok_rates</a></td></tr>
 <tr class="separator:a7e83d805e732ce4344cb3a6edc5d98be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0fe4c93bea8fee4212c19f045c72b43b"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceexch2exch.html#a0fe4c93bea8fee4212c19f045c72b43b">get_x_rates</a></td></tr>
+<tr class="separator:a0fe4c93bea8fee4212c19f045c72b43b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a559f55b08d308a647cc4afa3620e2da8"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceexch2exch.html#a559f55b08d308a647cc4afa3620e2da8">main</a></td></tr>
 <tr class="separator:a559f55b08d308a647cc4afa3620e2da8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -357,9 +357,9 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;</div>
 <div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;    u_usd2brl = <span class="stringliteral">&#39;https://www.google.com/finance/converter?a=1&amp;from=USD&amp;to=BRL&#39;</span></div>
 <div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;    u_brl2usd = <span class="stringliteral">&#39;https://www.google.com/finance/converter?a=1&amp;from=BRL&amp;to=USD&#39;</span></div>
-<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;    u_mb      = <span class="stringliteral">&#39;https://www.mercadobitcoin.net/api/ticker/&#39;</span></div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;<span class="comment">#    u_mb      = &#39;https://www.mercadobitcoin.net/api/ticker/&#39;</span></div>
 <div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;    u_xrates  = <span class="stringliteral">&#39;http://www.x-rates.com/table/?from=USD&amp;amount=1&#39;</span></div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;    u_ok      = <span class="stringliteral">&#39;https://www.okcoin.com/api/v1/ticker.do?symbol=btc_usd&#39;</span></div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;<span class="comment">#    u_ok      = &#39;https://www.okcoin.com/api/v1/ticker.do?symbol=btc_usd&#39;</span></div>
 <div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;    </div>
 <div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;    urls = (u_usd2brl, u_brl2usd)</div>
 <div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;    </div>
@@ -431,8 +431,8 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;    </div>
 <div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;    <span class="keywordflow">return</span> 0</div>
     </div>
-<div class="ttc" id="classexchange_1_1_ok_coin_html"><div class="ttname"><a href="classexchange_1_1_ok_coin.html">exchange.OkCoin</a></div><div class="ttdef"><b>Definition:</b> <a href="exchange_8py_source.html#l00118">exchange.py:118</a></div></div>
-<div class="ttc" id="classexchange_1_1_mercado_bitcoin_html"><div class="ttname"><a href="classexchange_1_1_mercado_bitcoin.html">exchange.MercadoBitcoin</a></div><div class="ttdef"><b>Definition:</b> <a href="exchange_8py_source.html#l00090">exchange.py:90</a></div></div>
+<div class="ttc" id="classexchange_1_1_ok_coin_html"><div class="ttname"><a href="classexchange_1_1_ok_coin.html">exchange.OkCoin</a></div><div class="ttdef"><b>Definition:</b> <a href="exchange_8py_source.html#l00174">exchange.py:174</a></div></div>
+<div class="ttc" id="classexchange_1_1_mercado_bitcoin_html"><div class="ttname"><a href="classexchange_1_1_mercado_bitcoin.html">exchange.MercadoBitcoin</a></div><div class="ttdef"><b>Definition:</b> <a href="exchange_8py_source.html#l00139">exchange.py:139</a></div></div>
 <div class="ttc" id="namespaceexch2exch_html_a559f55b08d308a647cc4afa3620e2da8"><div class="ttname"><a href="namespaceexch2exch.html#a559f55b08d308a647cc4afa3620e2da8">exch2exch.main</a></div><div class="ttdeci">def main</div><div class="ttdef"><b>Definition:</b> <a href="exch2exch_8py_source.html#l00270">exch2exch.py:270</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -440,7 +440,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jun 18 2017 17:34:27 for exch2exch by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jun 24 2017 12:40:15 for exch2exch by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
