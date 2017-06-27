@@ -1,4 +1,5 @@
 exch2exch.session.tar
 __pycache__/
 *.pyc
+*.kate-swp
 

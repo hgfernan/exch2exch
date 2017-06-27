@@ -125,7 +125,7 @@ class Differences:
         result = ""
         
         oname = self.ok.getExchangeName ()
-        mname = self.ok.getExchangeName ()
+        mname = self.mb.getExchangeName ()
         sname = self.rates.getServiceName ()
         
         fmt = "Calculation between {0} and {1} rates, with conversion from {2}"

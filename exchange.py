@@ -69,14 +69,32 @@ class Exchange:
         self.dnload_trades ()
         self.process_trades ()
     
+    def dnload_orderbook (self):
+        url = self.__class__.U_ORDRBK
+        f = urllib.request.urlopen (url)
+        
+        line = f.readline ()
+#        print (line)
+        
+        self.trades = json.loads (line.decode (encoding='utf-8'))
+#        print (self.ticker)
+        
+    def process_orderbook (self):
+        # TODO raise exception
+        pass
+    
+    def get_orderbook (self):
+        self.dnload_orderbook ()
+        self.process_orderbook ()
+    
+    
     def get_exch_name (self):
         # TODO raise exception
         pass
         
     def __str__ (self):
-        result = str (self.ticker)
-    
-        return result
+        # TODO raise exception
+        pass
         
     def __repr__ (self):
         result = "{0} ()".format (type (self).__name__)
