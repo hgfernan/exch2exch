@@ -117,13 +117,13 @@ class FoxBit (Exchange):
     def get_ticker (self):
         super ().get_ticker ()
         
-        buy  = float (self.ticker['buy'])
-        sell = float (self.ticker['sell'])
-        high = float (self.ticker['high'])
-        low  = float (self.ticker['low'])
-        dt   = self.ticker['date']
+        self.buy  = float (self.ticker['buy'])
+        self.sell = float (self.ticker['sell'])
+        self.high = float (self.ticker['high'])
+        self.low  = float (self.ticker['low'])
+        self.dt   = self.ticker['date']
         
-        result = (dt, sell, buy, high, low)
+        result = (self.dt, self.sell, self.buy, self.high, self.low)
         
         return result
         
@@ -153,6 +153,18 @@ class FoxBit (Exchange):
     
     def get_exch_name (self):
         return "FoxBit"
+        
+    def __str__ (self):
+        result = '{'
+        
+        result += 'buy : ' + str (self.buy) + ', '
+        result += 'sell : ' + str (self.sell) + ', '
+        result += 'high : ' + str(self.high) + ', '
+        result += 'low  : ' + str (self.low) + ', '
+        result += 'dt :  ' + str (self.dt)
+        result += '}'
+        # Normal function termination
+        return result 
                 
 class MercadoBitcoin (Exchange):
     U_TICKER = 'https://www.mercadobitcoin.net/api/ticker/'
@@ -229,7 +241,8 @@ def main ():
     for exch in exchanges:
         exch.get_ticker ()
         
-        print ("{0}: {1}".format (exch.get_exch_name (), exch))
+        print ("{0}".format (exch.get_exch_name ()))
+        print ("{0}".format (exch))
     
     return 0
     
