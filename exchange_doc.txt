@@ -1,0 +1,19 @@
+1) Exchange 
+Classes for contacting real exchanges and returning data in standard form:
++ information of target coin;
++ name of exchange;
++ convert datetime class to a more portable format;
+* confirm the semantics of tracker fields using trades and overbook;
++ an inner class should be used to return data in standard form for all
+  exhange classes;
++ a factory will return objects of the parametrized classes;
+
+2) ExchangeServer:
+Module to contact a given exchange and to return a JSON structure and/to
+create a corresponding file:
++ no timing considerations. Any scheduling of operations is done externally;
+
+3) Converters: 
+USD to BRL and vice-versa:
++ a factory will create objects of parameterized class names;
++ an auxiliary class will be used to standardize JSON returns.
