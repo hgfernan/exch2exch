@@ -14,6 +14,7 @@ From
 """
 
 import sys            # exit()
+import time           # time(), gmtime()
 import json           # load()
 import datetime       # class datetime
 import urllib.request # urlopen()
@@ -38,13 +39,79 @@ class OrderBook:
 # Standard way of packing ticker information across all exchange classes
         
 class Ticker:
-    def __init__ (self):
-        pass
+    def __init__ (self, exch, pair, dt, buy, sell, high, low, last, vol):
+        self.exch = exch
+        self.pair = pair
+        self.dt   = dt
+        self.buy  = buy 
+        self.sell = sell 
+        self.high = high 
+        self.low  = low 
+        self.last = last 
+        self.vol  = vol 
+        
+    def convert (self, rate, source, target):
+        exch = self.exch
+        dt   = self.dt   / rate
+        buy  = self.buy  / rate
+        sell = self.sell / rate
+        high = self.high / rate
+        low  = self.low  / rate
+        last = self.last / rate
+        vol  = self.vol  / rate
+
+        if source in self.pair:
+            pair = self.pair.replace (source, target)
+        
+        # TODO otherwise throw exception 
+        
+        result = Ticker (exch, pair, dt, buy, sell, high, low, last, vol)
+        
+        # Normal function termination
+        return result 
+        
+    def getExch (self):
+        return self.exch
+        
+    def getPair (self):
+        return self.pair
+        
+    def getDt (self):
+        return self.dt
+
+    def mk_tuple (self): 
+        result = (self.exch, self.pair, self.dt, self.buy, self.sell, \
+            self.high, self.low, self.last, self.vol)
+            
+        # Normal function termination 
+        return result
+        
+    def dumps (self):
+        result = ''
+        
+        result = json.dumps (self.__dict__)       
+        
+        # Normal function termination
+        return result
     
     def __str__ (self):
         result = ''
         
-        result = json.dumps (self.__dict__)       
+        fmt    = 'Exchange: {0}, coin pair {1}, ' 
+        result = fmt.format (self.exch, self.pair)
+        
+        gm = time.gmtime (self.dt)
+        result += 'timestamp: ' + time.strftime ('%Y-%m-%d %H:%M:%S', gm) 
+        result += ", "
+        
+        fmt     = 'buy/sell: {0:.8f}/{1:.8f}, '
+        result += fmt.format (self.buy, self.sell)
+        
+        fmt     = 'high/low: {0:.8f}/{1:.8f}, '
+        result += fmt.format (self.high, self.low)
+        
+        fmt     = 'last: {0:.8f}, volume: {1:.8f}'
+        result += fmt.format (self.last, self.vol)
         
         # Normal function termination
         return result
@@ -74,6 +141,7 @@ class Exchange:
         
         line = f.readline ()
 #        print (line)
+        self.original = line.decode (encoding = 'utf-8')
         
         self.ticker = json.loads (line.decode (encoding='utf-8'))
 #        print (self.ticker)
@@ -85,6 +153,10 @@ class Exchange:
     def get_ticker (self):
         self.dnload_ticker ()
         self.process_ticker ()
+    
+    def mk_ticker (self): 
+        # TODO raise exception
+        pass
     
     def dnload_trades (self):
         url = self.__class__.U_TRADES
@@ -121,10 +193,13 @@ class Exchange:
     
     def get_orderbook (self):
         self.dnload_orderbook ()
-        self.process_orderbook ()
-    
+        self.process_orderbook () 
     
     def get_exch_name (self):
+        # TODO raise exception
+        pass
+    
+    def get_original (self):
         # TODO raise exception
         pass
         
@@ -145,50 +220,56 @@ class FoxBit (Exchange):
         super ().__init__ ()
         
     def process_ticker (self):
-        # TODO get the date from the computer ?
-#        self.ts   = int   (self.ticker['date'])
-        self.ticker['date'] = datetime.datetime.now ()
-        # TODO generate ts from dt
+        tt = time.time ()
+        self.ticker['ts'] = tt
+        self.ticker['date'] = datetime.datetime.fromtimestamp (tt)
+        self.exch = self.get_exch_name ()
+        self.pair = "BRLBTC"
      
     def get_ticker (self):
         super ().get_ticker ()
         
+        dt   = self.ticker['date']
         buy  = float (self.ticker['buy'])
         sell = float (self.ticker['sell'])
         high = float (self.ticker['high'])
         low  = float (self.ticker['low'])
-        dt   = self.ticker['date']
         
         result = (dt, sell, buy, high, low)
+        
+        return result
+    
+    def mk_ticker (self): 
+        super ().get_ticker ()
+        
+        exch = self.exch
+        pair = self.pair
+        ts   = self.ticker['ts']
+        buy  = float (self.ticker['buy'])
+        sell = float (self.ticker['sell'])
+        high = float (self.ticker['high'])
+        low  = float (self.ticker['low'])
+        last = float (self.ticker['last'])
+        vol  = float (self.ticker['last'])
+        
+        result = Ticker (exch, pair, ts, buy, sell, high, low, last, vol)
         
         return result
         
     def process_trades (self):
-        # TODO get the date from the computer ?
-#        self.ts   = int   (self.ticker['date'])
-        self.buy  = float (self.ticker['buy'])
-        self.sell = float (self.ticker['sell'])
-        self.high = float (self.ticker['high'])
-        self.low  = float (self.ticker['low'])
-    
-        self.dt = datetime.datetime.now ()
-        # TODO generate ts from dt
+        pass
      
     def get_trades (self):
-        super ().get_ticker ()
-        
-        buy  = self.buy
-        sell = self.sell
-        high = self.high
-        low  = self.low
-        dt   = self.dt
-        
-        result = (dt, sell, buy, high, low)
-        
-        return result
+        pass
     
     def get_exch_name (self):
         return "FoxBit"
+    
+    def get_exch_prefix (self):
+        return "fbt"
+        
+    def get_original (self):
+        return self.original 
         
     def __str__ (self):
         result = json.dumps (self.__dict__, cls = DatetimeEncoder)
@@ -207,11 +288,15 @@ class MercadoBitcoin (Exchange):
     def process_ticker (self):
 #        myClass = type (self).__name__
 #        print ("{0}.process_ticker ()".format (myClass))
+        self.exch = self.get_exch_name ()
+        self.pair = 'BTCBRL'
         self.ts   = int   (self.ticker['ticker']['date'])
         self.buy  = float (self.ticker['ticker']['buy'])
         self.sell = float (self.ticker['ticker']['sell'])
         self.high = float (self.ticker['ticker']['high'])
         self.low  = float (self.ticker['ticker']['low'])
+        self.last = float (self.ticker['ticker']['last'])
+        self.vol  = float (self.ticker['ticker']['vol'])
     
         self.dt = datetime.datetime.fromtimestamp (float (self.ts))
     
@@ -228,8 +313,31 @@ class MercadoBitcoin (Exchange):
         
         return result
     
+    def mk_ticker (self):
+        super ().get_ticker ()
+        
+        exch = self.exch
+        pair = self.pair
+        dt   = self.ts
+        buy  = self.buy
+        sell = self.sell
+        high = self.high
+        low  = self.low
+        last = self.last
+        vol  = self.vol
+        
+        result = Ticker (exch, pair, dt, buy, sell, high, low, last, vol)
+        
+        return result
+    
     def get_exch_name (self):
         return "Mercado Bitcoin"
+    
+    def get_exch_prefix (self):
+        return "mbt"
+        
+    def get_original (self):
+        return self.original 
         
     def __str__ (self):
         result = json.dumps (self.__dict__, cls = DatetimeEncoder)
@@ -244,29 +352,56 @@ class OkCoin (Exchange):
         super ().__init__ ()
         
     def process_ticker (self):
+        self.exch = self.get_exch_name ()
+        self.pair = 'BTCUSD'
         self.ts   = int   (self.ticker['date'])
         self.buy  = float (self.ticker['ticker']['buy'])
         self.sell = float (self.ticker['ticker']['sell'])
         self.high = float (self.ticker['ticker']['high'])
         self.low  = float (self.ticker['ticker']['low'])
+        self.last = float (self.ticker['ticker']['last'])
+        self.vol  = float (self.ticker['ticker']['vol'])
     
         self.dt = datetime.datetime.fromtimestamp (float (self.ts))
     
     def get_ticker (self):
         super ().get_ticker ()
         
+        dt   = self.dt
         buy  = self.buy
         sell = self.sell
         high = self.high
         low  = self.low
-        dt   = self.dt
         
         result = (dt, sell, buy, high, low)
         
         return result
     
+    def mk_ticker (self):
+        super ().get_ticker ()
+        
+        exch = self.exch
+        pair = self.pair
+        dt   = self.ts
+        buy  = self.buy
+        sell = self.sell
+        high = self.high
+        low  = self.low
+        last = self.last
+        vol  = self.vol
+        
+        result = Ticker (exch, pair, dt, buy, sell, high, low, last, vol)
+        
+        return result
+        
+    def get_original (self):
+        return self.original 
+    
     def get_exch_name (self):
         return "OkCoin"
+    
+    def get_exch_prefix (self):
+        return "okc"
         
     def __str__ (self):
         result = json.dumps (self.__dict__, cls = DatetimeEncoder)
@@ -285,6 +420,12 @@ def main ():
         
         print ( "{0}:".format (exch.get_exch_name ()) )
         print ( "\t{0}".format (exch) )
+        
+        ticker = exch.mk_ticker ()
+        print ( "\t{0}".format (ticker) )
+        print ( "\tJSON: {0}".format (ticker.dumps ()) )
+        
+        print ( 'Original:\n\t{0}\n'.format (exch.get_original ()) )
     
     return 0
     
