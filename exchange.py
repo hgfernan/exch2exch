@@ -229,13 +229,13 @@ class FoxBit (Exchange):
     def get_ticker (self):
         super ().get_ticker ()
         
-        dt   = self.ticker['date']
-        buy  = float (self.ticker['buy'])
-        sell = float (self.ticker['sell'])
-        high = float (self.ticker['high'])
-        low  = float (self.ticker['low'])
+        self.buy  = float (self.ticker['buy'])
+        self.sell = float (self.ticker['sell'])
+        self.high = float (self.ticker['high'])
+        self.low  = float (self.ticker['low'])
+        self.dt   = self.ticker['date']
         
-        result = (dt, sell, buy, high, low)
+        result = (self.dt, self.sell, self.buy, self.high, self.low)
         
         return result
     
