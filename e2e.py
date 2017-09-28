@@ -1,3 +1,4 @@
+#! /usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
 Created on Thu Aug 17 12:30:41 2017
@@ -30,18 +31,18 @@ class Application:
         parser = argparse.ArgumentParser (description = desc)
         
         desc = 'Summary report (Default is stdout)' 
-        parser.add_argument ('--summary', '-s', required = False,
+        parser.add_argument ('-s', '--summary', required = False,
                              help = desc)
         desc = 'File name for the conclusion of the arbitrage'
-        parser.add_argument ('--conclusion', '-c', required = True,
+        parser.add_argument ('-c', '--conclusion', required = True,
                              help = desc)
-        parser.add_argument ('--rates', '-r', default = 'Google',
+        parser.add_argument ('-r', '--rates', default = 'Google',
                              help = 'Main rate service')
         parser.add_argument ('--origin', '-o', required = True,
                              help = 'Origin exchange')
-        parser.add_argument ('--destination', '-d', required = True,
+        parser.add_argument ('-d', '--destination', required = True,
                              help = 'Destination exchange')
-        parser.add_argument ('--verbose', '-v', action = "store_true",
+        parser.add_argument ('-v', '--verbose', action = "store_true",
                              help = 'Increase output verbosity')
                              
         args = parser.parse_args ()
@@ -63,7 +64,7 @@ class Application:
         
     def interpretArgs (self):
         # Open summary file
-        if self.summary == None:
+        if self.args.summary == None:
             try:
                 sum_nam =  self.prefix + '_' + self.suffix + '.sum'
                 self.sum_f = open (sum_nam, 'w')
@@ -159,13 +160,13 @@ class Application:
         rates_names = gfRates.validClassNames ()
 
         # TODO validate main rate service
-        if args.rate not in rates_names:
+        if args.rates not in rates_names:
             fmt  = 'ERROR: Main rates service {0} is not a valid rates name.\n'
             fmt += '\tShould be one of {1}'
             msg = fmt.format (args.rate, rates_names)
             raise Exception (msg)
 
-        mainRate = gfRates.genObject (args.rate)
+        mainRate = gfRates.genObject (args.rates)
         
         # TODO Open output file for main rate service
         try:
@@ -180,7 +181,7 @@ class Application:
         # TODO open connections with auxiliary rate services
         altRatesNames = []        
         for rateName in rates_names:
-            if rateName == args.rate:
+            if rateName == args.rates:
                 continue 
             
             altRatesNames.append (rateName)
@@ -194,7 +195,7 @@ class Application:
         if args.verbose:            
             print ('Verbose output enabled')
             
-            print ('Main rate service: {0}'.format (args.rate))
+            print ('Main rate service: {0}'.format (args.rates))
             print ('Exchanges')
             print ('Origin:            {0}'.format (args.origin))
             print ('Destination:       {0}'.format (args.destination))
@@ -211,49 +212,25 @@ class Application:
     def getDestinationExchange (self):
         pass
     
+    def genExpectations (self):
+        pass
+    
     def genOutput (self):
         pass
-
-def parseCmdLine ():
-    desc = 'Compare two exchanges for a round operation'
-    parser = argparse.ArgumentParser (description = desc)
-    parser.add_argument ('--rate', '-r', default = 'Google',
-                         help = 'Main rate service')
-    parser.add_argument ('--origin', '-o', required = True,
-                         help = 'Origin exchange')
-    parser.add_argument ('--destination', '-d', required = True,
-                         help = 'Destination exchange')
-    parser.add_argument ('--verbose', '-v', action = "store_true",
-                         help = 'Increase output verbosity')
-                         
-    args = parser.parse_args ()
-    
-    result = Args ()
-    result.rate        = args.rate 
-    result.origin      = args.origin 
-    result.destination = args.destination 
-    
-    if args.verbose: 
-        print ('Verbose output enabled')
-        
-        print ('Main rate service: {0}'.format (result.rate))
-        print ('Exchanges')
-        print ('Origin:            {0}'.format (result.origin))
-        print ('Destination:       {0}'.format (result.destination))
-    
-    # Normal function termination
-    return result
-
-def interpretArguments (args):
-    pass 
 
 def main (argv):
     app = Application ()
     
     # TODO parse command line 
+    # TODO catch exception
+    # TODO return according to error
     app.parseCmdLine ()
     
     # TODO interpret command line 
+    # TODO catch exception
+    # TODO return according to error
+    app.interpretArgs ()
+    
     # TODO consult main rate service
     # TODO consult auxiliary rate services
     # TODO consult origin exchange 

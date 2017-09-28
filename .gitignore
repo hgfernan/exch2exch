@@ -3,3 +3,4 @@ __pycache__/
 *.pyc
 *.kate-swp
 nohup.out
+out/

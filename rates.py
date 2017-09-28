@@ -16,8 +16,8 @@ class Rate:
         self.rate   = rate        
         
 class Rates:
-    def __init__ (self):
-        pass
+#    def __init__ (self):
+#        print (self.__class__.__name__)
     
     def getBrl2Usd (self):
         return self.brl2usd
@@ -46,15 +46,12 @@ class Rates:
     
     pass 
 
-class Google (Rates):
-    U_USD2BRL = 'https://www.google.com/finance/converter?a=1&from=USD&to=BRL'
-    U_BRL2USD = 'https://www.google.com/finance/converter?a=1&from=BRL&to=USD'
+def google_get_rate (url):
+    result = 0
 
-    def get_rate (url):
-        result = 0
+    f = urllib.request.urlopen (url)
     
-        f = urllib.request.urlopen (url)
-        
+    try:
         line = f.readline ()
         while line != b'':
             ind = line.find (b'currency_converter')
@@ -68,23 +65,39 @@ class Google (Rates):
             line = f.readline ()
         
         result = float (rate)
+    except IndexError as err:
+        result = 0.0
         
-        # Normal function termination
-        return result
+        fmt = "Google.get_rate(): {0}"
+        print (fmt.format (err))
         
+        raise
+    
+    # Normal function termination
+    return result
+
+G_U_USD2BRL = 'https://finance.google.com/finance/converter?a=1&from=USD&to=BRL&meta=ei%3DoKi6WfnPAsSTeoKNoJAB'
+G_U_BRL2USD = 'https://finance.google.com/finance/converter?a=1&from=BRL&to=USD&meta=ei%3DYqi6Wej-AoyEeoLbh9gF'
+    
+class Google (Rates):
+    #    U_USD2BRL = 'https://www.google.com/finance/converter?a=1&from=USD&to=BRL'
+    U_USD2BRL = 'https://finance.google.com/finance/converter?a=1&from=USD&to=BRL&meta=ei%3DoKi6WfnPAsSTeoKNoJAB'
+#    U_BRL2USD = 'https://www.google.com/finance/converter?a=1&from=BRL&to=USD'
+    U_BRL2USD = 'https://finance.google.com/finance/converter?a=1&from=BRL&to=USD&meta=ei%3DYqi6Wej-AoyEeoLbh9gF'
+
     def __init__ (self):
         ts = math.trunc (time.time () + 0.5)
         self.dt = datetime.datetime.fromtimestamp (ts)
                 
-        self.usd2brl = Google.get_rate (Google.U_USD2BRL)
-        self.brl2usd = Google.get_rate (Google.U_BRL2USD)
+        self.usd2brl = google_get_rate (Google.U_USD2BRL)
+        self.brl2usd = google_get_rate (Google.U_BRL2USD)
                 
         self.service = "Google"
-        self.service = "ggl"
-        
+        self.prefix = "ggl"
+                
         # Normal function termination
         return
-    
+            
 class XRates (Rates):
     U_XRATES = 'http://www.x-rates.com/table/?from=USD&amount=1'
 
@@ -127,13 +140,18 @@ class XRates (Rates):
         return result
 
     def __init__ (self):
+#        print (self.__class__.__name__)
+
         ts = math.trunc (time.time () + 0.5)
         self.dt = datetime.datetime.fromtimestamp (ts)
 
         self.usd2brl, self.usd2brl = XRates.get_rates () 
                 
-        self.service = "Google"
-        self.service = "ggl"
+        self.service = "XRates"
+        self.prefix = "xr"
+        
+    def __new__ (self):
+        self.__init__ (self)
 
 # class Yahoo (Rates):
 #    pass

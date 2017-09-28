@@ -1,4 +1,6 @@
+#! /usr/bin/env python3 
 # -*- coding: utf-8 -*-
+
 """
 Classes to get data from selected Bitcoin exchanges.
 
@@ -229,13 +231,14 @@ class FoxBit (Exchange):
     def get_ticker (self):
         super ().get_ticker ()
         
+        self.dt   = self.ticker['date']
         self.buy  = float (self.ticker['buy'])
         self.sell = float (self.ticker['sell'])
         self.high = float (self.ticker['high'])
         self.low  = float (self.ticker['low'])
-        self.dt   = self.ticker['date']
+        self.last = float (self.ticker['last'])
         
-        result = (self.dt, self.sell, self.buy, self.high, self.low)
+        result = (self.dt, self.sell, self.buy, self.high, self.low, self.last)
         
         return result
     
@@ -303,13 +306,14 @@ class MercadoBitcoin (Exchange):
     def get_ticker (self):
         super ().get_ticker ()
         
+        dt   = self.dt
         buy  = self.buy
         sell = self.sell
         high = self.high
         low  = self.low
-        dt   = self.dt
+        last = self.last
         
-        result = (dt, sell, buy, high, low)
+        result = (dt, sell, buy, high, low, last)
         
         return result
     
@@ -372,8 +376,9 @@ class OkCoin (Exchange):
         sell = self.sell
         high = self.high
         low  = self.low
+        last = self.last
         
-        result = (dt, sell, buy, high, low)
+        result = (dt, sell, buy, high, low, last)
         
         return result
     

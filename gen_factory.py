@@ -7,9 +7,17 @@ Created on Thu Aug 17 15:17:53 2017
 import sys # exit()
 
 class Dummy: 
-    pass 
+    def __init__ (self):
+        print ("{0}.__init__() ".format (self.__class__.__name__))
 
 class Dummy1 (Dummy):
+    def __init__ (self):
+        print ("{0}.__init__() ".format (self.__class__.__name__))
+        
+#    def __new__ (self):
+#        print ("Dummy1.__new__() ", self.__class__.__name__)
+#        Dummy1.__init__ (self)
+        
     def doSomething (self):
         print ("I'm an instance of class {0}". format (type (self).__name__))
 
@@ -41,20 +49,23 @@ class GenFactory:
                 cls = self.classes[name]
                 result = cls.__new__ (cls)
                 
+                result.__init__ ()
+                
         return result
         
 def main ():
     gf = GenFactory (Dummy)
     
-    obj = gf.genObject ("Dummy2")
-    
-    nam = type (obj).__name__ 
-    print ("type (obj).__name__ = {0}".format (nam))
-    
-    obj.doSomething ()
-    print ("="*12)
+#    obj = gf.genObject ("Dummy2")
+#    
+#    nam = type (obj).__name__ 
+#    print ("type (obj).__name__ = {0}".format (nam))
+#    
+#    obj.doSomething ()
+#    print ("="*12)
     
     for cn in gf.validClassNames ():
+        print ("Class {0}".format (cn))
         obj = gf.genObject (cn)
     
         nam = type (obj).__name__ 

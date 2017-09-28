@@ -53,13 +53,14 @@ class Rates:
         return result        
         
 class XbtPrices:
-    def __init__ (self, dt, sell, buy, high, low, exch, coin):
+    def __init__ (self, dt, sell, buy, high, low, last, exch, coin):
         self.dt   = dt
         self.sell = sell
         self.buy  = buy
         self.sell = sell
         self.high = high
         self.low  = low
+        self.last = last
         self.exch = exch
         self.coin = coin
         
@@ -78,6 +79,9 @@ class XbtPrices:
     def getLow (self):
         return self.low
         
+    def getLast (self):
+        return self.last
+        
     def getExchangeName (self):
         return self.exch
         
@@ -87,13 +91,14 @@ class XbtPrices:
     def __str__ (self):
         result = ''
         
-        dt, sell, buy = self.dt, self.sell, self.buy
-        high, low     = self.high, self.low
-        exch, coin    = self.exch, self.coin
+        dt, sell, buy   = self.dt, self.sell, self.buy
+        high, low, last = self.high, self.low, self.last
+        exch, coin      = self.exch, self.coin
         ftpl = (exch, dt, sell, coin, buy)
         result  = "{0}: {1}: Sell {2:.4f} {3}, Buy {4:.4f} {3}".format (*ftpl)
-        ftpl    = (low, coin, high)
-        result += "\n\tHigh {0:.4f} {1}, Low {2:.4f} {0}".format (*ftpl)
+        ftpl    = (high, coin, low, last)
+        fmt     = "\n\tHigh {0:.4f} {1}, Low {2:.4f} {1}, Last {3:.4f} {1}"
+        result += fmt.format (*ftpl)
         
         return result
         
@@ -103,11 +108,20 @@ class Differences:
         self.mb = mb
         self.ok = ok
         
+        # TODO check the two coins
+        self.coinName = mb.getCoinName ()
+        
         self.dmin = mb.getLow ()  - ok.getLow ()   
         self.dmax = mb.getHigh () - ok.getLow ()
         
         self.gmin = 100.0 * self.dmin / ok.getHigh ()
         self.gmax = 100.0 * self.dmax / ok.getLow ()
+        
+        self.aBuySell  = mb.getBuy () - ok.getSell ()
+        self.rBuySell = 100.0 * self.aBuySell / ok.getBuy ()
+        
+        self.aLast = mb.getLast () - ok.getLast ()
+        self.rLast = 100.0 * self.aLast / ok.getLast ()
         
     def getMinDelta (self):
         return self.dmin
@@ -121,6 +135,21 @@ class Differences:
     def getMaxGain (self): 
         return self.gmax
         
+    def getABuySell (self):
+        return self.aBuySell
+        
+    def getRBuySell (self):
+        return self.rBuySell
+        
+    def getALast (self):
+        return self.aLast
+        
+    def getRLast (self):
+        return self.rLast
+        
+    def getCoinName (self):
+        return self.coinName
+        
     def __str__ (self):
         result = ""
         
@@ -133,12 +162,27 @@ class Differences:
         
         # TODO create evaluation for 24h and for the most recent sell/buy
         
-        fmt = "\nLast: minimum {0:.4f}, maximum {1:.4f}"
+        fmt = "\nExtrema:\n\tAbsolute: Minimum {0:.4f}, maximum {1:.4f}"
         result += fmt.format (self.getMinDelta (), self.getMaxDelta ())
         
-        fmt = "\nGain: minimum {0:.4f} %, maximum {1:.4f} %"
+        fmt = "\n\tRelative: minimum {0:.4f} %, maximum {1:.4f} %"
         result += fmt.format (self.getMinGain (), self.getMaxGain ())
         
+        fmt = "\nBuy {0}, sell {1}:"
+        result += fmt.format (oname, mname)
+        fmt = "\n\tAbsolute: {0:.4f} {1}"
+        result += fmt.format (self.getABuySell (), self.getCoinName ())
+        fmt = "\n\tRelative: {0:.4f} %%"
+        result += fmt.format (self.getRBuySell ())
+        
+        fmt = "\nLast transactions at {0} and {1}:"
+        result += fmt.format (oname, mname)
+        fmt = "\n\tAbsolute: {0:.4f} {1}"
+        result += fmt.format (self.getALast (), self.getCoinName ())
+        fmt = "\n\tRelative: {0:.4f} %%"
+        result += fmt.format (self.getRLast ())
+        
+        # Normal function termination
         return result
 
 #        
@@ -157,7 +201,15 @@ def get_google_rate (url):
         if ind != -1:
             
             fields = line.split ()
-            rate = fields[5].split (b'>')[1]
+            try:
+                rate = fields[5].split (b'>')[1]
+                
+            except IndexError as err:
+                print ('Unexpected problem: {0}'.format (err))
+                line = line.decode (encoding = 'utf-8').strip ('\n')
+                print ("The line read was:\n'{0}'".format (line))
+                
+                rate = 0.0
             
             break
             
@@ -178,11 +230,15 @@ def get_google_rates (urls):
     
     usd = 0
     brl = 0
+    success = True
     
     usd = get_google_rate (usd2brl)
     brl = get_google_rate (brl2usd)
     
-    result = (dt, usd, brl)
+    if (usd == 0.0) or (brl == 0.0):
+        success = False 
+        
+    result = (success, dt, usd, brl)
     
     return result
         
@@ -192,12 +248,23 @@ def get_x_rates (url):
     
     # TODO round the seconds fraction
     
-    # Adding a fake browser User-Agent to make site x-rates.com happy
-    headers = {'User-Agent' : 'Mozilla 5.10'}
+    try:
+        # Adding a fake browser User-Agent to make site x-rates.com happy
+        headers = {'User-Agent' : 'Mozilla 5.10'}
+            
+        # Create the Request, joining URL and User-Agent
+        request = urllib.request.Request (url, headers = headers)
         
-    # Create the Request, joining URL and User-Agent
-    request = urllib.request.Request (url, headers = headers)
+    except urllib.error.URLError as err:
+        print ("URL error: {0}".format (err))
+        
+        dt = usd= brl = 0
+        result = (True, dt, usd, brl)
+        
+        # Return to indicate failure
+        return result
 
+        
     # Open the URL as file
     f = urllib.request.urlopen (request)
     
@@ -225,9 +292,33 @@ def get_x_rates (url):
             sbrl = fields[2].split (b'<')[0]
             brl = float (sbrl)
             
-    result = (dt, usd, brl)
+    result = (True, dt, usd, brl)
     
+    # Normal function termination
     return result
+    
+def calc_fiat_rates (gRates, xRates):
+    gSuccess, gDt, gUsd, gBrl = gRates 
+    
+    xSuccess, xDt, xUsd, xBrl = xRates
+    
+    if not gSuccess:
+        result = xRates, "XRates"
+        
+    elif not xSuccess:
+        result = gRates, "Google"
+        
+    else: 
+        success = True
+        dt  = (gDt.timestamp () + xDt.timestamp ()) // 2
+        dt = datetime.datetime.fromtimestamp (dt)
+        usd = (gUsd + xUsd) / 2.0
+        brl = (gBrl + xBrl) / 2.0
+        
+        result = (success, dt, usd, brl, "Google + XRates")
+        
+    # Normal function termination
+    return result        
 
 def get_mb_rates (url):
     f = urllib.request.urlopen (url)
@@ -270,32 +361,43 @@ def get_ok_rates (url):
 def main ():
     # TODO parse command line 
 
-    u_usd2brl = 'https://www.google.com/finance/converter?a=1&from=USD&to=BRL'
-    u_brl2usd = 'https://www.google.com/finance/converter?a=1&from=BRL&to=USD'
+    # u_usd2brl = 'https://www.google.com/finance/converter?a=1&from=USD&to=BRL'
+    u_usd2brl= 'https://finance.google.com/finance/converter?a=1&from=USD&to=BRL&meta=ei%3DoKi6WfnPAsSTeoKNoJAB'
+#    u_brl2usd = 'https://www.google.com/finance/converter?a=1&from=BRL&to=USD'
+    u_brl2usd = 'https://finance.google.com/finance/converter?a=1&from=BRL&to=USD&meta=ei%3DYqi6Wej-AoyEeoLbh9gF'
 #    u_mb      = 'https://www.mercadobitcoin.net/api/ticker/'
     u_xrates  = 'http://www.x-rates.com/table/?from=USD&amount=1'
 #    u_ok      = 'https://www.okcoin.com/api/v1/ticker.do?symbol=btc_usd'
     
     urls = (u_usd2brl, u_brl2usd)
     
-    dt, usd2brl, brl2usd = get_google_rates (urls)
+    gRates = get_google_rates (urls)
     
-    google = Rates (dt, usd2brl, brl2usd, "Google")
+    success, dt, usd2brl, brl2usd = gRates
+    if success:   
+        google = Rates (dt, usd2brl, brl2usd, "Google")
     
-    print ("{0}\n".format (google))
+        print ("{0}\n".format (google))
     
     #
     #
     # X-rates section 
     # 
     
-    dt, brl2usd, usd2brl = get_x_rates (u_xrates)
+    # TODO handle Internet error 
+
+    xRates = get_x_rates (u_xrates)
+    success, dt, brl2usd, usd2brl = xRates
     
-    x_rates = Rates (dt, brl2usd, usd2brl, "X-Rates")
+    if success:
+        x_rates = Rates (dt, brl2usd, usd2brl, "X-Rates")
     
-    print ("{0}\n".format (x_rates))
+        print ("{0}\n".format (x_rates))
     
     # TODO calculate avg USD2BRL rate
+    finalRates = calc_fiat_rates (gRates, xRates)
+    success, dt, usd, br, name = finalRates
+    final = Rates (dt, usd2brl, brl2usd, name)
     
     #
     #
@@ -306,20 +408,22 @@ def main ():
 #    mb_tupl = get_mb_rates (u_mb)
     mb_tupl = mb.get_ticker ()
     
-    dt, sell, buy, high, low = mb_tupl
+    dt, sell, buy, high, low, last = mb_tupl
     
-    mb = XbtPrices (dt, sell, buy, high, low, "MercadoBitcoin", "BRL")
+    mb = XbtPrices (dt, sell, buy, high, low, last, "MercadoBitcoin", "BRL")
     
     # print ("MercadoBitcoin: {0}: Sell {1} BRL, Buy {2} BRL".format (mb))
     print (mb)
      
-    brl2usd = google.getUsd2Brl ()
+#    brl2usd = google.getUsd2Brl ()
+    brl2usd = final.getUsd2Brl ()
     
-    sell /= brl2usd
-    buy  /= brl2usd 
-    high /= brl2usd
-    low  /= brl2usd 
-    mb_usd = XbtPrices (dt, sell, buy, high, low, "MercadoBitcoin", "USD")
+    sell *= brl2usd
+    buy  *= brl2usd 
+    high *= brl2usd
+    low  *= brl2usd 
+    last *= brl2usd
+    mb_usd = XbtPrices (dt, sell, buy, high, low, last, "MercadoBitcoin", "USD")
     print ("{0}\n".format (mb_usd))
     
     #
@@ -332,15 +436,16 @@ def main ():
 #    ok_tupl = get_ok_rates (u_ok)
     ok_tupl = ok.get_ticker ()
     
-    dt, sell, buy, high, low = ok_tupl
+    dt, sell, buy, high, low, last = ok_tupl
     
-    ok = XbtPrices (dt, sell, buy, high, low, "OkCoin", "USD")
+    ok = XbtPrices (dt, sell, buy, high, low, last, "OkCoin", "USD")
     
     # print ("MercadoBitcoin: {0}: Sell {1} BRL, Buy {2} BRL".format (mb))
     print ("{0}\n".format (ok))
      
     
-    diff = Differences (google, mb_usd, ok)
+#    diff = Differences (google, mb_usd, ok)
+    diff = Differences (final, mb_usd, ok)
     
     print (diff)
     
