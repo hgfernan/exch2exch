@@ -1,0 +1,4 @@
+<map id="rates.Rates" name="rates.Rates">
+<area shape="rect" id="node2" href="$classrates_1_1_google.html" title="{rates.Google\n|+ brl2usd\l+ dt\l+ prefix\l+ service\l+ usd2brl\l+ U_BRL2USD\l+ U_USD2BRL\l|+ __init__()\l}" alt="" coords="5,131,119,296"/>
+<area shape="rect" id="node3" href="$classrates_1_1_x_rates.html" title="{rates.XRates\n|+ dt\l+ prefix\l+ service\l+ usd2brl\l+ U_XRATES\l|+ __init__()\l+ get_rates()\l}" alt="" coords="143,138,248,289"/>
+</map>

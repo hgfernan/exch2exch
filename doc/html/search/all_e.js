@@ -1,6 +1,19 @@
 var searchData=
 [
-  ['ticker',['ticker',['../classexchange_1_1_exchange.html#a7cf9e52f993627955a2e242c388daaeb',1,'exchange::Exchange']]],
-  ['trades',['trades',['../classexchange_1_1_exchange.html#a30e87a377320ce05bd956fb014683641',1,'exchange::Exchange']]],
-  ['ts',['ts',['../classexchange_1_1_mercado_bitcoin.html#ac4630b08e08f9eeb9dad838dc9dc0cda',1,'exchange.MercadoBitcoin.ts()'],['../classexchange_1_1_ok_coin.html#a0fe6263a7f58a6fa8a688929976b7e4a',1,'exchange.OkCoin.ts()']]]
+  ['readme',['README',['../md__home_hilton_github_exch2exh_README.html',1,'']]],
+  ['rate',['Rate',['../classrates_1_1_rate.html',1,'rates']]],
+  ['rate',['rate',['../classrates_1_1_rate.html#a5a660cfdfaa515a6e5809492525d61a7',1,'rates::Rate']]],
+  ['rates',['Rates',['../classraw__urlparser_1_1_rates.html',1,'raw_urlparser']]],
+  ['rates',['Rates',['../classexch2exch_1_1_rates.html',1,'exch2exch']]],
+  ['rates',['rates',['../namespacerates.html',1,'rates'],['../classexch2exch_1_1_differences.html#a64aec2fc7f20028f0bd834908cbea116',1,'exch2exch.Differences.rates()'],['../classraw__urlparser_1_1_differences.html#ad4e7eadb659a1cdcba90793cc52af174',1,'raw_urlparser.Differences.rates()']]],
+  ['rates',['Rates',['../classrates_1_1_rates.html',1,'rates']]],
+  ['rates_2epy',['rates.py',['../rates_8py.html',1,'']]],
+  ['raw_5furlparser',['raw_urlparser',['../namespaceraw__urlparser.html',1,'']]],
+  ['raw_5furlparser_2epy',['raw_urlparser.py',['../raw__urlparser_8py.html',1,'']]],
+  ['rawdestinationoutput',['rawDestinationOutput',['../classe2e_1_1_parameters.html#a84b319098084ed505e089a600e154f6e',1,'e2e::Parameters']]],
+  ['raworiginoutput',['rawOriginOutput',['../classe2e_1_1_parameters.html#a62b586d9863422872833e34814ac51e6',1,'e2e::Parameters']]],
+  ['raworiginoutputput',['rawOriginOutputput',['../classe2e_1_1_parameters.html#a363d9432d8f2bdcf645fa39b81e007f3',1,'e2e::Parameters']]],
+  ['rbuysell',['rBuySell',['../classexch2exch_1_1_differences.html#a3cbdf344e8e0b804c611e6b9e3a3d1bd',1,'exch2exch::Differences']]],
+  ['readme_2emd',['README.md',['../_r_e_a_d_m_e_8md.html',1,'']]],
+  ['rlast',['rLast',['../classexch2exch_1_1_differences.html#a3c26c51929ce75e055f8a606aaeb849d',1,'exch2exch::Differences']]]
 ];

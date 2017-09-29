@@ -1,0 +1,381 @@
+\hypertarget{e2e_8py_source}{}\section{/home/hilton/github/exch2exh/e2e.py}
+
+\begin{DoxyCode}
+\hypertarget{e2e_8py_source.tex_l00001}{}\hyperlink{namespacee2e}{00001} \textcolor{comment}{#! /usr/bin/env python3}
+00002 \textcolor{comment}{# -*- coding: utf-8 -*-}
+00003 \textcolor{stringliteral}{"""}
+00004 \textcolor{stringliteral}{Created on Thu Aug 17 12:30:41 2017}
+00005 \textcolor{stringliteral}{}
+00006 \textcolor{stringliteral}{@author: hilton}
+00007 \textcolor{stringliteral}{From:}
+00008 \textcolor{stringliteral}{* Argparse Tutorial}
+00009 \textcolor{stringliteral}{  https://docs.python.org/3.5/howto/argparse.html}
+00010 \textcolor{stringliteral}{"""}
+00011 
+00012 \textcolor{keyword}{import} sys      \textcolor{comment}{# argv, exit()}
+00013 \textcolor{keyword}{import} rates    \textcolor{comment}{# Google, XRates}
+00014 \textcolor{keyword}{import} argparse \textcolor{comment}{# ArgumentParser, }
+00015 \textcolor{keyword}{import} datetime \textcolor{comment}{# datetime}
+00016 
+00017 \textcolor{keyword}{import} gen\_factory \textcolor{comment}{# GenFactory}
+00018 \textcolor{keyword}{import} exchange    \textcolor{comment}{# Exchange}
+00019 
+\hypertarget{e2e_8py_source.tex_l00020}{}\hyperlink{classe2e_1_1_args}{00020} \textcolor{keyword}{class }\hyperlink{classe2e_1_1_args}{Args}: 
+00021     \textcolor{keywordflow}{pass}
+00022 
+\hypertarget{e2e_8py_source.tex_l00023}{}\hyperlink{classe2e_1_1_parameters}{00023} \textcolor{keyword}{class }\hyperlink{classe2e_1_1_parameters}{Parameters}:
+\hypertarget{e2e_8py_source.tex_l00024}{}\hyperlink{classe2e_1_1_parameters_a335faddfa9af3ed8ac441e92faec0946}{00024}     \textcolor{keyword}{def }\hyperlink{classe2e_1_1_parameters_a335faddfa9af3ed8ac441e92faec0946}{\_\_init\_\_} (self):
+\hypertarget{e2e_8py_source.tex_l00025}{}\hyperlink{classe2e_1_1_parameters_a1f4bab2e746d2c598e20ccba0154d795}{00025}         self.\hyperlink{classe2e_1_1_parameters_a1f4bab2e746d2c598e20ccba0154d795}{summaryOutput}        = \textcolor{keywordtype}{None}
+\hypertarget{e2e_8py_source.tex_l00026}{}\hyperlink{classe2e_1_1_parameters_ad5967b78ebf5c8778e423413053015a7}{00026}         self.\hyperlink{classe2e_1_1_parameters_ad5967b78ebf5c8778e423413053015a7}{conclusionOutput}     = \textcolor{keywordtype}{None}
+\hypertarget{e2e_8py_source.tex_l00027}{}\hyperlink{classe2e_1_1_parameters_aaa2b41d7017ab4893bbe27fa8edb7180}{00027}         self.\hyperlink{classe2e_1_1_parameters_aaa2b41d7017ab4893bbe27fa8edb7180}{mainRates}            = \textcolor{keywordtype}{None}
+\hypertarget{e2e_8py_source.tex_l00028}{}\hyperlink{classe2e_1_1_parameters_a7f2806bfda6a689e9140610da6812dce}{00028}         self.\hyperlink{classe2e_1_1_parameters_a7f2806bfda6a689e9140610da6812dce}{altRates}             = \textcolor{keywordtype}{None}
+\hypertarget{e2e_8py_source.tex_l00029}{}\hyperlink{classe2e_1_1_parameters_a552470d8541b7caf2bb8940e32a6fe0e}{00029}         self.\hyperlink{classe2e_1_1_parameters_a552470d8541b7caf2bb8940e32a6fe0e}{mainRatesOutput}      = \textcolor{keywordtype}{None}
+\hypertarget{e2e_8py_source.tex_l00030}{}\hyperlink{classe2e_1_1_parameters_a30566bb6c78f0f438e993696b9fa9f20}{00030}         self.\hyperlink{classe2e_1_1_parameters_a30566bb6c78f0f438e993696b9fa9f20}{altRatesOutput}       = \textcolor{keywordtype}{None}
+\hypertarget{e2e_8py_source.tex_l00031}{}\hyperlink{classe2e_1_1_parameters_aff4d7aaa35295f7f71e546fe5554c4d9}{00031}         self.\hyperlink{classe2e_1_1_parameters_aff4d7aaa35295f7f71e546fe5554c4d9}{origin}               = \textcolor{keywordtype}{None}
+\hypertarget{e2e_8py_source.tex_l00032}{}\hyperlink{classe2e_1_1_parameters_ad2cdf746b8890c53a9cab6fd7df7043b}{00032}         self.\hyperlink{classe2e_1_1_parameters_ad2cdf746b8890c53a9cab6fd7df7043b}{destination}          = \textcolor{keywordtype}{None}
+\hypertarget{e2e_8py_source.tex_l00033}{}\hyperlink{classe2e_1_1_parameters_acece0ee5caaa6322c3a337c3b7f00599}{00033}         self.\hyperlink{classe2e_1_1_parameters_acece0ee5caaa6322c3a337c3b7f00599}{originOutputput}      = \textcolor{keywordtype}{None}
+\hypertarget{e2e_8py_source.tex_l00034}{}\hyperlink{classe2e_1_1_parameters_a3b4ae5aa9b73466e51018b6f37792577}{00034}         self.\hyperlink{classe2e_1_1_parameters_a3b4ae5aa9b73466e51018b6f37792577}{destinationOutput}    = \textcolor{keywordtype}{None}
+\hypertarget{e2e_8py_source.tex_l00035}{}\hyperlink{classe2e_1_1_parameters_a363d9432d8f2bdcf645fa39b81e007f3}{00035}         self.\hyperlink{classe2e_1_1_parameters_a363d9432d8f2bdcf645fa39b81e007f3}{rawOriginOutputput}   = \textcolor{keywordtype}{None}
+\hypertarget{e2e_8py_source.tex_l00036}{}\hyperlink{classe2e_1_1_parameters_a84b319098084ed505e089a600e154f6e}{00036}         self.\hyperlink{classe2e_1_1_parameters_a84b319098084ed505e089a600e154f6e}{rawDestinationOutput} = \textcolor{keywordtype}{None}
+\hypertarget{e2e_8py_source.tex_l00037}{}\hyperlink{classe2e_1_1_parameters_a84d862bf507bb0325f5daf3b7e5d9ab3}{00037}         self.\hyperlink{classe2e_1_1_parameters_a84d862bf507bb0325f5daf3b7e5d9ab3}{verbose}              = \textcolor{keyword}{False}
+00038 
+\hypertarget{e2e_8py_source.tex_l00039}{}\hyperlink{classe2e_1_1_parameters_af904cdd913f0ffd64f28c9f7b1137389}{00039}     \textcolor{keyword}{def }\hyperlink{classe2e_1_1_parameters_af904cdd913f0ffd64f28c9f7b1137389}{setSummaryOutput} (self, summaryOutput):
+00040         self.\hyperlink{classe2e_1_1_parameters_a1f4bab2e746d2c598e20ccba0154d795}{summaryOutput} = summaryOutput
+00041 
+\hypertarget{e2e_8py_source.tex_l00042}{}\hyperlink{classe2e_1_1_parameters_a46f3f35e99d7ce8a22fa34d66a348586}{00042}     \textcolor{keyword}{def }\hyperlink{classe2e_1_1_parameters_a46f3f35e99d7ce8a22fa34d66a348586}{getSummaryOutput} (self):
+00043         \textcolor{keywordflow}{return} self.\hyperlink{classe2e_1_1_parameters_a1f4bab2e746d2c598e20ccba0154d795}{summaryOutput}
+00044 
+\hypertarget{e2e_8py_source.tex_l00045}{}\hyperlink{classe2e_1_1_parameters_a4ec249739947f4643b6d2dc811ef2639}{00045}     \textcolor{keyword}{def }\hyperlink{classe2e_1_1_parameters_a4ec249739947f4643b6d2dc811ef2639}{setConclusionOutput} (self, conclusionOutput):
+00046         self.\hyperlink{classe2e_1_1_parameters_ad5967b78ebf5c8778e423413053015a7}{conclusionOutput} = conclusionOutput
+00047 
+\hypertarget{e2e_8py_source.tex_l00048}{}\hyperlink{classe2e_1_1_parameters_ac4ff6b23493a25723cfe99fb7becf328}{00048}     \textcolor{keyword}{def }\hyperlink{classe2e_1_1_parameters_ac4ff6b23493a25723cfe99fb7becf328}{getConclusionOutput} (self):
+00049         \textcolor{keywordflow}{return} self.\hyperlink{classe2e_1_1_parameters_ad5967b78ebf5c8778e423413053015a7}{conclusionOutput}
+00050 
+\hypertarget{e2e_8py_source.tex_l00051}{}\hyperlink{classe2e_1_1_parameters_a8cea2f8656650dfbc2f4b9c13bce46a4}{00051}     \textcolor{keyword}{def }\hyperlink{classe2e_1_1_parameters_a8cea2f8656650dfbc2f4b9c13bce46a4}{setMainRate} (self, mainRate):
+\hypertarget{e2e_8py_source.tex_l00052}{}\hyperlink{classe2e_1_1_parameters_a3d473f94dbb62a1488945cf6abc9f108}{00052}         self.\hyperlink{classe2e_1_1_parameters_a3d473f94dbb62a1488945cf6abc9f108}{mainRate} = mainRate
+00053 
+\hypertarget{e2e_8py_source.tex_l00054}{}\hyperlink{classe2e_1_1_parameters_a152d1d8c15164a06b54c3339bc9d15bf}{00054}     \textcolor{keyword}{def }\hyperlink{classe2e_1_1_parameters_a152d1d8c15164a06b54c3339bc9d15bf}{getMainRate} (self):
+00055         \textcolor{keywordflow}{return} self.\hyperlink{classe2e_1_1_parameters_a3d473f94dbb62a1488945cf6abc9f108}{mainRate}
+00056 
+\hypertarget{e2e_8py_source.tex_l00057}{}\hyperlink{classe2e_1_1_parameters_a1e73f515a94469c6b9c75a595d8ae426}{00057}     \textcolor{keyword}{def }\hyperlink{classe2e_1_1_parameters_a1e73f515a94469c6b9c75a595d8ae426}{setAltRate} (self, altRate):
+\hypertarget{e2e_8py_source.tex_l00058}{}\hyperlink{classe2e_1_1_parameters_a9d12e65d35b0807822c8774101ff613d}{00058}         self.\hyperlink{classe2e_1_1_parameters_a9d12e65d35b0807822c8774101ff613d}{altRate} = altRate
+00059 
+\hypertarget{e2e_8py_source.tex_l00060}{}\hyperlink{classe2e_1_1_parameters_a2eb01ddbfa9f2b75f8d901196e260a52}{00060}     \textcolor{keyword}{def }\hyperlink{classe2e_1_1_parameters_a2eb01ddbfa9f2b75f8d901196e260a52}{getAltRate} (self):
+00061         \textcolor{keywordflow}{return} self.\hyperlink{classe2e_1_1_parameters_a9d12e65d35b0807822c8774101ff613d}{altRate}
+00062 
+\hypertarget{e2e_8py_source.tex_l00063}{}\hyperlink{classe2e_1_1_parameters_a930e9e6cafab4096286754a473617232}{00063}     \textcolor{keyword}{def }\hyperlink{classe2e_1_1_parameters_a930e9e6cafab4096286754a473617232}{setMainRateOutput} (self, mainRateOutput):
+\hypertarget{e2e_8py_source.tex_l00064}{}\hyperlink{classe2e_1_1_parameters_acff858a94aecf1e5a553273e8acd9eca}{00064}         self.\hyperlink{classe2e_1_1_parameters_acff858a94aecf1e5a553273e8acd9eca}{mainRateOutput} = mainRateOutput
+00065 
+\hypertarget{e2e_8py_source.tex_l00066}{}\hyperlink{classe2e_1_1_parameters_ae4d5b651e4e6434f0779f4661c163166}{00066}     \textcolor{keyword}{def }\hyperlink{classe2e_1_1_parameters_ae4d5b651e4e6434f0779f4661c163166}{getMainRateOutput} (self):
+00067         \textcolor{keywordflow}{return} self.\hyperlink{classe2e_1_1_parameters_acff858a94aecf1e5a553273e8acd9eca}{mainRateOutput}
+00068 
+\hypertarget{e2e_8py_source.tex_l00069}{}\hyperlink{classe2e_1_1_parameters_a47d3280dcce660c7227ca8c817859d84}{00069}     \textcolor{keyword}{def }\hyperlink{classe2e_1_1_parameters_a47d3280dcce660c7227ca8c817859d84}{setAltRateOutput} (self, altRateOutput):
+\hypertarget{e2e_8py_source.tex_l00070}{}\hyperlink{classe2e_1_1_parameters_ab0fc4de0f4d6d135eea22cae77536807}{00070}         self.\hyperlink{classe2e_1_1_parameters_ab0fc4de0f4d6d135eea22cae77536807}{altRateOutput} = altRateOutput
+00071 
+\hypertarget{e2e_8py_source.tex_l00072}{}\hyperlink{classe2e_1_1_parameters_acc3f1ce2de05c433834b52689c50cef6}{00072}     \textcolor{keyword}{def }\hyperlink{classe2e_1_1_parameters_acc3f1ce2de05c433834b52689c50cef6}{getAltRateOutput} (self):
+00073         \textcolor{keywordflow}{return} self.\hyperlink{classe2e_1_1_parameters_ab0fc4de0f4d6d135eea22cae77536807}{altRateOutput}
+00074 
+\hypertarget{e2e_8py_source.tex_l00075}{}\hyperlink{classe2e_1_1_parameters_a421e56e53ff0aaf5222229d8a81c456b}{00075}     \textcolor{keyword}{def }\hyperlink{classe2e_1_1_parameters_a421e56e53ff0aaf5222229d8a81c456b}{setOrigin} (self, origin):
+00076         self.\hyperlink{classe2e_1_1_parameters_aff4d7aaa35295f7f71e546fe5554c4d9}{origin} = origin
+00077 
+\hypertarget{e2e_8py_source.tex_l00078}{}\hyperlink{classe2e_1_1_parameters_ac570cc2f199bcb82a4634be79110a013}{00078}     \textcolor{keyword}{def }\hyperlink{classe2e_1_1_parameters_ac570cc2f199bcb82a4634be79110a013}{getOrigin} (self):
+00079         \textcolor{keywordflow}{return} self.\hyperlink{classe2e_1_1_parameters_aff4d7aaa35295f7f71e546fe5554c4d9}{origin}
+00080 
+\hypertarget{e2e_8py_source.tex_l00081}{}\hyperlink{classe2e_1_1_parameters_ac63ae6d2b5f45ae78ee855953a038f14}{00081}     \textcolor{keyword}{def }\hyperlink{classe2e_1_1_parameters_ac63ae6d2b5f45ae78ee855953a038f14}{setDestination} (self, destination):
+00082         self.\hyperlink{classe2e_1_1_parameters_ad2cdf746b8890c53a9cab6fd7df7043b}{destination} = destination
+00083 
+\hypertarget{e2e_8py_source.tex_l00084}{}\hyperlink{classe2e_1_1_parameters_ad984826a5973fff569b554b44245b714}{00084}     \textcolor{keyword}{def }\hyperlink{classe2e_1_1_parameters_ad984826a5973fff569b554b44245b714}{getDestination} (self):
+00085         \textcolor{keywordflow}{return} self.\hyperlink{classe2e_1_1_parameters_ad2cdf746b8890c53a9cab6fd7df7043b}{destination}
+00086 
+\hypertarget{e2e_8py_source.tex_l00087}{}\hyperlink{classe2e_1_1_parameters_a2b87a3357a16d35b7606a97e924a4904}{00087}     \textcolor{keyword}{def }\hyperlink{classe2e_1_1_parameters_a2b87a3357a16d35b7606a97e924a4904}{setOriginOutput} (self, originOutput ):
+\hypertarget{e2e_8py_source.tex_l00088}{}\hyperlink{classe2e_1_1_parameters_ab1ac2fc0ab2f3ef169b776c776cdb225}{00088}         self.\hyperlink{classe2e_1_1_parameters_ab1ac2fc0ab2f3ef169b776c776cdb225}{originOutput}  = originOutput 
+00089 
+\hypertarget{e2e_8py_source.tex_l00090}{}\hyperlink{classe2e_1_1_parameters_af0cdd8e6726ccc72387e466c2abe04c2}{00090}     \textcolor{keyword}{def }\hyperlink{classe2e_1_1_parameters_af0cdd8e6726ccc72387e466c2abe04c2}{getOriginOutput} (self):
+00091         \textcolor{keywordflow}{return} self.\hyperlink{classe2e_1_1_parameters_ab1ac2fc0ab2f3ef169b776c776cdb225}{originOutput} 
+00092 
+\hypertarget{e2e_8py_source.tex_l00093}{}\hyperlink{classe2e_1_1_parameters_a96083de53012ca50d2a345a1673802de}{00093}     \textcolor{keyword}{def }\hyperlink{classe2e_1_1_parameters_a96083de53012ca50d2a345a1673802de}{setDestinationOutput} (self, destinationOutput):
+00094         self.\hyperlink{classe2e_1_1_parameters_a3b4ae5aa9b73466e51018b6f37792577}{destinationOutput} = destinationOutput 
+00095 
+\hypertarget{e2e_8py_source.tex_l00096}{}\hyperlink{classe2e_1_1_parameters_a4451a6d8224c2216fdef8e53e55fadaf}{00096}     \textcolor{keyword}{def }\hyperlink{classe2e_1_1_parameters_a4451a6d8224c2216fdef8e53e55fadaf}{getDestinationOutput} (self):
+00097         \textcolor{keywordflow}{return} self.\hyperlink{classe2e_1_1_parameters_a3b4ae5aa9b73466e51018b6f37792577}{destinationOutput}
+00098         
+\hypertarget{e2e_8py_source.tex_l00099}{}\hyperlink{classe2e_1_1_parameters_a6a69b8936b79b34f612b3dda7bedc67f}{00099}     \textcolor{keyword}{def }\hyperlink{classe2e_1_1_parameters_a6a69b8936b79b34f612b3dda7bedc67f}{setRawOriginOutput} (self, rawOriginOutput):
+\hypertarget{e2e_8py_source.tex_l00100}{}\hyperlink{classe2e_1_1_parameters_a62b586d9863422872833e34814ac51e6}{00100}         self.\hyperlink{classe2e_1_1_parameters_a62b586d9863422872833e34814ac51e6}{rawOriginOutput} = rawOriginOutput
+00101 
+\hypertarget{e2e_8py_source.tex_l00102}{}\hyperlink{classe2e_1_1_parameters_a4ed96c7861e649d101984ff5c8056691}{00102}     \textcolor{keyword}{def }\hyperlink{classe2e_1_1_parameters_a4ed96c7861e649d101984ff5c8056691}{getRawOriginOutput} (self):
+00103         \textcolor{keywordflow}{return} self.\hyperlink{classe2e_1_1_parameters_a62b586d9863422872833e34814ac51e6}{rawOriginOutput} 
+00104 
+\hypertarget{e2e_8py_source.tex_l00105}{}\hyperlink{classe2e_1_1_parameters_a2a4420c79bef43533fe2d9562d0faedb}{00105}     \textcolor{keyword}{def }\hyperlink{classe2e_1_1_parameters_a2a4420c79bef43533fe2d9562d0faedb}{setRawDestinationOutput} (self, rawDestinationOutput):
+00106         self.\hyperlink{classe2e_1_1_parameters_a84b319098084ed505e089a600e154f6e}{rawDestinationOutput} = rawDestinationOutput 
+00107 
+\hypertarget{e2e_8py_source.tex_l00108}{}\hyperlink{classe2e_1_1_parameters_a0536c6870c6371025927f435e47704ed}{00108}     \textcolor{keyword}{def }\hyperlink{classe2e_1_1_parameters_a0536c6870c6371025927f435e47704ed}{getRawDestinationOutput} (self):
+00109         \textcolor{keywordflow}{return} self.\hyperlink{classe2e_1_1_parameters_a84b319098084ed505e089a600e154f6e}{rawDestinationOutput} 
+00110 
+\hypertarget{e2e_8py_source.tex_l00111}{}\hyperlink{classe2e_1_1_parameters_a9d1ef6cf9aaac08105966db43687423f}{00111}     \textcolor{keyword}{def }\hyperlink{classe2e_1_1_parameters_a9d1ef6cf9aaac08105966db43687423f}{setVerbose} (self, verbose):
+00112         self.\hyperlink{classe2e_1_1_parameters_a84d862bf507bb0325f5daf3b7e5d9ab3}{verbose} = verbose
+00113 
+\hypertarget{e2e_8py_source.tex_l00114}{}\hyperlink{classe2e_1_1_parameters_a1e5e7e1986b641b01d4c24690a6d48eb}{00114}     \textcolor{keyword}{def }\hyperlink{classe2e_1_1_parameters_a1e5e7e1986b641b01d4c24690a6d48eb}{getVerbose} (self):
+00115         \textcolor{keywordflow}{return} self.\hyperlink{classe2e_1_1_parameters_a84d862bf507bb0325f5daf3b7e5d9ab3}{verbose}
+00116         
+\hypertarget{e2e_8py_source.tex_l00117}{}\hyperlink{classe2e_1_1_application}{00117} \textcolor{keyword}{class }\hyperlink{classe2e_1_1_application}{Application}:
+\hypertarget{e2e_8py_source.tex_l00118}{}\hyperlink{classe2e_1_1_application_a2267bd2e8d3114095e6271aed7f8c8c9}{00118}     \textcolor{keyword}{def }\hyperlink{classe2e_1_1_application_a2267bd2e8d3114095e6271aed7f8c8c9}{\_\_init\_\_} (self):
+00119         d = datetime.datetime.now ()
+\hypertarget{e2e_8py_source.tex_l00120}{}\hyperlink{classe2e_1_1_application_a4d824ad36b051d2d629edb314385df0d}{00120}         self.\hyperlink{classe2e_1_1_application_a4d824ad36b051d2d629edb314385df0d}{suffix} = d.strftime (\textcolor{stringliteral}{'%Y%m%d\_%H%M'})
+\hypertarget{e2e_8py_source.tex_l00121}{}\hyperlink{classe2e_1_1_application_a027ff25e5409ae17584978a09fc2611a}{00121}         self.\hyperlink{classe2e_1_1_application_a027ff25e5409ae17584978a09fc2611a}{prefix} = \textcolor{stringliteral}{'e2e'}
+00122     
+\hypertarget{e2e_8py_source.tex_l00123}{}\hyperlink{classe2e_1_1_application_a91b8b6df6456d27bed503849ffcdcc77}{00123}     \textcolor{keyword}{def }\hyperlink{classe2e_1_1_application_a91b8b6df6456d27bed503849ffcdcc77}{parseCmdLine} (self):
+00124         desc = \textcolor{stringliteral}{'Compare two exchanges for a round operation'}
+00125         parser = argparse.ArgumentParser (description = desc)
+00126         
+00127         desc = \textcolor{stringliteral}{'Summary report (Default is stdout)'} 
+00128         parser.add\_argument (\textcolor{stringliteral}{'-s'}, \textcolor{stringliteral}{'--summary'}, required = \textcolor{keyword}{False},
+00129                              help = desc)
+00130         desc = \textcolor{stringliteral}{'File name for the conclusion of the arbitrage'}
+00131         parser.add\_argument (\textcolor{stringliteral}{'-c'}, \textcolor{stringliteral}{'--conclusion'}, required = \textcolor{keyword}{True},
+00132                              help = desc)
+00133         parser.add\_argument (\textcolor{stringliteral}{'-m'}, \textcolor{stringliteral}{'--main'}, metavar = \textcolor{stringliteral}{"RATES"}, 
+00134                              default = \textcolor{stringliteral}{'Google'},
+00135                              help = \textcolor{stringliteral}{'Main rate service'})
+00136         parser.add\_argument (\textcolor{stringliteral}{'-a'}, \textcolor{stringliteral}{'--alternative'}, metavar = \textcolor{stringliteral}{"RATES"},
+00137                              default = \textcolor{stringliteral}{'XRates'},
+00138                              help = \textcolor{stringliteral}{'Alternative rate service'})
+00139         parser.add\_argument (\textcolor{stringliteral}{'--origin'}, \textcolor{stringliteral}{'-o'}, metavar = \textcolor{stringliteral}{"EXCHANGE"},
+00140                              required = \textcolor{keyword}{True},
+00141                              help = \textcolor{stringliteral}{'Origin exchange'})
+00142         parser.add\_argument (\textcolor{stringliteral}{'-d'}, \textcolor{stringliteral}{'--destination'}, metavar = \textcolor{stringliteral}{"EXCHANGE"},
+00143                              required = \textcolor{keyword}{True},
+00144                              help = \textcolor{stringliteral}{'Destination exchange'})
+00145         parser.add\_argument (\textcolor{stringliteral}{'-v'}, \textcolor{stringliteral}{'--verbose'}, action = \textcolor{stringliteral}{"store\_true"},
+00146                              help = \textcolor{stringliteral}{'Increase output verbosity'})
+00147                              
+00148         args = parser.parse\_args ()
+00149         
+00150         \textcolor{comment}{# TODO complete the copy of cmdline parameters}
+00151         
+00152         result = Args ()
+00153         result.summary     = args.summary 
+00154         result.conclusion  = args.conclusion 
+00155         result.rates       = args.rates 
+00156         result.alternative = args.alternative 
+00157         result.origin      = args.origin 
+00158         result.destination = args.destination 
+00159         result.verbose     = args.verbose
+00160         
+\hypertarget{e2e_8py_source.tex_l00161}{}\hyperlink{classe2e_1_1_application_abade6fc2e2c04ddd7e48137a2a7721bd}{00161}         self.\hyperlink{classe2e_1_1_application_abade6fc2e2c04ddd7e48137a2a7721bd}{args} = result
+00162         
+00163         \textcolor{comment}{# Normal function termination}
+00164         \textcolor{keywordflow}{return} result
+00165         
+\hypertarget{e2e_8py_source.tex_l00166}{}\hyperlink{classe2e_1_1_application_ae7b9559aa388f8178300fb4d7a9f9257}{00166}     \textcolor{keyword}{def }\hyperlink{classe2e_1_1_application_ae7b9559aa388f8178300fb4d7a9f9257}{interpretArgs} (self):
+00167         result = Parameters ()
+00168         
+00169         \textcolor{comment}{# Open summary file}
+00170         \textcolor{keywordflow}{if} self.args.summary == \textcolor{keywordtype}{None}:
+00171             \textcolor{keywordflow}{try}:
+00172                 sum\_nam =  self.\hyperlink{classe2e_1_1_application_a027ff25e5409ae17584978a09fc2611a}{prefix} + \textcolor{stringliteral}{'\_'} + self.\hyperlink{classe2e_1_1_application_a4d824ad36b051d2d629edb314385df0d}{suffix} + \textcolor{stringliteral}{'.sum'}
+00173                 sum\_f = open (sum\_nam, \textcolor{stringliteral}{'w'})
+00174                 
+00175             \textcolor{keywordflow}{except} IOError:
+00176                 \textcolor{comment}{# TODO an application specific msg here}
+00177                 \textcolor{keywordflow}{raise}
+00178         \textcolor{keywordflow}{else}:
+00179             sum\_f = sys.\_\_stdout\_\_
+00180             
+00181         result.setSummary (sum\_f)
+00182             
+00183         \textcolor{comment}{# TODO Open output files for destination exchange}
+00184         \textcolor{keywordflow}{try}:
+00185             cnc\_nam  =  self.\hyperlink{classe2e_1_1_application_a027ff25e5409ae17584978a09fc2611a}{prefix} + \textcolor{stringliteral}{'\_conclusion'}
+00186             cnc\_nam += \textcolor{stringliteral}{'\_'} + self.\hyperlink{classe2e_1_1_application_a4d824ad36b051d2d629edb314385df0d}{suffix} + \textcolor{stringliteral}{'.json'}
+00187             cnc\_f = open (cnc\_nam, \textcolor{stringliteral}{'w'})
+00188             
+00189         \textcolor{keywordflow}{except} IOError:
+00190             \textcolor{comment}{# TODO an application specific msg here}
+00191             \textcolor{keywordflow}{raise}
+00192             
+00193         result.setConclusion (cnc\_f)
+00194             
+00195         \textcolor{comment}{# TODO confirm that destinatian and origin exchanges are not equal}
+00196         args = self.\hyperlink{classe2e_1_1_application_abade6fc2e2c04ddd7e48137a2a7721bd}{args} 
+00197         \textcolor{keywordflow}{if} args.origin == args.destination:
+00198             fmt = \textcolor{stringliteral}{'ERROR: Origin exchange \{0\} equal to destination \{1\}'}
+00199             msg = fmt.format (args.origin, args.destination)
+00200             \textcolor{keywordflow}{raise} Exception (msg)
+00201 
+00202         \textcolor{comment}{# TODO get exchange names }
+00203         gfExchange = \hyperlink{classgen__factory_1_1_gen_factory}{gen\_factory.GenFactory} (
+      \hyperlink{classexchange_1_1_exchange}{exchange.Exchange})
+00204         exch\_names = gfExchange.validClassNames ()
+00205             
+00206         \textcolor{comment}{# TODO validate destination exchange}
+00207         \textcolor{keywordflow}{if} args.destination \textcolor{keywordflow}{not} \textcolor{keywordflow}{in} exch\_names:
+00208             fmt  = \textcolor{stringliteral}{'ERROR: Destination exchange \{0\} is not a valid '}
+00209             fmt += \textcolor{stringliteral}{'exchange name.\(\backslash\)n'}
+00210             fmt += \textcolor{stringliteral}{'\(\backslash\)tShould be one of \{1\}'}
+00211             msg = fmt.format (args.destination, exch\_names)
+00212             \textcolor{keywordflow}{raise} Exception (msg)
+00213             
+00214         \textcolor{comment}{# TODO validate origin exchange}
+00215         \textcolor{keywordflow}{if} args.origin \textcolor{keywordflow}{not} \textcolor{keywordflow}{in} exch\_names:
+00216             fmt  = \textcolor{stringliteral}{'ERROR: Origin exchange \{0\} is not a valid exchange name.\(\backslash\)n'}
+00217             fmt += \textcolor{stringliteral}{'\(\backslash\)tShould be one of \{1\}'}
+00218             msg = fmt.format (args.origin, exch\_names)
+00219             \textcolor{keywordflow}{raise} Exception (msg)
+00220         
+00221         \textcolor{comment}{# TODO open connection with destination exchange}
+00222         dstExchange = gfExchange.genObject (args.destination)
+00223         result.setDestination (dstExchange)
+00224             
+00225         \textcolor{comment}{# TODO Open output files for destination exchange}
+00226         \textcolor{keywordflow}{try}:
+00227             dst\_nam  =  self.\hyperlink{classe2e_1_1_application_a027ff25e5409ae17584978a09fc2611a}{prefix} + \textcolor{stringliteral}{'\_'} + dstExchange.get\_exch\_prefix ()
+00228             dst\_nam += \textcolor{stringliteral}{'\_'} + self.\hyperlink{classe2e_1_1_application_a4d824ad36b051d2d629edb314385df0d}{suffix} + \textcolor{stringliteral}{'.json'}
+00229             e2e\_dst\_f = open (dst\_nam, \textcolor{stringliteral}{'w'})
+00230             
+00231         \textcolor{keywordflow}{except} IOError:
+00232             \textcolor{comment}{# TODO an application specific msg here}
+00233             \textcolor{keywordflow}{raise}
+00234             
+00235         result.setDestinationOutput (e2e\_dst\_f)
+00236             
+00237         \textcolor{keywordflow}{try}:
+00238             dst\_nam  = dstExchange.get\_exch\_prefix ()
+00239             dst\_nam += \textcolor{stringliteral}{'\_'} + self.\hyperlink{classe2e_1_1_application_a4d824ad36b051d2d629edb314385df0d}{suffix} + \textcolor{stringliteral}{'.json'}
+00240             dst\_f = open (dst\_nam, \textcolor{stringliteral}{'w'})
+00241             
+00242         \textcolor{keywordflow}{except} IOError:
+00243             \textcolor{comment}{# TODO an application specific msg here}
+00244             \textcolor{keywordflow}{raise}
+00245             
+00246         result.setRawDestinationOutput (dst\_f)
+00247             
+00248         \textcolor{comment}{# TODO open connection with origin exchange}
+00249         orgExchange = gfExchange.genObject (args.origin)
+00250         result.setOrigin (orgExchange)
+00251             
+00252         \textcolor{comment}{# TODO Open output files for origin exchange}
+00253         \textcolor{keywordflow}{try}:
+00254             org\_nam  =  self.\hyperlink{classe2e_1_1_application_a027ff25e5409ae17584978a09fc2611a}{prefix} + \textcolor{stringliteral}{'\_'} + orgExchange.get\_exch\_prefix ()
+00255             org\_nam += \textcolor{stringliteral}{'\_'} + self.\hyperlink{classe2e_1_1_application_a4d824ad36b051d2d629edb314385df0d}{suffix} + \textcolor{stringliteral}{'.json'}
+00256             e2e\_org\_f = open (org\_nam, \textcolor{stringliteral}{'w'})
+00257             
+00258         \textcolor{keywordflow}{except} IOError:
+00259             \textcolor{comment}{# TODO an application specific2 msg here}
+00260             \textcolor{keywordflow}{raise}
+00261 
+00262         result.setOriginOutput (e2e\_org\_f)
+00263             
+00264         \textcolor{keywordflow}{try}:
+00265             org\_nam  = orgExchange.get\_exch\_prefix ()
+00266             org\_nam += \textcolor{stringliteral}{'\_'} + self.\hyperlink{classe2e_1_1_application_a4d824ad36b051d2d629edb314385df0d}{suffix} + \textcolor{stringliteral}{'.json'}
+00267             org\_f = open (org\_nam, \textcolor{stringliteral}{'w'})
+00268             
+00269         \textcolor{keywordflow}{except} IOError:
+00270             \textcolor{comment}{# TODO an application specific msg here}
+00271             \textcolor{keywordflow}{raise}
+00272             
+00273         result.setRawOriginOutput (org\_f)
+00274             
+00275         \textcolor{comment}{# TODO open connection with main rate service}
+00276         gfRates = \hyperlink{classgen__factory_1_1_gen_factory}{gen\_factory.GenFactory} (\hyperlink{classrates_1_1_rates}{rates.Rates})
+00277         rates\_names = gfRates.validClassNames ()
+00278 
+00279         \textcolor{comment}{# TODO validate main rate service}
+00280         \textcolor{keywordflow}{if} args.rates \textcolor{keywordflow}{not} \textcolor{keywordflow}{in} rates\_names:
+00281             fmt  = \textcolor{stringliteral}{'ERROR: Main rates service \{0\} is not a valid rates name.\(\backslash\)n'}
+00282             fmt += \textcolor{stringliteral}{'\(\backslash\)tShould be one of \{1\}'}
+00283             msg = fmt.format (args.rate, rates\_names)
+00284             \textcolor{keywordflow}{raise} Exception (msg)
+00285 
+00286         mainRates = gfRates.genObject (args.rates)
+00287         result.setMainRates (mainRates)
+00288         
+00289         \textcolor{comment}{# TODO Open output file for main rate service}
+00290         \textcolor{keywordflow}{try}:
+00291             rat\_nam  =  mainRates.getServicePrefix () + \textcolor{stringliteral}{'\_'}
+00292             rat\_nam +=  self.\hyperlink{classe2e_1_1_application_a4d824ad36b051d2d629edb314385df0d}{suffix} + \textcolor{stringliteral}{'.rat'}
+00293             rat\_f = open (rat\_nam, \textcolor{stringliteral}{'w'})
+00294             
+00295         \textcolor{keywordflow}{except} IOError:
+00296             \textcolor{comment}{# TODO an application specific msg here}
+00297             \textcolor{keywordflow}{raise}        
+00298 
+00299         result.setMainRatesOutput (rat\_f)
+00300             
+00301         \textcolor{comment}{# TODO open connections with auxiliary rate services}
+00302         altRatesNames = []        
+00303         \textcolor{keywordflow}{for} rateName \textcolor{keywordflow}{in} rates\_names:
+00304             \textcolor{keywordflow}{if} rateName == args.rates:
+00305                 \textcolor{keywordflow}{continue} 
+00306             
+00307             altRatesNames.append (rateName)
+00308 
+\hypertarget{e2e_8py_source.tex_l00309}{}\hyperlink{classe2e_1_1_application_a92626ca2a674ccbba7f743b13c77fd7b}{00309}         self.\hyperlink{classe2e_1_1_application_a92626ca2a674ccbba7f743b13c77fd7b}{altRates} = []            
+00310         \textcolor{keywordflow}{for} rateName \textcolor{keywordflow}{in} altRatesNames:
+00311             self.altRates.append (gfRates.genObject (rateName))
+00312             
+00313         \textcolor{keywordflow}{try}:
+00314             altrat\_nam  =  \textcolor{stringliteral}{'all\_rates'} + \textcolor{stringliteral}{'\_'}
+00315             altrat\_nam +=  self.\hyperlink{classe2e_1_1_application_a4d824ad36b051d2d629edb314385df0d}{suffix} + \textcolor{stringliteral}{'.rat'}
+00316             altrat\_f = open (altrat\_nam, \textcolor{stringliteral}{'w'})
+00317             
+00318         \textcolor{keywordflow}{except} IOError:
+00319             \textcolor{comment}{# TODO an application specific msg here}
+00320             \textcolor{keywordflow}{raise}        
+00321 
+00322         result.setMainRatesOutput (altrat\_f)
+00323         
+00324         args = self.\hyperlink{classe2e_1_1_application_abade6fc2e2c04ddd7e48137a2a7721bd}{args} 
+00325                
+00326         \textcolor{keywordflow}{if} args.verbose:            
+00327             \textcolor{keywordflow}{print} (\textcolor{stringliteral}{'Verbose output enabled'})
+00328             
+00329             \textcolor{keywordflow}{print} (\textcolor{stringliteral}{'Main rate service: \{0\}'}.format (args.rates))
+00330             \textcolor{keywordflow}{print} (\textcolor{stringliteral}{'Exchanges'})
+00331             \textcolor{keywordflow}{print} (\textcolor{stringliteral}{'Origin:            \{0\}'}.format (args.origin))
+00332             \textcolor{keywordflow}{print} (\textcolor{stringliteral}{'Destination:       \{0\}'}.format (args.destination))
+00333             
+\hypertarget{e2e_8py_source.tex_l00334}{}\hyperlink{classe2e_1_1_application_a3e33fd00d85637393d48ea3f7dbd95c7}{00334}     \textcolor{keyword}{def }\hyperlink{classe2e_1_1_application_a3e33fd00d85637393d48ea3f7dbd95c7}{outMainRates} (self):
+00335         \textcolor{keywordflow}{pass}
+00336     
+\hypertarget{e2e_8py_source.tex_l00337}{}\hyperlink{classe2e_1_1_application_a95da0cb34726f10409806c6d052494fc}{00337}     \textcolor{keyword}{def }\hyperlink{classe2e_1_1_application_a95da0cb34726f10409806c6d052494fc}{outAlternativeRates} (self):
+00338         \textcolor{keywordflow}{pass}
+00339     
+\hypertarget{e2e_8py_source.tex_l00340}{}\hyperlink{classe2e_1_1_application_adfad90d64cddb8d751961202264ca489}{00340}     \textcolor{keyword}{def }\hyperlink{classe2e_1_1_application_adfad90d64cddb8d751961202264ca489}{outOriginExchange} (self):
+00341         \textcolor{keywordflow}{pass}
+00342     
+\hypertarget{e2e_8py_source.tex_l00343}{}\hyperlink{classe2e_1_1_application_a1b099bee6f8170c4c52e7ae884d95b27}{00343}     \textcolor{keyword}{def }\hyperlink{classe2e_1_1_application_a1b099bee6f8170c4c52e7ae884d95b27}{outDestinationExchange} (self):
+00344         \textcolor{keywordflow}{pass}
+00345     
+\hypertarget{e2e_8py_source.tex_l00346}{}\hyperlink{classe2e_1_1_application_a72b854da6d69dbcb5031f24dccf9cc71}{00346}     \textcolor{keyword}{def }\hyperlink{classe2e_1_1_application_a72b854da6d69dbcb5031f24dccf9cc71}{genExpectations} (self):
+00347         \textcolor{keywordflow}{pass}
+00348     
+\hypertarget{e2e_8py_source.tex_l00349}{}\hyperlink{classe2e_1_1_application_a0f753699fabab3ae17407b36404d3b64}{00349}     \textcolor{keyword}{def }\hyperlink{classe2e_1_1_application_a0f753699fabab3ae17407b36404d3b64}{genOutput} (self):
+00350         \textcolor{keywordflow}{pass}
+00351 
+\hypertarget{e2e_8py_source.tex_l00352}{}\hyperlink{namespacee2e_afb3e7d384688a07b72e1df5201192375}{00352} \textcolor{keyword}{def }\hyperlink{namespacee2e_afb3e7d384688a07b72e1df5201192375}{main} (argv):
+00353     app = Application ()
+00354     
+00355     \textcolor{comment}{# TODO parse command line }
+00356     \textcolor{comment}{# TODO catch exception}
+00357     \textcolor{comment}{# TODO return according to error}
+00358     app.parseCmdLine ()
+00359     
+00360     \textcolor{comment}{# TODO interpret command line }
+00361     \textcolor{comment}{# TODO catch exception}
+00362     \textcolor{comment}{# TODO return according to error}
+00363     app.interpretArgs ()
+00364     
+00365     \textcolor{comment}{# TODO consult main rate service}
+00366     \textcolor{comment}{# TODO consult auxiliary rate services}
+00367     \textcolor{comment}{# TODO consult origin exchange }
+00368     \textcolor{comment}{# TODO consult destination exchange}
+00369     \textcolor{comment}{# TODO generate expectations}
+00370     \textcolor{comment}{# TODO generate output report and JSON files}
+00371 
+00372     \textcolor{comment}{# Normal function termination}
+00373     \textcolor{keywordflow}{return} 0
+00374 
+00375 \textcolor{keywordflow}{if} \_\_name\_\_ == \textcolor{stringliteral}{'\_\_main\_\_'}:
+00376     sys.exit (main (sys.argv))
+\end{DoxyCode}

@@ -20,6 +20,100 @@ import exchange    # Exchange
 class Args: 
     pass
 
+class Parameters:
+    def __init__ (self):
+        self.summaryOutput        = None
+        self.conclusionOutput     = None
+        self.mainRates            = None
+        self.altRates             = None
+        self.mainRatesOutput      = None
+        self.altRatesOutput       = None
+        self.origin               = None
+        self.destination          = None
+        self.originOutputput      = None
+        self.destinationOutput    = None
+        self.rawOriginOutputput   = None
+        self.rawDestinationOutput = None
+        self.verbose              = False
+
+    def setSummaryOutput (self, summaryOutput):
+        self.summaryOutput = summaryOutput
+
+    def getSummaryOutput (self):
+        return self.summaryOutput
+
+    def setConclusionOutput (self, conclusionOutput):
+        self.conclusionOutput = conclusionOutput
+
+    def getConclusionOutput (self):
+        return self.conclusionOutput
+
+    def setMainRate (self, mainRate):
+        self.mainRate = mainRate
+
+    def getMainRate (self):
+        return self.mainRate
+
+    def setAltRate (self, altRate):
+        self.altRate = altRate
+
+    def getAltRate (self):
+        return self.altRate
+
+    def setMainRatesOutput (self, mainRatesOutput):
+        self.mainRatesOutput = mainRatesOutput
+
+    def getMainRatesOutput (self):
+        return self.mainRatesOutput
+
+    def setAltRatesOutput (self, altRatesOutput):
+        self.altRatesOutput = altRatesOutput
+
+    def getAltRatesOutput (self):
+        return self.altRatesOutput
+
+    def setOrigin (self, origin):
+        self.origin = origin
+
+    def getOrigin (self):
+        return self.origin
+
+    def setDestination (self, destination):
+        self.destination = destination
+
+    def getDestination (self):
+        return self.destination
+
+    def setOriginOutput (self, originOutput ):
+        self.originOutput  = originOutput 
+
+    def getOriginOutput (self):
+        return self.originOutput 
+
+    def setDestinationOutput (self, destinationOutput):
+        self.destinationOutput = destinationOutput 
+
+    def getDestinationOutput (self):
+        return self.destinationOutput
+        
+    def setRawOriginOutput (self, rawOriginOutput):
+        self.rawOriginOutput = rawOriginOutput
+
+    def getRawOriginOutput (self):
+        return self.rawOriginOutput 
+
+    def setRawDestinationOutput (self, rawDestinationOutput):
+        self.rawDestinationOutput = rawDestinationOutput 
+
+    def getRawDestinationOutput (self):
+        return self.rawDestinationOutput 
+
+    def setVerbose (self, verbose):
+        self.verbose = verbose
+
+    def getVerbose (self):
+        return self.verbose
+        
 class Application:
     def __init__ (self):
         d = datetime.datetime.now ()
@@ -36,11 +130,17 @@ class Application:
         desc = 'File name for the conclusion of the arbitrage'
         parser.add_argument ('-c', '--conclusion', required = True,
                              help = desc)
-        parser.add_argument ('-r', '--rates', default = 'Google',
+        parser.add_argument ('-m', '--main', metavar = "RATES", 
+                             default = 'Google',
                              help = 'Main rate service')
-        parser.add_argument ('--origin', '-o', required = True,
+        parser.add_argument ('-a', '--alternative', metavar = "RATES",
+                             default = 'XRates',
+                             help = 'Alternative rate service')
+        parser.add_argument ('--origin', '-o', metavar = "EXCHANGE",
+                             required = True,
                              help = 'Origin exchange')
-        parser.add_argument ('-d', '--destination', required = True,
+        parser.add_argument ('-d', '--destination', metavar = "EXCHANGE",
+                             required = True,
                              help = 'Destination exchange')
         parser.add_argument ('-v', '--verbose', action = "store_true",
                              help = 'Increase output verbosity')
@@ -53,6 +153,7 @@ class Application:
         result.summary     = args.summary 
         result.conclusion  = args.conclusion 
         result.rates       = args.rates 
+        result.alternative = args.alternative 
         result.origin      = args.origin 
         result.destination = args.destination 
         result.verbose     = args.verbose
@@ -63,27 +164,33 @@ class Application:
         return result
         
     def interpretArgs (self):
+        result = Parameters ()
+        
         # Open summary file
         if self.args.summary == None:
             try:
                 sum_nam =  self.prefix + '_' + self.suffix + '.sum'
-                self.sum_f = open (sum_nam, 'w')
+                sum_f = open (sum_nam, 'w')
                 
             except IOError:
                 # TODO an application specific msg here
                 raise
         else:
-            self.sum_f = sys.__stdout__
+            sum_f = sys.__stdout__
+            
+        result.setSummary (sum_f)
             
         # TODO Open output files for destination exchange
         try:
             cnc_nam  =  self.prefix + '_conclusion'
             cnc_nam += '_' + self.suffix + '.json'
-            self.cnc_nam_f = open (cnc_nam, 'w')
+            cnc_f = open (cnc_nam, 'w')
             
         except IOError:
             # TODO an application specific msg here
             raise
+            
+        result.setConclusion (cnc_f)
             
         # TODO confirm that destinatian and origin exchanges are not equal
         args = self.args 
@@ -113,47 +220,57 @@ class Application:
         
         # TODO open connection with destination exchange
         dstExchange = gfExchange.genObject (args.destination)
+        result.setDestination (dstExchange)
             
         # TODO Open output files for destination exchange
         try:
             dst_nam  =  self.prefix + '_' + dstExchange.get_exch_prefix ()
             dst_nam += '_' + self.suffix + '.json'
-            self.e2e_dst_f = open (dst_nam, 'w')
+            e2e_dst_f = open (dst_nam, 'w')
             
         except IOError:
             # TODO an application specific msg here
             raise
+            
+        result.setDestinationOutput (e2e_dst_f)
             
         try:
             dst_nam  = dstExchange.get_exch_prefix ()
             dst_nam += '_' + self.suffix + '.json'
-            self.dst_f = open (dst_nam, 'w')
+            dst_f = open (dst_nam, 'w')
             
         except IOError:
             # TODO an application specific msg here
             raise
             
+        result.setRawDestinationOutput (dst_f)
+            
         # TODO open connection with origin exchange
         orgExchange = gfExchange.genObject (args.origin)
+        result.setOrigin (orgExchange)
             
         # TODO Open output files for origin exchange
         try:
             org_nam  =  self.prefix + '_' + orgExchange.get_exch_prefix ()
             org_nam += '_' + self.suffix + '.json'
-            self.e2e_org_f = open (org_nam, 'w')
+            e2e_org_f = open (org_nam, 'w')
             
         except IOError:
             # TODO an application specific2 msg here
             raise
+
+        result.setOriginOutput (e2e_org_f)
             
         try:
             org_nam  = orgExchange.get_exch_prefix ()
             org_nam += '_' + self.suffix + '.json'
-            self.org_f = open (org_nam, 'w')
+            org_f = open (org_nam, 'w')
             
         except IOError:
             # TODO an application specific msg here
             raise
+            
+        result.setRawOriginOutput (org_f)
             
         # TODO open connection with main rate service
         gfRates = gen_factory.GenFactory (rates.Rates)
@@ -166,17 +283,20 @@ class Application:
             msg = fmt.format (args.rate, rates_names)
             raise Exception (msg)
 
-        mainRate = gfRates.genObject (args.rates)
+        mainRates = gfRates.genObject (args.rates)
+        result.setMainRates (mainRates)
         
         # TODO Open output file for main rate service
         try:
-            rat_nam  =  mainRate.getServicePrefix () + '_'
+            rat_nam  =  mainRates.getServicePrefix () + '_'
             rat_nam +=  self.suffix + '.rat'
-            self.rat_f = open (rat_nam, 'w')
+            rat_f = open (rat_nam, 'w')
             
         except IOError:
             # TODO an application specific msg here
             raise        
+
+        result.setMainRatesOutput (rat_f)
             
         # TODO open connections with auxiliary rate services
         altRatesNames = []        
@@ -189,6 +309,17 @@ class Application:
         self.altRates = []            
         for rateName in altRatesNames:
             self.altRates.append (gfRates.genObject (rateName))
+            
+        try:
+            altrat_nam  =  'all_rates' + '_'
+            altrat_nam +=  self.suffix + '.rat'
+            altrat_f = open (altrat_nam, 'w')
+            
+        except IOError:
+            # TODO an application specific msg here
+            raise        
+
+        result.setMainRatesOutput (altrat_f)
         
         args = self.args 
                
@@ -200,16 +331,16 @@ class Application:
             print ('Origin:            {0}'.format (args.origin))
             print ('Destination:       {0}'.format (args.destination))
             
-    def getMainRate (self):
+    def outMainRates (self):
         pass
     
-    def getAuxiliaryRate (self):
+    def outAlternativeRates (self):
         pass
     
-    def getOriginExchange (self):
+    def outOriginExchange (self):
         pass
     
-    def getDestinationExchange (self):
+    def outDestinationExchange (self):
         pass
     
     def genExpectations (self):

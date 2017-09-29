@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['xbtprices',['XbtPrices',['../classexch2exch_1_1_xbt_prices.html',1,'exch2exch']]],
-  ['xbtprices',['XbtPrices',['../classraw__urlparser_1_1_xbt_prices.html',1,'raw_urlparser']]]
+  ['okcoin',['OkCoin',['../classexchange_1_1_ok_coin.html',1,'exchange']]],
+  ['orderbook',['OrderBook',['../classexchange_1_1_order_book.html',1,'exchange']]]
 ];

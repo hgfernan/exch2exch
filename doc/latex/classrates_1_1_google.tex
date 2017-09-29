@@ -1,0 +1,156 @@
+\hypertarget{classrates_1_1_google}{}\section{rates.\+Google Class Reference}
+\label{classrates_1_1_google}\index{rates.\+Google@{rates.\+Google}}
+
+
+Inheritance diagram for rates.\+Google\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=165pt]{classrates_1_1_google__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for rates.\+Google\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=243pt]{classrates_1_1_google__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classrates_1_1_google_a6d9d023db3b4f6f2b585397e3469c396}{\+\_\+\+\_\+init\+\_\+\+\_\+} (self)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classrates_1_1_google_a0979ffcb18b8bf3156cc5735c67ca6df}{brl2usd}
+\item 
+\hyperlink{classrates_1_1_google_a76574be36237f78780f76bed53e69ab2}{dt}
+\item 
+\hyperlink{classrates_1_1_google_ada5de8700ad571d0ab819fa0163d6bbe}{prefix}
+\item 
+\hyperlink{classrates_1_1_google_a1da08e36d5007aa5293d048b625a35e9}{service}
+\item 
+\hyperlink{classrates_1_1_google_a94c28f6d60d5d6afc075416d7378471c}{usd2brl}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+string \hyperlink{classrates_1_1_google_a46dbc3fa0a110bf5b66808c29642cfa1}{U\+\_\+\+B\+R\+L2\+U\+SD} = \textquotesingle{}https\+://finance.\+google.\+com/finance/converter?a=1\&from=B\+RL\&to=U\+SD\&meta=ei\%3\+D\+Yqi6\+Wej-\/\+Aoy\+Eeo\+Lbh9g\+F\textquotesingle{}
+\item 
+string \hyperlink{classrates_1_1_google_a77ef7f5932c48b002697fb187a234d4a}{U\+\_\+\+U\+S\+D2\+B\+RL} = \textquotesingle{}https\+://finance.\+google.\+com/finance/converter?a=1\&from=U\+SD\&to=B\+RL\&meta=ei\%3\+Do\+Ki6\+Wfn\+P\+As\+S\+Teo\+K\+No\+J\+A\+B\textquotesingle{}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line \hyperlink{rates_8py_source_l00082}{82} of file \hyperlink{rates_8py_source}{rates.\+py}.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{rates\+::\+Google@{rates\+::\+Google}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!rates\+::\+Google@{rates\+::\+Google}}
+\subsubsection[{\texorpdfstring{\+\_\+\+\_\+init\+\_\+\+\_\+(self)}{__init__(self)}}]{\setlength{\rightskip}{0pt plus 5cm}def rates.\+Google.\+\_\+\+\_\+init\+\_\+\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{classrates_1_1_google_a6d9d023db3b4f6f2b585397e3469c396}{}\label{classrates_1_1_google_a6d9d023db3b4f6f2b585397e3469c396}
+
+
+Definition at line \hyperlink{rates_8py_source_l00088}{88} of file \hyperlink{rates_8py_source}{rates.\+py}.
+
+
+\begin{DoxyCode}
+\hypertarget{classrates_1_1_google.tex_l00088}{}\hyperlink{classrates_1_1_google_a6d9d023db3b4f6f2b585397e3469c396}{00088}     \textcolor{keyword}{def }\hyperlink{classrates_1_1_google_a6d9d023db3b4f6f2b585397e3469c396}{\_\_init\_\_} (self):
+00089         ts = math.trunc (time.time () + 0.5)
+\hypertarget{classrates_1_1_google.tex_l00090}{}\hyperlink{classrates_1_1_google_a76574be36237f78780f76bed53e69ab2}{00090}         self.\hyperlink{classrates_1_1_google_a76574be36237f78780f76bed53e69ab2}{dt} = datetime.datetime.fromtimestamp (ts)
+00091                 
+\hypertarget{classrates_1_1_google.tex_l00092}{}\hyperlink{classrates_1_1_google_a94c28f6d60d5d6afc075416d7378471c}{00092}         self.\hyperlink{classrates_1_1_google_a94c28f6d60d5d6afc075416d7378471c}{usd2brl} = google\_get\_rate (Google.U\_USD2BRL)
+\hypertarget{classrates_1_1_google.tex_l00093}{}\hyperlink{classrates_1_1_google_a0979ffcb18b8bf3156cc5735c67ca6df}{00093}         self.\hyperlink{classrates_1_1_google_a0979ffcb18b8bf3156cc5735c67ca6df}{brl2usd} = google\_get\_rate (Google.U\_BRL2USD)
+00094                 
+\hypertarget{classrates_1_1_google.tex_l00095}{}\hyperlink{classrates_1_1_google_a1da08e36d5007aa5293d048b625a35e9}{00095}         self.\hyperlink{classrates_1_1_google_a1da08e36d5007aa5293d048b625a35e9}{service} = \textcolor{stringliteral}{"Google"}
+\hypertarget{classrates_1_1_google.tex_l00096}{}\hyperlink{classrates_1_1_google_ada5de8700ad571d0ab819fa0163d6bbe}{00096}         self.\hyperlink{classrates_1_1_google_ada5de8700ad571d0ab819fa0163d6bbe}{prefix} = \textcolor{stringliteral}{"ggl"}
+00097                 
+00098         \textcolor{comment}{# Normal function termination}
+00099         \textcolor{keywordflow}{return}
+00100             
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\index{rates\+::\+Google@{rates\+::\+Google}!brl2usd@{brl2usd}}
+\index{brl2usd@{brl2usd}!rates\+::\+Google@{rates\+::\+Google}}
+\subsubsection[{\texorpdfstring{brl2usd}{brl2usd}}]{\setlength{\rightskip}{0pt plus 5cm}rates.\+Google.\+brl2usd}\hypertarget{classrates_1_1_google_a0979ffcb18b8bf3156cc5735c67ca6df}{}\label{classrates_1_1_google_a0979ffcb18b8bf3156cc5735c67ca6df}
+
+
+Definition at line \hyperlink{rates_8py_source_l00093}{93} of file \hyperlink{rates_8py_source}{rates.\+py}.
+
+
+
+Referenced by \hyperlink{raw__urlparser_8py_source_l00038}{raw\+\_\+urlparser.\+Rates.\+\_\+\+\_\+str\+\_\+\+\_\+()}, and \hyperlink{raw__urlparser_8py_source_l00029}{raw\+\_\+urlparser.\+Rates.\+get\+Brl2\+Usd()}.
+
+\index{rates\+::\+Google@{rates\+::\+Google}!dt@{dt}}
+\index{dt@{dt}!rates\+::\+Google@{rates\+::\+Google}}
+\subsubsection[{\texorpdfstring{dt}{dt}}]{\setlength{\rightskip}{0pt plus 5cm}rates.\+Google.\+dt}\hypertarget{classrates_1_1_google_a76574be36237f78780f76bed53e69ab2}{}\label{classrates_1_1_google_a76574be36237f78780f76bed53e69ab2}
+
+
+Definition at line \hyperlink{rates_8py_source_l00090}{90} of file \hyperlink{rates_8py_source}{rates.\+py}.
+
+
+
+Referenced by \hyperlink{raw__urlparser_8py_source_l00038}{raw\+\_\+urlparser.\+Rates.\+\_\+\+\_\+str\+\_\+\+\_\+()}, \hyperlink{raw__urlparser_8py_source_l00074}{raw\+\_\+urlparser.\+Xbt\+Prices.\+\_\+\+\_\+str\+\_\+\+\_\+()}, and \hyperlink{raw__urlparser_8py_source_l00059}{raw\+\_\+urlparser.\+Xbt\+Prices.\+get\+Date\+Time()}.
+
+\index{rates\+::\+Google@{rates\+::\+Google}!prefix@{prefix}}
+\index{prefix@{prefix}!rates\+::\+Google@{rates\+::\+Google}}
+\subsubsection[{\texorpdfstring{prefix}{prefix}}]{\setlength{\rightskip}{0pt plus 5cm}rates.\+Google.\+prefix}\hypertarget{classrates_1_1_google_ada5de8700ad571d0ab819fa0163d6bbe}{}\label{classrates_1_1_google_ada5de8700ad571d0ab819fa0163d6bbe}
+
+
+Definition at line \hyperlink{rates_8py_source_l00096}{96} of file \hyperlink{rates_8py_source}{rates.\+py}.
+
+\index{rates\+::\+Google@{rates\+::\+Google}!service@{service}}
+\index{service@{service}!rates\+::\+Google@{rates\+::\+Google}}
+\subsubsection[{\texorpdfstring{service}{service}}]{\setlength{\rightskip}{0pt plus 5cm}rates.\+Google.\+service}\hypertarget{classrates_1_1_google_a1da08e36d5007aa5293d048b625a35e9}{}\label{classrates_1_1_google_a1da08e36d5007aa5293d048b625a35e9}
+
+
+Definition at line \hyperlink{rates_8py_source_l00095}{95} of file \hyperlink{rates_8py_source}{rates.\+py}.
+
+
+
+Referenced by \hyperlink{raw__urlparser_8py_source_l00038}{raw\+\_\+urlparser.\+Rates.\+\_\+\+\_\+str\+\_\+\+\_\+()}, and \hyperlink{raw__urlparser_8py_source_l00035}{raw\+\_\+urlparser.\+Rates.\+get\+Service\+Name()}.
+
+\index{rates\+::\+Google@{rates\+::\+Google}!U\+\_\+\+B\+R\+L2\+U\+SD@{U\+\_\+\+B\+R\+L2\+U\+SD}}
+\index{U\+\_\+\+B\+R\+L2\+U\+SD@{U\+\_\+\+B\+R\+L2\+U\+SD}!rates\+::\+Google@{rates\+::\+Google}}
+\subsubsection[{\texorpdfstring{U\+\_\+\+B\+R\+L2\+U\+SD}{U_BRL2USD}}]{\setlength{\rightskip}{0pt plus 5cm}string rates.\+Google.\+U\+\_\+\+B\+R\+L2\+U\+SD = \textquotesingle{}https\+://finance.\+google.\+com/finance/converter?a=1\&from=B\+RL\&to=U\+SD\&meta=ei\%3\+D\+Yqi6\+Wej-\/\+Aoy\+Eeo\+Lbh9g\+F\textquotesingle{}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classrates_1_1_google_a46dbc3fa0a110bf5b66808c29642cfa1}{}\label{classrates_1_1_google_a46dbc3fa0a110bf5b66808c29642cfa1}
+
+
+Definition at line \hyperlink{rates_8py_source_l00086}{86} of file \hyperlink{rates_8py_source}{rates.\+py}.
+
+\index{rates\+::\+Google@{rates\+::\+Google}!U\+\_\+\+U\+S\+D2\+B\+RL@{U\+\_\+\+U\+S\+D2\+B\+RL}}
+\index{U\+\_\+\+U\+S\+D2\+B\+RL@{U\+\_\+\+U\+S\+D2\+B\+RL}!rates\+::\+Google@{rates\+::\+Google}}
+\subsubsection[{\texorpdfstring{U\+\_\+\+U\+S\+D2\+B\+RL}{U_USD2BRL}}]{\setlength{\rightskip}{0pt plus 5cm}string rates.\+Google.\+U\+\_\+\+U\+S\+D2\+B\+RL = \textquotesingle{}https\+://finance.\+google.\+com/finance/converter?a=1\&from=U\+SD\&to=B\+RL\&meta=ei\%3\+Do\+Ki6\+Wfn\+P\+As\+S\+Teo\+K\+No\+J\+A\+B\textquotesingle{}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classrates_1_1_google_a77ef7f5932c48b002697fb187a234d4a}{}\label{classrates_1_1_google_a77ef7f5932c48b002697fb187a234d4a}
+
+
+Definition at line \hyperlink{rates_8py_source_l00084}{84} of file \hyperlink{rates_8py_source}{rates.\+py}.
+
+\index{rates\+::\+Google@{rates\+::\+Google}!usd2brl@{usd2brl}}
+\index{usd2brl@{usd2brl}!rates\+::\+Google@{rates\+::\+Google}}
+\subsubsection[{\texorpdfstring{usd2brl}{usd2brl}}]{\setlength{\rightskip}{0pt plus 5cm}rates.\+Google.\+usd2brl}\hypertarget{classrates_1_1_google_a94c28f6d60d5d6afc075416d7378471c}{}\label{classrates_1_1_google_a94c28f6d60d5d6afc075416d7378471c}
+
+
+Definition at line \hyperlink{rates_8py_source_l00092}{92} of file \hyperlink{rates_8py_source}{rates.\+py}.
+
+
+
+Referenced by \hyperlink{raw__urlparser_8py_source_l00038}{raw\+\_\+urlparser.\+Rates.\+\_\+\+\_\+str\+\_\+\+\_\+()}, and \hyperlink{raw__urlparser_8py_source_l00032}{raw\+\_\+urlparser.\+Rates.\+get\+Usd2\+Brl()}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/hilton/github/exch2exh/\hyperlink{rates_8py}{rates.\+py}\end{DoxyCompactItemize}

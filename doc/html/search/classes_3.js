@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['mercadobitcoin',['MercadoBitcoin',['../classexchange_1_1_mercado_bitcoin.html',1,'exchange']]]
+  ['foxbit',['FoxBit',['../classexchange_1_1_fox_bit.html',1,'exchange']]]
 ];

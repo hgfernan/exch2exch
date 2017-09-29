@@ -1,0 +1,5 @@
+<map id="gen_factory.Dummy" name="gen_factory.Dummy">
+<area shape="rect" id="node2" href="$classgen__factory_1_1_dummy1.html" title="{gen_factory.Dummy1\n||+ __init__()\l+ doSomething()\l}" alt="" coords="5,131,152,223"/>
+<area shape="rect" id="node3" href="$classgen__factory_1_1_dummy2.html" title="{gen_factory.Dummy2\n||+ doSomething()\l}" alt="" coords="176,138,323,215"/>
+<area shape="rect" id="node4" href="$classgen__factory_1_1_dummy3.html" title="{gen_factory.Dummy3\n||+ doSomething()\l}" alt="" coords="347,138,493,215"/>
+</map>

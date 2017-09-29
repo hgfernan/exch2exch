@@ -1,0 +1,444 @@
+\hypertarget{exchange_8py_source}{}\section{/home/hilton/github/exch2exh/exchange.py}
+
+\begin{DoxyCode}
+\hypertarget{exchange_8py_source.tex_l00001}{}\hyperlink{namespaceexchange}{00001} \textcolor{comment}{#! /usr/bin/env python3 }
+00002 \textcolor{comment}{# -*- coding: utf-8 -*-}
+00003 
+00004 \textcolor{stringliteral}{"""}
+00005 \textcolor{stringliteral}{Classes to get data from selected Bitcoin exchanges.}
+00006 \textcolor{stringliteral}{}
+00007 \textcolor{stringliteral}{Created on Sat Jun 17 13:01:13 2017}
+00008 \textcolor{stringliteral}{}
+00009 \textcolor{stringliteral}{@author: hilton}
+00010 \textcolor{stringliteral}{From }
+00011 \textcolor{stringliteral}{* https://docs.python.org/3.4/library/urllib.request.html#module-urllib.request}
+00012 \textcolor{stringliteral}{* http://www.pythonforbeginners.com/python-on-the-web/how-to-use-urllib2-in-python/}
+00013 \textcolor{stringliteral}{* https://www.mercadobitcoin.com.br/api-doc/}
+00014 \textcolor{stringliteral}{* https://blinktrade.com/docs/}
+00015 \textcolor{stringliteral}{* https://docs.python.org/3.4/library/json.html}
+00016 \textcolor{stringliteral}{"""}
+00017 
+00018 \textcolor{keyword}{import} sys            \textcolor{comment}{# exit()}
+00019 \textcolor{keyword}{import} time           \textcolor{comment}{# time(), gmtime()}
+00020 \textcolor{keyword}{import} json           \textcolor{comment}{# load()}
+00021 \textcolor{keyword}{import} datetime       \textcolor{comment}{# class datetime}
+00022 \textcolor{keyword}{import} urllib.request \textcolor{comment}{# urlopen()}
+00023 
+00024 \textcolor{comment}{# TODO refactor classes so they are lazy -- work only when necessary}
+00025 
+00026 \textcolor{comment}{# TODO A class ExchangeData can encapsulate the returns of exchanges}
+00027 
+\hypertarget{exchange_8py_source.tex_l00028}{}\hyperlink{classexchange_1_1_datetime_encoder}{00028} \textcolor{keyword}{class }\hyperlink{classexchange_1_1_datetime_encoder}{DatetimeEncoder} (json.JSONEncoder):
+\hypertarget{exchange_8py_source.tex_l00029}{}\hyperlink{classexchange_1_1_datetime_encoder_a0bb4f94a13ce6c33e8d68869e282d24f}{00029}     \textcolor{keyword}{def }\hyperlink{classexchange_1_1_datetime_encoder_a0bb4f94a13ce6c33e8d68869e282d24f}{default}(self, obj):
+00030         \textcolor{keywordflow}{if} isinstance (obj, datetime.datetime):
+00031             \textcolor{keywordflow}{return} obj.\_\_repr\_\_ ()
+00032             
+00033         \textcolor{comment}{# Let the base class default method raise the TypeError}
+00034         \textcolor{keywordflow}{return} json.JSONEncoder.default(self, obj)
+00035 
+00036 \textcolor{comment}{# Standard way of packing oderdebook information across all exchange classes}
+00037         
+\hypertarget{exchange_8py_source.tex_l00038}{}\hyperlink{classexchange_1_1_order_book}{00038} \textcolor{keyword}{class }\hyperlink{classexchange_1_1_order_book}{OrderBook}:
+00039     \textcolor{keywordflow}{pass}
+00040 
+00041 \textcolor{comment}{# Standard way of packing ticker information across all exchange classes}
+00042         
+\hypertarget{exchange_8py_source.tex_l00043}{}\hyperlink{classexchange_1_1_ticker}{00043} \textcolor{keyword}{class }Ticker:
+\hypertarget{exchange_8py_source.tex_l00044}{}\hyperlink{classexchange_1_1_ticker_a4a8c99ada461a4aeb960c14020a47736}{00044}     \textcolor{keyword}{def }\hyperlink{classexchange_1_1_ticker_a4a8c99ada461a4aeb960c14020a47736}{\_\_init\_\_} (self, exch, pair, dt, buy, sell, high, low, last, vol):
+\hypertarget{exchange_8py_source.tex_l00045}{}\hyperlink{classexchange_1_1_ticker_a33f33fe9a12da3ce52938afdc577c061}{00045}         self.\hyperlink{classexchange_1_1_ticker_a33f33fe9a12da3ce52938afdc577c061}{exch} = exch
+\hypertarget{exchange_8py_source.tex_l00046}{}\hyperlink{classexchange_1_1_ticker_a382f9199d13a7b5929a26065fad4e491}{00046}         self.\hyperlink{classexchange_1_1_ticker_a382f9199d13a7b5929a26065fad4e491}{pair} = pair
+\hypertarget{exchange_8py_source.tex_l00047}{}\hyperlink{classexchange_1_1_ticker_a45e3162d9956cee797f21d93c44c6baf}{00047}         self.\hyperlink{classexchange_1_1_ticker_a45e3162d9956cee797f21d93c44c6baf}{dt}   = dt
+\hypertarget{exchange_8py_source.tex_l00048}{}\hyperlink{classexchange_1_1_ticker_a2ca48c3fa9aba92241392a05bef39324}{00048}         self.\hyperlink{classexchange_1_1_ticker_a2ca48c3fa9aba92241392a05bef39324}{buy}  = buy 
+\hypertarget{exchange_8py_source.tex_l00049}{}\hyperlink{classexchange_1_1_ticker_a5ba9e257d2ed28f02528a37d9ebd793e}{00049}         self.\hyperlink{classexchange_1_1_ticker_a5ba9e257d2ed28f02528a37d9ebd793e}{sell} = sell 
+\hypertarget{exchange_8py_source.tex_l00050}{}\hyperlink{classexchange_1_1_ticker_aace381ca15468df6a40e8d86b7710a7f}{00050}         self.\hyperlink{classexchange_1_1_ticker_aace381ca15468df6a40e8d86b7710a7f}{high} = high 
+\hypertarget{exchange_8py_source.tex_l00051}{}\hyperlink{classexchange_1_1_ticker_a1c1f26a47a82fc799fcebf158e104405}{00051}         self.\hyperlink{classexchange_1_1_ticker_a1c1f26a47a82fc799fcebf158e104405}{low}  = low 
+\hypertarget{exchange_8py_source.tex_l00052}{}\hyperlink{classexchange_1_1_ticker_add7c2d95fa790dcdffddae2e584ce5f5}{00052}         self.\hyperlink{classexchange_1_1_ticker_add7c2d95fa790dcdffddae2e584ce5f5}{last} = last 
+\hypertarget{exchange_8py_source.tex_l00053}{}\hyperlink{classexchange_1_1_ticker_a24c0dd396aebc54c06e429a68c964ea3}{00053}         self.\hyperlink{classexchange_1_1_ticker_a24c0dd396aebc54c06e429a68c964ea3}{vol}  = vol 
+00054         
+\hypertarget{exchange_8py_source.tex_l00055}{}\hyperlink{classexchange_1_1_ticker_afa66aae0fb37d76d4e19bd9d7af79ff9}{00055}     \textcolor{keyword}{def }\hyperlink{classexchange_1_1_ticker_afa66aae0fb37d76d4e19bd9d7af79ff9}{convert} (self, rate, source, target):
+00056         exch = self.\hyperlink{classexchange_1_1_ticker_a33f33fe9a12da3ce52938afdc577c061}{exch}
+00057         dt   = self.\hyperlink{classexchange_1_1_ticker_a45e3162d9956cee797f21d93c44c6baf}{dt}   / rate
+00058         buy  = self.\hyperlink{classexchange_1_1_ticker_a2ca48c3fa9aba92241392a05bef39324}{buy}  / rate
+00059         sell = self.\hyperlink{classexchange_1_1_ticker_a5ba9e257d2ed28f02528a37d9ebd793e}{sell} / rate
+00060         high = self.\hyperlink{classexchange_1_1_ticker_aace381ca15468df6a40e8d86b7710a7f}{high} / rate
+00061         low  = self.\hyperlink{classexchange_1_1_ticker_a1c1f26a47a82fc799fcebf158e104405}{low}  / rate
+00062         last = self.\hyperlink{classexchange_1_1_ticker_add7c2d95fa790dcdffddae2e584ce5f5}{last} / rate
+00063         vol  = self.\hyperlink{classexchange_1_1_ticker_a24c0dd396aebc54c06e429a68c964ea3}{vol}  / rate
+00064 
+00065         \textcolor{keywordflow}{if} source \textcolor{keywordflow}{in} self.\hyperlink{classexchange_1_1_ticker_a382f9199d13a7b5929a26065fad4e491}{pair}:
+00066             pair = self.pair.replace (source, target)
+00067         
+00068         \textcolor{comment}{# TODO otherwise throw exception }
+00069         
+00070         result = Ticker (exch, pair, dt, buy, sell, high, low, last, vol)
+00071         
+00072         \textcolor{comment}{# Normal function termination}
+00073         \textcolor{keywordflow}{return} result 
+00074         
+\hypertarget{exchange_8py_source.tex_l00075}{}\hyperlink{classexchange_1_1_ticker_ab31537c5a057f9a47839e2d28411c1cf}{00075}     \textcolor{keyword}{def }\hyperlink{classexchange_1_1_ticker_ab31537c5a057f9a47839e2d28411c1cf}{getExch} (self):
+00076         \textcolor{keywordflow}{return} self.\hyperlink{classexchange_1_1_ticker_a33f33fe9a12da3ce52938afdc577c061}{exch}
+00077         
+\hypertarget{exchange_8py_source.tex_l00078}{}\hyperlink{classexchange_1_1_ticker_a3600faedb720e664d6fdc89415c01678}{00078}     \textcolor{keyword}{def }\hyperlink{classexchange_1_1_ticker_a3600faedb720e664d6fdc89415c01678}{getPair} (self):
+00079         \textcolor{keywordflow}{return} self.\hyperlink{classexchange_1_1_ticker_a382f9199d13a7b5929a26065fad4e491}{pair}
+00080         
+\hypertarget{exchange_8py_source.tex_l00081}{}\hyperlink{classexchange_1_1_ticker_aaa2f7d66782b9405c286e98bfb281d45}{00081}     \textcolor{keyword}{def }\hyperlink{classexchange_1_1_ticker_aaa2f7d66782b9405c286e98bfb281d45}{getDt} (self):
+00082         \textcolor{keywordflow}{return} self.\hyperlink{classexchange_1_1_ticker_a45e3162d9956cee797f21d93c44c6baf}{dt}
+00083 
+\hypertarget{exchange_8py_source.tex_l00084}{}\hyperlink{classexchange_1_1_ticker_aba1398da3113a7ff17b2496ce92c7238}{00084}     \textcolor{keyword}{def }\hyperlink{classexchange_1_1_ticker_aba1398da3113a7ff17b2496ce92c7238}{mk\_tuple} (self): 
+00085         result = (self.\hyperlink{classexchange_1_1_ticker_a33f33fe9a12da3ce52938afdc577c061}{exch}, self.\hyperlink{classexchange_1_1_ticker_a382f9199d13a7b5929a26065fad4e491}{pair}, self.\hyperlink{classexchange_1_1_ticker_a45e3162d9956cee797f21d93c44c6baf}{dt}, self.\hyperlink{classexchange_1_1_ticker_a2ca48c3fa9aba92241392a05bef39324}{buy}, self.
+      \hyperlink{classexchange_1_1_ticker_a5ba9e257d2ed28f02528a37d9ebd793e}{sell}, \(\backslash\)
+00086             self.\hyperlink{classexchange_1_1_ticker_aace381ca15468df6a40e8d86b7710a7f}{high}, self.\hyperlink{classexchange_1_1_ticker_a1c1f26a47a82fc799fcebf158e104405}{low}, self.\hyperlink{classexchange_1_1_ticker_add7c2d95fa790dcdffddae2e584ce5f5}{last}, self.\hyperlink{classexchange_1_1_ticker_a24c0dd396aebc54c06e429a68c964ea3}{vol})
+00087             
+00088         \textcolor{comment}{# Normal function termination }
+00089         \textcolor{keywordflow}{return} result
+00090         
+\hypertarget{exchange_8py_source.tex_l00091}{}\hyperlink{classexchange_1_1_ticker_a53148d54a0b9b577870db785fb4e381e}{00091}     \textcolor{keyword}{def }\hyperlink{classexchange_1_1_ticker_a53148d54a0b9b577870db785fb4e381e}{dumps} (self):
+00092         result = \textcolor{stringliteral}{''}
+00093         
+00094         result = json.dumps (self.\_\_dict\_\_)       
+00095         
+00096         \textcolor{comment}{# Normal function termination}
+00097         \textcolor{keywordflow}{return} result
+00098     
+\hypertarget{exchange_8py_source.tex_l00099}{}\hyperlink{classexchange_1_1_ticker_af91836a1c408f54dda95d9865cefba45}{00099}     \textcolor{keyword}{def }\hyperlink{classexchange_1_1_ticker_af91836a1c408f54dda95d9865cefba45}{\_\_str\_\_} (self):
+00100         result = \textcolor{stringliteral}{''}
+00101         
+00102         fmt    = \textcolor{stringliteral}{'Exchange: \{0\}, coin pair \{1\}, '} 
+00103         result = fmt.format (self.\hyperlink{classexchange_1_1_ticker_a33f33fe9a12da3ce52938afdc577c061}{exch}, self.\hyperlink{classexchange_1_1_ticker_a382f9199d13a7b5929a26065fad4e491}{pair})
+00104         
+00105         gm = time.gmtime (self.\hyperlink{classexchange_1_1_ticker_a45e3162d9956cee797f21d93c44c6baf}{dt})
+00106         result += \textcolor{stringliteral}{'timestamp: '} + time.strftime (\textcolor{stringliteral}{'%Y-%m-%d %H:%M:%S'}, gm) 
+00107         result += \textcolor{stringliteral}{", "}
+00108         
+00109         fmt     = \textcolor{stringliteral}{'buy/sell: \{0:.8f\}/\{1:.8f\}, '}
+00110         result += fmt.format (self.\hyperlink{classexchange_1_1_ticker_a2ca48c3fa9aba92241392a05bef39324}{buy}, self.\hyperlink{classexchange_1_1_ticker_a5ba9e257d2ed28f02528a37d9ebd793e}{sell})
+00111         
+00112         fmt     = \textcolor{stringliteral}{'high/low: \{0:.8f\}/\{1:.8f\}, '}
+00113         result += fmt.format (self.\hyperlink{classexchange_1_1_ticker_aace381ca15468df6a40e8d86b7710a7f}{high}, self.\hyperlink{classexchange_1_1_ticker_a1c1f26a47a82fc799fcebf158e104405}{low})
+00114         
+00115         fmt     = \textcolor{stringliteral}{'last: \{0:.8f\}, volume: \{1:.8f\}'}
+00116         result += fmt.format (self.\hyperlink{classexchange_1_1_ticker_add7c2d95fa790dcdffddae2e584ce5f5}{last}, self.\hyperlink{classexchange_1_1_ticker_a24c0dd396aebc54c06e429a68c964ea3}{vol})
+00117         
+00118         \textcolor{comment}{# Normal function termination}
+00119         \textcolor{keywordflow}{return} result
+00120 
+00121 \textcolor{comment}{# Standard way of packing trades information across all exchange classes}
+00122         
+00123         
+\hypertarget{exchange_8py_source.tex_l00124}{}\hyperlink{classexchange_1_1_trades}{00124} \textcolor{keyword}{class }\hyperlink{classexchange_1_1_trades}{Trades}:
+00125     \textcolor{keywordflow}{pass}
+00126 
+\hypertarget{exchange_8py_source.tex_l00127}{}\hyperlink{classexchange_1_1_exchange}{00127} \textcolor{keyword}{class }Exchange:
+\hypertarget{exchange_8py_source.tex_l00128}{}\hyperlink{classexchange_1_1_exchange_ab16df02480d727c533b02b5b7afa053b}{00128}     U\_TICKER = \textcolor{stringliteral}{''}
+\hypertarget{exchange_8py_source.tex_l00129}{}\hyperlink{classexchange_1_1_exchange_aafa0e023de170f51cbf9d48e1154587a}{00129}     U\_TRADES = \textcolor{stringliteral}{''}
+\hypertarget{exchange_8py_source.tex_l00130}{}\hyperlink{classexchange_1_1_exchange_a83174d2fe96a1c737231d3b8b18d9807}{00130}     U\_ORDRBK = \textcolor{stringliteral}{''}
+00131 
+00132 \textcolor{comment}{# TODO implement}
+00133     
+\hypertarget{exchange_8py_source.tex_l00134}{}\hyperlink{classexchange_1_1_exchange_adc6345bd84ea113d46f4e044dbd4d0fb}{00134}     \textcolor{keyword}{def }\hyperlink{classexchange_1_1_exchange_adc6345bd84ea113d46f4e044dbd4d0fb}{\_\_init\_\_} (self):
+00135 \textcolor{comment}{#        self.dnload\_ticker ()}
+00136 \textcolor{comment}{#        self.process\_ticker ()}
+00137         \textcolor{keywordflow}{pass}
+00138     
+\hypertarget{exchange_8py_source.tex_l00139}{}\hyperlink{classexchange_1_1_exchange_a9e700d31fd60de495956518436b6768a}{00139}     \textcolor{keyword}{def }\hyperlink{classexchange_1_1_exchange_a9e700d31fd60de495956518436b6768a}{dnload\_ticker} (self):
+00140         url = self.\_\_class\_\_.U\_TICKER
+00141 \textcolor{comment}{#        print (url)}
+00142         f = urllib.request.urlopen (url)
+00143         
+00144         line = f.readline ()
+00145 \textcolor{comment}{#        print (line)}
+\hypertarget{exchange_8py_source.tex_l00146}{}\hyperlink{classexchange_1_1_exchange_af69daf804599e27f7431632d91b2c3b9}{00146}         self.\hyperlink{classexchange_1_1_exchange_af69daf804599e27f7431632d91b2c3b9}{original} = line.decode (encoding = \textcolor{stringliteral}{'utf-8'})
+00147         
+\hypertarget{exchange_8py_source.tex_l00148}{}\hyperlink{classexchange_1_1_exchange_a7cf9e52f993627955a2e242c388daaeb}{00148}         self.\hyperlink{classexchange_1_1_exchange_a7cf9e52f993627955a2e242c388daaeb}{ticker} = json.loads (line.decode (encoding=\textcolor{stringliteral}{'utf-8'}))
+00149 \textcolor{comment}{#        print (self.ticker)}
+00150         
+\hypertarget{exchange_8py_source.tex_l00151}{}\hyperlink{classexchange_1_1_exchange_aa3f83a45154aa4a1b07010f74c2b37db}{00151}     \textcolor{keyword}{def }\hyperlink{classexchange_1_1_exchange_aa3f83a45154aa4a1b07010f74c2b37db}{process\_ticker} (self):
+00152         \textcolor{comment}{# TODO raise exception}
+00153         \textcolor{keywordflow}{pass}
+00154     
+\hypertarget{exchange_8py_source.tex_l00155}{}\hyperlink{classexchange_1_1_exchange_aabe7d5679cac0096bc54169cfceea536}{00155}     \textcolor{keyword}{def }\hyperlink{classexchange_1_1_exchange_aabe7d5679cac0096bc54169cfceea536}{get\_ticker} (self):
+00156         self.dnload\_ticker ()
+00157         self.process\_ticker ()
+00158     
+\hypertarget{exchange_8py_source.tex_l00159}{}\hyperlink{classexchange_1_1_exchange_a31c0527e3a8a21fe74f9c24a79a86e6b}{00159}     \textcolor{keyword}{def }\hyperlink{classexchange_1_1_exchange_a31c0527e3a8a21fe74f9c24a79a86e6b}{mk\_ticker} (self): 
+00160         \textcolor{comment}{# TODO raise exception}
+00161         \textcolor{keywordflow}{pass}
+00162     
+\hypertarget{exchange_8py_source.tex_l00163}{}\hyperlink{classexchange_1_1_exchange_a202c8b57ffa0adcb830de89d6466fd60}{00163}     \textcolor{keyword}{def }\hyperlink{classexchange_1_1_exchange_a202c8b57ffa0adcb830de89d6466fd60}{dnload\_trades} (self):
+00164         url = self.\_\_class\_\_.U\_TRADES
+00165 \textcolor{comment}{#        print (url)}
+00166         f = urllib.request.urlopen (url)
+00167         
+00168         line = f.readline ()
+00169 \textcolor{comment}{#        print (line)}
+00170         
+\hypertarget{exchange_8py_source.tex_l00171}{}\hyperlink{classexchange_1_1_exchange_a30e87a377320ce05bd956fb014683641}{00171}         self.\hyperlink{classexchange_1_1_exchange_a30e87a377320ce05bd956fb014683641}{trades} = json.loads (line.decode (encoding=\textcolor{stringliteral}{'utf-8'}))
+00172 \textcolor{comment}{#        print (self.ticker)}
+00173         
+\hypertarget{exchange_8py_source.tex_l00174}{}\hyperlink{classexchange_1_1_exchange_a0e67454c7053807302be914376790484}{00174}     \textcolor{keyword}{def }\hyperlink{classexchange_1_1_exchange_a0e67454c7053807302be914376790484}{process\_trades} (self):
+00175         \textcolor{comment}{# TODO raise exception}
+00176         \textcolor{keywordflow}{pass}
+00177     
+\hypertarget{exchange_8py_source.tex_l00178}{}\hyperlink{classexchange_1_1_exchange_a254bac1703de55674f5ebfbb03a95e74}{00178}     \textcolor{keyword}{def }\hyperlink{classexchange_1_1_exchange_a254bac1703de55674f5ebfbb03a95e74}{get\_trades} (self):
+00179         self.dnload\_trades ()
+00180         self.process\_trades ()
+00181     
+\hypertarget{exchange_8py_source.tex_l00182}{}\hyperlink{classexchange_1_1_exchange_a99f32c746467a00b455a97c7805fd710}{00182}     \textcolor{keyword}{def }\hyperlink{classexchange_1_1_exchange_a99f32c746467a00b455a97c7805fd710}{dnload\_orderbook} (self):
+00183         url = self.\_\_class\_\_.U\_ORDRBK
+00184         f = urllib.request.urlopen (url)
+00185         
+00186         line = f.readline ()
+00187 \textcolor{comment}{#        print (line)}
+00188         
+00189         self.\hyperlink{classexchange_1_1_exchange_a30e87a377320ce05bd956fb014683641}{trades} = json.loads (line.decode (encoding=\textcolor{stringliteral}{'utf-8'}))
+00190 \textcolor{comment}{#        print (self.ticker)}
+00191         
+\hypertarget{exchange_8py_source.tex_l00192}{}\hyperlink{classexchange_1_1_exchange_a93c60cd18eab808d68191fb1d2d42cf8}{00192}     \textcolor{keyword}{def }\hyperlink{classexchange_1_1_exchange_a93c60cd18eab808d68191fb1d2d42cf8}{process\_orderbook} (self):
+00193         \textcolor{comment}{# TODO raise exception}
+00194         \textcolor{keywordflow}{pass}
+00195     
+\hypertarget{exchange_8py_source.tex_l00196}{}\hyperlink{classexchange_1_1_exchange_a5d0c05c289d664892ade5edb03adbd6b}{00196}     \textcolor{keyword}{def }\hyperlink{classexchange_1_1_exchange_a5d0c05c289d664892ade5edb03adbd6b}{get\_orderbook} (self):
+00197         self.dnload\_orderbook ()
+00198         self.process\_orderbook () 
+00199     
+\hypertarget{exchange_8py_source.tex_l00200}{}\hyperlink{classexchange_1_1_exchange_a8f095bac98d7ad212f93bfcdff458bf7}{00200}     \textcolor{keyword}{def }\hyperlink{classexchange_1_1_exchange_a8f095bac98d7ad212f93bfcdff458bf7}{get\_exch\_name} (self):
+00201         \textcolor{comment}{# TODO raise exception}
+00202         \textcolor{keywordflow}{pass}
+00203     
+\hypertarget{exchange_8py_source.tex_l00204}{}\hyperlink{classexchange_1_1_exchange_ae7690d173a46bc0f051365ab0b28f81f}{00204}     \textcolor{keyword}{def }\hyperlink{classexchange_1_1_exchange_ae7690d173a46bc0f051365ab0b28f81f}{get\_original} (self):
+00205         \textcolor{comment}{# TODO raise exception}
+00206         \textcolor{keywordflow}{pass}
+00207         
+\hypertarget{exchange_8py_source.tex_l00208}{}\hyperlink{classexchange_1_1_exchange_ae3fd515a25ead8667f917230b0975a98}{00208}     \textcolor{keyword}{def }\hyperlink{classexchange_1_1_exchange_ae3fd515a25ead8667f917230b0975a98}{\_\_str\_\_} (self):
+00209         \textcolor{comment}{# TODO raise exception}
+00210         \textcolor{keywordflow}{pass}
+00211         
+\hypertarget{exchange_8py_source.tex_l00212}{}\hyperlink{classexchange_1_1_exchange_afff4d01a82947f2e3be0d4fa5e0e0fe7}{00212}     \textcolor{keyword}{def }\hyperlink{classexchange_1_1_exchange_afff4d01a82947f2e3be0d4fa5e0e0fe7}{\_\_repr\_\_} (self):
+00213         result = \textcolor{stringliteral}{"\{0\} ()"}.format (type (self).\_\_name\_\_)
+00214         
+00215         \textcolor{comment}{# Normal function termination}
+00216         \textcolor{keywordflow}{return} result
+00217         
+\hypertarget{exchange_8py_source.tex_l00218}{}\hyperlink{classexchange_1_1_fox_bit}{00218} \textcolor{keyword}{class }\hyperlink{classexchange_1_1_fox_bit}{FoxBit} (\hyperlink{classexchange_1_1_exchange}{Exchange}):
+\hypertarget{exchange_8py_source.tex_l00219}{}\hyperlink{classexchange_1_1_fox_bit_a7ba3f64a2b55479da2239393c6140ec8}{00219}     U\_TICKER = \textcolor{stringliteral}{'https://api.blinktrade.com/api/v1/BRL/ticker?crypto\_currency=BTC'}
+00220     
+\hypertarget{exchange_8py_source.tex_l00221}{}\hyperlink{classexchange_1_1_fox_bit_a1f892137668748287116d902ef668d1a}{00221}     \textcolor{keyword}{def }\hyperlink{classexchange_1_1_fox_bit_a1f892137668748287116d902ef668d1a}{\_\_init\_\_} (self):
+00222         super ().\_\_init\_\_ ()
+00223         
+\hypertarget{exchange_8py_source.tex_l00224}{}\hyperlink{classexchange_1_1_fox_bit_a813481c37754cc0c6e0b1cefa0ec0889}{00224}     \textcolor{keyword}{def }\hyperlink{classexchange_1_1_fox_bit_a813481c37754cc0c6e0b1cefa0ec0889}{process\_ticker} (self):
+00225         tt = time.time ()
+00226         self.\hyperlink{classexchange_1_1_exchange_a7cf9e52f993627955a2e242c388daaeb}{ticker}[\textcolor{stringliteral}{'ts'}] = tt
+00227         self.\hyperlink{classexchange_1_1_exchange_a7cf9e52f993627955a2e242c388daaeb}{ticker}[\textcolor{stringliteral}{'date'}] = datetime.datetime.fromtimestamp (tt)
+\hypertarget{exchange_8py_source.tex_l00228}{}\hyperlink{classexchange_1_1_fox_bit_a3922433dcfe54e39c3c0da12fa252658}{00228}         self.\hyperlink{classexchange_1_1_fox_bit_a3922433dcfe54e39c3c0da12fa252658}{exch} = self.\hyperlink{classexchange_1_1_exchange_a8f095bac98d7ad212f93bfcdff458bf7}{get\_exch\_name} ()
+\hypertarget{exchange_8py_source.tex_l00229}{}\hyperlink{classexchange_1_1_fox_bit_abfd6daf1cbad94eb74bba4c97fe4a574}{00229}         self.\hyperlink{classexchange_1_1_fox_bit_abfd6daf1cbad94eb74bba4c97fe4a574}{pair} = \textcolor{stringliteral}{"BRLBTC"}
+00230      
+\hypertarget{exchange_8py_source.tex_l00231}{}\hyperlink{classexchange_1_1_fox_bit_aeb98818ddef05bb1beff5b55231d3760}{00231}     \textcolor{keyword}{def }\hyperlink{classexchange_1_1_fox_bit_aeb98818ddef05bb1beff5b55231d3760}{get\_ticker} (self):
+00232         super ().get\_ticker ()
+00233         
+\hypertarget{exchange_8py_source.tex_l00234}{}\hyperlink{classexchange_1_1_fox_bit_a363f8488eb0423f88519c085ae6f168f}{00234}         self.\hyperlink{classexchange_1_1_fox_bit_a363f8488eb0423f88519c085ae6f168f}{dt}   = self.\hyperlink{classexchange_1_1_exchange_a7cf9e52f993627955a2e242c388daaeb}{ticker}[\textcolor{stringliteral}{'date'}]
+\hypertarget{exchange_8py_source.tex_l00235}{}\hyperlink{classexchange_1_1_fox_bit_acb7e709cc05e8314b1bdacd32e4dfc80}{00235}         self.\hyperlink{classexchange_1_1_fox_bit_acb7e709cc05e8314b1bdacd32e4dfc80}{buy}  = float (self.\hyperlink{classexchange_1_1_exchange_a7cf9e52f993627955a2e242c388daaeb}{ticker}[\textcolor{stringliteral}{'buy'}])
+\hypertarget{exchange_8py_source.tex_l00236}{}\hyperlink{classexchange_1_1_fox_bit_ac1fae4ef7a43254b71d7173a5cc6eeaf}{00236}         self.\hyperlink{classexchange_1_1_fox_bit_ac1fae4ef7a43254b71d7173a5cc6eeaf}{sell} = float (self.\hyperlink{classexchange_1_1_exchange_a7cf9e52f993627955a2e242c388daaeb}{ticker}[\textcolor{stringliteral}{'sell'}])
+\hypertarget{exchange_8py_source.tex_l00237}{}\hyperlink{classexchange_1_1_fox_bit_a4f6dfaecbcc17ceadddf52d266d9c00d}{00237}         self.\hyperlink{classexchange_1_1_fox_bit_a4f6dfaecbcc17ceadddf52d266d9c00d}{high} = float (self.\hyperlink{classexchange_1_1_exchange_a7cf9e52f993627955a2e242c388daaeb}{ticker}[\textcolor{stringliteral}{'high'}])
+\hypertarget{exchange_8py_source.tex_l00238}{}\hyperlink{classexchange_1_1_fox_bit_acd666444cff98fe477651120ddb0f915}{00238}         self.\hyperlink{classexchange_1_1_fox_bit_acd666444cff98fe477651120ddb0f915}{low}  = float (self.\hyperlink{classexchange_1_1_exchange_a7cf9e52f993627955a2e242c388daaeb}{ticker}[\textcolor{stringliteral}{'low'}])
+\hypertarget{exchange_8py_source.tex_l00239}{}\hyperlink{classexchange_1_1_fox_bit_a5cdbc327b005014dc3b8bb6fb54a12fd}{00239}         self.\hyperlink{classexchange_1_1_fox_bit_a5cdbc327b005014dc3b8bb6fb54a12fd}{last} = float (self.\hyperlink{classexchange_1_1_exchange_a7cf9e52f993627955a2e242c388daaeb}{ticker}[\textcolor{stringliteral}{'last'}])
+00240         
+00241         result = (self.\hyperlink{classexchange_1_1_fox_bit_a363f8488eb0423f88519c085ae6f168f}{dt}, self.\hyperlink{classexchange_1_1_fox_bit_ac1fae4ef7a43254b71d7173a5cc6eeaf}{sell}, self.\hyperlink{classexchange_1_1_fox_bit_acb7e709cc05e8314b1bdacd32e4dfc80}{buy}, self.\hyperlink{classexchange_1_1_fox_bit_a4f6dfaecbcc17ceadddf52d266d9c00d}{high}, self.\hyperlink{classexchange_1_1_fox_bit_acd666444cff98fe477651120ddb0f915}{low}, self.
+      \hyperlink{classexchange_1_1_fox_bit_a5cdbc327b005014dc3b8bb6fb54a12fd}{last})
+00242         
+00243         \textcolor{keywordflow}{return} result
+00244     
+\hypertarget{exchange_8py_source.tex_l00245}{}\hyperlink{classexchange_1_1_fox_bit_a149b379722f351e0b890822a6220f0b0}{00245}     \textcolor{keyword}{def }\hyperlink{classexchange_1_1_fox_bit_a149b379722f351e0b890822a6220f0b0}{mk\_ticker} (self): 
+00246         super ().get\_ticker ()
+00247         
+00248         exch = self.\hyperlink{classexchange_1_1_fox_bit_a3922433dcfe54e39c3c0da12fa252658}{exch}
+00249         pair = self.\hyperlink{classexchange_1_1_fox_bit_abfd6daf1cbad94eb74bba4c97fe4a574}{pair}
+00250         ts   = self.\hyperlink{classexchange_1_1_exchange_a7cf9e52f993627955a2e242c388daaeb}{ticker}[\textcolor{stringliteral}{'ts'}]
+00251         buy  = float (self.\hyperlink{classexchange_1_1_exchange_a7cf9e52f993627955a2e242c388daaeb}{ticker}[\textcolor{stringliteral}{'buy'}])
+00252         sell = float (self.\hyperlink{classexchange_1_1_exchange_a7cf9e52f993627955a2e242c388daaeb}{ticker}[\textcolor{stringliteral}{'sell'}])
+00253         high = float (self.\hyperlink{classexchange_1_1_exchange_a7cf9e52f993627955a2e242c388daaeb}{ticker}[\textcolor{stringliteral}{'high'}])
+00254         low  = float (self.\hyperlink{classexchange_1_1_exchange_a7cf9e52f993627955a2e242c388daaeb}{ticker}[\textcolor{stringliteral}{'low'}])
+00255         last = float (self.\hyperlink{classexchange_1_1_exchange_a7cf9e52f993627955a2e242c388daaeb}{ticker}[\textcolor{stringliteral}{'last'}])
+00256         vol  = float (self.\hyperlink{classexchange_1_1_exchange_a7cf9e52f993627955a2e242c388daaeb}{ticker}[\textcolor{stringliteral}{'last'}])
+00257         
+00258         result = Ticker (exch, pair, ts, buy, sell, high, low, last, vol)
+00259         
+00260         \textcolor{keywordflow}{return} result
+00261         
+\hypertarget{exchange_8py_source.tex_l00262}{}\hyperlink{classexchange_1_1_fox_bit_a244f81e91b04a1118d2d17f6c8497cb5}{00262}     \textcolor{keyword}{def }\hyperlink{classexchange_1_1_fox_bit_a244f81e91b04a1118d2d17f6c8497cb5}{process\_trades} (self):
+00263         \textcolor{keywordflow}{pass}
+00264      
+\hypertarget{exchange_8py_source.tex_l00265}{}\hyperlink{classexchange_1_1_fox_bit_a80807753c2c595997857d097939c9283}{00265}     \textcolor{keyword}{def }\hyperlink{classexchange_1_1_fox_bit_a80807753c2c595997857d097939c9283}{get\_trades} (self):
+00266         \textcolor{keywordflow}{pass}
+00267     
+\hypertarget{exchange_8py_source.tex_l00268}{}\hyperlink{classexchange_1_1_fox_bit_a9bb3b48ee388b422f1d27c1774f0c9bf}{00268}     \textcolor{keyword}{def }\hyperlink{classexchange_1_1_fox_bit_a9bb3b48ee388b422f1d27c1774f0c9bf}{get\_exch\_name} (self):
+00269         \textcolor{keywordflow}{return} \textcolor{stringliteral}{"FoxBit"}
+00270     
+\hypertarget{exchange_8py_source.tex_l00271}{}\hyperlink{classexchange_1_1_fox_bit_a091fb1b6e76b392b0a018a411f9da200}{00271}     \textcolor{keyword}{def }\hyperlink{classexchange_1_1_fox_bit_a091fb1b6e76b392b0a018a411f9da200}{get\_exch\_prefix} (self):
+00272         \textcolor{keywordflow}{return} \textcolor{stringliteral}{"fbt"}
+00273         
+\hypertarget{exchange_8py_source.tex_l00274}{}\hyperlink{classexchange_1_1_fox_bit_a52bd09c5581ea3a18a4857432953533e}{00274}     \textcolor{keyword}{def }\hyperlink{classexchange_1_1_fox_bit_a52bd09c5581ea3a18a4857432953533e}{get\_original} (self):
+00275         \textcolor{keywordflow}{return} self.\hyperlink{classexchange_1_1_exchange_af69daf804599e27f7431632d91b2c3b9}{original} 
+00276         
+\hypertarget{exchange_8py_source.tex_l00277}{}\hyperlink{classexchange_1_1_fox_bit_ac21d1d06bf748dfd22ca35bc56a72e3b}{00277}     \textcolor{keyword}{def }\hyperlink{classexchange_1_1_fox_bit_ac21d1d06bf748dfd22ca35bc56a72e3b}{\_\_str\_\_} (self):
+00278         result = json.dumps (self.\_\_dict\_\_, cls = DatetimeEncoder)
+00279         
+00280         \textcolor{comment}{# Normal function termination}
+00281         \textcolor{keywordflow}{return} result
+00282                 
+\hypertarget{exchange_8py_source.tex_l00283}{}\hyperlink{classexchange_1_1_mercado_bitcoin}{00283} \textcolor{keyword}{class }\hyperlink{classexchange_1_1_mercado_bitcoin}{MercadoBitcoin} (\hyperlink{classexchange_1_1_exchange}{Exchange}):
+\hypertarget{exchange_8py_source.tex_l00284}{}\hyperlink{classexchange_1_1_mercado_bitcoin_a310b7df5ae9e8a46bad918428c67d4e8}{00284}     U\_TICKER = \textcolor{stringliteral}{'https://www.mercadobitcoin.net/api/ticker/'}
+\hypertarget{exchange_8py_source.tex_l00285}{}\hyperlink{classexchange_1_1_mercado_bitcoin_a7dd22c2c0261557a694678d8057d2547}{00285}     U\_ORDRBK = \textcolor{stringliteral}{'https://www.okcoin.com/api/v1/depth.do?symbol=btc\_usd'}
+\hypertarget{exchange_8py_source.tex_l00286}{}\hyperlink{classexchange_1_1_mercado_bitcoin_a20ad6407ef07ab8a55d3c022d1512a5d}{00286}     U\_TRADES = \textcolor{stringliteral}{'https://www.okcoin.com/api/v1/trades.do?symbol=btc\_usd'}
+00287     
+\hypertarget{exchange_8py_source.tex_l00288}{}\hyperlink{classexchange_1_1_mercado_bitcoin_a7ae88346e48e6e1fa70ebe3281ba7357}{00288}     \textcolor{keyword}{def }\hyperlink{classexchange_1_1_mercado_bitcoin_a7ae88346e48e6e1fa70ebe3281ba7357}{\_\_init\_\_} (self):
+00289         super ().\_\_init\_\_ ()
+00290         
+\hypertarget{exchange_8py_source.tex_l00291}{}\hyperlink{classexchange_1_1_mercado_bitcoin_a2acc4c0710269e72bc9547508be97117}{00291}     \textcolor{keyword}{def }\hyperlink{classexchange_1_1_mercado_bitcoin_a2acc4c0710269e72bc9547508be97117}{process\_ticker} (self):
+00292 \textcolor{comment}{#        myClass = type (self).\_\_name\_\_}
+00293 \textcolor{comment}{#        print ("\{0\}.process\_ticker ()".format (myClass))}
+\hypertarget{exchange_8py_source.tex_l00294}{}\hyperlink{classexchange_1_1_mercado_bitcoin_a68701550b43374441e52ea2082d88400}{00294}         self.\hyperlink{classexchange_1_1_mercado_bitcoin_a68701550b43374441e52ea2082d88400}{exch} = self.\hyperlink{classexchange_1_1_exchange_a8f095bac98d7ad212f93bfcdff458bf7}{get\_exch\_name} ()
+\hypertarget{exchange_8py_source.tex_l00295}{}\hyperlink{classexchange_1_1_mercado_bitcoin_a879f8ca352d313230d72e6e8785985a1}{00295}         self.\hyperlink{classexchange_1_1_mercado_bitcoin_a879f8ca352d313230d72e6e8785985a1}{pair} = \textcolor{stringliteral}{'BTCBRL'}
+\hypertarget{exchange_8py_source.tex_l00296}{}\hyperlink{classexchange_1_1_mercado_bitcoin_ac4630b08e08f9eeb9dad838dc9dc0cda}{00296}         self.\hyperlink{classexchange_1_1_mercado_bitcoin_ac4630b08e08f9eeb9dad838dc9dc0cda}{ts}   = int   (self.\hyperlink{classexchange_1_1_exchange_a7cf9e52f993627955a2e242c388daaeb}{ticker}[\textcolor{stringliteral}{'ticker'}][\textcolor{stringliteral}{'date'}])
+\hypertarget{exchange_8py_source.tex_l00297}{}\hyperlink{classexchange_1_1_mercado_bitcoin_ada27b62a35286b9f5dbb54590c5bacd2}{00297}         self.\hyperlink{classexchange_1_1_mercado_bitcoin_ada27b62a35286b9f5dbb54590c5bacd2}{buy}  = float (self.\hyperlink{classexchange_1_1_exchange_a7cf9e52f993627955a2e242c388daaeb}{ticker}[\textcolor{stringliteral}{'ticker'}][\textcolor{stringliteral}{'buy'}])
+\hypertarget{exchange_8py_source.tex_l00298}{}\hyperlink{classexchange_1_1_mercado_bitcoin_a9982c7a3f6103c88c64160a5854c35cd}{00298}         self.\hyperlink{classexchange_1_1_mercado_bitcoin_a9982c7a3f6103c88c64160a5854c35cd}{sell} = float (self.\hyperlink{classexchange_1_1_exchange_a7cf9e52f993627955a2e242c388daaeb}{ticker}[\textcolor{stringliteral}{'ticker'}][\textcolor{stringliteral}{'sell'}])
+\hypertarget{exchange_8py_source.tex_l00299}{}\hyperlink{classexchange_1_1_mercado_bitcoin_a0b9c2d465601a48e3b8838354e931c39}{00299}         self.\hyperlink{classexchange_1_1_mercado_bitcoin_a0b9c2d465601a48e3b8838354e931c39}{high} = float (self.\hyperlink{classexchange_1_1_exchange_a7cf9e52f993627955a2e242c388daaeb}{ticker}[\textcolor{stringliteral}{'ticker'}][\textcolor{stringliteral}{'high'}])
+\hypertarget{exchange_8py_source.tex_l00300}{}\hyperlink{classexchange_1_1_mercado_bitcoin_aaa3aae824bfc5ba3b7dc5252e9554713}{00300}         self.\hyperlink{classexchange_1_1_mercado_bitcoin_aaa3aae824bfc5ba3b7dc5252e9554713}{low}  = float (self.\hyperlink{classexchange_1_1_exchange_a7cf9e52f993627955a2e242c388daaeb}{ticker}[\textcolor{stringliteral}{'ticker'}][\textcolor{stringliteral}{'low'}])
+\hypertarget{exchange_8py_source.tex_l00301}{}\hyperlink{classexchange_1_1_mercado_bitcoin_a5f2759cd17d5dd36bc813c815543f3cc}{00301}         self.\hyperlink{classexchange_1_1_mercado_bitcoin_a5f2759cd17d5dd36bc813c815543f3cc}{last} = float (self.\hyperlink{classexchange_1_1_exchange_a7cf9e52f993627955a2e242c388daaeb}{ticker}[\textcolor{stringliteral}{'ticker'}][\textcolor{stringliteral}{'last'}])
+\hypertarget{exchange_8py_source.tex_l00302}{}\hyperlink{classexchange_1_1_mercado_bitcoin_a1c163489086ba85b960db821117cd433}{00302}         self.\hyperlink{classexchange_1_1_mercado_bitcoin_a1c163489086ba85b960db821117cd433}{vol}  = float (self.\hyperlink{classexchange_1_1_exchange_a7cf9e52f993627955a2e242c388daaeb}{ticker}[\textcolor{stringliteral}{'ticker'}][\textcolor{stringliteral}{'vol'}])
+00303     
+\hypertarget{exchange_8py_source.tex_l00304}{}\hyperlink{classexchange_1_1_mercado_bitcoin_aeee983ba4f72223a11fb914d22902c56}{00304}         self.\hyperlink{classexchange_1_1_mercado_bitcoin_aeee983ba4f72223a11fb914d22902c56}{dt} = datetime.datetime.fromtimestamp (float (self.\hyperlink{classexchange_1_1_mercado_bitcoin_ac4630b08e08f9eeb9dad838dc9dc0cda}{ts}))
+00305     
+\hypertarget{exchange_8py_source.tex_l00306}{}\hyperlink{classexchange_1_1_mercado_bitcoin_a2e6fe3e59daf6791688af7ed15772452}{00306}     \textcolor{keyword}{def }\hyperlink{classexchange_1_1_mercado_bitcoin_a2e6fe3e59daf6791688af7ed15772452}{get\_ticker} (self):
+00307         super ().get\_ticker ()
+00308         
+00309         dt   = self.\hyperlink{classexchange_1_1_mercado_bitcoin_aeee983ba4f72223a11fb914d22902c56}{dt}
+00310         buy  = self.\hyperlink{classexchange_1_1_mercado_bitcoin_ada27b62a35286b9f5dbb54590c5bacd2}{buy}
+00311         sell = self.\hyperlink{classexchange_1_1_mercado_bitcoin_a9982c7a3f6103c88c64160a5854c35cd}{sell}
+00312         high = self.\hyperlink{classexchange_1_1_mercado_bitcoin_a0b9c2d465601a48e3b8838354e931c39}{high}
+00313         low  = self.\hyperlink{classexchange_1_1_mercado_bitcoin_aaa3aae824bfc5ba3b7dc5252e9554713}{low}
+00314         last = self.\hyperlink{classexchange_1_1_mercado_bitcoin_a5f2759cd17d5dd36bc813c815543f3cc}{last}
+00315         
+00316         result = (dt, sell, buy, high, low, last)
+00317         
+00318         \textcolor{keywordflow}{return} result
+00319     
+\hypertarget{exchange_8py_source.tex_l00320}{}\hyperlink{classexchange_1_1_mercado_bitcoin_a5c2280e8efc3dd148d724e9b73bd9243}{00320}     \textcolor{keyword}{def }\hyperlink{classexchange_1_1_mercado_bitcoin_a5c2280e8efc3dd148d724e9b73bd9243}{mk\_ticker} (self):
+00321         super ().get\_ticker ()
+00322         
+00323         exch = self.\hyperlink{classexchange_1_1_mercado_bitcoin_a68701550b43374441e52ea2082d88400}{exch}
+00324         pair = self.\hyperlink{classexchange_1_1_mercado_bitcoin_a879f8ca352d313230d72e6e8785985a1}{pair}
+00325         dt   = self.\hyperlink{classexchange_1_1_mercado_bitcoin_ac4630b08e08f9eeb9dad838dc9dc0cda}{ts}
+00326         buy  = self.\hyperlink{classexchange_1_1_mercado_bitcoin_ada27b62a35286b9f5dbb54590c5bacd2}{buy}
+00327         sell = self.\hyperlink{classexchange_1_1_mercado_bitcoin_a9982c7a3f6103c88c64160a5854c35cd}{sell}
+00328         high = self.\hyperlink{classexchange_1_1_mercado_bitcoin_a0b9c2d465601a48e3b8838354e931c39}{high}
+00329         low  = self.\hyperlink{classexchange_1_1_mercado_bitcoin_aaa3aae824bfc5ba3b7dc5252e9554713}{low}
+00330         last = self.\hyperlink{classexchange_1_1_mercado_bitcoin_a5f2759cd17d5dd36bc813c815543f3cc}{last}
+00331         vol  = self.\hyperlink{classexchange_1_1_mercado_bitcoin_a1c163489086ba85b960db821117cd433}{vol}
+00332         
+00333         result = Ticker (exch, pair, dt, buy, sell, high, low, last, vol)
+00334         
+00335         \textcolor{keywordflow}{return} result
+00336     
+\hypertarget{exchange_8py_source.tex_l00337}{}\hyperlink{classexchange_1_1_mercado_bitcoin_a0d7b9201247f88f3013e83fd8e8012d0}{00337}     \textcolor{keyword}{def }\hyperlink{classexchange_1_1_mercado_bitcoin_a0d7b9201247f88f3013e83fd8e8012d0}{get\_exch\_name} (self):
+00338         \textcolor{keywordflow}{return} \textcolor{stringliteral}{"Mercado Bitcoin"}
+00339     
+\hypertarget{exchange_8py_source.tex_l00340}{}\hyperlink{classexchange_1_1_mercado_bitcoin_a61500a3a404e9dc0279717d1d2de85f4}{00340}     \textcolor{keyword}{def }\hyperlink{classexchange_1_1_mercado_bitcoin_a61500a3a404e9dc0279717d1d2de85f4}{get\_exch\_prefix} (self):
+00341         \textcolor{keywordflow}{return} \textcolor{stringliteral}{"mbt"}
+00342         
+\hypertarget{exchange_8py_source.tex_l00343}{}\hyperlink{classexchange_1_1_mercado_bitcoin_a821c555e2d39fb9993d0c1c381837aa8}{00343}     \textcolor{keyword}{def }\hyperlink{classexchange_1_1_mercado_bitcoin_a821c555e2d39fb9993d0c1c381837aa8}{get\_original} (self):
+00344         \textcolor{keywordflow}{return} self.\hyperlink{classexchange_1_1_exchange_af69daf804599e27f7431632d91b2c3b9}{original} 
+00345         
+\hypertarget{exchange_8py_source.tex_l00346}{}\hyperlink{classexchange_1_1_mercado_bitcoin_a42dd78e0cca02c3ab3c185545a879b26}{00346}     \textcolor{keyword}{def }\hyperlink{classexchange_1_1_mercado_bitcoin_a42dd78e0cca02c3ab3c185545a879b26}{\_\_str\_\_} (self):
+00347         result = json.dumps (self.\_\_dict\_\_, cls = DatetimeEncoder)
+00348         
+00349         \textcolor{comment}{# Normal function termination}
+00350         \textcolor{keywordflow}{return} result
+00351         
+\hypertarget{exchange_8py_source.tex_l00352}{}\hyperlink{classexchange_1_1_ok_coin}{00352} \textcolor{keyword}{class }\hyperlink{classexchange_1_1_ok_coin}{OkCoin} (\hyperlink{classexchange_1_1_exchange}{Exchange}):
+\hypertarget{exchange_8py_source.tex_l00353}{}\hyperlink{classexchange_1_1_ok_coin_a81305ced2eb23b94feb7195d1d42afc2}{00353}     U\_TICKER = \textcolor{stringliteral}{'https://www.okcoin.com/api/v1/ticker.do?symbol=btc\_usd'}
+00354     
+\hypertarget{exchange_8py_source.tex_l00355}{}\hyperlink{classexchange_1_1_ok_coin_ad3023a05231b37239fc5e2b220e2ae4c}{00355}     \textcolor{keyword}{def }\hyperlink{classexchange_1_1_ok_coin_ad3023a05231b37239fc5e2b220e2ae4c}{\_\_init\_\_} (self):
+00356         super ().\_\_init\_\_ ()
+00357         
+\hypertarget{exchange_8py_source.tex_l00358}{}\hyperlink{classexchange_1_1_ok_coin_ac3ae7a770ea55b1b52ff0d909182d387}{00358}     \textcolor{keyword}{def }\hyperlink{classexchange_1_1_ok_coin_ac3ae7a770ea55b1b52ff0d909182d387}{process\_ticker} (self):
+\hypertarget{exchange_8py_source.tex_l00359}{}\hyperlink{classexchange_1_1_ok_coin_a22678c192b53ddf34e8a636e0cdaf4d4}{00359}         self.\hyperlink{classexchange_1_1_ok_coin_a22678c192b53ddf34e8a636e0cdaf4d4}{exch} = self.\hyperlink{classexchange_1_1_exchange_a8f095bac98d7ad212f93bfcdff458bf7}{get\_exch\_name} ()
+\hypertarget{exchange_8py_source.tex_l00360}{}\hyperlink{classexchange_1_1_ok_coin_a52f3b919f86565518d46c49c5b8f66a6}{00360}         self.\hyperlink{classexchange_1_1_ok_coin_a52f3b919f86565518d46c49c5b8f66a6}{pair} = \textcolor{stringliteral}{'BTCUSD'}
+\hypertarget{exchange_8py_source.tex_l00361}{}\hyperlink{classexchange_1_1_ok_coin_a0fe6263a7f58a6fa8a688929976b7e4a}{00361}         self.\hyperlink{classexchange_1_1_ok_coin_a0fe6263a7f58a6fa8a688929976b7e4a}{ts}   = int   (self.\hyperlink{classexchange_1_1_exchange_a7cf9e52f993627955a2e242c388daaeb}{ticker}[\textcolor{stringliteral}{'date'}])
+\hypertarget{exchange_8py_source.tex_l00362}{}\hyperlink{classexchange_1_1_ok_coin_aaf828e37142a83cbfb12d193313f6d43}{00362}         self.\hyperlink{classexchange_1_1_ok_coin_aaf828e37142a83cbfb12d193313f6d43}{buy}  = float (self.\hyperlink{classexchange_1_1_exchange_a7cf9e52f993627955a2e242c388daaeb}{ticker}[\textcolor{stringliteral}{'ticker'}][\textcolor{stringliteral}{'buy'}])
+\hypertarget{exchange_8py_source.tex_l00363}{}\hyperlink{classexchange_1_1_ok_coin_aadb487d2e2f277374a747e1bcb0bd40b}{00363}         self.\hyperlink{classexchange_1_1_ok_coin_aadb487d2e2f277374a747e1bcb0bd40b}{sell} = float (self.\hyperlink{classexchange_1_1_exchange_a7cf9e52f993627955a2e242c388daaeb}{ticker}[\textcolor{stringliteral}{'ticker'}][\textcolor{stringliteral}{'sell'}])
+\hypertarget{exchange_8py_source.tex_l00364}{}\hyperlink{classexchange_1_1_ok_coin_af9d9dbcfc86404510e7f9a5704e8eecd}{00364}         self.\hyperlink{classexchange_1_1_ok_coin_af9d9dbcfc86404510e7f9a5704e8eecd}{high} = float (self.\hyperlink{classexchange_1_1_exchange_a7cf9e52f993627955a2e242c388daaeb}{ticker}[\textcolor{stringliteral}{'ticker'}][\textcolor{stringliteral}{'high'}])
+\hypertarget{exchange_8py_source.tex_l00365}{}\hyperlink{classexchange_1_1_ok_coin_a1afa53e0ad63830d0585288abea42094}{00365}         self.\hyperlink{classexchange_1_1_ok_coin_a1afa53e0ad63830d0585288abea42094}{low}  = float (self.\hyperlink{classexchange_1_1_exchange_a7cf9e52f993627955a2e242c388daaeb}{ticker}[\textcolor{stringliteral}{'ticker'}][\textcolor{stringliteral}{'low'}])
+\hypertarget{exchange_8py_source.tex_l00366}{}\hyperlink{classexchange_1_1_ok_coin_a726afbe3a75835fdcbe523aed8d6763c}{00366}         self.\hyperlink{classexchange_1_1_ok_coin_a726afbe3a75835fdcbe523aed8d6763c}{last} = float (self.\hyperlink{classexchange_1_1_exchange_a7cf9e52f993627955a2e242c388daaeb}{ticker}[\textcolor{stringliteral}{'ticker'}][\textcolor{stringliteral}{'last'}])
+\hypertarget{exchange_8py_source.tex_l00367}{}\hyperlink{classexchange_1_1_ok_coin_ad0e78d6b3c0a24504be72a0216fc6549}{00367}         self.\hyperlink{classexchange_1_1_ok_coin_ad0e78d6b3c0a24504be72a0216fc6549}{vol}  = float (self.\hyperlink{classexchange_1_1_exchange_a7cf9e52f993627955a2e242c388daaeb}{ticker}[\textcolor{stringliteral}{'ticker'}][\textcolor{stringliteral}{'vol'}])
+00368     
+\hypertarget{exchange_8py_source.tex_l00369}{}\hyperlink{classexchange_1_1_ok_coin_ade9d7cddcfa54f2b1ba5452854bfd48b}{00369}         self.\hyperlink{classexchange_1_1_ok_coin_ade9d7cddcfa54f2b1ba5452854bfd48b}{dt} = datetime.datetime.fromtimestamp (float (self.\hyperlink{classexchange_1_1_ok_coin_a0fe6263a7f58a6fa8a688929976b7e4a}{ts}))
+00370     
+\hypertarget{exchange_8py_source.tex_l00371}{}\hyperlink{classexchange_1_1_ok_coin_a35425d16f4e0eb64677e32443fb4d91c}{00371}     \textcolor{keyword}{def }\hyperlink{classexchange_1_1_ok_coin_a35425d16f4e0eb64677e32443fb4d91c}{get\_ticker} (self):
+00372         super ().get\_ticker ()
+00373         
+00374         dt   = self.\hyperlink{classexchange_1_1_ok_coin_ade9d7cddcfa54f2b1ba5452854bfd48b}{dt}
+00375         buy  = self.\hyperlink{classexchange_1_1_ok_coin_aaf828e37142a83cbfb12d193313f6d43}{buy}
+00376         sell = self.\hyperlink{classexchange_1_1_ok_coin_aadb487d2e2f277374a747e1bcb0bd40b}{sell}
+00377         high = self.\hyperlink{classexchange_1_1_ok_coin_af9d9dbcfc86404510e7f9a5704e8eecd}{high}
+00378         low  = self.\hyperlink{classexchange_1_1_ok_coin_a1afa53e0ad63830d0585288abea42094}{low}
+00379         last = self.\hyperlink{classexchange_1_1_ok_coin_a726afbe3a75835fdcbe523aed8d6763c}{last}
+00380         
+00381         result = (dt, sell, buy, high, low, last)
+00382         
+00383         \textcolor{keywordflow}{return} result
+00384     
+\hypertarget{exchange_8py_source.tex_l00385}{}\hyperlink{classexchange_1_1_ok_coin_a5a24006154b66792398302f2e6509578}{00385}     \textcolor{keyword}{def }\hyperlink{classexchange_1_1_ok_coin_a5a24006154b66792398302f2e6509578}{mk\_ticker} (self):
+00386         super ().get\_ticker ()
+00387         
+00388         exch = self.\hyperlink{classexchange_1_1_ok_coin_a22678c192b53ddf34e8a636e0cdaf4d4}{exch}
+00389         pair = self.\hyperlink{classexchange_1_1_ok_coin_a52f3b919f86565518d46c49c5b8f66a6}{pair}
+00390         dt   = self.\hyperlink{classexchange_1_1_ok_coin_a0fe6263a7f58a6fa8a688929976b7e4a}{ts}
+00391         buy  = self.\hyperlink{classexchange_1_1_ok_coin_aaf828e37142a83cbfb12d193313f6d43}{buy}
+00392         sell = self.\hyperlink{classexchange_1_1_ok_coin_aadb487d2e2f277374a747e1bcb0bd40b}{sell}
+00393         high = self.\hyperlink{classexchange_1_1_ok_coin_af9d9dbcfc86404510e7f9a5704e8eecd}{high}
+00394         low  = self.\hyperlink{classexchange_1_1_ok_coin_a1afa53e0ad63830d0585288abea42094}{low}
+00395         last = self.\hyperlink{classexchange_1_1_ok_coin_a726afbe3a75835fdcbe523aed8d6763c}{last}
+00396         vol  = self.\hyperlink{classexchange_1_1_ok_coin_ad0e78d6b3c0a24504be72a0216fc6549}{vol}
+00397         
+00398         result = Ticker (exch, pair, dt, buy, sell, high, low, last, vol)
+00399         
+00400         \textcolor{keywordflow}{return} result
+00401         
+\hypertarget{exchange_8py_source.tex_l00402}{}\hyperlink{classexchange_1_1_ok_coin_aa1c262dbfc2f3e2c0339fadd68ece144}{00402}     \textcolor{keyword}{def }\hyperlink{classexchange_1_1_ok_coin_aa1c262dbfc2f3e2c0339fadd68ece144}{get\_original} (self):
+00403         \textcolor{keywordflow}{return} self.\hyperlink{classexchange_1_1_exchange_af69daf804599e27f7431632d91b2c3b9}{original} 
+00404     
+\hypertarget{exchange_8py_source.tex_l00405}{}\hyperlink{classexchange_1_1_ok_coin_a4bf45f3a1e9711ae38fd2eb01965e1d0}{00405}     \textcolor{keyword}{def }\hyperlink{classexchange_1_1_ok_coin_a4bf45f3a1e9711ae38fd2eb01965e1d0}{get\_exch\_name} (self):
+00406         \textcolor{keywordflow}{return} \textcolor{stringliteral}{"OkCoin"}
+00407     
+\hypertarget{exchange_8py_source.tex_l00408}{}\hyperlink{classexchange_1_1_ok_coin_a0ea57ae94a5e07e9387f830c67ceeed1}{00408}     \textcolor{keyword}{def }\hyperlink{classexchange_1_1_ok_coin_a0ea57ae94a5e07e9387f830c67ceeed1}{get\_exch\_prefix} (self):
+00409         \textcolor{keywordflow}{return} \textcolor{stringliteral}{"okc"}
+00410         
+\hypertarget{exchange_8py_source.tex_l00411}{}\hyperlink{classexchange_1_1_ok_coin_af726894627f12bc46d199de5f454f2f4}{00411}     \textcolor{keyword}{def }\hyperlink{classexchange_1_1_ok_coin_af726894627f12bc46d199de5f454f2f4}{\_\_str\_\_} (self):
+00412         result = json.dumps (self.\_\_dict\_\_, cls = DatetimeEncoder)
+00413         
+00414         \textcolor{comment}{# Normal function termination}
+00415         \textcolor{keywordflow}{return} result
+00416 
+\hypertarget{exchange_8py_source.tex_l00417}{}\hyperlink{namespaceexchange_aa5b6297f878f52d360f5c42066aa097b}{00417} \textcolor{keyword}{def }\hyperlink{namespaceexchange_aa5b6297f878f52d360f5c42066aa097b}{main} ():
+00418     exchanges = []
+00419     exchanges.append (FoxBit ())
+00420     exchanges.append (MercadoBitcoin ())
+00421     exchanges.append (OkCoin ())
+00422     
+00423     \textcolor{keywordflow}{for} exch \textcolor{keywordflow}{in} exchanges:
+00424         exch.get\_ticker ()
+00425         
+00426         \textcolor{keywordflow}{print} ( \textcolor{stringliteral}{"\{0\}:"}.format (exch.get\_exch\_name ()) )
+00427         \textcolor{keywordflow}{print} ( \textcolor{stringliteral}{"\(\backslash\)t\{0\}"}.format (exch) )
+00428         
+00429         ticker = exch.mk\_ticker ()
+00430         \textcolor{keywordflow}{print} ( \textcolor{stringliteral}{"\(\backslash\)t\{0\}"}.format (ticker) )
+00431         \textcolor{keywordflow}{print} ( \textcolor{stringliteral}{"\(\backslash\)tJSON: \{0\}"}.format (ticker.dumps ()) )
+00432         
+00433         \textcolor{keywordflow}{print} ( \textcolor{stringliteral}{'Original:\(\backslash\)n\(\backslash\)t\{0\}\(\backslash\)n'}.format (exch.get\_original ()) )
+00434     
+00435     \textcolor{keywordflow}{return} 0
+00436     
+00437 \textcolor{keywordflow}{if} \_\_name\_\_ == \textcolor{stringliteral}{'\_\_main\_\_'}:
+00438     sys.exit (main ())
+\end{DoxyCode}

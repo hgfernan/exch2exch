@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['sell',['sell',['../classexch2exch_1_1_xbt_prices.html#a06fd0cfb03d485af3364a0d86fbe5385',1,'exch2exch.XbtPrices.sell()'],['../classexchange_1_1_fox_bit.html#ac1fae4ef7a43254b71d7173a5cc6eeaf',1,'exchange.FoxBit.sell()'],['../classexchange_1_1_mercado_bitcoin.html#a9982c7a3f6103c88c64160a5854c35cd',1,'exchange.MercadoBitcoin.sell()'],['../classexchange_1_1_ok_coin.html#aadb487d2e2f277374a747e1bcb0bd40b',1,'exchange.OkCoin.sell()'],['../classraw__urlparser_1_1_xbt_prices.html#a22b483cac27a5b17f9e7b265c219bb99',1,'raw_urlparser.XbtPrices.sell()']]],
-  ['service',['service',['../classexch2exch_1_1_rates.html#a94c1394b9259d6a7c8f3c12bbd20e685',1,'exch2exch.Rates.service()'],['../classraw__urlparser_1_1_rates.html#acb05316e95a39bc42590a882712f854b',1,'raw_urlparser.Rates.service()']]]
+  ['pair',['pair',['../classexchange_1_1_ticker.html#a382f9199d13a7b5929a26065fad4e491',1,'exchange.Ticker.pair()'],['../classexchange_1_1_fox_bit.html#abfd6daf1cbad94eb74bba4c97fe4a574',1,'exchange.FoxBit.pair()'],['../classexchange_1_1_mercado_bitcoin.html#a879f8ca352d313230d72e6e8785985a1',1,'exchange.MercadoBitcoin.pair()'],['../classexchange_1_1_ok_coin.html#a52f3b919f86565518d46c49c5b8f66a6',1,'exchange.OkCoin.pair()']]],
+  ['prefix',['prefix',['../classe2e_1_1_application.html#a027ff25e5409ae17584978a09fc2611a',1,'e2e.Application.prefix()'],['../classrates_1_1_google.html#ada5de8700ad571d0ab819fa0163d6bbe',1,'rates.Google.prefix()'],['../classrates_1_1_x_rates.html#a3b92b41b0fbd77b44d01f094ff83dd9d',1,'rates.XRates.prefix()']]]
 ];

@@ -1,0 +1,469 @@
+\hypertarget{classe2e_1_1_application}{}\section{e2e.\+Application Class Reference}
+\label{classe2e_1_1_application}\index{e2e.\+Application@{e2e.\+Application}}
+
+
+Collaboration diagram for e2e.\+Application\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=218pt]{classe2e_1_1_application__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classe2e_1_1_application_a2267bd2e8d3114095e6271aed7f8c8c9}{\+\_\+\+\_\+init\+\_\+\+\_\+} (self)
+\item 
+def \hyperlink{classe2e_1_1_application_a72b854da6d69dbcb5031f24dccf9cc71}{gen\+Expectations} (self)
+\item 
+def \hyperlink{classe2e_1_1_application_a0f753699fabab3ae17407b36404d3b64}{gen\+Output} (self)
+\item 
+def \hyperlink{classe2e_1_1_application_ae7b9559aa388f8178300fb4d7a9f9257}{interpret\+Args} (self)
+\item 
+def \hyperlink{classe2e_1_1_application_a95da0cb34726f10409806c6d052494fc}{out\+Alternative\+Rates} (self)
+\item 
+def \hyperlink{classe2e_1_1_application_a1b099bee6f8170c4c52e7ae884d95b27}{out\+Destination\+Exchange} (self)
+\item 
+def \hyperlink{classe2e_1_1_application_a3e33fd00d85637393d48ea3f7dbd95c7}{out\+Main\+Rates} (self)
+\item 
+def \hyperlink{classe2e_1_1_application_adfad90d64cddb8d751961202264ca489}{out\+Origin\+Exchange} (self)
+\item 
+def \hyperlink{classe2e_1_1_application_a91b8b6df6456d27bed503849ffcdcc77}{parse\+Cmd\+Line} (self)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classe2e_1_1_application_a92626ca2a674ccbba7f743b13c77fd7b}{alt\+Rates}
+\item 
+\hyperlink{classe2e_1_1_application_abade6fc2e2c04ddd7e48137a2a7721bd}{args}
+\item 
+\hyperlink{classe2e_1_1_application_a027ff25e5409ae17584978a09fc2611a}{prefix}
+\item 
+\hyperlink{classe2e_1_1_application_a4d824ad36b051d2d629edb314385df0d}{suffix}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line \hyperlink{e2e_8py_source_l00117}{117} of file \hyperlink{e2e_8py_source}{e2e.\+py}.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{e2e\+::\+Application@{e2e\+::\+Application}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!e2e\+::\+Application@{e2e\+::\+Application}}
+\subsubsection[{\texorpdfstring{\+\_\+\+\_\+init\+\_\+\+\_\+(self)}{__init__(self)}}]{\setlength{\rightskip}{0pt plus 5cm}def e2e.\+Application.\+\_\+\+\_\+init\+\_\+\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{classe2e_1_1_application_a2267bd2e8d3114095e6271aed7f8c8c9}{}\label{classe2e_1_1_application_a2267bd2e8d3114095e6271aed7f8c8c9}
+
+
+Definition at line \hyperlink{e2e_8py_source_l00118}{118} of file \hyperlink{e2e_8py_source}{e2e.\+py}.
+
+
+\begin{DoxyCode}
+\hypertarget{classe2e_1_1_application.tex_l00118}{}\hyperlink{classe2e_1_1_application_a2267bd2e8d3114095e6271aed7f8c8c9}{00118}     \textcolor{keyword}{def }\hyperlink{classe2e_1_1_application_a2267bd2e8d3114095e6271aed7f8c8c9}{\_\_init\_\_} (self):
+00119         d = datetime.datetime.now ()
+\hypertarget{classe2e_1_1_application.tex_l00120}{}\hyperlink{classe2e_1_1_application_a4d824ad36b051d2d629edb314385df0d}{00120}         self.\hyperlink{classe2e_1_1_application_a4d824ad36b051d2d629edb314385df0d}{suffix} = d.strftime (\textcolor{stringliteral}{'%Y%m%d\_%H%M'})
+\hypertarget{classe2e_1_1_application.tex_l00121}{}\hyperlink{classe2e_1_1_application_a027ff25e5409ae17584978a09fc2611a}{00121}         self.\hyperlink{classe2e_1_1_application_a027ff25e5409ae17584978a09fc2611a}{prefix} = \textcolor{stringliteral}{'e2e'}
+00122     
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{e2e\+::\+Application@{e2e\+::\+Application}!gen\+Expectations@{gen\+Expectations}}
+\index{gen\+Expectations@{gen\+Expectations}!e2e\+::\+Application@{e2e\+::\+Application}}
+\subsubsection[{\texorpdfstring{gen\+Expectations(self)}{genExpectations(self)}}]{\setlength{\rightskip}{0pt plus 5cm}def e2e.\+Application.\+gen\+Expectations (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{classe2e_1_1_application_a72b854da6d69dbcb5031f24dccf9cc71}{}\label{classe2e_1_1_application_a72b854da6d69dbcb5031f24dccf9cc71}
+
+
+Definition at line \hyperlink{e2e_8py_source_l00346}{346} of file \hyperlink{e2e_8py_source}{e2e.\+py}.
+
+
+\begin{DoxyCode}
+\hypertarget{classe2e_1_1_application.tex_l00346}{}\hyperlink{classe2e_1_1_application_a72b854da6d69dbcb5031f24dccf9cc71}{00346}     \textcolor{keyword}{def }\hyperlink{classe2e_1_1_application_a72b854da6d69dbcb5031f24dccf9cc71}{genExpectations} (self):
+00347         \textcolor{keywordflow}{pass}
+00348     
+\end{DoxyCode}
+\index{e2e\+::\+Application@{e2e\+::\+Application}!gen\+Output@{gen\+Output}}
+\index{gen\+Output@{gen\+Output}!e2e\+::\+Application@{e2e\+::\+Application}}
+\subsubsection[{\texorpdfstring{gen\+Output(self)}{genOutput(self)}}]{\setlength{\rightskip}{0pt plus 5cm}def e2e.\+Application.\+gen\+Output (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{classe2e_1_1_application_a0f753699fabab3ae17407b36404d3b64}{}\label{classe2e_1_1_application_a0f753699fabab3ae17407b36404d3b64}
+
+
+Definition at line \hyperlink{e2e_8py_source_l00349}{349} of file \hyperlink{e2e_8py_source}{e2e.\+py}.
+
+
+\begin{DoxyCode}
+\hypertarget{classe2e_1_1_application.tex_l00349}{}\hyperlink{classe2e_1_1_application_a0f753699fabab3ae17407b36404d3b64}{00349}     \textcolor{keyword}{def }\hyperlink{classe2e_1_1_application_a0f753699fabab3ae17407b36404d3b64}{genOutput} (self):
+00350         \textcolor{keywordflow}{pass}
+00351 
+\end{DoxyCode}
+\index{e2e\+::\+Application@{e2e\+::\+Application}!interpret\+Args@{interpret\+Args}}
+\index{interpret\+Args@{interpret\+Args}!e2e\+::\+Application@{e2e\+::\+Application}}
+\subsubsection[{\texorpdfstring{interpret\+Args(self)}{interpretArgs(self)}}]{\setlength{\rightskip}{0pt plus 5cm}def e2e.\+Application.\+interpret\+Args (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{classe2e_1_1_application_ae7b9559aa388f8178300fb4d7a9f9257}{}\label{classe2e_1_1_application_ae7b9559aa388f8178300fb4d7a9f9257}
+
+
+Definition at line \hyperlink{e2e_8py_source_l00166}{166} of file \hyperlink{e2e_8py_source}{e2e.\+py}.
+
+
+
+References \hyperlink{e2e_8py_source_l00161}{e2e.\+Application.\+args}, \hyperlink{e2e_8py_source_l00121}{e2e.\+Application.\+prefix}, and \hyperlink{e2e_8py_source_l00120}{e2e.\+Application.\+suffix}.
+
+
+\begin{DoxyCode}
+\hypertarget{classe2e_1_1_application.tex_l00166}{}\hyperlink{classe2e_1_1_application_ae7b9559aa388f8178300fb4d7a9f9257}{00166}     \textcolor{keyword}{def }\hyperlink{classe2e_1_1_application_ae7b9559aa388f8178300fb4d7a9f9257}{interpretArgs} (self):
+00167         result = Parameters ()
+00168         
+00169         \textcolor{comment}{# Open summary file}
+00170         \textcolor{keywordflow}{if} self.args.summary == \textcolor{keywordtype}{None}:
+00171             \textcolor{keywordflow}{try}:
+00172                 sum\_nam =  self.\hyperlink{classe2e_1_1_application_a027ff25e5409ae17584978a09fc2611a}{prefix} + \textcolor{stringliteral}{'\_'} + self.\hyperlink{classe2e_1_1_application_a4d824ad36b051d2d629edb314385df0d}{suffix} + \textcolor{stringliteral}{'.sum'}
+00173                 sum\_f = open (sum\_nam, \textcolor{stringliteral}{'w'})
+00174                 
+00175             \textcolor{keywordflow}{except} IOError:
+00176                 \textcolor{comment}{# TODO an application specific msg here}
+00177                 \textcolor{keywordflow}{raise}
+00178         \textcolor{keywordflow}{else}:
+00179             sum\_f = sys.\_\_stdout\_\_
+00180             
+00181         result.setSummary (sum\_f)
+00182             
+00183         \textcolor{comment}{# TODO Open output files for destination exchange}
+00184         \textcolor{keywordflow}{try}:
+00185             cnc\_nam  =  self.\hyperlink{classe2e_1_1_application_a027ff25e5409ae17584978a09fc2611a}{prefix} + \textcolor{stringliteral}{'\_conclusion'}
+00186             cnc\_nam += \textcolor{stringliteral}{'\_'} + self.\hyperlink{classe2e_1_1_application_a4d824ad36b051d2d629edb314385df0d}{suffix} + \textcolor{stringliteral}{'.json'}
+00187             cnc\_f = open (cnc\_nam, \textcolor{stringliteral}{'w'})
+00188             
+00189         \textcolor{keywordflow}{except} IOError:
+00190             \textcolor{comment}{# TODO an application specific msg here}
+00191             \textcolor{keywordflow}{raise}
+00192             
+00193         result.setConclusion (cnc\_f)
+00194             
+00195         \textcolor{comment}{# TODO confirm that destinatian and origin exchanges are not equal}
+00196         args = self.\hyperlink{classe2e_1_1_application_abade6fc2e2c04ddd7e48137a2a7721bd}{args} 
+00197         \textcolor{keywordflow}{if} args.origin == args.destination:
+00198             fmt = \textcolor{stringliteral}{'ERROR: Origin exchange \{0\} equal to destination \{1\}'}
+00199             msg = fmt.format (args.origin, args.destination)
+00200             \textcolor{keywordflow}{raise} Exception (msg)
+00201 
+00202         \textcolor{comment}{# TODO get exchange names }
+00203         gfExchange = \hyperlink{classgen__factory_1_1_gen_factory}{gen\_factory.GenFactory} (
+      \hyperlink{classexchange_1_1_exchange}{exchange.Exchange})
+00204         exch\_names = gfExchange.validClassNames ()
+00205             
+00206         \textcolor{comment}{# TODO validate destination exchange}
+00207         \textcolor{keywordflow}{if} args.destination \textcolor{keywordflow}{not} \textcolor{keywordflow}{in} exch\_names:
+00208             fmt  = \textcolor{stringliteral}{'ERROR: Destination exchange \{0\} is not a valid '}
+00209             fmt += \textcolor{stringliteral}{'exchange name.\(\backslash\)n'}
+00210             fmt += \textcolor{stringliteral}{'\(\backslash\)tShould be one of \{1\}'}
+00211             msg = fmt.format (args.destination, exch\_names)
+00212             \textcolor{keywordflow}{raise} Exception (msg)
+00213             
+00214         \textcolor{comment}{# TODO validate origin exchange}
+00215         \textcolor{keywordflow}{if} args.origin \textcolor{keywordflow}{not} \textcolor{keywordflow}{in} exch\_names:
+00216             fmt  = \textcolor{stringliteral}{'ERROR: Origin exchange \{0\} is not a valid exchange name.\(\backslash\)n'}
+00217             fmt += \textcolor{stringliteral}{'\(\backslash\)tShould be one of \{1\}'}
+00218             msg = fmt.format (args.origin, exch\_names)
+00219             \textcolor{keywordflow}{raise} Exception (msg)
+00220         
+00221         \textcolor{comment}{# TODO open connection with destination exchange}
+00222         dstExchange = gfExchange.genObject (args.destination)
+00223         result.setDestination (dstExchange)
+00224             
+00225         \textcolor{comment}{# TODO Open output files for destination exchange}
+00226         \textcolor{keywordflow}{try}:
+00227             dst\_nam  =  self.\hyperlink{classe2e_1_1_application_a027ff25e5409ae17584978a09fc2611a}{prefix} + \textcolor{stringliteral}{'\_'} + dstExchange.get\_exch\_prefix ()
+00228             dst\_nam += \textcolor{stringliteral}{'\_'} + self.\hyperlink{classe2e_1_1_application_a4d824ad36b051d2d629edb314385df0d}{suffix} + \textcolor{stringliteral}{'.json'}
+00229             e2e\_dst\_f = open (dst\_nam, \textcolor{stringliteral}{'w'})
+00230             
+00231         \textcolor{keywordflow}{except} IOError:
+00232             \textcolor{comment}{# TODO an application specific msg here}
+00233             \textcolor{keywordflow}{raise}
+00234             
+00235         result.setDestinationOutput (e2e\_dst\_f)
+00236             
+00237         \textcolor{keywordflow}{try}:
+00238             dst\_nam  = dstExchange.get\_exch\_prefix ()
+00239             dst\_nam += \textcolor{stringliteral}{'\_'} + self.\hyperlink{classe2e_1_1_application_a4d824ad36b051d2d629edb314385df0d}{suffix} + \textcolor{stringliteral}{'.json'}
+00240             dst\_f = open (dst\_nam, \textcolor{stringliteral}{'w'})
+00241             
+00242         \textcolor{keywordflow}{except} IOError:
+00243             \textcolor{comment}{# TODO an application specific msg here}
+00244             \textcolor{keywordflow}{raise}
+00245             
+00246         result.setRawDestinationOutput (dst\_f)
+00247             
+00248         \textcolor{comment}{# TODO open connection with origin exchange}
+00249         orgExchange = gfExchange.genObject (args.origin)
+00250         result.setOrigin (orgExchange)
+00251             
+00252         \textcolor{comment}{# TODO Open output files for origin exchange}
+00253         \textcolor{keywordflow}{try}:
+00254             org\_nam  =  self.\hyperlink{classe2e_1_1_application_a027ff25e5409ae17584978a09fc2611a}{prefix} + \textcolor{stringliteral}{'\_'} + orgExchange.get\_exch\_prefix ()
+00255             org\_nam += \textcolor{stringliteral}{'\_'} + self.\hyperlink{classe2e_1_1_application_a4d824ad36b051d2d629edb314385df0d}{suffix} + \textcolor{stringliteral}{'.json'}
+00256             e2e\_org\_f = open (org\_nam, \textcolor{stringliteral}{'w'})
+00257             
+00258         \textcolor{keywordflow}{except} IOError:
+00259             \textcolor{comment}{# TODO an application specific2 msg here}
+00260             \textcolor{keywordflow}{raise}
+00261 
+00262         result.setOriginOutput (e2e\_org\_f)
+00263             
+00264         \textcolor{keywordflow}{try}:
+00265             org\_nam  = orgExchange.get\_exch\_prefix ()
+00266             org\_nam += \textcolor{stringliteral}{'\_'} + self.\hyperlink{classe2e_1_1_application_a4d824ad36b051d2d629edb314385df0d}{suffix} + \textcolor{stringliteral}{'.json'}
+00267             org\_f = open (org\_nam, \textcolor{stringliteral}{'w'})
+00268             
+00269         \textcolor{keywordflow}{except} IOError:
+00270             \textcolor{comment}{# TODO an application specific msg here}
+00271             \textcolor{keywordflow}{raise}
+00272             
+00273         result.setRawOriginOutput (org\_f)
+00274             
+00275         \textcolor{comment}{# TODO open connection with main rate service}
+00276         gfRates = \hyperlink{classgen__factory_1_1_gen_factory}{gen\_factory.GenFactory} (\hyperlink{classrates_1_1_rates}{rates.Rates})
+00277         rates\_names = gfRates.validClassNames ()
+00278 
+00279         \textcolor{comment}{# TODO validate main rate service}
+00280         \textcolor{keywordflow}{if} args.rates \textcolor{keywordflow}{not} \textcolor{keywordflow}{in} rates\_names:
+00281             fmt  = \textcolor{stringliteral}{'ERROR: Main rates service \{0\} is not a valid rates name.\(\backslash\)n'}
+00282             fmt += \textcolor{stringliteral}{'\(\backslash\)tShould be one of \{1\}'}
+00283             msg = fmt.format (args.rate, rates\_names)
+00284             \textcolor{keywordflow}{raise} Exception (msg)
+00285 
+00286         mainRates = gfRates.genObject (args.rates)
+00287         result.setMainRates (mainRates)
+00288         
+00289         \textcolor{comment}{# TODO Open output file for main rate service}
+00290         \textcolor{keywordflow}{try}:
+00291             rat\_nam  =  mainRates.getServicePrefix () + \textcolor{stringliteral}{'\_'}
+00292             rat\_nam +=  self.\hyperlink{classe2e_1_1_application_a4d824ad36b051d2d629edb314385df0d}{suffix} + \textcolor{stringliteral}{'.rat'}
+00293             rat\_f = open (rat\_nam, \textcolor{stringliteral}{'w'})
+00294             
+00295         \textcolor{keywordflow}{except} IOError:
+00296             \textcolor{comment}{# TODO an application specific msg here}
+00297             \textcolor{keywordflow}{raise}        
+00298 
+00299         result.setMainRatesOutput (rat\_f)
+00300             
+00301         \textcolor{comment}{# TODO open connections with auxiliary rate services}
+00302         altRatesNames = []        
+00303         \textcolor{keywordflow}{for} rateName \textcolor{keywordflow}{in} rates\_names:
+00304             \textcolor{keywordflow}{if} rateName == args.rates:
+00305                 \textcolor{keywordflow}{continue} 
+00306             
+00307             altRatesNames.append (rateName)
+00308 
+\hypertarget{classe2e_1_1_application.tex_l00309}{}\hyperlink{classe2e_1_1_application_a92626ca2a674ccbba7f743b13c77fd7b}{00309}         self.\hyperlink{classe2e_1_1_application_a92626ca2a674ccbba7f743b13c77fd7b}{altRates} = []            
+00310         \textcolor{keywordflow}{for} rateName \textcolor{keywordflow}{in} altRatesNames:
+00311             self.altRates.append (gfRates.genObject (rateName))
+00312             
+00313         \textcolor{keywordflow}{try}:
+00314             altrat\_nam  =  \textcolor{stringliteral}{'all\_rates'} + \textcolor{stringliteral}{'\_'}
+00315             altrat\_nam +=  self.\hyperlink{classe2e_1_1_application_a4d824ad36b051d2d629edb314385df0d}{suffix} + \textcolor{stringliteral}{'.rat'}
+00316             altrat\_f = open (altrat\_nam, \textcolor{stringliteral}{'w'})
+00317             
+00318         \textcolor{keywordflow}{except} IOError:
+00319             \textcolor{comment}{# TODO an application specific msg here}
+00320             \textcolor{keywordflow}{raise}        
+00321 
+00322         result.setMainRatesOutput (altrat\_f)
+00323         
+00324         args = self.\hyperlink{classe2e_1_1_application_abade6fc2e2c04ddd7e48137a2a7721bd}{args} 
+00325                
+00326         \textcolor{keywordflow}{if} args.verbose:            
+00327             \textcolor{keywordflow}{print} (\textcolor{stringliteral}{'Verbose output enabled'})
+00328             
+00329             \textcolor{keywordflow}{print} (\textcolor{stringliteral}{'Main rate service: \{0\}'}.format (args.rates))
+00330             \textcolor{keywordflow}{print} (\textcolor{stringliteral}{'Exchanges'})
+00331             \textcolor{keywordflow}{print} (\textcolor{stringliteral}{'Origin:            \{0\}'}.format (args.origin))
+00332             \textcolor{keywordflow}{print} (\textcolor{stringliteral}{'Destination:       \{0\}'}.format (args.destination))
+00333             
+\end{DoxyCode}
+\index{e2e\+::\+Application@{e2e\+::\+Application}!out\+Alternative\+Rates@{out\+Alternative\+Rates}}
+\index{out\+Alternative\+Rates@{out\+Alternative\+Rates}!e2e\+::\+Application@{e2e\+::\+Application}}
+\subsubsection[{\texorpdfstring{out\+Alternative\+Rates(self)}{outAlternativeRates(self)}}]{\setlength{\rightskip}{0pt plus 5cm}def e2e.\+Application.\+out\+Alternative\+Rates (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{classe2e_1_1_application_a95da0cb34726f10409806c6d052494fc}{}\label{classe2e_1_1_application_a95da0cb34726f10409806c6d052494fc}
+
+
+Definition at line \hyperlink{e2e_8py_source_l00337}{337} of file \hyperlink{e2e_8py_source}{e2e.\+py}.
+
+
+\begin{DoxyCode}
+\hypertarget{classe2e_1_1_application.tex_l00337}{}\hyperlink{classe2e_1_1_application_a95da0cb34726f10409806c6d052494fc}{00337}     \textcolor{keyword}{def }\hyperlink{classe2e_1_1_application_a95da0cb34726f10409806c6d052494fc}{outAlternativeRates} (self):
+00338         \textcolor{keywordflow}{pass}
+00339     
+\end{DoxyCode}
+\index{e2e\+::\+Application@{e2e\+::\+Application}!out\+Destination\+Exchange@{out\+Destination\+Exchange}}
+\index{out\+Destination\+Exchange@{out\+Destination\+Exchange}!e2e\+::\+Application@{e2e\+::\+Application}}
+\subsubsection[{\texorpdfstring{out\+Destination\+Exchange(self)}{outDestinationExchange(self)}}]{\setlength{\rightskip}{0pt plus 5cm}def e2e.\+Application.\+out\+Destination\+Exchange (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{classe2e_1_1_application_a1b099bee6f8170c4c52e7ae884d95b27}{}\label{classe2e_1_1_application_a1b099bee6f8170c4c52e7ae884d95b27}
+
+
+Definition at line \hyperlink{e2e_8py_source_l00343}{343} of file \hyperlink{e2e_8py_source}{e2e.\+py}.
+
+
+\begin{DoxyCode}
+\hypertarget{classe2e_1_1_application.tex_l00343}{}\hyperlink{classe2e_1_1_application_a1b099bee6f8170c4c52e7ae884d95b27}{00343}     \textcolor{keyword}{def }\hyperlink{classe2e_1_1_application_a1b099bee6f8170c4c52e7ae884d95b27}{outDestinationExchange} (self):
+00344         \textcolor{keywordflow}{pass}
+00345     
+\end{DoxyCode}
+\index{e2e\+::\+Application@{e2e\+::\+Application}!out\+Main\+Rates@{out\+Main\+Rates}}
+\index{out\+Main\+Rates@{out\+Main\+Rates}!e2e\+::\+Application@{e2e\+::\+Application}}
+\subsubsection[{\texorpdfstring{out\+Main\+Rates(self)}{outMainRates(self)}}]{\setlength{\rightskip}{0pt plus 5cm}def e2e.\+Application.\+out\+Main\+Rates (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{classe2e_1_1_application_a3e33fd00d85637393d48ea3f7dbd95c7}{}\label{classe2e_1_1_application_a3e33fd00d85637393d48ea3f7dbd95c7}
+
+
+Definition at line \hyperlink{e2e_8py_source_l00334}{334} of file \hyperlink{e2e_8py_source}{e2e.\+py}.
+
+
+\begin{DoxyCode}
+\hypertarget{classe2e_1_1_application.tex_l00334}{}\hyperlink{classe2e_1_1_application_a3e33fd00d85637393d48ea3f7dbd95c7}{00334}     \textcolor{keyword}{def }\hyperlink{classe2e_1_1_application_a3e33fd00d85637393d48ea3f7dbd95c7}{outMainRates} (self):
+00335         \textcolor{keywordflow}{pass}
+00336     
+\end{DoxyCode}
+\index{e2e\+::\+Application@{e2e\+::\+Application}!out\+Origin\+Exchange@{out\+Origin\+Exchange}}
+\index{out\+Origin\+Exchange@{out\+Origin\+Exchange}!e2e\+::\+Application@{e2e\+::\+Application}}
+\subsubsection[{\texorpdfstring{out\+Origin\+Exchange(self)}{outOriginExchange(self)}}]{\setlength{\rightskip}{0pt plus 5cm}def e2e.\+Application.\+out\+Origin\+Exchange (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{classe2e_1_1_application_adfad90d64cddb8d751961202264ca489}{}\label{classe2e_1_1_application_adfad90d64cddb8d751961202264ca489}
+
+
+Definition at line \hyperlink{e2e_8py_source_l00340}{340} of file \hyperlink{e2e_8py_source}{e2e.\+py}.
+
+
+\begin{DoxyCode}
+\hypertarget{classe2e_1_1_application.tex_l00340}{}\hyperlink{classe2e_1_1_application_adfad90d64cddb8d751961202264ca489}{00340}     \textcolor{keyword}{def }\hyperlink{classe2e_1_1_application_adfad90d64cddb8d751961202264ca489}{outOriginExchange} (self):
+00341         \textcolor{keywordflow}{pass}
+00342     
+\end{DoxyCode}
+\index{e2e\+::\+Application@{e2e\+::\+Application}!parse\+Cmd\+Line@{parse\+Cmd\+Line}}
+\index{parse\+Cmd\+Line@{parse\+Cmd\+Line}!e2e\+::\+Application@{e2e\+::\+Application}}
+\subsubsection[{\texorpdfstring{parse\+Cmd\+Line(self)}{parseCmdLine(self)}}]{\setlength{\rightskip}{0pt plus 5cm}def e2e.\+Application.\+parse\+Cmd\+Line (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{classe2e_1_1_application_a91b8b6df6456d27bed503849ffcdcc77}{}\label{classe2e_1_1_application_a91b8b6df6456d27bed503849ffcdcc77}
+
+
+Definition at line \hyperlink{e2e_8py_source_l00123}{123} of file \hyperlink{e2e_8py_source}{e2e.\+py}.
+
+
+\begin{DoxyCode}
+\hypertarget{classe2e_1_1_application.tex_l00123}{}\hyperlink{classe2e_1_1_application_a91b8b6df6456d27bed503849ffcdcc77}{00123}     \textcolor{keyword}{def }\hyperlink{classe2e_1_1_application_a91b8b6df6456d27bed503849ffcdcc77}{parseCmdLine} (self):
+00124         desc = \textcolor{stringliteral}{'Compare two exchanges for a round operation'}
+00125         parser = argparse.ArgumentParser (description = desc)
+00126         
+00127         desc = \textcolor{stringliteral}{'Summary report (Default is stdout)'} 
+00128         parser.add\_argument (\textcolor{stringliteral}{'-s'}, \textcolor{stringliteral}{'--summary'}, required = \textcolor{keyword}{False},
+00129                              help = desc)
+00130         desc = \textcolor{stringliteral}{'File name for the conclusion of the arbitrage'}
+00131         parser.add\_argument (\textcolor{stringliteral}{'-c'}, \textcolor{stringliteral}{'--conclusion'}, required = \textcolor{keyword}{True},
+00132                              help = desc)
+00133         parser.add\_argument (\textcolor{stringliteral}{'-m'}, \textcolor{stringliteral}{'--main'}, metavar = \textcolor{stringliteral}{"RATES"}, 
+00134                              default = \textcolor{stringliteral}{'Google'},
+00135                              help = \textcolor{stringliteral}{'Main rate service'})
+00136         parser.add\_argument (\textcolor{stringliteral}{'-a'}, \textcolor{stringliteral}{'--alternative'}, metavar = \textcolor{stringliteral}{"RATES"},
+00137                              default = \textcolor{stringliteral}{'XRates'},
+00138                              help = \textcolor{stringliteral}{'Alternative rate service'})
+00139         parser.add\_argument (\textcolor{stringliteral}{'--origin'}, \textcolor{stringliteral}{'-o'}, metavar = \textcolor{stringliteral}{"EXCHANGE"},
+00140                              required = \textcolor{keyword}{True},
+00141                              help = \textcolor{stringliteral}{'Origin exchange'})
+00142         parser.add\_argument (\textcolor{stringliteral}{'-d'}, \textcolor{stringliteral}{'--destination'}, metavar = \textcolor{stringliteral}{"EXCHANGE"},
+00143                              required = \textcolor{keyword}{True},
+00144                              help = \textcolor{stringliteral}{'Destination exchange'})
+00145         parser.add\_argument (\textcolor{stringliteral}{'-v'}, \textcolor{stringliteral}{'--verbose'}, action = \textcolor{stringliteral}{"store\_true"},
+00146                              help = \textcolor{stringliteral}{'Increase output verbosity'})
+00147                              
+00148         args = parser.parse\_args ()
+00149         
+00150         \textcolor{comment}{# TODO complete the copy of cmdline parameters}
+00151         
+00152         result = Args ()
+00153         result.summary     = args.summary 
+00154         result.conclusion  = args.conclusion 
+00155         result.rates       = args.rates 
+00156         result.alternative = args.alternative 
+00157         result.origin      = args.origin 
+00158         result.destination = args.destination 
+00159         result.verbose     = args.verbose
+00160         
+\hypertarget{classe2e_1_1_application.tex_l00161}{}\hyperlink{classe2e_1_1_application_abade6fc2e2c04ddd7e48137a2a7721bd}{00161}         self.\hyperlink{classe2e_1_1_application_abade6fc2e2c04ddd7e48137a2a7721bd}{args} = result
+00162         
+00163         \textcolor{comment}{# Normal function termination}
+00164         \textcolor{keywordflow}{return} result
+00165         
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\index{e2e\+::\+Application@{e2e\+::\+Application}!alt\+Rates@{alt\+Rates}}
+\index{alt\+Rates@{alt\+Rates}!e2e\+::\+Application@{e2e\+::\+Application}}
+\subsubsection[{\texorpdfstring{alt\+Rates}{altRates}}]{\setlength{\rightskip}{0pt plus 5cm}e2e.\+Application.\+alt\+Rates}\hypertarget{classe2e_1_1_application_a92626ca2a674ccbba7f743b13c77fd7b}{}\label{classe2e_1_1_application_a92626ca2a674ccbba7f743b13c77fd7b}
+
+
+Definition at line \hyperlink{e2e_8py_source_l00309}{309} of file \hyperlink{e2e_8py_source}{e2e.\+py}.
+
+\index{e2e\+::\+Application@{e2e\+::\+Application}!args@{args}}
+\index{args@{args}!e2e\+::\+Application@{e2e\+::\+Application}}
+\subsubsection[{\texorpdfstring{args}{args}}]{\setlength{\rightskip}{0pt plus 5cm}e2e.\+Application.\+args}\hypertarget{classe2e_1_1_application_abade6fc2e2c04ddd7e48137a2a7721bd}{}\label{classe2e_1_1_application_abade6fc2e2c04ddd7e48137a2a7721bd}
+
+
+Definition at line \hyperlink{e2e_8py_source_l00161}{161} of file \hyperlink{e2e_8py_source}{e2e.\+py}.
+
+
+
+Referenced by \hyperlink{e2e_8py_source_l00166}{e2e.\+Application.\+interpret\+Args()}.
+
+\index{e2e\+::\+Application@{e2e\+::\+Application}!prefix@{prefix}}
+\index{prefix@{prefix}!e2e\+::\+Application@{e2e\+::\+Application}}
+\subsubsection[{\texorpdfstring{prefix}{prefix}}]{\setlength{\rightskip}{0pt plus 5cm}e2e.\+Application.\+prefix}\hypertarget{classe2e_1_1_application_a027ff25e5409ae17584978a09fc2611a}{}\label{classe2e_1_1_application_a027ff25e5409ae17584978a09fc2611a}
+
+
+Definition at line \hyperlink{e2e_8py_source_l00121}{121} of file \hyperlink{e2e_8py_source}{e2e.\+py}.
+
+
+
+Referenced by \hyperlink{e2e_8py_source_l00166}{e2e.\+Application.\+interpret\+Args()}.
+
+\index{e2e\+::\+Application@{e2e\+::\+Application}!suffix@{suffix}}
+\index{suffix@{suffix}!e2e\+::\+Application@{e2e\+::\+Application}}
+\subsubsection[{\texorpdfstring{suffix}{suffix}}]{\setlength{\rightskip}{0pt plus 5cm}e2e.\+Application.\+suffix}\hypertarget{classe2e_1_1_application_a4d824ad36b051d2d629edb314385df0d}{}\label{classe2e_1_1_application_a4d824ad36b051d2d629edb314385df0d}
+
+
+Definition at line \hyperlink{e2e_8py_source_l00120}{120} of file \hyperlink{e2e_8py_source}{e2e.\+py}.
+
+
+
+Referenced by \hyperlink{e2e_8py_source_l00166}{e2e.\+Application.\+interpret\+Args()}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/hilton/github/exch2exh/\hyperlink{e2e_8py}{e2e.\+py}\end{DoxyCompactItemize}

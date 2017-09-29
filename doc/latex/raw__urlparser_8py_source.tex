@@ -1,0 +1,341 @@
+\hypertarget{raw__urlparser_8py_source}{}\section{/home/hilton/github/exch2exh/raw\+\_\+urlparser.py}
+
+\begin{DoxyCode}
+\hypertarget{raw__urlparser_8py_source.tex_l00001}{}\hyperlink{namespaceraw__urlparser}{00001} \textcolor{comment}{#! /usr/bin/env python3 }
+00002 
+00003 \textcolor{comment}{# -*- coding: utf-8 -*-}
+00004 \textcolor{stringliteral}{"""}
+00005 \textcolor{stringliteral}{A testbed for URL parsing of the exch2exch project}
+00006 \textcolor{stringliteral}{}
+00007 \textcolor{stringliteral}{Created on Tue Jun  6 23:23:43 2017}
+00008 \textcolor{stringliteral}{}
+00009 \textcolor{stringliteral}{@author: hilton}
+00010 \textcolor{stringliteral}{From }
+00011 \textcolor{stringliteral}{* https://docs.python.org/3.4/library/urllib.request.html#module-urllib.request}
+00012 \textcolor{stringliteral}{* http://www.pythonforbeginners.com/python-on-the-web/how-to-use-urllib2-in-python/]}
+00013 \textcolor{stringliteral}{* https://www.mercadobitcoin.com.br/api-doc/}
+00014 \textcolor{stringliteral}{"""}
+00015 
+00016 \textcolor{keyword}{import} math           \textcolor{comment}{# trunc()  }
+00017 \textcolor{keyword}{import} time           \textcolor{comment}{# time()  }
+00018 \textcolor{keyword}{import} json           \textcolor{comment}{# loads()  }
+00019 \textcolor{keyword}{import} datetime       \textcolor{comment}{# class Datetime  }
+00020 \textcolor{keyword}{import} urllib.request \textcolor{comment}{# class Request, urlopen()}
+00021 
+\hypertarget{raw__urlparser_8py_source.tex_l00022}{}\hyperlink{classraw__urlparser_1_1_rates}{00022} \textcolor{keyword}{class }\hyperlink{classraw__urlparser_1_1_rates}{Rates}:
+\hypertarget{raw__urlparser_8py_source.tex_l00023}{}\hyperlink{classraw__urlparser_1_1_rates_a7d9b61bce159f7e52bdf8a1ebfada45d}{00023}     \textcolor{keyword}{def }\hyperlink{classraw__urlparser_1_1_rates_a7d9b61bce159f7e52bdf8a1ebfada45d}{\_\_init\_\_} (self, dt, usd2brl, brl2usd, service):
+\hypertarget{raw__urlparser_8py_source.tex_l00024}{}\hyperlink{classraw__urlparser_1_1_rates_a09b3c7cb595f3135c3eda648b1bb4c3f}{00024}         self.\hyperlink{classraw__urlparser_1_1_rates_a09b3c7cb595f3135c3eda648b1bb4c3f}{dt}  = dt
+\hypertarget{raw__urlparser_8py_source.tex_l00025}{}\hyperlink{classraw__urlparser_1_1_rates_a52d9b688be8385a87783b27839749b4a}{00025}         self.\hyperlink{classraw__urlparser_1_1_rates_a52d9b688be8385a87783b27839749b4a}{usd2brl} = usd2brl
+\hypertarget{raw__urlparser_8py_source.tex_l00026}{}\hyperlink{classraw__urlparser_1_1_rates_adc9df007bec75344f9f89cb631d1aeb3}{00026}         self.\hyperlink{classraw__urlparser_1_1_rates_adc9df007bec75344f9f89cb631d1aeb3}{brl2usd} = brl2usd
+\hypertarget{raw__urlparser_8py_source.tex_l00027}{}\hyperlink{classraw__urlparser_1_1_rates_acb05316e95a39bc42590a882712f854b}{00027}         self.\hyperlink{classraw__urlparser_1_1_rates_acb05316e95a39bc42590a882712f854b}{service} = service
+00028     
+\hypertarget{raw__urlparser_8py_source.tex_l00029}{}\hyperlink{classraw__urlparser_1_1_rates_a28e3ff2d763165bfa725b8c4954722f7}{00029}     \textcolor{keyword}{def }\hyperlink{classraw__urlparser_1_1_rates_a28e3ff2d763165bfa725b8c4954722f7}{getBrl2Usd} (self):
+00030         \textcolor{keywordflow}{return} self.\hyperlink{classraw__urlparser_1_1_rates_adc9df007bec75344f9f89cb631d1aeb3}{brl2usd}
+00031     
+\hypertarget{raw__urlparser_8py_source.tex_l00032}{}\hyperlink{classraw__urlparser_1_1_rates_ab21c629a2310a331a7b66e991868b6d3}{00032}     \textcolor{keyword}{def }\hyperlink{classraw__urlparser_1_1_rates_ab21c629a2310a331a7b66e991868b6d3}{getUsd2Brl} (self):
+00033         \textcolor{keywordflow}{return} self.\hyperlink{classraw__urlparser_1_1_rates_a52d9b688be8385a87783b27839749b4a}{usd2brl}
+00034     
+\hypertarget{raw__urlparser_8py_source.tex_l00035}{}\hyperlink{classraw__urlparser_1_1_rates_ab4bd310d43849fed2df00b15b387254e}{00035}     \textcolor{keyword}{def }\hyperlink{classraw__urlparser_1_1_rates_ab4bd310d43849fed2df00b15b387254e}{getServiceName} (self):
+00036         \textcolor{keywordflow}{return} self.\hyperlink{classraw__urlparser_1_1_rates_acb05316e95a39bc42590a882712f854b}{service}
+00037         
+\hypertarget{raw__urlparser_8py_source.tex_l00038}{}\hyperlink{classraw__urlparser_1_1_rates_a3e8a9922ba7e95bd54945c87d07e5f0e}{00038}     \textcolor{keyword}{def }\hyperlink{classraw__urlparser_1_1_rates_a3e8a9922ba7e95bd54945c87d07e5f0e}{\_\_str\_\_} (self):
+00039         result = \textcolor{stringliteral}{''}
+00040 
+00041         service = self.\hyperlink{classraw__urlparser_1_1_rates_acb05316e95a39bc42590a882712f854b}{service}
+00042         dt      = self.\hyperlink{classraw__urlparser_1_1_rates_a09b3c7cb595f3135c3eda648b1bb4c3f}{dt}
+00043         usd2brl = self.\hyperlink{classraw__urlparser_1_1_rates_a52d9b688be8385a87783b27839749b4a}{usd2brl}
+00044         brl2usd = self.\hyperlink{classraw__urlparser_1_1_rates_adc9df007bec75344f9f89cb631d1aeb3}{brl2usd}
+00045         ftupl = (service, dt, usd2brl, brl2usd)
+00046         
+00047         result = \textcolor{stringliteral}{"\{0\}: \{1\}: USD2BRL \{2:.4f\}, BRL2USD \{3:.4f\}"}.format (*ftupl)
+00048 
+00049         \textcolor{keywordflow}{return} result        
+00050         
+\hypertarget{raw__urlparser_8py_source.tex_l00051}{}\hyperlink{classraw__urlparser_1_1_xbt_prices}{00051} \textcolor{keyword}{class }\hyperlink{classraw__urlparser_1_1_xbt_prices}{XbtPrices}:
+\hypertarget{raw__urlparser_8py_source.tex_l00052}{}\hyperlink{classraw__urlparser_1_1_xbt_prices_ae5bf5349c30bd61107bcd3259fc1f455}{00052}     \textcolor{keyword}{def }\hyperlink{classraw__urlparser_1_1_xbt_prices_ae5bf5349c30bd61107bcd3259fc1f455}{\_\_init\_\_} (self, dt, sell, buy, exch, coin):
+\hypertarget{raw__urlparser_8py_source.tex_l00053}{}\hyperlink{classraw__urlparser_1_1_xbt_prices_ae094aa3e73d21d0be219a085f09bcf13}{00053}         self.\hyperlink{classraw__urlparser_1_1_xbt_prices_ae094aa3e73d21d0be219a085f09bcf13}{dt}   = dt
+\hypertarget{raw__urlparser_8py_source.tex_l00054}{}\hyperlink{classraw__urlparser_1_1_xbt_prices_a22b483cac27a5b17f9e7b265c219bb99}{00054}         self.\hyperlink{classraw__urlparser_1_1_xbt_prices_a22b483cac27a5b17f9e7b265c219bb99}{sell} = sell
+\hypertarget{raw__urlparser_8py_source.tex_l00055}{}\hyperlink{classraw__urlparser_1_1_xbt_prices_a87eba659d6598ffd66c694535e1b7a7a}{00055}         self.\hyperlink{classraw__urlparser_1_1_xbt_prices_a87eba659d6598ffd66c694535e1b7a7a}{buy}  = buy
+\hypertarget{raw__urlparser_8py_source.tex_l00056}{}\hyperlink{classraw__urlparser_1_1_xbt_prices_a016bbd95465aaa14b5c434047df7b7fb}{00056}         self.\hyperlink{classraw__urlparser_1_1_xbt_prices_a016bbd95465aaa14b5c434047df7b7fb}{exch} = exch
+\hypertarget{raw__urlparser_8py_source.tex_l00057}{}\hyperlink{classraw__urlparser_1_1_xbt_prices_a8d253ccd987bce28e3aaba7a9c486e5f}{00057}         self.\hyperlink{classraw__urlparser_1_1_xbt_prices_a8d253ccd987bce28e3aaba7a9c486e5f}{coin} = coin
+00058         
+\hypertarget{raw__urlparser_8py_source.tex_l00059}{}\hyperlink{classraw__urlparser_1_1_xbt_prices_a0e29f458ee5bd80b2dfff3b0f08277f5}{00059}     \textcolor{keyword}{def }\hyperlink{classraw__urlparser_1_1_xbt_prices_a0e29f458ee5bd80b2dfff3b0f08277f5}{getDateTime} (self):
+00060         \textcolor{keywordflow}{return} self.\hyperlink{classraw__urlparser_1_1_xbt_prices_ae094aa3e73d21d0be219a085f09bcf13}{dt}
+00061         
+\hypertarget{raw__urlparser_8py_source.tex_l00062}{}\hyperlink{classraw__urlparser_1_1_xbt_prices_a263e29ed8476de0cdce0017695f7baaa}{00062}     \textcolor{keyword}{def }\hyperlink{classraw__urlparser_1_1_xbt_prices_a263e29ed8476de0cdce0017695f7baaa}{getBuy} (self):
+00063         \textcolor{keywordflow}{return} self.\hyperlink{classraw__urlparser_1_1_xbt_prices_a87eba659d6598ffd66c694535e1b7a7a}{buy}
+00064         
+\hypertarget{raw__urlparser_8py_source.tex_l00065}{}\hyperlink{classraw__urlparser_1_1_xbt_prices_a1a1d7e7b76f611ae334b0950b334dda1}{00065}     \textcolor{keyword}{def }\hyperlink{classraw__urlparser_1_1_xbt_prices_a1a1d7e7b76f611ae334b0950b334dda1}{getSell} (self):
+00066         \textcolor{keywordflow}{return} self.\hyperlink{classraw__urlparser_1_1_xbt_prices_a22b483cac27a5b17f9e7b265c219bb99}{sell}
+00067         
+\hypertarget{raw__urlparser_8py_source.tex_l00068}{}\hyperlink{classraw__urlparser_1_1_xbt_prices_a63b0b449b67f9d1c05d5a3c45f52135a}{00068}     \textcolor{keyword}{def }\hyperlink{classraw__urlparser_1_1_xbt_prices_a63b0b449b67f9d1c05d5a3c45f52135a}{getExchangeName} (self):
+00069         \textcolor{keywordflow}{return} self.\hyperlink{classraw__urlparser_1_1_xbt_prices_a016bbd95465aaa14b5c434047df7b7fb}{exch}
+00070         
+\hypertarget{raw__urlparser_8py_source.tex_l00071}{}\hyperlink{classraw__urlparser_1_1_xbt_prices_abb420398e97de1582f8be154c6a66133}{00071}     \textcolor{keyword}{def }\hyperlink{classraw__urlparser_1_1_xbt_prices_abb420398e97de1582f8be154c6a66133}{getCoinName} (self):
+00072         \textcolor{keywordflow}{return} self.\hyperlink{classraw__urlparser_1_1_xbt_prices_a8d253ccd987bce28e3aaba7a9c486e5f}{coin}
+00073 
+\hypertarget{raw__urlparser_8py_source.tex_l00074}{}\hyperlink{classraw__urlparser_1_1_xbt_prices_a8613d27cac39cc195364ea8de17b9660}{00074}     \textcolor{keyword}{def }\hyperlink{classraw__urlparser_1_1_xbt_prices_a8613d27cac39cc195364ea8de17b9660}{\_\_str\_\_} (self):
+00075         result = \textcolor{stringliteral}{''}
+00076         
+00077         dt, sell, buy = self.\hyperlink{classraw__urlparser_1_1_xbt_prices_ae094aa3e73d21d0be219a085f09bcf13}{dt}, self.\hyperlink{classraw__urlparser_1_1_xbt_prices_a22b483cac27a5b17f9e7b265c219bb99}{sell}, self.\hyperlink{classraw__urlparser_1_1_xbt_prices_a87eba659d6598ffd66c694535e1b7a7a}{buy}
+00078         exch, coin   = self.\hyperlink{classraw__urlparser_1_1_xbt_prices_a016bbd95465aaa14b5c434047df7b7fb}{exch}, self.\hyperlink{classraw__urlparser_1_1_xbt_prices_a8d253ccd987bce28e3aaba7a9c486e5f}{coin}
+00079         ftpl = exch, dt, sell, coin, buy
+00080         result = \textcolor{stringliteral}{"\{0\}: \{1\}: Sell \{2:.4f\} \{3\}, Buy \{4:.4f\} \{3\}"}.format (*ftpl)
+00081         
+00082         \textcolor{keywordflow}{return} result
+00083         
+\hypertarget{raw__urlparser_8py_source.tex_l00084}{}\hyperlink{classraw__urlparser_1_1_differences}{00084} \textcolor{keyword}{class }\hyperlink{classraw__urlparser_1_1_differences}{Differences}:
+\hypertarget{raw__urlparser_8py_source.tex_l00085}{}\hyperlink{classraw__urlparser_1_1_differences_ab96f235ba2697e17fea2e3dc83ab2ca0}{00085}     \textcolor{keyword}{def }\hyperlink{classraw__urlparser_1_1_differences_ab96f235ba2697e17fea2e3dc83ab2ca0}{\_\_init\_\_} (self, rates, mb, ok):
+\hypertarget{raw__urlparser_8py_source.tex_l00086}{}\hyperlink{classraw__urlparser_1_1_differences_ad4e7eadb659a1cdcba90793cc52af174}{00086}         self.\hyperlink{classraw__urlparser_1_1_differences_ad4e7eadb659a1cdcba90793cc52af174}{rates} = rates
+\hypertarget{raw__urlparser_8py_source.tex_l00087}{}\hyperlink{classraw__urlparser_1_1_differences_ab4c3073b8c569b7791ab3b8e21e9b364}{00087}         self.\hyperlink{classraw__urlparser_1_1_differences_ab4c3073b8c569b7791ab3b8e21e9b364}{mb} = mb
+\hypertarget{raw__urlparser_8py_source.tex_l00088}{}\hyperlink{classraw__urlparser_1_1_differences_a46fe97bedb977585a0b27d7408ace118}{00088}         self.\hyperlink{classraw__urlparser_1_1_differences_a46fe97bedb977585a0b27d7408ace118}{ok} = ok
+00089         
+\hypertarget{raw__urlparser_8py_source.tex_l00090}{}\hyperlink{classraw__urlparser_1_1_differences_af8457a8e542de086595e7fbbffdf713c}{00090}         self.\hyperlink{classraw__urlparser_1_1_differences_af8457a8e542de086595e7fbbffdf713c}{dmin} = mb.getSell () - ok.getSell ()
+00091         
+\hypertarget{raw__urlparser_8py_source.tex_l00092}{}\hyperlink{classraw__urlparser_1_1_differences_ad2b06158b655136bc7743dc6ac8d1e2a}{00092}         self.\hyperlink{classraw__urlparser_1_1_differences_ad2b06158b655136bc7743dc6ac8d1e2a}{dmax} = mb.getBuy () - ok.getSell ()
+00093         
+\hypertarget{raw__urlparser_8py_source.tex_l00094}{}\hyperlink{classraw__urlparser_1_1_differences_af19faaea85ca8ac0d327c8443ddd99ef}{00094}     \textcolor{keyword}{def }\hyperlink{classraw__urlparser_1_1_differences_af19faaea85ca8ac0d327c8443ddd99ef}{getMinDelta} (self):
+00095         \textcolor{keywordflow}{return} self.\hyperlink{classraw__urlparser_1_1_differences_af8457a8e542de086595e7fbbffdf713c}{dmin}
+00096         
+\hypertarget{raw__urlparser_8py_source.tex_l00097}{}\hyperlink{classraw__urlparser_1_1_differences_acfa09d743c08cc813a5bc435aa6875da}{00097}     \textcolor{keyword}{def }\hyperlink{classraw__urlparser_1_1_differences_acfa09d743c08cc813a5bc435aa6875da}{getMaxDelta} (self):
+00098         \textcolor{keywordflow}{return} self.\hyperlink{classraw__urlparser_1_1_differences_ad2b06158b655136bc7743dc6ac8d1e2a}{dmax}
+00099         
+\hypertarget{raw__urlparser_8py_source.tex_l00100}{}\hyperlink{classraw__urlparser_1_1_differences_ae30a248dbbe9fde42b0bcbd81160f070}{00100}     \textcolor{keyword}{def }\hyperlink{classraw__urlparser_1_1_differences_ae30a248dbbe9fde42b0bcbd81160f070}{\_\_str\_\_} (self):
+00101         result = \textcolor{stringliteral}{""}
+00102         
+00103         oname = self.ok.getExchangeName ()
+00104         mname = self.ok.getExchangeName ()
+00105         sname = self.rates.getServiceName ()
+00106         
+00107         fmt = \textcolor{stringliteral}{"Calculation between \{0\} and \{1\} rates, with conversion from \{1\}"}
+00108         result = fmt.format (oname, mname, sname)
+00109         fmt = \textcolor{stringliteral}{"\(\backslash\)nIntervals: minimum \{0:.4f\}, maximum \{1:.4f\}"}
+00110         result += fmt.format (self.\hyperlink{classraw__urlparser_1_1_differences_af19faaea85ca8ac0d327c8443ddd99ef}{getMinDelta} (), self.\hyperlink{classraw__urlparser_1_1_differences_acfa09d743c08cc813a5bc435aa6875da}{getMaxDelta} ())
+00111         \textcolor{keywordflow}{return} result
+00112 
+00113 \textcolor{comment}{#        }
+00114 \textcolor{comment}{# }
+00115 \textcolor{comment}{# Google section }
+00116 \textcolor{comment}{#}
+00117 
+\hypertarget{raw__urlparser_8py_source.tex_l00118}{}\hyperlink{namespaceraw__urlparser_a4faaced9140d84b3f953c21eb1c4a19d}{00118} \textcolor{keyword}{def }\hyperlink{namespaceraw__urlparser_a4faaced9140d84b3f953c21eb1c4a19d}{get\_google\_rate} (url):
+00119     result = 0
+00120 
+00121     f = urllib.request.urlopen (url)
+00122     
+00123     line = f.readline ()
+00124     \textcolor{keywordflow}{while} line != b\textcolor{stringliteral}{''}:
+00125         ind = line.find (b\textcolor{stringliteral}{'currency\_converter'})
+00126         \textcolor{keywordflow}{if} ind != -1:
+00127             \textcolor{keywordflow}{print} (ind)
+00128             \textcolor{keywordflow}{print} (line)
+00129             
+00130             fields = line.split ()
+00131             \textcolor{keywordflow}{print} (fields[5])
+00132             rate = fields[5].split (b\textcolor{stringliteral}{'>'})[1]
+00133             \textcolor{keywordflow}{print} (rate)
+00134             
+00135             \textcolor{keywordflow}{break}
+00136             
+00137         line = f.readline ()
+00138     
+00139     result = float (rate)
+00140     
+00141     \textcolor{keywordflow}{return} result
+00142     
+\hypertarget{raw__urlparser_8py_source.tex_l00143}{}\hyperlink{namespaceraw__urlparser_aa5905f1b040de4865980526ac3c6a16c}{00143} \textcolor{keyword}{def }\hyperlink{namespaceraw__urlparser_aa5905f1b040de4865980526ac3c6a16c}{get\_google\_rates} (urls):
+00144     ts = math.trunc (time.time () + 0.5)
+00145     dt = datetime.datetime.fromtimestamp (ts)
+00146     
+00147     \textcolor{comment}{# TODO round the seconds fraction}
+00148     
+00149     usd2brl = urls[0]
+00150     brl2usd = urls[1]
+00151     
+00152     usd = 0
+00153     brl = 0
+00154     
+00155     usd = get\_google\_rate (usd2brl)
+00156     brl = get\_google\_rate (brl2usd)
+00157     
+00158     result = (dt, usd, brl)
+00159     
+00160     \textcolor{keywordflow}{return} result
+00161         
+\hypertarget{raw__urlparser_8py_source.tex_l00162}{}\hyperlink{namespaceraw__urlparser_ab9602b24afd1ae28d96beb085c37410e}{00162} \textcolor{keyword}{def }\hyperlink{namespaceraw__urlparser_ab9602b24afd1ae28d96beb085c37410e}{get\_x\_rates} (url):
+00163     ts = math.trunc (time.time () + 0.5)
+00164     dt = datetime.datetime.fromtimestamp (ts)
+00165     
+00166     \textcolor{comment}{# TODO round the seconds fraction}
+00167     
+00168     \textcolor{comment}{# Adding a fake browser User-Agent to make site x-rates.com happy}
+00169     headers = \{\textcolor{stringliteral}{'User-Agent'} : \textcolor{stringliteral}{'Mozilla 5.10'}\}
+00170         
+00171     \textcolor{comment}{# Create the Request, joining URL and User-Agent}
+00172     request = urllib.request.Request (url, headers = headers)
+00173 
+00174     \textcolor{comment}{# Open the URL as file}
+00175     f = urllib.request.urlopen (request)
+00176     
+00177     \textcolor{comment}{# Input over the file to get the rates}
+00178     line = \textcolor{keywordtype}{None}
+00179     \textcolor{keywordflow}{while} line != b\textcolor{stringliteral}{''}:
+00180         line = f.readline ()
+00181         ind = line.find (b\textcolor{stringliteral}{'BRL'})
+00182         \textcolor{keywordflow}{if} ind == -1:
+00183             \textcolor{keywordflow}{continue} 
+00184         
+00185         ind = line.find (b\textcolor{stringliteral}{'rtRates'})
+00186         \textcolor{keywordflow}{if} ind == -1:
+00187             \textcolor{keywordflow}{continue} 
+00188         
+00189         \textcolor{keywordflow}{print} (line)
+00190         
+00191         \textcolor{keywordflow}{if} line.find (b\textcolor{stringliteral}{'from=USD'}) != -1:
+00192             \textcolor{keywordflow}{print} (\textcolor{stringliteral}{'\(\backslash\)nfields'})
+00193             fields = line.split (b\textcolor{stringliteral}{'>'})
+00194             
+00195             \textcolor{keywordflow}{print} (fields[2])
+00196             susd = fields[2].split (b\textcolor{stringliteral}{'<'})[0]
+00197             \textcolor{keywordflow}{print} (susd)
+00198             usd = float (susd)
+00199             \textcolor{keywordflow}{print} (usd)
+00200             \textcolor{keywordflow}{print} (\textcolor{stringliteral}{'\(\backslash\)n'})
+00201         
+00202         \textcolor{keywordflow}{elif} line.find (b\textcolor{stringliteral}{'from=BRL'}) != -1:
+00203             \textcolor{keywordflow}{print} (\textcolor{stringliteral}{'\(\backslash\)nfields'})
+00204             fields = line.split (b\textcolor{stringliteral}{'>'})
+00205             
+00206             \textcolor{keywordflow}{print} (fields[2])
+00207             sbrl = fields[2].split (b\textcolor{stringliteral}{'<'})[0]
+00208             \textcolor{keywordflow}{print} (sbrl)
+00209             brl = float (sbrl)
+00210             \textcolor{keywordflow}{print} (brl)
+00211             \textcolor{keywordflow}{print} (\textcolor{stringliteral}{'\(\backslash\)n'})
+00212             
+00213     result = (dt, usd, brl)
+00214     
+00215     \textcolor{keywordflow}{return} result
+00216 
+\hypertarget{raw__urlparser_8py_source.tex_l00217}{}\hyperlink{namespaceraw__urlparser_ae2341143e866401a993a5a964610f7a6}{00217} \textcolor{keyword}{def }\hyperlink{namespaceraw__urlparser_ae2341143e866401a993a5a964610f7a6}{get\_mb\_rates} (url):
+00218     f = urllib.request.urlopen (url)
+00219     
+00220     line = f.readline ()
+00221     
+00222     rv = json.loads (line.decode (encoding=\textcolor{stringliteral}{'utf-8'}))
+00223     
+00224     ts   = int   (rv[\textcolor{stringliteral}{'ticker'}][\textcolor{stringliteral}{'date'}])
+00225     buy  = float (rv[\textcolor{stringliteral}{'ticker'}][\textcolor{stringliteral}{'buy'}])
+00226     sell = float (rv[\textcolor{stringliteral}{'ticker'}][\textcolor{stringliteral}{'sell'}])
+00227     
+00228     dt = datetime.datetime.fromtimestamp (float (ts))
+00229     
+00230     result = (dt, sell, buy)
+00231     
+00232     \textcolor{keywordflow}{return} result
+00233 
+\hypertarget{raw__urlparser_8py_source.tex_l00234}{}\hyperlink{namespaceraw__urlparser_aaf342c097e3df48d46b7296e8177d737}{00234} \textcolor{keyword}{def }\hyperlink{namespaceraw__urlparser_aaf342c097e3df48d46b7296e8177d737}{get\_ok\_rates} (url):
+00235     f = urllib.request.urlopen (url)
+00236     
+00237     line = f.readline ()
+00238     
+00239     rv = json.loads (line.decode (encoding=\textcolor{stringliteral}{'utf-8'}))
+00240     
+00241     ts   = int   (rv[\textcolor{stringliteral}{'date'}])
+00242     buy  = float (rv[\textcolor{stringliteral}{'ticker'}][\textcolor{stringliteral}{'buy'}])
+00243     sell = float (rv[\textcolor{stringliteral}{'ticker'}][\textcolor{stringliteral}{'sell'}])
+00244     
+00245     dt = datetime.datetime.fromtimestamp (float (ts))
+00246     
+00247     result = (dt, sell, buy)
+00248     
+00249     \textcolor{keywordflow}{return} result
+00250     
+\hypertarget{raw__urlparser_8py_source.tex_l00251}{}\hyperlink{namespaceraw__urlparser_a63e1f0abe7b1f43c4891ce9aec98261d}{00251} u\_usd2brl = \textcolor{stringliteral}{'https://www.google.com/finance/converter?a=1&from=USD&to=BRL'}
+00252 \textcolor{comment}{# rv = get\_google\_rate (usd2brl)}
+00253 \textcolor{comment}{# print (rv)}
+00254 
+\hypertarget{raw__urlparser_8py_source.tex_l00255}{}\hyperlink{namespaceraw__urlparser_a876711ddd7ebb3991a35cc1768d1d22c}{00255} u\_brl2usd = \textcolor{stringliteral}{'https://www.google.com/finance/converter?a=1&from=BRL&to=USD'}
+00256 \textcolor{comment}{# rv = get\_google\_rate (brl2usd)}
+00257 \textcolor{comment}{# print (rv)}
+00258 
+\hypertarget{raw__urlparser_8py_source.tex_l00259}{}\hyperlink{namespaceraw__urlparser_aded92a1146e1ce1f14fd79a361f947f9}{00259} urls = (u\_usd2brl, u\_brl2usd)
+00260 
+\hypertarget{raw__urlparser_8py_source.tex_l00261}{}\hyperlink{namespaceraw__urlparser_adb724d2d0b7c561e8b0c53a42831efce}{00261} dt, usd2brl, brl2usd = get\_google\_rates (urls)
+00262 
+\hypertarget{raw__urlparser_8py_source.tex_l00263}{}\hyperlink{namespaceraw__urlparser_a1b812abf4fbbd8478dca91446c66b646}{00263} google = Rates (dt, usd2brl, brl2usd, \textcolor{stringliteral}{"Google"})
+00264 
+00265 \textcolor{comment}{#ggl\_tupl = (dt, usd2brl, brl2usd)}
+00266 \textcolor{comment}{#print ("Google: \{0\}: USD2BRL \{1\}, BRL2USD \{2\}".format (*ggl\_tupl))}
+00267 \textcolor{keywordflow}{print} (google)
+00268 \textcolor{keywordflow}{print} ()
+00269 
+00270 \textcolor{comment}{#}
+00271 \textcolor{comment}{#}
+00272 \textcolor{comment}{# X-rates section }
+00273 \textcolor{comment}{# }
+00274 
+\hypertarget{raw__urlparser_8py_source.tex_l00275}{}\hyperlink{namespaceraw__urlparser_a9242b893f4f49ef7cc0d4e599b70daa4}{00275} url = \textcolor{stringliteral}{'http://www.x-rates.com/table/?from=USD&amount=1'}
+00276 dt, brl2usd, usd2brl = get\_x\_rates (url)
+00277 
+\hypertarget{raw__urlparser_8py_source.tex_l00278}{}\hyperlink{namespaceraw__urlparser_a76bac0500149c0b7dc5e8dfef56f05c3}{00278} x\_rates = Rates (dt, brl2usd, usd2brl, \textcolor{stringliteral}{"X-Rates"})
+00279 
+00280 \textcolor{comment}{# xrt\_tupl = dt, usd2brl, brl2usd}
+00281 \textcolor{comment}{# print ("X-rates: \{0\}: USD2BRL \{1\}, BRL2USD \{2\}".format (*xrt\_tupl))}
+00282 
+00283 \textcolor{keywordflow}{print} (x\_rates)
+00284 \textcolor{keywordflow}{print} ()
+00285 
+00286 \textcolor{comment}{# TODO calculate avg USD2BRL rate}
+00287 
+00288 \textcolor{comment}{#}
+00289 \textcolor{comment}{#}
+00290 \textcolor{comment}{# MercadoBitcoin section }
+00291 \textcolor{comment}{# }
+00292 
+\hypertarget{raw__urlparser_8py_source.tex_l00293}{}\hyperlink{namespaceraw__urlparser_a9a840f174b92a24c415b88c87e84b73d}{00293} u\_mb = \textcolor{stringliteral}{'https://www.mercadobitcoin.net/api/ticker/'}
+00294 
+\hypertarget{raw__urlparser_8py_source.tex_l00295}{}\hyperlink{namespaceraw__urlparser_a5d09c5bd4390610ba67d1278a9c66b88}{00295} mb\_tupl = get\_mb\_rates (u\_mb)
+\hypertarget{raw__urlparser_8py_source.tex_l00296}{}\hyperlink{namespaceraw__urlparser_a9f1ba2a5cd520bb41ac4bee751047679}{00296} dt, sell, buy = mb\_tupl
+00297 
+\hypertarget{raw__urlparser_8py_source.tex_l00298}{}\hyperlink{namespaceraw__urlparser_a76acf8d303c15079b0560eace3e9720f}{00298} mb = XbtPrices (dt, sell, buy, \textcolor{stringliteral}{"MercadoBitcoin"}, \textcolor{stringliteral}{"BRL"})
+00299 
+00300 \textcolor{comment}{# print ("MercadoBitcoin: \{0\}: Sell \{1\} BRL, Buy \{2\} BRL".format (mb))}
+00301 \textcolor{keywordflow}{print} (mb)
+00302  
+00303 brl2usd = google.getUsd2Brl ()
+00304 
+00305 sell /= brl2usd
+00306 buy  /= brl2usd 
+\hypertarget{raw__urlparser_8py_source.tex_l00307}{}\hyperlink{namespaceraw__urlparser_adb426668060d85f4fbd24135e258a8b3}{00307} mb\_usd = XbtPrices (dt, sell, buy, \textcolor{stringliteral}{"MercadoBitcoin"}, \textcolor{stringliteral}{"USD"})
+00308 \textcolor{keywordflow}{print} (mb\_usd)
+00309 \textcolor{keywordflow}{print} ()
+00310 
+00311 \textcolor{comment}{#}
+00312 \textcolor{comment}{#}
+00313 \textcolor{comment}{# OkCoin section }
+00314 \textcolor{comment}{# }
+00315 
+00316 
+\hypertarget{raw__urlparser_8py_source.tex_l00317}{}\hyperlink{namespaceraw__urlparser_a22c1a17803a88426d38d70ad6d4290d2}{00317} u\_ok = \textcolor{stringliteral}{'https://www.okcoin.com/api/v1/ticker.do?symbol=btc\_usd'}
+00318 
+\hypertarget{raw__urlparser_8py_source.tex_l00319}{}\hyperlink{namespaceraw__urlparser_a511386d80b04970417c26b6493bd2475}{00319} ok\_tupl = get\_ok\_rates (u\_ok)
+00320 dt, sell, buy = ok\_tupl
+00321 
+\hypertarget{raw__urlparser_8py_source.tex_l00322}{}\hyperlink{namespaceraw__urlparser_aa0dcadbc04ec5d09f7a2dabb865000c8}{00322} ok = XbtPrices (dt, sell, buy, \textcolor{stringliteral}{"OkCoin"}, \textcolor{stringliteral}{"USD"})
+00323 
+00324 \textcolor{comment}{# print ("MercadoBitcoin: \{0\}: Sell \{1\} BRL, Buy \{2\} BRL".format (mb))}
+00325 \textcolor{keywordflow}{print} (ok)
+00326 \textcolor{keywordflow}{print} ()
+00327  
+00328 \textcolor{comment}{# brl2usd = google.getUsd2Brl ()}
+00329 \textcolor{comment}{#}
+00330 \textcolor{comment}{# sell /= brl2usd}
+00331 \textcolor{comment}{# buy  /= brl2usd }
+00332 \textcolor{comment}{# mb\_usd = XbtPrices (dt, sell, buy, "MercadoBitcoin", "USD")}
+00333 \textcolor{comment}{# print (mb\_usd)}
+00334 
+\hypertarget{raw__urlparser_8py_source.tex_l00335}{}\hyperlink{namespaceraw__urlparser_a86dc49fc55812ccc7eeda441b0fce83c}{00335} diff = Differences (google, mb\_usd, ok)
+00336 
+00337 \textcolor{keywordflow}{print} (diff)
+\end{DoxyCode}

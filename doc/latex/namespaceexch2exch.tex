@@ -1,6 +1,5 @@
-\hypertarget{namespaceexch2exch}{\section{exch2exch Namespace Reference}
+\hypertarget{namespaceexch2exch}{}\section{exch2exch Namespace Reference}
 \label{namespaceexch2exch}\index{exch2exch@{exch2exch}}
-}
 \subsection*{Classes}
 \begin{DoxyCompactItemize}
 \item 
@@ -8,313 +7,387 @@ class \hyperlink{classexch2exch_1_1_differences}{Differences}
 \item 
 class \hyperlink{classexch2exch_1_1_rates}{Rates}
 \item 
-class \hyperlink{classexch2exch_1_1_xbt_prices}{Xbt\-Prices}
+class \hyperlink{classexch2exch_1_1_xbt_prices}{Xbt\+Prices}
 \end{DoxyCompactItemize}
 \subsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-def \hyperlink{namespaceexch2exch_ab44bbb7377e2ea808af430246d925cd2}{get\-\_\-google\-\_\-rate}
+def \hyperlink{namespaceexch2exch_a2f3337121882596d0644f2d48ffb870c}{calc\+\_\+fiat\+\_\+rates} (g\+Rates, x\+Rates)
 \item 
-def \hyperlink{namespaceexch2exch_a72e4d9fae01812560db07229c05efbc6}{get\-\_\-google\-\_\-rates}
+def \hyperlink{namespaceexch2exch_a20ad08d045d52bdcb3977eaa8f951622}{get\+\_\+google\+\_\+rate} (url)
 \item 
-def \hyperlink{namespaceexch2exch_a69c86b486350c524c85fca367aad82f2}{get\-\_\-mb\-\_\-rates}
+def \hyperlink{namespaceexch2exch_ae0891a93a4a9cfe932011afddd41808d}{get\+\_\+google\+\_\+rates} (urls)
 \item 
-def \hyperlink{namespaceexch2exch_a7e83d805e732ce4344cb3a6edc5d98be}{get\-\_\-ok\-\_\-rates}
+def \hyperlink{namespaceexch2exch_a4226f3cef9fff15993d8b230a5cb92e4}{get\+\_\+mb\+\_\+rates} (url)
 \item 
-def \hyperlink{namespaceexch2exch_a0fe4c93bea8fee4212c19f045c72b43b}{get\-\_\-x\-\_\-rates}
+def \hyperlink{namespaceexch2exch_a157dc1519ab4a24783fab8bf7db9c17e}{get\+\_\+ok\+\_\+rates} (url)
 \item 
-def \hyperlink{namespaceexch2exch_a559f55b08d308a647cc4afa3620e2da8}{main}
+def \hyperlink{namespaceexch2exch_a928a1249a810cfd0ec5fca3ec8f764fb}{get\+\_\+x\+\_\+rates} (url)
+\item 
+def \hyperlink{namespaceexch2exch_a4a7d6bc2c47add0970ca3e0c28a5cb63}{main} ()
 \end{DoxyCompactItemize}
 
 
 \subsection{Function Documentation}
-\hypertarget{namespaceexch2exch_ab44bbb7377e2ea808af430246d925cd2}{\index{exch2exch@{exch2exch}!get\-\_\-google\-\_\-rate@{get\-\_\-google\-\_\-rate}}
-\index{get\-\_\-google\-\_\-rate@{get\-\_\-google\-\_\-rate}!exch2exch@{exch2exch}}
-\subsubsection[{get\-\_\-google\-\_\-rate}]{\setlength{\rightskip}{0pt plus 5cm}def exch2exch.\-get\-\_\-google\-\_\-rate (
+\index{exch2exch@{exch2exch}!calc\+\_\+fiat\+\_\+rates@{calc\+\_\+fiat\+\_\+rates}}
+\index{calc\+\_\+fiat\+\_\+rates@{calc\+\_\+fiat\+\_\+rates}!exch2exch@{exch2exch}}
+\subsubsection[{\texorpdfstring{calc\+\_\+fiat\+\_\+rates(g\+Rates, x\+Rates)}{calc_fiat_rates(gRates, xRates)}}]{\setlength{\rightskip}{0pt plus 5cm}def exch2exch.\+calc\+\_\+fiat\+\_\+rates (
 \begin{DoxyParamCaption}
-\item[{}]{url}
+\item[{}]{g\+Rates, }
+\item[{}]{x\+Rates}
 \end{DoxyParamCaption}
-)}}\label{namespaceexch2exch_ab44bbb7377e2ea808af430246d925cd2}
+)}\hypertarget{namespaceexch2exch_a2f3337121882596d0644f2d48ffb870c}{}\label{namespaceexch2exch_a2f3337121882596d0644f2d48ffb870c}
 
 
-Definition at line 149 of file exch2exch.\-py.
+Definition at line \hyperlink{exch2exch_8py_source_l00300}{300} of file \hyperlink{exch2exch_8py_source}{exch2exch.\+py}.
 
 
 \begin{DoxyCode}
-149 
-150 \textcolor{keyword}{def }\hyperlink{namespaceexch2exch_ab44bbb7377e2ea808af430246d925cd2}{get\_google\_rate} (url):
-151     result = 0
-152 
-153     f = urllib.request.urlopen (url)
-154     
-155     line = f.readline ()
-156     \textcolor{keywordflow}{while} line != b\textcolor{stringliteral}{''}:
-157         ind = line.find (b\textcolor{stringliteral}{'currency\_converter'})
-158         \textcolor{keywordflow}{if} ind != -1:
-159             
-160             fields = line.split ()
-161             rate = fields[5].split (b\textcolor{stringliteral}{'>'})[1]
-162             
-163             \textcolor{keywordflow}{break}
-164             
-165         line = f.readline ()
-166     
-167     result = float (rate)
-168     
-169     \textcolor{keywordflow}{return} result
-    
+\hypertarget{namespaceexch2exch.tex_l00300}{}\hyperlink{namespaceexch2exch_a2f3337121882596d0644f2d48ffb870c}{00300} \textcolor{keyword}{def }\hyperlink{namespaceexch2exch_a2f3337121882596d0644f2d48ffb870c}{calc\_fiat\_rates} (gRates, xRates):
+00301     gSuccess, gDt, gUsd, gBrl = gRates 
+00302     
+00303     xSuccess, xDt, xUsd, xBrl = xRates
+00304     
+00305     \textcolor{keywordflow}{if} \textcolor{keywordflow}{not} gSuccess:
+00306         result = xRates, \textcolor{stringliteral}{"XRates"}
+00307         
+00308     \textcolor{keywordflow}{elif} \textcolor{keywordflow}{not} xSuccess:
+00309         result = gRates, \textcolor{stringliteral}{"Google"}
+00310         
+00311     \textcolor{keywordflow}{else}: 
+00312         success = \textcolor{keyword}{True}
+00313         dt  = (gDt.timestamp () + xDt.timestamp ()) // 2
+00314         dt = datetime.datetime.fromtimestamp (dt)
+00315         usd = (gUsd + xUsd) / 2.0
+00316         brl = (gBrl + xBrl) / 2.0
+00317         
+00318         result = (success, dt, usd, brl, \textcolor{stringliteral}{"Google + XRates"})
+00319         
+00320     \textcolor{comment}{# Normal function termination}
+00321     \textcolor{keywordflow}{return} result        
+00322 
 \end{DoxyCode}
-\hypertarget{namespaceexch2exch_a72e4d9fae01812560db07229c05efbc6}{\index{exch2exch@{exch2exch}!get\-\_\-google\-\_\-rates@{get\-\_\-google\-\_\-rates}}
-\index{get\-\_\-google\-\_\-rates@{get\-\_\-google\-\_\-rates}!exch2exch@{exch2exch}}
-\subsubsection[{get\-\_\-google\-\_\-rates}]{\setlength{\rightskip}{0pt plus 5cm}def exch2exch.\-get\-\_\-google\-\_\-rates (
+\index{exch2exch@{exch2exch}!get\+\_\+google\+\_\+rate@{get\+\_\+google\+\_\+rate}}
+\index{get\+\_\+google\+\_\+rate@{get\+\_\+google\+\_\+rate}!exch2exch@{exch2exch}}
+\subsubsection[{\texorpdfstring{get\+\_\+google\+\_\+rate(url)}{get_google_rate(url)}}]{\setlength{\rightskip}{0pt plus 5cm}def exch2exch.\+get\+\_\+google\+\_\+rate (
+\begin{DoxyParamCaption}
+\item[{}]{url}
+\end{DoxyParamCaption}
+)}\hypertarget{namespaceexch2exch_a20ad08d045d52bdcb3977eaa8f951622}{}\label{namespaceexch2exch_a20ad08d045d52bdcb3977eaa8f951622}
+
+
+Definition at line \hyperlink{exch2exch_8py_source_l00193}{193} of file \hyperlink{exch2exch_8py_source}{exch2exch.\+py}.
+
+
+\begin{DoxyCode}
+\hypertarget{namespaceexch2exch.tex_l00193}{}\hyperlink{namespaceexch2exch_a20ad08d045d52bdcb3977eaa8f951622}{00193} \textcolor{keyword}{def }\hyperlink{namespaceexch2exch_a20ad08d045d52bdcb3977eaa8f951622}{get\_google\_rate} (url):
+00194     result = 0
+00195 
+00196     f = urllib.request.urlopen (url)
+00197     
+00198     line = f.readline ()
+00199     \textcolor{keywordflow}{while} line != b\textcolor{stringliteral}{''}:
+00200         ind = line.find (b\textcolor{stringliteral}{'currency\_converter'})
+00201         \textcolor{keywordflow}{if} ind != -1:
+00202             
+00203             fields = line.split ()
+00204             \textcolor{keywordflow}{try}:
+00205                 rate = fields[5].split (b\textcolor{stringliteral}{'>'})[1]
+00206                 
+00207             \textcolor{keywordflow}{except} IndexError \textcolor{keyword}{as} err:
+00208                 \textcolor{keywordflow}{print} (\textcolor{stringliteral}{'Unexpected problem: \{0\}'}.format (err))
+00209                 line = line.decode (encoding = \textcolor{stringliteral}{'utf-8'}).strip (\textcolor{stringliteral}{'\(\backslash\)n'})
+00210                 \textcolor{keywordflow}{print} (\textcolor{stringliteral}{"The line read was:\(\backslash\)n'\{0\}'"}.format (line))
+00211                 
+00212                 rate = 0.0
+00213             
+00214             \textcolor{keywordflow}{break}
+00215             
+00216         line = f.readline ()
+00217     
+00218     result = float (rate)
+00219     
+00220     \textcolor{keywordflow}{return} result
+00221     
+\end{DoxyCode}
+\index{exch2exch@{exch2exch}!get\+\_\+google\+\_\+rates@{get\+\_\+google\+\_\+rates}}
+\index{get\+\_\+google\+\_\+rates@{get\+\_\+google\+\_\+rates}!exch2exch@{exch2exch}}
+\subsubsection[{\texorpdfstring{get\+\_\+google\+\_\+rates(urls)}{get_google_rates(urls)}}]{\setlength{\rightskip}{0pt plus 5cm}def exch2exch.\+get\+\_\+google\+\_\+rates (
 \begin{DoxyParamCaption}
 \item[{}]{urls}
 \end{DoxyParamCaption}
-)}}\label{namespaceexch2exch_a72e4d9fae01812560db07229c05efbc6}
+)}\hypertarget{namespaceexch2exch_ae0891a93a4a9cfe932011afddd41808d}{}\label{namespaceexch2exch_ae0891a93a4a9cfe932011afddd41808d}
 
 
-Definition at line 170 of file exch2exch.\-py.
+Definition at line \hyperlink{exch2exch_8py_source_l00222}{222} of file \hyperlink{exch2exch_8py_source}{exch2exch.\+py}.
 
 
 \begin{DoxyCode}
-170 
-171 \textcolor{keyword}{def }\hyperlink{namespaceexch2exch_a72e4d9fae01812560db07229c05efbc6}{get\_google\_rates} (urls):
-172     ts = math.trunc (time.time () + 0.5)
-173     dt = datetime.datetime.fromtimestamp (ts)
-174     
-175     \textcolor{comment}{# TODO round the seconds fraction}
-176     
-177     usd2brl = urls[0]
-178     brl2usd = urls[1]
-179     
-180     usd = 0
-181     brl = 0
-182     
-183     usd = get\_google\_rate (usd2brl)
-184     brl = get\_google\_rate (brl2usd)
-185     
-186     result = (dt, usd, brl)
-187     
-188     \textcolor{keywordflow}{return} result
-        
+\hypertarget{namespaceexch2exch.tex_l00222}{}\hyperlink{namespaceexch2exch_ae0891a93a4a9cfe932011afddd41808d}{00222} \textcolor{keyword}{def }\hyperlink{namespaceexch2exch_ae0891a93a4a9cfe932011afddd41808d}{get\_google\_rates} (urls):
+00223     ts = math.trunc (time.time () + 0.5)
+00224     dt = datetime.datetime.fromtimestamp (ts)
+00225     
+00226     \textcolor{comment}{# TODO round the seconds fraction}
+00227     
+00228     usd2brl = urls[0]
+00229     brl2usd = urls[1]
+00230     
+00231     usd = 0
+00232     brl = 0
+00233     success = \textcolor{keyword}{True}
+00234     
+00235     usd = get\_google\_rate (usd2brl)
+00236     brl = get\_google\_rate (brl2usd)
+00237     
+00238     \textcolor{keywordflow}{if} (usd == 0.0) \textcolor{keywordflow}{or} (brl == 0.0):
+00239         success = \textcolor{keyword}{False} 
+00240         
+00241     result = (success, dt, usd, brl)
+00242     
+00243     \textcolor{keywordflow}{return} result
+00244         
 \end{DoxyCode}
-\hypertarget{namespaceexch2exch_a69c86b486350c524c85fca367aad82f2}{\index{exch2exch@{exch2exch}!get\-\_\-mb\-\_\-rates@{get\-\_\-mb\-\_\-rates}}
-\index{get\-\_\-mb\-\_\-rates@{get\-\_\-mb\-\_\-rates}!exch2exch@{exch2exch}}
-\subsubsection[{get\-\_\-mb\-\_\-rates}]{\setlength{\rightskip}{0pt plus 5cm}def exch2exch.\-get\-\_\-mb\-\_\-rates (
+\index{exch2exch@{exch2exch}!get\+\_\+mb\+\_\+rates@{get\+\_\+mb\+\_\+rates}}
+\index{get\+\_\+mb\+\_\+rates@{get\+\_\+mb\+\_\+rates}!exch2exch@{exch2exch}}
+\subsubsection[{\texorpdfstring{get\+\_\+mb\+\_\+rates(url)}{get_mb_rates(url)}}]{\setlength{\rightskip}{0pt plus 5cm}def exch2exch.\+get\+\_\+mb\+\_\+rates (
 \begin{DoxyParamCaption}
 \item[{}]{url}
 \end{DoxyParamCaption}
-)}}\label{namespaceexch2exch_a69c86b486350c524c85fca367aad82f2}
+)}\hypertarget{namespaceexch2exch_a4226f3cef9fff15993d8b230a5cb92e4}{}\label{namespaceexch2exch_a4226f3cef9fff15993d8b230a5cb92e4}
 
 
-Definition at line 232 of file exch2exch.\-py.
+Definition at line \hyperlink{exch2exch_8py_source_l00323}{323} of file \hyperlink{exch2exch_8py_source}{exch2exch.\+py}.
 
 
 \begin{DoxyCode}
-232 
-233 \textcolor{keyword}{def }\hyperlink{namespaceexch2exch_a69c86b486350c524c85fca367aad82f2}{get\_mb\_rates} (url):
-234     f = urllib.request.urlopen (url)
-235     
-236     line = f.readline ()
-237     
-238     rv = json.loads (line.decode (encoding=\textcolor{stringliteral}{'utf-8'}))
-239     
-240     ts   = int   (rv[\textcolor{stringliteral}{'ticker'}][\textcolor{stringliteral}{'date'}])
-241     buy  = float (rv[\textcolor{stringliteral}{'ticker'}][\textcolor{stringliteral}{'buy'}])
-242     sell = float (rv[\textcolor{stringliteral}{'ticker'}][\textcolor{stringliteral}{'sell'}])
-243     high = float (rv[\textcolor{stringliteral}{'ticker'}][\textcolor{stringliteral}{'high'}])
-244     low  = float (rv[\textcolor{stringliteral}{'ticker'}][\textcolor{stringliteral}{'low'}])
-245     
-246     dt = datetime.datetime.fromtimestamp (float (ts))
-247     
-248     result = (dt, sell, buy, high, low)
-249     
-250     \textcolor{keywordflow}{return} result
-
+\hypertarget{namespaceexch2exch.tex_l00323}{}\hyperlink{namespaceexch2exch_a4226f3cef9fff15993d8b230a5cb92e4}{00323} \textcolor{keyword}{def }\hyperlink{namespaceexch2exch_a4226f3cef9fff15993d8b230a5cb92e4}{get\_mb\_rates} (url):
+00324     f = urllib.request.urlopen (url)
+00325     
+00326     line = f.readline ()
+00327     
+00328     rv = json.loads (line.decode (encoding=\textcolor{stringliteral}{'utf-8'}))
+00329     
+00330     ts   = int   (rv[\textcolor{stringliteral}{'ticker'}][\textcolor{stringliteral}{'date'}])
+00331     buy  = float (rv[\textcolor{stringliteral}{'ticker'}][\textcolor{stringliteral}{'buy'}])
+00332     sell = float (rv[\textcolor{stringliteral}{'ticker'}][\textcolor{stringliteral}{'sell'}])
+00333     high = float (rv[\textcolor{stringliteral}{'ticker'}][\textcolor{stringliteral}{'high'}])
+00334     low  = float (rv[\textcolor{stringliteral}{'ticker'}][\textcolor{stringliteral}{'low'}])
+00335     
+00336     dt = datetime.datetime.fromtimestamp (float (ts))
+00337     
+00338     result = (dt, sell, buy, high, low)
+00339     
+00340     \textcolor{keywordflow}{return} result
+00341 
 \end{DoxyCode}
-\hypertarget{namespaceexch2exch_a7e83d805e732ce4344cb3a6edc5d98be}{\index{exch2exch@{exch2exch}!get\-\_\-ok\-\_\-rates@{get\-\_\-ok\-\_\-rates}}
-\index{get\-\_\-ok\-\_\-rates@{get\-\_\-ok\-\_\-rates}!exch2exch@{exch2exch}}
-\subsubsection[{get\-\_\-ok\-\_\-rates}]{\setlength{\rightskip}{0pt plus 5cm}def exch2exch.\-get\-\_\-ok\-\_\-rates (
+\index{exch2exch@{exch2exch}!get\+\_\+ok\+\_\+rates@{get\+\_\+ok\+\_\+rates}}
+\index{get\+\_\+ok\+\_\+rates@{get\+\_\+ok\+\_\+rates}!exch2exch@{exch2exch}}
+\subsubsection[{\texorpdfstring{get\+\_\+ok\+\_\+rates(url)}{get_ok_rates(url)}}]{\setlength{\rightskip}{0pt plus 5cm}def exch2exch.\+get\+\_\+ok\+\_\+rates (
 \begin{DoxyParamCaption}
 \item[{}]{url}
 \end{DoxyParamCaption}
-)}}\label{namespaceexch2exch_a7e83d805e732ce4344cb3a6edc5d98be}
+)}\hypertarget{namespaceexch2exch_a157dc1519ab4a24783fab8bf7db9c17e}{}\label{namespaceexch2exch_a157dc1519ab4a24783fab8bf7db9c17e}
 
 
-Definition at line 251 of file exch2exch.\-py.
+Definition at line \hyperlink{exch2exch_8py_source_l00342}{342} of file \hyperlink{exch2exch_8py_source}{exch2exch.\+py}.
 
 
 \begin{DoxyCode}
-251 
-252 \textcolor{keyword}{def }\hyperlink{namespaceexch2exch_a7e83d805e732ce4344cb3a6edc5d98be}{get\_ok\_rates} (url):
-253     f = urllib.request.urlopen (url)
-254     
-255     line = f.readline ()
-256     
-257     rv = json.loads (line.decode (encoding=\textcolor{stringliteral}{'utf-8'}))
-258     
-259     ts   = int   (rv[\textcolor{stringliteral}{'date'}])
-260     buy  = float (rv[\textcolor{stringliteral}{'ticker'}][\textcolor{stringliteral}{'buy'}])
-261     sell = float (rv[\textcolor{stringliteral}{'ticker'}][\textcolor{stringliteral}{'sell'}])
-262     high = float (rv[\textcolor{stringliteral}{'ticker'}][\textcolor{stringliteral}{'high'}])
-263     low  = float (rv[\textcolor{stringliteral}{'ticker'}][\textcolor{stringliteral}{'low'}])
-264     
-265     dt = datetime.datetime.fromtimestamp (float (ts))
-266     
-267     result = (dt, sell, buy, high, low)
-268     
-269     \textcolor{keywordflow}{return} result
-
+\hypertarget{namespaceexch2exch.tex_l00342}{}\hyperlink{namespaceexch2exch_a157dc1519ab4a24783fab8bf7db9c17e}{00342} \textcolor{keyword}{def }\hyperlink{namespaceexch2exch_a157dc1519ab4a24783fab8bf7db9c17e}{get\_ok\_rates} (url):
+00343     f = urllib.request.urlopen (url)
+00344     
+00345     line = f.readline ()
+00346     
+00347     rv = json.loads (line.decode (encoding=\textcolor{stringliteral}{'utf-8'}))
+00348     
+00349     ts   = int   (rv[\textcolor{stringliteral}{'date'}])
+00350     buy  = float (rv[\textcolor{stringliteral}{'ticker'}][\textcolor{stringliteral}{'buy'}])
+00351     sell = float (rv[\textcolor{stringliteral}{'ticker'}][\textcolor{stringliteral}{'sell'}])
+00352     high = float (rv[\textcolor{stringliteral}{'ticker'}][\textcolor{stringliteral}{'high'}])
+00353     low  = float (rv[\textcolor{stringliteral}{'ticker'}][\textcolor{stringliteral}{'low'}])
+00354     
+00355     dt = datetime.datetime.fromtimestamp (float (ts))
+00356     
+00357     result = (dt, sell, buy, high, low)
+00358     
+00359     \textcolor{keywordflow}{return} result
+00360 
 \end{DoxyCode}
-\hypertarget{namespaceexch2exch_a0fe4c93bea8fee4212c19f045c72b43b}{\index{exch2exch@{exch2exch}!get\-\_\-x\-\_\-rates@{get\-\_\-x\-\_\-rates}}
-\index{get\-\_\-x\-\_\-rates@{get\-\_\-x\-\_\-rates}!exch2exch@{exch2exch}}
-\subsubsection[{get\-\_\-x\-\_\-rates}]{\setlength{\rightskip}{0pt plus 5cm}def exch2exch.\-get\-\_\-x\-\_\-rates (
+\index{exch2exch@{exch2exch}!get\+\_\+x\+\_\+rates@{get\+\_\+x\+\_\+rates}}
+\index{get\+\_\+x\+\_\+rates@{get\+\_\+x\+\_\+rates}!exch2exch@{exch2exch}}
+\subsubsection[{\texorpdfstring{get\+\_\+x\+\_\+rates(url)}{get_x_rates(url)}}]{\setlength{\rightskip}{0pt plus 5cm}def exch2exch.\+get\+\_\+x\+\_\+rates (
 \begin{DoxyParamCaption}
 \item[{}]{url}
 \end{DoxyParamCaption}
-)}}\label{namespaceexch2exch_a0fe4c93bea8fee4212c19f045c72b43b}
+)}\hypertarget{namespaceexch2exch_a928a1249a810cfd0ec5fca3ec8f764fb}{}\label{namespaceexch2exch_a928a1249a810cfd0ec5fca3ec8f764fb}
 
 
-Definition at line 189 of file exch2exch.\-py.
+Definition at line \hyperlink{exch2exch_8py_source_l00245}{245} of file \hyperlink{exch2exch_8py_source}{exch2exch.\+py}.
 
 
 \begin{DoxyCode}
-189 
-190 \textcolor{keyword}{def }\hyperlink{namespaceexch2exch_a0fe4c93bea8fee4212c19f045c72b43b}{get\_x\_rates} (url):
-191     ts = math.trunc (time.time () + 0.5)
-192     dt = datetime.datetime.fromtimestamp (ts)
-193     
-194     \textcolor{comment}{# TODO round the seconds fraction}
-195     
-196     \textcolor{comment}{# Adding a fake browser User-Agent to make site x-rates.com happy}
-197     headers = \{\textcolor{stringliteral}{'User-Agent'} : \textcolor{stringliteral}{'Mozilla 5.10'}\}
-198         
-199     \textcolor{comment}{# Create the Request, joining URL and User-Agent}
-200     request = urllib.request.Request (url, headers = headers)
-201 
-202     \textcolor{comment}{# Open the URL as file}
-203     f = urllib.request.urlopen (request)
-204     
-205     \textcolor{comment}{# Input over the file to get the rates}
-206     line = \textcolor{keywordtype}{None}
-207     \textcolor{keywordflow}{while} line != b\textcolor{stringliteral}{''}:
-208         line = f.readline ()
-209         ind = line.find (b\textcolor{stringliteral}{'BRL'})
-210         \textcolor{keywordflow}{if} ind == -1:
-211             \textcolor{keywordflow}{continue} 
-212         
-213         ind = line.find (b\textcolor{stringliteral}{'rtRates'})
-214         \textcolor{keywordflow}{if} ind == -1:
-215             \textcolor{keywordflow}{continue} 
-216                 
-217         \textcolor{keywordflow}{if} line.find (b\textcolor{stringliteral}{'from=USD'}) != -1:
-218             fields = line.split (b\textcolor{stringliteral}{'>'})
-219             
-220             susd = fields[2].split (b\textcolor{stringliteral}{'<'})[0]
-221             usd = float (susd)
-222         
-223         \textcolor{keywordflow}{elif} line.find (b\textcolor{stringliteral}{'from=BRL'}) != -1:
-224             fields = line.split (b\textcolor{stringliteral}{'>'})
-225             
-226             sbrl = fields[2].split (b\textcolor{stringliteral}{'<'})[0]
-227             brl = float (sbrl)
-228             
-229     result = (dt, usd, brl)
-230     
-231     \textcolor{keywordflow}{return} result
-
+\hypertarget{namespaceexch2exch.tex_l00245}{}\hyperlink{namespaceexch2exch_a928a1249a810cfd0ec5fca3ec8f764fb}{00245} \textcolor{keyword}{def }\hyperlink{namespaceexch2exch_a928a1249a810cfd0ec5fca3ec8f764fb}{get\_x\_rates} (url):
+00246     ts = math.trunc (time.time () + 0.5)
+00247     dt = datetime.datetime.fromtimestamp (ts)
+00248     
+00249     \textcolor{comment}{# TODO round the seconds fraction}
+00250     
+00251     \textcolor{keywordflow}{try}:
+00252         \textcolor{comment}{# Adding a fake browser User-Agent to make site x-rates.com happy}
+00253         headers = \{\textcolor{stringliteral}{'User-Agent'} : \textcolor{stringliteral}{'Mozilla 5.10'}\}
+00254             
+00255         \textcolor{comment}{# Create the Request, joining URL and User-Agent}
+00256         request = urllib.request.Request (url, headers = headers)
+00257         
+00258     \textcolor{keywordflow}{except} urllib.error.URLError \textcolor{keyword}{as} err:
+00259         \textcolor{keywordflow}{print} (\textcolor{stringliteral}{"URL error: \{0\}"}.format (err))
+00260         
+00261         dt = usd= brl = 0
+00262         result = (\textcolor{keyword}{True}, dt, usd, brl)
+00263         
+00264         \textcolor{comment}{# Return to indicate failure}
+00265         \textcolor{keywordflow}{return} result
+00266 
+00267         
+00268     \textcolor{comment}{# Open the URL as file}
+00269     f = urllib.request.urlopen (request)
+00270     
+00271     \textcolor{comment}{# Input over the file to get the rates}
+00272     line = \textcolor{keywordtype}{None}
+00273     \textcolor{keywordflow}{while} line != b\textcolor{stringliteral}{''}:
+00274         line = f.readline ()
+00275         ind = line.find (b\textcolor{stringliteral}{'BRL'})
+00276         \textcolor{keywordflow}{if} ind == -1:
+00277             \textcolor{keywordflow}{continue} 
+00278         
+00279         ind = line.find (b\textcolor{stringliteral}{'rtRates'})
+00280         \textcolor{keywordflow}{if} ind == -1:
+00281             \textcolor{keywordflow}{continue} 
+00282                 
+00283         \textcolor{keywordflow}{if} line.find (b\textcolor{stringliteral}{'from=USD'}) != -1:
+00284             fields = line.split (b\textcolor{stringliteral}{'>'})
+00285             
+00286             susd = fields[2].split (b\textcolor{stringliteral}{'<'})[0]
+00287             usd = float (susd)
+00288         
+00289         \textcolor{keywordflow}{elif} line.find (b\textcolor{stringliteral}{'from=BRL'}) != -1:
+00290             fields = line.split (b\textcolor{stringliteral}{'>'})
+00291             
+00292             sbrl = fields[2].split (b\textcolor{stringliteral}{'<'})[0]
+00293             brl = float (sbrl)
+00294             
+00295     result = (\textcolor{keyword}{True}, dt, usd, brl)
+00296     
+00297     \textcolor{comment}{# Normal function termination}
+00298     \textcolor{keywordflow}{return} result
+00299     
 \end{DoxyCode}
-\hypertarget{namespaceexch2exch_a559f55b08d308a647cc4afa3620e2da8}{\index{exch2exch@{exch2exch}!main@{main}}
+\index{exch2exch@{exch2exch}!main@{main}}
 \index{main@{main}!exch2exch@{exch2exch}}
-\subsubsection[{main}]{\setlength{\rightskip}{0pt plus 5cm}def exch2exch.\-main (
+\subsubsection[{\texorpdfstring{main()}{main()}}]{\setlength{\rightskip}{0pt plus 5cm}def exch2exch.\+main (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)}}\label{namespaceexch2exch_a559f55b08d308a647cc4afa3620e2da8}
+)}\hypertarget{namespaceexch2exch_a4a7d6bc2c47add0970ca3e0c28a5cb63}{}\label{namespaceexch2exch_a4a7d6bc2c47add0970ca3e0c28a5cb63}
 
 
-Definition at line 270 of file exch2exch.\-py.
+Definition at line \hyperlink{exch2exch_8py_source_l00361}{361} of file \hyperlink{exch2exch_8py_source}{exch2exch.\+py}.
 
 
 \begin{DoxyCode}
-270 
-271 \textcolor{keyword}{def }\hyperlink{namespaceexch2exch_a559f55b08d308a647cc4afa3620e2da8}{main} ():
-272     \textcolor{comment}{# TODO parse command line }
-273 
-274     u\_usd2brl = \textcolor{stringliteral}{'https://www.google.com/finance/converter?a=1&from=USD&to=BRL'}
-275     u\_brl2usd = \textcolor{stringliteral}{'https://www.google.com/finance/converter?a=1&from=BRL&to=USD'}
-276 \textcolor{comment}{#    u\_mb      = 'https://www.mercadobitcoin.net/api/ticker/'}
-277     u\_xrates  = \textcolor{stringliteral}{'http://www.x-rates.com/table/?from=USD&amount=1'}
-278 \textcolor{comment}{#    u\_ok      = 'https://www.okcoin.com/api/v1/ticker.do?symbol=btc\_usd'}
-279     
-280     urls = (u\_usd2brl, u\_brl2usd)
-281     
-282     dt, usd2brl, brl2usd = get\_google\_rates (urls)
-283     
-284     google = Rates (dt, usd2brl, brl2usd, \textcolor{stringliteral}{"Google"})
-285     
-286     \textcolor{keywordflow}{print} (\textcolor{stringliteral}{"\{0\}\(\backslash\)n"}.format (google))
-287     
-288     \textcolor{comment}{#}
-289     \textcolor{comment}{#}
-290     \textcolor{comment}{# X-rates section }
-291     \textcolor{comment}{# }
-292     
-293     dt, brl2usd, usd2brl = get\_x\_rates (u\_xrates)
-294     
-295     x\_rates = Rates (dt, brl2usd, usd2brl, \textcolor{stringliteral}{"X-Rates"})
-296     
-297     \textcolor{keywordflow}{print} (\textcolor{stringliteral}{"\{0\}\(\backslash\)n"}.format (x\_rates))
-298     
-299     \textcolor{comment}{# TODO calculate avg USD2BRL rate}
-300     
-301     \textcolor{comment}{#}
-302     \textcolor{comment}{#}
-303     \textcolor{comment}{# MercadoBitcoin section }
-304     \textcolor{comment}{# }
-305     
-306     mb = \hyperlink{classexchange_1_1_mercado_bitcoin}{exchange.MercadoBitcoin} ()    
-307 \textcolor{comment}{#    mb\_tupl = get\_mb\_rates (u\_mb)}
-308     mb\_tupl = mb.get\_ticker ()
-309     
-310     dt, sell, buy, high, low = mb\_tupl
-311     
-312     mb = XbtPrices (dt, sell, buy, high, low, \textcolor{stringliteral}{"MercadoBitcoin"}, \textcolor{stringliteral}{"BRL"})
-313     
-314     \textcolor{comment}{# print ("MercadoBitcoin: \{0\}: Sell \{1\} BRL, Buy \{2\} BRL".format (mb))}
-315     \textcolor{keywordflow}{print} (mb)
-316      
-317     brl2usd = google.getUsd2Brl ()
-318     
-319     sell /= brl2usd
-320     buy  /= brl2usd 
-321     high /= brl2usd
-322     low  /= brl2usd 
-323     mb\_usd = XbtPrices (dt, sell, buy, high, low, \textcolor{stringliteral}{"MercadoBitcoin"}, \textcolor{stringliteral}{"USD"})
-324     \textcolor{keywordflow}{print} (\textcolor{stringliteral}{"\{0\}\(\backslash\)n"}.format (mb\_usd))
-325     
-326     \textcolor{comment}{#}
-327     \textcolor{comment}{#}
-328     \textcolor{comment}{# OkCoin section }
-329     \textcolor{comment}{# }
-330     
-331 
-332     ok = \hyperlink{classexchange_1_1_ok_coin}{exchange.OkCoin} ()        
-333 \textcolor{comment}{#    ok\_tupl = get\_ok\_rates (u\_ok)}
-334     ok\_tupl = ok.get\_ticker ()
-335     
-336     dt, sell, buy, high, low = ok\_tupl
-337     
-338     ok = XbtPrices (dt, sell, buy, high, low, \textcolor{stringliteral}{"OkCoin"}, \textcolor{stringliteral}{"USD"})
-339     
-340     \textcolor{comment}{# print ("MercadoBitcoin: \{0\}: Sell \{1\} BRL, Buy \{2\} BRL".format (mb))}
-341     \textcolor{keywordflow}{print} (\textcolor{stringliteral}{"\{0\}\(\backslash\)n"}.format (ok))
-342      
-343     
-344     diff = Differences (google, mb\_usd, ok)
-345     
-346     \textcolor{keywordflow}{print} (diff)
-347     
-348     \textcolor{keywordflow}{return} 0
-    
+\hypertarget{namespaceexch2exch.tex_l00361}{}\hyperlink{namespaceexch2exch_a4a7d6bc2c47add0970ca3e0c28a5cb63}{00361} \textcolor{keyword}{def }\hyperlink{namespaceexch2exch_a4a7d6bc2c47add0970ca3e0c28a5cb63}{main} ():
+00362     \textcolor{comment}{# TODO parse command line }
+00363 
+00364     \textcolor{comment}{# u\_usd2brl = 'https://www.google.com/finance/converter?a=1&from=USD&to=BRL'}
+00365     u\_usd2brl= \textcolor{stringliteral}{'
+      https://finance.google.com/finance/converter?a=1&from=USD&to=BRL&meta=ei%3DoKi6WfnPAsSTeoKNoJAB'}
+00366 \textcolor{comment}{#    u\_brl2usd = 'https://www.google.com/finance/converter?a=1&from=BRL&to=USD'}
+00367     u\_brl2usd = \textcolor{stringliteral}{'
+      https://finance.google.com/finance/converter?a=1&from=BRL&to=USD&meta=ei%3DYqi6Wej-AoyEeoLbh9gF'}
+00368 \textcolor{comment}{#    u\_mb      = 'https://www.mercadobitcoin.net/api/ticker/'}
+00369     u\_xrates  = \textcolor{stringliteral}{'http://www.x-rates.com/table/?from=USD&amount=1'}
+00370 \textcolor{comment}{#    u\_ok      = 'https://www.okcoin.com/api/v1/ticker.do?symbol=btc\_usd'}
+00371     
+00372     urls = (u\_usd2brl, u\_brl2usd)
+00373     
+00374     gRates = get\_google\_rates (urls)
+00375     
+00376     success, dt, usd2brl, brl2usd = gRates
+00377     \textcolor{keywordflow}{if} success:   
+00378         google = Rates (dt, usd2brl, brl2usd, \textcolor{stringliteral}{"Google"})
+00379     
+00380         \textcolor{keywordflow}{print} (\textcolor{stringliteral}{"\{0\}\(\backslash\)n"}.format (google))
+00381     
+00382     \textcolor{comment}{#}
+00383     \textcolor{comment}{#}
+00384     \textcolor{comment}{# X-rates section }
+00385     \textcolor{comment}{# }
+00386     
+00387     \textcolor{comment}{# TODO handle Internet error }
+00388 
+00389     xRates = get\_x\_rates (u\_xrates)
+00390     success, dt, brl2usd, usd2brl = xRates
+00391     
+00392     \textcolor{keywordflow}{if} success:
+00393         x\_rates = Rates (dt, brl2usd, usd2brl, \textcolor{stringliteral}{"X-Rates"})
+00394     
+00395         \textcolor{keywordflow}{print} (\textcolor{stringliteral}{"\{0\}\(\backslash\)n"}.format (x\_rates))
+00396     
+00397     \textcolor{comment}{# TODO calculate avg USD2BRL rate}
+00398     finalRates = calc\_fiat\_rates (gRates, xRates)
+00399     success, dt, usd, br, name = finalRates
+00400     final = Rates (dt, usd2brl, brl2usd, name)
+00401     
+00402     \textcolor{comment}{#}
+00403     \textcolor{comment}{#}
+00404     \textcolor{comment}{# MercadoBitcoin section }
+00405     \textcolor{comment}{# }
+00406     
+00407     mb = \hyperlink{classexchange_1_1_mercado_bitcoin}{exchange.MercadoBitcoin} ()    
+00408 \textcolor{comment}{#    mb\_tupl = get\_mb\_rates (u\_mb)}
+00409     mb\_tupl = mb.get\_ticker ()
+00410     
+00411     dt, sell, buy, high, low, last = mb\_tupl
+00412     
+00413     mb = XbtPrices (dt, sell, buy, high, low, last, \textcolor{stringliteral}{"MercadoBitcoin"}, \textcolor{stringliteral}{"BRL"})
+00414     
+00415     \textcolor{comment}{# print ("MercadoBitcoin: \{0\}: Sell \{1\} BRL, Buy \{2\} BRL".format (mb))}
+00416     \textcolor{keywordflow}{print} (mb)
+00417      
+00418 \textcolor{comment}{#    brl2usd = google.getUsd2Brl ()}
+00419     brl2usd = final.getUsd2Brl ()
+00420     
+00421     sell *= brl2usd
+00422     buy  *= brl2usd 
+00423     high *= brl2usd
+00424     low  *= brl2usd 
+00425     last *= brl2usd
+00426     mb\_usd = XbtPrices (dt, sell, buy, high, low, last, \textcolor{stringliteral}{"MercadoBitcoin"}, \textcolor{stringliteral}{"USD"})
+00427     \textcolor{keywordflow}{print} (\textcolor{stringliteral}{"\{0\}\(\backslash\)n"}.format (mb\_usd))
+00428     
+00429     \textcolor{comment}{#}
+00430     \textcolor{comment}{#}
+00431     \textcolor{comment}{# OkCoin section }
+00432     \textcolor{comment}{# }
+00433     
+00434 
+00435     ok = \hyperlink{classexchange_1_1_ok_coin}{exchange.OkCoin} ()        
+00436 \textcolor{comment}{#    ok\_tupl = get\_ok\_rates (u\_ok)}
+00437     ok\_tupl = ok.get\_ticker ()
+00438     
+00439     dt, sell, buy, high, low, last = ok\_tupl
+00440     
+00441     ok = XbtPrices (dt, sell, buy, high, low, last, \textcolor{stringliteral}{"OkCoin"}, \textcolor{stringliteral}{"USD"})
+00442     
+00443     \textcolor{comment}{# print ("MercadoBitcoin: \{0\}: Sell \{1\} BRL, Buy \{2\} BRL".format (mb))}
+00444     \textcolor{keywordflow}{print} (\textcolor{stringliteral}{"\{0\}\(\backslash\)n"}.format (ok))
+00445      
+00446     
+00447 \textcolor{comment}{#    diff = Differences (google, mb\_usd, ok)}
+00448     diff = Differences (final, mb\_usd, ok)
+00449     
+00450     \textcolor{keywordflow}{print} (diff)
+00451     
+00452     \textcolor{keywordflow}{return} 0
+00453     
 \end{DoxyCode}

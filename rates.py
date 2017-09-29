@@ -149,9 +149,6 @@ class XRates (Rates):
                 
         self.service = "XRates"
         self.prefix = "xr"
-        
-    def __new__ (self):
-        self.__init__ (self)
 
 # class Yahoo (Rates):
 #    pass

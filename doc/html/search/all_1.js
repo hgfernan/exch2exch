@@ -1,5 +1,12 @@
 var searchData=
 [
-  ['brl2usd',['brl2usd',['../classexch2exch_1_1_rates.html#acc018dea09e825e18e91c73c5c63ab78',1,'exch2exch.Rates.brl2usd()'],['../classraw__urlparser_1_1_rates.html#adc9df007bec75344f9f89cb631d1aeb3',1,'raw_urlparser.Rates.brl2usd()'],['../namespaceraw__urlparser.html#a382c2b22f2386b1e493674c7d72b9b95',1,'raw_urlparser.brl2usd()']]],
-  ['buy',['buy',['../classexch2exch_1_1_xbt_prices.html#a8f1d8ac0ef114ea3645314578697b7ac',1,'exch2exch.XbtPrices.buy()'],['../classexchange_1_1_fox_bit.html#acb7e709cc05e8314b1bdacd32e4dfc80',1,'exchange.FoxBit.buy()'],['../classexchange_1_1_mercado_bitcoin.html#ada27b62a35286b9f5dbb54590c5bacd2',1,'exchange.MercadoBitcoin.buy()'],['../classexchange_1_1_ok_coin.html#aaf828e37142a83cbfb12d193313f6d43',1,'exchange.OkCoin.buy()'],['../classraw__urlparser_1_1_xbt_prices.html#a87eba659d6598ffd66c694535e1b7a7a',1,'raw_urlparser.XbtPrices.buy()']]]
+  ['abuysell',['aBuySell',['../classexch2exch_1_1_differences.html#aac9b76364eb6e0ee83417c0128aaa001',1,'exch2exch::Differences']]],
+  ['alast',['aLast',['../classexch2exch_1_1_differences.html#abd4dd96bd69025147d0bdb33d9c69345',1,'exch2exch::Differences']]],
+  ['altrate',['altRate',['../classe2e_1_1_parameters.html#a9d12e65d35b0807822c8774101ff613d',1,'e2e::Parameters']]],
+  ['altrateoutput',['altRateOutput',['../classe2e_1_1_parameters.html#ab0fc4de0f4d6d135eea22cae77536807',1,'e2e::Parameters']]],
+  ['altrates',['altRates',['../classe2e_1_1_parameters.html#a7f2806bfda6a689e9140610da6812dce',1,'e2e.Parameters.altRates()'],['../classe2e_1_1_application.html#a92626ca2a674ccbba7f743b13c77fd7b',1,'e2e.Application.altRates()']]],
+  ['altratesoutput',['altRatesOutput',['../classe2e_1_1_parameters.html#a30566bb6c78f0f438e993696b9fa9f20',1,'e2e::Parameters']]],
+  ['application',['Application',['../classe2e_1_1_application.html',1,'e2e']]],
+  ['args',['Args',['../classe2e_1_1_args.html',1,'e2e']]],
+  ['args',['args',['../classe2e_1_1_application.html#abade6fc2e2c04ddd7e48137a2a7721bd',1,'e2e::Application']]]
 ];
