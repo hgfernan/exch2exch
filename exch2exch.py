@@ -111,8 +111,9 @@ class Differences:
         # TODO check the two coins
         self.coinName = mb.getCoinName ()
         
-        self.dmin = mb.getLow ()  - ok.getLow ()   
+#        self.dmin = mb.getLow ()  - ok.getLow ()   
         self.dmax = mb.getHigh () - ok.getLow ()
+        self.dmin = ok.getHigh () - mb.getLow ()
         
         self.gmin = 100.0 * self.dmin / ok.getHigh ()
         self.gmax = 100.0 * self.dmax / ok.getLow ()
@@ -172,14 +173,14 @@ class Differences:
         result += fmt.format (oname, mname)
         fmt = "\n\tAbsolute: {0:.4f} {1}"
         result += fmt.format (self.getABuySell (), self.getCoinName ())
-        fmt = "\n\tRelative: {0:.4f} %%"
+        fmt = "\n\tRelative: {0:.4f} %"
         result += fmt.format (self.getRBuySell ())
         
         fmt = "\nLast transactions at {0} and {1}:"
         result += fmt.format (oname, mname)
         fmt = "\n\tAbsolute: {0:.4f} {1}"
         result += fmt.format (self.getALast (), self.getCoinName ())
-        fmt = "\n\tRelative: {0:.4f} %%"
+        fmt = "\n\tRelative: {0:.4f} %"
         result += fmt.format (self.getRLast ())
         
         # Normal function termination
