@@ -215,6 +215,147 @@ class Exchange:
         # Normal function termination
         return result
         
+class Bitfinex (Exchange):
+    U_TICKER = 'https://api.bitfinex.com/v1/pubticker/btcusd'
+    U_ORDRBK = 'https://api.bitfinex.com/v1/book/btcusd'
+    U_TRADES = 'https://api.bitfinex.com/v1/trades/btcusd'
+    
+    def __init__ (self):
+        super ().__init__ ()
+ 
+    def process_ticker (self):
+#        myClass = type (self).__name__
+#        print ("{0}.process_ticker ()".format (myClass))
+        self.exch = self.get_exch_name ()
+        self.pair = 'BTCUSD'
+        
+        aux       = float (self.ticker['timestamp'])
+        self.ts   = int   (aux)
+        
+        self.buy  = float (self.ticker['bid'])
+        self.sell = float (self.ticker['ask'])
+        self.high = float (self.ticker['high'])
+        self.low  = float (self.ticker['low'])
+        self.last = float (self.ticker['last_price'])
+        self.vol  = float (self.ticker['volume'])
+    
+        self.dt = datetime.datetime.fromtimestamp (float (self.ts))
+    
+    def get_ticker (self):
+        super ().get_ticker ()
+        
+        dt   = self.dt
+        buy  = self.buy
+        sell = self.sell
+        high = self.high
+        low  = self.low
+        last = self.last
+        
+        result = (dt, sell, buy, high, low, last)
+        
+        return result
+    
+    def mk_ticker (self):
+        super ().get_ticker ()
+        
+        exch = self.exch
+        pair = self.pair
+        dt   = self.ts
+        buy  = self.buy
+        sell = self.sell
+        high = self.high
+        low  = self.low
+        last = self.last
+        vol  = self.vol
+        
+        result = Ticker (exch, pair, dt, buy, sell, high, low, last, vol)
+        
+        return result
+    
+    def get_exch_name (self):
+        return "Bitstamp"
+    
+    def get_exch_prefix (self):
+        return "bs"
+        
+    def get_original (self):
+        return self.original 
+        
+    def __str__ (self):
+        result = json.dumps (self.__dict__, cls = DatetimeEncoder)
+        
+        # Normal function termination
+        return result      
+        
+class Bitstamp (Exchange):
+    U_TICKER = 'https://www.bitstamp.net/api/ticker/'
+    U_ORDRBK = 'https://www.bitstamp.net/api/order_book/'
+    U_TRADES = 'https://www.bitstamp.net/api/transactions/'
+      
+    def __init__ (self):
+        super ().__init__ ()
+ 
+    def process_ticker (self):
+#        myClass = type (self).__name__
+#        print ("{0}.process_ticker ()".format (myClass))
+        self.exch = self.get_exch_name ()
+        self.pair = 'BTCUSD'
+        self.ts   = int   (self.ticker['timestamp'])
+        self.buy  = float (self.ticker['bid'])
+        self.sell = float (self.ticker['ask'])
+        self.high = float (self.ticker['high'])
+        self.low  = float (self.ticker['low'])
+        self.last = float (self.ticker['last'])
+        self.vol  = float (self.ticker['volume'])
+    
+        self.dt = datetime.datetime.fromtimestamp (float (self.ts))
+    
+    def get_ticker (self):
+        super ().get_ticker ()
+        
+        dt   = self.dt
+        buy  = self.buy
+        sell = self.sell
+        high = self.high
+        low  = self.low
+        last = self.last
+        
+        result = (dt, sell, buy, high, low, last)
+        
+        return result
+    
+    def mk_ticker (self):
+        super ().get_ticker ()
+        
+        exch = self.exch
+        pair = self.pair
+        dt   = self.ts
+        buy  = self.buy
+        sell = self.sell
+        high = self.high
+        low  = self.low
+        last = self.last
+        vol  = self.vol
+        
+        result = Ticker (exch, pair, dt, buy, sell, high, low, last, vol)
+        
+        return result
+    
+    def get_exch_name (self):
+        return "Bitstamp"
+    
+    def get_exch_prefix (self):
+        return "bs"
+        
+    def get_original (self):
+        return self.original 
+        
+    def __str__ (self):
+        result = json.dumps (self.__dict__, cls = DatetimeEncoder)
+        
+        # Normal function termination
+        return result       
+        
 class FoxBit (Exchange):
     U_TICKER = 'https://api.blinktrade.com/api/v1/BRL/ticker?crypto_currency=BTC'
     
@@ -416,6 +557,8 @@ class OkCoin (Exchange):
 
 def main ():
     exchanges = []
+    exchanges.append (Bitfinex ())
+    exchanges.append (Bitstamp ())
     exchanges.append (FoxBit ())
     exchanges.append (MercadoBitcoin ())
     exchanges.append (OkCoin ())
