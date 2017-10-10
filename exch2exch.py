@@ -113,7 +113,7 @@ class Differences:
         
 #        self.dmin = mb.getLow ()  - ok.getLow ()   
         self.dmax = mb.getHigh () - ok.getLow ()
-        self.dmin = ok.getHigh () - mb.getLow ()
+        self.dmin = mb.getLow () - ok.getHigh ()
         
         self.gmin = 100.0 * self.dmin / ok.getHigh ()
         self.gmax = 100.0 * self.dmax / ok.getLow ()
@@ -426,27 +426,49 @@ def main ():
     last *= brl2usd
     mb_usd = XbtPrices (dt, sell, buy, high, low, last, "MercadoBitcoin", "USD")
     print ("{0}\n".format (mb_usd))
+#    
+#    #
+#    #
+#    # OkCoin section 
+#    # 
+#    
+#
+#    ok = exchange.OkCoin ()        
+##    ok_tupl = get_ok_rates (u_ok)
+#    ok_tupl = ok.get_ticker ()
+#    
+#    dt, sell, buy, high, low, last = ok_tupl
+#    
+#    ok = XbtPrices (dt, sell, buy, high, low, last, "OkCoin", "USD")
+#    
+#    # print ("MercadoBitcoin: {0}: Sell {1} BRL, Buy {2} BRL".format (mb))
+#    print ("{0}\n".format (ok))
+#     
+#    
+##    diff = Differences (google, mb_usd, ok)
+#    diff = Differences (final, mb_usd, ok)
+
     
     #
     #
-    # OkCoin section 
+    # Bitstamp section 
     # 
     
 
-    ok = exchange.OkCoin ()        
+    bs = exchange.Bitstamp ()        
 #    ok_tupl = get_ok_rates (u_ok)
-    ok_tupl = ok.get_ticker ()
+    bs_tupl = bs.get_ticker ()
     
-    dt, sell, buy, high, low, last = ok_tupl
+    dt, sell, buy, high, low, last = bs_tupl
     
-    ok = XbtPrices (dt, sell, buy, high, low, last, "OkCoin", "USD")
+    bs = XbtPrices (dt, sell, buy, high, low, last, "Bitstamp", "USD")
     
     # print ("MercadoBitcoin: {0}: Sell {1} BRL, Buy {2} BRL".format (mb))
-    print ("{0}\n".format (ok))
+    print ("{0}\n".format (bs))
      
     
 #    diff = Differences (google, mb_usd, ok)
-    diff = Differences (final, mb_usd, ok)
+    diff = Differences (final, mb_usd, bs)
     
     print (diff)
     

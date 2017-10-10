@@ -45,39 +45,6 @@ class Rates:
         return result        
     
     pass 
-
-def google_get_rate (url):
-    result = 0
-
-    f = urllib.request.urlopen (url)
-    
-    try:
-        line = f.readline ()
-        while line != b'':
-            ind = line.find (b'currency_converter')
-            if ind != -1:
-                
-                fields = line.split ()
-                rate = fields[5].split (b'>')[1]
-                
-                break
-                
-            line = f.readline ()
-        
-        result = float (rate)
-    except IndexError as err:
-        result = 0.0
-        
-        fmt = "Google.get_rate(): {0}"
-        print (fmt.format (err))
-        
-        raise
-    
-    # Normal function termination
-    return result
-
-G_U_USD2BRL = 'https://finance.google.com/finance/converter?a=1&from=USD&to=BRL&meta=ei%3DoKi6WfnPAsSTeoKNoJAB'
-G_U_BRL2USD = 'https://finance.google.com/finance/converter?a=1&from=BRL&to=USD&meta=ei%3DYqi6Wej-AoyEeoLbh9gF'
     
 class Google (Rates):
     #    U_USD2BRL = 'https://www.google.com/finance/converter?a=1&from=USD&to=BRL'
@@ -85,12 +52,42 @@ class Google (Rates):
 #    U_BRL2USD = 'https://www.google.com/finance/converter?a=1&from=BRL&to=USD'
     U_BRL2USD = 'https://finance.google.com/finance/converter?a=1&from=BRL&to=USD&meta=ei%3DYqi6Wej-AoyEeoLbh9gF'
 
+    def get_rate (url):
+        result = 0
+    
+        f = urllib.request.urlopen (url)
+        
+        try:
+            line = f.readline ()
+            while line != b'':
+                ind = line.find (b'currency_converter')
+                if ind != -1:
+                    
+                    fields = line.split ()
+                    rate = fields[5].split (b'>')[1]
+                    
+                    break
+                    
+                line = f.readline ()
+            
+            result = float (rate)
+        except IndexError as err:
+            result = 0.0
+            
+            fmt = "Google.get_rate(): {0}"
+            print (fmt.format (err))
+            
+            raise
+        
+        # Normal function termination
+        return result
+
     def __init__ (self):
         ts = math.trunc (time.time () + 0.5)
         self.dt = datetime.datetime.fromtimestamp (ts)
                 
-        self.usd2brl = google_get_rate (Google.U_USD2BRL)
-        self.brl2usd = google_get_rate (Google.U_BRL2USD)
+        self.usd2brl = Google.get_rate (Google.U_USD2BRL)
+        self.brl2usd = Google.get_rate (Google.U_BRL2USD)
                 
         self.service = "Google"
         self.prefix = "ggl"

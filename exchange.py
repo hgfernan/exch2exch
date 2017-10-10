@@ -273,10 +273,10 @@ class Bitfinex (Exchange):
         return result
     
     def get_exch_name (self):
-        return "Bitstamp"
+        return "Bitfinex"
     
     def get_exch_prefix (self):
-        return "bs"
+        return "bf"
         
     def get_original (self):
         return self.original 
