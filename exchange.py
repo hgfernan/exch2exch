@@ -42,8 +42,8 @@ class OrderBook:
         
 class Ticker:
     ## Constructor
-    # @param exch Exchange name
-    # @param pair Pair of coins -- 1st target coin, 2nd, source coin 
+    # @param exch Name of the exchange, a string not the object 
+    # @param pair Pair of coins -- 1st target coin, 2nd source coin 
     # @param dt Date and time as seconds since 1970/01/01 at zero hours
     # @param buy Bid price
     # @param sell Ask price

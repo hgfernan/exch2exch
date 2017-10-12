@@ -7,4 +7,6 @@ out/
 dummy.json
 Workspace/RemoteSystemsTempFiles
 Workspace/.metadata
+doc/html
+doc/latex 
 
