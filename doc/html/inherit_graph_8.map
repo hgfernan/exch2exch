@@ -1,3 +1,8 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classexchange_1_1_order_book.html" title="exchange.OrderBook" alt="" coords="5,5,149,32"/>
+<area shape="rect" id="node1" href="$classexchange_1_1_exchange.html" title="exchange.Exchange" alt="" coords="5,107,145,133"/>
+<area shape="rect" id="node2" href="$classexchange_1_1_bitfinex.html" title="exchange.Bitfinex" alt="" coords="216,5,343,32"/>
+<area shape="rect" id="node3" href="$classexchange_1_1_bitstamp.html" title="exchange.Bitstamp" alt="" coords="212,56,347,83"/>
+<area shape="rect" id="node4" href="$classexchange_1_1_fox_bit.html" title="exchange.FoxBit" alt="" coords="219,107,339,133"/>
+<area shape="rect" id="node5" href="$classexchange_1_1_mercado_bitcoin.html" title="exchange.MercadoBitcoin" alt="" coords="193,157,365,184"/>
+<area shape="rect" id="node6" href="$classexchange_1_1_ok_coin.html" title="exchange.OkCoin" alt="" coords="216,208,343,235"/>
 </map>

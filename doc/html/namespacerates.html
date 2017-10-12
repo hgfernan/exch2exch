@@ -41,7 +41,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li class="current"><a href="namespaces.html"><span>Packages</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
@@ -87,8 +86,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#func-members">Functions</a> &#124;
-<a href="#var-members">Variables</a>  </div>
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">rates Namespace Reference</div>  </div>
 </div><!--header-->
@@ -117,15 +115,6 @@ Functions</h2></td></tr>
 <tr class="separator:aafc179b32863137b88c74dd0ee2576bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae4c7203ef8a919f9cf522581ca00b08a"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacerates.html#ae4c7203ef8a919f9cf522581ca00b08a">getUsd2Brl</a> (self)</td></tr>
 <tr class="separator:ae4c7203ef8a919f9cf522581ca00b08a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2819015de60b5745e06ed3d266d26d6b"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacerates.html#a2819015de60b5745e06ed3d266d26d6b">google_get_rate</a> (url)</td></tr>
-<tr class="separator:a2819015de60b5745e06ed3d266d26d6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
-Variables</h2></td></tr>
-<tr class="memitem:a4b516d1323011d86ff6aef5851ec8fcf"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacerates.html#a4b516d1323011d86ff6aef5851ec8fcf">G_U_BRL2USD</a> = 'https://finance.google.com/finance/converter?a=1&amp;from=BRL&amp;to=USD&amp;meta=ei%3DYqi6Wej-AoyEeoLbh9gF'</td></tr>
-<tr class="separator:a4b516d1323011d86ff6aef5851ec8fcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0ba47a320577d69e1955c13a384dd662"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacerates.html#a0ba47a320577d69e1955c13a384dd662">G_U_USD2BRL</a> = 'https://finance.google.com/finance/converter?a=1&amp;from=USD&amp;to=BRL&amp;meta=ei%3DoKi6WfnPAsSTeoKNoJAB'</td></tr>
-<tr class="separator:a0ba47a320577d69e1955c13a384dd662"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a class="anchor" id="a2f1a70c33ee9e255938e4c19fd207264"></a>
@@ -223,58 +212,10 @@ Variables</h2></td></tr>
 </div><!-- fragment -->
 </div>
 </div>
-<a class="anchor" id="a2819015de60b5745e06ed3d266d26d6b"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">def rates.google_get_rate </td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>url</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="rates_8py_source.html#l00049">49</a> of file <a class="el" href="rates_8py_source.html">rates.py</a>.</p>
-<div class="fragment"><div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="namespacerates.html#a2819015de60b5745e06ed3d266d26d6b">   49</a></span>&#160;<span class="keyword">def </span><a class="code" href="namespacerates.html#a2819015de60b5745e06ed3d266d26d6b">google_get_rate</a> (url):</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    result = 0</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    f = urllib.request.urlopen (url)</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    </div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordflow">try</span>:</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        line = f.readline ()</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="keywordflow">while</span> line != b<span class="stringliteral">&#39;&#39;</span>:</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            ind = line.find (b<span class="stringliteral">&#39;currency_converter&#39;</span>)</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            <span class="keywordflow">if</span> ind != -1:</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                </div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                fields = line.split ()</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                rate = fields[5].split (b<span class="stringliteral">&#39;&gt;&#39;</span>)[1]</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                </div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                <span class="keywordflow">break</span></div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                </div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            line = f.readline ()</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        </div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        result = float (rate)</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordflow">except</span> IndexError <span class="keyword">as</span> err:</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        result = 0.0</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        </div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        fmt = <span class="stringliteral">&quot;Google.get_rate(): {0}&quot;</span></div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <span class="keywordflow">print</span> (fmt.format (err))</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        </div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <span class="keywordflow">raise</span></div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    </div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="comment"># Normal function termination</span></div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordflow">return</span> result</div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div><div class="ttc" id="namespacerates_html_a2819015de60b5745e06ed3d266d26d6b"><div class="ttname"><a href="namespacerates.html#a2819015de60b5745e06ed3d266d26d6b">rates.google_get_rate</a></div><div class="ttdeci">def google_get_rate(url)</div><div class="ttdef"><b>Definition:</b> <a href="rates_8py_source.html#l00049">rates.py:49</a></div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<h2 class="groupheader">Variable Documentation</h2>
-<a class="anchor" id="a4b516d1323011d86ff6aef5851ec8fcf"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">string rates.G_U_BRL2USD = 'https://finance.google.com/finance/converter?a=1&amp;from=BRL&amp;to=USD&amp;meta=ei%3DYqi6Wej-AoyEeoLbh9gF'</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="rates_8py_source.html#l00080">80</a> of file <a class="el" href="rates_8py_source.html">rates.py</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a0ba47a320577d69e1955c13a384dd662"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">string rates.G_U_USD2BRL = 'https://finance.google.com/finance/converter?a=1&amp;from=USD&amp;to=BRL&amp;meta=ei%3DoKi6WfnPAsSTeoKNoJAB'</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="rates_8py_source.html#l00079">79</a> of file <a class="el" href="rates_8py_source.html">rates.py</a>.</p>
-
-</div>
-</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Sep 29 2017 00:20:08 for exch2exch by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Oct 12 2017 01:17:46 for exch2exch by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

@@ -23,15 +23,6 @@ def \hyperlink{namespacerates_a5dd7b6601bc66e313c26984e32f1e290}{get\+Service\+N
 def \hyperlink{namespacerates_aafc179b32863137b88c74dd0ee2576bd}{get\+Service\+Prefix} (self)
 \item 
 def \hyperlink{namespacerates_ae4c7203ef8a919f9cf522581ca00b08a}{get\+Usd2\+Brl} (self)
-\item 
-def \hyperlink{namespacerates_a2819015de60b5745e06ed3d266d26d6b}{google\+\_\+get\+\_\+rate} (url)
-\end{DoxyCompactItemize}
-\subsection*{Variables}
-\begin{DoxyCompactItemize}
-\item 
-string \hyperlink{namespacerates_a4b516d1323011d86ff6aef5851ec8fcf}{G\+\_\+\+U\+\_\+\+B\+R\+L2\+U\+SD} = \textquotesingle{}https\+://finance.\+google.\+com/finance/converter?a=1\&from=B\+RL\&to=U\+SD\&meta=ei\%3\+D\+Yqi6\+Wej-\/\+Aoy\+Eeo\+Lbh9g\+F\textquotesingle{}
-\item 
-string \hyperlink{namespacerates_a0ba47a320577d69e1955c13a384dd662}{G\+\_\+\+U\+\_\+\+U\+S\+D2\+B\+RL} = \textquotesingle{}https\+://finance.\+google.\+com/finance/converter?a=1\&from=U\+SD\&to=B\+RL\&meta=ei\%3\+Do\+Ki6\+Wfn\+P\+As\+S\+Teo\+K\+No\+J\+A\+B\textquotesingle{}
 \end{DoxyCompactItemize}
 
 
@@ -131,64 +122,3 @@ Definition at line \hyperlink{rates_8py_source_l00025}{25} of file \hyperlink{ra
 00026         \textcolor{keywordflow}{return} self.usd2brl
 00027     
 \end{DoxyCode}
-\index{rates@{rates}!google\+\_\+get\+\_\+rate@{google\+\_\+get\+\_\+rate}}
-\index{google\+\_\+get\+\_\+rate@{google\+\_\+get\+\_\+rate}!rates@{rates}}
-\subsubsection[{\texorpdfstring{google\+\_\+get\+\_\+rate(url)}{google_get_rate(url)}}]{\setlength{\rightskip}{0pt plus 5cm}def rates.\+google\+\_\+get\+\_\+rate (
-\begin{DoxyParamCaption}
-\item[{}]{url}
-\end{DoxyParamCaption}
-)}\hypertarget{namespacerates_a2819015de60b5745e06ed3d266d26d6b}{}\label{namespacerates_a2819015de60b5745e06ed3d266d26d6b}
-
-
-Definition at line \hyperlink{rates_8py_source_l00049}{49} of file \hyperlink{rates_8py_source}{rates.\+py}.
-
-
-\begin{DoxyCode}
-\hypertarget{namespacerates.tex_l00049}{}\hyperlink{namespacerates_a2819015de60b5745e06ed3d266d26d6b}{00049} \textcolor{keyword}{def }\hyperlink{namespacerates_a2819015de60b5745e06ed3d266d26d6b}{google\_get\_rate} (url):
-00050     result = 0
-00051 
-00052     f = urllib.request.urlopen (url)
-00053     
-00054     \textcolor{keywordflow}{try}:
-00055         line = f.readline ()
-00056         \textcolor{keywordflow}{while} line != b\textcolor{stringliteral}{''}:
-00057             ind = line.find (b\textcolor{stringliteral}{'currency\_converter'})
-00058             \textcolor{keywordflow}{if} ind != -1:
-00059                 
-00060                 fields = line.split ()
-00061                 rate = fields[5].split (b\textcolor{stringliteral}{'>'})[1]
-00062                 
-00063                 \textcolor{keywordflow}{break}
-00064                 
-00065             line = f.readline ()
-00066         
-00067         result = float (rate)
-00068     \textcolor{keywordflow}{except} IndexError \textcolor{keyword}{as} err:
-00069         result = 0.0
-00070         
-00071         fmt = \textcolor{stringliteral}{"Google.get\_rate(): \{0\}"}
-00072         \textcolor{keywordflow}{print} (fmt.format (err))
-00073         
-00074         \textcolor{keywordflow}{raise}
-00075     
-00076     \textcolor{comment}{# Normal function termination}
-00077     \textcolor{keywordflow}{return} result
-00078 
-\end{DoxyCode}
-
-
-\subsection{Variable Documentation}
-\index{rates@{rates}!G\+\_\+\+U\+\_\+\+B\+R\+L2\+U\+SD@{G\+\_\+\+U\+\_\+\+B\+R\+L2\+U\+SD}}
-\index{G\+\_\+\+U\+\_\+\+B\+R\+L2\+U\+SD@{G\+\_\+\+U\+\_\+\+B\+R\+L2\+U\+SD}!rates@{rates}}
-\subsubsection[{\texorpdfstring{G\+\_\+\+U\+\_\+\+B\+R\+L2\+U\+SD}{G_U_BRL2USD}}]{\setlength{\rightskip}{0pt plus 5cm}string rates.\+G\+\_\+\+U\+\_\+\+B\+R\+L2\+U\+SD = \textquotesingle{}https\+://finance.\+google.\+com/finance/converter?a=1\&from=B\+RL\&to=U\+SD\&meta=ei\%3\+D\+Yqi6\+Wej-\/\+Aoy\+Eeo\+Lbh9g\+F\textquotesingle{}}\hypertarget{namespacerates_a4b516d1323011d86ff6aef5851ec8fcf}{}\label{namespacerates_a4b516d1323011d86ff6aef5851ec8fcf}
-
-
-Definition at line \hyperlink{rates_8py_source_l00080}{80} of file \hyperlink{rates_8py_source}{rates.\+py}.
-
-\index{rates@{rates}!G\+\_\+\+U\+\_\+\+U\+S\+D2\+B\+RL@{G\+\_\+\+U\+\_\+\+U\+S\+D2\+B\+RL}}
-\index{G\+\_\+\+U\+\_\+\+U\+S\+D2\+B\+RL@{G\+\_\+\+U\+\_\+\+U\+S\+D2\+B\+RL}!rates@{rates}}
-\subsubsection[{\texorpdfstring{G\+\_\+\+U\+\_\+\+U\+S\+D2\+B\+RL}{G_U_USD2BRL}}]{\setlength{\rightskip}{0pt plus 5cm}string rates.\+G\+\_\+\+U\+\_\+\+U\+S\+D2\+B\+RL = \textquotesingle{}https\+://finance.\+google.\+com/finance/converter?a=1\&from=U\+SD\&to=B\+RL\&meta=ei\%3\+Do\+Ki6\+Wfn\+P\+As\+S\+Teo\+K\+No\+J\+A\+B\textquotesingle{}}\hypertarget{namespacerates_a0ba47a320577d69e1955c13a384dd662}{}\label{namespacerates_a0ba47a320577d69e1955c13a384dd662}
-
-
-Definition at line \hyperlink{rates_8py_source_l00079}{79} of file \hyperlink{rates_8py_source}{rates.\+py}.
-

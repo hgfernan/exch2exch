@@ -26,31 +26,40 @@ def \hyperlink{namespacee2e_afb3e7d384688a07b72e1df5201192375}{main} (argv)
 )}\hypertarget{namespacee2e_afb3e7d384688a07b72e1df5201192375}{}\label{namespacee2e_afb3e7d384688a07b72e1df5201192375}
 
 
-Definition at line \hyperlink{e2e_8py_source_l00352}{352} of file \hyperlink{e2e_8py_source}{e2e.\+py}.
+Definition at line \hyperlink{e2e_8py_source_l00418}{418} of file \hyperlink{e2e_8py_source}{e2e.\+py}.
 
 
 \begin{DoxyCode}
-\hypertarget{namespacee2e.tex_l00352}{}\hyperlink{namespacee2e_afb3e7d384688a07b72e1df5201192375}{00352} \textcolor{keyword}{def }\hyperlink{namespacee2e_afb3e7d384688a07b72e1df5201192375}{main} (argv):
-00353     app = Application ()
-00354     
-00355     \textcolor{comment}{# TODO parse command line }
-00356     \textcolor{comment}{# TODO catch exception}
-00357     \textcolor{comment}{# TODO return according to error}
-00358     app.parseCmdLine ()
-00359     
-00360     \textcolor{comment}{# TODO interpret command line }
-00361     \textcolor{comment}{# TODO catch exception}
-00362     \textcolor{comment}{# TODO return according to error}
-00363     app.interpretArgs ()
-00364     
-00365     \textcolor{comment}{# TODO consult main rate service}
-00366     \textcolor{comment}{# TODO consult auxiliary rate services}
-00367     \textcolor{comment}{# TODO consult origin exchange }
-00368     \textcolor{comment}{# TODO consult destination exchange}
-00369     \textcolor{comment}{# TODO generate expectations}
-00370     \textcolor{comment}{# TODO generate output report and JSON files}
-00371 
-00372     \textcolor{comment}{# Normal function termination}
-00373     \textcolor{keywordflow}{return} 0
-00374 
+\hypertarget{namespacee2e.tex_l00418}{}\hyperlink{namespacee2e_afb3e7d384688a07b72e1df5201192375}{00418} \textcolor{keyword}{def }\hyperlink{namespacee2e_afb3e7d384688a07b72e1df5201192375}{main} (argv):
+00419     app = Application ()
+00420     
+00421     \textcolor{comment}{# TODO parse command line }
+00422     \textcolor{comment}{# TODO catch exception}
+00423     \textcolor{comment}{# TODO return according to error}
+00424     app.parseCmdLine ()
+00425     
+00426     \textcolor{comment}{# TODO interpret command line }
+00427     \textcolor{comment}{# TODO catch exception}
+00428     \textcolor{comment}{# TODO return according to error}
+00429     app.interpretArgs ()
+00430     
+00431     \textcolor{comment}{# TODO consult main rate service}
+00432     app.outMainRates ()
+00433     
+00434     \textcolor{comment}{# TODO consult all rate services}
+00435     app.outAllRates ()
+00436     
+00437     \textcolor{comment}{# TODO consult origin exchange }
+00438     app.outOriginExchange ()
+00439     
+00440     \textcolor{comment}{# TODO consult destination exchange}
+00441     app.outDestinationExchange ()
+00442     
+00443     \textcolor{comment}{# TODO generate expectations}
+00444     
+00445     \textcolor{comment}{# TODO generate output report and JSON files}
+00446 
+00447     \textcolor{comment}{# Normal function termination}
+00448     \textcolor{keywordflow}{return} 0
+00449 
 \end{DoxyCode}

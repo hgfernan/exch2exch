@@ -48,116 +48,111 @@
 00045         \textcolor{keywordflow}{return} result        
 00046     
 00047     \textcolor{keywordflow}{pass} 
-00048 
-\hypertarget{rates_8py_source.tex_l00049}{}\hyperlink{namespacerates_a2819015de60b5745e06ed3d266d26d6b}{00049} \textcolor{keyword}{def }\hyperlink{namespacerates_a2819015de60b5745e06ed3d266d26d6b}{google\_get\_rate} (url):
-00050     result = 0
-00051 
-00052     f = urllib.request.urlopen (url)
-00053     
-00054     \textcolor{keywordflow}{try}:
-00055         line = f.readline ()
-00056         \textcolor{keywordflow}{while} line != b\textcolor{stringliteral}{''}:
-00057             ind = line.find (b\textcolor{stringliteral}{'currency\_converter'})
-00058             \textcolor{keywordflow}{if} ind != -1:
-00059                 
-00060                 fields = line.split ()
-00061                 rate = fields[5].split (b\textcolor{stringliteral}{'>'})[1]
-00062                 
-00063                 \textcolor{keywordflow}{break}
-00064                 
-00065             line = f.readline ()
-00066         
-00067         result = float (rate)
-00068     \textcolor{keywordflow}{except} IndexError \textcolor{keyword}{as} err:
-00069         result = 0.0
-00070         
-00071         fmt = \textcolor{stringliteral}{"Google.get\_rate(): \{0\}"}
-00072         \textcolor{keywordflow}{print} (fmt.format (err))
-00073         
-00074         \textcolor{keywordflow}{raise}
-00075     
-00076     \textcolor{comment}{# Normal function termination}
-00077     \textcolor{keywordflow}{return} result
-00078 
-\hypertarget{rates_8py_source.tex_l00079}{}\hyperlink{namespacerates_a0ba47a320577d69e1955c13a384dd662}{00079} G\_U\_USD2BRL = \textcolor{stringliteral}{'
+00048     
+\hypertarget{rates_8py_source.tex_l00049}{}\hyperlink{classrates_1_1_google}{00049} \textcolor{keyword}{class }\hyperlink{classrates_1_1_google}{Google} (\hyperlink{classrates_1_1_rates}{Rates}):
+00050     \textcolor{comment}{#    U\_USD2BRL = 'https://www.google.com/finance/converter?a=1&from=USD&to=BRL'}
+\hypertarget{rates_8py_source.tex_l00051}{}\hyperlink{classrates_1_1_google_a77ef7f5932c48b002697fb187a234d4a}{00051}     U\_USD2BRL = \textcolor{stringliteral}{'
       https://finance.google.com/finance/converter?a=1&from=USD&to=BRL&meta=ei%3DoKi6WfnPAsSTeoKNoJAB'}
-\hypertarget{rates_8py_source.tex_l00080}{}\hyperlink{namespacerates_a4b516d1323011d86ff6aef5851ec8fcf}{00080} G\_U\_BRL2USD = \textcolor{stringliteral}{'
+00052 \textcolor{comment}{#    U\_BRL2USD = 'https://www.google.com/finance/converter?a=1&from=BRL&to=USD'}
+\hypertarget{rates_8py_source.tex_l00053}{}\hyperlink{classrates_1_1_google_a46dbc3fa0a110bf5b66808c29642cfa1}{00053}     U\_BRL2USD = \textcolor{stringliteral}{'
       https://finance.google.com/finance/converter?a=1&from=BRL&to=USD&meta=ei%3DYqi6Wej-AoyEeoLbh9gF'}
-00081     
-\hypertarget{rates_8py_source.tex_l00082}{}\hyperlink{classrates_1_1_google}{00082} \textcolor{keyword}{class }\hyperlink{classrates_1_1_google}{Google} (\hyperlink{classrates_1_1_rates}{Rates}):
-00083     \textcolor{comment}{#    U\_USD2BRL = 'https://www.google.com/finance/converter?a=1&from=USD&to=BRL'}
-\hypertarget{rates_8py_source.tex_l00084}{}\hyperlink{classrates_1_1_google_a77ef7f5932c48b002697fb187a234d4a}{00084}     U\_USD2BRL = \textcolor{stringliteral}{'
-      https://finance.google.com/finance/converter?a=1&from=USD&to=BRL&meta=ei%3DoKi6WfnPAsSTeoKNoJAB'}
-00085 \textcolor{comment}{#    U\_BRL2USD = 'https://www.google.com/finance/converter?a=1&from=BRL&to=USD'}
-\hypertarget{rates_8py_source.tex_l00086}{}\hyperlink{classrates_1_1_google_a46dbc3fa0a110bf5b66808c29642cfa1}{00086}     U\_BRL2USD = \textcolor{stringliteral}{'
-      https://finance.google.com/finance/converter?a=1&from=BRL&to=USD&meta=ei%3DYqi6Wej-AoyEeoLbh9gF'}
-00087 
-\hypertarget{rates_8py_source.tex_l00088}{}\hyperlink{classrates_1_1_google_a6d9d023db3b4f6f2b585397e3469c396}{00088}     \textcolor{keyword}{def }\hyperlink{classrates_1_1_google_a6d9d023db3b4f6f2b585397e3469c396}{\_\_init\_\_} (self):
-00089         ts = math.trunc (time.time () + 0.5)
-\hypertarget{rates_8py_source.tex_l00090}{}\hyperlink{classrates_1_1_google_a76574be36237f78780f76bed53e69ab2}{00090}         self.\hyperlink{classrates_1_1_google_a76574be36237f78780f76bed53e69ab2}{dt} = datetime.datetime.fromtimestamp (ts)
+00054 
+\hypertarget{rates_8py_source.tex_l00055}{}\hyperlink{classrates_1_1_google_afa49252959b89741449dca773f2141b8}{00055}     \textcolor{keyword}{def }\hyperlink{classrates_1_1_google_afa49252959b89741449dca773f2141b8}{get\_rate} (url):
+00056         result = 0
+00057     
+00058         f = urllib.request.urlopen (url)
+00059         
+00060         \textcolor{keywordflow}{try}:
+00061             line = f.readline ()
+00062             \textcolor{keywordflow}{while} line != b\textcolor{stringliteral}{''}:
+00063                 ind = line.find (b\textcolor{stringliteral}{'currency\_converter'})
+00064                 \textcolor{keywordflow}{if} ind != -1:
+00065                     
+00066                     fields = line.split ()
+00067                     rate = fields[5].split (b\textcolor{stringliteral}{'>'})[1]
+00068                     
+00069                     \textcolor{keywordflow}{break}
+00070                     
+00071                 line = f.readline ()
+00072             
+00073             result = float (rate)
+00074         \textcolor{keywordflow}{except} IndexError \textcolor{keyword}{as} err:
+00075             result = 0.0
+00076             
+00077             fmt = \textcolor{stringliteral}{"Google.get\_rate(): \{0\}"}
+00078             \textcolor{keywordflow}{print} (fmt.format (err))
+00079             
+00080             \textcolor{keywordflow}{raise}
+00081         
+00082         \textcolor{comment}{# Normal function termination}
+00083         \textcolor{keywordflow}{return} result
+00084 
+\hypertarget{rates_8py_source.tex_l00085}{}\hyperlink{classrates_1_1_google_a6d9d023db3b4f6f2b585397e3469c396}{00085}     \textcolor{keyword}{def }\hyperlink{classrates_1_1_google_a6d9d023db3b4f6f2b585397e3469c396}{\_\_init\_\_} (self):
+00086         ts = math.trunc (time.time () + 0.5)
+\hypertarget{rates_8py_source.tex_l00087}{}\hyperlink{classrates_1_1_google_a76574be36237f78780f76bed53e69ab2}{00087}         self.\hyperlink{classrates_1_1_google_a76574be36237f78780f76bed53e69ab2}{dt} = datetime.datetime.fromtimestamp (ts)
+00088                 
+\hypertarget{rates_8py_source.tex_l00089}{}\hyperlink{classrates_1_1_google_a94c28f6d60d5d6afc075416d7378471c}{00089}         self.\hyperlink{classrates_1_1_google_a94c28f6d60d5d6afc075416d7378471c}{usd2brl} = Google.get\_rate (Google.U\_USD2BRL)
+\hypertarget{rates_8py_source.tex_l00090}{}\hyperlink{classrates_1_1_google_a0979ffcb18b8bf3156cc5735c67ca6df}{00090}         self.\hyperlink{classrates_1_1_google_a0979ffcb18b8bf3156cc5735c67ca6df}{brl2usd} = Google.get\_rate (Google.U\_BRL2USD)
 00091                 
-\hypertarget{rates_8py_source.tex_l00092}{}\hyperlink{classrates_1_1_google_a94c28f6d60d5d6afc075416d7378471c}{00092}         self.\hyperlink{classrates_1_1_google_a94c28f6d60d5d6afc075416d7378471c}{usd2brl} = google\_get\_rate (Google.U\_USD2BRL)
-\hypertarget{rates_8py_source.tex_l00093}{}\hyperlink{classrates_1_1_google_a0979ffcb18b8bf3156cc5735c67ca6df}{00093}         self.\hyperlink{classrates_1_1_google_a0979ffcb18b8bf3156cc5735c67ca6df}{brl2usd} = google\_get\_rate (Google.U\_BRL2USD)
+\hypertarget{rates_8py_source.tex_l00092}{}\hyperlink{classrates_1_1_google_a1da08e36d5007aa5293d048b625a35e9}{00092}         self.\hyperlink{classrates_1_1_google_a1da08e36d5007aa5293d048b625a35e9}{service} = \textcolor{stringliteral}{"Google"}
+\hypertarget{rates_8py_source.tex_l00093}{}\hyperlink{classrates_1_1_google_ada5de8700ad571d0ab819fa0163d6bbe}{00093}         self.\hyperlink{classrates_1_1_google_ada5de8700ad571d0ab819fa0163d6bbe}{prefix} = \textcolor{stringliteral}{"ggl"}
 00094                 
-\hypertarget{rates_8py_source.tex_l00095}{}\hyperlink{classrates_1_1_google_a1da08e36d5007aa5293d048b625a35e9}{00095}         self.\hyperlink{classrates_1_1_google_a1da08e36d5007aa5293d048b625a35e9}{service} = \textcolor{stringliteral}{"Google"}
-\hypertarget{rates_8py_source.tex_l00096}{}\hyperlink{classrates_1_1_google_ada5de8700ad571d0ab819fa0163d6bbe}{00096}         self.\hyperlink{classrates_1_1_google_ada5de8700ad571d0ab819fa0163d6bbe}{prefix} = \textcolor{stringliteral}{"ggl"}
-00097                 
-00098         \textcolor{comment}{# Normal function termination}
-00099         \textcolor{keywordflow}{return}
-00100             
-\hypertarget{rates_8py_source.tex_l00101}{}\hyperlink{classrates_1_1_x_rates}{00101} \textcolor{keyword}{class }\hyperlink{classrates_1_1_x_rates}{XRates} (\hyperlink{classrates_1_1_rates}{Rates}):
-\hypertarget{rates_8py_source.tex_l00102}{}\hyperlink{classrates_1_1_x_rates_ab3bd64c08e6503f0d76c9f73dc38fa25}{00102}     U\_XRATES = \textcolor{stringliteral}{'http://www.x-rates.com/table/?from=USD&amount=1'}
-00103 
-\hypertarget{rates_8py_source.tex_l00104}{}\hyperlink{classrates_1_1_x_rates_a034e274f1bf0a2509af2621eb27c7cce}{00104}     \textcolor{keyword}{def }\hyperlink{classrates_1_1_x_rates_a034e274f1bf0a2509af2621eb27c7cce}{get\_rates} ():        
-00105         \textcolor{comment}{# Adding a fake browser User-Agent to make site x-rates.com happy}
-00106         headers = \{\textcolor{stringliteral}{'User-Agent'} : \textcolor{stringliteral}{'Mozilla 5.10'}\}
-00107             
-00108         \textcolor{comment}{# Create the Request, joining URL and User-Agent}
-00109         request = urllib.request.Request (XRates.U\_XRATES, headers = headers)
-00110     
-00111         \textcolor{comment}{# Open the URL as file}
-00112         f = urllib.request.urlopen (request)
-00113         
-00114         \textcolor{comment}{# Input over the file to get the rates}
-00115         line = \textcolor{keywordtype}{None}
-00116         \textcolor{keywordflow}{while} line != b\textcolor{stringliteral}{''}:
-00117             line = f.readline ()
-00118             ind = line.find (b\textcolor{stringliteral}{'BRL'})
-00119             \textcolor{keywordflow}{if} ind == -1:
-00120                 \textcolor{keywordflow}{continue} 
-00121             
-00122             ind = line.find (b\textcolor{stringliteral}{'rtRates'})
-00123             \textcolor{keywordflow}{if} ind == -1:
-00124                 \textcolor{keywordflow}{continue} 
-00125                     
-00126             \textcolor{keywordflow}{if} line.find (b\textcolor{stringliteral}{'from=USD'}) != -1:
-00127                 fields = line.split (b\textcolor{stringliteral}{'>'})
-00128                 
-00129                 susd = fields[2].split (b\textcolor{stringliteral}{'<'})[0]
-00130                 usd2brl = float (susd)
-00131             
-00132             \textcolor{keywordflow}{elif} line.find (b\textcolor{stringliteral}{'from=BRL'}) != -1:
-00133                 fields = line.split (b\textcolor{stringliteral}{'>'})
+00095         \textcolor{comment}{# Normal function termination}
+00096         \textcolor{keywordflow}{return}
+00097             
+\hypertarget{rates_8py_source.tex_l00098}{}\hyperlink{classrates_1_1_x_rates}{00098} \textcolor{keyword}{class }\hyperlink{classrates_1_1_x_rates}{XRates} (\hyperlink{classrates_1_1_rates}{Rates}):
+\hypertarget{rates_8py_source.tex_l00099}{}\hyperlink{classrates_1_1_x_rates_ab3bd64c08e6503f0d76c9f73dc38fa25}{00099}     U\_XRATES = \textcolor{stringliteral}{'http://www.x-rates.com/table/?from=USD&amount=1'}
+00100 
+\hypertarget{rates_8py_source.tex_l00101}{}\hyperlink{classrates_1_1_x_rates_a034e274f1bf0a2509af2621eb27c7cce}{00101}     \textcolor{keyword}{def }\hyperlink{classrates_1_1_x_rates_a034e274f1bf0a2509af2621eb27c7cce}{get\_rates} ():        
+00102         \textcolor{comment}{# Adding a fake browser User-Agent to make site x-rates.com happy}
+00103         headers = \{\textcolor{stringliteral}{'User-Agent'} : \textcolor{stringliteral}{'Mozilla 5.10'}\}
+00104             
+00105         \textcolor{comment}{# Create the Request, joining URL and User-Agent}
+00106         request = urllib.request.Request (XRates.U\_XRATES, headers = headers)
+00107     
+00108         \textcolor{comment}{# Open the URL as file}
+00109         f = urllib.request.urlopen (request)
+00110         
+00111         \textcolor{comment}{# Input over the file to get the rates}
+00112         line = \textcolor{keywordtype}{None}
+00113         \textcolor{keywordflow}{while} line != b\textcolor{stringliteral}{''}:
+00114             line = f.readline ()
+00115             ind = line.find (b\textcolor{stringliteral}{'BRL'})
+00116             \textcolor{keywordflow}{if} ind == -1:
+00117                 \textcolor{keywordflow}{continue} 
+00118             
+00119             ind = line.find (b\textcolor{stringliteral}{'rtRates'})
+00120             \textcolor{keywordflow}{if} ind == -1:
+00121                 \textcolor{keywordflow}{continue} 
+00122                     
+00123             \textcolor{keywordflow}{if} line.find (b\textcolor{stringliteral}{'from=USD'}) != -1:
+00124                 fields = line.split (b\textcolor{stringliteral}{'>'})
+00125                 
+00126                 susd = fields[2].split (b\textcolor{stringliteral}{'<'})[0]
+00127                 usd2brl = float (susd)
+00128             
+00129             \textcolor{keywordflow}{elif} line.find (b\textcolor{stringliteral}{'from=BRL'}) != -1:
+00130                 fields = line.split (b\textcolor{stringliteral}{'>'})
+00131                 
+00132                 sbrl = fields[2].split (b\textcolor{stringliteral}{'<'})[0]
+00133                 brl2usd = float (sbrl)
 00134                 
-00135                 sbrl = fields[2].split (b\textcolor{stringliteral}{'<'})[0]
-00136                 brl2usd = float (sbrl)
-00137                 
-00138         result = (usd2brl, brl2usd)
-00139         
-00140         \textcolor{keywordflow}{return} result
+00135         result = (usd2brl, brl2usd)
+00136         
+00137         \textcolor{keywordflow}{return} result
+00138 
+\hypertarget{rates_8py_source.tex_l00139}{}\hyperlink{classrates_1_1_x_rates_a86fb4ba66a218c5f25b5b2c1f2a8345b}{00139}     \textcolor{keyword}{def }\hyperlink{classrates_1_1_x_rates_a86fb4ba66a218c5f25b5b2c1f2a8345b}{\_\_init\_\_} (self):
+00140 \textcolor{comment}{#        print (self.\_\_class\_\_.\_\_name\_\_)}
 00141 
-\hypertarget{rates_8py_source.tex_l00142}{}\hyperlink{classrates_1_1_x_rates_a86fb4ba66a218c5f25b5b2c1f2a8345b}{00142}     \textcolor{keyword}{def }\hyperlink{classrates_1_1_x_rates_a86fb4ba66a218c5f25b5b2c1f2a8345b}{\_\_init\_\_} (self):
-00143 \textcolor{comment}{#        print (self.\_\_class\_\_.\_\_name\_\_)}
+00142         ts = math.trunc (time.time () + 0.5)
+\hypertarget{rates_8py_source.tex_l00143}{}\hyperlink{classrates_1_1_x_rates_aa7835a0ac1d41af607d6d5885b49c131}{00143}         self.\hyperlink{classrates_1_1_x_rates_aa7835a0ac1d41af607d6d5885b49c131}{dt} = datetime.datetime.fromtimestamp (ts)
 00144 
-00145         ts = math.trunc (time.time () + 0.5)
-\hypertarget{rates_8py_source.tex_l00146}{}\hyperlink{classrates_1_1_x_rates_aa7835a0ac1d41af607d6d5885b49c131}{00146}         self.\hyperlink{classrates_1_1_x_rates_aa7835a0ac1d41af607d6d5885b49c131}{dt} = datetime.datetime.fromtimestamp (ts)
-00147 
-\hypertarget{rates_8py_source.tex_l00148}{}\hyperlink{classrates_1_1_x_rates_a79fbb88d6331909d4023129dde29d2b8}{00148}         self.\hyperlink{classrates_1_1_x_rates_a79fbb88d6331909d4023129dde29d2b8}{usd2brl}, self.\hyperlink{classrates_1_1_x_rates_a79fbb88d6331909d4023129dde29d2b8}{usd2brl} = XRates.get\_rates () 
-00149                 
-\hypertarget{rates_8py_source.tex_l00150}{}\hyperlink{classrates_1_1_x_rates_ad80e3c0295deaa15fac085324716747f}{00150}         self.\hyperlink{classrates_1_1_x_rates_ad80e3c0295deaa15fac085324716747f}{service} = \textcolor{stringliteral}{"XRates"}
-\hypertarget{rates_8py_source.tex_l00151}{}\hyperlink{classrates_1_1_x_rates_a3b92b41b0fbd77b44d01f094ff83dd9d}{00151}         self.\hyperlink{classrates_1_1_x_rates_a3b92b41b0fbd77b44d01f094ff83dd9d}{prefix} = \textcolor{stringliteral}{"xr"}
+\hypertarget{rates_8py_source.tex_l00145}{}\hyperlink{classrates_1_1_x_rates_acb0a8b6ec059b823c8a46eb115341251}{00145}         self.usd2brl, self.\hyperlink{classrates_1_1_x_rates_acb0a8b6ec059b823c8a46eb115341251}{brl2usd} = XRates.get\_rates () 
+00146                 
+\hypertarget{rates_8py_source.tex_l00147}{}\hyperlink{classrates_1_1_x_rates_ad80e3c0295deaa15fac085324716747f}{00147}         self.\hyperlink{classrates_1_1_x_rates_ad80e3c0295deaa15fac085324716747f}{service} = \textcolor{stringliteral}{"XRates"}
+\hypertarget{rates_8py_source.tex_l00148}{}\hyperlink{classrates_1_1_x_rates_a3b92b41b0fbd77b44d01f094ff83dd9d}{00148}         self.\hyperlink{classrates_1_1_x_rates_a3b92b41b0fbd77b44d01f094ff83dd9d}{prefix} = \textcolor{stringliteral}{"xr"}
+00149 
+00150 \textcolor{comment}{# class Yahoo (Rates):}
+00151 \textcolor{comment}{#    pass}
 00152 
-00153 \textcolor{comment}{# class Yahoo (Rates):}
-00154 \textcolor{comment}{#    pass}
-00155 
 \end{DoxyCode}

@@ -1,12 +1,12 @@
 var searchData=
 [
-  ['setaltrate',['setAltRate',['../classe2e_1_1_parameters.html#a1e73f515a94469c6b9c75a595d8ae426',1,'e2e::Parameters']]],
-  ['setaltrateoutput',['setAltRateOutput',['../classe2e_1_1_parameters.html#a47d3280dcce660c7227ca8c817859d84',1,'e2e::Parameters']]],
+  ['setallrates',['setAllRates',['../classe2e_1_1_parameters.html#a764caaf0903863ccf240217b15999dc0',1,'e2e::Parameters']]],
+  ['setallratesoutput',['setAllRatesOutput',['../classe2e_1_1_parameters.html#a23a4ae20df9dbbb411654c45c5bbfa17',1,'e2e::Parameters']]],
   ['setconclusionoutput',['setConclusionOutput',['../classe2e_1_1_parameters.html#a4ec249739947f4643b6d2dc811ef2639',1,'e2e::Parameters']]],
   ['setdestination',['setDestination',['../classe2e_1_1_parameters.html#ac63ae6d2b5f45ae78ee855953a038f14',1,'e2e::Parameters']]],
   ['setdestinationoutput',['setDestinationOutput',['../classe2e_1_1_parameters.html#a96083de53012ca50d2a345a1673802de',1,'e2e::Parameters']]],
-  ['setmainrate',['setMainRate',['../classe2e_1_1_parameters.html#a8cea2f8656650dfbc2f4b9c13bce46a4',1,'e2e::Parameters']]],
-  ['setmainrateoutput',['setMainRateOutput',['../classe2e_1_1_parameters.html#a930e9e6cafab4096286754a473617232',1,'e2e::Parameters']]],
+  ['setmainrates',['setMainRates',['../classe2e_1_1_parameters.html#a57b1265982f14c075d2f1ab909383f5d',1,'e2e::Parameters']]],
+  ['setmainratesoutput',['setMainRatesOutput',['../classe2e_1_1_parameters.html#ae71495be8b331f293e0d66b3251a21e9',1,'e2e::Parameters']]],
   ['setorigin',['setOrigin',['../classe2e_1_1_parameters.html#a421e56e53ff0aaf5222229d8a81c456b',1,'e2e::Parameters']]],
   ['setoriginoutput',['setOriginOutput',['../classe2e_1_1_parameters.html#a2b87a3357a16d35b7606a97e924a4904',1,'e2e::Parameters']]],
   ['setrawdestinationoutput',['setRawDestinationOutput',['../classe2e_1_1_parameters.html#a2a4420c79bef43533fe2d9562d0faedb',1,'e2e::Parameters']]],

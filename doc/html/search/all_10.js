@@ -5,5 +5,5 @@ var searchData=
   ['ticker',['Ticker',['../classexchange_1_1_ticker.html',1,'exchange']]],
   ['trades',['Trades',['../classexchange_1_1_trades.html',1,'exchange']]],
   ['trades',['trades',['../classexchange_1_1_exchange.html#a30e87a377320ce05bd956fb014683641',1,'exchange::Exchange']]],
-  ['ts',['ts',['../classexchange_1_1_mercado_bitcoin.html#ac4630b08e08f9eeb9dad838dc9dc0cda',1,'exchange.MercadoBitcoin.ts()'],['../classexchange_1_1_ok_coin.html#a0fe6263a7f58a6fa8a688929976b7e4a',1,'exchange.OkCoin.ts()']]]
+  ['ts',['ts',['../classexchange_1_1_bitfinex.html#abf872e8ea738acd33d34a00d9d9e92c4',1,'exchange.Bitfinex.ts()'],['../classexchange_1_1_bitstamp.html#a8e85011dca7c70ffd1ed5ed398b0ed34',1,'exchange.Bitstamp.ts()'],['../classexchange_1_1_mercado_bitcoin.html#ac4630b08e08f9eeb9dad838dc9dc0cda',1,'exchange.MercadoBitcoin.ts()'],['../classexchange_1_1_ok_coin.html#a0fe6263a7f58a6fa8a688929976b7e4a',1,'exchange.OkCoin.ts()']]]
 ];

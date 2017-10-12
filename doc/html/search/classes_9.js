@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['ticker',['Ticker',['../classexchange_1_1_ticker.html',1,'exchange']]],
-  ['trades',['Trades',['../classexchange_1_1_trades.html',1,'exchange']]]
+  ['rate',['Rate',['../classrates_1_1_rate.html',1,'rates']]],
+  ['rates',['Rates',['../classrates_1_1_rates.html',1,'rates']]],
+  ['rates',['Rates',['../classraw__urlparser_1_1_rates.html',1,'raw_urlparser']]],
+  ['rates',['Rates',['../classexch2exch_1_1_rates.html',1,'exch2exch']]]
 ];
