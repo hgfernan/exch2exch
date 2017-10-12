@@ -4,3 +4,4 @@ __pycache__/
 *.kate-swp
 nohup.out
 out/
+dummy.json

@@ -142,7 +142,7 @@ class XRates (Rates):
         ts = math.trunc (time.time () + 0.5)
         self.dt = datetime.datetime.fromtimestamp (ts)
 
-        self.usd2brl, self.usd2brl = XRates.get_rates () 
+        self.usd2brl, self.brl2usd = XRates.get_rates () 
                 
         self.service = "XRates"
         self.prefix = "xr"

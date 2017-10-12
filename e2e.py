@@ -25,9 +25,9 @@ class Parameters:
         self.summaryOutput        = None
         self.conclusionOutput     = None
         self.mainRates            = None
-        self.altRates             = None
+        self.allRates             = None
         self.mainRatesOutput      = None
-        self.altRatesOutput       = None
+        self.allRatesOutput       = None
         self.origin               = None
         self.destination          = None
         self.originOutputput      = None
@@ -48,17 +48,17 @@ class Parameters:
     def getConclusionOutput (self):
         return self.conclusionOutput
 
-    def setMainRate (self, mainRate):
-        self.mainRate = mainRate
+    def setMainRates (self, mainRates):
+        self.mainRates = mainRates
 
-    def getMainRate (self):
-        return self.mainRate
+    def getMainRates (self):
+        return self.mainRates
 
-    def setAltRate (self, altRate):
-        self.altRate = altRate
+    def setAllRates (self, allRates):
+        self.allRates = allRates
 
-    def getAltRate (self):
-        return self.altRate
+    def getAllRates (self):
+        return self.allRates
 
     def setMainRatesOutput (self, mainRatesOutput):
         self.mainRatesOutput = mainRatesOutput
@@ -66,11 +66,11 @@ class Parameters:
     def getMainRatesOutput (self):
         return self.mainRatesOutput
 
-    def setAltRatesOutput (self, altRatesOutput):
-        self.altRatesOutput = altRatesOutput
+    def setAllRatesOutput (self, allRatesOutput):
+        self.allRatesOutput = allRatesOutput
 
-    def getAltRatesOutput (self):
-        return self.altRatesOutput
+    def getAllRatesOutput (self):
+        return self.allRatesOutput
 
     def setOrigin (self, origin):
         self.origin = origin
@@ -119,6 +119,7 @@ class Application:
         d = datetime.datetime.now ()
         self.suffix = d.strftime ('%Y%m%d_%H%M')
         self.prefix = 'e2e'
+        self.params = None
     
     def parseCmdLine (self):
         desc = 'Compare two exchanges for a round operation'
@@ -133,9 +134,9 @@ class Application:
         parser.add_argument ('-m', '--main', metavar = "RATES", 
                              default = 'Google',
                              help = 'Main rate service')
-        parser.add_argument ('-a', '--alternative', metavar = "RATES",
-                             default = 'XRates',
-                             help = 'Alternative rate service')
+#        parser.add_argument ('-a', '--alternative', metavar = "RATES",
+#                             default = 'XRates',
+#                             help = 'Alternative rate service')
         parser.add_argument ('--origin', '-o', metavar = "EXCHANGE",
                              required = True,
                              help = 'Origin exchange')
@@ -152,8 +153,8 @@ class Application:
         result = Args ()
         result.summary     = args.summary 
         result.conclusion  = args.conclusion 
-        result.rates       = args.rates 
-        result.alternative = args.alternative 
+        result.mainRates   = args.main 
+#        result.altRates    = args.alternative 
         result.origin      = args.origin 
         result.destination = args.destination 
         result.verbose     = args.verbose
@@ -178,7 +179,7 @@ class Application:
         else:
             sum_f = sys.__stdout__
             
-        result.setSummary (sum_f)
+        result.setSummaryOutput (sum_f)
             
         # TODO Open output files for destination exchange
         try:
@@ -190,7 +191,7 @@ class Application:
             # TODO an application specific msg here
             raise
             
-        result.setConclusion (cnc_f)
+        result.setConclusionOutput (cnc_f)
             
         # TODO confirm that destinatian and origin exchanges are not equal
         args = self.args 
@@ -277,13 +278,13 @@ class Application:
         rates_names = gfRates.validClassNames ()
 
         # TODO validate main rate service
-        if args.rates not in rates_names:
+        if args.mainRates not in rates_names:
             fmt  = 'ERROR: Main rates service {0} is not a valid rates name.\n'
             fmt += '\tShould be one of {1}'
-            msg = fmt.format (args.rate, rates_names)
+            msg = fmt.format (args.mainRates, rates_names)
             raise Exception (msg)
 
-        mainRates = gfRates.genObject (args.rates)
+        mainRates = gfRates.genObject (args.mainRates)
         result.setMainRates (mainRates)
         
         # TODO Open output file for main rate service
@@ -299,49 +300,114 @@ class Application:
         result.setMainRatesOutput (rat_f)
             
         # TODO open connections with auxiliary rate services
-        altRatesNames = []        
+        allRatesNames = []        
         for rateName in rates_names:
-            if rateName == args.rates:
-                continue 
+#            if rateName == args.mainRates:
+#                continue 
             
-            altRatesNames.append (rateName)
+            allRatesNames.append (rateName)
 
-        self.altRates = []            
-        for rateName in altRatesNames:
-            self.altRates.append (gfRates.genObject (rateName))
+        result.allRates = []            
+        for rateName in allRatesNames:
+            result.allRates.append (gfRates.genObject (rateName))
             
         try:
-            altrat_nam  =  'all_rates' + '_'
-            altrat_nam +=  self.suffix + '.rat'
-            altrat_f = open (altrat_nam, 'w')
+            allrat_nam  =  'all_rates' + '_'
+            allrat_nam +=  self.suffix + '.rat'
+            allrat_f = open (allrat_nam, 'w')
             
         except IOError:
             # TODO an application specific msg here
             raise        
 
-        result.setMainRatesOutput (altrat_f)
+        result.setAllRatesOutput (allrat_f)
         
         args = self.args 
+        
+        self.params = result
                
         if args.verbose:            
             print ('Verbose output enabled')
             
-            print ('Main rate service: {0}'.format (args.rates))
+            print ('Main rate service: {0}'.format (args.mainRates))
             print ('Exchanges')
             print ('Origin:            {0}'.format (args.origin))
             print ('Destination:       {0}'.format (args.destination))
             
+        # Normal function termination 
+        return result 
+        
+    def getParameters (self): 
+        return self.params
+            
     def outMainRates (self):
-        pass
+        params = self.getParameters ()
+        mainRates = params.getMainRates ()
+        outFile = params.getMainRatesOutput ()
+        line = str (mainRates) + "\n"
+        outFile.write (line)
+        
+        outFile.close ()
     
-    def outAlternativeRates (self):
-        pass
+    def outAllRates (self):
+        params = self.getParameters ()
+        allRates = params.getAllRates ()
+        outFile = params.getAllRatesOutput ()
+        for theseRates in allRates:
+            line = str (theseRates) + "\n"
+            outFile.write (line)
+        
+        outFile.close ()
     
     def outOriginExchange (self):
-        pass
+        params = self.getParameters ()
+        
+        # Get origin exchange data
+        origin = params.getOrigin ()
+        origin.get_ticker ()
+        ticker = origin.mk_ticker ()
+
+        # Output raw exchange data
+        outFile = params.getRawOriginOutput ()
+        line = str (origin.getOriginalTicker ()) + "\n"
+        outFile.write (line)
+        
+        outFile.close ()
+    
+        # TODO output e2e exchange data
+        outFile = params.getOriginOutput ()
+        line = str (ticker.dumps ()) + "\n"
+        outFile.write (line)
+        
+        outFile.close ()
+    
+        # Normal function termination 
+        return 
     
     def outDestinationExchange (self):
-        pass
+        params = self.getParameters ()
+        
+        # Get origin exchange data
+        destination = params.getDestination ()
+        destination.get_ticker ()
+        ticker = destination.mk_ticker ()
+
+        # Output raw exchange data
+        outFile = params.getRawDestinationOutput ()
+        line = str (destination.getOriginalTicker ()) + "\n"
+        outFile.write (line)
+        
+        outFile.close ()
+    
+        # TODO output e2e exchange data
+        outFile = params.getDestinationOutput ()
+        line = str (ticker.dumps ()) + "\n"
+        outFile.write (line)
+        
+        outFile.close ()
+    
+        # Normal function termination 
+        return 
     
     def genExpectations (self):
         pass
@@ -363,10 +429,19 @@ def main (argv):
     app.interpretArgs ()
     
     # TODO consult main rate service
-    # TODO consult auxiliary rate services
+    app.outMainRates ()
+    
+    # TODO consult all rate services
+    app.outAllRates ()
+    
     # TODO consult origin exchange 
+    app.outOriginExchange ()
+    
     # TODO consult destination exchange
+    app.outDestinationExchange ()
+    
     # TODO generate expectations
+    
     # TODO generate output report and JSON files
 
     # Normal function termination

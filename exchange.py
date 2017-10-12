@@ -41,6 +41,16 @@ class OrderBook:
 # Standard way of packing ticker information across all exchange classes
         
 class Ticker:
+    ## Constructor
+    # @param exch Exchange name
+    # @param pair Pair of coins -- 1st target coin, 2nd, source coin 
+    # @param dt Date and time as seconds since 1970/01/01 at zero hours
+    # @param buy Bid price
+    # @param sell Ask price
+    # @param high Highest price traded
+    # @param low Lowest price traded
+    # @param last Price of last trade
+    # @param vol Volume traded
     def __init__ (self, exch, pair, dt, buy, sell, high, low, last, vol):
         self.exch = exch
         self.pair = pair
@@ -52,18 +62,20 @@ class Ticker:
         self.last = last 
         self.vol  = vol 
         
-    def convert (self, rate, source, target):
+    def convert (self, rate, destination):
+        # TODO create a truly generic way of convert currencies
+    
         exch = self.exch
-        dt   = self.dt   / rate
-        buy  = self.buy  / rate
-        sell = self.sell / rate
-        high = self.high / rate
-        low  = self.low  / rate
-        last = self.last / rate
-        vol  = self.vol  / rate
+        dt   = self.dt   * rate
+        buy  = self.buy  * rate
+        sell = self.sell * rate
+        high = self.high * rate
+        low  = self.low  * rate
+        last = self.last * rate
+        vol  = self.vol  * rate
 
-        if source in self.pair:
-            pair = self.pair.replace (source, target)
+        # TODO compare source and target
+        pair = destination
         
         # TODO otherwise throw exception 
         
@@ -143,7 +155,7 @@ class Exchange:
         
         line = f.readline ()
 #        print (line)
-        self.original = line.decode (encoding = 'utf-8')
+        self.originalTicker = line.decode (encoding = 'utf-8')
         
         self.ticker = json.loads (line.decode (encoding='utf-8'))
 #        print (self.ticker)
@@ -201,7 +213,7 @@ class Exchange:
         # TODO raise exception
         pass
     
-    def get_original (self):
+    def getOriginalTicker (self):
         # TODO raise exception
         pass
         
@@ -215,6 +227,82 @@ class Exchange:
         # Normal function termination
         return result
         
+class Differences:
+    def __init__ (self, rates, destination, origin):
+        self.rates       = rates
+        self.destination = destination
+        self.origin      = origin
+        self.coinName    = origin.getCoinName ()
+        
+    def calc (self):
+        pass
+    
+    def __str__ (self):
+        result = "" 
+        
+        # Normal function termination
+        return result
+    
+    def dumps (self):
+        result = "" 
+        
+        # Normal function termination
+        return result
+        
+class DiffOrderbook (Differences):
+    pass
+        
+class DiffTracker (Differences):
+    def __init__ (self, rates, destination, origin):
+        super ().__init__ ()
+        
+        self.dmax = 0
+        self.dmin = 0
+        
+        self.gmin = 0
+        self.gmax = 0
+        
+        self.aBuySell  = 0
+        self.rBuySell = 0
+        
+        self.aLast = 0
+        self.rLast = 0
+        
+        
+    def calc (self):        
+        org = self.origin
+        dst = self.destination 
+        
+        # Check if the two tracks use the same pair
+        if dst.getPair () != org.pair ():
+            # TODO create a more generic way to convert currencies
+            brl2usd = self.rates.getBrl2Usd ()
+            pair = "USDBTC"
+            dst = dst.convert (brl2usd, pair)
+            
+        self.aMax = dst.getHigh () - org.getLow ()
+        self.aMin = dst.getLow () - org.getHigh ()
+        
+        self.rMin = 100.0 * self.dmin / org.getHigh ()
+        self.rMax = 100.0 * self.dmax / org.getLow ()
+        
+        self.aBuySell  = dst.getBuy () - org.getSell ()
+        self.rBuySell = 100.0 * self.aBuySell / org.getBuy ()
+        
+        self.aLast = dst.getLast () - org.getLast ()
+        self.rLast = 100.0 * self.aLast / org.getLast ()
+    
+        pass
+    
+    def __str__ (self):
+        result = "" 
+        
+        # Normal function termination
+        return result
+        
+class DiffTrades (Differences):
+    pass
+
 class Bitfinex (Exchange):
     U_TICKER = 'https://api.bitfinex.com/v1/pubticker/btcusd'
     U_ORDRBK = 'https://api.bitfinex.com/v1/book/btcusd'
@@ -278,8 +366,8 @@ class Bitfinex (Exchange):
     def get_exch_prefix (self):
         return "bf"
         
-    def get_original (self):
-        return self.original 
+    def getOriginalTicker (self):
+        return self.originalTicker
         
     def __str__ (self):
         result = json.dumps (self.__dict__, cls = DatetimeEncoder)
@@ -347,8 +435,8 @@ class Bitstamp (Exchange):
     def get_exch_prefix (self):
         return "bs"
         
-    def get_original (self):
-        return self.original 
+    def getOriginalTicker (self):
+        return self.originalTicker
         
     def __str__ (self):
         result = json.dumps (self.__dict__, cls = DatetimeEncoder)
@@ -367,7 +455,7 @@ class FoxBit (Exchange):
         self.ticker['ts'] = tt
         self.ticker['date'] = datetime.datetime.fromtimestamp (tt)
         self.exch = self.get_exch_name ()
-        self.pair = "BRLBTC"
+        self.pair = "BTCBRL"
      
     def get_ticker (self):
         super ().get_ticker ()
@@ -410,10 +498,10 @@ class FoxBit (Exchange):
         return "FoxBit"
     
     def get_exch_prefix (self):
-        return "fbt"
+        return "fb"
         
-    def get_original (self):
-        return self.original 
+    def getOriginalTicker (self):
+        return self.originalTicker
         
     def __str__ (self):
         result = json.dumps (self.__dict__, cls = DatetimeEncoder)
@@ -423,8 +511,8 @@ class FoxBit (Exchange):
                 
 class MercadoBitcoin (Exchange):
     U_TICKER = 'https://www.mercadobitcoin.net/api/ticker/'
-    U_ORDRBK = 'https://www.okcoin.com/api/v1/depth.do?symbol=btc_usd'
-    U_TRADES = 'https://www.okcoin.com/api/v1/trades.do?symbol=btc_usd'
+    U_ORDRBK = 'https://www.mercadobitcoin.net/api/BTC/orderbook/'
+    U_TRADES = 'https://www.mercadobitcoin.net/api/BTC/trades/'
     
     def __init__ (self):
         super ().__init__ ()
@@ -481,8 +569,8 @@ class MercadoBitcoin (Exchange):
     def get_exch_prefix (self):
         return "mbt"
         
-    def get_original (self):
-        return self.original 
+    def getOriginalTicker (self):
+        return self.originalTicker
         
     def __str__ (self):
         result = json.dumps (self.__dict__, cls = DatetimeEncoder)
@@ -540,8 +628,8 @@ class OkCoin (Exchange):
         
         return result
         
-    def get_original (self):
-        return self.original 
+    def getOriginalTicker (self):
+        return self.originalTicker
     
     def get_exch_name (self):
         return "OkCoin"
@@ -573,7 +661,7 @@ def main ():
         print ( "\t{0}".format (ticker) )
         print ( "\tJSON: {0}".format (ticker.dumps ()) )
         
-        print ( 'Original:\n\t{0}\n'.format (exch.get_original ()) )
+        print ( 'Original:\n\t{0}\n'.format (exch.getOriginalTicker ()) )
     
     return 0
     
