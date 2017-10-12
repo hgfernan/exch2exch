@@ -5,3 +5,6 @@ __pycache__/
 nohup.out
 out/
 dummy.json
+Workspace/RemoteSystemsTempFiles
+Workspace/.metadata
+
