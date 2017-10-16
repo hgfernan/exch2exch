@@ -22,5 +22,5 @@ var searchData=
   ['dummy1',['Dummy1',['../classgen__factory_1_1_dummy1.html',1,'gen_factory']]],
   ['dummy2',['Dummy2',['../classgen__factory_1_1_dummy2.html',1,'gen_factory']]],
   ['dummy3',['Dummy3',['../classgen__factory_1_1_dummy3.html',1,'gen_factory']]],
-  ['dumps',['dumps',['../classexchange_1_1_ticker.html#a53148d54a0b9b577870db785fb4e381e',1,'exchange.Ticker.dumps()'],['../classexchange_1_1_differences.html#adf6009f54dd9051816afd1d0713b9e90',1,'exchange.Differences.dumps()']]]
+  ['dumps',['dumps',['../classexchange_1_1_ticker.html#a53148d54a0b9b577870db785fb4e381e',1,'exchange.Ticker.dumps()'],['../classexchange_1_1_differences.html#adf6009f54dd9051816afd1d0713b9e90',1,'exchange.Differences.dumps()'],['../classexchange_1_1_diff_tracker.html#aa3c9d92dbe7c7fcf25959fe55c6ba47d',1,'exchange.DiffTracker.dumps()']]]
 ];

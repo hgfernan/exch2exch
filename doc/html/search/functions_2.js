@@ -5,5 +5,5 @@ var searchData=
   ['dnload_5fticker',['dnload_ticker',['../classexchange_1_1_exchange.html#a9e700d31fd60de495956518436b6768a',1,'exchange::Exchange']]],
   ['dnload_5ftrades',['dnload_trades',['../classexchange_1_1_exchange.html#a202c8b57ffa0adcb830de89d6466fd60',1,'exchange::Exchange']]],
   ['dosomething',['doSomething',['../classgen__factory_1_1_dummy1.html#af8a40601dbd998624323da24581dfa1c',1,'gen_factory.Dummy1.doSomething()'],['../classgen__factory_1_1_dummy2.html#a22fc655957f756c7967b655b83375c66',1,'gen_factory.Dummy2.doSomething()'],['../classgen__factory_1_1_dummy3.html#a7cf07349b2202099fb311e45431bfff4',1,'gen_factory.Dummy3.doSomething()']]],
-  ['dumps',['dumps',['../classexchange_1_1_ticker.html#a53148d54a0b9b577870db785fb4e381e',1,'exchange.Ticker.dumps()'],['../classexchange_1_1_differences.html#adf6009f54dd9051816afd1d0713b9e90',1,'exchange.Differences.dumps()']]]
+  ['dumps',['dumps',['../classexchange_1_1_ticker.html#a53148d54a0b9b577870db785fb4e381e',1,'exchange.Ticker.dumps()'],['../classexchange_1_1_differences.html#adf6009f54dd9051816afd1d0713b9e90',1,'exchange.Differences.dumps()'],['../classexchange_1_1_diff_tracker.html#aa3c9d92dbe7c7fcf25959fe55c6ba47d',1,'exchange.DiffTracker.dumps()']]]
 ];

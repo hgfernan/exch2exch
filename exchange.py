@@ -141,7 +141,7 @@ class Exchange:
     U_TRADES = ''
     U_ORDRBK = ''
 
-# TODO implement
+# TODO implement orderbook and trades
     
     def __init__ (self):
 #        self.dnload_ticker ()
@@ -291,10 +291,18 @@ class DiffTracker (Differences):
         
         self.aLast = dst.getLast () - org.getLast ()
         self.rLast = 100.0 * self.aLast / org.getLast ()
-    
-        pass
-    
+   
     def __str__ (self):
+        # TODO create a report 
+    
+        result = "" 
+        
+        # Normal function termination
+        return result
+    
+    def dumps (self):
+        # TODO create a report 
+    
         result = "" 
         
         # Normal function termination

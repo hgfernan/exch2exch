@@ -478,7 +478,7 @@ _EnD_oF_dEf_TeXt_;
         sec-mem-param-defname = 'self';
       }; /*        sec-mem-param--param */
       sec-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
-      sec-mem-desc-line = '311';
+      sec-mem-desc-line = '319';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -502,7 +502,7 @@ _EnD_oF_dEf_TeXt_;
         sec-mem-param-defname = 'self';
       }; /*        sec-mem-param--param */
       sec-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
-      sec-mem-desc-line = '372';
+      sec-mem-desc-line = '380';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -526,7 +526,7 @@ _EnD_oF_dEf_TeXt_;
         sec-mem-param-defname = 'self';
       }; /*        sec-mem-param--param */
       sec-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
-      sec-mem-desc-line = '363';
+      sec-mem-desc-line = '371';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -550,7 +550,7 @@ _EnD_oF_dEf_TeXt_;
         sec-mem-param-defname = 'self';
       }; /*        sec-mem-param--param */
       sec-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
-      sec-mem-desc-line = '366';
+      sec-mem-desc-line = '374';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -574,7 +574,7 @@ _EnD_oF_dEf_TeXt_;
         sec-mem-param-defname = 'self';
       }; /*        sec-mem-param--param */
       sec-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
-      sec-mem-desc-line = '332';
+      sec-mem-desc-line = '340';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -593,7 +593,7 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1aed7ff0d2287aaf4d61985d6f11c23c98';
-        sec-mem-ref-line = '323';
+        sec-mem-ref-line = '331';
         sec-mem-ref-name = 'exchange.Bitfinex::buy';
     };
       sec-mem-referenceto = {
@@ -613,7 +613,7 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1adc9e5a19056dcc22e8028e749b233795';
-        sec-mem-ref-line = '330';
+        sec-mem-ref-line = '338';
         sec-mem-ref-name = 'exchange.Bitfinex::dt';
     };
       sec-mem-referenceto = {
@@ -628,7 +628,7 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1a1380a7a7a3438e47785f10f68b0d61b9';
-        sec-mem-ref-line = '325';
+        sec-mem-ref-line = '333';
         sec-mem-ref-name = 'exchange.Bitfinex::high';
     };
       sec-mem-referenceto = {
@@ -643,7 +643,7 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1a56e491a27f4b3215b66e13da7796c078';
-        sec-mem-ref-line = '327';
+        sec-mem-ref-line = '335';
         sec-mem-ref-name = 'exchange.Bitfinex::last';
     };
       sec-mem-referenceto = {
@@ -658,7 +658,7 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1a7d4241119b1fa3860743647a0c6c3416';
-        sec-mem-ref-line = '326';
+        sec-mem-ref-line = '334';
         sec-mem-ref-name = 'exchange.Bitfinex::low';
     };
       sec-mem-referenceto = {
@@ -673,7 +673,7 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1a9aebaf447f73e582f7bc626e526e0201';
-        sec-mem-ref-line = '324';
+        sec-mem-ref-line = '332';
         sec-mem-ref-name = 'exchange.Bitfinex::sell';
     };
     }; /* sec-member */
@@ -693,7 +693,7 @@ _EnD_oF_dEf_TeXt_;
         sec-mem-param-defname = 'self';
       }; /*        sec-mem-param--param */
       sec-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
-      sec-mem-desc-line = '369';
+      sec-mem-desc-line = '377';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -722,7 +722,7 @@ _EnD_oF_dEf_TeXt_;
         sec-mem-param-defname = 'self';
       }; /*        sec-mem-param--param */
       sec-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
-      sec-mem-desc-line = '346';
+      sec-mem-desc-line = '354';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -741,7 +741,7 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1aed7ff0d2287aaf4d61985d6f11c23c98';
-        sec-mem-ref-line = '323';
+        sec-mem-ref-line = '331';
         sec-mem-ref-name = 'exchange.Bitfinex::buy';
     };
       sec-mem-referenceto = {
@@ -756,7 +756,7 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1af5865e2fa72ee1706254ba963bfa10e9';
-        sec-mem-ref-line = '317';
+        sec-mem-ref-line = '325';
         sec-mem-ref-name = 'exchange.Bitfinex::exch';
     };
       sec-mem-referenceto = {
@@ -771,7 +771,7 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1a1380a7a7a3438e47785f10f68b0d61b9';
-        sec-mem-ref-line = '325';
+        sec-mem-ref-line = '333';
         sec-mem-ref-name = 'exchange.Bitfinex::high';
     };
       sec-mem-referenceto = {
@@ -786,7 +786,7 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1a56e491a27f4b3215b66e13da7796c078';
-        sec-mem-ref-line = '327';
+        sec-mem-ref-line = '335';
         sec-mem-ref-name = 'exchange.Bitfinex::last';
     };
       sec-mem-referenceto = {
@@ -801,7 +801,7 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1a7d4241119b1fa3860743647a0c6c3416';
-        sec-mem-ref-line = '326';
+        sec-mem-ref-line = '334';
         sec-mem-ref-name = 'exchange.Bitfinex::low';
     };
       sec-mem-referenceto = {
@@ -811,7 +811,7 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1a901a5499667f1f2b391bc9dbbfe1c1c7';
-        sec-mem-ref-line = '318';
+        sec-mem-ref-line = '326';
         sec-mem-ref-name = 'exchange.Bitfinex::pair';
     };
       sec-mem-referenceto = {
@@ -826,12 +826,12 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1a9aebaf447f73e582f7bc626e526e0201';
-        sec-mem-ref-line = '324';
+        sec-mem-ref-line = '332';
         sec-mem-ref-name = 'exchange.Bitfinex::sell';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1abf872e8ea738acd33d34a00d9d9e92c4';
-        sec-mem-ref-line = '321';
+        sec-mem-ref-line = '329';
         sec-mem-ref-name = 'exchange.Bitfinex::ts';
     };
       sec-mem-referenceto = {
@@ -841,7 +841,7 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1a278da3a9eab93e256041c988f9bbd54c';
-        sec-mem-ref-line = '328';
+        sec-mem-ref-line = '336';
         sec-mem-ref-name = 'exchange.Bitfinex::vol';
     };
     }; /* sec-member */
@@ -861,7 +861,7 @@ _EnD_oF_dEf_TeXt_;
         sec-mem-param-defname = 'self';
       }; /*        sec-mem-param--param */
       sec-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
-      sec-mem-desc-line = '314';
+      sec-mem-desc-line = '322';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -882,7 +882,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'buy';
       sec-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
-      sec-mem-desc-line = '323';
+      sec-mem-desc-line = '331';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -896,22 +896,22 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a1d74178897b4ac36c8ed6b4523f539f5';
-        sec-mem-ref-line = '332';
+        sec-mem-ref-line = '340';
         sec-mem-ref-name = 'exchange.Bitfinex::get_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1aa065ba9bff0d002816abd6caae2cfb99';
-        sec-mem-ref-line = '401';
+        sec-mem-ref-line = '409';
         sec-mem-ref-name = 'exchange.Bitstamp::get_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a2e6fe3e59daf6791688af7ed15772452';
-        sec-mem-ref-line = '535';
+        sec-mem-ref-line = '543';
         sec-mem-ref-name = 'exchange.MercadoBitcoin::get_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a35425d16f4e0eb64677e32443fb4d91c';
-        sec-mem-ref-line = '600';
+        sec-mem-ref-line = '608';
         sec-mem-ref-name = 'exchange.OkCoin::get_ticker';
     };
       sec-mem-referenceby = {
@@ -921,22 +921,22 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1aa35708085f437b665ae80dea0b8470cb';
-        sec-mem-ref-line = '346';
+        sec-mem-ref-line = '354';
         sec-mem-ref-name = 'exchange.Bitfinex::mk_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1aea3ea907aaeb9d22b055dad22b6de9f5';
-        sec-mem-ref-line = '415';
+        sec-mem-ref-line = '423';
         sec-mem-ref-name = 'exchange.Bitstamp::mk_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a5c2280e8efc3dd148d724e9b73bd9243';
-        sec-mem-ref-line = '549';
+        sec-mem-ref-line = '557';
         sec-mem-ref-name = 'exchange.MercadoBitcoin::mk_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a5a24006154b66792398302f2e6509578';
-        sec-mem-ref-line = '614';
+        sec-mem-ref-line = '622';
         sec-mem-ref-name = 'exchange.OkCoin::mk_ticker';
     };
     }; /* sec-member */
@@ -950,7 +950,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'dt';
       sec-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
-      sec-mem-desc-line = '330';
+      sec-mem-desc-line = '338';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -969,22 +969,22 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a1d74178897b4ac36c8ed6b4523f539f5';
-        sec-mem-ref-line = '332';
+        sec-mem-ref-line = '340';
         sec-mem-ref-name = 'exchange.Bitfinex::get_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1aa065ba9bff0d002816abd6caae2cfb99';
-        sec-mem-ref-line = '401';
+        sec-mem-ref-line = '409';
         sec-mem-ref-name = 'exchange.Bitstamp::get_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a2e6fe3e59daf6791688af7ed15772452';
-        sec-mem-ref-line = '535';
+        sec-mem-ref-line = '543';
         sec-mem-ref-name = 'exchange.MercadoBitcoin::get_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a35425d16f4e0eb64677e32443fb4d91c';
-        sec-mem-ref-line = '600';
+        sec-mem-ref-line = '608';
         sec-mem-ref-name = 'exchange.OkCoin::get_ticker';
     };
       sec-mem-referenceby = {
@@ -1003,7 +1003,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'exch';
       sec-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
-      sec-mem-desc-line = '317';
+      sec-mem-desc-line = '325';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -1022,27 +1022,27 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1aa35708085f437b665ae80dea0b8470cb';
-        sec-mem-ref-line = '346';
+        sec-mem-ref-line = '354';
         sec-mem-ref-name = 'exchange.Bitfinex::mk_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1aea3ea907aaeb9d22b055dad22b6de9f5';
-        sec-mem-ref-line = '415';
+        sec-mem-ref-line = '423';
         sec-mem-ref-name = 'exchange.Bitstamp::mk_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a149b379722f351e0b890822a6220f0b0';
-        sec-mem-ref-line = '474';
+        sec-mem-ref-line = '482';
         sec-mem-ref-name = 'exchange.FoxBit::mk_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a5c2280e8efc3dd148d724e9b73bd9243';
-        sec-mem-ref-line = '549';
+        sec-mem-ref-line = '557';
         sec-mem-ref-name = 'exchange.MercadoBitcoin::mk_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a5a24006154b66792398302f2e6509578';
-        sec-mem-ref-line = '614';
+        sec-mem-ref-line = '622';
         sec-mem-ref-name = 'exchange.OkCoin::mk_ticker';
     };
     }; /* sec-member */
@@ -1056,7 +1056,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'high';
       sec-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
-      sec-mem-desc-line = '325';
+      sec-mem-desc-line = '333';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -1065,42 +1065,42 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a1d74178897b4ac36c8ed6b4523f539f5';
-        sec-mem-ref-line = '332';
+        sec-mem-ref-line = '340';
         sec-mem-ref-name = 'exchange.Bitfinex::get_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1aa065ba9bff0d002816abd6caae2cfb99';
-        sec-mem-ref-line = '401';
+        sec-mem-ref-line = '409';
         sec-mem-ref-name = 'exchange.Bitstamp::get_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a2e6fe3e59daf6791688af7ed15772452';
-        sec-mem-ref-line = '535';
+        sec-mem-ref-line = '543';
         sec-mem-ref-name = 'exchange.MercadoBitcoin::get_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a35425d16f4e0eb64677e32443fb4d91c';
-        sec-mem-ref-line = '600';
+        sec-mem-ref-line = '608';
         sec-mem-ref-name = 'exchange.OkCoin::get_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1aa35708085f437b665ae80dea0b8470cb';
-        sec-mem-ref-line = '346';
+        sec-mem-ref-line = '354';
         sec-mem-ref-name = 'exchange.Bitfinex::mk_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1aea3ea907aaeb9d22b055dad22b6de9f5';
-        sec-mem-ref-line = '415';
+        sec-mem-ref-line = '423';
         sec-mem-ref-name = 'exchange.Bitstamp::mk_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a5c2280e8efc3dd148d724e9b73bd9243';
-        sec-mem-ref-line = '549';
+        sec-mem-ref-line = '557';
         sec-mem-ref-name = 'exchange.MercadoBitcoin::mk_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a5a24006154b66792398302f2e6509578';
-        sec-mem-ref-line = '614';
+        sec-mem-ref-line = '622';
         sec-mem-ref-name = 'exchange.OkCoin::mk_ticker';
     };
     }; /* sec-member */
@@ -1114,7 +1114,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'last';
       sec-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
-      sec-mem-desc-line = '327';
+      sec-mem-desc-line = '335';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -1123,42 +1123,42 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a1d74178897b4ac36c8ed6b4523f539f5';
-        sec-mem-ref-line = '332';
+        sec-mem-ref-line = '340';
         sec-mem-ref-name = 'exchange.Bitfinex::get_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1aa065ba9bff0d002816abd6caae2cfb99';
-        sec-mem-ref-line = '401';
+        sec-mem-ref-line = '409';
         sec-mem-ref-name = 'exchange.Bitstamp::get_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a2e6fe3e59daf6791688af7ed15772452';
-        sec-mem-ref-line = '535';
+        sec-mem-ref-line = '543';
         sec-mem-ref-name = 'exchange.MercadoBitcoin::get_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a35425d16f4e0eb64677e32443fb4d91c';
-        sec-mem-ref-line = '600';
+        sec-mem-ref-line = '608';
         sec-mem-ref-name = 'exchange.OkCoin::get_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1aa35708085f437b665ae80dea0b8470cb';
-        sec-mem-ref-line = '346';
+        sec-mem-ref-line = '354';
         sec-mem-ref-name = 'exchange.Bitfinex::mk_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1aea3ea907aaeb9d22b055dad22b6de9f5';
-        sec-mem-ref-line = '415';
+        sec-mem-ref-line = '423';
         sec-mem-ref-name = 'exchange.Bitstamp::mk_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a5c2280e8efc3dd148d724e9b73bd9243';
-        sec-mem-ref-line = '549';
+        sec-mem-ref-line = '557';
         sec-mem-ref-name = 'exchange.MercadoBitcoin::mk_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a5a24006154b66792398302f2e6509578';
-        sec-mem-ref-line = '614';
+        sec-mem-ref-line = '622';
         sec-mem-ref-name = 'exchange.OkCoin::mk_ticker';
     };
     }; /* sec-member */
@@ -1172,7 +1172,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'low';
       sec-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
-      sec-mem-desc-line = '326';
+      sec-mem-desc-line = '334';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -1181,42 +1181,42 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a1d74178897b4ac36c8ed6b4523f539f5';
-        sec-mem-ref-line = '332';
+        sec-mem-ref-line = '340';
         sec-mem-ref-name = 'exchange.Bitfinex::get_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1aa065ba9bff0d002816abd6caae2cfb99';
-        sec-mem-ref-line = '401';
+        sec-mem-ref-line = '409';
         sec-mem-ref-name = 'exchange.Bitstamp::get_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a2e6fe3e59daf6791688af7ed15772452';
-        sec-mem-ref-line = '535';
+        sec-mem-ref-line = '543';
         sec-mem-ref-name = 'exchange.MercadoBitcoin::get_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a35425d16f4e0eb64677e32443fb4d91c';
-        sec-mem-ref-line = '600';
+        sec-mem-ref-line = '608';
         sec-mem-ref-name = 'exchange.OkCoin::get_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1aa35708085f437b665ae80dea0b8470cb';
-        sec-mem-ref-line = '346';
+        sec-mem-ref-line = '354';
         sec-mem-ref-name = 'exchange.Bitfinex::mk_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1aea3ea907aaeb9d22b055dad22b6de9f5';
-        sec-mem-ref-line = '415';
+        sec-mem-ref-line = '423';
         sec-mem-ref-name = 'exchange.Bitstamp::mk_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a5c2280e8efc3dd148d724e9b73bd9243';
-        sec-mem-ref-line = '549';
+        sec-mem-ref-line = '557';
         sec-mem-ref-name = 'exchange.MercadoBitcoin::mk_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a5a24006154b66792398302f2e6509578';
-        sec-mem-ref-line = '614';
+        sec-mem-ref-line = '622';
         sec-mem-ref-name = 'exchange.OkCoin::mk_ticker';
     };
     }; /* sec-member */
@@ -1230,7 +1230,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'pair';
       sec-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
-      sec-mem-desc-line = '318';
+      sec-mem-desc-line = '326';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -1239,27 +1239,27 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1aa35708085f437b665ae80dea0b8470cb';
-        sec-mem-ref-line = '346';
+        sec-mem-ref-line = '354';
         sec-mem-ref-name = 'exchange.Bitfinex::mk_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1aea3ea907aaeb9d22b055dad22b6de9f5';
-        sec-mem-ref-line = '415';
+        sec-mem-ref-line = '423';
         sec-mem-ref-name = 'exchange.Bitstamp::mk_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a149b379722f351e0b890822a6220f0b0';
-        sec-mem-ref-line = '474';
+        sec-mem-ref-line = '482';
         sec-mem-ref-name = 'exchange.FoxBit::mk_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a5c2280e8efc3dd148d724e9b73bd9243';
-        sec-mem-ref-line = '549';
+        sec-mem-ref-line = '557';
         sec-mem-ref-name = 'exchange.MercadoBitcoin::mk_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a5a24006154b66792398302f2e6509578';
-        sec-mem-ref-line = '614';
+        sec-mem-ref-line = '622';
         sec-mem-ref-name = 'exchange.OkCoin::mk_ticker';
     };
     }; /* sec-member */
@@ -1273,7 +1273,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'sell';
       sec-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
-      sec-mem-desc-line = '324';
+      sec-mem-desc-line = '332';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -1287,22 +1287,22 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a1d74178897b4ac36c8ed6b4523f539f5';
-        sec-mem-ref-line = '332';
+        sec-mem-ref-line = '340';
         sec-mem-ref-name = 'exchange.Bitfinex::get_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1aa065ba9bff0d002816abd6caae2cfb99';
-        sec-mem-ref-line = '401';
+        sec-mem-ref-line = '409';
         sec-mem-ref-name = 'exchange.Bitstamp::get_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a2e6fe3e59daf6791688af7ed15772452';
-        sec-mem-ref-line = '535';
+        sec-mem-ref-line = '543';
         sec-mem-ref-name = 'exchange.MercadoBitcoin::get_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a35425d16f4e0eb64677e32443fb4d91c';
-        sec-mem-ref-line = '600';
+        sec-mem-ref-line = '608';
         sec-mem-ref-name = 'exchange.OkCoin::get_ticker';
     };
       sec-mem-referenceby = {
@@ -1312,22 +1312,22 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1aa35708085f437b665ae80dea0b8470cb';
-        sec-mem-ref-line = '346';
+        sec-mem-ref-line = '354';
         sec-mem-ref-name = 'exchange.Bitfinex::mk_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1aea3ea907aaeb9d22b055dad22b6de9f5';
-        sec-mem-ref-line = '415';
+        sec-mem-ref-line = '423';
         sec-mem-ref-name = 'exchange.Bitstamp::mk_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a5c2280e8efc3dd148d724e9b73bd9243';
-        sec-mem-ref-line = '549';
+        sec-mem-ref-line = '557';
         sec-mem-ref-name = 'exchange.MercadoBitcoin::mk_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a5a24006154b66792398302f2e6509578';
-        sec-mem-ref-line = '614';
+        sec-mem-ref-line = '622';
         sec-mem-ref-name = 'exchange.OkCoin::mk_ticker';
     };
     }; /* sec-member */
@@ -1341,7 +1341,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'ts';
       sec-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
-      sec-mem-desc-line = '321';
+      sec-mem-desc-line = '329';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -1350,22 +1350,22 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1aa35708085f437b665ae80dea0b8470cb';
-        sec-mem-ref-line = '346';
+        sec-mem-ref-line = '354';
         sec-mem-ref-name = 'exchange.Bitfinex::mk_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1aea3ea907aaeb9d22b055dad22b6de9f5';
-        sec-mem-ref-line = '415';
+        sec-mem-ref-line = '423';
         sec-mem-ref-name = 'exchange.Bitstamp::mk_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a5c2280e8efc3dd148d724e9b73bd9243';
-        sec-mem-ref-line = '549';
+        sec-mem-ref-line = '557';
         sec-mem-ref-name = 'exchange.MercadoBitcoin::mk_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a5a24006154b66792398302f2e6509578';
-        sec-mem-ref-line = '614';
+        sec-mem-ref-line = '622';
         sec-mem-ref-name = 'exchange.OkCoin::mk_ticker';
     };
     }; /* sec-member */
@@ -1379,7 +1379,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'vol';
       sec-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
-      sec-mem-desc-line = '328';
+      sec-mem-desc-line = '336';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -1388,22 +1388,22 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1aa35708085f437b665ae80dea0b8470cb';
-        sec-mem-ref-line = '346';
+        sec-mem-ref-line = '354';
         sec-mem-ref-name = 'exchange.Bitfinex::mk_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1aea3ea907aaeb9d22b055dad22b6de9f5';
-        sec-mem-ref-line = '415';
+        sec-mem-ref-line = '423';
         sec-mem-ref-name = 'exchange.Bitstamp::mk_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a5c2280e8efc3dd148d724e9b73bd9243';
-        sec-mem-ref-line = '549';
+        sec-mem-ref-line = '557';
         sec-mem-ref-name = 'exchange.MercadoBitcoin::mk_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a5a24006154b66792398302f2e6509578';
-        sec-mem-ref-line = '614';
+        sec-mem-ref-line = '622';
         sec-mem-ref-name = 'exchange.OkCoin::mk_ticker';
     };
     }; /* sec-member */
@@ -1423,7 +1423,7 @@ _EnD_oF_dEf_TeXt_;
 = 'https://api.bitfinex.com/v1/book/btcusd'
 _EnD_oF_dEf_TeXt_;
       sec-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
-      sec-mem-desc-line = '308';
+      sec-mem-desc-line = '316';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -1444,7 +1444,7 @@ _EnD_oF_dEf_TeXt_;
 = 'https://api.bitfinex.com/v1/pubticker/btcusd'
 _EnD_oF_dEf_TeXt_;
       sec-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
-      sec-mem-desc-line = '307';
+      sec-mem-desc-line = '315';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -1465,7 +1465,7 @@ _EnD_oF_dEf_TeXt_;
 = 'https://api.bitfinex.com/v1/trades/btcusd'
 _EnD_oF_dEf_TeXt_;
       sec-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
-      sec-mem-desc-line = '309';
+      sec-mem-desc-line = '317';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -1475,7 +1475,7 @@ _EnD_oF_dEf_TeXt_;
     }; /* sec-member */
   }; /* cp-section */
   cp-filename  = '/home/hilton/github/exch2exh/exchange.py';
-  cp-fileline  = '306';
+  cp-fileline  = '314';
   cp-briefdesc = <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -1574,7 +1574,7 @@ _EnD_oF_dEf_TeXt_;
         sec-mem-param-defname = 'self';
       }; /*        sec-mem-param--param */
       sec-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
-      sec-mem-desc-line = '383';
+      sec-mem-desc-line = '391';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -1598,7 +1598,7 @@ _EnD_oF_dEf_TeXt_;
         sec-mem-param-defname = 'self';
       }; /*        sec-mem-param--param */
       sec-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
-      sec-mem-desc-line = '441';
+      sec-mem-desc-line = '449';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -1622,7 +1622,7 @@ _EnD_oF_dEf_TeXt_;
         sec-mem-param-defname = 'self';
       }; /*        sec-mem-param--param */
       sec-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
-      sec-mem-desc-line = '432';
+      sec-mem-desc-line = '440';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -1646,7 +1646,7 @@ _EnD_oF_dEf_TeXt_;
         sec-mem-param-defname = 'self';
       }; /*        sec-mem-param--param */
       sec-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
-      sec-mem-desc-line = '435';
+      sec-mem-desc-line = '443';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -1670,7 +1670,7 @@ _EnD_oF_dEf_TeXt_;
         sec-mem-param-defname = 'self';
       }; /*        sec-mem-param--param */
       sec-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
-      sec-mem-desc-line = '401';
+      sec-mem-desc-line = '409';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -1689,12 +1689,12 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1aed7ff0d2287aaf4d61985d6f11c23c98';
-        sec-mem-ref-line = '323';
+        sec-mem-ref-line = '331';
         sec-mem-ref-name = 'exchange.Bitfinex::buy';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1a40aa1ff3335ef4c80a5107234e05e23e';
-        sec-mem-ref-line = '392';
+        sec-mem-ref-line = '400';
         sec-mem-ref-name = 'exchange.Bitstamp::buy';
     };
       sec-mem-referenceto = {
@@ -1714,12 +1714,12 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1adc9e5a19056dcc22e8028e749b233795';
-        sec-mem-ref-line = '330';
+        sec-mem-ref-line = '338';
         sec-mem-ref-name = 'exchange.Bitfinex::dt';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1a527b7d7c5814118b5adfdaf0b960f036';
-        sec-mem-ref-line = '399';
+        sec-mem-ref-line = '407';
         sec-mem-ref-name = 'exchange.Bitstamp::dt';
     };
       sec-mem-referenceto = {
@@ -1734,12 +1734,12 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1a1380a7a7a3438e47785f10f68b0d61b9';
-        sec-mem-ref-line = '325';
+        sec-mem-ref-line = '333';
         sec-mem-ref-name = 'exchange.Bitfinex::high';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1a05de034d34b384373aeb26a28b60cad0';
-        sec-mem-ref-line = '394';
+        sec-mem-ref-line = '402';
         sec-mem-ref-name = 'exchange.Bitstamp::high';
     };
       sec-mem-referenceto = {
@@ -1754,12 +1754,12 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1a56e491a27f4b3215b66e13da7796c078';
-        sec-mem-ref-line = '327';
+        sec-mem-ref-line = '335';
         sec-mem-ref-name = 'exchange.Bitfinex::last';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1acf669ec9b8b50638dc19dec5fd40ab04';
-        sec-mem-ref-line = '396';
+        sec-mem-ref-line = '404';
         sec-mem-ref-name = 'exchange.Bitstamp::last';
     };
       sec-mem-referenceto = {
@@ -1774,12 +1774,12 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1a7d4241119b1fa3860743647a0c6c3416';
-        sec-mem-ref-line = '326';
+        sec-mem-ref-line = '334';
         sec-mem-ref-name = 'exchange.Bitfinex::low';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1a42d49d824732f16b57f677e8482e49b7';
-        sec-mem-ref-line = '395';
+        sec-mem-ref-line = '403';
         sec-mem-ref-name = 'exchange.Bitstamp::low';
     };
       sec-mem-referenceto = {
@@ -1794,12 +1794,12 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1a9aebaf447f73e582f7bc626e526e0201';
-        sec-mem-ref-line = '324';
+        sec-mem-ref-line = '332';
         sec-mem-ref-name = 'exchange.Bitfinex::sell';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1ae5bc1532848b36cd9ac5e46763f4ee14';
-        sec-mem-ref-line = '393';
+        sec-mem-ref-line = '401';
         sec-mem-ref-name = 'exchange.Bitstamp::sell';
     };
     }; /* sec-member */
@@ -1819,7 +1819,7 @@ _EnD_oF_dEf_TeXt_;
         sec-mem-param-defname = 'self';
       }; /*        sec-mem-param--param */
       sec-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
-      sec-mem-desc-line = '438';
+      sec-mem-desc-line = '446';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -1848,7 +1848,7 @@ _EnD_oF_dEf_TeXt_;
         sec-mem-param-defname = 'self';
       }; /*        sec-mem-param--param */
       sec-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
-      sec-mem-desc-line = '415';
+      sec-mem-desc-line = '423';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -1867,12 +1867,12 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1aed7ff0d2287aaf4d61985d6f11c23c98';
-        sec-mem-ref-line = '323';
+        sec-mem-ref-line = '331';
         sec-mem-ref-name = 'exchange.Bitfinex::buy';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1a40aa1ff3335ef4c80a5107234e05e23e';
-        sec-mem-ref-line = '392';
+        sec-mem-ref-line = '400';
         sec-mem-ref-name = 'exchange.Bitstamp::buy';
     };
       sec-mem-referenceto = {
@@ -1887,12 +1887,12 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1af5865e2fa72ee1706254ba963bfa10e9';
-        sec-mem-ref-line = '317';
+        sec-mem-ref-line = '325';
         sec-mem-ref-name = 'exchange.Bitfinex::exch';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1a140f44d1638f2e50ecb5148bf8f8ac86';
-        sec-mem-ref-line = '389';
+        sec-mem-ref-line = '397';
         sec-mem-ref-name = 'exchange.Bitstamp::exch';
     };
       sec-mem-referenceto = {
@@ -1907,12 +1907,12 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1a1380a7a7a3438e47785f10f68b0d61b9';
-        sec-mem-ref-line = '325';
+        sec-mem-ref-line = '333';
         sec-mem-ref-name = 'exchange.Bitfinex::high';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1a05de034d34b384373aeb26a28b60cad0';
-        sec-mem-ref-line = '394';
+        sec-mem-ref-line = '402';
         sec-mem-ref-name = 'exchange.Bitstamp::high';
     };
       sec-mem-referenceto = {
@@ -1927,12 +1927,12 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1a56e491a27f4b3215b66e13da7796c078';
-        sec-mem-ref-line = '327';
+        sec-mem-ref-line = '335';
         sec-mem-ref-name = 'exchange.Bitfinex::last';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1acf669ec9b8b50638dc19dec5fd40ab04';
-        sec-mem-ref-line = '396';
+        sec-mem-ref-line = '404';
         sec-mem-ref-name = 'exchange.Bitstamp::last';
     };
       sec-mem-referenceto = {
@@ -1947,12 +1947,12 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1a7d4241119b1fa3860743647a0c6c3416';
-        sec-mem-ref-line = '326';
+        sec-mem-ref-line = '334';
         sec-mem-ref-name = 'exchange.Bitfinex::low';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1a42d49d824732f16b57f677e8482e49b7';
-        sec-mem-ref-line = '395';
+        sec-mem-ref-line = '403';
         sec-mem-ref-name = 'exchange.Bitstamp::low';
     };
       sec-mem-referenceto = {
@@ -1962,12 +1962,12 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1a901a5499667f1f2b391bc9dbbfe1c1c7';
-        sec-mem-ref-line = '318';
+        sec-mem-ref-line = '326';
         sec-mem-ref-name = 'exchange.Bitfinex::pair';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1adf1f8e926f0cedb79bf57ab2dfa31776';
-        sec-mem-ref-line = '390';
+        sec-mem-ref-line = '398';
         sec-mem-ref-name = 'exchange.Bitstamp::pair';
     };
       sec-mem-referenceto = {
@@ -1982,22 +1982,22 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1a9aebaf447f73e582f7bc626e526e0201';
-        sec-mem-ref-line = '324';
+        sec-mem-ref-line = '332';
         sec-mem-ref-name = 'exchange.Bitfinex::sell';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1ae5bc1532848b36cd9ac5e46763f4ee14';
-        sec-mem-ref-line = '393';
+        sec-mem-ref-line = '401';
         sec-mem-ref-name = 'exchange.Bitstamp::sell';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1abf872e8ea738acd33d34a00d9d9e92c4';
-        sec-mem-ref-line = '321';
+        sec-mem-ref-line = '329';
         sec-mem-ref-name = 'exchange.Bitfinex::ts';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1a8e85011dca7c70ffd1ed5ed398b0ed34';
-        sec-mem-ref-line = '391';
+        sec-mem-ref-line = '399';
         sec-mem-ref-name = 'exchange.Bitstamp::ts';
     };
       sec-mem-referenceto = {
@@ -2007,12 +2007,12 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1a278da3a9eab93e256041c988f9bbd54c';
-        sec-mem-ref-line = '328';
+        sec-mem-ref-line = '336';
         sec-mem-ref-name = 'exchange.Bitfinex::vol';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1a4ddf3680f552a7d634b3bbea809cc606';
-        sec-mem-ref-line = '397';
+        sec-mem-ref-line = '405';
         sec-mem-ref-name = 'exchange.Bitstamp::vol';
     };
     }; /* sec-member */
@@ -2032,7 +2032,7 @@ _EnD_oF_dEf_TeXt_;
         sec-mem-param-defname = 'self';
       }; /*        sec-mem-param--param */
       sec-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
-      sec-mem-desc-line = '386';
+      sec-mem-desc-line = '394';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -2053,7 +2053,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'buy';
       sec-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
-      sec-mem-desc-line = '392';
+      sec-mem-desc-line = '400';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -2067,17 +2067,17 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1aa065ba9bff0d002816abd6caae2cfb99';
-        sec-mem-ref-line = '401';
+        sec-mem-ref-line = '409';
         sec-mem-ref-name = 'exchange.Bitstamp::get_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a2e6fe3e59daf6791688af7ed15772452';
-        sec-mem-ref-line = '535';
+        sec-mem-ref-line = '543';
         sec-mem-ref-name = 'exchange.MercadoBitcoin::get_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a35425d16f4e0eb64677e32443fb4d91c';
-        sec-mem-ref-line = '600';
+        sec-mem-ref-line = '608';
         sec-mem-ref-name = 'exchange.OkCoin::get_ticker';
     };
       sec-mem-referenceby = {
@@ -2087,17 +2087,17 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1aea3ea907aaeb9d22b055dad22b6de9f5';
-        sec-mem-ref-line = '415';
+        sec-mem-ref-line = '423';
         sec-mem-ref-name = 'exchange.Bitstamp::mk_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a5c2280e8efc3dd148d724e9b73bd9243';
-        sec-mem-ref-line = '549';
+        sec-mem-ref-line = '557';
         sec-mem-ref-name = 'exchange.MercadoBitcoin::mk_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a5a24006154b66792398302f2e6509578';
-        sec-mem-ref-line = '614';
+        sec-mem-ref-line = '622';
         sec-mem-ref-name = 'exchange.OkCoin::mk_ticker';
     };
     }; /* sec-member */
@@ -2111,7 +2111,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'dt';
       sec-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
-      sec-mem-desc-line = '399';
+      sec-mem-desc-line = '407';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -2130,17 +2130,17 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1aa065ba9bff0d002816abd6caae2cfb99';
-        sec-mem-ref-line = '401';
+        sec-mem-ref-line = '409';
         sec-mem-ref-name = 'exchange.Bitstamp::get_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a2e6fe3e59daf6791688af7ed15772452';
-        sec-mem-ref-line = '535';
+        sec-mem-ref-line = '543';
         sec-mem-ref-name = 'exchange.MercadoBitcoin::get_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a35425d16f4e0eb64677e32443fb4d91c';
-        sec-mem-ref-line = '600';
+        sec-mem-ref-line = '608';
         sec-mem-ref-name = 'exchange.OkCoin::get_ticker';
     };
       sec-mem-referenceby = {
@@ -2159,7 +2159,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'exch';
       sec-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
-      sec-mem-desc-line = '389';
+      sec-mem-desc-line = '397';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -2178,22 +2178,22 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1aea3ea907aaeb9d22b055dad22b6de9f5';
-        sec-mem-ref-line = '415';
+        sec-mem-ref-line = '423';
         sec-mem-ref-name = 'exchange.Bitstamp::mk_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a149b379722f351e0b890822a6220f0b0';
-        sec-mem-ref-line = '474';
+        sec-mem-ref-line = '482';
         sec-mem-ref-name = 'exchange.FoxBit::mk_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a5c2280e8efc3dd148d724e9b73bd9243';
-        sec-mem-ref-line = '549';
+        sec-mem-ref-line = '557';
         sec-mem-ref-name = 'exchange.MercadoBitcoin::mk_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a5a24006154b66792398302f2e6509578';
-        sec-mem-ref-line = '614';
+        sec-mem-ref-line = '622';
         sec-mem-ref-name = 'exchange.OkCoin::mk_ticker';
     };
     }; /* sec-member */
@@ -2207,7 +2207,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'high';
       sec-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
-      sec-mem-desc-line = '394';
+      sec-mem-desc-line = '402';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -2216,32 +2216,32 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1aa065ba9bff0d002816abd6caae2cfb99';
-        sec-mem-ref-line = '401';
+        sec-mem-ref-line = '409';
         sec-mem-ref-name = 'exchange.Bitstamp::get_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a2e6fe3e59daf6791688af7ed15772452';
-        sec-mem-ref-line = '535';
+        sec-mem-ref-line = '543';
         sec-mem-ref-name = 'exchange.MercadoBitcoin::get_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a35425d16f4e0eb64677e32443fb4d91c';
-        sec-mem-ref-line = '600';
+        sec-mem-ref-line = '608';
         sec-mem-ref-name = 'exchange.OkCoin::get_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1aea3ea907aaeb9d22b055dad22b6de9f5';
-        sec-mem-ref-line = '415';
+        sec-mem-ref-line = '423';
         sec-mem-ref-name = 'exchange.Bitstamp::mk_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a5c2280e8efc3dd148d724e9b73bd9243';
-        sec-mem-ref-line = '549';
+        sec-mem-ref-line = '557';
         sec-mem-ref-name = 'exchange.MercadoBitcoin::mk_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a5a24006154b66792398302f2e6509578';
-        sec-mem-ref-line = '614';
+        sec-mem-ref-line = '622';
         sec-mem-ref-name = 'exchange.OkCoin::mk_ticker';
     };
     }; /* sec-member */
@@ -2255,7 +2255,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'last';
       sec-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
-      sec-mem-desc-line = '396';
+      sec-mem-desc-line = '404';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -2264,32 +2264,32 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1aa065ba9bff0d002816abd6caae2cfb99';
-        sec-mem-ref-line = '401';
+        sec-mem-ref-line = '409';
         sec-mem-ref-name = 'exchange.Bitstamp::get_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a2e6fe3e59daf6791688af7ed15772452';
-        sec-mem-ref-line = '535';
+        sec-mem-ref-line = '543';
         sec-mem-ref-name = 'exchange.MercadoBitcoin::get_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a35425d16f4e0eb64677e32443fb4d91c';
-        sec-mem-ref-line = '600';
+        sec-mem-ref-line = '608';
         sec-mem-ref-name = 'exchange.OkCoin::get_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1aea3ea907aaeb9d22b055dad22b6de9f5';
-        sec-mem-ref-line = '415';
+        sec-mem-ref-line = '423';
         sec-mem-ref-name = 'exchange.Bitstamp::mk_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a5c2280e8efc3dd148d724e9b73bd9243';
-        sec-mem-ref-line = '549';
+        sec-mem-ref-line = '557';
         sec-mem-ref-name = 'exchange.MercadoBitcoin::mk_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a5a24006154b66792398302f2e6509578';
-        sec-mem-ref-line = '614';
+        sec-mem-ref-line = '622';
         sec-mem-ref-name = 'exchange.OkCoin::mk_ticker';
     };
     }; /* sec-member */
@@ -2303,7 +2303,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'low';
       sec-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
-      sec-mem-desc-line = '395';
+      sec-mem-desc-line = '403';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -2312,32 +2312,32 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1aa065ba9bff0d002816abd6caae2cfb99';
-        sec-mem-ref-line = '401';
+        sec-mem-ref-line = '409';
         sec-mem-ref-name = 'exchange.Bitstamp::get_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a2e6fe3e59daf6791688af7ed15772452';
-        sec-mem-ref-line = '535';
+        sec-mem-ref-line = '543';
         sec-mem-ref-name = 'exchange.MercadoBitcoin::get_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a35425d16f4e0eb64677e32443fb4d91c';
-        sec-mem-ref-line = '600';
+        sec-mem-ref-line = '608';
         sec-mem-ref-name = 'exchange.OkCoin::get_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1aea3ea907aaeb9d22b055dad22b6de9f5';
-        sec-mem-ref-line = '415';
+        sec-mem-ref-line = '423';
         sec-mem-ref-name = 'exchange.Bitstamp::mk_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a5c2280e8efc3dd148d724e9b73bd9243';
-        sec-mem-ref-line = '549';
+        sec-mem-ref-line = '557';
         sec-mem-ref-name = 'exchange.MercadoBitcoin::mk_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a5a24006154b66792398302f2e6509578';
-        sec-mem-ref-line = '614';
+        sec-mem-ref-line = '622';
         sec-mem-ref-name = 'exchange.OkCoin::mk_ticker';
     };
     }; /* sec-member */
@@ -2351,7 +2351,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'pair';
       sec-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
-      sec-mem-desc-line = '390';
+      sec-mem-desc-line = '398';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -2360,22 +2360,22 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1aea3ea907aaeb9d22b055dad22b6de9f5';
-        sec-mem-ref-line = '415';
+        sec-mem-ref-line = '423';
         sec-mem-ref-name = 'exchange.Bitstamp::mk_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a149b379722f351e0b890822a6220f0b0';
-        sec-mem-ref-line = '474';
+        sec-mem-ref-line = '482';
         sec-mem-ref-name = 'exchange.FoxBit::mk_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a5c2280e8efc3dd148d724e9b73bd9243';
-        sec-mem-ref-line = '549';
+        sec-mem-ref-line = '557';
         sec-mem-ref-name = 'exchange.MercadoBitcoin::mk_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a5a24006154b66792398302f2e6509578';
-        sec-mem-ref-line = '614';
+        sec-mem-ref-line = '622';
         sec-mem-ref-name = 'exchange.OkCoin::mk_ticker';
     };
     }; /* sec-member */
@@ -2389,7 +2389,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'sell';
       sec-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
-      sec-mem-desc-line = '393';
+      sec-mem-desc-line = '401';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -2403,17 +2403,17 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1aa065ba9bff0d002816abd6caae2cfb99';
-        sec-mem-ref-line = '401';
+        sec-mem-ref-line = '409';
         sec-mem-ref-name = 'exchange.Bitstamp::get_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a2e6fe3e59daf6791688af7ed15772452';
-        sec-mem-ref-line = '535';
+        sec-mem-ref-line = '543';
         sec-mem-ref-name = 'exchange.MercadoBitcoin::get_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a35425d16f4e0eb64677e32443fb4d91c';
-        sec-mem-ref-line = '600';
+        sec-mem-ref-line = '608';
         sec-mem-ref-name = 'exchange.OkCoin::get_ticker';
     };
       sec-mem-referenceby = {
@@ -2423,17 +2423,17 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1aea3ea907aaeb9d22b055dad22b6de9f5';
-        sec-mem-ref-line = '415';
+        sec-mem-ref-line = '423';
         sec-mem-ref-name = 'exchange.Bitstamp::mk_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a5c2280e8efc3dd148d724e9b73bd9243';
-        sec-mem-ref-line = '549';
+        sec-mem-ref-line = '557';
         sec-mem-ref-name = 'exchange.MercadoBitcoin::mk_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a5a24006154b66792398302f2e6509578';
-        sec-mem-ref-line = '614';
+        sec-mem-ref-line = '622';
         sec-mem-ref-name = 'exchange.OkCoin::mk_ticker';
     };
     }; /* sec-member */
@@ -2447,7 +2447,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'ts';
       sec-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
-      sec-mem-desc-line = '391';
+      sec-mem-desc-line = '399';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -2456,17 +2456,17 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1aea3ea907aaeb9d22b055dad22b6de9f5';
-        sec-mem-ref-line = '415';
+        sec-mem-ref-line = '423';
         sec-mem-ref-name = 'exchange.Bitstamp::mk_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a5c2280e8efc3dd148d724e9b73bd9243';
-        sec-mem-ref-line = '549';
+        sec-mem-ref-line = '557';
         sec-mem-ref-name = 'exchange.MercadoBitcoin::mk_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a5a24006154b66792398302f2e6509578';
-        sec-mem-ref-line = '614';
+        sec-mem-ref-line = '622';
         sec-mem-ref-name = 'exchange.OkCoin::mk_ticker';
     };
     }; /* sec-member */
@@ -2480,7 +2480,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'vol';
       sec-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
-      sec-mem-desc-line = '397';
+      sec-mem-desc-line = '405';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -2489,17 +2489,17 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1aea3ea907aaeb9d22b055dad22b6de9f5';
-        sec-mem-ref-line = '415';
+        sec-mem-ref-line = '423';
         sec-mem-ref-name = 'exchange.Bitstamp::mk_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a5c2280e8efc3dd148d724e9b73bd9243';
-        sec-mem-ref-line = '549';
+        sec-mem-ref-line = '557';
         sec-mem-ref-name = 'exchange.MercadoBitcoin::mk_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a5a24006154b66792398302f2e6509578';
-        sec-mem-ref-line = '614';
+        sec-mem-ref-line = '622';
         sec-mem-ref-name = 'exchange.OkCoin::mk_ticker';
     };
     }; /* sec-member */
@@ -2519,7 +2519,7 @@ _EnD_oF_dEf_TeXt_;
 = 'https://www.bitstamp.net/api/order_book/'
 _EnD_oF_dEf_TeXt_;
       sec-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
-      sec-mem-desc-line = '380';
+      sec-mem-desc-line = '388';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -2540,7 +2540,7 @@ _EnD_oF_dEf_TeXt_;
 = 'https://www.bitstamp.net/api/ticker/'
 _EnD_oF_dEf_TeXt_;
       sec-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
-      sec-mem-desc-line = '379';
+      sec-mem-desc-line = '387';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -2561,7 +2561,7 @@ _EnD_oF_dEf_TeXt_;
 = 'https://www.bitstamp.net/api/transactions/'
 _EnD_oF_dEf_TeXt_;
       sec-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
-      sec-mem-desc-line = '381';
+      sec-mem-desc-line = '389';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -2571,7 +2571,7 @@ _EnD_oF_dEf_TeXt_;
     }; /* sec-member */
   }; /* cp-section */
   cp-filename  = '/home/hilton/github/exch2exh/exchange.py';
-  cp-fileline  = '378';
+  cp-fileline  = '386';
   cp-briefdesc = <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -4177,7 +4177,7 @@ _EnD_oF_dEf_TeXt_;
         sec-mem-param-defname = 'self';
       }; /*        sec-mem-param--param */
       sec-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
-      sec-mem-desc-line = '297';
+      sec-mem-desc-line = '295';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -4228,6 +4228,30 @@ _EnD_oF_dEf_TeXt_;
         sec-mem-ref-line = '234';
         sec-mem-ref-name = 'exchange.Differences::origin';
     };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'classexchange_1_1_diff_tracker_1aa3c9d92dbe7c7fcf25959fe55c6ba47d';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+def
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'dumps';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+self
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-defname = 'self';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
+      sec-mem-desc-line = '303';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
     }; /* sec-member */
   }; /* cp-section */
   cp-section = {
@@ -4520,7 +4544,7 @@ class = {
     ref-virt = non-virtual;
   };
   cp-filename  = '/home/hilton/github/exch2exh/exchange.py';
-  cp-fileline  = '303';
+  cp-fileline  = '311';
   cp-briefdesc = <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -5447,27 +5471,27 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a7853d59743dd4029bb218e60604dec88';
-        sec-mem-ref-line = '369';
+        sec-mem-ref-line = '377';
         sec-mem-ref-name = 'exchange.Bitfinex::getOriginalTicker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a456887079f953876024ef40c5607cc91';
-        sec-mem-ref-line = '438';
+        sec-mem-ref-line = '446';
         sec-mem-ref-name = 'exchange.Bitstamp::getOriginalTicker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1adfca60ed33245c7bd9666893f6725bb9';
-        sec-mem-ref-line = '503';
+        sec-mem-ref-line = '511';
         sec-mem-ref-name = 'exchange.FoxBit::getOriginalTicker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a1f65e187370684cf17076eb8d0e126d2';
-        sec-mem-ref-line = '572';
+        sec-mem-ref-line = '580';
         sec-mem-ref-name = 'exchange.MercadoBitcoin::getOriginalTicker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1aa3fa76e1280f612c3d0f7903d8847684';
-        sec-mem-ref-line = '631';
+        sec-mem-ref-line = '639';
         sec-mem-ref-name = 'exchange.OkCoin::getOriginalTicker';
     };
     }; /* sec-member */
@@ -5490,12 +5514,12 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a149b379722f351e0b890822a6220f0b0';
-        sec-mem-ref-line = '474';
+        sec-mem-ref-line = '482';
         sec-mem-ref-name = 'exchange.FoxBit::mk_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a813481c37754cc0c6e0b1cefa0ec0889';
-        sec-mem-ref-line = '453';
+        sec-mem-ref-line = '461';
         sec-mem-ref-name = 'exchange.FoxBit::process_ticker';
     };
     }; /* sec-member */
@@ -5713,7 +5737,7 @@ _EnD_oF_dEf_TeXt_;
         sec-mem-param-defname = 'self';
       }; /*        sec-mem-param--param */
       sec-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
-      sec-mem-desc-line = '450';
+      sec-mem-desc-line = '458';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -5737,7 +5761,7 @@ _EnD_oF_dEf_TeXt_;
         sec-mem-param-defname = 'self';
       }; /*        sec-mem-param--param */
       sec-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
-      sec-mem-desc-line = '506';
+      sec-mem-desc-line = '514';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -5761,7 +5785,7 @@ _EnD_oF_dEf_TeXt_;
         sec-mem-param-defname = 'self';
       }; /*        sec-mem-param--param */
       sec-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
-      sec-mem-desc-line = '497';
+      sec-mem-desc-line = '505';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -5785,7 +5809,7 @@ _EnD_oF_dEf_TeXt_;
         sec-mem-param-defname = 'self';
       }; /*        sec-mem-param--param */
       sec-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
-      sec-mem-desc-line = '500';
+      sec-mem-desc-line = '508';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -5809,7 +5833,7 @@ _EnD_oF_dEf_TeXt_;
         sec-mem-param-defname = 'self';
       }; /*        sec-mem-param--param */
       sec-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
-      sec-mem-desc-line = '460';
+      sec-mem-desc-line = '468';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -5833,7 +5857,7 @@ _EnD_oF_dEf_TeXt_;
         sec-mem-param-defname = 'self';
       }; /*        sec-mem-param--param */
       sec-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
-      sec-mem-desc-line = '494';
+      sec-mem-desc-line = '502';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -5857,7 +5881,7 @@ _EnD_oF_dEf_TeXt_;
         sec-mem-param-defname = 'self';
       }; /*        sec-mem-param--param */
       sec-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
-      sec-mem-desc-line = '503';
+      sec-mem-desc-line = '511';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -5886,7 +5910,7 @@ _EnD_oF_dEf_TeXt_;
         sec-mem-param-defname = 'self';
       }; /*        sec-mem-param--param */
       sec-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
-      sec-mem-desc-line = '474';
+      sec-mem-desc-line = '482';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -5905,17 +5929,17 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1af5865e2fa72ee1706254ba963bfa10e9';
-        sec-mem-ref-line = '317';
+        sec-mem-ref-line = '325';
         sec-mem-ref-name = 'exchange.Bitfinex::exch';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1a140f44d1638f2e50ecb5148bf8f8ac86';
-        sec-mem-ref-line = '389';
+        sec-mem-ref-line = '397';
         sec-mem-ref-name = 'exchange.Bitstamp::exch';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1a3922433dcfe54e39c3c0da12fa252658';
-        sec-mem-ref-line = '457';
+        sec-mem-ref-line = '465';
         sec-mem-ref-name = 'exchange.FoxBit::exch';
     };
       sec-mem-referenceto = {
@@ -5925,17 +5949,17 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1a901a5499667f1f2b391bc9dbbfe1c1c7';
-        sec-mem-ref-line = '318';
+        sec-mem-ref-line = '326';
         sec-mem-ref-name = 'exchange.Bitfinex::pair';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1adf1f8e926f0cedb79bf57ab2dfa31776';
-        sec-mem-ref-line = '390';
+        sec-mem-ref-line = '398';
         sec-mem-ref-name = 'exchange.Bitstamp::pair';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1abfd6daf1cbad94eb74bba4c97fe4a574';
-        sec-mem-ref-line = '458';
+        sec-mem-ref-line = '466';
         sec-mem-ref-name = 'exchange.FoxBit::pair';
     };
       sec-mem-referenceto = {
@@ -5960,7 +5984,7 @@ _EnD_oF_dEf_TeXt_;
         sec-mem-param-defname = 'self';
       }; /*        sec-mem-param--param */
       sec-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
-      sec-mem-desc-line = '453';
+      sec-mem-desc-line = '461';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -5989,7 +6013,7 @@ _EnD_oF_dEf_TeXt_;
         sec-mem-param-defname = 'self';
       }; /*        sec-mem-param--param */
       sec-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
-      sec-mem-desc-line = '491';
+      sec-mem-desc-line = '499';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -6010,7 +6034,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'buy';
       sec-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
-      sec-mem-desc-line = '464';
+      sec-mem-desc-line = '472';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -6024,12 +6048,12 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a2e6fe3e59daf6791688af7ed15772452';
-        sec-mem-ref-line = '535';
+        sec-mem-ref-line = '543';
         sec-mem-ref-name = 'exchange.MercadoBitcoin::get_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a35425d16f4e0eb64677e32443fb4d91c';
-        sec-mem-ref-line = '600';
+        sec-mem-ref-line = '608';
         sec-mem-ref-name = 'exchange.OkCoin::get_ticker';
     };
       sec-mem-referenceby = {
@@ -6039,12 +6063,12 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a5c2280e8efc3dd148d724e9b73bd9243';
-        sec-mem-ref-line = '549';
+        sec-mem-ref-line = '557';
         sec-mem-ref-name = 'exchange.MercadoBitcoin::mk_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a5a24006154b66792398302f2e6509578';
-        sec-mem-ref-line = '614';
+        sec-mem-ref-line = '622';
         sec-mem-ref-name = 'exchange.OkCoin::mk_ticker';
     };
     }; /* sec-member */
@@ -6058,7 +6082,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'dt';
       sec-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
-      sec-mem-desc-line = '463';
+      sec-mem-desc-line = '471';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -6077,12 +6101,12 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a2e6fe3e59daf6791688af7ed15772452';
-        sec-mem-ref-line = '535';
+        sec-mem-ref-line = '543';
         sec-mem-ref-name = 'exchange.MercadoBitcoin::get_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a35425d16f4e0eb64677e32443fb4d91c';
-        sec-mem-ref-line = '600';
+        sec-mem-ref-line = '608';
         sec-mem-ref-name = 'exchange.OkCoin::get_ticker';
     };
       sec-mem-referenceby = {
@@ -6101,7 +6125,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'exch';
       sec-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
-      sec-mem-desc-line = '457';
+      sec-mem-desc-line = '465';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -6120,17 +6144,17 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a149b379722f351e0b890822a6220f0b0';
-        sec-mem-ref-line = '474';
+        sec-mem-ref-line = '482';
         sec-mem-ref-name = 'exchange.FoxBit::mk_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a5c2280e8efc3dd148d724e9b73bd9243';
-        sec-mem-ref-line = '549';
+        sec-mem-ref-line = '557';
         sec-mem-ref-name = 'exchange.MercadoBitcoin::mk_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a5a24006154b66792398302f2e6509578';
-        sec-mem-ref-line = '614';
+        sec-mem-ref-line = '622';
         sec-mem-ref-name = 'exchange.OkCoin::mk_ticker';
     };
     }; /* sec-member */
@@ -6144,7 +6168,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'high';
       sec-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
-      sec-mem-desc-line = '466';
+      sec-mem-desc-line = '474';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -6153,22 +6177,22 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a2e6fe3e59daf6791688af7ed15772452';
-        sec-mem-ref-line = '535';
+        sec-mem-ref-line = '543';
         sec-mem-ref-name = 'exchange.MercadoBitcoin::get_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a35425d16f4e0eb64677e32443fb4d91c';
-        sec-mem-ref-line = '600';
+        sec-mem-ref-line = '608';
         sec-mem-ref-name = 'exchange.OkCoin::get_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a5c2280e8efc3dd148d724e9b73bd9243';
-        sec-mem-ref-line = '549';
+        sec-mem-ref-line = '557';
         sec-mem-ref-name = 'exchange.MercadoBitcoin::mk_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a5a24006154b66792398302f2e6509578';
-        sec-mem-ref-line = '614';
+        sec-mem-ref-line = '622';
         sec-mem-ref-name = 'exchange.OkCoin::mk_ticker';
     };
     }; /* sec-member */
@@ -6182,7 +6206,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'last';
       sec-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
-      sec-mem-desc-line = '468';
+      sec-mem-desc-line = '476';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -6191,22 +6215,22 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a2e6fe3e59daf6791688af7ed15772452';
-        sec-mem-ref-line = '535';
+        sec-mem-ref-line = '543';
         sec-mem-ref-name = 'exchange.MercadoBitcoin::get_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a35425d16f4e0eb64677e32443fb4d91c';
-        sec-mem-ref-line = '600';
+        sec-mem-ref-line = '608';
         sec-mem-ref-name = 'exchange.OkCoin::get_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a5c2280e8efc3dd148d724e9b73bd9243';
-        sec-mem-ref-line = '549';
+        sec-mem-ref-line = '557';
         sec-mem-ref-name = 'exchange.MercadoBitcoin::mk_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a5a24006154b66792398302f2e6509578';
-        sec-mem-ref-line = '614';
+        sec-mem-ref-line = '622';
         sec-mem-ref-name = 'exchange.OkCoin::mk_ticker';
     };
     }; /* sec-member */
@@ -6220,7 +6244,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'low';
       sec-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
-      sec-mem-desc-line = '467';
+      sec-mem-desc-line = '475';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -6229,22 +6253,22 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a2e6fe3e59daf6791688af7ed15772452';
-        sec-mem-ref-line = '535';
+        sec-mem-ref-line = '543';
         sec-mem-ref-name = 'exchange.MercadoBitcoin::get_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a35425d16f4e0eb64677e32443fb4d91c';
-        sec-mem-ref-line = '600';
+        sec-mem-ref-line = '608';
         sec-mem-ref-name = 'exchange.OkCoin::get_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a5c2280e8efc3dd148d724e9b73bd9243';
-        sec-mem-ref-line = '549';
+        sec-mem-ref-line = '557';
         sec-mem-ref-name = 'exchange.MercadoBitcoin::mk_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a5a24006154b66792398302f2e6509578';
-        sec-mem-ref-line = '614';
+        sec-mem-ref-line = '622';
         sec-mem-ref-name = 'exchange.OkCoin::mk_ticker';
     };
     }; /* sec-member */
@@ -6258,7 +6282,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'pair';
       sec-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
-      sec-mem-desc-line = '458';
+      sec-mem-desc-line = '466';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -6267,17 +6291,17 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a149b379722f351e0b890822a6220f0b0';
-        sec-mem-ref-line = '474';
+        sec-mem-ref-line = '482';
         sec-mem-ref-name = 'exchange.FoxBit::mk_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a5c2280e8efc3dd148d724e9b73bd9243';
-        sec-mem-ref-line = '549';
+        sec-mem-ref-line = '557';
         sec-mem-ref-name = 'exchange.MercadoBitcoin::mk_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a5a24006154b66792398302f2e6509578';
-        sec-mem-ref-line = '614';
+        sec-mem-ref-line = '622';
         sec-mem-ref-name = 'exchange.OkCoin::mk_ticker';
     };
     }; /* sec-member */
@@ -6291,7 +6315,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'sell';
       sec-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
-      sec-mem-desc-line = '465';
+      sec-mem-desc-line = '473';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -6305,12 +6329,12 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a2e6fe3e59daf6791688af7ed15772452';
-        sec-mem-ref-line = '535';
+        sec-mem-ref-line = '543';
         sec-mem-ref-name = 'exchange.MercadoBitcoin::get_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a35425d16f4e0eb64677e32443fb4d91c';
-        sec-mem-ref-line = '600';
+        sec-mem-ref-line = '608';
         sec-mem-ref-name = 'exchange.OkCoin::get_ticker';
     };
       sec-mem-referenceby = {
@@ -6320,12 +6344,12 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a5c2280e8efc3dd148d724e9b73bd9243';
-        sec-mem-ref-line = '549';
+        sec-mem-ref-line = '557';
         sec-mem-ref-name = 'exchange.MercadoBitcoin::mk_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a5a24006154b66792398302f2e6509578';
-        sec-mem-ref-line = '614';
+        sec-mem-ref-line = '622';
         sec-mem-ref-name = 'exchange.OkCoin::mk_ticker';
     };
     }; /* sec-member */
@@ -6345,7 +6369,7 @@ _EnD_oF_dEf_TeXt_;
 = 'https://api.blinktrade.com/api/v1/BRL/ticker?crypto_currency=BTC'
 _EnD_oF_dEf_TeXt_;
       sec-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
-      sec-mem-desc-line = '448';
+      sec-mem-desc-line = '456';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -6355,7 +6379,7 @@ _EnD_oF_dEf_TeXt_;
     }; /* sec-member */
   }; /* cp-section */
   cp-filename  = '/home/hilton/github/exch2exh/exchange.py';
-  cp-fileline  = '447';
+  cp-fileline  = '455';
   cp-briefdesc = <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -6592,7 +6616,7 @@ _EnD_oF_dEf_TeXt_;
         sec-mem-param-defname = 'self';
       }; /*        sec-mem-param--param */
       sec-mem-desc-file = '/home/hilton/github/exch2exh/rates.py';
-      sec-mem-desc-line = '85';
+      sec-mem-desc-line = '87';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -6616,7 +6640,7 @@ _EnD_oF_dEf_TeXt_;
         sec-mem-param-defname = 'url';
       }; /*        sec-mem-param--param */
       sec-mem-desc-file = '/home/hilton/github/exch2exh/rates.py';
-      sec-mem-desc-line = '55';
+      sec-mem-desc-line = '57';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -6637,7 +6661,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'brl2usd';
       sec-mem-desc-file = '/home/hilton/github/exch2exh/rates.py';
-      sec-mem-desc-line = '90';
+      sec-mem-desc-line = '92';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -6665,7 +6689,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'dt';
       sec-mem-desc-file = '/home/hilton/github/exch2exh/rates.py';
-      sec-mem-desc-line = '87';
+      sec-mem-desc-line = '89';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -6698,7 +6722,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'prefix';
       sec-mem-desc-file = '/home/hilton/github/exch2exh/rates.py';
-      sec-mem-desc-line = '93';
+      sec-mem-desc-line = '95';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -6716,7 +6740,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'service';
       sec-mem-desc-file = '/home/hilton/github/exch2exh/rates.py';
-      sec-mem-desc-line = '92';
+      sec-mem-desc-line = '94';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -6744,7 +6768,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'usd2brl';
       sec-mem-desc-file = '/home/hilton/github/exch2exh/rates.py';
-      sec-mem-desc-line = '89';
+      sec-mem-desc-line = '91';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -6778,7 +6802,7 @@ _EnD_oF_dEf_TeXt_;
 = 'https://finance.google.com/finance/converter?a=1&from=BRL&to=USD&meta=ei%3DYqi6Wej-AoyEeoLbh9gF'
 _EnD_oF_dEf_TeXt_;
       sec-mem-desc-file = '/home/hilton/github/exch2exh/rates.py';
-      sec-mem-desc-line = '53';
+      sec-mem-desc-line = '55';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -6799,7 +6823,7 @@ _EnD_oF_dEf_TeXt_;
 = 'https://finance.google.com/finance/converter?a=1&from=USD&to=BRL&meta=ei%3DoKi6WfnPAsSTeoKNoJAB'
 _EnD_oF_dEf_TeXt_;
       sec-mem-desc-file = '/home/hilton/github/exch2exh/rates.py';
-      sec-mem-desc-line = '51';
+      sec-mem-desc-line = '53';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -6809,7 +6833,7 @@ _EnD_oF_dEf_TeXt_;
     }; /* sec-member */
   }; /* cp-section */
   cp-filename  = '/home/hilton/github/exch2exh/rates.py';
-  cp-fileline  = '49';
+  cp-fileline  = '51';
   cp-briefdesc = <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -6941,7 +6965,7 @@ _EnD_oF_dEf_TeXt_;
         sec-mem-param-defname = 'self';
       }; /*        sec-mem-param--param */
       sec-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
-      sec-mem-desc-line = '517';
+      sec-mem-desc-line = '525';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -6965,7 +6989,7 @@ _EnD_oF_dEf_TeXt_;
         sec-mem-param-defname = 'self';
       }; /*        sec-mem-param--param */
       sec-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
-      sec-mem-desc-line = '575';
+      sec-mem-desc-line = '583';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -6989,7 +7013,7 @@ _EnD_oF_dEf_TeXt_;
         sec-mem-param-defname = 'self';
       }; /*        sec-mem-param--param */
       sec-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
-      sec-mem-desc-line = '566';
+      sec-mem-desc-line = '574';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -7013,7 +7037,7 @@ _EnD_oF_dEf_TeXt_;
         sec-mem-param-defname = 'self';
       }; /*        sec-mem-param--param */
       sec-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
-      sec-mem-desc-line = '569';
+      sec-mem-desc-line = '577';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -7037,7 +7061,7 @@ _EnD_oF_dEf_TeXt_;
         sec-mem-param-defname = 'self';
       }; /*        sec-mem-param--param */
       sec-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
-      sec-mem-desc-line = '535';
+      sec-mem-desc-line = '543';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -7056,22 +7080,22 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1aed7ff0d2287aaf4d61985d6f11c23c98';
-        sec-mem-ref-line = '323';
+        sec-mem-ref-line = '331';
         sec-mem-ref-name = 'exchange.Bitfinex::buy';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1a40aa1ff3335ef4c80a5107234e05e23e';
-        sec-mem-ref-line = '392';
+        sec-mem-ref-line = '400';
         sec-mem-ref-name = 'exchange.Bitstamp::buy';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1acb7e709cc05e8314b1bdacd32e4dfc80';
-        sec-mem-ref-line = '464';
+        sec-mem-ref-line = '472';
         sec-mem-ref-name = 'exchange.FoxBit::buy';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1ada27b62a35286b9f5dbb54590c5bacd2';
-        sec-mem-ref-line = '526';
+        sec-mem-ref-line = '534';
         sec-mem-ref-name = 'exchange.MercadoBitcoin::buy';
     };
       sec-mem-referenceto = {
@@ -7091,22 +7115,22 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1adc9e5a19056dcc22e8028e749b233795';
-        sec-mem-ref-line = '330';
+        sec-mem-ref-line = '338';
         sec-mem-ref-name = 'exchange.Bitfinex::dt';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1a527b7d7c5814118b5adfdaf0b960f036';
-        sec-mem-ref-line = '399';
+        sec-mem-ref-line = '407';
         sec-mem-ref-name = 'exchange.Bitstamp::dt';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1a363f8488eb0423f88519c085ae6f168f';
-        sec-mem-ref-line = '463';
+        sec-mem-ref-line = '471';
         sec-mem-ref-name = 'exchange.FoxBit::dt';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1aeee983ba4f72223a11fb914d22902c56';
-        sec-mem-ref-line = '533';
+        sec-mem-ref-line = '541';
         sec-mem-ref-name = 'exchange.MercadoBitcoin::dt';
     };
       sec-mem-referenceto = {
@@ -7121,22 +7145,22 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1a1380a7a7a3438e47785f10f68b0d61b9';
-        sec-mem-ref-line = '325';
+        sec-mem-ref-line = '333';
         sec-mem-ref-name = 'exchange.Bitfinex::high';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1a05de034d34b384373aeb26a28b60cad0';
-        sec-mem-ref-line = '394';
+        sec-mem-ref-line = '402';
         sec-mem-ref-name = 'exchange.Bitstamp::high';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1a4f6dfaecbcc17ceadddf52d266d9c00d';
-        sec-mem-ref-line = '466';
+        sec-mem-ref-line = '474';
         sec-mem-ref-name = 'exchange.FoxBit::high';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1a0b9c2d465601a48e3b8838354e931c39';
-        sec-mem-ref-line = '528';
+        sec-mem-ref-line = '536';
         sec-mem-ref-name = 'exchange.MercadoBitcoin::high';
     };
       sec-mem-referenceto = {
@@ -7151,22 +7175,22 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1a56e491a27f4b3215b66e13da7796c078';
-        sec-mem-ref-line = '327';
+        sec-mem-ref-line = '335';
         sec-mem-ref-name = 'exchange.Bitfinex::last';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1acf669ec9b8b50638dc19dec5fd40ab04';
-        sec-mem-ref-line = '396';
+        sec-mem-ref-line = '404';
         sec-mem-ref-name = 'exchange.Bitstamp::last';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1a5cdbc327b005014dc3b8bb6fb54a12fd';
-        sec-mem-ref-line = '468';
+        sec-mem-ref-line = '476';
         sec-mem-ref-name = 'exchange.FoxBit::last';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1a5f2759cd17d5dd36bc813c815543f3cc';
-        sec-mem-ref-line = '530';
+        sec-mem-ref-line = '538';
         sec-mem-ref-name = 'exchange.MercadoBitcoin::last';
     };
       sec-mem-referenceto = {
@@ -7181,22 +7205,22 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1a7d4241119b1fa3860743647a0c6c3416';
-        sec-mem-ref-line = '326';
+        sec-mem-ref-line = '334';
         sec-mem-ref-name = 'exchange.Bitfinex::low';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1a42d49d824732f16b57f677e8482e49b7';
-        sec-mem-ref-line = '395';
+        sec-mem-ref-line = '403';
         sec-mem-ref-name = 'exchange.Bitstamp::low';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1acd666444cff98fe477651120ddb0f915';
-        sec-mem-ref-line = '467';
+        sec-mem-ref-line = '475';
         sec-mem-ref-name = 'exchange.FoxBit::low';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1aaa3aae824bfc5ba3b7dc5252e9554713';
-        sec-mem-ref-line = '529';
+        sec-mem-ref-line = '537';
         sec-mem-ref-name = 'exchange.MercadoBitcoin::low';
     };
       sec-mem-referenceto = {
@@ -7211,22 +7235,22 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1a9aebaf447f73e582f7bc626e526e0201';
-        sec-mem-ref-line = '324';
+        sec-mem-ref-line = '332';
         sec-mem-ref-name = 'exchange.Bitfinex::sell';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1ae5bc1532848b36cd9ac5e46763f4ee14';
-        sec-mem-ref-line = '393';
+        sec-mem-ref-line = '401';
         sec-mem-ref-name = 'exchange.Bitstamp::sell';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1ac1fae4ef7a43254b71d7173a5cc6eeaf';
-        sec-mem-ref-line = '465';
+        sec-mem-ref-line = '473';
         sec-mem-ref-name = 'exchange.FoxBit::sell';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1a9982c7a3f6103c88c64160a5854c35cd';
-        sec-mem-ref-line = '527';
+        sec-mem-ref-line = '535';
         sec-mem-ref-name = 'exchange.MercadoBitcoin::sell';
     };
     }; /* sec-member */
@@ -7246,7 +7270,7 @@ _EnD_oF_dEf_TeXt_;
         sec-mem-param-defname = 'self';
       }; /*        sec-mem-param--param */
       sec-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
-      sec-mem-desc-line = '572';
+      sec-mem-desc-line = '580';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -7275,7 +7299,7 @@ _EnD_oF_dEf_TeXt_;
         sec-mem-param-defname = 'self';
       }; /*        sec-mem-param--param */
       sec-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
-      sec-mem-desc-line = '549';
+      sec-mem-desc-line = '557';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -7294,22 +7318,22 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1aed7ff0d2287aaf4d61985d6f11c23c98';
-        sec-mem-ref-line = '323';
+        sec-mem-ref-line = '331';
         sec-mem-ref-name = 'exchange.Bitfinex::buy';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1a40aa1ff3335ef4c80a5107234e05e23e';
-        sec-mem-ref-line = '392';
+        sec-mem-ref-line = '400';
         sec-mem-ref-name = 'exchange.Bitstamp::buy';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1acb7e709cc05e8314b1bdacd32e4dfc80';
-        sec-mem-ref-line = '464';
+        sec-mem-ref-line = '472';
         sec-mem-ref-name = 'exchange.FoxBit::buy';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1ada27b62a35286b9f5dbb54590c5bacd2';
-        sec-mem-ref-line = '526';
+        sec-mem-ref-line = '534';
         sec-mem-ref-name = 'exchange.MercadoBitcoin::buy';
     };
       sec-mem-referenceto = {
@@ -7324,22 +7348,22 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1af5865e2fa72ee1706254ba963bfa10e9';
-        sec-mem-ref-line = '317';
+        sec-mem-ref-line = '325';
         sec-mem-ref-name = 'exchange.Bitfinex::exch';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1a140f44d1638f2e50ecb5148bf8f8ac86';
-        sec-mem-ref-line = '389';
+        sec-mem-ref-line = '397';
         sec-mem-ref-name = 'exchange.Bitstamp::exch';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1a3922433dcfe54e39c3c0da12fa252658';
-        sec-mem-ref-line = '457';
+        sec-mem-ref-line = '465';
         sec-mem-ref-name = 'exchange.FoxBit::exch';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1a68701550b43374441e52ea2082d88400';
-        sec-mem-ref-line = '523';
+        sec-mem-ref-line = '531';
         sec-mem-ref-name = 'exchange.MercadoBitcoin::exch';
     };
       sec-mem-referenceto = {
@@ -7354,22 +7378,22 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1a1380a7a7a3438e47785f10f68b0d61b9';
-        sec-mem-ref-line = '325';
+        sec-mem-ref-line = '333';
         sec-mem-ref-name = 'exchange.Bitfinex::high';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1a05de034d34b384373aeb26a28b60cad0';
-        sec-mem-ref-line = '394';
+        sec-mem-ref-line = '402';
         sec-mem-ref-name = 'exchange.Bitstamp::high';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1a4f6dfaecbcc17ceadddf52d266d9c00d';
-        sec-mem-ref-line = '466';
+        sec-mem-ref-line = '474';
         sec-mem-ref-name = 'exchange.FoxBit::high';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1a0b9c2d465601a48e3b8838354e931c39';
-        sec-mem-ref-line = '528';
+        sec-mem-ref-line = '536';
         sec-mem-ref-name = 'exchange.MercadoBitcoin::high';
     };
       sec-mem-referenceto = {
@@ -7384,22 +7408,22 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1a56e491a27f4b3215b66e13da7796c078';
-        sec-mem-ref-line = '327';
+        sec-mem-ref-line = '335';
         sec-mem-ref-name = 'exchange.Bitfinex::last';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1acf669ec9b8b50638dc19dec5fd40ab04';
-        sec-mem-ref-line = '396';
+        sec-mem-ref-line = '404';
         sec-mem-ref-name = 'exchange.Bitstamp::last';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1a5cdbc327b005014dc3b8bb6fb54a12fd';
-        sec-mem-ref-line = '468';
+        sec-mem-ref-line = '476';
         sec-mem-ref-name = 'exchange.FoxBit::last';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1a5f2759cd17d5dd36bc813c815543f3cc';
-        sec-mem-ref-line = '530';
+        sec-mem-ref-line = '538';
         sec-mem-ref-name = 'exchange.MercadoBitcoin::last';
     };
       sec-mem-referenceto = {
@@ -7414,22 +7438,22 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1a7d4241119b1fa3860743647a0c6c3416';
-        sec-mem-ref-line = '326';
+        sec-mem-ref-line = '334';
         sec-mem-ref-name = 'exchange.Bitfinex::low';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1a42d49d824732f16b57f677e8482e49b7';
-        sec-mem-ref-line = '395';
+        sec-mem-ref-line = '403';
         sec-mem-ref-name = 'exchange.Bitstamp::low';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1acd666444cff98fe477651120ddb0f915';
-        sec-mem-ref-line = '467';
+        sec-mem-ref-line = '475';
         sec-mem-ref-name = 'exchange.FoxBit::low';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1aaa3aae824bfc5ba3b7dc5252e9554713';
-        sec-mem-ref-line = '529';
+        sec-mem-ref-line = '537';
         sec-mem-ref-name = 'exchange.MercadoBitcoin::low';
     };
       sec-mem-referenceto = {
@@ -7439,22 +7463,22 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1a901a5499667f1f2b391bc9dbbfe1c1c7';
-        sec-mem-ref-line = '318';
+        sec-mem-ref-line = '326';
         sec-mem-ref-name = 'exchange.Bitfinex::pair';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1adf1f8e926f0cedb79bf57ab2dfa31776';
-        sec-mem-ref-line = '390';
+        sec-mem-ref-line = '398';
         sec-mem-ref-name = 'exchange.Bitstamp::pair';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1abfd6daf1cbad94eb74bba4c97fe4a574';
-        sec-mem-ref-line = '458';
+        sec-mem-ref-line = '466';
         sec-mem-ref-name = 'exchange.FoxBit::pair';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1a879f8ca352d313230d72e6e8785985a1';
-        sec-mem-ref-line = '524';
+        sec-mem-ref-line = '532';
         sec-mem-ref-name = 'exchange.MercadoBitcoin::pair';
     };
       sec-mem-referenceto = {
@@ -7469,37 +7493,37 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1a9aebaf447f73e582f7bc626e526e0201';
-        sec-mem-ref-line = '324';
+        sec-mem-ref-line = '332';
         sec-mem-ref-name = 'exchange.Bitfinex::sell';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1ae5bc1532848b36cd9ac5e46763f4ee14';
-        sec-mem-ref-line = '393';
+        sec-mem-ref-line = '401';
         sec-mem-ref-name = 'exchange.Bitstamp::sell';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1ac1fae4ef7a43254b71d7173a5cc6eeaf';
-        sec-mem-ref-line = '465';
+        sec-mem-ref-line = '473';
         sec-mem-ref-name = 'exchange.FoxBit::sell';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1a9982c7a3f6103c88c64160a5854c35cd';
-        sec-mem-ref-line = '527';
+        sec-mem-ref-line = '535';
         sec-mem-ref-name = 'exchange.MercadoBitcoin::sell';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1abf872e8ea738acd33d34a00d9d9e92c4';
-        sec-mem-ref-line = '321';
+        sec-mem-ref-line = '329';
         sec-mem-ref-name = 'exchange.Bitfinex::ts';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1a8e85011dca7c70ffd1ed5ed398b0ed34';
-        sec-mem-ref-line = '391';
+        sec-mem-ref-line = '399';
         sec-mem-ref-name = 'exchange.Bitstamp::ts';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1ac4630b08e08f9eeb9dad838dc9dc0cda';
-        sec-mem-ref-line = '525';
+        sec-mem-ref-line = '533';
         sec-mem-ref-name = 'exchange.MercadoBitcoin::ts';
     };
       sec-mem-referenceto = {
@@ -7509,17 +7533,17 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1a278da3a9eab93e256041c988f9bbd54c';
-        sec-mem-ref-line = '328';
+        sec-mem-ref-line = '336';
         sec-mem-ref-name = 'exchange.Bitfinex::vol';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1a4ddf3680f552a7d634b3bbea809cc606';
-        sec-mem-ref-line = '397';
+        sec-mem-ref-line = '405';
         sec-mem-ref-name = 'exchange.Bitstamp::vol';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1a1c163489086ba85b960db821117cd433';
-        sec-mem-ref-line = '531';
+        sec-mem-ref-line = '539';
         sec-mem-ref-name = 'exchange.MercadoBitcoin::vol';
     };
     }; /* sec-member */
@@ -7539,7 +7563,7 @@ _EnD_oF_dEf_TeXt_;
         sec-mem-param-defname = 'self';
       }; /*        sec-mem-param--param */
       sec-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
-      sec-mem-desc-line = '520';
+      sec-mem-desc-line = '528';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -7560,7 +7584,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'buy';
       sec-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
-      sec-mem-desc-line = '526';
+      sec-mem-desc-line = '534';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -7574,12 +7598,12 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a2e6fe3e59daf6791688af7ed15772452';
-        sec-mem-ref-line = '535';
+        sec-mem-ref-line = '543';
         sec-mem-ref-name = 'exchange.MercadoBitcoin::get_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a35425d16f4e0eb64677e32443fb4d91c';
-        sec-mem-ref-line = '600';
+        sec-mem-ref-line = '608';
         sec-mem-ref-name = 'exchange.OkCoin::get_ticker';
     };
       sec-mem-referenceby = {
@@ -7589,12 +7613,12 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a5c2280e8efc3dd148d724e9b73bd9243';
-        sec-mem-ref-line = '549';
+        sec-mem-ref-line = '557';
         sec-mem-ref-name = 'exchange.MercadoBitcoin::mk_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a5a24006154b66792398302f2e6509578';
-        sec-mem-ref-line = '614';
+        sec-mem-ref-line = '622';
         sec-mem-ref-name = 'exchange.OkCoin::mk_ticker';
     };
     }; /* sec-member */
@@ -7608,7 +7632,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'dt';
       sec-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
-      sec-mem-desc-line = '533';
+      sec-mem-desc-line = '541';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -7627,12 +7651,12 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a2e6fe3e59daf6791688af7ed15772452';
-        sec-mem-ref-line = '535';
+        sec-mem-ref-line = '543';
         sec-mem-ref-name = 'exchange.MercadoBitcoin::get_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a35425d16f4e0eb64677e32443fb4d91c';
-        sec-mem-ref-line = '600';
+        sec-mem-ref-line = '608';
         sec-mem-ref-name = 'exchange.OkCoin::get_ticker';
     };
       sec-mem-referenceby = {
@@ -7651,7 +7675,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'exch';
       sec-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
-      sec-mem-desc-line = '523';
+      sec-mem-desc-line = '531';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -7670,12 +7694,12 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a5c2280e8efc3dd148d724e9b73bd9243';
-        sec-mem-ref-line = '549';
+        sec-mem-ref-line = '557';
         sec-mem-ref-name = 'exchange.MercadoBitcoin::mk_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a5a24006154b66792398302f2e6509578';
-        sec-mem-ref-line = '614';
+        sec-mem-ref-line = '622';
         sec-mem-ref-name = 'exchange.OkCoin::mk_ticker';
     };
     }; /* sec-member */
@@ -7689,7 +7713,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'high';
       sec-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
-      sec-mem-desc-line = '528';
+      sec-mem-desc-line = '536';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -7698,22 +7722,22 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a2e6fe3e59daf6791688af7ed15772452';
-        sec-mem-ref-line = '535';
+        sec-mem-ref-line = '543';
         sec-mem-ref-name = 'exchange.MercadoBitcoin::get_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a35425d16f4e0eb64677e32443fb4d91c';
-        sec-mem-ref-line = '600';
+        sec-mem-ref-line = '608';
         sec-mem-ref-name = 'exchange.OkCoin::get_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a5c2280e8efc3dd148d724e9b73bd9243';
-        sec-mem-ref-line = '549';
+        sec-mem-ref-line = '557';
         sec-mem-ref-name = 'exchange.MercadoBitcoin::mk_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a5a24006154b66792398302f2e6509578';
-        sec-mem-ref-line = '614';
+        sec-mem-ref-line = '622';
         sec-mem-ref-name = 'exchange.OkCoin::mk_ticker';
     };
     }; /* sec-member */
@@ -7727,7 +7751,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'last';
       sec-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
-      sec-mem-desc-line = '530';
+      sec-mem-desc-line = '538';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -7736,22 +7760,22 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a2e6fe3e59daf6791688af7ed15772452';
-        sec-mem-ref-line = '535';
+        sec-mem-ref-line = '543';
         sec-mem-ref-name = 'exchange.MercadoBitcoin::get_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a35425d16f4e0eb64677e32443fb4d91c';
-        sec-mem-ref-line = '600';
+        sec-mem-ref-line = '608';
         sec-mem-ref-name = 'exchange.OkCoin::get_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a5c2280e8efc3dd148d724e9b73bd9243';
-        sec-mem-ref-line = '549';
+        sec-mem-ref-line = '557';
         sec-mem-ref-name = 'exchange.MercadoBitcoin::mk_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a5a24006154b66792398302f2e6509578';
-        sec-mem-ref-line = '614';
+        sec-mem-ref-line = '622';
         sec-mem-ref-name = 'exchange.OkCoin::mk_ticker';
     };
     }; /* sec-member */
@@ -7765,7 +7789,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'low';
       sec-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
-      sec-mem-desc-line = '529';
+      sec-mem-desc-line = '537';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -7774,22 +7798,22 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a2e6fe3e59daf6791688af7ed15772452';
-        sec-mem-ref-line = '535';
+        sec-mem-ref-line = '543';
         sec-mem-ref-name = 'exchange.MercadoBitcoin::get_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a35425d16f4e0eb64677e32443fb4d91c';
-        sec-mem-ref-line = '600';
+        sec-mem-ref-line = '608';
         sec-mem-ref-name = 'exchange.OkCoin::get_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a5c2280e8efc3dd148d724e9b73bd9243';
-        sec-mem-ref-line = '549';
+        sec-mem-ref-line = '557';
         sec-mem-ref-name = 'exchange.MercadoBitcoin::mk_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a5a24006154b66792398302f2e6509578';
-        sec-mem-ref-line = '614';
+        sec-mem-ref-line = '622';
         sec-mem-ref-name = 'exchange.OkCoin::mk_ticker';
     };
     }; /* sec-member */
@@ -7803,7 +7827,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'pair';
       sec-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
-      sec-mem-desc-line = '524';
+      sec-mem-desc-line = '532';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -7812,12 +7836,12 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a5c2280e8efc3dd148d724e9b73bd9243';
-        sec-mem-ref-line = '549';
+        sec-mem-ref-line = '557';
         sec-mem-ref-name = 'exchange.MercadoBitcoin::mk_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a5a24006154b66792398302f2e6509578';
-        sec-mem-ref-line = '614';
+        sec-mem-ref-line = '622';
         sec-mem-ref-name = 'exchange.OkCoin::mk_ticker';
     };
     }; /* sec-member */
@@ -7831,7 +7855,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'sell';
       sec-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
-      sec-mem-desc-line = '527';
+      sec-mem-desc-line = '535';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -7845,12 +7869,12 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a2e6fe3e59daf6791688af7ed15772452';
-        sec-mem-ref-line = '535';
+        sec-mem-ref-line = '543';
         sec-mem-ref-name = 'exchange.MercadoBitcoin::get_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a35425d16f4e0eb64677e32443fb4d91c';
-        sec-mem-ref-line = '600';
+        sec-mem-ref-line = '608';
         sec-mem-ref-name = 'exchange.OkCoin::get_ticker';
     };
       sec-mem-referenceby = {
@@ -7860,12 +7884,12 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a5c2280e8efc3dd148d724e9b73bd9243';
-        sec-mem-ref-line = '549';
+        sec-mem-ref-line = '557';
         sec-mem-ref-name = 'exchange.MercadoBitcoin::mk_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a5a24006154b66792398302f2e6509578';
-        sec-mem-ref-line = '614';
+        sec-mem-ref-line = '622';
         sec-mem-ref-name = 'exchange.OkCoin::mk_ticker';
     };
     }; /* sec-member */
@@ -7879,7 +7903,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'ts';
       sec-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
-      sec-mem-desc-line = '525';
+      sec-mem-desc-line = '533';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -7888,12 +7912,12 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a5c2280e8efc3dd148d724e9b73bd9243';
-        sec-mem-ref-line = '549';
+        sec-mem-ref-line = '557';
         sec-mem-ref-name = 'exchange.MercadoBitcoin::mk_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a5a24006154b66792398302f2e6509578';
-        sec-mem-ref-line = '614';
+        sec-mem-ref-line = '622';
         sec-mem-ref-name = 'exchange.OkCoin::mk_ticker';
     };
     }; /* sec-member */
@@ -7907,7 +7931,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'vol';
       sec-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
-      sec-mem-desc-line = '531';
+      sec-mem-desc-line = '539';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -7916,12 +7940,12 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a5c2280e8efc3dd148d724e9b73bd9243';
-        sec-mem-ref-line = '549';
+        sec-mem-ref-line = '557';
         sec-mem-ref-name = 'exchange.MercadoBitcoin::mk_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a5a24006154b66792398302f2e6509578';
-        sec-mem-ref-line = '614';
+        sec-mem-ref-line = '622';
         sec-mem-ref-name = 'exchange.OkCoin::mk_ticker';
     };
     }; /* sec-member */
@@ -7941,7 +7965,7 @@ _EnD_oF_dEf_TeXt_;
 = 'https://www.mercadobitcoin.net/api/BTC/orderbook/'
 _EnD_oF_dEf_TeXt_;
       sec-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
-      sec-mem-desc-line = '514';
+      sec-mem-desc-line = '522';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -7962,7 +7986,7 @@ _EnD_oF_dEf_TeXt_;
 = 'https://www.mercadobitcoin.net/api/ticker/'
 _EnD_oF_dEf_TeXt_;
       sec-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
-      sec-mem-desc-line = '513';
+      sec-mem-desc-line = '521';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -7983,7 +8007,7 @@ _EnD_oF_dEf_TeXt_;
 = 'https://www.mercadobitcoin.net/api/BTC/trades/'
 _EnD_oF_dEf_TeXt_;
       sec-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
-      sec-mem-desc-line = '515';
+      sec-mem-desc-line = '523';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -7993,7 +8017,7 @@ _EnD_oF_dEf_TeXt_;
     }; /* sec-member */
   }; /* cp-section */
   cp-filename  = '/home/hilton/github/exch2exh/exchange.py';
-  cp-fileline  = '512';
+  cp-fileline  = '520';
   cp-briefdesc = <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -8092,7 +8116,7 @@ _EnD_oF_dEf_TeXt_;
         sec-mem-param-defname = 'self';
       }; /*        sec-mem-param--param */
       sec-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
-      sec-mem-desc-line = '584';
+      sec-mem-desc-line = '592';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -8116,7 +8140,7 @@ _EnD_oF_dEf_TeXt_;
         sec-mem-param-defname = 'self';
       }; /*        sec-mem-param--param */
       sec-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
-      sec-mem-desc-line = '640';
+      sec-mem-desc-line = '648';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -8140,7 +8164,7 @@ _EnD_oF_dEf_TeXt_;
         sec-mem-param-defname = 'self';
       }; /*        sec-mem-param--param */
       sec-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
-      sec-mem-desc-line = '634';
+      sec-mem-desc-line = '642';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -8164,7 +8188,7 @@ _EnD_oF_dEf_TeXt_;
         sec-mem-param-defname = 'self';
       }; /*        sec-mem-param--param */
       sec-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
-      sec-mem-desc-line = '637';
+      sec-mem-desc-line = '645';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -8188,7 +8212,7 @@ _EnD_oF_dEf_TeXt_;
         sec-mem-param-defname = 'self';
       }; /*        sec-mem-param--param */
       sec-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
-      sec-mem-desc-line = '600';
+      sec-mem-desc-line = '608';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -8207,27 +8231,27 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1aed7ff0d2287aaf4d61985d6f11c23c98';
-        sec-mem-ref-line = '323';
+        sec-mem-ref-line = '331';
         sec-mem-ref-name = 'exchange.Bitfinex::buy';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1a40aa1ff3335ef4c80a5107234e05e23e';
-        sec-mem-ref-line = '392';
+        sec-mem-ref-line = '400';
         sec-mem-ref-name = 'exchange.Bitstamp::buy';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1acb7e709cc05e8314b1bdacd32e4dfc80';
-        sec-mem-ref-line = '464';
+        sec-mem-ref-line = '472';
         sec-mem-ref-name = 'exchange.FoxBit::buy';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1ada27b62a35286b9f5dbb54590c5bacd2';
-        sec-mem-ref-line = '526';
+        sec-mem-ref-line = '534';
         sec-mem-ref-name = 'exchange.MercadoBitcoin::buy';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1aaf828e37142a83cbfb12d193313f6d43';
-        sec-mem-ref-line = '591';
+        sec-mem-ref-line = '599';
         sec-mem-ref-name = 'exchange.OkCoin::buy';
     };
       sec-mem-referenceto = {
@@ -8247,27 +8271,27 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1adc9e5a19056dcc22e8028e749b233795';
-        sec-mem-ref-line = '330';
+        sec-mem-ref-line = '338';
         sec-mem-ref-name = 'exchange.Bitfinex::dt';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1a527b7d7c5814118b5adfdaf0b960f036';
-        sec-mem-ref-line = '399';
+        sec-mem-ref-line = '407';
         sec-mem-ref-name = 'exchange.Bitstamp::dt';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1a363f8488eb0423f88519c085ae6f168f';
-        sec-mem-ref-line = '463';
+        sec-mem-ref-line = '471';
         sec-mem-ref-name = 'exchange.FoxBit::dt';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1aeee983ba4f72223a11fb914d22902c56';
-        sec-mem-ref-line = '533';
+        sec-mem-ref-line = '541';
         sec-mem-ref-name = 'exchange.MercadoBitcoin::dt';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1ade9d7cddcfa54f2b1ba5452854bfd48b';
-        sec-mem-ref-line = '598';
+        sec-mem-ref-line = '606';
         sec-mem-ref-name = 'exchange.OkCoin::dt';
     };
       sec-mem-referenceto = {
@@ -8282,27 +8306,27 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1a1380a7a7a3438e47785f10f68b0d61b9';
-        sec-mem-ref-line = '325';
+        sec-mem-ref-line = '333';
         sec-mem-ref-name = 'exchange.Bitfinex::high';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1a05de034d34b384373aeb26a28b60cad0';
-        sec-mem-ref-line = '394';
+        sec-mem-ref-line = '402';
         sec-mem-ref-name = 'exchange.Bitstamp::high';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1a4f6dfaecbcc17ceadddf52d266d9c00d';
-        sec-mem-ref-line = '466';
+        sec-mem-ref-line = '474';
         sec-mem-ref-name = 'exchange.FoxBit::high';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1a0b9c2d465601a48e3b8838354e931c39';
-        sec-mem-ref-line = '528';
+        sec-mem-ref-line = '536';
         sec-mem-ref-name = 'exchange.MercadoBitcoin::high';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1af9d9dbcfc86404510e7f9a5704e8eecd';
-        sec-mem-ref-line = '593';
+        sec-mem-ref-line = '601';
         sec-mem-ref-name = 'exchange.OkCoin::high';
     };
       sec-mem-referenceto = {
@@ -8317,27 +8341,27 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1a56e491a27f4b3215b66e13da7796c078';
-        sec-mem-ref-line = '327';
+        sec-mem-ref-line = '335';
         sec-mem-ref-name = 'exchange.Bitfinex::last';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1acf669ec9b8b50638dc19dec5fd40ab04';
-        sec-mem-ref-line = '396';
+        sec-mem-ref-line = '404';
         sec-mem-ref-name = 'exchange.Bitstamp::last';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1a5cdbc327b005014dc3b8bb6fb54a12fd';
-        sec-mem-ref-line = '468';
+        sec-mem-ref-line = '476';
         sec-mem-ref-name = 'exchange.FoxBit::last';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1a5f2759cd17d5dd36bc813c815543f3cc';
-        sec-mem-ref-line = '530';
+        sec-mem-ref-line = '538';
         sec-mem-ref-name = 'exchange.MercadoBitcoin::last';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1a726afbe3a75835fdcbe523aed8d6763c';
-        sec-mem-ref-line = '595';
+        sec-mem-ref-line = '603';
         sec-mem-ref-name = 'exchange.OkCoin::last';
     };
       sec-mem-referenceto = {
@@ -8352,27 +8376,27 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1a7d4241119b1fa3860743647a0c6c3416';
-        sec-mem-ref-line = '326';
+        sec-mem-ref-line = '334';
         sec-mem-ref-name = 'exchange.Bitfinex::low';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1a42d49d824732f16b57f677e8482e49b7';
-        sec-mem-ref-line = '395';
+        sec-mem-ref-line = '403';
         sec-mem-ref-name = 'exchange.Bitstamp::low';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1acd666444cff98fe477651120ddb0f915';
-        sec-mem-ref-line = '467';
+        sec-mem-ref-line = '475';
         sec-mem-ref-name = 'exchange.FoxBit::low';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1aaa3aae824bfc5ba3b7dc5252e9554713';
-        sec-mem-ref-line = '529';
+        sec-mem-ref-line = '537';
         sec-mem-ref-name = 'exchange.MercadoBitcoin::low';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1a1afa53e0ad63830d0585288abea42094';
-        sec-mem-ref-line = '594';
+        sec-mem-ref-line = '602';
         sec-mem-ref-name = 'exchange.OkCoin::low';
     };
       sec-mem-referenceto = {
@@ -8387,27 +8411,27 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1a9aebaf447f73e582f7bc626e526e0201';
-        sec-mem-ref-line = '324';
+        sec-mem-ref-line = '332';
         sec-mem-ref-name = 'exchange.Bitfinex::sell';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1ae5bc1532848b36cd9ac5e46763f4ee14';
-        sec-mem-ref-line = '393';
+        sec-mem-ref-line = '401';
         sec-mem-ref-name = 'exchange.Bitstamp::sell';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1ac1fae4ef7a43254b71d7173a5cc6eeaf';
-        sec-mem-ref-line = '465';
+        sec-mem-ref-line = '473';
         sec-mem-ref-name = 'exchange.FoxBit::sell';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1a9982c7a3f6103c88c64160a5854c35cd';
-        sec-mem-ref-line = '527';
+        sec-mem-ref-line = '535';
         sec-mem-ref-name = 'exchange.MercadoBitcoin::sell';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1aadb487d2e2f277374a747e1bcb0bd40b';
-        sec-mem-ref-line = '592';
+        sec-mem-ref-line = '600';
         sec-mem-ref-name = 'exchange.OkCoin::sell';
     };
     }; /* sec-member */
@@ -8427,7 +8451,7 @@ _EnD_oF_dEf_TeXt_;
         sec-mem-param-defname = 'self';
       }; /*        sec-mem-param--param */
       sec-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
-      sec-mem-desc-line = '631';
+      sec-mem-desc-line = '639';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -8456,7 +8480,7 @@ _EnD_oF_dEf_TeXt_;
         sec-mem-param-defname = 'self';
       }; /*        sec-mem-param--param */
       sec-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
-      sec-mem-desc-line = '614';
+      sec-mem-desc-line = '622';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -8475,27 +8499,27 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1aed7ff0d2287aaf4d61985d6f11c23c98';
-        sec-mem-ref-line = '323';
+        sec-mem-ref-line = '331';
         sec-mem-ref-name = 'exchange.Bitfinex::buy';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1a40aa1ff3335ef4c80a5107234e05e23e';
-        sec-mem-ref-line = '392';
+        sec-mem-ref-line = '400';
         sec-mem-ref-name = 'exchange.Bitstamp::buy';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1acb7e709cc05e8314b1bdacd32e4dfc80';
-        sec-mem-ref-line = '464';
+        sec-mem-ref-line = '472';
         sec-mem-ref-name = 'exchange.FoxBit::buy';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1ada27b62a35286b9f5dbb54590c5bacd2';
-        sec-mem-ref-line = '526';
+        sec-mem-ref-line = '534';
         sec-mem-ref-name = 'exchange.MercadoBitcoin::buy';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1aaf828e37142a83cbfb12d193313f6d43';
-        sec-mem-ref-line = '591';
+        sec-mem-ref-line = '599';
         sec-mem-ref-name = 'exchange.OkCoin::buy';
     };
       sec-mem-referenceto = {
@@ -8510,27 +8534,27 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1af5865e2fa72ee1706254ba963bfa10e9';
-        sec-mem-ref-line = '317';
+        sec-mem-ref-line = '325';
         sec-mem-ref-name = 'exchange.Bitfinex::exch';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1a140f44d1638f2e50ecb5148bf8f8ac86';
-        sec-mem-ref-line = '389';
+        sec-mem-ref-line = '397';
         sec-mem-ref-name = 'exchange.Bitstamp::exch';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1a3922433dcfe54e39c3c0da12fa252658';
-        sec-mem-ref-line = '457';
+        sec-mem-ref-line = '465';
         sec-mem-ref-name = 'exchange.FoxBit::exch';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1a68701550b43374441e52ea2082d88400';
-        sec-mem-ref-line = '523';
+        sec-mem-ref-line = '531';
         sec-mem-ref-name = 'exchange.MercadoBitcoin::exch';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1a22678c192b53ddf34e8a636e0cdaf4d4';
-        sec-mem-ref-line = '588';
+        sec-mem-ref-line = '596';
         sec-mem-ref-name = 'exchange.OkCoin::exch';
     };
       sec-mem-referenceto = {
@@ -8545,27 +8569,27 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1a1380a7a7a3438e47785f10f68b0d61b9';
-        sec-mem-ref-line = '325';
+        sec-mem-ref-line = '333';
         sec-mem-ref-name = 'exchange.Bitfinex::high';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1a05de034d34b384373aeb26a28b60cad0';
-        sec-mem-ref-line = '394';
+        sec-mem-ref-line = '402';
         sec-mem-ref-name = 'exchange.Bitstamp::high';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1a4f6dfaecbcc17ceadddf52d266d9c00d';
-        sec-mem-ref-line = '466';
+        sec-mem-ref-line = '474';
         sec-mem-ref-name = 'exchange.FoxBit::high';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1a0b9c2d465601a48e3b8838354e931c39';
-        sec-mem-ref-line = '528';
+        sec-mem-ref-line = '536';
         sec-mem-ref-name = 'exchange.MercadoBitcoin::high';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1af9d9dbcfc86404510e7f9a5704e8eecd';
-        sec-mem-ref-line = '593';
+        sec-mem-ref-line = '601';
         sec-mem-ref-name = 'exchange.OkCoin::high';
     };
       sec-mem-referenceto = {
@@ -8580,27 +8604,27 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1a56e491a27f4b3215b66e13da7796c078';
-        sec-mem-ref-line = '327';
+        sec-mem-ref-line = '335';
         sec-mem-ref-name = 'exchange.Bitfinex::last';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1acf669ec9b8b50638dc19dec5fd40ab04';
-        sec-mem-ref-line = '396';
+        sec-mem-ref-line = '404';
         sec-mem-ref-name = 'exchange.Bitstamp::last';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1a5cdbc327b005014dc3b8bb6fb54a12fd';
-        sec-mem-ref-line = '468';
+        sec-mem-ref-line = '476';
         sec-mem-ref-name = 'exchange.FoxBit::last';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1a5f2759cd17d5dd36bc813c815543f3cc';
-        sec-mem-ref-line = '530';
+        sec-mem-ref-line = '538';
         sec-mem-ref-name = 'exchange.MercadoBitcoin::last';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1a726afbe3a75835fdcbe523aed8d6763c';
-        sec-mem-ref-line = '595';
+        sec-mem-ref-line = '603';
         sec-mem-ref-name = 'exchange.OkCoin::last';
     };
       sec-mem-referenceto = {
@@ -8615,27 +8639,27 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1a7d4241119b1fa3860743647a0c6c3416';
-        sec-mem-ref-line = '326';
+        sec-mem-ref-line = '334';
         sec-mem-ref-name = 'exchange.Bitfinex::low';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1a42d49d824732f16b57f677e8482e49b7';
-        sec-mem-ref-line = '395';
+        sec-mem-ref-line = '403';
         sec-mem-ref-name = 'exchange.Bitstamp::low';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1acd666444cff98fe477651120ddb0f915';
-        sec-mem-ref-line = '467';
+        sec-mem-ref-line = '475';
         sec-mem-ref-name = 'exchange.FoxBit::low';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1aaa3aae824bfc5ba3b7dc5252e9554713';
-        sec-mem-ref-line = '529';
+        sec-mem-ref-line = '537';
         sec-mem-ref-name = 'exchange.MercadoBitcoin::low';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1a1afa53e0ad63830d0585288abea42094';
-        sec-mem-ref-line = '594';
+        sec-mem-ref-line = '602';
         sec-mem-ref-name = 'exchange.OkCoin::low';
     };
       sec-mem-referenceto = {
@@ -8645,27 +8669,27 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1a901a5499667f1f2b391bc9dbbfe1c1c7';
-        sec-mem-ref-line = '318';
+        sec-mem-ref-line = '326';
         sec-mem-ref-name = 'exchange.Bitfinex::pair';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1adf1f8e926f0cedb79bf57ab2dfa31776';
-        sec-mem-ref-line = '390';
+        sec-mem-ref-line = '398';
         sec-mem-ref-name = 'exchange.Bitstamp::pair';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1abfd6daf1cbad94eb74bba4c97fe4a574';
-        sec-mem-ref-line = '458';
+        sec-mem-ref-line = '466';
         sec-mem-ref-name = 'exchange.FoxBit::pair';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1a879f8ca352d313230d72e6e8785985a1';
-        sec-mem-ref-line = '524';
+        sec-mem-ref-line = '532';
         sec-mem-ref-name = 'exchange.MercadoBitcoin::pair';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1a52f3b919f86565518d46c49c5b8f66a6';
-        sec-mem-ref-line = '589';
+        sec-mem-ref-line = '597';
         sec-mem-ref-name = 'exchange.OkCoin::pair';
     };
       sec-mem-referenceto = {
@@ -8680,47 +8704,47 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1a9aebaf447f73e582f7bc626e526e0201';
-        sec-mem-ref-line = '324';
+        sec-mem-ref-line = '332';
         sec-mem-ref-name = 'exchange.Bitfinex::sell';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1ae5bc1532848b36cd9ac5e46763f4ee14';
-        sec-mem-ref-line = '393';
+        sec-mem-ref-line = '401';
         sec-mem-ref-name = 'exchange.Bitstamp::sell';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1ac1fae4ef7a43254b71d7173a5cc6eeaf';
-        sec-mem-ref-line = '465';
+        sec-mem-ref-line = '473';
         sec-mem-ref-name = 'exchange.FoxBit::sell';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1a9982c7a3f6103c88c64160a5854c35cd';
-        sec-mem-ref-line = '527';
+        sec-mem-ref-line = '535';
         sec-mem-ref-name = 'exchange.MercadoBitcoin::sell';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1aadb487d2e2f277374a747e1bcb0bd40b';
-        sec-mem-ref-line = '592';
+        sec-mem-ref-line = '600';
         sec-mem-ref-name = 'exchange.OkCoin::sell';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1abf872e8ea738acd33d34a00d9d9e92c4';
-        sec-mem-ref-line = '321';
+        sec-mem-ref-line = '329';
         sec-mem-ref-name = 'exchange.Bitfinex::ts';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1a8e85011dca7c70ffd1ed5ed398b0ed34';
-        sec-mem-ref-line = '391';
+        sec-mem-ref-line = '399';
         sec-mem-ref-name = 'exchange.Bitstamp::ts';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1ac4630b08e08f9eeb9dad838dc9dc0cda';
-        sec-mem-ref-line = '525';
+        sec-mem-ref-line = '533';
         sec-mem-ref-name = 'exchange.MercadoBitcoin::ts';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1a0fe6263a7f58a6fa8a688929976b7e4a';
-        sec-mem-ref-line = '590';
+        sec-mem-ref-line = '598';
         sec-mem-ref-name = 'exchange.OkCoin::ts';
     };
       sec-mem-referenceto = {
@@ -8730,22 +8754,22 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1a278da3a9eab93e256041c988f9bbd54c';
-        sec-mem-ref-line = '328';
+        sec-mem-ref-line = '336';
         sec-mem-ref-name = 'exchange.Bitfinex::vol';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1a4ddf3680f552a7d634b3bbea809cc606';
-        sec-mem-ref-line = '397';
+        sec-mem-ref-line = '405';
         sec-mem-ref-name = 'exchange.Bitstamp::vol';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1a1c163489086ba85b960db821117cd433';
-        sec-mem-ref-line = '531';
+        sec-mem-ref-line = '539';
         sec-mem-ref-name = 'exchange.MercadoBitcoin::vol';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1ad0e78d6b3c0a24504be72a0216fc6549';
-        sec-mem-ref-line = '596';
+        sec-mem-ref-line = '604';
         sec-mem-ref-name = 'exchange.OkCoin::vol';
     };
     }; /* sec-member */
@@ -8765,7 +8789,7 @@ _EnD_oF_dEf_TeXt_;
         sec-mem-param-defname = 'self';
       }; /*        sec-mem-param--param */
       sec-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
-      sec-mem-desc-line = '587';
+      sec-mem-desc-line = '595';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -8786,7 +8810,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'buy';
       sec-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
-      sec-mem-desc-line = '591';
+      sec-mem-desc-line = '599';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -8800,7 +8824,7 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a35425d16f4e0eb64677e32443fb4d91c';
-        sec-mem-ref-line = '600';
+        sec-mem-ref-line = '608';
         sec-mem-ref-name = 'exchange.OkCoin::get_ticker';
     };
       sec-mem-referenceby = {
@@ -8810,7 +8834,7 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a5a24006154b66792398302f2e6509578';
-        sec-mem-ref-line = '614';
+        sec-mem-ref-line = '622';
         sec-mem-ref-name = 'exchange.OkCoin::mk_ticker';
     };
     }; /* sec-member */
@@ -8824,7 +8848,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'dt';
       sec-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
-      sec-mem-desc-line = '598';
+      sec-mem-desc-line = '606';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -8843,7 +8867,7 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a35425d16f4e0eb64677e32443fb4d91c';
-        sec-mem-ref-line = '600';
+        sec-mem-ref-line = '608';
         sec-mem-ref-name = 'exchange.OkCoin::get_ticker';
     };
       sec-mem-referenceby = {
@@ -8862,7 +8886,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'exch';
       sec-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
-      sec-mem-desc-line = '588';
+      sec-mem-desc-line = '596';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -8881,7 +8905,7 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a5a24006154b66792398302f2e6509578';
-        sec-mem-ref-line = '614';
+        sec-mem-ref-line = '622';
         sec-mem-ref-name = 'exchange.OkCoin::mk_ticker';
     };
     }; /* sec-member */
@@ -8895,7 +8919,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'high';
       sec-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
-      sec-mem-desc-line = '593';
+      sec-mem-desc-line = '601';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -8904,12 +8928,12 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a35425d16f4e0eb64677e32443fb4d91c';
-        sec-mem-ref-line = '600';
+        sec-mem-ref-line = '608';
         sec-mem-ref-name = 'exchange.OkCoin::get_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a5a24006154b66792398302f2e6509578';
-        sec-mem-ref-line = '614';
+        sec-mem-ref-line = '622';
         sec-mem-ref-name = 'exchange.OkCoin::mk_ticker';
     };
     }; /* sec-member */
@@ -8923,7 +8947,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'last';
       sec-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
-      sec-mem-desc-line = '595';
+      sec-mem-desc-line = '603';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -8932,12 +8956,12 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a35425d16f4e0eb64677e32443fb4d91c';
-        sec-mem-ref-line = '600';
+        sec-mem-ref-line = '608';
         sec-mem-ref-name = 'exchange.OkCoin::get_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a5a24006154b66792398302f2e6509578';
-        sec-mem-ref-line = '614';
+        sec-mem-ref-line = '622';
         sec-mem-ref-name = 'exchange.OkCoin::mk_ticker';
     };
     }; /* sec-member */
@@ -8951,7 +8975,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'low';
       sec-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
-      sec-mem-desc-line = '594';
+      sec-mem-desc-line = '602';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -8960,12 +8984,12 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a35425d16f4e0eb64677e32443fb4d91c';
-        sec-mem-ref-line = '600';
+        sec-mem-ref-line = '608';
         sec-mem-ref-name = 'exchange.OkCoin::get_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a5a24006154b66792398302f2e6509578';
-        sec-mem-ref-line = '614';
+        sec-mem-ref-line = '622';
         sec-mem-ref-name = 'exchange.OkCoin::mk_ticker';
     };
     }; /* sec-member */
@@ -8979,7 +9003,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'pair';
       sec-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
-      sec-mem-desc-line = '589';
+      sec-mem-desc-line = '597';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -8988,7 +9012,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a5a24006154b66792398302f2e6509578';
-        sec-mem-ref-line = '614';
+        sec-mem-ref-line = '622';
         sec-mem-ref-name = 'exchange.OkCoin::mk_ticker';
     };
     }; /* sec-member */
@@ -9002,7 +9026,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'sell';
       sec-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
-      sec-mem-desc-line = '592';
+      sec-mem-desc-line = '600';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -9016,7 +9040,7 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a35425d16f4e0eb64677e32443fb4d91c';
-        sec-mem-ref-line = '600';
+        sec-mem-ref-line = '608';
         sec-mem-ref-name = 'exchange.OkCoin::get_ticker';
     };
       sec-mem-referenceby = {
@@ -9026,7 +9050,7 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a5a24006154b66792398302f2e6509578';
-        sec-mem-ref-line = '614';
+        sec-mem-ref-line = '622';
         sec-mem-ref-name = 'exchange.OkCoin::mk_ticker';
     };
     }; /* sec-member */
@@ -9040,7 +9064,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'ts';
       sec-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
-      sec-mem-desc-line = '590';
+      sec-mem-desc-line = '598';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -9049,7 +9073,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a5a24006154b66792398302f2e6509578';
-        sec-mem-ref-line = '614';
+        sec-mem-ref-line = '622';
         sec-mem-ref-name = 'exchange.OkCoin::mk_ticker';
     };
     }; /* sec-member */
@@ -9063,7 +9087,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'vol';
       sec-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
-      sec-mem-desc-line = '596';
+      sec-mem-desc-line = '604';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -9072,7 +9096,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a5a24006154b66792398302f2e6509578';
-        sec-mem-ref-line = '614';
+        sec-mem-ref-line = '622';
         sec-mem-ref-name = 'exchange.OkCoin::mk_ticker';
     };
     }; /* sec-member */
@@ -9092,7 +9116,7 @@ _EnD_oF_dEf_TeXt_;
 = 'https://www.okcoin.com/api/v1/ticker.do?symbol=btc_usd'
 _EnD_oF_dEf_TeXt_;
       sec-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
-      sec-mem-desc-line = '582';
+      sec-mem-desc-line = '590';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -9102,7 +9126,7 @@ _EnD_oF_dEf_TeXt_;
     }; /* sec-member */
   }; /* cp-section */
   cp-filename  = '/home/hilton/github/exch2exh/exchange.py';
-  cp-fileline  = '581';
+  cp-fileline  = '589';
   cp-briefdesc = <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -10866,22 +10890,22 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a1d74178897b4ac36c8ed6b4523f539f5';
-        sec-mem-ref-line = '332';
+        sec-mem-ref-line = '340';
         sec-mem-ref-name = 'exchange.Bitfinex::get_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1aa065ba9bff0d002816abd6caae2cfb99';
-        sec-mem-ref-line = '401';
+        sec-mem-ref-line = '409';
         sec-mem-ref-name = 'exchange.Bitstamp::get_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a2e6fe3e59daf6791688af7ed15772452';
-        sec-mem-ref-line = '535';
+        sec-mem-ref-line = '543';
         sec-mem-ref-name = 'exchange.MercadoBitcoin::get_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a35425d16f4e0eb64677e32443fb4d91c';
-        sec-mem-ref-line = '600';
+        sec-mem-ref-line = '608';
         sec-mem-ref-name = 'exchange.OkCoin::get_ticker';
     };
       sec-mem-referenceby = {
@@ -11089,12 +11113,12 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'rates_8py_1a0979ffcb18b8bf3156cc5735c67ca6df';
-        sec-mem-ref-line = '90';
+        sec-mem-ref-line = '92';
         sec-mem-ref-name = 'rates.Google::brl2usd';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'rates_8py_1acb0a8b6ec059b823c8a46eb115341251';
-        sec-mem-ref-line = '145';
+        sec-mem-ref-line = '147';
         sec-mem-ref-name = 'rates.XRates::brl2usd';
     };
       sec-mem-referenceto = {
@@ -11119,37 +11143,37 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'rates_8py_1a76574be36237f78780f76bed53e69ab2';
-        sec-mem-ref-line = '87';
+        sec-mem-ref-line = '89';
         sec-mem-ref-name = 'rates.Google::dt';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'rates_8py_1aa7835a0ac1d41af607d6d5885b49c131';
-        sec-mem-ref-line = '143';
+        sec-mem-ref-line = '145';
         sec-mem-ref-name = 'rates.XRates::dt';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1adc9e5a19056dcc22e8028e749b233795';
-        sec-mem-ref-line = '330';
+        sec-mem-ref-line = '338';
         sec-mem-ref-name = 'exchange.Bitfinex::dt';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1a527b7d7c5814118b5adfdaf0b960f036';
-        sec-mem-ref-line = '399';
+        sec-mem-ref-line = '407';
         sec-mem-ref-name = 'exchange.Bitstamp::dt';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1a363f8488eb0423f88519c085ae6f168f';
-        sec-mem-ref-line = '463';
+        sec-mem-ref-line = '471';
         sec-mem-ref-name = 'exchange.FoxBit::dt';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1aeee983ba4f72223a11fb914d22902c56';
-        sec-mem-ref-line = '533';
+        sec-mem-ref-line = '541';
         sec-mem-ref-name = 'exchange.MercadoBitcoin::dt';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1ade9d7cddcfa54f2b1ba5452854bfd48b';
-        sec-mem-ref-line = '598';
+        sec-mem-ref-line = '606';
         sec-mem-ref-name = 'exchange.OkCoin::dt';
     };
       sec-mem-referenceto = {
@@ -11164,12 +11188,12 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'rates_8py_1a1da08e36d5007aa5293d048b625a35e9';
-        sec-mem-ref-line = '92';
+        sec-mem-ref-line = '94';
         sec-mem-ref-name = 'rates.Google::service';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'rates_8py_1ad80e3c0295deaa15fac085324716747f';
-        sec-mem-ref-line = '147';
+        sec-mem-ref-line = '149';
         sec-mem-ref-name = 'rates.XRates::service';
     };
       sec-mem-referenceto = {
@@ -11184,7 +11208,7 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'rates_8py_1a94c28f6d60d5d6afc075416d7378471c';
-        sec-mem-ref-line = '89';
+        sec-mem-ref-line = '91';
         sec-mem-ref-name = 'rates.Google::usd2brl';
     };
     }; /* sec-member */
@@ -11223,12 +11247,12 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'rates_8py_1a0979ffcb18b8bf3156cc5735c67ca6df';
-        sec-mem-ref-line = '90';
+        sec-mem-ref-line = '92';
         sec-mem-ref-name = 'rates.Google::brl2usd';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'rates_8py_1acb0a8b6ec059b823c8a46eb115341251';
-        sec-mem-ref-line = '145';
+        sec-mem-ref-line = '147';
         sec-mem-ref-name = 'rates.XRates::brl2usd';
     };
     }; /* sec-member */
@@ -11267,12 +11291,12 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'rates_8py_1a1da08e36d5007aa5293d048b625a35e9';
-        sec-mem-ref-line = '92';
+        sec-mem-ref-line = '94';
         sec-mem-ref-name = 'rates.Google::service';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'rates_8py_1ad80e3c0295deaa15fac085324716747f';
-        sec-mem-ref-line = '147';
+        sec-mem-ref-line = '149';
         sec-mem-ref-name = 'rates.XRates::service';
     };
     }; /* sec-member */
@@ -11311,7 +11335,7 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'rates_8py_1a94c28f6d60d5d6afc075416d7378471c';
-        sec-mem-ref-line = '89';
+        sec-mem-ref-line = '91';
         sec-mem-ref-name = 'rates.Google::usd2brl';
     };
     }; /* sec-member */
@@ -12109,22 +12133,22 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a1d74178897b4ac36c8ed6b4523f539f5';
-        sec-mem-ref-line = '332';
+        sec-mem-ref-line = '340';
         sec-mem-ref-name = 'exchange.Bitfinex::get_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1aa065ba9bff0d002816abd6caae2cfb99';
-        sec-mem-ref-line = '401';
+        sec-mem-ref-line = '409';
         sec-mem-ref-name = 'exchange.Bitstamp::get_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a2e6fe3e59daf6791688af7ed15772452';
-        sec-mem-ref-line = '535';
+        sec-mem-ref-line = '543';
         sec-mem-ref-name = 'exchange.MercadoBitcoin::get_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a35425d16f4e0eb64677e32443fb4d91c';
-        sec-mem-ref-line = '600';
+        sec-mem-ref-line = '608';
         sec-mem-ref-name = 'exchange.OkCoin::get_ticker';
     };
       sec-mem-referenceby = {
@@ -12134,22 +12158,22 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1aa35708085f437b665ae80dea0b8470cb';
-        sec-mem-ref-line = '346';
+        sec-mem-ref-line = '354';
         sec-mem-ref-name = 'exchange.Bitfinex::mk_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1aea3ea907aaeb9d22b055dad22b6de9f5';
-        sec-mem-ref-line = '415';
+        sec-mem-ref-line = '423';
         sec-mem-ref-name = 'exchange.Bitstamp::mk_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a5c2280e8efc3dd148d724e9b73bd9243';
-        sec-mem-ref-line = '549';
+        sec-mem-ref-line = '557';
         sec-mem-ref-name = 'exchange.MercadoBitcoin::mk_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a5a24006154b66792398302f2e6509578';
-        sec-mem-ref-line = '614';
+        sec-mem-ref-line = '622';
         sec-mem-ref-name = 'exchange.OkCoin::mk_ticker';
     };
       sec-mem-referenceby = {
@@ -12197,22 +12221,22 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a1d74178897b4ac36c8ed6b4523f539f5';
-        sec-mem-ref-line = '332';
+        sec-mem-ref-line = '340';
         sec-mem-ref-name = 'exchange.Bitfinex::get_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1aa065ba9bff0d002816abd6caae2cfb99';
-        sec-mem-ref-line = '401';
+        sec-mem-ref-line = '409';
         sec-mem-ref-name = 'exchange.Bitstamp::get_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a2e6fe3e59daf6791688af7ed15772452';
-        sec-mem-ref-line = '535';
+        sec-mem-ref-line = '543';
         sec-mem-ref-name = 'exchange.MercadoBitcoin::get_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a35425d16f4e0eb64677e32443fb4d91c';
-        sec-mem-ref-line = '600';
+        sec-mem-ref-line = '608';
         sec-mem-ref-name = 'exchange.OkCoin::get_ticker';
     };
       sec-mem-referenceby = {
@@ -12275,27 +12299,27 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1aa35708085f437b665ae80dea0b8470cb';
-        sec-mem-ref-line = '346';
+        sec-mem-ref-line = '354';
         sec-mem-ref-name = 'exchange.Bitfinex::mk_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1aea3ea907aaeb9d22b055dad22b6de9f5';
-        sec-mem-ref-line = '415';
+        sec-mem-ref-line = '423';
         sec-mem-ref-name = 'exchange.Bitstamp::mk_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a149b379722f351e0b890822a6220f0b0';
-        sec-mem-ref-line = '474';
+        sec-mem-ref-line = '482';
         sec-mem-ref-name = 'exchange.FoxBit::mk_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a5c2280e8efc3dd148d724e9b73bd9243';
-        sec-mem-ref-line = '549';
+        sec-mem-ref-line = '557';
         sec-mem-ref-name = 'exchange.MercadoBitcoin::mk_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a5a24006154b66792398302f2e6509578';
-        sec-mem-ref-line = '614';
+        sec-mem-ref-line = '622';
         sec-mem-ref-name = 'exchange.OkCoin::mk_ticker';
     };
       sec-mem-referenceby = {
@@ -12333,42 +12357,42 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a1d74178897b4ac36c8ed6b4523f539f5';
-        sec-mem-ref-line = '332';
+        sec-mem-ref-line = '340';
         sec-mem-ref-name = 'exchange.Bitfinex::get_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1aa065ba9bff0d002816abd6caae2cfb99';
-        sec-mem-ref-line = '401';
+        sec-mem-ref-line = '409';
         sec-mem-ref-name = 'exchange.Bitstamp::get_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a2e6fe3e59daf6791688af7ed15772452';
-        sec-mem-ref-line = '535';
+        sec-mem-ref-line = '543';
         sec-mem-ref-name = 'exchange.MercadoBitcoin::get_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a35425d16f4e0eb64677e32443fb4d91c';
-        sec-mem-ref-line = '600';
+        sec-mem-ref-line = '608';
         sec-mem-ref-name = 'exchange.OkCoin::get_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1aa35708085f437b665ae80dea0b8470cb';
-        sec-mem-ref-line = '346';
+        sec-mem-ref-line = '354';
         sec-mem-ref-name = 'exchange.Bitfinex::mk_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1aea3ea907aaeb9d22b055dad22b6de9f5';
-        sec-mem-ref-line = '415';
+        sec-mem-ref-line = '423';
         sec-mem-ref-name = 'exchange.Bitstamp::mk_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a5c2280e8efc3dd148d724e9b73bd9243';
-        sec-mem-ref-line = '549';
+        sec-mem-ref-line = '557';
         sec-mem-ref-name = 'exchange.MercadoBitcoin::mk_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a5a24006154b66792398302f2e6509578';
-        sec-mem-ref-line = '614';
+        sec-mem-ref-line = '622';
         sec-mem-ref-name = 'exchange.OkCoin::mk_ticker';
     };
       sec-mem-referenceby = {
@@ -12406,42 +12430,42 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a1d74178897b4ac36c8ed6b4523f539f5';
-        sec-mem-ref-line = '332';
+        sec-mem-ref-line = '340';
         sec-mem-ref-name = 'exchange.Bitfinex::get_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1aa065ba9bff0d002816abd6caae2cfb99';
-        sec-mem-ref-line = '401';
+        sec-mem-ref-line = '409';
         sec-mem-ref-name = 'exchange.Bitstamp::get_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a2e6fe3e59daf6791688af7ed15772452';
-        sec-mem-ref-line = '535';
+        sec-mem-ref-line = '543';
         sec-mem-ref-name = 'exchange.MercadoBitcoin::get_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a35425d16f4e0eb64677e32443fb4d91c';
-        sec-mem-ref-line = '600';
+        sec-mem-ref-line = '608';
         sec-mem-ref-name = 'exchange.OkCoin::get_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1aa35708085f437b665ae80dea0b8470cb';
-        sec-mem-ref-line = '346';
+        sec-mem-ref-line = '354';
         sec-mem-ref-name = 'exchange.Bitfinex::mk_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1aea3ea907aaeb9d22b055dad22b6de9f5';
-        sec-mem-ref-line = '415';
+        sec-mem-ref-line = '423';
         sec-mem-ref-name = 'exchange.Bitstamp::mk_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a5c2280e8efc3dd148d724e9b73bd9243';
-        sec-mem-ref-line = '549';
+        sec-mem-ref-line = '557';
         sec-mem-ref-name = 'exchange.MercadoBitcoin::mk_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a5a24006154b66792398302f2e6509578';
-        sec-mem-ref-line = '614';
+        sec-mem-ref-line = '622';
         sec-mem-ref-name = 'exchange.OkCoin::mk_ticker';
     };
       sec-mem-referenceby = {
@@ -12479,42 +12503,42 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a1d74178897b4ac36c8ed6b4523f539f5';
-        sec-mem-ref-line = '332';
+        sec-mem-ref-line = '340';
         sec-mem-ref-name = 'exchange.Bitfinex::get_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1aa065ba9bff0d002816abd6caae2cfb99';
-        sec-mem-ref-line = '401';
+        sec-mem-ref-line = '409';
         sec-mem-ref-name = 'exchange.Bitstamp::get_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a2e6fe3e59daf6791688af7ed15772452';
-        sec-mem-ref-line = '535';
+        sec-mem-ref-line = '543';
         sec-mem-ref-name = 'exchange.MercadoBitcoin::get_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a35425d16f4e0eb64677e32443fb4d91c';
-        sec-mem-ref-line = '600';
+        sec-mem-ref-line = '608';
         sec-mem-ref-name = 'exchange.OkCoin::get_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1aa35708085f437b665ae80dea0b8470cb';
-        sec-mem-ref-line = '346';
+        sec-mem-ref-line = '354';
         sec-mem-ref-name = 'exchange.Bitfinex::mk_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1aea3ea907aaeb9d22b055dad22b6de9f5';
-        sec-mem-ref-line = '415';
+        sec-mem-ref-line = '423';
         sec-mem-ref-name = 'exchange.Bitstamp::mk_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a5c2280e8efc3dd148d724e9b73bd9243';
-        sec-mem-ref-line = '549';
+        sec-mem-ref-line = '557';
         sec-mem-ref-name = 'exchange.MercadoBitcoin::mk_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a5a24006154b66792398302f2e6509578';
-        sec-mem-ref-line = '614';
+        sec-mem-ref-line = '622';
         sec-mem-ref-name = 'exchange.OkCoin::mk_ticker';
     };
       sec-mem-referenceby = {
@@ -12552,27 +12576,27 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1aa35708085f437b665ae80dea0b8470cb';
-        sec-mem-ref-line = '346';
+        sec-mem-ref-line = '354';
         sec-mem-ref-name = 'exchange.Bitfinex::mk_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1aea3ea907aaeb9d22b055dad22b6de9f5';
-        sec-mem-ref-line = '415';
+        sec-mem-ref-line = '423';
         sec-mem-ref-name = 'exchange.Bitstamp::mk_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a149b379722f351e0b890822a6220f0b0';
-        sec-mem-ref-line = '474';
+        sec-mem-ref-line = '482';
         sec-mem-ref-name = 'exchange.FoxBit::mk_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a5c2280e8efc3dd148d724e9b73bd9243';
-        sec-mem-ref-line = '549';
+        sec-mem-ref-line = '557';
         sec-mem-ref-name = 'exchange.MercadoBitcoin::mk_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a5a24006154b66792398302f2e6509578';
-        sec-mem-ref-line = '614';
+        sec-mem-ref-line = '622';
         sec-mem-ref-name = 'exchange.OkCoin::mk_ticker';
     };
       sec-mem-referenceby = {
@@ -12615,22 +12639,22 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a1d74178897b4ac36c8ed6b4523f539f5';
-        sec-mem-ref-line = '332';
+        sec-mem-ref-line = '340';
         sec-mem-ref-name = 'exchange.Bitfinex::get_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1aa065ba9bff0d002816abd6caae2cfb99';
-        sec-mem-ref-line = '401';
+        sec-mem-ref-line = '409';
         sec-mem-ref-name = 'exchange.Bitstamp::get_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a2e6fe3e59daf6791688af7ed15772452';
-        sec-mem-ref-line = '535';
+        sec-mem-ref-line = '543';
         sec-mem-ref-name = 'exchange.MercadoBitcoin::get_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a35425d16f4e0eb64677e32443fb4d91c';
-        sec-mem-ref-line = '600';
+        sec-mem-ref-line = '608';
         sec-mem-ref-name = 'exchange.OkCoin::get_ticker';
     };
       sec-mem-referenceby = {
@@ -12640,22 +12664,22 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1aa35708085f437b665ae80dea0b8470cb';
-        sec-mem-ref-line = '346';
+        sec-mem-ref-line = '354';
         sec-mem-ref-name = 'exchange.Bitfinex::mk_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1aea3ea907aaeb9d22b055dad22b6de9f5';
-        sec-mem-ref-line = '415';
+        sec-mem-ref-line = '423';
         sec-mem-ref-name = 'exchange.Bitstamp::mk_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a5c2280e8efc3dd148d724e9b73bd9243';
-        sec-mem-ref-line = '549';
+        sec-mem-ref-line = '557';
         sec-mem-ref-name = 'exchange.MercadoBitcoin::mk_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a5a24006154b66792398302f2e6509578';
-        sec-mem-ref-line = '614';
+        sec-mem-ref-line = '622';
         sec-mem-ref-name = 'exchange.OkCoin::mk_ticker';
     };
       sec-mem-referenceby = {
@@ -12693,22 +12717,22 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1aa35708085f437b665ae80dea0b8470cb';
-        sec-mem-ref-line = '346';
+        sec-mem-ref-line = '354';
         sec-mem-ref-name = 'exchange.Bitfinex::mk_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1aea3ea907aaeb9d22b055dad22b6de9f5';
-        sec-mem-ref-line = '415';
+        sec-mem-ref-line = '423';
         sec-mem-ref-name = 'exchange.Bitstamp::mk_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a5c2280e8efc3dd148d724e9b73bd9243';
-        sec-mem-ref-line = '549';
+        sec-mem-ref-line = '557';
         sec-mem-ref-name = 'exchange.MercadoBitcoin::mk_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a5a24006154b66792398302f2e6509578';
-        sec-mem-ref-line = '614';
+        sec-mem-ref-line = '622';
         sec-mem-ref-name = 'exchange.OkCoin::mk_ticker';
     };
       sec-mem-referenceby = {
@@ -13189,22 +13213,22 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a1d74178897b4ac36c8ed6b4523f539f5';
-        sec-mem-ref-line = '332';
+        sec-mem-ref-line = '340';
         sec-mem-ref-name = 'exchange.Bitfinex::get_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1aa065ba9bff0d002816abd6caae2cfb99';
-        sec-mem-ref-line = '401';
+        sec-mem-ref-line = '409';
         sec-mem-ref-name = 'exchange.Bitstamp::get_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a2e6fe3e59daf6791688af7ed15772452';
-        sec-mem-ref-line = '535';
+        sec-mem-ref-line = '543';
         sec-mem-ref-name = 'exchange.MercadoBitcoin::get_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a35425d16f4e0eb64677e32443fb4d91c';
-        sec-mem-ref-line = '600';
+        sec-mem-ref-line = '608';
         sec-mem-ref-name = 'exchange.OkCoin::get_ticker';
     };
       sec-mem-referenceby = {
@@ -13219,22 +13243,22 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1aa35708085f437b665ae80dea0b8470cb';
-        sec-mem-ref-line = '346';
+        sec-mem-ref-line = '354';
         sec-mem-ref-name = 'exchange.Bitfinex::mk_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1aea3ea907aaeb9d22b055dad22b6de9f5';
-        sec-mem-ref-line = '415';
+        sec-mem-ref-line = '423';
         sec-mem-ref-name = 'exchange.Bitstamp::mk_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a5c2280e8efc3dd148d724e9b73bd9243';
-        sec-mem-ref-line = '549';
+        sec-mem-ref-line = '557';
         sec-mem-ref-name = 'exchange.MercadoBitcoin::mk_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a5a24006154b66792398302f2e6509578';
-        sec-mem-ref-line = '614';
+        sec-mem-ref-line = '622';
         sec-mem-ref-name = 'exchange.OkCoin::mk_ticker';
     };
       sec-mem-referenceby = {
@@ -13325,22 +13349,22 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a1d74178897b4ac36c8ed6b4523f539f5';
-        sec-mem-ref-line = '332';
+        sec-mem-ref-line = '340';
         sec-mem-ref-name = 'exchange.Bitfinex::get_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1aa065ba9bff0d002816abd6caae2cfb99';
-        sec-mem-ref-line = '401';
+        sec-mem-ref-line = '409';
         sec-mem-ref-name = 'exchange.Bitstamp::get_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a2e6fe3e59daf6791688af7ed15772452';
-        sec-mem-ref-line = '535';
+        sec-mem-ref-line = '543';
         sec-mem-ref-name = 'exchange.MercadoBitcoin::get_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a35425d16f4e0eb64677e32443fb4d91c';
-        sec-mem-ref-line = '600';
+        sec-mem-ref-line = '608';
         sec-mem-ref-name = 'exchange.OkCoin::get_ticker';
     };
       sec-mem-referenceby = {
@@ -13418,27 +13442,27 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1aa35708085f437b665ae80dea0b8470cb';
-        sec-mem-ref-line = '346';
+        sec-mem-ref-line = '354';
         sec-mem-ref-name = 'exchange.Bitfinex::mk_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1aea3ea907aaeb9d22b055dad22b6de9f5';
-        sec-mem-ref-line = '415';
+        sec-mem-ref-line = '423';
         sec-mem-ref-name = 'exchange.Bitstamp::mk_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a149b379722f351e0b890822a6220f0b0';
-        sec-mem-ref-line = '474';
+        sec-mem-ref-line = '482';
         sec-mem-ref-name = 'exchange.FoxBit::mk_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a5c2280e8efc3dd148d724e9b73bd9243';
-        sec-mem-ref-line = '549';
+        sec-mem-ref-line = '557';
         sec-mem-ref-name = 'exchange.MercadoBitcoin::mk_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a5a24006154b66792398302f2e6509578';
-        sec-mem-ref-line = '614';
+        sec-mem-ref-line = '622';
         sec-mem-ref-name = 'exchange.OkCoin::mk_ticker';
     };
       sec-mem-referenceby = {
@@ -13481,22 +13505,22 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a1d74178897b4ac36c8ed6b4523f539f5';
-        sec-mem-ref-line = '332';
+        sec-mem-ref-line = '340';
         sec-mem-ref-name = 'exchange.Bitfinex::get_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1aa065ba9bff0d002816abd6caae2cfb99';
-        sec-mem-ref-line = '401';
+        sec-mem-ref-line = '409';
         sec-mem-ref-name = 'exchange.Bitstamp::get_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a2e6fe3e59daf6791688af7ed15772452';
-        sec-mem-ref-line = '535';
+        sec-mem-ref-line = '543';
         sec-mem-ref-name = 'exchange.MercadoBitcoin::get_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a35425d16f4e0eb64677e32443fb4d91c';
-        sec-mem-ref-line = '600';
+        sec-mem-ref-line = '608';
         sec-mem-ref-name = 'exchange.OkCoin::get_ticker';
     };
       sec-mem-referenceby = {
@@ -13506,22 +13530,22 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1aa35708085f437b665ae80dea0b8470cb';
-        sec-mem-ref-line = '346';
+        sec-mem-ref-line = '354';
         sec-mem-ref-name = 'exchange.Bitfinex::mk_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1aea3ea907aaeb9d22b055dad22b6de9f5';
-        sec-mem-ref-line = '415';
+        sec-mem-ref-line = '423';
         sec-mem-ref-name = 'exchange.Bitstamp::mk_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a5c2280e8efc3dd148d724e9b73bd9243';
-        sec-mem-ref-line = '549';
+        sec-mem-ref-line = '557';
         sec-mem-ref-name = 'exchange.MercadoBitcoin::mk_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a5a24006154b66792398302f2e6509578';
-        sec-mem-ref-line = '614';
+        sec-mem-ref-line = '622';
         sec-mem-ref-name = 'exchange.OkCoin::mk_ticker';
     };
       sec-mem-referenceby = {
@@ -13564,22 +13588,22 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a1d74178897b4ac36c8ed6b4523f539f5';
-        sec-mem-ref-line = '332';
+        sec-mem-ref-line = '340';
         sec-mem-ref-name = 'exchange.Bitfinex::get_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1aa065ba9bff0d002816abd6caae2cfb99';
-        sec-mem-ref-line = '401';
+        sec-mem-ref-line = '409';
         sec-mem-ref-name = 'exchange.Bitstamp::get_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a2e6fe3e59daf6791688af7ed15772452';
-        sec-mem-ref-line = '535';
+        sec-mem-ref-line = '543';
         sec-mem-ref-name = 'exchange.MercadoBitcoin::get_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a35425d16f4e0eb64677e32443fb4d91c';
-        sec-mem-ref-line = '600';
+        sec-mem-ref-line = '608';
         sec-mem-ref-name = 'exchange.OkCoin::get_ticker';
     };
       sec-mem-referenceby = {
@@ -13589,22 +13613,22 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1aa35708085f437b665ae80dea0b8470cb';
-        sec-mem-ref-line = '346';
+        sec-mem-ref-line = '354';
         sec-mem-ref-name = 'exchange.Bitfinex::mk_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1aea3ea907aaeb9d22b055dad22b6de9f5';
-        sec-mem-ref-line = '415';
+        sec-mem-ref-line = '423';
         sec-mem-ref-name = 'exchange.Bitstamp::mk_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a5c2280e8efc3dd148d724e9b73bd9243';
-        sec-mem-ref-line = '549';
+        sec-mem-ref-line = '557';
         sec-mem-ref-name = 'exchange.MercadoBitcoin::mk_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a5a24006154b66792398302f2e6509578';
-        sec-mem-ref-line = '614';
+        sec-mem-ref-line = '622';
         sec-mem-ref-name = 'exchange.OkCoin::mk_ticker';
     };
       sec-mem-referenceby = {
@@ -13647,22 +13671,22 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a1d74178897b4ac36c8ed6b4523f539f5';
-        sec-mem-ref-line = '332';
+        sec-mem-ref-line = '340';
         sec-mem-ref-name = 'exchange.Bitfinex::get_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1aa065ba9bff0d002816abd6caae2cfb99';
-        sec-mem-ref-line = '401';
+        sec-mem-ref-line = '409';
         sec-mem-ref-name = 'exchange.Bitstamp::get_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a2e6fe3e59daf6791688af7ed15772452';
-        sec-mem-ref-line = '535';
+        sec-mem-ref-line = '543';
         sec-mem-ref-name = 'exchange.MercadoBitcoin::get_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a35425d16f4e0eb64677e32443fb4d91c';
-        sec-mem-ref-line = '600';
+        sec-mem-ref-line = '608';
         sec-mem-ref-name = 'exchange.OkCoin::get_ticker';
     };
       sec-mem-referenceby = {
@@ -13672,22 +13696,22 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1aa35708085f437b665ae80dea0b8470cb';
-        sec-mem-ref-line = '346';
+        sec-mem-ref-line = '354';
         sec-mem-ref-name = 'exchange.Bitfinex::mk_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1aea3ea907aaeb9d22b055dad22b6de9f5';
-        sec-mem-ref-line = '415';
+        sec-mem-ref-line = '423';
         sec-mem-ref-name = 'exchange.Bitstamp::mk_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a5c2280e8efc3dd148d724e9b73bd9243';
-        sec-mem-ref-line = '549';
+        sec-mem-ref-line = '557';
         sec-mem-ref-name = 'exchange.MercadoBitcoin::mk_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a5a24006154b66792398302f2e6509578';
-        sec-mem-ref-line = '614';
+        sec-mem-ref-line = '622';
         sec-mem-ref-name = 'exchange.OkCoin::mk_ticker';
     };
       sec-mem-referenceby = {
@@ -13735,22 +13759,22 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a1d74178897b4ac36c8ed6b4523f539f5';
-        sec-mem-ref-line = '332';
+        sec-mem-ref-line = '340';
         sec-mem-ref-name = 'exchange.Bitfinex::get_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1aa065ba9bff0d002816abd6caae2cfb99';
-        sec-mem-ref-line = '401';
+        sec-mem-ref-line = '409';
         sec-mem-ref-name = 'exchange.Bitstamp::get_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a2e6fe3e59daf6791688af7ed15772452';
-        sec-mem-ref-line = '535';
+        sec-mem-ref-line = '543';
         sec-mem-ref-name = 'exchange.MercadoBitcoin::get_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a35425d16f4e0eb64677e32443fb4d91c';
-        sec-mem-ref-line = '600';
+        sec-mem-ref-line = '608';
         sec-mem-ref-name = 'exchange.OkCoin::get_ticker';
     };
       sec-mem-referenceby = {
@@ -13765,22 +13789,22 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1aa35708085f437b665ae80dea0b8470cb';
-        sec-mem-ref-line = '346';
+        sec-mem-ref-line = '354';
         sec-mem-ref-name = 'exchange.Bitfinex::mk_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1aea3ea907aaeb9d22b055dad22b6de9f5';
-        sec-mem-ref-line = '415';
+        sec-mem-ref-line = '423';
         sec-mem-ref-name = 'exchange.Bitstamp::mk_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a5c2280e8efc3dd148d724e9b73bd9243';
-        sec-mem-ref-line = '549';
+        sec-mem-ref-line = '557';
         sec-mem-ref-name = 'exchange.MercadoBitcoin::mk_ticker';
     };
       sec-mem-referenceby = {
         sec-mem-ref-id = 'exchange_8py_1a5a24006154b66792398302f2e6509578';
-        sec-mem-ref-line = '614';
+        sec-mem-ref-line = '622';
         sec-mem-ref-name = 'exchange.OkCoin::mk_ticker';
     };
       sec-mem-referenceby = {
@@ -13908,27 +13932,27 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1aed7ff0d2287aaf4d61985d6f11c23c98';
-        sec-mem-ref-line = '323';
+        sec-mem-ref-line = '331';
         sec-mem-ref-name = 'exchange.Bitfinex::buy';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1a40aa1ff3335ef4c80a5107234e05e23e';
-        sec-mem-ref-line = '392';
+        sec-mem-ref-line = '400';
         sec-mem-ref-name = 'exchange.Bitstamp::buy';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1acb7e709cc05e8314b1bdacd32e4dfc80';
-        sec-mem-ref-line = '464';
+        sec-mem-ref-line = '472';
         sec-mem-ref-name = 'exchange.FoxBit::buy';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1ada27b62a35286b9f5dbb54590c5bacd2';
-        sec-mem-ref-line = '526';
+        sec-mem-ref-line = '534';
         sec-mem-ref-name = 'exchange.MercadoBitcoin::buy';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1aaf828e37142a83cbfb12d193313f6d43';
-        sec-mem-ref-line = '591';
+        sec-mem-ref-line = '599';
         sec-mem-ref-name = 'exchange.OkCoin::buy';
     };
       sec-mem-referenceto = {
@@ -13968,37 +13992,37 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'rates_8py_1a76574be36237f78780f76bed53e69ab2';
-        sec-mem-ref-line = '87';
+        sec-mem-ref-line = '89';
         sec-mem-ref-name = 'rates.Google::dt';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'rates_8py_1aa7835a0ac1d41af607d6d5885b49c131';
-        sec-mem-ref-line = '143';
+        sec-mem-ref-line = '145';
         sec-mem-ref-name = 'rates.XRates::dt';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1adc9e5a19056dcc22e8028e749b233795';
-        sec-mem-ref-line = '330';
+        sec-mem-ref-line = '338';
         sec-mem-ref-name = 'exchange.Bitfinex::dt';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1a527b7d7c5814118b5adfdaf0b960f036';
-        sec-mem-ref-line = '399';
+        sec-mem-ref-line = '407';
         sec-mem-ref-name = 'exchange.Bitstamp::dt';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1a363f8488eb0423f88519c085ae6f168f';
-        sec-mem-ref-line = '463';
+        sec-mem-ref-line = '471';
         sec-mem-ref-name = 'exchange.FoxBit::dt';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1aeee983ba4f72223a11fb914d22902c56';
-        sec-mem-ref-line = '533';
+        sec-mem-ref-line = '541';
         sec-mem-ref-name = 'exchange.MercadoBitcoin::dt';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1ade9d7cddcfa54f2b1ba5452854bfd48b';
-        sec-mem-ref-line = '598';
+        sec-mem-ref-line = '606';
         sec-mem-ref-name = 'exchange.OkCoin::dt';
     };
       sec-mem-referenceto = {
@@ -14018,27 +14042,27 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1af5865e2fa72ee1706254ba963bfa10e9';
-        sec-mem-ref-line = '317';
+        sec-mem-ref-line = '325';
         sec-mem-ref-name = 'exchange.Bitfinex::exch';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1a140f44d1638f2e50ecb5148bf8f8ac86';
-        sec-mem-ref-line = '389';
+        sec-mem-ref-line = '397';
         sec-mem-ref-name = 'exchange.Bitstamp::exch';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1a3922433dcfe54e39c3c0da12fa252658';
-        sec-mem-ref-line = '457';
+        sec-mem-ref-line = '465';
         sec-mem-ref-name = 'exchange.FoxBit::exch';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1a68701550b43374441e52ea2082d88400';
-        sec-mem-ref-line = '523';
+        sec-mem-ref-line = '531';
         sec-mem-ref-name = 'exchange.MercadoBitcoin::exch';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1a22678c192b53ddf34e8a636e0cdaf4d4';
-        sec-mem-ref-line = '588';
+        sec-mem-ref-line = '596';
         sec-mem-ref-name = 'exchange.OkCoin::exch';
     };
       sec-mem-referenceto = {
@@ -14058,27 +14082,27 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1a9aebaf447f73e582f7bc626e526e0201';
-        sec-mem-ref-line = '324';
+        sec-mem-ref-line = '332';
         sec-mem-ref-name = 'exchange.Bitfinex::sell';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1ae5bc1532848b36cd9ac5e46763f4ee14';
-        sec-mem-ref-line = '393';
+        sec-mem-ref-line = '401';
         sec-mem-ref-name = 'exchange.Bitstamp::sell';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1ac1fae4ef7a43254b71d7173a5cc6eeaf';
-        sec-mem-ref-line = '465';
+        sec-mem-ref-line = '473';
         sec-mem-ref-name = 'exchange.FoxBit::sell';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1a9982c7a3f6103c88c64160a5854c35cd';
-        sec-mem-ref-line = '527';
+        sec-mem-ref-line = '535';
         sec-mem-ref-name = 'exchange.MercadoBitcoin::sell';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1aadb487d2e2f277374a747e1bcb0bd40b';
-        sec-mem-ref-line = '592';
+        sec-mem-ref-line = '600';
         sec-mem-ref-name = 'exchange.OkCoin::sell';
     };
     }; /* sec-member */
@@ -14122,27 +14146,27 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1aed7ff0d2287aaf4d61985d6f11c23c98';
-        sec-mem-ref-line = '323';
+        sec-mem-ref-line = '331';
         sec-mem-ref-name = 'exchange.Bitfinex::buy';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1a40aa1ff3335ef4c80a5107234e05e23e';
-        sec-mem-ref-line = '392';
+        sec-mem-ref-line = '400';
         sec-mem-ref-name = 'exchange.Bitstamp::buy';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1acb7e709cc05e8314b1bdacd32e4dfc80';
-        sec-mem-ref-line = '464';
+        sec-mem-ref-line = '472';
         sec-mem-ref-name = 'exchange.FoxBit::buy';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1ada27b62a35286b9f5dbb54590c5bacd2';
-        sec-mem-ref-line = '526';
+        sec-mem-ref-line = '534';
         sec-mem-ref-name = 'exchange.MercadoBitcoin::buy';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1aaf828e37142a83cbfb12d193313f6d43';
-        sec-mem-ref-line = '591';
+        sec-mem-ref-line = '599';
         sec-mem-ref-name = 'exchange.OkCoin::buy';
     };
     }; /* sec-member */
@@ -14230,37 +14254,37 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'rates_8py_1a76574be36237f78780f76bed53e69ab2';
-        sec-mem-ref-line = '87';
+        sec-mem-ref-line = '89';
         sec-mem-ref-name = 'rates.Google::dt';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'rates_8py_1aa7835a0ac1d41af607d6d5885b49c131';
-        sec-mem-ref-line = '143';
+        sec-mem-ref-line = '145';
         sec-mem-ref-name = 'rates.XRates::dt';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1adc9e5a19056dcc22e8028e749b233795';
-        sec-mem-ref-line = '330';
+        sec-mem-ref-line = '338';
         sec-mem-ref-name = 'exchange.Bitfinex::dt';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1a527b7d7c5814118b5adfdaf0b960f036';
-        sec-mem-ref-line = '399';
+        sec-mem-ref-line = '407';
         sec-mem-ref-name = 'exchange.Bitstamp::dt';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1a363f8488eb0423f88519c085ae6f168f';
-        sec-mem-ref-line = '463';
+        sec-mem-ref-line = '471';
         sec-mem-ref-name = 'exchange.FoxBit::dt';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1aeee983ba4f72223a11fb914d22902c56';
-        sec-mem-ref-line = '533';
+        sec-mem-ref-line = '541';
         sec-mem-ref-name = 'exchange.MercadoBitcoin::dt';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1ade9d7cddcfa54f2b1ba5452854bfd48b';
-        sec-mem-ref-line = '598';
+        sec-mem-ref-line = '606';
         sec-mem-ref-name = 'exchange.OkCoin::dt';
     };
     }; /* sec-member */
@@ -14304,27 +14328,27 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1af5865e2fa72ee1706254ba963bfa10e9';
-        sec-mem-ref-line = '317';
+        sec-mem-ref-line = '325';
         sec-mem-ref-name = 'exchange.Bitfinex::exch';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1a140f44d1638f2e50ecb5148bf8f8ac86';
-        sec-mem-ref-line = '389';
+        sec-mem-ref-line = '397';
         sec-mem-ref-name = 'exchange.Bitstamp::exch';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1a3922433dcfe54e39c3c0da12fa252658';
-        sec-mem-ref-line = '457';
+        sec-mem-ref-line = '465';
         sec-mem-ref-name = 'exchange.FoxBit::exch';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1a68701550b43374441e52ea2082d88400';
-        sec-mem-ref-line = '523';
+        sec-mem-ref-line = '531';
         sec-mem-ref-name = 'exchange.MercadoBitcoin::exch';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1a22678c192b53ddf34e8a636e0cdaf4d4';
-        sec-mem-ref-line = '588';
+        sec-mem-ref-line = '596';
         sec-mem-ref-name = 'exchange.OkCoin::exch';
     };
     }; /* sec-member */
@@ -14368,27 +14392,27 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1a9aebaf447f73e582f7bc626e526e0201';
-        sec-mem-ref-line = '324';
+        sec-mem-ref-line = '332';
         sec-mem-ref-name = 'exchange.Bitfinex::sell';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1ae5bc1532848b36cd9ac5e46763f4ee14';
-        sec-mem-ref-line = '393';
+        sec-mem-ref-line = '401';
         sec-mem-ref-name = 'exchange.Bitstamp::sell';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1ac1fae4ef7a43254b71d7173a5cc6eeaf';
-        sec-mem-ref-line = '465';
+        sec-mem-ref-line = '473';
         sec-mem-ref-name = 'exchange.FoxBit::sell';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1a9982c7a3f6103c88c64160a5854c35cd';
-        sec-mem-ref-line = '527';
+        sec-mem-ref-line = '535';
         sec-mem-ref-name = 'exchange.MercadoBitcoin::sell';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = 'exchange_8py_1aadb487d2e2f277374a747e1bcb0bd40b';
-        sec-mem-ref-line = '592';
+        sec-mem-ref-line = '600';
         sec-mem-ref-name = 'exchange.OkCoin::sell';
     };
     }; /* sec-member */
@@ -14582,7 +14606,7 @@ _EnD_oF_dEf_TeXt_;
         sec-mem-param-defname = 'self';
       }; /*        sec-mem-param--param */
       sec-mem-desc-file = '/home/hilton/github/exch2exh/rates.py';
-      sec-mem-desc-line = '139';
+      sec-mem-desc-line = '141';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -14600,7 +14624,7 @@ def
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'get_rates';
       sec-mem-desc-file = '/home/hilton/github/exch2exh/rates.py';
-      sec-mem-desc-line = '101';
+      sec-mem-desc-line = '103';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -14621,7 +14645,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'brl2usd';
       sec-mem-desc-file = '/home/hilton/github/exch2exh/rates.py';
-      sec-mem-desc-line = '145';
+      sec-mem-desc-line = '147';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -14649,7 +14673,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'dt';
       sec-mem-desc-file = '/home/hilton/github/exch2exh/rates.py';
-      sec-mem-desc-line = '143';
+      sec-mem-desc-line = '145';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -14682,7 +14706,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'prefix';
       sec-mem-desc-file = '/home/hilton/github/exch2exh/rates.py';
-      sec-mem-desc-line = '148';
+      sec-mem-desc-line = '150';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -14700,7 +14724,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'service';
       sec-mem-desc-file = '/home/hilton/github/exch2exh/rates.py';
-      sec-mem-desc-line = '147';
+      sec-mem-desc-line = '149';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -14734,7 +14758,7 @@ _EnD_oF_dEf_TeXt_;
 = 'http://www.x-rates.com/table/?from=USD&amount=1'
 _EnD_oF_dEf_TeXt_;
       sec-mem-desc-file = '/home/hilton/github/exch2exh/rates.py';
-      sec-mem-desc-line = '99';
+      sec-mem-desc-line = '101';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -14744,7 +14768,7 @@ _EnD_oF_dEf_TeXt_;
     }; /* sec-member */
   }; /* cp-section */
   cp-filename  = '/home/hilton/github/exch2exh/rates.py';
-  cp-fileline  = '98';
+  cp-fileline  = '100';
   cp-briefdesc = <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -15222,7 +15246,7 @@ def
 _EnD_oF_dEf_TeXt_;
       func-mem-name = 'main';
       func-mem-desc-file = '/home/hilton/github/exch2exh/exchange.py';
-      func-mem-desc-line = '646';
+      func-mem-desc-line = '654';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -15304,7 +15328,7 @@ _EnD_oF_dEf_TeXt_;
         func-mem-param-defname = 'self';
       }; /*        func-mem-param--param */
       func-mem-desc-file = '/home/hilton/github/exch2exh/rates.py';
-      func-mem-desc-line = '34';
+      func-mem-desc-line = '36';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -15328,7 +15352,7 @@ _EnD_oF_dEf_TeXt_;
         func-mem-param-defname = 'self';
       }; /*        func-mem-param--param */
       func-mem-desc-file = '/home/hilton/github/exch2exh/rates.py';
-      func-mem-desc-line = '22';
+      func-mem-desc-line = '24';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -15352,7 +15376,7 @@ _EnD_oF_dEf_TeXt_;
         func-mem-param-defname = 'self';
       }; /*        func-mem-param--param */
       func-mem-desc-file = '/home/hilton/github/exch2exh/rates.py';
-      func-mem-desc-line = '28';
+      func-mem-desc-line = '30';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -15376,7 +15400,7 @@ _EnD_oF_dEf_TeXt_;
         func-mem-param-defname = 'self';
       }; /*        func-mem-param--param */
       func-mem-desc-file = '/home/hilton/github/exch2exh/rates.py';
-      func-mem-desc-line = '31';
+      func-mem-desc-line = '33';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -15400,7 +15424,7 @@ _EnD_oF_dEf_TeXt_;
         func-mem-param-defname = 'self';
       }; /*        func-mem-param--param */
       func-mem-desc-file = '/home/hilton/github/exch2exh/rates.py';
-      func-mem-desc-line = '25';
+      func-mem-desc-line = '27';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;

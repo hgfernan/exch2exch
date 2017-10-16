@@ -18,6 +18,8 @@ class Rate:
 class Rates:
 #    def __init__ (self):
 #        print (self.__class__.__name__)
+
+    # TODO create a function where the source and target coin are params
     
     def getBrl2Usd (self):
         return self.brl2usd
