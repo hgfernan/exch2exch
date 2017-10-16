@@ -1,0 +1,128 @@
+\hypertarget{classgen__factory_1_1_gen_factory}{}\section{gen\+\_\+factory.\+Gen\+Factory Class Reference}
+\label{classgen__factory_1_1_gen_factory}\index{gen\+\_\+factory.\+Gen\+Factory@{gen\+\_\+factory.\+Gen\+Factory}}
+
+
+Collaboration diagram for gen\+\_\+factory.\+Gen\+Factory\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=202pt]{classgen__factory_1_1_gen_factory__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classgen__factory_1_1_gen_factory_a519ddaf62a8d97e9ee0624e91ac39368}{\+\_\+\+\_\+init\+\_\+\+\_\+} (self, cls)
+\item 
+def \hyperlink{classgen__factory_1_1_gen_factory_aeb00856af2fa15d7973be43678779561}{gen\+Object} (self, name)
+\item 
+def \hyperlink{classgen__factory_1_1_gen_factory_aafa5db7ad22687c37e6b6a73da52fb2f}{valid\+Class\+Names} (self)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classgen__factory_1_1_gen_factory_a28f3142219cbe573169e5f90508908b3}{classes}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line \hyperlink{gen__factory_8py_source_l00032}{32} of file \hyperlink{gen__factory_8py_source}{gen\+\_\+factory.\+py}.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{gen\+\_\+factory\+::\+Gen\+Factory@{gen\+\_\+factory\+::\+Gen\+Factory}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!gen\+\_\+factory\+::\+Gen\+Factory@{gen\+\_\+factory\+::\+Gen\+Factory}}
+\subsubsection[{\texorpdfstring{\+\_\+\+\_\+init\+\_\+\+\_\+(self, cls)}{__init__(self, cls)}}]{\setlength{\rightskip}{0pt plus 5cm}def gen\+\_\+factory.\+Gen\+Factory.\+\_\+\+\_\+init\+\_\+\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{cls}
+\end{DoxyParamCaption}
+)}\hypertarget{classgen__factory_1_1_gen_factory_a519ddaf62a8d97e9ee0624e91ac39368}{}\label{classgen__factory_1_1_gen_factory_a519ddaf62a8d97e9ee0624e91ac39368}
+
+
+Definition at line \hyperlink{gen__factory_8py_source_l00033}{33} of file \hyperlink{gen__factory_8py_source}{gen\+\_\+factory.\+py}.
+
+
+\begin{DoxyCode}
+\hypertarget{classgen__factory_1_1_gen_factory.tex_l00033}{}\hyperlink{classgen__factory_1_1_gen_factory_a519ddaf62a8d97e9ee0624e91ac39368}{00033}     \textcolor{keyword}{def }\hyperlink{classgen__factory_1_1_gen_factory_a519ddaf62a8d97e9ee0624e91ac39368}{\_\_init\_\_} (self, cls):
+00034         types = cls.\_\_subclasses\_\_ ()
+00035         
+00036 \textcolor{comment}{#        print (self.types)}
+00037         
+\hypertarget{classgen__factory_1_1_gen_factory.tex_l00038}{}\hyperlink{classgen__factory_1_1_gen_factory_a28f3142219cbe573169e5f90508908b3}{00038}         self.\hyperlink{classgen__factory_1_1_gen_factory_a28f3142219cbe573169e5f90508908b3}{classes} = \{\}
+00039         \textcolor{keywordflow}{for} cls \textcolor{keywordflow}{in} types:
+00040             self.\hyperlink{classgen__factory_1_1_gen_factory_a28f3142219cbe573169e5f90508908b3}{classes}[cls.\_\_name\_\_] = cls
+00041             
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{gen\+\_\+factory\+::\+Gen\+Factory@{gen\+\_\+factory\+::\+Gen\+Factory}!gen\+Object@{gen\+Object}}
+\index{gen\+Object@{gen\+Object}!gen\+\_\+factory\+::\+Gen\+Factory@{gen\+\_\+factory\+::\+Gen\+Factory}}
+\subsubsection[{\texorpdfstring{gen\+Object(self, name)}{genObject(self, name)}}]{\setlength{\rightskip}{0pt plus 5cm}def gen\+\_\+factory.\+Gen\+Factory.\+gen\+Object (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{name}
+\end{DoxyParamCaption}
+)}\hypertarget{classgen__factory_1_1_gen_factory_aeb00856af2fa15d7973be43678779561}{}\label{classgen__factory_1_1_gen_factory_aeb00856af2fa15d7973be43678779561}
+
+
+Definition at line \hyperlink{gen__factory_8py_source_l00045}{45} of file \hyperlink{gen__factory_8py_source}{gen\+\_\+factory.\+py}.
+
+
+
+References \hyperlink{gen__factory_8py_source_l00038}{gen\+\_\+factory.\+Gen\+Factory.\+classes}.
+
+
+\begin{DoxyCode}
+\hypertarget{classgen__factory_1_1_gen_factory.tex_l00045}{}\hyperlink{classgen__factory_1_1_gen_factory_aeb00856af2fa15d7973be43678779561}{00045}     \textcolor{keyword}{def }\hyperlink{classgen__factory_1_1_gen_factory_aeb00856af2fa15d7973be43678779561}{genObject} (self, name):
+00046         result = \textcolor{keywordtype}{None} 
+00047         
+00048         \textcolor{keywordflow}{if} name \textcolor{keywordflow}{in} self.\hyperlink{classgen__factory_1_1_gen_factory_a28f3142219cbe573169e5f90508908b3}{classes}:
+00049                 cls = self.\hyperlink{classgen__factory_1_1_gen_factory_a28f3142219cbe573169e5f90508908b3}{classes}[name]
+00050                 result = cls.\_\_new\_\_ (cls)
+00051                 
+00052                 result.\_\_init\_\_ ()
+00053                 
+00054         \textcolor{keywordflow}{return} result
+00055         
+\end{DoxyCode}
+\index{gen\+\_\+factory\+::\+Gen\+Factory@{gen\+\_\+factory\+::\+Gen\+Factory}!valid\+Class\+Names@{valid\+Class\+Names}}
+\index{valid\+Class\+Names@{valid\+Class\+Names}!gen\+\_\+factory\+::\+Gen\+Factory@{gen\+\_\+factory\+::\+Gen\+Factory}}
+\subsubsection[{\texorpdfstring{valid\+Class\+Names(self)}{validClassNames(self)}}]{\setlength{\rightskip}{0pt plus 5cm}def gen\+\_\+factory.\+Gen\+Factory.\+valid\+Class\+Names (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{classgen__factory_1_1_gen_factory_aafa5db7ad22687c37e6b6a73da52fb2f}{}\label{classgen__factory_1_1_gen_factory_aafa5db7ad22687c37e6b6a73da52fb2f}
+
+
+Definition at line \hyperlink{gen__factory_8py_source_l00042}{42} of file \hyperlink{gen__factory_8py_source}{gen\+\_\+factory.\+py}.
+
+
+\begin{DoxyCode}
+\hypertarget{classgen__factory_1_1_gen_factory.tex_l00042}{}\hyperlink{classgen__factory_1_1_gen_factory_aafa5db7ad22687c37e6b6a73da52fb2f}{00042}     \textcolor{keyword}{def }\hyperlink{classgen__factory_1_1_gen_factory_aafa5db7ad22687c37e6b6a73da52fb2f}{validClassNames} (self):
+00043         \textcolor{keywordflow}{return} self.classes.keys ()
+00044     
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\index{gen\+\_\+factory\+::\+Gen\+Factory@{gen\+\_\+factory\+::\+Gen\+Factory}!classes@{classes}}
+\index{classes@{classes}!gen\+\_\+factory\+::\+Gen\+Factory@{gen\+\_\+factory\+::\+Gen\+Factory}}
+\subsubsection[{\texorpdfstring{classes}{classes}}]{\setlength{\rightskip}{0pt plus 5cm}gen\+\_\+factory.\+Gen\+Factory.\+classes}\hypertarget{classgen__factory_1_1_gen_factory_a28f3142219cbe573169e5f90508908b3}{}\label{classgen__factory_1_1_gen_factory_a28f3142219cbe573169e5f90508908b3}
+
+
+Definition at line \hyperlink{gen__factory_8py_source_l00038}{38} of file \hyperlink{gen__factory_8py_source}{gen\+\_\+factory.\+py}.
+
+
+
+Referenced by \hyperlink{gen__factory_8py_source_l00045}{gen\+\_\+factory.\+Gen\+Factory.\+gen\+Object()}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/hilton/github/exch2exh/\hyperlink{gen__factory_8py}{gen\+\_\+factory.\+py}\end{DoxyCompactItemize}

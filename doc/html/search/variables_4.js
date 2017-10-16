@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['gmax',['gmax',['../classexch2exch_1_1_differences.html#a569f2a6fa0e33ad725c3c3ada259ddcc',1,'exch2exch::Differences']]],
-  ['gmin',['gmin',['../classexch2exch_1_1_differences.html#a33c9add531b5b46c49ae322657343382',1,'exch2exch::Differences']]],
-  ['google',['google',['../namespaceraw__urlparser.html#a8d7c05a0ed7b2f3a3014caa73a2999d1',1,'raw_urlparser']]]
+  ['exch',['exch',['../classexch2exch_1_1_xbt_prices.html#a72caf3a29017a1ceaf4367240a46b360',1,'exch2exch.XbtPrices.exch()'],['../classexchange_1_1_ticker.html#a33f33fe9a12da3ce52938afdc577c061',1,'exchange.Ticker.exch()'],['../classexchange_1_1_bitfinex.html#af5865e2fa72ee1706254ba963bfa10e9',1,'exchange.Bitfinex.exch()'],['../classexchange_1_1_bitstamp.html#a140f44d1638f2e50ecb5148bf8f8ac86',1,'exchange.Bitstamp.exch()'],['../classexchange_1_1_fox_bit.html#a3922433dcfe54e39c3c0da12fa252658',1,'exchange.FoxBit.exch()'],['../classexchange_1_1_mercado_bitcoin.html#a68701550b43374441e52ea2082d88400',1,'exchange.MercadoBitcoin.exch()'],['../classexchange_1_1_ok_coin.html#a22678c192b53ddf34e8a636e0cdaf4d4',1,'exchange.OkCoin.exch()'],['../classraw__urlparser_1_1_xbt_prices.html#a016bbd95465aaa14b5c434047df7b7fb',1,'raw_urlparser.XbtPrices.exch()']]]
 ];

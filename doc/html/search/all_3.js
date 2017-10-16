@@ -1,11 +1,10 @@
 var searchData=
 [
-  ['diff',['diff',['../namespaceraw__urlparser.html#a2a48999f60075fd5b96e6d540cce34c9',1,'raw_urlparser']]],
-  ['differences',['Differences',['../classexch2exch_1_1_differences.html',1,'exch2exch']]],
-  ['differences',['Differences',['../classraw__urlparser_1_1_differences.html',1,'raw_urlparser']]],
-  ['dmax',['dmax',['../classexch2exch_1_1_differences.html#a261a74cc25d77b2608898fa5611f9f0b',1,'exch2exch.Differences.dmax()'],['../classraw__urlparser_1_1_differences.html#ad2b06158b655136bc7743dc6ac8d1e2a',1,'raw_urlparser.Differences.dmax()']]],
-  ['dmin',['dmin',['../classexch2exch_1_1_differences.html#a7825bfca16b5775aa770c8810412b215',1,'exch2exch.Differences.dmin()'],['../classraw__urlparser_1_1_differences.html#af8457a8e542de086595e7fbbffdf713c',1,'raw_urlparser.Differences.dmin()']]],
-  ['dnload_5fticker',['dnload_ticker',['../classexchange_1_1_exchange.html#a617fe5e236e61725b62f0865eb3cb613',1,'exchange::Exchange']]],
-  ['dnload_5ftrades',['dnload_trades',['../classexchange_1_1_exchange.html#a89a7e4ad373dfcf9686f9f87404e464f',1,'exchange::Exchange']]],
-  ['dt',['dt',['../classexch2exch_1_1_rates.html#acb12f83bce4393714ec30351a1d636c2',1,'exch2exch.Rates.dt()'],['../classexch2exch_1_1_xbt_prices.html#af9f916c683c48631c97f1c5d91447751',1,'exch2exch.XbtPrices.dt()'],['../classexchange_1_1_fox_bit.html#a363f8488eb0423f88519c085ae6f168f',1,'exchange.FoxBit.dt()'],['../classexchange_1_1_mercado_bitcoin.html#aeee983ba4f72223a11fb914d22902c56',1,'exchange.MercadoBitcoin.dt()'],['../classexchange_1_1_ok_coin.html#ade9d7cddcfa54f2b1ba5452854bfd48b',1,'exchange.OkCoin.dt()'],['../classraw__urlparser_1_1_rates.html#a09b3c7cb595f3135c3eda648b1bb4c3f',1,'raw_urlparser.Rates.dt()'],['../classraw__urlparser_1_1_xbt_prices.html#ae094aa3e73d21d0be219a085f09bcf13',1,'raw_urlparser.XbtPrices.dt()']]]
+  ['calc',['calc',['../classexchange_1_1_differences.html#abf44b47cfb95a1f4eadfb99f4f8f5468',1,'exchange.Differences.calc()'],['../classexchange_1_1_diff_tracker.html#a5289683bd2bd43e75e0062704df53736',1,'exchange.DiffTracker.calc()']]],
+  ['calc_5ffiat_5frates',['calc_fiat_rates',['../namespaceexch2exch.html#a2f3337121882596d0644f2d48ffb870c',1,'exch2exch']]],
+  ['classes',['classes',['../classgen__factory_1_1_gen_factory.html#a28f3142219cbe573169e5f90508908b3',1,'gen_factory::GenFactory']]],
+  ['coin',['coin',['../classexch2exch_1_1_xbt_prices.html#a1191c8825e8f1333b4100b89fa2be053',1,'exch2exch.XbtPrices.coin()'],['../classraw__urlparser_1_1_xbt_prices.html#a8d253ccd987bce28e3aaba7a9c486e5f',1,'raw_urlparser.XbtPrices.coin()']]],
+  ['coinname',['coinName',['../classexch2exch_1_1_differences.html#a0fb17548553b86b0ae62c2ef1a30981b',1,'exch2exch.Differences.coinName()'],['../classexchange_1_1_differences.html#a5966244f2ee3307e771063fd9f204bf2',1,'exchange.Differences.coinName()']]],
+  ['conclusionoutput',['conclusionOutput',['../classe2e_1_1_parameters.html#ad5967b78ebf5c8778e423413053015a7',1,'e2e::Parameters']]],
+  ['convert',['convert',['../classexchange_1_1_ticker.html#a2aa851437f953462f8e8bce7ca05c3ec',1,'exchange::Ticker']]]
 ];

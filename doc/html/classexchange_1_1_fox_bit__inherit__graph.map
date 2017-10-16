@@ -1,3 +1,3 @@
 <map id="exchange.FoxBit" name="exchange.FoxBit">
-<area shape="rect" id="node2" href="$classexchange_1_1_exchange.html" title="exchange.Exchange" alt="" coords="5,5,144,32"/>
+<area shape="rect" id="node2" href="$classexchange_1_1_exchange.html" title="{exchange.Exchange\n|+ originalTicker\l+ ticker\l+ trades\l+ U_ORDRBK\l+ U_TICKER\l+ U_TRADES\l|+ __init__()\l+ __repr__()\l+ __str__()\l+ dnload_orderbook()\l+ dnload_ticker()\l+ dnload_trades()\l+ get_exch_name()\l+ get_orderbook()\l+ get_ticker()\l+ get_trades()\l+ getOriginalTicker()\l+ mk_ticker()\l+ process_orderbook()\l+ process_ticker()\l+ process_trades()\l}" alt="" coords="5,5,157,361"/>
 </map>

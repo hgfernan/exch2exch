@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['rates',['Rates',['../classraw__urlparser_1_1_rates.html',1,'raw_urlparser']]],
-  ['rates',['Rates',['../classexch2exch_1_1_rates.html',1,'exch2exch']]]
+  ['genfactory',['GenFactory',['../classgen__factory_1_1_gen_factory.html',1,'gen_factory']]],
+  ['google',['Google',['../classrates_1_1_google.html',1,'rates']]]
 ];

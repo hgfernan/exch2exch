@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['dnload_5fticker',['dnload_ticker',['../classexchange_1_1_exchange.html#a617fe5e236e61725b62f0865eb3cb613',1,'exchange::Exchange']]],
-  ['dnload_5ftrades',['dnload_trades',['../classexchange_1_1_exchange.html#a89a7e4ad373dfcf9686f9f87404e464f',1,'exchange::Exchange']]]
+  ['calc',['calc',['../classexchange_1_1_differences.html#abf44b47cfb95a1f4eadfb99f4f8f5468',1,'exchange.Differences.calc()'],['../classexchange_1_1_diff_tracker.html#a5289683bd2bd43e75e0062704df53736',1,'exchange.DiffTracker.calc()']]],
+  ['calc_5ffiat_5frates',['calc_fiat_rates',['../namespaceexch2exch.html#a2f3337121882596d0644f2d48ffb870c',1,'exch2exch']]],
+  ['convert',['convert',['../classexchange_1_1_ticker.html#a2aa851437f953462f8e8bce7ca05c3ec',1,'exchange::Ticker']]]
 ];

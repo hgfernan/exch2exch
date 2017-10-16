@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['okcoin',['OkCoin',['../classexchange_1_1_ok_coin.html',1,'exchange']]]
+  ['foxbit',['FoxBit',['../classexchange_1_1_fox_bit.html',1,'exchange']]]
 ];

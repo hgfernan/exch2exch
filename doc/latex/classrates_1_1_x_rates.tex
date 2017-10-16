@@ -1,0 +1,191 @@
+\hypertarget{classrates_1_1_x_rates}{}\section{rates.\+X\+Rates Class Reference}
+\label{classrates_1_1_x_rates}\index{rates.\+X\+Rates@{rates.\+X\+Rates}}
+
+
+Inheritance diagram for rates.\+X\+Rates\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=159pt]{classrates_1_1_x_rates__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for rates.\+X\+Rates\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=236pt]{classrates_1_1_x_rates__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classrates_1_1_x_rates_a86fb4ba66a218c5f25b5b2c1f2a8345b}{\+\_\+\+\_\+init\+\_\+\+\_\+} (self)
+\item 
+def \hyperlink{classrates_1_1_x_rates_a034e274f1bf0a2509af2621eb27c7cce}{get\+\_\+rates} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classrates_1_1_x_rates_acb0a8b6ec059b823c8a46eb115341251}{brl2usd}
+\item 
+\hyperlink{classrates_1_1_x_rates_aa7835a0ac1d41af607d6d5885b49c131}{dt}
+\item 
+\hyperlink{classrates_1_1_x_rates_a3b92b41b0fbd77b44d01f094ff83dd9d}{prefix}
+\item 
+\hyperlink{classrates_1_1_x_rates_ad80e3c0295deaa15fac085324716747f}{service}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+string \hyperlink{classrates_1_1_x_rates_ab3bd64c08e6503f0d76c9f73dc38fa25}{U\+\_\+\+X\+R\+A\+T\+ES} = \textquotesingle{}http\+://www.\+x-\/rates.\+com/table/?from=U\+SD\&amount=1\textquotesingle{}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line \hyperlink{rates_8py_source_l00100}{100} of file \hyperlink{rates_8py_source}{rates.\+py}.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{rates\+::\+X\+Rates@{rates\+::\+X\+Rates}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!rates\+::\+X\+Rates@{rates\+::\+X\+Rates}}
+\subsubsection[{\texorpdfstring{\+\_\+\+\_\+init\+\_\+\+\_\+(self)}{__init__(self)}}]{\setlength{\rightskip}{0pt plus 5cm}def rates.\+X\+Rates.\+\_\+\+\_\+init\+\_\+\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{classrates_1_1_x_rates_a86fb4ba66a218c5f25b5b2c1f2a8345b}{}\label{classrates_1_1_x_rates_a86fb4ba66a218c5f25b5b2c1f2a8345b}
+
+
+Definition at line \hyperlink{rates_8py_source_l00141}{141} of file \hyperlink{rates_8py_source}{rates.\+py}.
+
+
+\begin{DoxyCode}
+\hypertarget{classrates_1_1_x_rates.tex_l00141}{}\hyperlink{classrates_1_1_x_rates_a86fb4ba66a218c5f25b5b2c1f2a8345b}{00141}     \textcolor{keyword}{def }\hyperlink{classrates_1_1_x_rates_a86fb4ba66a218c5f25b5b2c1f2a8345b}{\_\_init\_\_} (self):
+00142 \textcolor{comment}{#        print (self.\_\_class\_\_.\_\_name\_\_)}
+00143 
+00144         ts = math.trunc (time.time () + 0.5)
+\hypertarget{classrates_1_1_x_rates.tex_l00145}{}\hyperlink{classrates_1_1_x_rates_aa7835a0ac1d41af607d6d5885b49c131}{00145}         self.\hyperlink{classrates_1_1_x_rates_aa7835a0ac1d41af607d6d5885b49c131}{dt} = datetime.datetime.fromtimestamp (ts)
+00146 
+\hypertarget{classrates_1_1_x_rates.tex_l00147}{}\hyperlink{classrates_1_1_x_rates_acb0a8b6ec059b823c8a46eb115341251}{00147}         self.usd2brl, self.\hyperlink{classrates_1_1_x_rates_acb0a8b6ec059b823c8a46eb115341251}{brl2usd} = XRates.get\_rates () 
+00148                 
+\hypertarget{classrates_1_1_x_rates.tex_l00149}{}\hyperlink{classrates_1_1_x_rates_ad80e3c0295deaa15fac085324716747f}{00149}         self.\hyperlink{classrates_1_1_x_rates_ad80e3c0295deaa15fac085324716747f}{service} = \textcolor{stringliteral}{"XRates"}
+\hypertarget{classrates_1_1_x_rates.tex_l00150}{}\hyperlink{classrates_1_1_x_rates_a3b92b41b0fbd77b44d01f094ff83dd9d}{00150}         self.\hyperlink{classrates_1_1_x_rates_a3b92b41b0fbd77b44d01f094ff83dd9d}{prefix} = \textcolor{stringliteral}{"xr"}
+00151 
+00152 \textcolor{comment}{# class Yahoo (Rates):}
+00153 \textcolor{comment}{#    pass}
+00154 
+00155 \end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{rates\+::\+X\+Rates@{rates\+::\+X\+Rates}!get\+\_\+rates@{get\+\_\+rates}}
+\index{get\+\_\+rates@{get\+\_\+rates}!rates\+::\+X\+Rates@{rates\+::\+X\+Rates}}
+\subsubsection[{\texorpdfstring{get\+\_\+rates()}{get_rates()}}]{\setlength{\rightskip}{0pt plus 5cm}def rates.\+X\+Rates.\+get\+\_\+rates (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classrates_1_1_x_rates_a034e274f1bf0a2509af2621eb27c7cce}{}\label{classrates_1_1_x_rates_a034e274f1bf0a2509af2621eb27c7cce}
+
+
+Definition at line \hyperlink{rates_8py_source_l00103}{103} of file \hyperlink{rates_8py_source}{rates.\+py}.
+
+
+\begin{DoxyCode}
+\hypertarget{classrates_1_1_x_rates.tex_l00103}{}\hyperlink{classrates_1_1_x_rates_a034e274f1bf0a2509af2621eb27c7cce}{00103}     \textcolor{keyword}{def }\hyperlink{classrates_1_1_x_rates_a034e274f1bf0a2509af2621eb27c7cce}{get\_rates} ():        
+00104         \textcolor{comment}{# Adding a fake browser User-Agent to make site x-rates.com happy}
+00105         headers = \{\textcolor{stringliteral}{'User-Agent'} : \textcolor{stringliteral}{'Mozilla 5.10'}\}
+00106             
+00107         \textcolor{comment}{# Create the Request, joining URL and User-Agent}
+00108         request = urllib.request.Request (XRates.U\_XRATES, headers = headers)
+00109     
+00110         \textcolor{comment}{# Open the URL as file}
+00111         f = urllib.request.urlopen (request)
+00112         
+00113         \textcolor{comment}{# Input over the file to get the rates}
+00114         line = \textcolor{keywordtype}{None}
+00115         \textcolor{keywordflow}{while} line != b\textcolor{stringliteral}{''}:
+00116             line = f.readline ()
+00117             ind = line.find (b\textcolor{stringliteral}{'BRL'})
+00118             \textcolor{keywordflow}{if} ind == -1:
+00119                 \textcolor{keywordflow}{continue} 
+00120             
+00121             ind = line.find (b\textcolor{stringliteral}{'rtRates'})
+00122             \textcolor{keywordflow}{if} ind == -1:
+00123                 \textcolor{keywordflow}{continue} 
+00124                     
+00125             \textcolor{keywordflow}{if} line.find (b\textcolor{stringliteral}{'from=USD'}) != -1:
+00126                 fields = line.split (b\textcolor{stringliteral}{'>'})
+00127                 
+00128                 susd = fields[2].split (b\textcolor{stringliteral}{'<'})[0]
+00129                 usd2brl = float (susd)
+00130             
+00131             \textcolor{keywordflow}{elif} line.find (b\textcolor{stringliteral}{'from=BRL'}) != -1:
+00132                 fields = line.split (b\textcolor{stringliteral}{'>'})
+00133                 
+00134                 sbrl = fields[2].split (b\textcolor{stringliteral}{'<'})[0]
+00135                 brl2usd = float (sbrl)
+00136                 
+00137         result = (usd2brl, brl2usd)
+00138         
+00139         \textcolor{keywordflow}{return} result
+00140 
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\index{rates\+::\+X\+Rates@{rates\+::\+X\+Rates}!brl2usd@{brl2usd}}
+\index{brl2usd@{brl2usd}!rates\+::\+X\+Rates@{rates\+::\+X\+Rates}}
+\subsubsection[{\texorpdfstring{brl2usd}{brl2usd}}]{\setlength{\rightskip}{0pt plus 5cm}rates.\+X\+Rates.\+brl2usd}\hypertarget{classrates_1_1_x_rates_acb0a8b6ec059b823c8a46eb115341251}{}\label{classrates_1_1_x_rates_acb0a8b6ec059b823c8a46eb115341251}
+
+
+Definition at line \hyperlink{rates_8py_source_l00147}{147} of file \hyperlink{rates_8py_source}{rates.\+py}.
+
+
+
+Referenced by \hyperlink{raw__urlparser_8py_source_l00038}{raw\+\_\+urlparser.\+Rates.\+\_\+\+\_\+str\+\_\+\+\_\+()}, and \hyperlink{raw__urlparser_8py_source_l00029}{raw\+\_\+urlparser.\+Rates.\+get\+Brl2\+Usd()}.
+
+\index{rates\+::\+X\+Rates@{rates\+::\+X\+Rates}!dt@{dt}}
+\index{dt@{dt}!rates\+::\+X\+Rates@{rates\+::\+X\+Rates}}
+\subsubsection[{\texorpdfstring{dt}{dt}}]{\setlength{\rightskip}{0pt plus 5cm}rates.\+X\+Rates.\+dt}\hypertarget{classrates_1_1_x_rates_aa7835a0ac1d41af607d6d5885b49c131}{}\label{classrates_1_1_x_rates_aa7835a0ac1d41af607d6d5885b49c131}
+
+
+Definition at line \hyperlink{rates_8py_source_l00145}{145} of file \hyperlink{rates_8py_source}{rates.\+py}.
+
+
+
+Referenced by \hyperlink{raw__urlparser_8py_source_l00038}{raw\+\_\+urlparser.\+Rates.\+\_\+\+\_\+str\+\_\+\+\_\+()}, \hyperlink{raw__urlparser_8py_source_l00074}{raw\+\_\+urlparser.\+Xbt\+Prices.\+\_\+\+\_\+str\+\_\+\+\_\+()}, and \hyperlink{raw__urlparser_8py_source_l00059}{raw\+\_\+urlparser.\+Xbt\+Prices.\+get\+Date\+Time()}.
+
+\index{rates\+::\+X\+Rates@{rates\+::\+X\+Rates}!prefix@{prefix}}
+\index{prefix@{prefix}!rates\+::\+X\+Rates@{rates\+::\+X\+Rates}}
+\subsubsection[{\texorpdfstring{prefix}{prefix}}]{\setlength{\rightskip}{0pt plus 5cm}rates.\+X\+Rates.\+prefix}\hypertarget{classrates_1_1_x_rates_a3b92b41b0fbd77b44d01f094ff83dd9d}{}\label{classrates_1_1_x_rates_a3b92b41b0fbd77b44d01f094ff83dd9d}
+
+
+Definition at line \hyperlink{rates_8py_source_l00150}{150} of file \hyperlink{rates_8py_source}{rates.\+py}.
+
+\index{rates\+::\+X\+Rates@{rates\+::\+X\+Rates}!service@{service}}
+\index{service@{service}!rates\+::\+X\+Rates@{rates\+::\+X\+Rates}}
+\subsubsection[{\texorpdfstring{service}{service}}]{\setlength{\rightskip}{0pt plus 5cm}rates.\+X\+Rates.\+service}\hypertarget{classrates_1_1_x_rates_ad80e3c0295deaa15fac085324716747f}{}\label{classrates_1_1_x_rates_ad80e3c0295deaa15fac085324716747f}
+
+
+Definition at line \hyperlink{rates_8py_source_l00149}{149} of file \hyperlink{rates_8py_source}{rates.\+py}.
+
+
+
+Referenced by \hyperlink{raw__urlparser_8py_source_l00038}{raw\+\_\+urlparser.\+Rates.\+\_\+\+\_\+str\+\_\+\+\_\+()}, and \hyperlink{raw__urlparser_8py_source_l00035}{raw\+\_\+urlparser.\+Rates.\+get\+Service\+Name()}.
+
+\index{rates\+::\+X\+Rates@{rates\+::\+X\+Rates}!U\+\_\+\+X\+R\+A\+T\+ES@{U\+\_\+\+X\+R\+A\+T\+ES}}
+\index{U\+\_\+\+X\+R\+A\+T\+ES@{U\+\_\+\+X\+R\+A\+T\+ES}!rates\+::\+X\+Rates@{rates\+::\+X\+Rates}}
+\subsubsection[{\texorpdfstring{U\+\_\+\+X\+R\+A\+T\+ES}{U_XRATES}}]{\setlength{\rightskip}{0pt plus 5cm}string rates.\+X\+Rates.\+U\+\_\+\+X\+R\+A\+T\+ES = \textquotesingle{}http\+://www.\+x-\/rates.\+com/table/?from=U\+SD\&amount=1\textquotesingle{}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classrates_1_1_x_rates_ab3bd64c08e6503f0d76c9f73dc38fa25}{}\label{classrates_1_1_x_rates_ab3bd64c08e6503f0d76c9f73dc38fa25}
+
+
+Definition at line \hyperlink{rates_8py_source_l00101}{101} of file \hyperlink{rates_8py_source}{rates.\+py}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/hilton/github/exch2exh/\hyperlink{rates_8py}{rates.\+py}\end{DoxyCompactItemize}

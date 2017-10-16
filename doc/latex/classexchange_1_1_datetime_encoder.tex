@@ -1,0 +1,64 @@
+\hypertarget{classexchange_1_1_datetime_encoder}{}\section{exchange.\+Datetime\+Encoder Class Reference}
+\label{classexchange_1_1_datetime_encoder}\index{exchange.\+Datetime\+Encoder@{exchange.\+Datetime\+Encoder}}
+
+
+Inheritance diagram for exchange.\+Datetime\+Encoder\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=217pt]{classexchange_1_1_datetime_encoder__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for exchange.\+Datetime\+Encoder\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=217pt]{classexchange_1_1_datetime_encoder__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classexchange_1_1_datetime_encoder_a0bb4f94a13ce6c33e8d68869e282d24f}{default} (self, obj)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line \hyperlink{exchange_8py_source_l00028}{28} of file \hyperlink{exchange_8py_source}{exchange.\+py}.
+
+
+
+\subsection{Member Function Documentation}
+\index{exchange\+::\+Datetime\+Encoder@{exchange\+::\+Datetime\+Encoder}!default@{default}}
+\index{default@{default}!exchange\+::\+Datetime\+Encoder@{exchange\+::\+Datetime\+Encoder}}
+\subsubsection[{\texorpdfstring{default(self, obj)}{default(self, obj)}}]{\setlength{\rightskip}{0pt plus 5cm}def exchange.\+Datetime\+Encoder.\+default (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{obj}
+\end{DoxyParamCaption}
+)}\hypertarget{classexchange_1_1_datetime_encoder_a0bb4f94a13ce6c33e8d68869e282d24f}{}\label{classexchange_1_1_datetime_encoder_a0bb4f94a13ce6c33e8d68869e282d24f}
+
+
+Definition at line \hyperlink{exchange_8py_source_l00029}{29} of file \hyperlink{exchange_8py_source}{exchange.\+py}.
+
+
+\begin{DoxyCode}
+\hypertarget{classexchange_1_1_datetime_encoder.tex_l00029}{}\hyperlink{classexchange_1_1_datetime_encoder_a0bb4f94a13ce6c33e8d68869e282d24f}{00029}     \textcolor{keyword}{def }\hyperlink{classexchange_1_1_datetime_encoder_a0bb4f94a13ce6c33e8d68869e282d24f}{default}(self, obj):
+00030         \textcolor{keywordflow}{if} isinstance (obj, datetime.datetime):
+00031             \textcolor{keywordflow}{return} obj.\_\_repr\_\_ ()
+00032             
+00033         \textcolor{comment}{# Let the base class default method raise the TypeError}
+00034         \textcolor{keywordflow}{return} json.JSONEncoder.default(self, obj)
+00035 
+00036 \textcolor{comment}{# Standard way of packing oderdebook information across all exchange classes}
+00037         
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/hilton/github/exch2exh/\hyperlink{exchange_8py}{exchange.\+py}\end{DoxyCompactItemize}

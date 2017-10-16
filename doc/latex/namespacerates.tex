@@ -1,0 +1,124 @@
+\hypertarget{namespacerates}{}\section{rates Namespace Reference}
+\label{namespacerates}\index{rates@{rates}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classrates_1_1_google}{Google}
+\item 
+class \hyperlink{classrates_1_1_rate}{Rate}
+\item 
+class \hyperlink{classrates_1_1_rates}{Rates}
+\item 
+class \hyperlink{classrates_1_1_x_rates}{X\+Rates}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespacerates_a2f1a70c33ee9e255938e4c19fd207264}{\+\_\+\+\_\+str\+\_\+\+\_\+} (self)
+\item 
+def \hyperlink{namespacerates_a083f2cdcd71554d301bcbfb0779ffa49}{get\+Brl2\+Usd} (self)
+\item 
+def \hyperlink{namespacerates_a5dd7b6601bc66e313c26984e32f1e290}{get\+Service\+Name} (self)
+\item 
+def \hyperlink{namespacerates_aafc179b32863137b88c74dd0ee2576bd}{get\+Service\+Prefix} (self)
+\item 
+def \hyperlink{namespacerates_ae4c7203ef8a919f9cf522581ca00b08a}{get\+Usd2\+Brl} (self)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{rates@{rates}!\+\_\+\+\_\+str\+\_\+\+\_\+@{\+\_\+\+\_\+str\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+str\+\_\+\+\_\+@{\+\_\+\+\_\+str\+\_\+\+\_\+}!rates@{rates}}
+\subsubsection[{\texorpdfstring{\+\_\+\+\_\+str\+\_\+\+\_\+(self)}{__str__(self)}}]{\setlength{\rightskip}{0pt plus 5cm}def rates.\+\_\+\+\_\+str\+\_\+\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacerates_a2f1a70c33ee9e255938e4c19fd207264}{}\label{namespacerates_a2f1a70c33ee9e255938e4c19fd207264}
+
+
+Definition at line \hyperlink{rates_8py_source_l00036}{36} of file \hyperlink{rates_8py_source}{rates.\+py}.
+
+
+\begin{DoxyCode}
+\hypertarget{namespacerates.tex_l00036}{}\hyperlink{namespacerates_a2f1a70c33ee9e255938e4c19fd207264}{00036}     \textcolor{keyword}{def }\hyperlink{namespacerates_a2f1a70c33ee9e255938e4c19fd207264}{\_\_str\_\_} (self):
+00037         result = \textcolor{stringliteral}{''}
+00038 
+00039         service = self.service
+00040         dt      = self.dt
+00041         usd2brl = self.usd2brl
+00042         brl2usd = self.brl2usd
+00043         ftupl = (service, dt, usd2brl, brl2usd)
+00044         
+00045         result = \textcolor{stringliteral}{"\{0\}: \{1\}: USD2BRL \{2:.4f\}, BRL2USD \{3:.4f\}"}.format (*ftupl)
+00046 
+00047         \textcolor{keywordflow}{return} result        
+00048     
+\end{DoxyCode}
+\index{rates@{rates}!get\+Brl2\+Usd@{get\+Brl2\+Usd}}
+\index{get\+Brl2\+Usd@{get\+Brl2\+Usd}!rates@{rates}}
+\subsubsection[{\texorpdfstring{get\+Brl2\+Usd(self)}{getBrl2Usd(self)}}]{\setlength{\rightskip}{0pt plus 5cm}def rates.\+get\+Brl2\+Usd (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacerates_a083f2cdcd71554d301bcbfb0779ffa49}{}\label{namespacerates_a083f2cdcd71554d301bcbfb0779ffa49}
+
+
+Definition at line \hyperlink{rates_8py_source_l00024}{24} of file \hyperlink{rates_8py_source}{rates.\+py}.
+
+
+\begin{DoxyCode}
+\hypertarget{namespacerates.tex_l00024}{}\hyperlink{namespacerates_a083f2cdcd71554d301bcbfb0779ffa49}{00024}     \textcolor{keyword}{def }\hyperlink{namespacerates_a083f2cdcd71554d301bcbfb0779ffa49}{getBrl2Usd} (self):
+00025         \textcolor{keywordflow}{return} self.brl2usd
+00026     
+\end{DoxyCode}
+\index{rates@{rates}!get\+Service\+Name@{get\+Service\+Name}}
+\index{get\+Service\+Name@{get\+Service\+Name}!rates@{rates}}
+\subsubsection[{\texorpdfstring{get\+Service\+Name(self)}{getServiceName(self)}}]{\setlength{\rightskip}{0pt plus 5cm}def rates.\+get\+Service\+Name (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacerates_a5dd7b6601bc66e313c26984e32f1e290}{}\label{namespacerates_a5dd7b6601bc66e313c26984e32f1e290}
+
+
+Definition at line \hyperlink{rates_8py_source_l00030}{30} of file \hyperlink{rates_8py_source}{rates.\+py}.
+
+
+\begin{DoxyCode}
+\hypertarget{namespacerates.tex_l00030}{}\hyperlink{namespacerates_a5dd7b6601bc66e313c26984e32f1e290}{00030}     \textcolor{keyword}{def }\hyperlink{namespacerates_a5dd7b6601bc66e313c26984e32f1e290}{getServiceName} (self):
+00031         \textcolor{keywordflow}{return} self.service
+00032     
+\end{DoxyCode}
+\index{rates@{rates}!get\+Service\+Prefix@{get\+Service\+Prefix}}
+\index{get\+Service\+Prefix@{get\+Service\+Prefix}!rates@{rates}}
+\subsubsection[{\texorpdfstring{get\+Service\+Prefix(self)}{getServicePrefix(self)}}]{\setlength{\rightskip}{0pt plus 5cm}def rates.\+get\+Service\+Prefix (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacerates_aafc179b32863137b88c74dd0ee2576bd}{}\label{namespacerates_aafc179b32863137b88c74dd0ee2576bd}
+
+
+Definition at line \hyperlink{rates_8py_source_l00033}{33} of file \hyperlink{rates_8py_source}{rates.\+py}.
+
+
+\begin{DoxyCode}
+\hypertarget{namespacerates.tex_l00033}{}\hyperlink{namespacerates_aafc179b32863137b88c74dd0ee2576bd}{00033}     \textcolor{keyword}{def }\hyperlink{namespacerates_aafc179b32863137b88c74dd0ee2576bd}{getServicePrefix} (self):
+00034         \textcolor{keywordflow}{return} self.prefix
+00035         
+\end{DoxyCode}
+\index{rates@{rates}!get\+Usd2\+Brl@{get\+Usd2\+Brl}}
+\index{get\+Usd2\+Brl@{get\+Usd2\+Brl}!rates@{rates}}
+\subsubsection[{\texorpdfstring{get\+Usd2\+Brl(self)}{getUsd2Brl(self)}}]{\setlength{\rightskip}{0pt plus 5cm}def rates.\+get\+Usd2\+Brl (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacerates_ae4c7203ef8a919f9cf522581ca00b08a}{}\label{namespacerates_ae4c7203ef8a919f9cf522581ca00b08a}
+
+
+Definition at line \hyperlink{rates_8py_source_l00027}{27} of file \hyperlink{rates_8py_source}{rates.\+py}.
+
+
+\begin{DoxyCode}
+\hypertarget{namespacerates.tex_l00027}{}\hyperlink{namespacerates_ae4c7203ef8a919f9cf522581ca00b08a}{00027}     \textcolor{keyword}{def }\hyperlink{namespacerates_ae4c7203ef8a919f9cf522581ca00b08a}{getUsd2Brl} (self):
+00028         \textcolor{keywordflow}{return} self.usd2brl
+00029     
+\end{DoxyCode}
