@@ -7,4 +7,5 @@ out/
 dummy.json
 Workspace/RemoteSystemsTempFiles
 Workspace/.metadata
-
+.out/
+.spyproject/

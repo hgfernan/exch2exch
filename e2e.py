@@ -34,6 +34,8 @@ class Parameters:
         self.destinationOutput    = None
         self.rawOriginOutputput   = None
         self.rawDestinationOutput = None
+        self.repConclusionOutput  = None
+        self.jsonConclusionOutput = None
         self.verbose              = False
 
     def setSummaryOutput (self, summaryOutput):
@@ -107,6 +109,18 @@ class Parameters:
 
     def getRawDestinationOutput (self):
         return self.rawDestinationOutput 
+    
+    def getRepConclusionOutput (self):
+        return self.repConclusionOutput 
+    
+    def setRepConclusionOutput (self, repConclusionOutput):
+        self.repConclusionOutput = repConclusionOutput
+    
+    def getJsonConclusionOutput (self):
+        return self.jsonConclusionOutput
+    
+    def setJsonConclusionOutput (self, jsonConclusionOutput):
+        self.jsonConclusionOutput = jsonConclusionOutput
 
     def setVerbose (self, verbose):
         self.verbose = verbose
@@ -321,11 +335,34 @@ class Application:
             raise        
 
         result.setAllRatesOutput (allrat_f)
-        
-        args = self.args 
+            
+        try:
+            conc_nam  = self.prefix + '_' + orgExchange.get_exch_prefix ()
+            conc_nam += '_' + dstExchange.get_exch_prefix () + '_' 
+            conc_nam += self.suffix + '.rep'
+            conc_f    = open (conc_nam, 'w')
+            
+        except IOError:
+            # TODO an application specific msg here
+            raise        
+
+        result.setRepConclusionOutput (conc_f)
+            
+        try:
+            conc_nam  = self.prefix + '_' + orgExchange.get_exch_prefix ()
+            conc_nam += '_' + dstExchange.get_exch_prefix () + '_' 
+            conc_nam += self.suffix + '.json'
+            conc_f    = open (conc_nam, 'w')
+            
+        except IOError:
+            # TODO an application specific msg here
+            raise        
+
+        result.setJsonConclusionOutput (conc_f)
         
         self.params = result
-               
+        
+        args = self.args                
         if args.verbose:            
             print ('Verbose output enabled')
             
@@ -365,7 +402,7 @@ class Application:
         # Get origin exchange data
         origin = params.getOrigin ()
         origin.get_ticker ()
-        ticker = origin.mk_ticker ()
+        ticker = origin.mkTicker ()
 
         # Output raw exchange data
         outFile = params.getRawOriginOutput ()
@@ -390,7 +427,7 @@ class Application:
         # Get origin exchange data
         destination = params.getDestination ()
         destination.get_ticker ()
-        ticker = destination.mk_ticker ()
+        ticker = destination.mkTicker ()
 
         # Output raw exchange data
         outFile = params.getRawDestinationOutput ()
@@ -399,7 +436,7 @@ class Application:
         
         outFile.close ()
     
-        # TODO output e2e exchange data
+        # Output e2e exchange data
         outFile = params.getDestinationOutput ()
         line = str (ticker.dumps ()) + "\n"
         outFile.write (line)
@@ -410,8 +447,34 @@ class Application:
         return 
     
     def genExpectations (self):
-        pass
-    
+        params = self.getParameters ()
+
+        # Create the difference
+        origin      = params.getOrigin ()
+        orgTicker   = origin.mkTicker ()
+        destination = params.getDestination ()
+        dstTicker   = destination.mkTicker ()
+        mainRates   = params.getMainRates ()
+        
+        diff = exchange.DiffTracker (mainRates, dstTicker, orgTicker)
+       
+        # Generate the difference
+        diff.calc ()
+        
+        # TODO output the formatted difference report
+        outFile = params.getRepConclusionOutput ()
+        line = str (diff) + "\n"
+        outFile.write (line)
+        
+        outFile.close ()
+        
+        # TODO output the JSON differene report
+        outFile = params.getJsonConclusionOutput ()
+        line = diff.dumps () + "\n"
+        outFile.write (line)
+        
+        outFile.close ()
+            
     def genOutput (self):
         pass
 
@@ -441,8 +504,9 @@ def main (argv):
     app.outDestinationExchange ()
     
     # TODO generate expectations
+    app.genExpectations ()
     
-    # TODO generate output report and JSON files
+    # TODO generate summary
 
     # Normal function termination
     return 0

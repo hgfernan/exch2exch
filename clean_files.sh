@@ -1,3 +1,5 @@
 #! /bin/sh
 
-rm -v -f *.json *.sum *.rat
+# TODO summary and report ?
+
+rm -v -f *.json *.sum *.rat *.rep
