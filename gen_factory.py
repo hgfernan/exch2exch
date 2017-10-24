@@ -36,11 +36,38 @@ class GenFactory:
 #        print (self.types)
         
         self.classes = {}
+        classNames = []
         for cls in types:
-            self.classes[cls.__name__] = cls
+            name = cls.__name__
+            self.classes[name] = cls
+            classNames.append (name.lower ())
+            
+        self.caseSignificant = False
+        
+        hasDuplicates = False
+        classNames.sort ()
+        for ind in range (len (classNames) - 1):
+            if classNames[ind] == classNames[ind]:
+                hasDuplicates = True
+                break
+        
+        if hasDuplicates:
+            self.caseSignificant = True
+            self.classNames = self.classes.keys ()
+            
+        else:
+            self.classNames = classNames
+            
             
     def validClassNames (self):
         return self.classes.keys ()
+    
+    def isValidClassName (self, className):
+        if not self.caseSignificant:
+            className = className.lower ()
+        
+        # Normal function termination
+        return (className in self.classNames)
     
     def genObject (self, name):
         result = None 
@@ -52,6 +79,7 @@ class GenFactory:
                 result.__init__ ()
                 
         return result
+    
         
 def main ():
     gf = GenFactory (Dummy)

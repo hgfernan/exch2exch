@@ -278,11 +278,11 @@ class DiffTracker (Differences):
     def __init__ (self, rates, destination, origin):
         super ().__init__ (rates, destination, origin)
         
-        self.dmax = 0
-        self.dmin = 0
+        self.aMax = 0
+        self.aMin = 0
         
-        self.gmin = 0
-        self.gmax = 0
+        self.rMin = 0
+        self.rMax = 0
         
         self.aBuySell  = 0
         self.rBuySell = 0
@@ -305,8 +305,8 @@ class DiffTracker (Differences):
         self.aMax = dst.getHigh () - org.getLow ()
         self.aMin = dst.getLow () - org.getHigh ()
         
-        self.rMin = 100.0 * self.dmin / org.getHigh ()
-        self.rMax = 100.0 * self.dmax / org.getLow ()
+        self.rMin = 100.0 * self.aMin / org.getHigh ()
+        self.rMax = 100.0 * self.aMax / org.getLow ()
         
         self.aBuySell  = dst.getBuy () - org.getSell ()
         self.rBuySell = 100.0 * self.aBuySell / org.getBuy ()
@@ -656,7 +656,7 @@ class MercadoBitcoin (Exchange):
         return "Mercado Bitcoin"
     
     def get_exch_prefix (self):
-        return "mbt"
+        return "mb"
         
     def getOriginalTicker (self):
         return self.originalTicker

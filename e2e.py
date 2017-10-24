@@ -23,7 +23,7 @@ class Args:
 class Parameters:
     def __init__ (self):
         self.summaryOutput        = None
-        self.conclusionOutput     = None
+#        self.conclusionOutput     = None
         self.mainRates            = None
         self.allRates             = None
         self.mainRatesOutput      = None
@@ -44,11 +44,11 @@ class Parameters:
     def getSummaryOutput (self):
         return self.summaryOutput
 
-    def setConclusionOutput (self, conclusionOutput):
-        self.conclusionOutput = conclusionOutput
-
-    def getConclusionOutput (self):
-        return self.conclusionOutput
+#    def setConclusionOutput (self, conclusionOutput):
+#        self.conclusionOutput = conclusionOutput
+#
+#    def getConclusionOutput (self):
+#        return self.conclusionOutput
 
     def setMainRates (self, mainRates):
         self.mainRates = mainRates
@@ -139,19 +139,19 @@ class Application:
         desc = 'Compare two exchanges for a round operation'
         parser = argparse.ArgumentParser (description = desc)
         
-        desc = 'Summary report (Default is stdout)' 
-        parser.add_argument ('-s', '--summary', required = False,
-                             help = desc)
-        desc = 'File name for the conclusion of the arbitrage'
-        parser.add_argument ('-c', '--conclusion', required = True,
-                             help = desc)
+#        desc = 'Summary report (Default is stdout)' 
+#        parser.add_argument ('-s', '--summary', required = False,
+#                             help = desc)
+#        desc = 'File name for the conclusion of the arbitrage'
+#        parser.add_argument ('-c', '--conclusion', required = True,
+#                             help = desc)
         parser.add_argument ('-m', '--main', metavar = "RATES", 
                              default = 'Google',
                              help = 'Main rate service')
 #        parser.add_argument ('-a', '--alternative', metavar = "RATES",
 #                             default = 'XRates',
 #                             help = 'Alternative rate service')
-        parser.add_argument ('--origin', '-o', metavar = "EXCHANGE",
+        parser.add_argument ('-o', '--origin', metavar = "EXCHANGE",
                              required = True,
                              help = 'Origin exchange')
         parser.add_argument ('-d', '--destination', metavar = "EXCHANGE",
@@ -165,8 +165,8 @@ class Application:
         # TODO complete the copy of cmdline parameters
         
         result = Args ()
-        result.summary     = args.summary 
-        result.conclusion  = args.conclusion 
+#        result.summary     = args.summary 
+#        result.conclusion  = args.conclusion 
         result.mainRates   = args.main 
 #        result.altRates    = args.alternative 
         result.origin      = args.origin 
@@ -181,31 +181,31 @@ class Application:
     def interpretArgs (self):
         result = Parameters ()
         
-        # Open summary file
-        if self.args.summary == None:
-            try:
-                sum_nam =  self.prefix + '_' + self.suffix + '.sum'
-                sum_f = open (sum_nam, 'w')
-                
-            except IOError:
-                # TODO an application specific msg here
-                raise
-        else:
-            sum_f = sys.__stdout__
-            
-        result.setSummaryOutput (sum_f)
-            
-        # TODO Open output files for destination exchange
-        try:
-            cnc_nam  =  self.prefix + '_conclusion'
-            cnc_nam += '_' + self.suffix + '.json'
-            cnc_f = open (cnc_nam, 'w')
-            
-        except IOError:
-            # TODO an application specific msg here
-            raise
-            
-        result.setConclusionOutput (cnc_f)
+#        # Open summary file
+#        if self.args.summary == None:
+#            try:
+#                sum_nam =  self.prefix + '_' + self.suffix + '.sum'
+#                sum_f = open (sum_nam, 'w')
+#                
+#            except IOError:
+#                # TODO an application specific msg here
+#                raise
+#        else:
+#            sum_f = sys.__stdout__
+#            
+#        result.setSummaryOutput (sum_f)
+#            
+#        # TODO Open output files for destination exchange
+#        try:
+#            cnc_nam  =  self.prefix + '_conclusion'
+#            cnc_nam += '_' + self.suffix + '.json'
+#            cnc_f = open (cnc_nam, 'w')
+#            
+#        except IOError:
+#            # TODO an application specific msg here
+#            raise
+#            
+#        result.setConclusionOutput (cnc_f)
             
         # TODO confirm that destinatian and origin exchanges are not equal
         args = self.args 
@@ -216,21 +216,21 @@ class Application:
 
         # TODO get exchange names 
         gfExchange = gen_factory.GenFactory (exchange.Exchange)
-        exch_names = gfExchange.validClassNames ()
-            
+        exchNames = gfExchange.validClassNames ()
+        
         # TODO validate destination exchange
-        if args.destination not in exch_names:
+        if not gfExchange.isValidClassName (args.destination):
             fmt  = 'ERROR: Destination exchange {0} is not a valid '
             fmt += 'exchange name.\n'
             fmt += '\tShould be one of {1}'
-            msg = fmt.format (args.destination, exch_names)
+            msg = fmt.format (args.destination, exchNames)
             raise Exception (msg)
             
         # TODO validate origin exchange
-        if args.origin not in exch_names:
+        if not gfExchange.isValidClassName (args.destination):
             fmt  = 'ERROR: Origin exchange {0} is not a valid exchange name.\n'
             fmt += '\tShould be one of {1}'
-            msg = fmt.format (args.origin, exch_names)
+            msg = fmt.format (args.origin, exchNames)
             raise Exception (msg)
         
         # TODO open connection with destination exchange
@@ -292,8 +292,9 @@ class Application:
         rates_names = gfRates.validClassNames ()
 
         # TODO validate main rate service
-        if args.mainRates not in rates_names:
-            fmt  = 'ERROR: Main rates service {0} is not a valid rates name.\n'
+        if not gfRates.isValidClassName (args.mainRates):
+            fmt  = 'ERROR: Main rates service {0} '
+            fmt += 'is not a valid rates name.\n'
             fmt += '\tShould be one of {1}'
             msg = fmt.format (args.mainRates, rates_names)
             raise Exception (msg)
@@ -337,7 +338,7 @@ class Application:
         result.setAllRatesOutput (allrat_f)
             
         try:
-            conc_nam  = self.prefix + '_' + orgExchange.get_exch_prefix ()
+            conc_nam  = 'conc_' + orgExchange.get_exch_prefix ()
             conc_nam += '_' + dstExchange.get_exch_prefix () + '_' 
             conc_nam += self.suffix + '.rep'
             conc_f    = open (conc_nam, 'w')
@@ -349,7 +350,7 @@ class Application:
         result.setRepConclusionOutput (conc_f)
             
         try:
-            conc_nam  = self.prefix + '_' + orgExchange.get_exch_prefix ()
+            conc_nam  = 'conc_' + orgExchange.get_exch_prefix ()
             conc_nam += '_' + dstExchange.get_exch_prefix () + '_' 
             conc_nam += self.suffix + '.json'
             conc_f    = open (conc_nam, 'w')
