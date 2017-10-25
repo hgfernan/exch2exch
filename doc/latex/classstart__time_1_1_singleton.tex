@@ -1,0 +1,98 @@
+\hypertarget{classstart__time_1_1_singleton}{}\section{start\+\_\+time.\+Singleton Class Reference}
+\label{classstart__time_1_1_singleton}\index{start\+\_\+time.\+Singleton@{start\+\_\+time.\+Singleton}}
+
+
+Inheritance diagram for start\+\_\+time.\+Singleton\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=186pt]{classstart__time_1_1_singleton__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for start\+\_\+time.\+Singleton\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=203pt]{classstart__time_1_1_singleton__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classstart__time_1_1_singleton_af0e193a3b8d4b62db86957e47c60e16f}{\+\_\+\+\_\+call\+\_\+\+\_\+} (self, args, kwargs)
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+dictionary \hyperlink{classstart__time_1_1_singleton_a541fb2b583fdf801b3c77804fe9900b1}{\+\_\+instances} = \{\}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line \hyperlink{start__time_2____init_____8py_source_l00010}{10} of file \hyperlink{start__time_2____init_____8py_source}{\+\_\+\+\_\+init\+\_\+\+\_\+.\+py}.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classstart__time_1_1_singleton_af0e193a3b8d4b62db86957e47c60e16f}\label{classstart__time_1_1_singleton_af0e193a3b8d4b62db86957e47c60e16f}} 
+\index{start\+\_\+time\+::\+Singleton@{start\+\_\+time\+::\+Singleton}!\+\_\+\+\_\+call\+\_\+\+\_\+@{\+\_\+\+\_\+call\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+call\+\_\+\+\_\+@{\+\_\+\+\_\+call\+\_\+\+\_\+}!start\+\_\+time\+::\+Singleton@{start\+\_\+time\+::\+Singleton}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+call\+\_\+\+\_\+()}{\_\_call\_\_()}}
+{\footnotesize\ttfamily def start\+\_\+time.\+Singleton.\+\_\+\+\_\+call\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{args,  }\item[{}]{kwargs }\end{DoxyParamCaption})}
+
+
+
+Definition at line \hyperlink{start__time_2____init_____8py_source_l00012}{12} of file \hyperlink{start__time_2____init_____8py_source}{\+\_\+\+\_\+init\+\_\+\+\_\+.\+py}.
+
+
+
+References \hyperlink{start__time_2____init_____8py_source_l00037}{start\+\_\+time.\+\_\+\+\_\+init\+\_\+\+\_\+()}, and \hyperlink{start__time_2____init_____8py_source_l00011}{start\+\_\+time.\+Singleton.\+\_\+instances}.
+
+
+\begin{DoxyCode}
+00012     \textcolor{keyword}{def }\_\_call\_\_(self, *args, **kwargs):
+00013         cls = self.\_\_class\_\_
+00014         \textcolor{keywordflow}{if} cls \textcolor{keywordflow}{not} \textcolor{keywordflow}{in} cls.\_instances:
+00015             cls.\_instances[cls] = \(\backslash\)
+00016                 super (Singleton, cls).\_\_call\_\_ (self, *args, **kwargs)
+00017         \textcolor{keywordflow}{else}:
+00018             cls.\_instances[cls].\hyperlink{namespacestart__time_a9c9bd378729a13c96a22c8b079ea172c}{\_\_init\_\_}(*args, **kwargs)
+00019                     
+00020         \textcolor{keywordflow}{return} cls.\_instances[cls]
+\end{DoxyCode}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=320pt]{classstart__time_1_1_singleton_af0e193a3b8d4b62db86957e47c60e16f_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classstart__time_1_1_singleton_a541fb2b583fdf801b3c77804fe9900b1}\label{classstart__time_1_1_singleton_a541fb2b583fdf801b3c77804fe9900b1}} 
+\index{start\+\_\+time\+::\+Singleton@{start\+\_\+time\+::\+Singleton}!\+\_\+instances@{\+\_\+instances}}
+\index{\+\_\+instances@{\+\_\+instances}!start\+\_\+time\+::\+Singleton@{start\+\_\+time\+::\+Singleton}}
+\subsubsection{\texorpdfstring{\+\_\+instances}{\_instances}}
+{\footnotesize\ttfamily dictionary start\+\_\+time.\+Singleton.\+\_\+instances = \{\}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Definition at line \hyperlink{start__time_2____init_____8py_source_l00011}{11} of file \hyperlink{start__time_2____init_____8py_source}{\+\_\+\+\_\+init\+\_\+\+\_\+.\+py}.
+
+
+
+Referenced by \hyperlink{start__time_2____init_____8py_source_l00012}{start\+\_\+time.\+Singleton.\+\_\+\+\_\+call\+\_\+\+\_\+()}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/hilton/github/exch2exh/start\+\_\+time/\hyperlink{start__time_2____init_____8py}{\+\_\+\+\_\+init\+\_\+\+\_\+.\+py}\end{DoxyCompactItemize}

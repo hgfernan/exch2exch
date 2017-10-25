@@ -2,7 +2,8 @@
 \label{classexchange_1_1_datetime_encoder}\index{exchange.\+Datetime\+Encoder@{exchange.\+Datetime\+Encoder}}
 
 
-Inheritance diagram for exchange.\+Datetime\+Encoder\+:\nopagebreak
+Inheritance diagram for exchange.\+Datetime\+Encoder\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -11,7 +12,8 @@ Inheritance diagram for exchange.\+Datetime\+Encoder\+:\nopagebreak
 \end{figure}
 
 
-Collaboration diagram for exchange.\+Datetime\+Encoder\+:\nopagebreak
+Collaboration diagram for exchange.\+Datetime\+Encoder\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -28,34 +30,32 @@ def \hyperlink{classexchange_1_1_datetime_encoder_a0bb4f94a13ce6c33e8d68869e282d
 \subsection{Detailed Description}
 
 
-Definition at line \hyperlink{exchange_8py_source_l00028}{28} of file \hyperlink{exchange_8py_source}{exchange.\+py}.
+Definition at line \hyperlink{exchange_8py_source_l00030}{30} of file \hyperlink{exchange_8py_source}{exchange.\+py}.
 
 
 
 \subsection{Member Function Documentation}
+\mbox{\Hypertarget{classexchange_1_1_datetime_encoder_a0bb4f94a13ce6c33e8d68869e282d24f}\label{classexchange_1_1_datetime_encoder_a0bb4f94a13ce6c33e8d68869e282d24f}} 
 \index{exchange\+::\+Datetime\+Encoder@{exchange\+::\+Datetime\+Encoder}!default@{default}}
 \index{default@{default}!exchange\+::\+Datetime\+Encoder@{exchange\+::\+Datetime\+Encoder}}
-\subsubsection[{\texorpdfstring{default(self, obj)}{default(self, obj)}}]{\setlength{\rightskip}{0pt plus 5cm}def exchange.\+Datetime\+Encoder.\+default (
-\begin{DoxyParamCaption}
-\item[{}]{self, }
-\item[{}]{obj}
-\end{DoxyParamCaption}
-)}\hypertarget{classexchange_1_1_datetime_encoder_a0bb4f94a13ce6c33e8d68869e282d24f}{}\label{classexchange_1_1_datetime_encoder_a0bb4f94a13ce6c33e8d68869e282d24f}
+\subsubsection{\texorpdfstring{default()}{default()}}
+{\footnotesize\ttfamily def exchange.\+Datetime\+Encoder.\+default (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{obj }\end{DoxyParamCaption})}
 
 
-Definition at line \hyperlink{exchange_8py_source_l00029}{29} of file \hyperlink{exchange_8py_source}{exchange.\+py}.
+
+Definition at line \hyperlink{exchange_8py_source_l00031}{31} of file \hyperlink{exchange_8py_source}{exchange.\+py}.
 
 
 \begin{DoxyCode}
-\hypertarget{classexchange_1_1_datetime_encoder.tex_l00029}{}\hyperlink{classexchange_1_1_datetime_encoder_a0bb4f94a13ce6c33e8d68869e282d24f}{00029}     \textcolor{keyword}{def }\hyperlink{classexchange_1_1_datetime_encoder_a0bb4f94a13ce6c33e8d68869e282d24f}{default}(self, obj):
-00030         \textcolor{keywordflow}{if} isinstance (obj, datetime.datetime):
-00031             \textcolor{keywordflow}{return} obj.\_\_repr\_\_ ()
-00032             
-00033         \textcolor{comment}{# Let the base class default method raise the TypeError}
-00034         \textcolor{keywordflow}{return} json.JSONEncoder.default(self, obj)
-00035 
-00036 \textcolor{comment}{# Standard way of packing oderdebook information across all exchange classes}
-00037         
+00031     \textcolor{keyword}{def }default(self, obj):
+00032         \textcolor{keywordflow}{if} isinstance (obj, datetime.datetime):
+00033             \textcolor{keywordflow}{return} obj.\_\_repr\_\_ ()
+00034             
+00035         \textcolor{comment}{# Let the base class default method raise the TypeError}
+00036         \textcolor{keywordflow}{return} json.JSONEncoder.default(self, obj)
+00037 
+00038 \textcolor{comment}{# Standard way of packing oderdebook information across all exchange classes}
+00039         
 \end{DoxyCode}
 
 

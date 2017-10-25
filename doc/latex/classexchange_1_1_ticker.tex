@@ -2,11 +2,12 @@
 \label{classexchange_1_1_ticker}\index{exchange.\+Ticker@{exchange.\+Ticker}}
 
 
-Collaboration diagram for exchange.\+Ticker\+:\nopagebreak
+Collaboration diagram for exchange.\+Ticker\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=169pt]{classexchange_1_1_ticker__coll__graph}
+\includegraphics[width=174pt]{classexchange_1_1_ticker__coll__graph}
 \end{center}
 \end{figure}
 \subsection*{Public Member Functions}
@@ -20,11 +21,25 @@ def \hyperlink{classexchange_1_1_ticker_a2aa851437f953462f8e8bce7ca05c3ec}{conve
 \item 
 def \hyperlink{classexchange_1_1_ticker_a53148d54a0b9b577870db785fb4e381e}{dumps} (self)
 \item 
+def \hyperlink{classexchange_1_1_ticker_a79d8a00f91a77b91b7126086e4beb569}{get\+Buy} (self)
+\item 
+def \hyperlink{classexchange_1_1_ticker_a11ddd0cbd2eaa9543ed7aec6ec78bcb1}{get\+Coin\+Pair} (self)
+\item 
 def \hyperlink{classexchange_1_1_ticker_aaa2f7d66782b9405c286e98bfb281d45}{get\+Dt} (self)
 \item 
-def \hyperlink{classexchange_1_1_ticker_ab31537c5a057f9a47839e2d28411c1cf}{get\+Exch} (self)
+def \hyperlink{classexchange_1_1_ticker_a2e5bb124c8f6dcad031ef9a023079081}{get\+Exch\+Name} (self)
 \item 
-def \hyperlink{classexchange_1_1_ticker_a3600faedb720e664d6fdc89415c01678}{get\+Pair} (self)
+def \hyperlink{classexchange_1_1_ticker_a56eafe93405eb1e7192cc6d0c8497ebc}{get\+High} (self)
+\item 
+def \hyperlink{classexchange_1_1_ticker_a216982e99134953ee6e65d2243c3d793}{get\+Last} (self)
+\item 
+def \hyperlink{classexchange_1_1_ticker_ad398514a81ef5e8e2c71b610766b3d14}{get\+Low} (self)
+\item 
+def \hyperlink{classexchange_1_1_ticker_a309466a5a30813e7feda0f001d633ac9}{get\+Sell} (self)
+\item 
+def \hyperlink{classexchange_1_1_ticker_a70ccf798c847515b67cc474ec35e933c}{get\+Start\+Dt} (self)
+\item 
+def \hyperlink{classexchange_1_1_ticker_aaee4b5454a701e8f468ccca714e7ee59}{get\+Volume} (self)
 \item 
 def \hyperlink{classexchange_1_1_ticker_aba1398da3113a7ff17b2496ce92c7238}{mk\+\_\+tuple} (self)
 \end{DoxyCompactItemize}
@@ -47,6 +62,8 @@ def \hyperlink{classexchange_1_1_ticker_aba1398da3113a7ff17b2496ce92c7238}{mk\+\
 \item 
 \hyperlink{classexchange_1_1_ticker_a5ba9e257d2ed28f02528a37d9ebd793e}{sell}
 \item 
+\hyperlink{classexchange_1_1_ticker_a543696a29fac37ff29a3f6ef25cccd12}{start\+Dt}
+\item 
 \hyperlink{classexchange_1_1_ticker_a24c0dd396aebc54c06e429a68c964ea3}{vol}
 \end{DoxyCompactItemize}
 
@@ -54,27 +71,17 @@ def \hyperlink{classexchange_1_1_ticker_aba1398da3113a7ff17b2496ce92c7238}{mk\+\
 \subsection{Detailed Description}
 
 
-Definition at line \hyperlink{exchange_8py_source_l00043}{43} of file \hyperlink{exchange_8py_source}{exchange.\+py}.
+Definition at line \hyperlink{exchange_8py_source_l00045}{45} of file \hyperlink{exchange_8py_source}{exchange.\+py}.
 
 
 
 \subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classexchange_1_1_ticker_a4a8c99ada461a4aeb960c14020a47736}\label{classexchange_1_1_ticker_a4a8c99ada461a4aeb960c14020a47736}} 
 \index{exchange\+::\+Ticker@{exchange\+::\+Ticker}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
 \index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!exchange\+::\+Ticker@{exchange\+::\+Ticker}}
-\subsubsection[{\texorpdfstring{\+\_\+\+\_\+init\+\_\+\+\_\+(self, exch, pair, dt, buy, sell, high, low, last, vol)}{__init__(self, exch, pair, dt, buy, sell, high, low, last, vol)}}]{\setlength{\rightskip}{0pt plus 5cm}def exchange.\+Ticker.\+\_\+\+\_\+init\+\_\+\+\_\+ (
-\begin{DoxyParamCaption}
-\item[{}]{self, }
-\item[{}]{exch, }
-\item[{}]{pair, }
-\item[{}]{dt, }
-\item[{}]{buy, }
-\item[{}]{sell, }
-\item[{}]{high, }
-\item[{}]{low, }
-\item[{}]{last, }
-\item[{}]{vol}
-\end{DoxyParamCaption}
-)}\hypertarget{classexchange_1_1_ticker_a4a8c99ada461a4aeb960c14020a47736}{}\label{classexchange_1_1_ticker_a4a8c99ada461a4aeb960c14020a47736}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+init\+\_\+\+\_\+()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def exchange.\+Ticker.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{exch,  }\item[{}]{pair,  }\item[{}]{dt,  }\item[{}]{buy,  }\item[{}]{sell,  }\item[{}]{high,  }\item[{}]{low,  }\item[{}]{last,  }\item[{}]{vol }\end{DoxyParamCaption})}
+
 
 
 Constructor. 
@@ -102,322 +109,498 @@ Constructor.
 \end{DoxyParams}
 
 
-Definition at line \hyperlink{exchange_8py_source_l00054}{54} of file \hyperlink{exchange_8py_source}{exchange.\+py}.
+Definition at line \hyperlink{exchange_8py_source_l00056}{56} of file \hyperlink{exchange_8py_source}{exchange.\+py}.
 
 
 \begin{DoxyCode}
-\hypertarget{classexchange_1_1_ticker.tex_l00054}{}\hyperlink{classexchange_1_1_ticker_a4a8c99ada461a4aeb960c14020a47736}{00054}     \textcolor{keyword}{def }\hyperlink{classexchange_1_1_ticker_a4a8c99ada461a4aeb960c14020a47736}{\_\_init\_\_} (self, exch, pair, dt, buy, sell, high, low, last, vol):
-\hypertarget{classexchange_1_1_ticker.tex_l00055}{}\hyperlink{classexchange_1_1_ticker_a33f33fe9a12da3ce52938afdc577c061}{00055}         self.\hyperlink{classexchange_1_1_ticker_a33f33fe9a12da3ce52938afdc577c061}{exch} = exch
-\hypertarget{classexchange_1_1_ticker.tex_l00056}{}\hyperlink{classexchange_1_1_ticker_a382f9199d13a7b5929a26065fad4e491}{00056}         self.\hyperlink{classexchange_1_1_ticker_a382f9199d13a7b5929a26065fad4e491}{pair} = pair
-\hypertarget{classexchange_1_1_ticker.tex_l00057}{}\hyperlink{classexchange_1_1_ticker_a45e3162d9956cee797f21d93c44c6baf}{00057}         self.\hyperlink{classexchange_1_1_ticker_a45e3162d9956cee797f21d93c44c6baf}{dt}   = dt
-\hypertarget{classexchange_1_1_ticker.tex_l00058}{}\hyperlink{classexchange_1_1_ticker_a2ca48c3fa9aba92241392a05bef39324}{00058}         self.\hyperlink{classexchange_1_1_ticker_a2ca48c3fa9aba92241392a05bef39324}{buy}  = buy 
-\hypertarget{classexchange_1_1_ticker.tex_l00059}{}\hyperlink{classexchange_1_1_ticker_a5ba9e257d2ed28f02528a37d9ebd793e}{00059}         self.\hyperlink{classexchange_1_1_ticker_a5ba9e257d2ed28f02528a37d9ebd793e}{sell} = sell 
-\hypertarget{classexchange_1_1_ticker.tex_l00060}{}\hyperlink{classexchange_1_1_ticker_aace381ca15468df6a40e8d86b7710a7f}{00060}         self.\hyperlink{classexchange_1_1_ticker_aace381ca15468df6a40e8d86b7710a7f}{high} = high 
-\hypertarget{classexchange_1_1_ticker.tex_l00061}{}\hyperlink{classexchange_1_1_ticker_a1c1f26a47a82fc799fcebf158e104405}{00061}         self.\hyperlink{classexchange_1_1_ticker_a1c1f26a47a82fc799fcebf158e104405}{low}  = low 
-\hypertarget{classexchange_1_1_ticker.tex_l00062}{}\hyperlink{classexchange_1_1_ticker_add7c2d95fa790dcdffddae2e584ce5f5}{00062}         self.\hyperlink{classexchange_1_1_ticker_add7c2d95fa790dcdffddae2e584ce5f5}{last} = last 
-\hypertarget{classexchange_1_1_ticker.tex_l00063}{}\hyperlink{classexchange_1_1_ticker_a24c0dd396aebc54c06e429a68c964ea3}{00063}         self.\hyperlink{classexchange_1_1_ticker_a24c0dd396aebc54c06e429a68c964ea3}{vol}  = vol 
-00064         
+00056     \textcolor{keyword}{def }\hyperlink{namespacestart__time_a9c9bd378729a13c96a22c8b079ea172c}{\_\_init\_\_} (self, exch, pair, dt, buy, sell, high, low, last, vol):
+00057         self.exch = exch
+00058         self.pair = pair
+00059         self.dt   = dt
+00060         self.buy  = buy 
+00061         self.sell = sell 
+00062         self.high = high 
+00063         self.low  = low 
+00064         self.last = last 
+00065         self.vol  = vol
+00066         
+00067         self.startDt = start\_time.getTimeAsInt ()
+00068         
 \end{DoxyCode}
 
 
 \subsection{Member Function Documentation}
+\mbox{\Hypertarget{classexchange_1_1_ticker_af91836a1c408f54dda95d9865cefba45}\label{classexchange_1_1_ticker_af91836a1c408f54dda95d9865cefba45}} 
 \index{exchange\+::\+Ticker@{exchange\+::\+Ticker}!\+\_\+\+\_\+str\+\_\+\+\_\+@{\+\_\+\+\_\+str\+\_\+\+\_\+}}
 \index{\+\_\+\+\_\+str\+\_\+\+\_\+@{\+\_\+\+\_\+str\+\_\+\+\_\+}!exchange\+::\+Ticker@{exchange\+::\+Ticker}}
-\subsubsection[{\texorpdfstring{\+\_\+\+\_\+str\+\_\+\+\_\+(self)}{__str__(self)}}]{\setlength{\rightskip}{0pt plus 5cm}def exchange.\+Ticker.\+\_\+\+\_\+str\+\_\+\+\_\+ (
-\begin{DoxyParamCaption}
-\item[{}]{self}
-\end{DoxyParamCaption}
-)}\hypertarget{classexchange_1_1_ticker_af91836a1c408f54dda95d9865cefba45}{}\label{classexchange_1_1_ticker_af91836a1c408f54dda95d9865cefba45}
-
-
-Definition at line \hyperlink{exchange_8py_source_l00111}{111} of file \hyperlink{exchange_8py_source}{exchange.\+py}.
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+str\+\_\+\+\_\+()}{\_\_str\_\_()}}
+{\footnotesize\ttfamily def exchange.\+Ticker.\+\_\+\+\_\+str\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
 
 
 
-References \hyperlink{exchange_8py_source_l00058}{exchange.\+Ticker.\+buy}, \hyperlink{exch2exch_8py_source_l00059}{exch2exch.\+Xbt\+Prices.\+buy}, \hyperlink{exch2exch_8py_source_l00028}{exch2exch.\+Rates.\+dt}, \hyperlink{exch2exch_8py_source_l00057}{exch2exch.\+Xbt\+Prices.\+dt}, \hyperlink{exchange_8py_source_l00057}{exchange.\+Ticker.\+dt}, \hyperlink{exchange_8py_source_l00055}{exchange.\+Ticker.\+exch}, \hyperlink{exch2exch_8py_source_l00064}{exch2exch.\+Xbt\+Prices.\+exch}, \hyperlink{exchange_8py_source_l00060}{exchange.\+Ticker.\+high}, \hyperlink{exch2exch_8py_source_l00061}{exch2exch.\+Xbt\+Prices.\+high}, \hyperlink{exchange_8py_source_l00062}{exchange.\+Ticker.\+last}, \hyperlink{exch2exch_8py_source_l00063}{exch2exch.\+Xbt\+Prices.\+last}, \hyperlink{exchange_8py_source_l00061}{exchange.\+Ticker.\+low}, \hyperlink{exch2exch_8py_source_l00062}{exch2exch.\+Xbt\+Prices.\+low}, \hyperlink{exchange_8py_source_l00056}{exchange.\+Ticker.\+pair}, \hyperlink{exch2exch_8py_source_l00058}{exch2exch.\+Xbt\+Prices.\+sell}, \hyperlink{exchange_8py_source_l00059}{exchange.\+Ticker.\+sell}, and \hyperlink{exchange_8py_source_l00063}{exchange.\+Ticker.\+vol}.
+Definition at line \hyperlink{exchange_8py_source_l00136}{136} of file \hyperlink{exchange_8py_source}{exchange.\+py}.
+
+
+
+References \hyperlink{exch2exch_8py_source_l00059}{exch2exch.\+Xbt\+Prices.\+buy}, \hyperlink{exchange_8py_source_l00060}{exchange.\+Ticker.\+buy}, \hyperlink{exch2exch_8py_source_l00028}{exch2exch.\+Rates.\+dt}, \hyperlink{exch2exch_8py_source_l00057}{exch2exch.\+Xbt\+Prices.\+dt}, \hyperlink{exchange_8py_source_l00059}{exchange.\+Ticker.\+dt}, \hyperlink{exchange_8py_source_l00057}{exchange.\+Ticker.\+exch}, \hyperlink{exch2exch_8py_source_l00064}{exch2exch.\+Xbt\+Prices.\+exch}, \hyperlink{exch2exch_8py_source_l00061}{exch2exch.\+Xbt\+Prices.\+high}, \hyperlink{exchange_8py_source_l00062}{exchange.\+Ticker.\+high}, \hyperlink{exch2exch_8py_source_l00063}{exch2exch.\+Xbt\+Prices.\+last}, \hyperlink{exchange_8py_source_l00064}{exchange.\+Ticker.\+last}, \hyperlink{exch2exch_8py_source_l00062}{exch2exch.\+Xbt\+Prices.\+low}, \hyperlink{exchange_8py_source_l00063}{exchange.\+Ticker.\+low}, \hyperlink{exchange_8py_source_l00058}{exchange.\+Ticker.\+pair}, \hyperlink{exch2exch_8py_source_l00058}{exch2exch.\+Xbt\+Prices.\+sell}, \hyperlink{exchange_8py_source_l00061}{exchange.\+Ticker.\+sell}, \hyperlink{exchange_8py_source_l00067}{exchange.\+Ticker.\+start\+Dt}, and \hyperlink{exchange_8py_source_l00065}{exchange.\+Ticker.\+vol}.
 
 
 \begin{DoxyCode}
-\hypertarget{classexchange_1_1_ticker.tex_l00111}{}\hyperlink{classexchange_1_1_ticker_af91836a1c408f54dda95d9865cefba45}{00111}     \textcolor{keyword}{def }\hyperlink{classexchange_1_1_ticker_af91836a1c408f54dda95d9865cefba45}{\_\_str\_\_} (self):
-00112         result = \textcolor{stringliteral}{''}
-00113         
-00114         fmt    = \textcolor{stringliteral}{'Exchange: \{0\}, coin pair \{1\}, '} 
-00115         result = fmt.format (self.\hyperlink{classexchange_1_1_ticker_a33f33fe9a12da3ce52938afdc577c061}{exch}, self.\hyperlink{classexchange_1_1_ticker_a382f9199d13a7b5929a26065fad4e491}{pair})
-00116         
-00117         gm = time.gmtime (self.\hyperlink{classexchange_1_1_ticker_a45e3162d9956cee797f21d93c44c6baf}{dt})
-00118         result += \textcolor{stringliteral}{'timestamp: '} + time.strftime (\textcolor{stringliteral}{'%Y-%m-%d %H:%M:%S'}, gm) 
-00119         result += \textcolor{stringliteral}{", "}
-00120         
-00121         fmt     = \textcolor{stringliteral}{'buy/sell: \{0:.8f\}/\{1:.8f\}, '}
-00122         result += fmt.format (self.\hyperlink{classexchange_1_1_ticker_a2ca48c3fa9aba92241392a05bef39324}{buy}, self.\hyperlink{classexchange_1_1_ticker_a5ba9e257d2ed28f02528a37d9ebd793e}{sell})
-00123         
-00124         fmt     = \textcolor{stringliteral}{'high/low: \{0:.8f\}/\{1:.8f\}, '}
-00125         result += fmt.format (self.\hyperlink{classexchange_1_1_ticker_aace381ca15468df6a40e8d86b7710a7f}{high}, self.\hyperlink{classexchange_1_1_ticker_a1c1f26a47a82fc799fcebf158e104405}{low})
-00126         
-00127         fmt     = \textcolor{stringliteral}{'last: \{0:.8f\}, volume: \{1:.8f\}'}
-00128         result += fmt.format (self.\hyperlink{classexchange_1_1_ticker_add7c2d95fa790dcdffddae2e584ce5f5}{last}, self.\hyperlink{classexchange_1_1_ticker_a24c0dd396aebc54c06e429a68c964ea3}{vol})
-00129         
-00130         \textcolor{comment}{# Normal function termination}
-00131         \textcolor{keywordflow}{return} result
-00132 
-00133 \textcolor{comment}{# Standard way of packing trades information across all exchange classes}
-00134         
-00135         
+00136     \textcolor{keyword}{def }\hyperlink{namespacerates_a2f1a70c33ee9e255938e4c19fd207264}{\_\_str\_\_} (self):
+00137         result = \textcolor{stringliteral}{''}
+00138         
+00139         fmt    = \textcolor{stringliteral}{'\{0\}, coin pair \{1\}\(\backslash\)n'} 
+00140         result = fmt.format (self.exch, self.pair)
+00141         
+00142         gm = time.gmtime (self.dt)
+00143         result += \textcolor{stringliteral}{'\(\backslash\)ttimestamp: '} + time.strftime (\textcolor{stringliteral}{'%Y-%m-%d %H:%M:%S'}, gm) 
+00144         gm = time.gmtime (self.startDt)
+00145         result += \textcolor{stringliteral}{", program started: "} + \(\backslash\)
+00146             time.strftime (\textcolor{stringliteral}{'%Y-%m-%d %H:%M:%S'}, gm) 
+00147         result += \textcolor{stringliteral}{"\(\backslash\)n"}
+00148         
+00149         fmt     = \textcolor{stringliteral}{'\(\backslash\)tbuy/sell: \{0:.8f\}/\{1:.8f\}, '}
+00150         result += fmt.format (self.buy, self.sell)
+00151         
+00152         fmt     = \textcolor{stringliteral}{'high/low: \{0:.8f\}/\{1:.8f\}, '}
+00153         result += fmt.format (self.high, self.low)
+00154         
+00155         fmt     = \textcolor{stringliteral}{'last: \{0:.8f\}, volume: \{1:.8f\}\(\backslash\)n'}
+00156         result += fmt.format (self.last, self.vol)
+00157         
+00158         \textcolor{comment}{# Normal function termination}
+00159         \textcolor{keywordflow}{return} result
+00160 
+00161 \textcolor{comment}{# Standard way of packing trades information across all exchange classes}
+00162         
+00163         
 \end{DoxyCode}
+\mbox{\Hypertarget{classexchange_1_1_ticker_a2aa851437f953462f8e8bce7ca05c3ec}\label{classexchange_1_1_ticker_a2aa851437f953462f8e8bce7ca05c3ec}} 
 \index{exchange\+::\+Ticker@{exchange\+::\+Ticker}!convert@{convert}}
 \index{convert@{convert}!exchange\+::\+Ticker@{exchange\+::\+Ticker}}
-\subsubsection[{\texorpdfstring{convert(self, rate, destination)}{convert(self, rate, destination)}}]{\setlength{\rightskip}{0pt plus 5cm}def exchange.\+Ticker.\+convert (
-\begin{DoxyParamCaption}
-\item[{}]{self, }
-\item[{}]{rate, }
-\item[{}]{destination}
-\end{DoxyParamCaption}
-)}\hypertarget{classexchange_1_1_ticker_a2aa851437f953462f8e8bce7ca05c3ec}{}\label{classexchange_1_1_ticker_a2aa851437f953462f8e8bce7ca05c3ec}
-
-
-Definition at line \hyperlink{exchange_8py_source_l00065}{65} of file \hyperlink{exchange_8py_source}{exchange.\+py}.
+\subsubsection{\texorpdfstring{convert()}{convert()}}
+{\footnotesize\ttfamily def exchange.\+Ticker.\+convert (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{rate,  }\item[{}]{destination }\end{DoxyParamCaption})}
 
 
 
-References \hyperlink{exchange_8py_source_l00058}{exchange.\+Ticker.\+buy}, \hyperlink{exch2exch_8py_source_l00059}{exch2exch.\+Xbt\+Prices.\+buy}, \hyperlink{exch2exch_8py_source_l00028}{exch2exch.\+Rates.\+dt}, \hyperlink{exch2exch_8py_source_l00057}{exch2exch.\+Xbt\+Prices.\+dt}, \hyperlink{exchange_8py_source_l00057}{exchange.\+Ticker.\+dt}, \hyperlink{exchange_8py_source_l00055}{exchange.\+Ticker.\+exch}, \hyperlink{exch2exch_8py_source_l00064}{exch2exch.\+Xbt\+Prices.\+exch}, \hyperlink{exchange_8py_source_l00060}{exchange.\+Ticker.\+high}, \hyperlink{exch2exch_8py_source_l00061}{exch2exch.\+Xbt\+Prices.\+high}, \hyperlink{exchange_8py_source_l00062}{exchange.\+Ticker.\+last}, \hyperlink{exch2exch_8py_source_l00063}{exch2exch.\+Xbt\+Prices.\+last}, \hyperlink{exchange_8py_source_l00061}{exchange.\+Ticker.\+low}, \hyperlink{exch2exch_8py_source_l00062}{exch2exch.\+Xbt\+Prices.\+low}, \hyperlink{exch2exch_8py_source_l00058}{exch2exch.\+Xbt\+Prices.\+sell}, \hyperlink{exchange_8py_source_l00059}{exchange.\+Ticker.\+sell}, and \hyperlink{exchange_8py_source_l00063}{exchange.\+Ticker.\+vol}.
+Definition at line \hyperlink{exchange_8py_source_l00069}{69} of file \hyperlink{exchange_8py_source}{exchange.\+py}.
+
+
+
+References \hyperlink{exch2exch_8py_source_l00059}{exch2exch.\+Xbt\+Prices.\+buy}, \hyperlink{exchange_8py_source_l00060}{exchange.\+Ticker.\+buy}, \hyperlink{exch2exch_8py_source_l00028}{exch2exch.\+Rates.\+dt}, \hyperlink{exch2exch_8py_source_l00057}{exch2exch.\+Xbt\+Prices.\+dt}, \hyperlink{exchange_8py_source_l00059}{exchange.\+Ticker.\+dt}, \hyperlink{exchange_8py_source_l00057}{exchange.\+Ticker.\+exch}, \hyperlink{exch2exch_8py_source_l00064}{exch2exch.\+Xbt\+Prices.\+exch}, \hyperlink{exch2exch_8py_source_l00061}{exch2exch.\+Xbt\+Prices.\+high}, \hyperlink{exchange_8py_source_l00062}{exchange.\+Ticker.\+high}, \hyperlink{exch2exch_8py_source_l00063}{exch2exch.\+Xbt\+Prices.\+last}, \hyperlink{exchange_8py_source_l00064}{exchange.\+Ticker.\+last}, \hyperlink{exch2exch_8py_source_l00062}{exch2exch.\+Xbt\+Prices.\+low}, \hyperlink{exchange_8py_source_l00063}{exchange.\+Ticker.\+low}, \hyperlink{exch2exch_8py_source_l00058}{exch2exch.\+Xbt\+Prices.\+sell}, \hyperlink{exchange_8py_source_l00061}{exchange.\+Ticker.\+sell}, and \hyperlink{exchange_8py_source_l00065}{exchange.\+Ticker.\+vol}.
 
 
 \begin{DoxyCode}
-\hypertarget{classexchange_1_1_ticker.tex_l00065}{}\hyperlink{classexchange_1_1_ticker_a2aa851437f953462f8e8bce7ca05c3ec}{00065}     \textcolor{keyword}{def }\hyperlink{classexchange_1_1_ticker_a2aa851437f953462f8e8bce7ca05c3ec}{convert} (self, rate, destination):
-00066         \textcolor{comment}{# TODO create a truly generic way of convert currencies}
-00067     
-00068         exch = self.\hyperlink{classexchange_1_1_ticker_a33f33fe9a12da3ce52938afdc577c061}{exch}
-00069         dt   = self.\hyperlink{classexchange_1_1_ticker_a45e3162d9956cee797f21d93c44c6baf}{dt}   * rate
-00070         buy  = self.\hyperlink{classexchange_1_1_ticker_a2ca48c3fa9aba92241392a05bef39324}{buy}  * rate
-00071         sell = self.\hyperlink{classexchange_1_1_ticker_a5ba9e257d2ed28f02528a37d9ebd793e}{sell} * rate
-00072         high = self.\hyperlink{classexchange_1_1_ticker_aace381ca15468df6a40e8d86b7710a7f}{high} * rate
-00073         low  = self.\hyperlink{classexchange_1_1_ticker_a1c1f26a47a82fc799fcebf158e104405}{low}  * rate
-00074         last = self.\hyperlink{classexchange_1_1_ticker_add7c2d95fa790dcdffddae2e584ce5f5}{last} * rate
-00075         vol  = self.\hyperlink{classexchange_1_1_ticker_a24c0dd396aebc54c06e429a68c964ea3}{vol}  * rate
-00076 
-00077         \textcolor{comment}{# TODO compare source and target}
-00078         pair = destination
-00079         
-00080         \textcolor{comment}{# TODO otherwise throw exception }
-00081         
-00082         result = Ticker (exch, pair, dt, buy, sell, high, low, last, vol)
+00069     \textcolor{keyword}{def }convert (self, rate, destination):
+00070         \textcolor{comment}{# TODO create a truly generic way of convert currencies}
+00071     
+00072         exch = self.exch
+00073         dt   = self.dt   * rate
+00074         buy  = self.buy  * rate
+00075         sell = self.sell * rate
+00076         high = self.high * rate
+00077         low  = self.low  * rate
+00078         last = self.last * rate
+00079         vol  = self.vol  * rate
+00080 
+00081         \textcolor{comment}{# TODO compare source and target}
+00082         pair = destination
 00083         
-00084         \textcolor{comment}{# Normal function termination}
-00085         \textcolor{keywordflow}{return} result 
-00086         
+00084         \textcolor{comment}{# TODO otherwise throw exception }
+00085         
+00086         result = Ticker (exch, pair, dt, buy, sell, high, low, last, vol)
+00087         
+00088         \textcolor{comment}{# Normal function termination}
+00089         \textcolor{keywordflow}{return} result 
+00090         
 \end{DoxyCode}
+\mbox{\Hypertarget{classexchange_1_1_ticker_a53148d54a0b9b577870db785fb4e381e}\label{classexchange_1_1_ticker_a53148d54a0b9b577870db785fb4e381e}} 
 \index{exchange\+::\+Ticker@{exchange\+::\+Ticker}!dumps@{dumps}}
 \index{dumps@{dumps}!exchange\+::\+Ticker@{exchange\+::\+Ticker}}
-\subsubsection[{\texorpdfstring{dumps(self)}{dumps(self)}}]{\setlength{\rightskip}{0pt plus 5cm}def exchange.\+Ticker.\+dumps (
-\begin{DoxyParamCaption}
-\item[{}]{self}
-\end{DoxyParamCaption}
-)}\hypertarget{classexchange_1_1_ticker_a53148d54a0b9b577870db785fb4e381e}{}\label{classexchange_1_1_ticker_a53148d54a0b9b577870db785fb4e381e}
+\subsubsection{\texorpdfstring{dumps()}{dumps()}}
+{\footnotesize\ttfamily def exchange.\+Ticker.\+dumps (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Definition at line \hyperlink{exchange_8py_source_l00128}{128} of file \hyperlink{exchange_8py_source}{exchange.\+py}.
+
+
+\begin{DoxyCode}
+00128     \textcolor{keyword}{def }dumps (self):
+00129         result = \textcolor{stringliteral}{''}
+00130         
+00131         result = json.dumps (self.\_\_dict\_\_)       
+00132         
+00133         \textcolor{comment}{# Normal function termination}
+00134         \textcolor{keywordflow}{return} result
+00135     
+\end{DoxyCode}
+\mbox{\Hypertarget{classexchange_1_1_ticker_a79d8a00f91a77b91b7126086e4beb569}\label{classexchange_1_1_ticker_a79d8a00f91a77b91b7126086e4beb569}} 
+\index{exchange\+::\+Ticker@{exchange\+::\+Ticker}!get\+Buy@{get\+Buy}}
+\index{get\+Buy@{get\+Buy}!exchange\+::\+Ticker@{exchange\+::\+Ticker}}
+\subsubsection{\texorpdfstring{get\+Buy()}{getBuy()}}
+{\footnotesize\ttfamily def exchange.\+Ticker.\+get\+Buy (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Definition at line \hyperlink{exchange_8py_source_l00100}{100} of file \hyperlink{exchange_8py_source}{exchange.\+py}.
+
+
+
+References \hyperlink{exch2exch_8py_source_l00059}{exch2exch.\+Xbt\+Prices.\+buy}, and \hyperlink{exchange_8py_source_l00060}{exchange.\+Ticker.\+buy}.
+
+
+\begin{DoxyCode}
+00100     \textcolor{keyword}{def }getBuy (self):
+00101         \textcolor{keywordflow}{return} self.buy
+00102     
+\end{DoxyCode}
+\mbox{\Hypertarget{classexchange_1_1_ticker_a11ddd0cbd2eaa9543ed7aec6ec78bcb1}\label{classexchange_1_1_ticker_a11ddd0cbd2eaa9543ed7aec6ec78bcb1}} 
+\index{exchange\+::\+Ticker@{exchange\+::\+Ticker}!get\+Coin\+Pair@{get\+Coin\+Pair}}
+\index{get\+Coin\+Pair@{get\+Coin\+Pair}!exchange\+::\+Ticker@{exchange\+::\+Ticker}}
+\subsubsection{\texorpdfstring{get\+Coin\+Pair()}{getCoinPair()}}
+{\footnotesize\ttfamily def exchange.\+Ticker.\+get\+Coin\+Pair (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Definition at line \hyperlink{exchange_8py_source_l00094}{94} of file \hyperlink{exchange_8py_source}{exchange.\+py}.
+
+
+
+References \hyperlink{exchange_8py_source_l00058}{exchange.\+Ticker.\+pair}.
+
+
+\begin{DoxyCode}
+00094     \textcolor{keyword}{def }getCoinPair (self):
+00095         \textcolor{keywordflow}{return} self.pair
+00096         
+\end{DoxyCode}
+\mbox{\Hypertarget{classexchange_1_1_ticker_aaa2f7d66782b9405c286e98bfb281d45}\label{classexchange_1_1_ticker_aaa2f7d66782b9405c286e98bfb281d45}} 
+\index{exchange\+::\+Ticker@{exchange\+::\+Ticker}!get\+Dt@{get\+Dt}}
+\index{get\+Dt@{get\+Dt}!exchange\+::\+Ticker@{exchange\+::\+Ticker}}
+\subsubsection{\texorpdfstring{get\+Dt()}{getDt()}}
+{\footnotesize\ttfamily def exchange.\+Ticker.\+get\+Dt (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Definition at line \hyperlink{exchange_8py_source_l00097}{97} of file \hyperlink{exchange_8py_source}{exchange.\+py}.
+
+
+
+References \hyperlink{exch2exch_8py_source_l00028}{exch2exch.\+Rates.\+dt}, \hyperlink{exch2exch_8py_source_l00057}{exch2exch.\+Xbt\+Prices.\+dt}, and \hyperlink{exchange_8py_source_l00059}{exchange.\+Ticker.\+dt}.
+
+
+\begin{DoxyCode}
+00097     \textcolor{keyword}{def }getDt (self):
+00098         \textcolor{keywordflow}{return} self.dt
+00099     
+\end{DoxyCode}
+\mbox{\Hypertarget{classexchange_1_1_ticker_a2e5bb124c8f6dcad031ef9a023079081}\label{classexchange_1_1_ticker_a2e5bb124c8f6dcad031ef9a023079081}} 
+\index{exchange\+::\+Ticker@{exchange\+::\+Ticker}!get\+Exch\+Name@{get\+Exch\+Name}}
+\index{get\+Exch\+Name@{get\+Exch\+Name}!exchange\+::\+Ticker@{exchange\+::\+Ticker}}
+\subsubsection{\texorpdfstring{get\+Exch\+Name()}{getExchName()}}
+{\footnotesize\ttfamily def exchange.\+Ticker.\+get\+Exch\+Name (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Definition at line \hyperlink{exchange_8py_source_l00091}{91} of file \hyperlink{exchange_8py_source}{exchange.\+py}.
+
+
+
+References \hyperlink{exchange_8py_source_l00057}{exchange.\+Ticker.\+exch}, and \hyperlink{exch2exch_8py_source_l00064}{exch2exch.\+Xbt\+Prices.\+exch}.
+
+
+\begin{DoxyCode}
+00091     \textcolor{keyword}{def }getExchName (self):
+00092         \textcolor{keywordflow}{return} self.exch
+00093         
+\end{DoxyCode}
+\mbox{\Hypertarget{classexchange_1_1_ticker_a56eafe93405eb1e7192cc6d0c8497ebc}\label{classexchange_1_1_ticker_a56eafe93405eb1e7192cc6d0c8497ebc}} 
+\index{exchange\+::\+Ticker@{exchange\+::\+Ticker}!get\+High@{get\+High}}
+\index{get\+High@{get\+High}!exchange\+::\+Ticker@{exchange\+::\+Ticker}}
+\subsubsection{\texorpdfstring{get\+High()}{getHigh()}}
+{\footnotesize\ttfamily def exchange.\+Ticker.\+get\+High (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Definition at line \hyperlink{exchange_8py_source_l00106}{106} of file \hyperlink{exchange_8py_source}{exchange.\+py}.
+
+
+
+References \hyperlink{exch2exch_8py_source_l00061}{exch2exch.\+Xbt\+Prices.\+high}, and \hyperlink{exchange_8py_source_l00062}{exchange.\+Ticker.\+high}.
+
+
+\begin{DoxyCode}
+00106     \textcolor{keyword}{def }getHigh (self):
+00107         \textcolor{keywordflow}{return} self.high
+00108     
+\end{DoxyCode}
+\mbox{\Hypertarget{classexchange_1_1_ticker_a216982e99134953ee6e65d2243c3d793}\label{classexchange_1_1_ticker_a216982e99134953ee6e65d2243c3d793}} 
+\index{exchange\+::\+Ticker@{exchange\+::\+Ticker}!get\+Last@{get\+Last}}
+\index{get\+Last@{get\+Last}!exchange\+::\+Ticker@{exchange\+::\+Ticker}}
+\subsubsection{\texorpdfstring{get\+Last()}{getLast()}}
+{\footnotesize\ttfamily def exchange.\+Ticker.\+get\+Last (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Definition at line \hyperlink{exchange_8py_source_l00112}{112} of file \hyperlink{exchange_8py_source}{exchange.\+py}.
+
+
+
+References \hyperlink{exch2exch_8py_source_l00063}{exch2exch.\+Xbt\+Prices.\+last}, and \hyperlink{exchange_8py_source_l00064}{exchange.\+Ticker.\+last}.
+
+
+\begin{DoxyCode}
+00112     \textcolor{keyword}{def }getLast (self):
+00113         \textcolor{keywordflow}{return} self.last
+00114     
+\end{DoxyCode}
+\mbox{\Hypertarget{classexchange_1_1_ticker_ad398514a81ef5e8e2c71b610766b3d14}\label{classexchange_1_1_ticker_ad398514a81ef5e8e2c71b610766b3d14}} 
+\index{exchange\+::\+Ticker@{exchange\+::\+Ticker}!get\+Low@{get\+Low}}
+\index{get\+Low@{get\+Low}!exchange\+::\+Ticker@{exchange\+::\+Ticker}}
+\subsubsection{\texorpdfstring{get\+Low()}{getLow()}}
+{\footnotesize\ttfamily def exchange.\+Ticker.\+get\+Low (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Definition at line \hyperlink{exchange_8py_source_l00109}{109} of file \hyperlink{exchange_8py_source}{exchange.\+py}.
+
+
+
+References \hyperlink{exch2exch_8py_source_l00062}{exch2exch.\+Xbt\+Prices.\+low}, and \hyperlink{exchange_8py_source_l00063}{exchange.\+Ticker.\+low}.
+
+
+\begin{DoxyCode}
+00109     \textcolor{keyword}{def }getLow (self):
+00110         \textcolor{keywordflow}{return} self.low
+00111     
+\end{DoxyCode}
+\mbox{\Hypertarget{classexchange_1_1_ticker_a309466a5a30813e7feda0f001d633ac9}\label{classexchange_1_1_ticker_a309466a5a30813e7feda0f001d633ac9}} 
+\index{exchange\+::\+Ticker@{exchange\+::\+Ticker}!get\+Sell@{get\+Sell}}
+\index{get\+Sell@{get\+Sell}!exchange\+::\+Ticker@{exchange\+::\+Ticker}}
+\subsubsection{\texorpdfstring{get\+Sell()}{getSell()}}
+{\footnotesize\ttfamily def exchange.\+Ticker.\+get\+Sell (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
 
 
 Definition at line \hyperlink{exchange_8py_source_l00103}{103} of file \hyperlink{exchange_8py_source}{exchange.\+py}.
 
 
-\begin{DoxyCode}
-\hypertarget{classexchange_1_1_ticker.tex_l00103}{}\hyperlink{classexchange_1_1_ticker_a53148d54a0b9b577870db785fb4e381e}{00103}     \textcolor{keyword}{def }\hyperlink{classexchange_1_1_ticker_a53148d54a0b9b577870db785fb4e381e}{dumps} (self):
-00104         result = \textcolor{stringliteral}{''}
-00105         
-00106         result = json.dumps (self.\_\_dict\_\_)       
-00107         
-00108         \textcolor{comment}{# Normal function termination}
-00109         \textcolor{keywordflow}{return} result
-00110     
-\end{DoxyCode}
-\index{exchange\+::\+Ticker@{exchange\+::\+Ticker}!get\+Dt@{get\+Dt}}
-\index{get\+Dt@{get\+Dt}!exchange\+::\+Ticker@{exchange\+::\+Ticker}}
-\subsubsection[{\texorpdfstring{get\+Dt(self)}{getDt(self)}}]{\setlength{\rightskip}{0pt plus 5cm}def exchange.\+Ticker.\+get\+Dt (
-\begin{DoxyParamCaption}
-\item[{}]{self}
-\end{DoxyParamCaption}
-)}\hypertarget{classexchange_1_1_ticker_aaa2f7d66782b9405c286e98bfb281d45}{}\label{classexchange_1_1_ticker_aaa2f7d66782b9405c286e98bfb281d45}
 
-
-Definition at line \hyperlink{exchange_8py_source_l00093}{93} of file \hyperlink{exchange_8py_source}{exchange.\+py}.
-
-
-
-References \hyperlink{exch2exch_8py_source_l00028}{exch2exch.\+Rates.\+dt}, \hyperlink{exchange_8py_source_l00057}{exchange.\+Ticker.\+dt}, and \hyperlink{exch2exch_8py_source_l00057}{exch2exch.\+Xbt\+Prices.\+dt}.
+References \hyperlink{exch2exch_8py_source_l00058}{exch2exch.\+Xbt\+Prices.\+sell}, and \hyperlink{exchange_8py_source_l00061}{exchange.\+Ticker.\+sell}.
 
 
 \begin{DoxyCode}
-\hypertarget{classexchange_1_1_ticker.tex_l00093}{}\hyperlink{classexchange_1_1_ticker_aaa2f7d66782b9405c286e98bfb281d45}{00093}     \textcolor{keyword}{def }\hyperlink{classexchange_1_1_ticker_aaa2f7d66782b9405c286e98bfb281d45}{getDt} (self):
-00094         \textcolor{keywordflow}{return} self.\hyperlink{classexchange_1_1_ticker_a45e3162d9956cee797f21d93c44c6baf}{dt}
-00095 
+00103     \textcolor{keyword}{def }getSell (self):
+00104         \textcolor{keywordflow}{return} self.sell
+00105     
 \end{DoxyCode}
-\index{exchange\+::\+Ticker@{exchange\+::\+Ticker}!get\+Exch@{get\+Exch}}
-\index{get\+Exch@{get\+Exch}!exchange\+::\+Ticker@{exchange\+::\+Ticker}}
-\subsubsection[{\texorpdfstring{get\+Exch(self)}{getExch(self)}}]{\setlength{\rightskip}{0pt plus 5cm}def exchange.\+Ticker.\+get\+Exch (
-\begin{DoxyParamCaption}
-\item[{}]{self}
-\end{DoxyParamCaption}
-)}\hypertarget{classexchange_1_1_ticker_ab31537c5a057f9a47839e2d28411c1cf}{}\label{classexchange_1_1_ticker_ab31537c5a057f9a47839e2d28411c1cf}
-
-
-Definition at line \hyperlink{exchange_8py_source_l00087}{87} of file \hyperlink{exchange_8py_source}{exchange.\+py}.
+\mbox{\Hypertarget{classexchange_1_1_ticker_a70ccf798c847515b67cc474ec35e933c}\label{classexchange_1_1_ticker_a70ccf798c847515b67cc474ec35e933c}} 
+\index{exchange\+::\+Ticker@{exchange\+::\+Ticker}!get\+Start\+Dt@{get\+Start\+Dt}}
+\index{get\+Start\+Dt@{get\+Start\+Dt}!exchange\+::\+Ticker@{exchange\+::\+Ticker}}
+\subsubsection{\texorpdfstring{get\+Start\+Dt()}{getStartDt()}}
+{\footnotesize\ttfamily def exchange.\+Ticker.\+get\+Start\+Dt (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
 
 
 
-References \hyperlink{exchange_8py_source_l00055}{exchange.\+Ticker.\+exch}, and \hyperlink{exch2exch_8py_source_l00064}{exch2exch.\+Xbt\+Prices.\+exch}.
+Definition at line \hyperlink{exchange_8py_source_l00118}{118} of file \hyperlink{exchange_8py_source}{exchange.\+py}.
+
+
+
+References \hyperlink{exchange_8py_source_l00067}{exchange.\+Ticker.\+start\+Dt}.
 
 
 \begin{DoxyCode}
-\hypertarget{classexchange_1_1_ticker.tex_l00087}{}\hyperlink{classexchange_1_1_ticker_ab31537c5a057f9a47839e2d28411c1cf}{00087}     \textcolor{keyword}{def }\hyperlink{classexchange_1_1_ticker_ab31537c5a057f9a47839e2d28411c1cf}{getExch} (self):
-00088         \textcolor{keywordflow}{return} self.\hyperlink{classexchange_1_1_ticker_a33f33fe9a12da3ce52938afdc577c061}{exch}
-00089         
+00118     \textcolor{keyword}{def }getStartDt (self):
+00119         \textcolor{keywordflow}{return} self.startDt
+00120 
 \end{DoxyCode}
-\index{exchange\+::\+Ticker@{exchange\+::\+Ticker}!get\+Pair@{get\+Pair}}
-\index{get\+Pair@{get\+Pair}!exchange\+::\+Ticker@{exchange\+::\+Ticker}}
-\subsubsection[{\texorpdfstring{get\+Pair(self)}{getPair(self)}}]{\setlength{\rightskip}{0pt plus 5cm}def exchange.\+Ticker.\+get\+Pair (
-\begin{DoxyParamCaption}
-\item[{}]{self}
-\end{DoxyParamCaption}
-)}\hypertarget{classexchange_1_1_ticker_a3600faedb720e664d6fdc89415c01678}{}\label{classexchange_1_1_ticker_a3600faedb720e664d6fdc89415c01678}
-
-
-Definition at line \hyperlink{exchange_8py_source_l00090}{90} of file \hyperlink{exchange_8py_source}{exchange.\+py}.
+\mbox{\Hypertarget{classexchange_1_1_ticker_aaee4b5454a701e8f468ccca714e7ee59}\label{classexchange_1_1_ticker_aaee4b5454a701e8f468ccca714e7ee59}} 
+\index{exchange\+::\+Ticker@{exchange\+::\+Ticker}!get\+Volume@{get\+Volume}}
+\index{get\+Volume@{get\+Volume}!exchange\+::\+Ticker@{exchange\+::\+Ticker}}
+\subsubsection{\texorpdfstring{get\+Volume()}{getVolume()}}
+{\footnotesize\ttfamily def exchange.\+Ticker.\+get\+Volume (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
 
 
 
-References \hyperlink{exchange_8py_source_l00056}{exchange.\+Ticker.\+pair}.
+Definition at line \hyperlink{exchange_8py_source_l00115}{115} of file \hyperlink{exchange_8py_source}{exchange.\+py}.
+
+
+
+References \hyperlink{exchange_8py_source_l00065}{exchange.\+Ticker.\+vol}.
 
 
 \begin{DoxyCode}
-\hypertarget{classexchange_1_1_ticker.tex_l00090}{}\hyperlink{classexchange_1_1_ticker_a3600faedb720e664d6fdc89415c01678}{00090}     \textcolor{keyword}{def }\hyperlink{classexchange_1_1_ticker_a3600faedb720e664d6fdc89415c01678}{getPair} (self):
-00091         \textcolor{keywordflow}{return} self.\hyperlink{classexchange_1_1_ticker_a382f9199d13a7b5929a26065fad4e491}{pair}
-00092         
+00115     \textcolor{keyword}{def }getVolume (self):
+00116         \textcolor{keywordflow}{return} self.vol
+00117     
 \end{DoxyCode}
+\mbox{\Hypertarget{classexchange_1_1_ticker_aba1398da3113a7ff17b2496ce92c7238}\label{classexchange_1_1_ticker_aba1398da3113a7ff17b2496ce92c7238}} 
 \index{exchange\+::\+Ticker@{exchange\+::\+Ticker}!mk\+\_\+tuple@{mk\+\_\+tuple}}
 \index{mk\+\_\+tuple@{mk\+\_\+tuple}!exchange\+::\+Ticker@{exchange\+::\+Ticker}}
-\subsubsection[{\texorpdfstring{mk\+\_\+tuple(self)}{mk_tuple(self)}}]{\setlength{\rightskip}{0pt plus 5cm}def exchange.\+Ticker.\+mk\+\_\+tuple (
-\begin{DoxyParamCaption}
-\item[{}]{self}
-\end{DoxyParamCaption}
-)}\hypertarget{classexchange_1_1_ticker_aba1398da3113a7ff17b2496ce92c7238}{}\label{classexchange_1_1_ticker_aba1398da3113a7ff17b2496ce92c7238}
-
-
-Definition at line \hyperlink{exchange_8py_source_l00096}{96} of file \hyperlink{exchange_8py_source}{exchange.\+py}.
+\subsubsection{\texorpdfstring{mk\+\_\+tuple()}{mk\_tuple()}}
+{\footnotesize\ttfamily def exchange.\+Ticker.\+mk\+\_\+tuple (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
 
 
 
-References \hyperlink{exchange_8py_source_l00058}{exchange.\+Ticker.\+buy}, \hyperlink{exch2exch_8py_source_l00059}{exch2exch.\+Xbt\+Prices.\+buy}, \hyperlink{exch2exch_8py_source_l00028}{exch2exch.\+Rates.\+dt}, \hyperlink{exch2exch_8py_source_l00057}{exch2exch.\+Xbt\+Prices.\+dt}, \hyperlink{exchange_8py_source_l00057}{exchange.\+Ticker.\+dt}, \hyperlink{exchange_8py_source_l00055}{exchange.\+Ticker.\+exch}, \hyperlink{exch2exch_8py_source_l00064}{exch2exch.\+Xbt\+Prices.\+exch}, \hyperlink{exchange_8py_source_l00060}{exchange.\+Ticker.\+high}, \hyperlink{exch2exch_8py_source_l00061}{exch2exch.\+Xbt\+Prices.\+high}, \hyperlink{exchange_8py_source_l00062}{exchange.\+Ticker.\+last}, \hyperlink{exch2exch_8py_source_l00063}{exch2exch.\+Xbt\+Prices.\+last}, \hyperlink{exchange_8py_source_l00061}{exchange.\+Ticker.\+low}, \hyperlink{exch2exch_8py_source_l00062}{exch2exch.\+Xbt\+Prices.\+low}, \hyperlink{exchange_8py_source_l00056}{exchange.\+Ticker.\+pair}, \hyperlink{exch2exch_8py_source_l00058}{exch2exch.\+Xbt\+Prices.\+sell}, \hyperlink{exchange_8py_source_l00059}{exchange.\+Ticker.\+sell}, and \hyperlink{exchange_8py_source_l00063}{exchange.\+Ticker.\+vol}.
+Definition at line \hyperlink{exchange_8py_source_l00121}{121} of file \hyperlink{exchange_8py_source}{exchange.\+py}.
+
+
+
+References \hyperlink{exch2exch_8py_source_l00059}{exch2exch.\+Xbt\+Prices.\+buy}, \hyperlink{exchange_8py_source_l00060}{exchange.\+Ticker.\+buy}, \hyperlink{exch2exch_8py_source_l00028}{exch2exch.\+Rates.\+dt}, \hyperlink{exch2exch_8py_source_l00057}{exch2exch.\+Xbt\+Prices.\+dt}, \hyperlink{exchange_8py_source_l00059}{exchange.\+Ticker.\+dt}, \hyperlink{exchange_8py_source_l00057}{exchange.\+Ticker.\+exch}, \hyperlink{exch2exch_8py_source_l00064}{exch2exch.\+Xbt\+Prices.\+exch}, \hyperlink{exch2exch_8py_source_l00061}{exch2exch.\+Xbt\+Prices.\+high}, \hyperlink{exchange_8py_source_l00062}{exchange.\+Ticker.\+high}, \hyperlink{exch2exch_8py_source_l00063}{exch2exch.\+Xbt\+Prices.\+last}, \hyperlink{exchange_8py_source_l00064}{exchange.\+Ticker.\+last}, \hyperlink{exch2exch_8py_source_l00062}{exch2exch.\+Xbt\+Prices.\+low}, \hyperlink{exchange_8py_source_l00063}{exchange.\+Ticker.\+low}, \hyperlink{exchange_8py_source_l00058}{exchange.\+Ticker.\+pair}, \hyperlink{exch2exch_8py_source_l00058}{exch2exch.\+Xbt\+Prices.\+sell}, \hyperlink{exchange_8py_source_l00061}{exchange.\+Ticker.\+sell}, and \hyperlink{exchange_8py_source_l00065}{exchange.\+Ticker.\+vol}.
 
 
 \begin{DoxyCode}
-\hypertarget{classexchange_1_1_ticker.tex_l00096}{}\hyperlink{classexchange_1_1_ticker_aba1398da3113a7ff17b2496ce92c7238}{00096}     \textcolor{keyword}{def }\hyperlink{classexchange_1_1_ticker_aba1398da3113a7ff17b2496ce92c7238}{mk\_tuple} (self): 
-00097         result = (self.\hyperlink{classexchange_1_1_ticker_a33f33fe9a12da3ce52938afdc577c061}{exch}, self.\hyperlink{classexchange_1_1_ticker_a382f9199d13a7b5929a26065fad4e491}{pair}, self.\hyperlink{classexchange_1_1_ticker_a45e3162d9956cee797f21d93c44c6baf}{dt}, self.\hyperlink{classexchange_1_1_ticker_a2ca48c3fa9aba92241392a05bef39324}{buy}, self.
-      \hyperlink{classexchange_1_1_ticker_a5ba9e257d2ed28f02528a37d9ebd793e}{sell}, \(\backslash\)
-00098             self.\hyperlink{classexchange_1_1_ticker_aace381ca15468df6a40e8d86b7710a7f}{high}, self.\hyperlink{classexchange_1_1_ticker_a1c1f26a47a82fc799fcebf158e104405}{low}, self.\hyperlink{classexchange_1_1_ticker_add7c2d95fa790dcdffddae2e584ce5f5}{last}, self.\hyperlink{classexchange_1_1_ticker_a24c0dd396aebc54c06e429a68c964ea3}{vol})
-00099             
-00100         \textcolor{comment}{# Normal function termination }
-00101         \textcolor{keywordflow}{return} result
-00102         
+00121     \textcolor{keyword}{def }mk\_tuple (self): 
+00122         result = (self.exch, self.pair, self.dt, self.buy, self.sell, \(\backslash\)
+00123             self.high, self.low, self.last, self.vol)
+00124             
+00125         \textcolor{comment}{# Normal function termination }
+00126         \textcolor{keywordflow}{return} result
+00127         
 \end{DoxyCode}
 
 
 \subsection{Member Data Documentation}
+\mbox{\Hypertarget{classexchange_1_1_ticker_a2ca48c3fa9aba92241392a05bef39324}\label{classexchange_1_1_ticker_a2ca48c3fa9aba92241392a05bef39324}} 
 \index{exchange\+::\+Ticker@{exchange\+::\+Ticker}!buy@{buy}}
 \index{buy@{buy}!exchange\+::\+Ticker@{exchange\+::\+Ticker}}
-\subsubsection[{\texorpdfstring{buy}{buy}}]{\setlength{\rightskip}{0pt plus 5cm}exchange.\+Ticker.\+buy}\hypertarget{classexchange_1_1_ticker_a2ca48c3fa9aba92241392a05bef39324}{}\label{classexchange_1_1_ticker_a2ca48c3fa9aba92241392a05bef39324}
+\subsubsection{\texorpdfstring{buy}{buy}}
+{\footnotesize\ttfamily exchange.\+Ticker.\+buy}
 
-
-Definition at line \hyperlink{exchange_8py_source_l00058}{58} of file \hyperlink{exchange_8py_source}{exchange.\+py}.
-
-
-
-Referenced by \hyperlink{raw__urlparser_8py_source_l00074}{raw\+\_\+urlparser.\+Xbt\+Prices.\+\_\+\+\_\+str\+\_\+\+\_\+()}, \hyperlink{exchange_8py_source_l00111}{exchange.\+Ticker.\+\_\+\+\_\+str\+\_\+\+\_\+()}, \hyperlink{exchange_8py_source_l00065}{exchange.\+Ticker.\+convert()}, \hyperlink{exchange_8py_source_l00340}{exchange.\+Bitfinex.\+get\+\_\+ticker()}, \hyperlink{exchange_8py_source_l00409}{exchange.\+Bitstamp.\+get\+\_\+ticker()}, \hyperlink{exchange_8py_source_l00543}{exchange.\+Mercado\+Bitcoin.\+get\+\_\+ticker()}, \hyperlink{exchange_8py_source_l00608}{exchange.\+Ok\+Coin.\+get\+\_\+ticker()}, \hyperlink{raw__urlparser_8py_source_l00062}{raw\+\_\+urlparser.\+Xbt\+Prices.\+get\+Buy()}, \hyperlink{exchange_8py_source_l00354}{exchange.\+Bitfinex.\+mk\+\_\+ticker()}, \hyperlink{exchange_8py_source_l00423}{exchange.\+Bitstamp.\+mk\+\_\+ticker()}, \hyperlink{exchange_8py_source_l00557}{exchange.\+Mercado\+Bitcoin.\+mk\+\_\+ticker()}, \hyperlink{exchange_8py_source_l00622}{exchange.\+Ok\+Coin.\+mk\+\_\+ticker()}, and \hyperlink{exchange_8py_source_l00096}{exchange.\+Ticker.\+mk\+\_\+tuple()}.
-
-\index{exchange\+::\+Ticker@{exchange\+::\+Ticker}!dt@{dt}}
-\index{dt@{dt}!exchange\+::\+Ticker@{exchange\+::\+Ticker}}
-\subsubsection[{\texorpdfstring{dt}{dt}}]{\setlength{\rightskip}{0pt plus 5cm}exchange.\+Ticker.\+dt}\hypertarget{classexchange_1_1_ticker_a45e3162d9956cee797f21d93c44c6baf}{}\label{classexchange_1_1_ticker_a45e3162d9956cee797f21d93c44c6baf}
-
-
-Definition at line \hyperlink{exchange_8py_source_l00057}{57} of file \hyperlink{exchange_8py_source}{exchange.\+py}.
-
-
-
-Referenced by \hyperlink{raw__urlparser_8py_source_l00038}{raw\+\_\+urlparser.\+Rates.\+\_\+\+\_\+str\+\_\+\+\_\+()}, \hyperlink{raw__urlparser_8py_source_l00074}{raw\+\_\+urlparser.\+Xbt\+Prices.\+\_\+\+\_\+str\+\_\+\+\_\+()}, \hyperlink{exchange_8py_source_l00111}{exchange.\+Ticker.\+\_\+\+\_\+str\+\_\+\+\_\+()}, \hyperlink{exchange_8py_source_l00065}{exchange.\+Ticker.\+convert()}, \hyperlink{exchange_8py_source_l00340}{exchange.\+Bitfinex.\+get\+\_\+ticker()}, \hyperlink{exchange_8py_source_l00409}{exchange.\+Bitstamp.\+get\+\_\+ticker()}, \hyperlink{exchange_8py_source_l00543}{exchange.\+Mercado\+Bitcoin.\+get\+\_\+ticker()}, \hyperlink{exchange_8py_source_l00608}{exchange.\+Ok\+Coin.\+get\+\_\+ticker()}, \hyperlink{raw__urlparser_8py_source_l00059}{raw\+\_\+urlparser.\+Xbt\+Prices.\+get\+Date\+Time()}, \hyperlink{exchange_8py_source_l00093}{exchange.\+Ticker.\+get\+Dt()}, and \hyperlink{exchange_8py_source_l00096}{exchange.\+Ticker.\+mk\+\_\+tuple()}.
-
-\index{exchange\+::\+Ticker@{exchange\+::\+Ticker}!exch@{exch}}
-\index{exch@{exch}!exchange\+::\+Ticker@{exchange\+::\+Ticker}}
-\subsubsection[{\texorpdfstring{exch}{exch}}]{\setlength{\rightskip}{0pt plus 5cm}exchange.\+Ticker.\+exch}\hypertarget{classexchange_1_1_ticker_a33f33fe9a12da3ce52938afdc577c061}{}\label{classexchange_1_1_ticker_a33f33fe9a12da3ce52938afdc577c061}
-
-
-Definition at line \hyperlink{exchange_8py_source_l00055}{55} of file \hyperlink{exchange_8py_source}{exchange.\+py}.
-
-
-
-Referenced by \hyperlink{raw__urlparser_8py_source_l00074}{raw\+\_\+urlparser.\+Xbt\+Prices.\+\_\+\+\_\+str\+\_\+\+\_\+()}, \hyperlink{exchange_8py_source_l00111}{exchange.\+Ticker.\+\_\+\+\_\+str\+\_\+\+\_\+()}, \hyperlink{exchange_8py_source_l00065}{exchange.\+Ticker.\+convert()}, \hyperlink{exchange_8py_source_l00087}{exchange.\+Ticker.\+get\+Exch()}, \hyperlink{raw__urlparser_8py_source_l00068}{raw\+\_\+urlparser.\+Xbt\+Prices.\+get\+Exchange\+Name()}, \hyperlink{exchange_8py_source_l00354}{exchange.\+Bitfinex.\+mk\+\_\+ticker()}, \hyperlink{exchange_8py_source_l00423}{exchange.\+Bitstamp.\+mk\+\_\+ticker()}, \hyperlink{exchange_8py_source_l00482}{exchange.\+Fox\+Bit.\+mk\+\_\+ticker()}, \hyperlink{exchange_8py_source_l00557}{exchange.\+Mercado\+Bitcoin.\+mk\+\_\+ticker()}, \hyperlink{exchange_8py_source_l00622}{exchange.\+Ok\+Coin.\+mk\+\_\+ticker()}, and \hyperlink{exchange_8py_source_l00096}{exchange.\+Ticker.\+mk\+\_\+tuple()}.
-
-\index{exchange\+::\+Ticker@{exchange\+::\+Ticker}!high@{high}}
-\index{high@{high}!exchange\+::\+Ticker@{exchange\+::\+Ticker}}
-\subsubsection[{\texorpdfstring{high}{high}}]{\setlength{\rightskip}{0pt plus 5cm}exchange.\+Ticker.\+high}\hypertarget{classexchange_1_1_ticker_aace381ca15468df6a40e8d86b7710a7f}{}\label{classexchange_1_1_ticker_aace381ca15468df6a40e8d86b7710a7f}
 
 
 Definition at line \hyperlink{exchange_8py_source_l00060}{60} of file \hyperlink{exchange_8py_source}{exchange.\+py}.
 
 
 
-Referenced by \hyperlink{exchange_8py_source_l00111}{exchange.\+Ticker.\+\_\+\+\_\+str\+\_\+\+\_\+()}, \hyperlink{exchange_8py_source_l00065}{exchange.\+Ticker.\+convert()}, \hyperlink{exchange_8py_source_l00340}{exchange.\+Bitfinex.\+get\+\_\+ticker()}, \hyperlink{exchange_8py_source_l00409}{exchange.\+Bitstamp.\+get\+\_\+ticker()}, \hyperlink{exchange_8py_source_l00543}{exchange.\+Mercado\+Bitcoin.\+get\+\_\+ticker()}, \hyperlink{exchange_8py_source_l00608}{exchange.\+Ok\+Coin.\+get\+\_\+ticker()}, \hyperlink{exchange_8py_source_l00354}{exchange.\+Bitfinex.\+mk\+\_\+ticker()}, \hyperlink{exchange_8py_source_l00423}{exchange.\+Bitstamp.\+mk\+\_\+ticker()}, \hyperlink{exchange_8py_source_l00557}{exchange.\+Mercado\+Bitcoin.\+mk\+\_\+ticker()}, \hyperlink{exchange_8py_source_l00622}{exchange.\+Ok\+Coin.\+mk\+\_\+ticker()}, and \hyperlink{exchange_8py_source_l00096}{exchange.\+Ticker.\+mk\+\_\+tuple()}.
+Referenced by \hyperlink{raw__urlparser_8py_source_l00074}{raw\+\_\+urlparser.\+Xbt\+Prices.\+\_\+\+\_\+str\+\_\+\+\_\+()}, \hyperlink{exchange_8py_source_l00136}{exchange.\+Ticker.\+\_\+\+\_\+str\+\_\+\+\_\+()}, \hyperlink{exchange_8py_source_l00610}{exchange.\+Fox\+Bit.\+\_\+\+\_\+str\+\_\+\+\_\+()}, \hyperlink{exchange_8py_source_l00069}{exchange.\+Ticker.\+convert()}, \hyperlink{exchange_8py_source_l00439}{exchange.\+Bitfinex.\+get\+\_\+ticker()}, \hyperlink{exchange_8py_source_l00511}{exchange.\+Bitstamp.\+get\+\_\+ticker()}, \hyperlink{exchange_8py_source_l00651}{exchange.\+Mercado\+Bitcoin.\+get\+\_\+ticker()}, \hyperlink{exchange_8py_source_l00716}{exchange.\+Ok\+Coin.\+get\+\_\+ticker()}, \hyperlink{raw__urlparser_8py_source_l00062}{raw\+\_\+urlparser.\+Xbt\+Prices.\+get\+Buy()}, \hyperlink{exchange_8py_source_l00100}{exchange.\+Ticker.\+get\+Buy()}, \hyperlink{exchange_8py_source_l00121}{exchange.\+Ticker.\+mk\+\_\+tuple()}, \hyperlink{exchange_8py_source_l00453}{exchange.\+Bitfinex.\+mk\+Ticker()}, \hyperlink{exchange_8py_source_l00525}{exchange.\+Bitstamp.\+mk\+Ticker()}, \hyperlink{exchange_8py_source_l00665}{exchange.\+Mercado\+Bitcoin.\+mk\+Ticker()}, and \hyperlink{exchange_8py_source_l00730}{exchange.\+Ok\+Coin.\+mk\+Ticker()}.
 
-\index{exchange\+::\+Ticker@{exchange\+::\+Ticker}!last@{last}}
-\index{last@{last}!exchange\+::\+Ticker@{exchange\+::\+Ticker}}
-\subsubsection[{\texorpdfstring{last}{last}}]{\setlength{\rightskip}{0pt plus 5cm}exchange.\+Ticker.\+last}\hypertarget{classexchange_1_1_ticker_add7c2d95fa790dcdffddae2e584ce5f5}{}\label{classexchange_1_1_ticker_add7c2d95fa790dcdffddae2e584ce5f5}
+\mbox{\Hypertarget{classexchange_1_1_ticker_a45e3162d9956cee797f21d93c44c6baf}\label{classexchange_1_1_ticker_a45e3162d9956cee797f21d93c44c6baf}} 
+\index{exchange\+::\+Ticker@{exchange\+::\+Ticker}!dt@{dt}}
+\index{dt@{dt}!exchange\+::\+Ticker@{exchange\+::\+Ticker}}
+\subsubsection{\texorpdfstring{dt}{dt}}
+{\footnotesize\ttfamily exchange.\+Ticker.\+dt}
 
-
-Definition at line \hyperlink{exchange_8py_source_l00062}{62} of file \hyperlink{exchange_8py_source}{exchange.\+py}.
-
-
-
-Referenced by \hyperlink{exchange_8py_source_l00111}{exchange.\+Ticker.\+\_\+\+\_\+str\+\_\+\+\_\+()}, \hyperlink{exchange_8py_source_l00065}{exchange.\+Ticker.\+convert()}, \hyperlink{exchange_8py_source_l00340}{exchange.\+Bitfinex.\+get\+\_\+ticker()}, \hyperlink{exchange_8py_source_l00409}{exchange.\+Bitstamp.\+get\+\_\+ticker()}, \hyperlink{exchange_8py_source_l00543}{exchange.\+Mercado\+Bitcoin.\+get\+\_\+ticker()}, \hyperlink{exchange_8py_source_l00608}{exchange.\+Ok\+Coin.\+get\+\_\+ticker()}, \hyperlink{exchange_8py_source_l00354}{exchange.\+Bitfinex.\+mk\+\_\+ticker()}, \hyperlink{exchange_8py_source_l00423}{exchange.\+Bitstamp.\+mk\+\_\+ticker()}, \hyperlink{exchange_8py_source_l00557}{exchange.\+Mercado\+Bitcoin.\+mk\+\_\+ticker()}, \hyperlink{exchange_8py_source_l00622}{exchange.\+Ok\+Coin.\+mk\+\_\+ticker()}, and \hyperlink{exchange_8py_source_l00096}{exchange.\+Ticker.\+mk\+\_\+tuple()}.
-
-\index{exchange\+::\+Ticker@{exchange\+::\+Ticker}!low@{low}}
-\index{low@{low}!exchange\+::\+Ticker@{exchange\+::\+Ticker}}
-\subsubsection[{\texorpdfstring{low}{low}}]{\setlength{\rightskip}{0pt plus 5cm}exchange.\+Ticker.\+low}\hypertarget{classexchange_1_1_ticker_a1c1f26a47a82fc799fcebf158e104405}{}\label{classexchange_1_1_ticker_a1c1f26a47a82fc799fcebf158e104405}
-
-
-Definition at line \hyperlink{exchange_8py_source_l00061}{61} of file \hyperlink{exchange_8py_source}{exchange.\+py}.
-
-
-
-Referenced by \hyperlink{exchange_8py_source_l00111}{exchange.\+Ticker.\+\_\+\+\_\+str\+\_\+\+\_\+()}, \hyperlink{exchange_8py_source_l00065}{exchange.\+Ticker.\+convert()}, \hyperlink{exchange_8py_source_l00340}{exchange.\+Bitfinex.\+get\+\_\+ticker()}, \hyperlink{exchange_8py_source_l00409}{exchange.\+Bitstamp.\+get\+\_\+ticker()}, \hyperlink{exchange_8py_source_l00543}{exchange.\+Mercado\+Bitcoin.\+get\+\_\+ticker()}, \hyperlink{exchange_8py_source_l00608}{exchange.\+Ok\+Coin.\+get\+\_\+ticker()}, \hyperlink{exchange_8py_source_l00354}{exchange.\+Bitfinex.\+mk\+\_\+ticker()}, \hyperlink{exchange_8py_source_l00423}{exchange.\+Bitstamp.\+mk\+\_\+ticker()}, \hyperlink{exchange_8py_source_l00557}{exchange.\+Mercado\+Bitcoin.\+mk\+\_\+ticker()}, \hyperlink{exchange_8py_source_l00622}{exchange.\+Ok\+Coin.\+mk\+\_\+ticker()}, and \hyperlink{exchange_8py_source_l00096}{exchange.\+Ticker.\+mk\+\_\+tuple()}.
-
-\index{exchange\+::\+Ticker@{exchange\+::\+Ticker}!pair@{pair}}
-\index{pair@{pair}!exchange\+::\+Ticker@{exchange\+::\+Ticker}}
-\subsubsection[{\texorpdfstring{pair}{pair}}]{\setlength{\rightskip}{0pt plus 5cm}exchange.\+Ticker.\+pair}\hypertarget{classexchange_1_1_ticker_a382f9199d13a7b5929a26065fad4e491}{}\label{classexchange_1_1_ticker_a382f9199d13a7b5929a26065fad4e491}
-
-
-Definition at line \hyperlink{exchange_8py_source_l00056}{56} of file \hyperlink{exchange_8py_source}{exchange.\+py}.
-
-
-
-Referenced by \hyperlink{exchange_8py_source_l00111}{exchange.\+Ticker.\+\_\+\+\_\+str\+\_\+\+\_\+()}, \hyperlink{exchange_8py_source_l00090}{exchange.\+Ticker.\+get\+Pair()}, \hyperlink{exchange_8py_source_l00354}{exchange.\+Bitfinex.\+mk\+\_\+ticker()}, \hyperlink{exchange_8py_source_l00423}{exchange.\+Bitstamp.\+mk\+\_\+ticker()}, \hyperlink{exchange_8py_source_l00482}{exchange.\+Fox\+Bit.\+mk\+\_\+ticker()}, \hyperlink{exchange_8py_source_l00557}{exchange.\+Mercado\+Bitcoin.\+mk\+\_\+ticker()}, \hyperlink{exchange_8py_source_l00622}{exchange.\+Ok\+Coin.\+mk\+\_\+ticker()}, and \hyperlink{exchange_8py_source_l00096}{exchange.\+Ticker.\+mk\+\_\+tuple()}.
-
-\index{exchange\+::\+Ticker@{exchange\+::\+Ticker}!sell@{sell}}
-\index{sell@{sell}!exchange\+::\+Ticker@{exchange\+::\+Ticker}}
-\subsubsection[{\texorpdfstring{sell}{sell}}]{\setlength{\rightskip}{0pt plus 5cm}exchange.\+Ticker.\+sell}\hypertarget{classexchange_1_1_ticker_a5ba9e257d2ed28f02528a37d9ebd793e}{}\label{classexchange_1_1_ticker_a5ba9e257d2ed28f02528a37d9ebd793e}
 
 
 Definition at line \hyperlink{exchange_8py_source_l00059}{59} of file \hyperlink{exchange_8py_source}{exchange.\+py}.
 
 
 
-Referenced by \hyperlink{raw__urlparser_8py_source_l00074}{raw\+\_\+urlparser.\+Xbt\+Prices.\+\_\+\+\_\+str\+\_\+\+\_\+()}, \hyperlink{exchange_8py_source_l00111}{exchange.\+Ticker.\+\_\+\+\_\+str\+\_\+\+\_\+()}, \hyperlink{exchange_8py_source_l00065}{exchange.\+Ticker.\+convert()}, \hyperlink{exchange_8py_source_l00340}{exchange.\+Bitfinex.\+get\+\_\+ticker()}, \hyperlink{exchange_8py_source_l00409}{exchange.\+Bitstamp.\+get\+\_\+ticker()}, \hyperlink{exchange_8py_source_l00543}{exchange.\+Mercado\+Bitcoin.\+get\+\_\+ticker()}, \hyperlink{exchange_8py_source_l00608}{exchange.\+Ok\+Coin.\+get\+\_\+ticker()}, \hyperlink{raw__urlparser_8py_source_l00065}{raw\+\_\+urlparser.\+Xbt\+Prices.\+get\+Sell()}, \hyperlink{exchange_8py_source_l00354}{exchange.\+Bitfinex.\+mk\+\_\+ticker()}, \hyperlink{exchange_8py_source_l00423}{exchange.\+Bitstamp.\+mk\+\_\+ticker()}, \hyperlink{exchange_8py_source_l00557}{exchange.\+Mercado\+Bitcoin.\+mk\+\_\+ticker()}, \hyperlink{exchange_8py_source_l00622}{exchange.\+Ok\+Coin.\+mk\+\_\+ticker()}, and \hyperlink{exchange_8py_source_l00096}{exchange.\+Ticker.\+mk\+\_\+tuple()}.
+Referenced by \hyperlink{start__time_2____init_____8py_source_l00034}{start\+\_\+time.\+Date\+Time.\+\_\+\+\_\+str\+\_\+\+\_\+()}, \hyperlink{raw__urlparser_8py_source_l00038}{raw\+\_\+urlparser.\+Rates.\+\_\+\+\_\+str\+\_\+\+\_\+()}, \hyperlink{raw__urlparser_8py_source_l00074}{raw\+\_\+urlparser.\+Xbt\+Prices.\+\_\+\+\_\+str\+\_\+\+\_\+()}, \hyperlink{exchange_8py_source_l00136}{exchange.\+Ticker.\+\_\+\+\_\+str\+\_\+\+\_\+()}, \hyperlink{exchange_8py_source_l00610}{exchange.\+Fox\+Bit.\+\_\+\+\_\+str\+\_\+\+\_\+()}, \hyperlink{exchange_8py_source_l00069}{exchange.\+Ticker.\+convert()}, \hyperlink{exchange_8py_source_l00439}{exchange.\+Bitfinex.\+get\+\_\+ticker()}, \hyperlink{exchange_8py_source_l00511}{exchange.\+Bitstamp.\+get\+\_\+ticker()}, \hyperlink{exchange_8py_source_l00651}{exchange.\+Mercado\+Bitcoin.\+get\+\_\+ticker()}, \hyperlink{exchange_8py_source_l00716}{exchange.\+Ok\+Coin.\+get\+\_\+ticker()}, \hyperlink{start__time_2____init_____8py_source_l00031}{start\+\_\+time.\+Date\+Time.\+get\+Datetime()}, \hyperlink{raw__urlparser_8py_source_l00059}{raw\+\_\+urlparser.\+Xbt\+Prices.\+get\+Date\+Time()}, \hyperlink{exchange_8py_source_l00097}{exchange.\+Ticker.\+get\+Dt()}, and \hyperlink{exchange_8py_source_l00121}{exchange.\+Ticker.\+mk\+\_\+tuple()}.
 
-\index{exchange\+::\+Ticker@{exchange\+::\+Ticker}!vol@{vol}}
-\index{vol@{vol}!exchange\+::\+Ticker@{exchange\+::\+Ticker}}
-\subsubsection[{\texorpdfstring{vol}{vol}}]{\setlength{\rightskip}{0pt plus 5cm}exchange.\+Ticker.\+vol}\hypertarget{classexchange_1_1_ticker_a24c0dd396aebc54c06e429a68c964ea3}{}\label{classexchange_1_1_ticker_a24c0dd396aebc54c06e429a68c964ea3}
+\mbox{\Hypertarget{classexchange_1_1_ticker_a33f33fe9a12da3ce52938afdc577c061}\label{classexchange_1_1_ticker_a33f33fe9a12da3ce52938afdc577c061}} 
+\index{exchange\+::\+Ticker@{exchange\+::\+Ticker}!exch@{exch}}
+\index{exch@{exch}!exchange\+::\+Ticker@{exchange\+::\+Ticker}}
+\subsubsection{\texorpdfstring{exch}{exch}}
+{\footnotesize\ttfamily exchange.\+Ticker.\+exch}
+
+
+
+Definition at line \hyperlink{exchange_8py_source_l00057}{57} of file \hyperlink{exchange_8py_source}{exchange.\+py}.
+
+
+
+Referenced by \hyperlink{raw__urlparser_8py_source_l00074}{raw\+\_\+urlparser.\+Xbt\+Prices.\+\_\+\+\_\+str\+\_\+\+\_\+()}, \hyperlink{exchange_8py_source_l00136}{exchange.\+Ticker.\+\_\+\+\_\+str\+\_\+\+\_\+()}, \hyperlink{exchange_8py_source_l00069}{exchange.\+Ticker.\+convert()}, \hyperlink{raw__urlparser_8py_source_l00068}{raw\+\_\+urlparser.\+Xbt\+Prices.\+get\+Exchange\+Name()}, \hyperlink{exchange_8py_source_l00091}{exchange.\+Ticker.\+get\+Exch\+Name()}, \hyperlink{exchange_8py_source_l00121}{exchange.\+Ticker.\+mk\+\_\+tuple()}, \hyperlink{exchange_8py_source_l00453}{exchange.\+Bitfinex.\+mk\+Ticker()}, \hyperlink{exchange_8py_source_l00525}{exchange.\+Bitstamp.\+mk\+Ticker()}, \hyperlink{exchange_8py_source_l00584}{exchange.\+Fox\+Bit.\+mk\+Ticker()}, \hyperlink{exchange_8py_source_l00665}{exchange.\+Mercado\+Bitcoin.\+mk\+Ticker()}, and \hyperlink{exchange_8py_source_l00730}{exchange.\+Ok\+Coin.\+mk\+Ticker()}.
+
+\mbox{\Hypertarget{classexchange_1_1_ticker_aace381ca15468df6a40e8d86b7710a7f}\label{classexchange_1_1_ticker_aace381ca15468df6a40e8d86b7710a7f}} 
+\index{exchange\+::\+Ticker@{exchange\+::\+Ticker}!high@{high}}
+\index{high@{high}!exchange\+::\+Ticker@{exchange\+::\+Ticker}}
+\subsubsection{\texorpdfstring{high}{high}}
+{\footnotesize\ttfamily exchange.\+Ticker.\+high}
+
+
+
+Definition at line \hyperlink{exchange_8py_source_l00062}{62} of file \hyperlink{exchange_8py_source}{exchange.\+py}.
+
+
+
+Referenced by \hyperlink{exchange_8py_source_l00136}{exchange.\+Ticker.\+\_\+\+\_\+str\+\_\+\+\_\+()}, \hyperlink{exchange_8py_source_l00610}{exchange.\+Fox\+Bit.\+\_\+\+\_\+str\+\_\+\+\_\+()}, \hyperlink{exchange_8py_source_l00069}{exchange.\+Ticker.\+convert()}, \hyperlink{exchange_8py_source_l00439}{exchange.\+Bitfinex.\+get\+\_\+ticker()}, \hyperlink{exchange_8py_source_l00511}{exchange.\+Bitstamp.\+get\+\_\+ticker()}, \hyperlink{exchange_8py_source_l00651}{exchange.\+Mercado\+Bitcoin.\+get\+\_\+ticker()}, \hyperlink{exchange_8py_source_l00716}{exchange.\+Ok\+Coin.\+get\+\_\+ticker()}, \hyperlink{exchange_8py_source_l00106}{exchange.\+Ticker.\+get\+High()}, \hyperlink{exchange_8py_source_l00121}{exchange.\+Ticker.\+mk\+\_\+tuple()}, \hyperlink{exchange_8py_source_l00453}{exchange.\+Bitfinex.\+mk\+Ticker()}, \hyperlink{exchange_8py_source_l00525}{exchange.\+Bitstamp.\+mk\+Ticker()}, \hyperlink{exchange_8py_source_l00665}{exchange.\+Mercado\+Bitcoin.\+mk\+Ticker()}, and \hyperlink{exchange_8py_source_l00730}{exchange.\+Ok\+Coin.\+mk\+Ticker()}.
+
+\mbox{\Hypertarget{classexchange_1_1_ticker_add7c2d95fa790dcdffddae2e584ce5f5}\label{classexchange_1_1_ticker_add7c2d95fa790dcdffddae2e584ce5f5}} 
+\index{exchange\+::\+Ticker@{exchange\+::\+Ticker}!last@{last}}
+\index{last@{last}!exchange\+::\+Ticker@{exchange\+::\+Ticker}}
+\subsubsection{\texorpdfstring{last}{last}}
+{\footnotesize\ttfamily exchange.\+Ticker.\+last}
+
+
+
+Definition at line \hyperlink{exchange_8py_source_l00064}{64} of file \hyperlink{exchange_8py_source}{exchange.\+py}.
+
+
+
+Referenced by \hyperlink{exchange_8py_source_l00136}{exchange.\+Ticker.\+\_\+\+\_\+str\+\_\+\+\_\+()}, \hyperlink{exchange_8py_source_l00069}{exchange.\+Ticker.\+convert()}, \hyperlink{exchange_8py_source_l00439}{exchange.\+Bitfinex.\+get\+\_\+ticker()}, \hyperlink{exchange_8py_source_l00511}{exchange.\+Bitstamp.\+get\+\_\+ticker()}, \hyperlink{exchange_8py_source_l00651}{exchange.\+Mercado\+Bitcoin.\+get\+\_\+ticker()}, \hyperlink{exchange_8py_source_l00716}{exchange.\+Ok\+Coin.\+get\+\_\+ticker()}, \hyperlink{exchange_8py_source_l00112}{exchange.\+Ticker.\+get\+Last()}, \hyperlink{exchange_8py_source_l00121}{exchange.\+Ticker.\+mk\+\_\+tuple()}, \hyperlink{exchange_8py_source_l00453}{exchange.\+Bitfinex.\+mk\+Ticker()}, \hyperlink{exchange_8py_source_l00525}{exchange.\+Bitstamp.\+mk\+Ticker()}, \hyperlink{exchange_8py_source_l00665}{exchange.\+Mercado\+Bitcoin.\+mk\+Ticker()}, and \hyperlink{exchange_8py_source_l00730}{exchange.\+Ok\+Coin.\+mk\+Ticker()}.
+
+\mbox{\Hypertarget{classexchange_1_1_ticker_a1c1f26a47a82fc799fcebf158e104405}\label{classexchange_1_1_ticker_a1c1f26a47a82fc799fcebf158e104405}} 
+\index{exchange\+::\+Ticker@{exchange\+::\+Ticker}!low@{low}}
+\index{low@{low}!exchange\+::\+Ticker@{exchange\+::\+Ticker}}
+\subsubsection{\texorpdfstring{low}{low}}
+{\footnotesize\ttfamily exchange.\+Ticker.\+low}
+
 
 
 Definition at line \hyperlink{exchange_8py_source_l00063}{63} of file \hyperlink{exchange_8py_source}{exchange.\+py}.
 
 
 
-Referenced by \hyperlink{exchange_8py_source_l00111}{exchange.\+Ticker.\+\_\+\+\_\+str\+\_\+\+\_\+()}, \hyperlink{exchange_8py_source_l00065}{exchange.\+Ticker.\+convert()}, \hyperlink{exchange_8py_source_l00354}{exchange.\+Bitfinex.\+mk\+\_\+ticker()}, \hyperlink{exchange_8py_source_l00423}{exchange.\+Bitstamp.\+mk\+\_\+ticker()}, \hyperlink{exchange_8py_source_l00557}{exchange.\+Mercado\+Bitcoin.\+mk\+\_\+ticker()}, \hyperlink{exchange_8py_source_l00622}{exchange.\+Ok\+Coin.\+mk\+\_\+ticker()}, and \hyperlink{exchange_8py_source_l00096}{exchange.\+Ticker.\+mk\+\_\+tuple()}.
+Referenced by \hyperlink{exchange_8py_source_l00136}{exchange.\+Ticker.\+\_\+\+\_\+str\+\_\+\+\_\+()}, \hyperlink{exchange_8py_source_l00610}{exchange.\+Fox\+Bit.\+\_\+\+\_\+str\+\_\+\+\_\+()}, \hyperlink{exchange_8py_source_l00069}{exchange.\+Ticker.\+convert()}, \hyperlink{exchange_8py_source_l00439}{exchange.\+Bitfinex.\+get\+\_\+ticker()}, \hyperlink{exchange_8py_source_l00511}{exchange.\+Bitstamp.\+get\+\_\+ticker()}, \hyperlink{exchange_8py_source_l00651}{exchange.\+Mercado\+Bitcoin.\+get\+\_\+ticker()}, \hyperlink{exchange_8py_source_l00716}{exchange.\+Ok\+Coin.\+get\+\_\+ticker()}, \hyperlink{exchange_8py_source_l00109}{exchange.\+Ticker.\+get\+Low()}, \hyperlink{exchange_8py_source_l00121}{exchange.\+Ticker.\+mk\+\_\+tuple()}, \hyperlink{exchange_8py_source_l00453}{exchange.\+Bitfinex.\+mk\+Ticker()}, \hyperlink{exchange_8py_source_l00525}{exchange.\+Bitstamp.\+mk\+Ticker()}, \hyperlink{exchange_8py_source_l00665}{exchange.\+Mercado\+Bitcoin.\+mk\+Ticker()}, and \hyperlink{exchange_8py_source_l00730}{exchange.\+Ok\+Coin.\+mk\+Ticker()}.
+
+\mbox{\Hypertarget{classexchange_1_1_ticker_a382f9199d13a7b5929a26065fad4e491}\label{classexchange_1_1_ticker_a382f9199d13a7b5929a26065fad4e491}} 
+\index{exchange\+::\+Ticker@{exchange\+::\+Ticker}!pair@{pair}}
+\index{pair@{pair}!exchange\+::\+Ticker@{exchange\+::\+Ticker}}
+\subsubsection{\texorpdfstring{pair}{pair}}
+{\footnotesize\ttfamily exchange.\+Ticker.\+pair}
+
+
+
+Definition at line \hyperlink{exchange_8py_source_l00058}{58} of file \hyperlink{exchange_8py_source}{exchange.\+py}.
+
+
+
+Referenced by \hyperlink{exchange_8py_source_l00136}{exchange.\+Ticker.\+\_\+\+\_\+str\+\_\+\+\_\+()}, \hyperlink{exchange_8py_source_l00094}{exchange.\+Ticker.\+get\+Coin\+Pair()}, \hyperlink{exchange_8py_source_l00479}{exchange.\+Bitfinex.\+get\+Coin\+Pair()}, \hyperlink{exchange_8py_source_l00121}{exchange.\+Ticker.\+mk\+\_\+tuple()}, \hyperlink{exchange_8py_source_l00453}{exchange.\+Bitfinex.\+mk\+Ticker()}, \hyperlink{exchange_8py_source_l00525}{exchange.\+Bitstamp.\+mk\+Ticker()}, \hyperlink{exchange_8py_source_l00584}{exchange.\+Fox\+Bit.\+mk\+Ticker()}, \hyperlink{exchange_8py_source_l00665}{exchange.\+Mercado\+Bitcoin.\+mk\+Ticker()}, and \hyperlink{exchange_8py_source_l00730}{exchange.\+Ok\+Coin.\+mk\+Ticker()}.
+
+\mbox{\Hypertarget{classexchange_1_1_ticker_a5ba9e257d2ed28f02528a37d9ebd793e}\label{classexchange_1_1_ticker_a5ba9e257d2ed28f02528a37d9ebd793e}} 
+\index{exchange\+::\+Ticker@{exchange\+::\+Ticker}!sell@{sell}}
+\index{sell@{sell}!exchange\+::\+Ticker@{exchange\+::\+Ticker}}
+\subsubsection{\texorpdfstring{sell}{sell}}
+{\footnotesize\ttfamily exchange.\+Ticker.\+sell}
+
+
+
+Definition at line \hyperlink{exchange_8py_source_l00061}{61} of file \hyperlink{exchange_8py_source}{exchange.\+py}.
+
+
+
+Referenced by \hyperlink{raw__urlparser_8py_source_l00074}{raw\+\_\+urlparser.\+Xbt\+Prices.\+\_\+\+\_\+str\+\_\+\+\_\+()}, \hyperlink{exchange_8py_source_l00136}{exchange.\+Ticker.\+\_\+\+\_\+str\+\_\+\+\_\+()}, \hyperlink{exchange_8py_source_l00610}{exchange.\+Fox\+Bit.\+\_\+\+\_\+str\+\_\+\+\_\+()}, \hyperlink{exchange_8py_source_l00069}{exchange.\+Ticker.\+convert()}, \hyperlink{exchange_8py_source_l00439}{exchange.\+Bitfinex.\+get\+\_\+ticker()}, \hyperlink{exchange_8py_source_l00511}{exchange.\+Bitstamp.\+get\+\_\+ticker()}, \hyperlink{exchange_8py_source_l00651}{exchange.\+Mercado\+Bitcoin.\+get\+\_\+ticker()}, \hyperlink{exchange_8py_source_l00716}{exchange.\+Ok\+Coin.\+get\+\_\+ticker()}, \hyperlink{raw__urlparser_8py_source_l00065}{raw\+\_\+urlparser.\+Xbt\+Prices.\+get\+Sell()}, \hyperlink{exchange_8py_source_l00103}{exchange.\+Ticker.\+get\+Sell()}, \hyperlink{exchange_8py_source_l00121}{exchange.\+Ticker.\+mk\+\_\+tuple()}, \hyperlink{exchange_8py_source_l00453}{exchange.\+Bitfinex.\+mk\+Ticker()}, \hyperlink{exchange_8py_source_l00525}{exchange.\+Bitstamp.\+mk\+Ticker()}, \hyperlink{exchange_8py_source_l00665}{exchange.\+Mercado\+Bitcoin.\+mk\+Ticker()}, and \hyperlink{exchange_8py_source_l00730}{exchange.\+Ok\+Coin.\+mk\+Ticker()}.
+
+\mbox{\Hypertarget{classexchange_1_1_ticker_a543696a29fac37ff29a3f6ef25cccd12}\label{classexchange_1_1_ticker_a543696a29fac37ff29a3f6ef25cccd12}} 
+\index{exchange\+::\+Ticker@{exchange\+::\+Ticker}!start\+Dt@{start\+Dt}}
+\index{start\+Dt@{start\+Dt}!exchange\+::\+Ticker@{exchange\+::\+Ticker}}
+\subsubsection{\texorpdfstring{start\+Dt}{startDt}}
+{\footnotesize\ttfamily exchange.\+Ticker.\+start\+Dt}
+
+
+
+Definition at line \hyperlink{exchange_8py_source_l00067}{67} of file \hyperlink{exchange_8py_source}{exchange.\+py}.
+
+
+
+Referenced by \hyperlink{exchange_8py_source_l00136}{exchange.\+Ticker.\+\_\+\+\_\+str\+\_\+\+\_\+()}, \hyperlink{exchange_8py_source_l00385}{exchange.\+Diff\+Tracker.\+dumps()}, and \hyperlink{exchange_8py_source_l00118}{exchange.\+Ticker.\+get\+Start\+Dt()}.
+
+\mbox{\Hypertarget{classexchange_1_1_ticker_a24c0dd396aebc54c06e429a68c964ea3}\label{classexchange_1_1_ticker_a24c0dd396aebc54c06e429a68c964ea3}} 
+\index{exchange\+::\+Ticker@{exchange\+::\+Ticker}!vol@{vol}}
+\index{vol@{vol}!exchange\+::\+Ticker@{exchange\+::\+Ticker}}
+\subsubsection{\texorpdfstring{vol}{vol}}
+{\footnotesize\ttfamily exchange.\+Ticker.\+vol}
+
+
+
+Definition at line \hyperlink{exchange_8py_source_l00065}{65} of file \hyperlink{exchange_8py_source}{exchange.\+py}.
+
+
+
+Referenced by \hyperlink{exchange_8py_source_l00136}{exchange.\+Ticker.\+\_\+\+\_\+str\+\_\+\+\_\+()}, \hyperlink{exchange_8py_source_l00069}{exchange.\+Ticker.\+convert()}, \hyperlink{exchange_8py_source_l00115}{exchange.\+Ticker.\+get\+Volume()}, \hyperlink{exchange_8py_source_l00121}{exchange.\+Ticker.\+mk\+\_\+tuple()}, \hyperlink{exchange_8py_source_l00453}{exchange.\+Bitfinex.\+mk\+Ticker()}, \hyperlink{exchange_8py_source_l00525}{exchange.\+Bitstamp.\+mk\+Ticker()}, \hyperlink{exchange_8py_source_l00665}{exchange.\+Mercado\+Bitcoin.\+mk\+Ticker()}, and \hyperlink{exchange_8py_source_l00730}{exchange.\+Ok\+Coin.\+mk\+Ticker()}.
 
 
 

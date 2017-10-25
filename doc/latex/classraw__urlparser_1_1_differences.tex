@@ -43,53 +43,48 @@ Definition at line \hyperlink{raw__urlparser_8py_source_l00084}{84} of file \hyp
 
 
 \subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classraw__urlparser_1_1_differences_ab96f235ba2697e17fea2e3dc83ab2ca0}\label{classraw__urlparser_1_1_differences_ab96f235ba2697e17fea2e3dc83ab2ca0}} 
 \index{raw\+\_\+urlparser\+::\+Differences@{raw\+\_\+urlparser\+::\+Differences}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
 \index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!raw\+\_\+urlparser\+::\+Differences@{raw\+\_\+urlparser\+::\+Differences}}
-\subsubsection[{\texorpdfstring{\+\_\+\+\_\+init\+\_\+\+\_\+(self, rates, mb, ok)}{__init__(self, rates, mb, ok)}}]{\setlength{\rightskip}{0pt plus 5cm}def raw\+\_\+urlparser.\+Differences.\+\_\+\+\_\+init\+\_\+\+\_\+ (
-\begin{DoxyParamCaption}
-\item[{}]{self, }
-\item[{}]{rates, }
-\item[{}]{mb, }
-\item[{}]{ok}
-\end{DoxyParamCaption}
-)}\hypertarget{classraw__urlparser_1_1_differences_ab96f235ba2697e17fea2e3dc83ab2ca0}{}\label{classraw__urlparser_1_1_differences_ab96f235ba2697e17fea2e3dc83ab2ca0}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+init\+\_\+\+\_\+()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def raw\+\_\+urlparser.\+Differences.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{rates,  }\item[{}]{mb,  }\item[{}]{ok }\end{DoxyParamCaption})}
+
 
 
 Definition at line \hyperlink{raw__urlparser_8py_source_l00085}{85} of file \hyperlink{raw__urlparser_8py_source}{raw\+\_\+urlparser.\+py}.
 
 
 \begin{DoxyCode}
-\hypertarget{classraw__urlparser_1_1_differences.tex_l00085}{}\hyperlink{classraw__urlparser_1_1_differences_ab96f235ba2697e17fea2e3dc83ab2ca0}{00085}     \textcolor{keyword}{def }\hyperlink{classraw__urlparser_1_1_differences_ab96f235ba2697e17fea2e3dc83ab2ca0}{\_\_init\_\_} (self, rates, mb, ok):
-\hypertarget{classraw__urlparser_1_1_differences.tex_l00086}{}\hyperlink{classraw__urlparser_1_1_differences_ad4e7eadb659a1cdcba90793cc52af174}{00086}         self.\hyperlink{classraw__urlparser_1_1_differences_ad4e7eadb659a1cdcba90793cc52af174}{rates} = rates
-\hypertarget{classraw__urlparser_1_1_differences.tex_l00087}{}\hyperlink{classraw__urlparser_1_1_differences_ab4c3073b8c569b7791ab3b8e21e9b364}{00087}         self.\hyperlink{classraw__urlparser_1_1_differences_ab4c3073b8c569b7791ab3b8e21e9b364}{mb} = mb
-\hypertarget{classraw__urlparser_1_1_differences.tex_l00088}{}\hyperlink{classraw__urlparser_1_1_differences_a46fe97bedb977585a0b27d7408ace118}{00088}         self.\hyperlink{classraw__urlparser_1_1_differences_a46fe97bedb977585a0b27d7408ace118}{ok} = ok
+00085     \textcolor{keyword}{def }\hyperlink{namespacestart__time_a9c9bd378729a13c96a22c8b079ea172c}{\_\_init\_\_} (self, rates, mb, ok):
+00086         self.rates = rates
+00087         self.mb = mb
+00088         self.ok = ok
 00089         
-\hypertarget{classraw__urlparser_1_1_differences.tex_l00090}{}\hyperlink{classraw__urlparser_1_1_differences_af8457a8e542de086595e7fbbffdf713c}{00090}         self.\hyperlink{classraw__urlparser_1_1_differences_af8457a8e542de086595e7fbbffdf713c}{dmin} = mb.getSell () - ok.getSell ()
+00090         self.dmin = mb.getSell () - ok.getSell ()
 00091         
-\hypertarget{classraw__urlparser_1_1_differences.tex_l00092}{}\hyperlink{classraw__urlparser_1_1_differences_ad2b06158b655136bc7743dc6ac8d1e2a}{00092}         self.\hyperlink{classraw__urlparser_1_1_differences_ad2b06158b655136bc7743dc6ac8d1e2a}{dmax} = mb.getBuy () - ok.getSell ()
+00092         self.dmax = mb.getBuy () - ok.getSell ()
 00093         
 \end{DoxyCode}
 
 
 \subsection{Member Function Documentation}
+\mbox{\Hypertarget{classraw__urlparser_1_1_differences_ae30a248dbbe9fde42b0bcbd81160f070}\label{classraw__urlparser_1_1_differences_ae30a248dbbe9fde42b0bcbd81160f070}} 
 \index{raw\+\_\+urlparser\+::\+Differences@{raw\+\_\+urlparser\+::\+Differences}!\+\_\+\+\_\+str\+\_\+\+\_\+@{\+\_\+\+\_\+str\+\_\+\+\_\+}}
 \index{\+\_\+\+\_\+str\+\_\+\+\_\+@{\+\_\+\+\_\+str\+\_\+\+\_\+}!raw\+\_\+urlparser\+::\+Differences@{raw\+\_\+urlparser\+::\+Differences}}
-\subsubsection[{\texorpdfstring{\+\_\+\+\_\+str\+\_\+\+\_\+(self)}{__str__(self)}}]{\setlength{\rightskip}{0pt plus 5cm}def raw\+\_\+urlparser.\+Differences.\+\_\+\+\_\+str\+\_\+\+\_\+ (
-\begin{DoxyParamCaption}
-\item[{}]{self}
-\end{DoxyParamCaption}
-)}\hypertarget{classraw__urlparser_1_1_differences_ae30a248dbbe9fde42b0bcbd81160f070}{}\label{classraw__urlparser_1_1_differences_ae30a248dbbe9fde42b0bcbd81160f070}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+str\+\_\+\+\_\+()}{\_\_str\_\_()}}
+{\footnotesize\ttfamily def raw\+\_\+urlparser.\+Differences.\+\_\+\+\_\+str\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
 
 
 Definition at line \hyperlink{raw__urlparser_8py_source_l00100}{100} of file \hyperlink{raw__urlparser_8py_source}{raw\+\_\+urlparser.\+py}.
 
 
 
-References \hyperlink{raw__urlparser_8py_source_l00097}{raw\+\_\+urlparser.\+Differences.\+get\+Max\+Delta()}, \hyperlink{exch2exch_8py_source_l00130}{exch2exch.\+Differences.\+get\+Max\+Delta()}, \hyperlink{raw__urlparser_8py_source_l00094}{raw\+\_\+urlparser.\+Differences.\+get\+Min\+Delta()}, and \hyperlink{exch2exch_8py_source_l00127}{exch2exch.\+Differences.\+get\+Min\+Delta()}.
+References \hyperlink{raw__urlparser_8py_source_l00097}{raw\+\_\+urlparser.\+Differences.\+get\+Max\+Delta()}, \hyperlink{exch2exch_8py_source_l00130}{exch2exch.\+Differences.\+get\+Max\+Delta()}, \hyperlink{raw__urlparser_8py_source_l00094}{raw\+\_\+urlparser.\+Differences.\+get\+Min\+Delta()}, \hyperlink{exch2exch_8py_source_l00127}{exch2exch.\+Differences.\+get\+Min\+Delta()}, \hyperlink{raw__urlparser_8py_source_l00088}{raw\+\_\+urlparser.\+Differences.\+ok}, \hyperlink{exch2exch_8py_source_l00109}{exch2exch.\+Differences.\+ok}, \hyperlink{raw__urlparser_8py_source_l00086}{raw\+\_\+urlparser.\+Differences.\+rates}, \hyperlink{exch2exch_8py_source_l00107}{exch2exch.\+Differences.\+rates}, and \hyperlink{exchange_8py_source_l00264}{exchange.\+Differences.\+rates}.
 
 
 \begin{DoxyCode}
-\hypertarget{classraw__urlparser_1_1_differences.tex_l00100}{}\hyperlink{classraw__urlparser_1_1_differences_ae30a248dbbe9fde42b0bcbd81160f070}{00100}     \textcolor{keyword}{def }\hyperlink{classraw__urlparser_1_1_differences_ae30a248dbbe9fde42b0bcbd81160f070}{\_\_str\_\_} (self):
+00100     \textcolor{keyword}{def }\hyperlink{namespacerates_a2f1a70c33ee9e255938e4c19fd207264}{\_\_str\_\_} (self):
 00101         result = \textcolor{stringliteral}{""}
 00102         
 00103         oname = self.ok.getExchangeName ()
@@ -99,7 +94,7 @@ References \hyperlink{raw__urlparser_8py_source_l00097}{raw\+\_\+urlparser.\+Dif
 00107         fmt = \textcolor{stringliteral}{"Calculation between \{0\} and \{1\} rates, with conversion from \{1\}"}
 00108         result = fmt.format (oname, mname, sname)
 00109         fmt = \textcolor{stringliteral}{"\(\backslash\)nIntervals: minimum \{0:.4f\}, maximum \{1:.4f\}"}
-00110         result += fmt.format (self.\hyperlink{classraw__urlparser_1_1_differences_af19faaea85ca8ac0d327c8443ddd99ef}{getMinDelta} (), self.\hyperlink{classraw__urlparser_1_1_differences_acfa09d743c08cc813a5bc435aa6875da}{getMaxDelta} ())
+00110         result += fmt.format (self.getMinDelta (), self.getMaxDelta ())
 00111         \textcolor{keywordflow}{return} result
 00112 
 00113 \textcolor{comment}{#        }
@@ -108,31 +103,27 @@ References \hyperlink{raw__urlparser_8py_source_l00097}{raw\+\_\+urlparser.\+Dif
 00116 \textcolor{comment}{#}
 00117 
 \end{DoxyCode}
-
-
-Here is the call graph for this function\+:\nopagebreak
+Here is the call graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{classraw__urlparser_1_1_differences_ae30a248dbbe9fde42b0bcbd81160f070_cgraph}
 \end{center}
 \end{figure}
-
-
+\mbox{\Hypertarget{classraw__urlparser_1_1_differences_acfa09d743c08cc813a5bc435aa6875da}\label{classraw__urlparser_1_1_differences_acfa09d743c08cc813a5bc435aa6875da}} 
 \index{raw\+\_\+urlparser\+::\+Differences@{raw\+\_\+urlparser\+::\+Differences}!get\+Max\+Delta@{get\+Max\+Delta}}
 \index{get\+Max\+Delta@{get\+Max\+Delta}!raw\+\_\+urlparser\+::\+Differences@{raw\+\_\+urlparser\+::\+Differences}}
-\subsubsection[{\texorpdfstring{get\+Max\+Delta(self)}{getMaxDelta(self)}}]{\setlength{\rightskip}{0pt plus 5cm}def raw\+\_\+urlparser.\+Differences.\+get\+Max\+Delta (
-\begin{DoxyParamCaption}
-\item[{}]{self}
-\end{DoxyParamCaption}
-)}\hypertarget{classraw__urlparser_1_1_differences_acfa09d743c08cc813a5bc435aa6875da}{}\label{classraw__urlparser_1_1_differences_acfa09d743c08cc813a5bc435aa6875da}
+\subsubsection{\texorpdfstring{get\+Max\+Delta()}{getMaxDelta()}}
+{\footnotesize\ttfamily def raw\+\_\+urlparser.\+Differences.\+get\+Max\+Delta (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
 
 
 Definition at line \hyperlink{raw__urlparser_8py_source_l00097}{97} of file \hyperlink{raw__urlparser_8py_source}{raw\+\_\+urlparser.\+py}.
 
 
 
-References \hyperlink{raw__urlparser_8py_source_l00092}{raw\+\_\+urlparser.\+Differences.\+dmax}, \hyperlink{exch2exch_8py_source_l00115}{exch2exch.\+Differences.\+dmax}, and \hyperlink{exchange_8py_source_l00259}{exchange.\+Diff\+Tracker.\+dmax}.
+References \hyperlink{raw__urlparser_8py_source_l00092}{raw\+\_\+urlparser.\+Differences.\+dmax}, and \hyperlink{exch2exch_8py_source_l00115}{exch2exch.\+Differences.\+dmax}.
 
 
 
@@ -140,35 +131,31 @@ Referenced by \hyperlink{raw__urlparser_8py_source_l00100}{raw\+\_\+urlparser.\+
 
 
 \begin{DoxyCode}
-\hypertarget{classraw__urlparser_1_1_differences.tex_l00097}{}\hyperlink{classraw__urlparser_1_1_differences_acfa09d743c08cc813a5bc435aa6875da}{00097}     \textcolor{keyword}{def }\hyperlink{classraw__urlparser_1_1_differences_acfa09d743c08cc813a5bc435aa6875da}{getMaxDelta} (self):
-00098         \textcolor{keywordflow}{return} self.\hyperlink{classraw__urlparser_1_1_differences_ad2b06158b655136bc7743dc6ac8d1e2a}{dmax}
+00097     \textcolor{keyword}{def }getMaxDelta (self):
+00098         \textcolor{keywordflow}{return} self.dmax
 00099         
 \end{DoxyCode}
-
-
-Here is the caller graph for this function\+:\nopagebreak
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{classraw__urlparser_1_1_differences_acfa09d743c08cc813a5bc435aa6875da_icgraph}
 \end{center}
 \end{figure}
-
-
+\mbox{\Hypertarget{classraw__urlparser_1_1_differences_af19faaea85ca8ac0d327c8443ddd99ef}\label{classraw__urlparser_1_1_differences_af19faaea85ca8ac0d327c8443ddd99ef}} 
 \index{raw\+\_\+urlparser\+::\+Differences@{raw\+\_\+urlparser\+::\+Differences}!get\+Min\+Delta@{get\+Min\+Delta}}
 \index{get\+Min\+Delta@{get\+Min\+Delta}!raw\+\_\+urlparser\+::\+Differences@{raw\+\_\+urlparser\+::\+Differences}}
-\subsubsection[{\texorpdfstring{get\+Min\+Delta(self)}{getMinDelta(self)}}]{\setlength{\rightskip}{0pt plus 5cm}def raw\+\_\+urlparser.\+Differences.\+get\+Min\+Delta (
-\begin{DoxyParamCaption}
-\item[{}]{self}
-\end{DoxyParamCaption}
-)}\hypertarget{classraw__urlparser_1_1_differences_af19faaea85ca8ac0d327c8443ddd99ef}{}\label{classraw__urlparser_1_1_differences_af19faaea85ca8ac0d327c8443ddd99ef}
+\subsubsection{\texorpdfstring{get\+Min\+Delta()}{getMinDelta()}}
+{\footnotesize\ttfamily def raw\+\_\+urlparser.\+Differences.\+get\+Min\+Delta (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
 
 
 Definition at line \hyperlink{raw__urlparser_8py_source_l00094}{94} of file \hyperlink{raw__urlparser_8py_source}{raw\+\_\+urlparser.\+py}.
 
 
 
-References \hyperlink{raw__urlparser_8py_source_l00090}{raw\+\_\+urlparser.\+Differences.\+dmin}, \hyperlink{exch2exch_8py_source_l00116}{exch2exch.\+Differences.\+dmin}, and \hyperlink{exchange_8py_source_l00260}{exchange.\+Diff\+Tracker.\+dmin}.
+References \hyperlink{raw__urlparser_8py_source_l00090}{raw\+\_\+urlparser.\+Differences.\+dmin}, and \hyperlink{exch2exch_8py_source_l00116}{exch2exch.\+Differences.\+dmin}.
 
 
 
@@ -176,13 +163,12 @@ Referenced by \hyperlink{raw__urlparser_8py_source_l00100}{raw\+\_\+urlparser.\+
 
 
 \begin{DoxyCode}
-\hypertarget{classraw__urlparser_1_1_differences.tex_l00094}{}\hyperlink{classraw__urlparser_1_1_differences_af19faaea85ca8ac0d327c8443ddd99ef}{00094}     \textcolor{keyword}{def }\hyperlink{classraw__urlparser_1_1_differences_af19faaea85ca8ac0d327c8443ddd99ef}{getMinDelta} (self):
-00095         \textcolor{keywordflow}{return} self.\hyperlink{classraw__urlparser_1_1_differences_af8457a8e542de086595e7fbbffdf713c}{dmin}
+00094     \textcolor{keyword}{def }getMinDelta (self):
+00095         \textcolor{keywordflow}{return} self.dmin
 00096         
 \end{DoxyCode}
-
-
-Here is the caller graph for this function\+:\nopagebreak
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -191,12 +177,13 @@ Here is the caller graph for this function\+:\nopagebreak
 \end{figure}
 
 
-
-
 \subsection{Member Data Documentation}
+\mbox{\Hypertarget{classraw__urlparser_1_1_differences_ad2b06158b655136bc7743dc6ac8d1e2a}\label{classraw__urlparser_1_1_differences_ad2b06158b655136bc7743dc6ac8d1e2a}} 
 \index{raw\+\_\+urlparser\+::\+Differences@{raw\+\_\+urlparser\+::\+Differences}!dmax@{dmax}}
 \index{dmax@{dmax}!raw\+\_\+urlparser\+::\+Differences@{raw\+\_\+urlparser\+::\+Differences}}
-\subsubsection[{\texorpdfstring{dmax}{dmax}}]{\setlength{\rightskip}{0pt plus 5cm}raw\+\_\+urlparser.\+Differences.\+dmax}\hypertarget{classraw__urlparser_1_1_differences_ad2b06158b655136bc7743dc6ac8d1e2a}{}\label{classraw__urlparser_1_1_differences_ad2b06158b655136bc7743dc6ac8d1e2a}
+\subsubsection{\texorpdfstring{dmax}{dmax}}
+{\footnotesize\ttfamily raw\+\_\+urlparser.\+Differences.\+dmax}
+
 
 
 Definition at line \hyperlink{raw__urlparser_8py_source_l00092}{92} of file \hyperlink{raw__urlparser_8py_source}{raw\+\_\+urlparser.\+py}.
@@ -205,9 +192,12 @@ Definition at line \hyperlink{raw__urlparser_8py_source_l00092}{92} of file \hyp
 
 Referenced by \hyperlink{raw__urlparser_8py_source_l00097}{raw\+\_\+urlparser.\+Differences.\+get\+Max\+Delta()}.
 
+\mbox{\Hypertarget{classraw__urlparser_1_1_differences_af8457a8e542de086595e7fbbffdf713c}\label{classraw__urlparser_1_1_differences_af8457a8e542de086595e7fbbffdf713c}} 
 \index{raw\+\_\+urlparser\+::\+Differences@{raw\+\_\+urlparser\+::\+Differences}!dmin@{dmin}}
 \index{dmin@{dmin}!raw\+\_\+urlparser\+::\+Differences@{raw\+\_\+urlparser\+::\+Differences}}
-\subsubsection[{\texorpdfstring{dmin}{dmin}}]{\setlength{\rightskip}{0pt plus 5cm}raw\+\_\+urlparser.\+Differences.\+dmin}\hypertarget{classraw__urlparser_1_1_differences_af8457a8e542de086595e7fbbffdf713c}{}\label{classraw__urlparser_1_1_differences_af8457a8e542de086595e7fbbffdf713c}
+\subsubsection{\texorpdfstring{dmin}{dmin}}
+{\footnotesize\ttfamily raw\+\_\+urlparser.\+Differences.\+dmin}
+
 
 
 Definition at line \hyperlink{raw__urlparser_8py_source_l00090}{90} of file \hyperlink{raw__urlparser_8py_source}{raw\+\_\+urlparser.\+py}.
@@ -216,26 +206,43 @@ Definition at line \hyperlink{raw__urlparser_8py_source_l00090}{90} of file \hyp
 
 Referenced by \hyperlink{raw__urlparser_8py_source_l00094}{raw\+\_\+urlparser.\+Differences.\+get\+Min\+Delta()}.
 
+\mbox{\Hypertarget{classraw__urlparser_1_1_differences_ab4c3073b8c569b7791ab3b8e21e9b364}\label{classraw__urlparser_1_1_differences_ab4c3073b8c569b7791ab3b8e21e9b364}} 
 \index{raw\+\_\+urlparser\+::\+Differences@{raw\+\_\+urlparser\+::\+Differences}!mb@{mb}}
 \index{mb@{mb}!raw\+\_\+urlparser\+::\+Differences@{raw\+\_\+urlparser\+::\+Differences}}
-\subsubsection[{\texorpdfstring{mb}{mb}}]{\setlength{\rightskip}{0pt plus 5cm}raw\+\_\+urlparser.\+Differences.\+mb}\hypertarget{classraw__urlparser_1_1_differences_ab4c3073b8c569b7791ab3b8e21e9b364}{}\label{classraw__urlparser_1_1_differences_ab4c3073b8c569b7791ab3b8e21e9b364}
+\subsubsection{\texorpdfstring{mb}{mb}}
+{\footnotesize\ttfamily raw\+\_\+urlparser.\+Differences.\+mb}
+
 
 
 Definition at line \hyperlink{raw__urlparser_8py_source_l00087}{87} of file \hyperlink{raw__urlparser_8py_source}{raw\+\_\+urlparser.\+py}.
 
+\mbox{\Hypertarget{classraw__urlparser_1_1_differences_a46fe97bedb977585a0b27d7408ace118}\label{classraw__urlparser_1_1_differences_a46fe97bedb977585a0b27d7408ace118}} 
 \index{raw\+\_\+urlparser\+::\+Differences@{raw\+\_\+urlparser\+::\+Differences}!ok@{ok}}
 \index{ok@{ok}!raw\+\_\+urlparser\+::\+Differences@{raw\+\_\+urlparser\+::\+Differences}}
-\subsubsection[{\texorpdfstring{ok}{ok}}]{\setlength{\rightskip}{0pt plus 5cm}raw\+\_\+urlparser.\+Differences.\+ok}\hypertarget{classraw__urlparser_1_1_differences_a46fe97bedb977585a0b27d7408ace118}{}\label{classraw__urlparser_1_1_differences_a46fe97bedb977585a0b27d7408ace118}
+\subsubsection{\texorpdfstring{ok}{ok}}
+{\footnotesize\ttfamily raw\+\_\+urlparser.\+Differences.\+ok}
+
 
 
 Definition at line \hyperlink{raw__urlparser_8py_source_l00088}{88} of file \hyperlink{raw__urlparser_8py_source}{raw\+\_\+urlparser.\+py}.
 
+
+
+Referenced by \hyperlink{raw__urlparser_8py_source_l00100}{raw\+\_\+urlparser.\+Differences.\+\_\+\+\_\+str\+\_\+\+\_\+()}.
+
+\mbox{\Hypertarget{classraw__urlparser_1_1_differences_ad4e7eadb659a1cdcba90793cc52af174}\label{classraw__urlparser_1_1_differences_ad4e7eadb659a1cdcba90793cc52af174}} 
 \index{raw\+\_\+urlparser\+::\+Differences@{raw\+\_\+urlparser\+::\+Differences}!rates@{rates}}
 \index{rates@{rates}!raw\+\_\+urlparser\+::\+Differences@{raw\+\_\+urlparser\+::\+Differences}}
-\subsubsection[{\texorpdfstring{rates}{rates}}]{\setlength{\rightskip}{0pt plus 5cm}raw\+\_\+urlparser.\+Differences.\+rates}\hypertarget{classraw__urlparser_1_1_differences_ad4e7eadb659a1cdcba90793cc52af174}{}\label{classraw__urlparser_1_1_differences_ad4e7eadb659a1cdcba90793cc52af174}
+\subsubsection{\texorpdfstring{rates}{rates}}
+{\footnotesize\ttfamily raw\+\_\+urlparser.\+Differences.\+rates}
+
 
 
 Definition at line \hyperlink{raw__urlparser_8py_source_l00086}{86} of file \hyperlink{raw__urlparser_8py_source}{raw\+\_\+urlparser.\+py}.
+
+
+
+Referenced by \hyperlink{raw__urlparser_8py_source_l00100}{raw\+\_\+urlparser.\+Differences.\+\_\+\+\_\+str\+\_\+\+\_\+()}.
 
 
 

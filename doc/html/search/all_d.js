@@ -1,11 +1,16 @@
 var searchData=
 [
-  ['pair',['pair',['../classexchange_1_1_ticker.html#a382f9199d13a7b5929a26065fad4e491',1,'exchange.Ticker.pair()'],['../classexchange_1_1_bitfinex.html#a901a5499667f1f2b391bc9dbbfe1c1c7',1,'exchange.Bitfinex.pair()'],['../classexchange_1_1_bitstamp.html#adf1f8e926f0cedb79bf57ab2dfa31776',1,'exchange.Bitstamp.pair()'],['../classexchange_1_1_fox_bit.html#abfd6daf1cbad94eb74bba4c97fe4a574',1,'exchange.FoxBit.pair()'],['../classexchange_1_1_mercado_bitcoin.html#a879f8ca352d313230d72e6e8785985a1',1,'exchange.MercadoBitcoin.pair()'],['../classexchange_1_1_ok_coin.html#a52f3b919f86565518d46c49c5b8f66a6',1,'exchange.OkCoin.pair()']]],
-  ['parameters',['Parameters',['../classe2e_1_1_parameters.html',1,'e2e']]],
-  ['params',['params',['../classe2e_1_1_application.html#a57206c6ccc86c2659edfd8d73d2029f3',1,'e2e::Application']]],
-  ['parsecmdline',['parseCmdLine',['../classe2e_1_1_application.html#a91b8b6df6456d27bed503849ffcdcc77',1,'e2e::Application']]],
-  ['prefix',['prefix',['../classe2e_1_1_application.html#a027ff25e5409ae17584978a09fc2611a',1,'e2e.Application.prefix()'],['../classrates_1_1_google.html#ada5de8700ad571d0ab819fa0163d6bbe',1,'rates.Google.prefix()'],['../classrates_1_1_x_rates.html#a3b92b41b0fbd77b44d01f094ff83dd9d',1,'rates.XRates.prefix()']]],
-  ['process_5forderbook',['process_orderbook',['../classexchange_1_1_exchange.html#a93c60cd18eab808d68191fb1d2d42cf8',1,'exchange::Exchange']]],
-  ['process_5fticker',['process_ticker',['../classexchange_1_1_exchange.html#aa3f83a45154aa4a1b07010f74c2b37db',1,'exchange.Exchange.process_ticker()'],['../classexchange_1_1_bitfinex.html#a8e6513876891b917f246507f37d7e179',1,'exchange.Bitfinex.process_ticker()'],['../classexchange_1_1_bitstamp.html#ac963eebe537661b988f0ba0ff72514b5',1,'exchange.Bitstamp.process_ticker()'],['../classexchange_1_1_fox_bit.html#a813481c37754cc0c6e0b1cefa0ec0889',1,'exchange.FoxBit.process_ticker()'],['../classexchange_1_1_mercado_bitcoin.html#a2acc4c0710269e72bc9547508be97117',1,'exchange.MercadoBitcoin.process_ticker()'],['../classexchange_1_1_ok_coin.html#ac3ae7a770ea55b1b52ff0d909182d387',1,'exchange.OkCoin.process_ticker()']]],
-  ['process_5ftrades',['process_trades',['../classexchange_1_1_exchange.html#a0e67454c7053807302be914376790484',1,'exchange.Exchange.process_trades()'],['../classexchange_1_1_fox_bit.html#a244f81e91b04a1118d2d17f6c8497cb5',1,'exchange.FoxBit.process_trades()']]]
+  ['ok',['ok',['../classexch2exch_1_1_differences.html#a6de3ee563584c83a97ba815db8ec7831',1,'exch2exch.Differences.ok()'],['../classraw__urlparser_1_1_differences.html#a46fe97bedb977585a0b27d7408ace118',1,'raw_urlparser.Differences.ok()'],['../namespaceraw__urlparser.html#aa0dcadbc04ec5d09f7a2dabb865000c8',1,'raw_urlparser.ok()']]],
+  ['ok_5ftupl',['ok_tupl',['../namespaceraw__urlparser.html#a470f476a37f64adb24b58db300e57117',1,'raw_urlparser']]],
+  ['okcoin',['OkCoin',['../classexchange_1_1_ok_coin.html',1,'exchange']]],
+  ['orderbook',['OrderBook',['../classexchange_1_1_order_book.html',1,'exchange']]],
+  ['orgticker',['orgTicker',['../classexchange_1_1_differences.html#a25b2d5907724e4647425ab4089ce065e',1,'exchange::Differences']]],
+  ['origin',['origin',['../classe2e_1_1_parameters.html#aff4d7aaa35295f7f71e546fe5554c4d9',1,'e2e::Parameters']]],
+  ['originalticker',['originalTicker',['../classexchange_1_1_exchange.html#ae326ce8c325672f3f555af59f22fd9f6',1,'exchange::Exchange']]],
+  ['originoutput',['originOutput',['../classe2e_1_1_parameters.html#ab1ac2fc0ab2f3ef169b776c776cdb225',1,'e2e::Parameters']]],
+  ['originoutputput',['originOutputput',['../classe2e_1_1_parameters.html#acece0ee5caaa6322c3a337c3b7f00599',1,'e2e::Parameters']]],
+  ['outallrates',['outAllRates',['../classe2e_1_1_application.html#acd7798aa633d75001b6f6fde556b8a51',1,'e2e::Application']]],
+  ['outdestinationexchange',['outDestinationExchange',['../classe2e_1_1_application.html#a1b099bee6f8170c4c52e7ae884d95b27',1,'e2e::Application']]],
+  ['outmainrates',['outMainRates',['../classe2e_1_1_application.html#a3e33fd00d85637393d48ea3f7dbd95c7',1,'e2e::Application']]],
+  ['outoriginexchange',['outOriginExchange',['../classe2e_1_1_application.html#adfad90d64cddb8d751961202264ca489',1,'e2e::Application']]]
 ];

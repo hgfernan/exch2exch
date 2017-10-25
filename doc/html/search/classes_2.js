@@ -1,9 +1,8 @@
 var searchData=
 [
+  ['datetime',['DateTime',['../classstart__time_1_1_date_time.html',1,'start_time']]],
   ['datetimeencoder',['DatetimeEncoder',['../classexchange_1_1_datetime_encoder.html',1,'exchange']]],
-  ['differences',['Differences',['../classraw__urlparser_1_1_differences.html',1,'raw_urlparser']]],
-  ['differences',['Differences',['../classexchange_1_1_differences.html',1,'exchange']]],
-  ['differences',['Differences',['../classexch2exch_1_1_differences.html',1,'exch2exch']]],
+  ['differences',['Differences',['../classraw__urlparser_1_1_differences.html',1,'raw_urlparser.Differences'],['../classexch2exch_1_1_differences.html',1,'exch2exch.Differences'],['../classexchange_1_1_differences.html',1,'exchange.Differences']]],
   ['difforderbook',['DiffOrderbook',['../classexchange_1_1_diff_orderbook.html',1,'exchange']]],
   ['difftracker',['DiffTracker',['../classexchange_1_1_diff_tracker.html',1,'exchange']]],
   ['difftrades',['DiffTrades',['../classexchange_1_1_diff_trades.html',1,'exchange']]],

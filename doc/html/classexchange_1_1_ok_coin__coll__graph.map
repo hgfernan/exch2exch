@@ -1,3 +1,3 @@
 <map id="exchange.OkCoin" name="exchange.OkCoin">
-<area shape="rect" id="node2" href="$classexchange_1_1_exchange.html" title="{exchange.Exchange\n|+ originalTicker\l+ ticker\l+ trades\l|+ __init__()\l+ __repr__()\l+ __str__()\l+ dnload_orderbook()\l+ dnload_ticker()\l+ dnload_trades()\l+ get_exch_name()\l+ get_orderbook()\l+ get_ticker()\l+ get_trades()\l+ getOriginalTicker()\l+ mk_ticker()\l+ process_orderbook()\l+ process_ticker()\l+ process_trades()\l}" alt="" coords="126,175,278,487"/>
+<area shape="rect" id="node2" href="$classexchange_1_1_exchange.html" title="{exchange.Exchange\n|+ originalTicker\l+ startDt\l+ ticker\l+ trades\l|+ __init__()\l+ __repr__()\l+ __str__()\l+ dnload_orderbook()\l+ dnload_ticker()\l+ dnload_trades()\l+ get_exch_name()\l+ get_orderbook()\l+ get_ticker()\l+ get_trades()\land 6 more...\l}" alt="" coords="127,175,271,443"/>
 </map>

@@ -2,7 +2,8 @@
 \label{classexchange_1_1_exchange}\index{exchange.\+Exchange@{exchange.\+Exchange}}
 
 
-Inheritance diagram for exchange.\+Exchange\+:\nopagebreak
+Inheritance diagram for exchange.\+Exchange\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -11,11 +12,12 @@ Inheritance diagram for exchange.\+Exchange\+:\nopagebreak
 \end{figure}
 
 
-Collaboration diagram for exchange.\+Exchange\+:\nopagebreak
+Collaboration diagram for exchange.\+Exchange\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=203pt]{classexchange_1_1_exchange__coll__graph}
+\includegraphics[width=200pt]{classexchange_1_1_exchange__coll__graph}
 \end{center}
 \end{figure}
 \subsection*{Public Member Functions}
@@ -41,9 +43,11 @@ def \hyperlink{classexchange_1_1_exchange_aabe7d5679cac0096bc54169cfceea536}{get
 \item 
 def \hyperlink{classexchange_1_1_exchange_a254bac1703de55674f5ebfbb03a95e74}{get\+\_\+trades} (self)
 \item 
+def \hyperlink{classexchange_1_1_exchange_aa0c6b78e855daec381fe180fd4dbbf1e}{get\+Coin\+Pair} (self)
+\item 
 def \hyperlink{classexchange_1_1_exchange_a6925ebc9654ca9120d70fd0105399dc3}{get\+Original\+Ticker} (self)
 \item 
-def \hyperlink{classexchange_1_1_exchange_a31c0527e3a8a21fe74f9c24a79a86e6b}{mk\+\_\+ticker} (self)
+def \hyperlink{classexchange_1_1_exchange_af7512183a26d97ea60a4f44608f40a0a}{mk\+Ticker} (self)
 \item 
 def \hyperlink{classexchange_1_1_exchange_a93c60cd18eab808d68191fb1d2d42cf8}{process\+\_\+orderbook} (self)
 \item 
@@ -55,6 +59,8 @@ def \hyperlink{classexchange_1_1_exchange_a0e67454c7053807302be914376790484}{pro
 \begin{DoxyCompactItemize}
 \item 
 \hyperlink{classexchange_1_1_exchange_ae326ce8c325672f3f555af59f22fd9f6}{original\+Ticker}
+\item 
+\hyperlink{classexchange_1_1_exchange_a62e9159cbcc09db3c06b1b5622da39d4}{start\+Dt}
 \item 
 \hyperlink{classexchange_1_1_exchange_a7cf9e52f993627955a2e242c388daaeb}{ticker}
 \item 
@@ -74,446 +80,402 @@ string \hyperlink{classexchange_1_1_exchange_aafa0e023de170f51cbf9d48e1154587a}{
 \subsection{Detailed Description}
 
 
-Definition at line \hyperlink{exchange_8py_source_l00139}{139} of file \hyperlink{exchange_8py_source}{exchange.\+py}.
+Definition at line \hyperlink{exchange_8py_source_l00167}{167} of file \hyperlink{exchange_8py_source}{exchange.\+py}.
 
 
 
 \subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classexchange_1_1_exchange_adc6345bd84ea113d46f4e044dbd4d0fb}\label{classexchange_1_1_exchange_adc6345bd84ea113d46f4e044dbd4d0fb}} 
 \index{exchange\+::\+Exchange@{exchange\+::\+Exchange}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
 \index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!exchange\+::\+Exchange@{exchange\+::\+Exchange}}
-\subsubsection[{\texorpdfstring{\+\_\+\+\_\+init\+\_\+\+\_\+(self)}{__init__(self)}}]{\setlength{\rightskip}{0pt plus 5cm}def exchange.\+Exchange.\+\_\+\+\_\+init\+\_\+\+\_\+ (
-\begin{DoxyParamCaption}
-\item[{}]{self}
-\end{DoxyParamCaption}
-)}\hypertarget{classexchange_1_1_exchange_adc6345bd84ea113d46f4e044dbd4d0fb}{}\label{classexchange_1_1_exchange_adc6345bd84ea113d46f4e044dbd4d0fb}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+init\+\_\+\+\_\+()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def exchange.\+Exchange.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
 
 
-Definition at line \hyperlink{exchange_8py_source_l00146}{146} of file \hyperlink{exchange_8py_source}{exchange.\+py}.
+
+Definition at line \hyperlink{exchange_8py_source_l00174}{174} of file \hyperlink{exchange_8py_source}{exchange.\+py}.
 
 
 \begin{DoxyCode}
-\hypertarget{classexchange_1_1_exchange.tex_l00146}{}\hyperlink{classexchange_1_1_exchange_adc6345bd84ea113d46f4e044dbd4d0fb}{00146}     \textcolor{keyword}{def }\hyperlink{classexchange_1_1_exchange_adc6345bd84ea113d46f4e044dbd4d0fb}{\_\_init\_\_} (self):
-00147 \textcolor{comment}{#        self.dnload\_ticker ()}
-00148 \textcolor{comment}{#        self.process\_ticker ()}
-00149         \textcolor{keywordflow}{pass}
-00150     
+00174     \textcolor{keyword}{def }\hyperlink{namespacestart__time_a9c9bd378729a13c96a22c8b079ea172c}{\_\_init\_\_} (self):
+00175 \textcolor{comment}{#        self.dnload\_ticker ()}
+00176 \textcolor{comment}{#        self.process\_ticker ()}
+00177         self.startDt = start\_time.getTimeAsInt ()
+00178     
 \end{DoxyCode}
 
 
 \subsection{Member Function Documentation}
+\mbox{\Hypertarget{classexchange_1_1_exchange_afff4d01a82947f2e3be0d4fa5e0e0fe7}\label{classexchange_1_1_exchange_afff4d01a82947f2e3be0d4fa5e0e0fe7}} 
 \index{exchange\+::\+Exchange@{exchange\+::\+Exchange}!\+\_\+\+\_\+repr\+\_\+\+\_\+@{\+\_\+\+\_\+repr\+\_\+\+\_\+}}
 \index{\+\_\+\+\_\+repr\+\_\+\+\_\+@{\+\_\+\+\_\+repr\+\_\+\+\_\+}!exchange\+::\+Exchange@{exchange\+::\+Exchange}}
-\subsubsection[{\texorpdfstring{\+\_\+\+\_\+repr\+\_\+\+\_\+(self)}{__repr__(self)}}]{\setlength{\rightskip}{0pt plus 5cm}def exchange.\+Exchange.\+\_\+\+\_\+repr\+\_\+\+\_\+ (
-\begin{DoxyParamCaption}
-\item[{}]{self}
-\end{DoxyParamCaption}
-)}\hypertarget{classexchange_1_1_exchange_afff4d01a82947f2e3be0d4fa5e0e0fe7}{}\label{classexchange_1_1_exchange_afff4d01a82947f2e3be0d4fa5e0e0fe7}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+repr\+\_\+\+\_\+()}{\_\_repr\_\_()}}
+{\footnotesize\ttfamily def exchange.\+Exchange.\+\_\+\+\_\+repr\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
 
 
-Definition at line \hyperlink{exchange_8py_source_l00224}{224} of file \hyperlink{exchange_8py_source}{exchange.\+py}.
+
+Definition at line \hyperlink{exchange_8py_source_l00256}{256} of file \hyperlink{exchange_8py_source}{exchange.\+py}.
 
 
 \begin{DoxyCode}
-\hypertarget{classexchange_1_1_exchange.tex_l00224}{}\hyperlink{classexchange_1_1_exchange_afff4d01a82947f2e3be0d4fa5e0e0fe7}{00224}     \textcolor{keyword}{def }\hyperlink{classexchange_1_1_exchange_afff4d01a82947f2e3be0d4fa5e0e0fe7}{\_\_repr\_\_} (self):
-00225         result = \textcolor{stringliteral}{"\{0\} ()"}.format (type (self).\_\_name\_\_)
-00226         
-00227         \textcolor{comment}{# Normal function termination}
-00228         \textcolor{keywordflow}{return} result
-00229         
+00256     \textcolor{keyword}{def }\_\_repr\_\_ (self):
+00257         result = \textcolor{stringliteral}{"\{0\} ()"}.format (type (self).\_\_name\_\_)
+00258         
+00259         \textcolor{comment}{# Normal function termination}
+00260         \textcolor{keywordflow}{return} result
+00261         
 \end{DoxyCode}
+\mbox{\Hypertarget{classexchange_1_1_exchange_ae3fd515a25ead8667f917230b0975a98}\label{classexchange_1_1_exchange_ae3fd515a25ead8667f917230b0975a98}} 
 \index{exchange\+::\+Exchange@{exchange\+::\+Exchange}!\+\_\+\+\_\+str\+\_\+\+\_\+@{\+\_\+\+\_\+str\+\_\+\+\_\+}}
 \index{\+\_\+\+\_\+str\+\_\+\+\_\+@{\+\_\+\+\_\+str\+\_\+\+\_\+}!exchange\+::\+Exchange@{exchange\+::\+Exchange}}
-\subsubsection[{\texorpdfstring{\+\_\+\+\_\+str\+\_\+\+\_\+(self)}{__str__(self)}}]{\setlength{\rightskip}{0pt plus 5cm}def exchange.\+Exchange.\+\_\+\+\_\+str\+\_\+\+\_\+ (
-\begin{DoxyParamCaption}
-\item[{}]{self}
-\end{DoxyParamCaption}
-)}\hypertarget{classexchange_1_1_exchange_ae3fd515a25ead8667f917230b0975a98}{}\label{classexchange_1_1_exchange_ae3fd515a25ead8667f917230b0975a98}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+str\+\_\+\+\_\+()}{\_\_str\_\_()}}
+{\footnotesize\ttfamily def exchange.\+Exchange.\+\_\+\+\_\+str\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
 
 
-Definition at line \hyperlink{exchange_8py_source_l00220}{220} of file \hyperlink{exchange_8py_source}{exchange.\+py}.
+
+Definition at line \hyperlink{exchange_8py_source_l00252}{252} of file \hyperlink{exchange_8py_source}{exchange.\+py}.
 
 
 \begin{DoxyCode}
-\hypertarget{classexchange_1_1_exchange.tex_l00220}{}\hyperlink{classexchange_1_1_exchange_ae3fd515a25ead8667f917230b0975a98}{00220}     \textcolor{keyword}{def }\hyperlink{classexchange_1_1_exchange_ae3fd515a25ead8667f917230b0975a98}{\_\_str\_\_} (self):
-00221         \textcolor{comment}{# TODO raise exception}
-00222         \textcolor{keywordflow}{pass}
-00223         
+00252     \textcolor{keyword}{def }\hyperlink{namespacerates_a2f1a70c33ee9e255938e4c19fd207264}{\_\_str\_\_} (self):
+00253         \textcolor{comment}{# TODO raise exception}
+00254         \textcolor{keywordflow}{pass}
+00255         
 \end{DoxyCode}
+\mbox{\Hypertarget{classexchange_1_1_exchange_a99f32c746467a00b455a97c7805fd710}\label{classexchange_1_1_exchange_a99f32c746467a00b455a97c7805fd710}} 
 \index{exchange\+::\+Exchange@{exchange\+::\+Exchange}!dnload\+\_\+orderbook@{dnload\+\_\+orderbook}}
 \index{dnload\+\_\+orderbook@{dnload\+\_\+orderbook}!exchange\+::\+Exchange@{exchange\+::\+Exchange}}
-\subsubsection[{\texorpdfstring{dnload\+\_\+orderbook(self)}{dnload_orderbook(self)}}]{\setlength{\rightskip}{0pt plus 5cm}def exchange.\+Exchange.\+dnload\+\_\+orderbook (
-\begin{DoxyParamCaption}
-\item[{}]{self}
-\end{DoxyParamCaption}
-)}\hypertarget{classexchange_1_1_exchange_a99f32c746467a00b455a97c7805fd710}{}\label{classexchange_1_1_exchange_a99f32c746467a00b455a97c7805fd710}
-
-
-Definition at line \hyperlink{exchange_8py_source_l00194}{194} of file \hyperlink{exchange_8py_source}{exchange.\+py}.
+\subsubsection{\texorpdfstring{dnload\+\_\+orderbook()}{dnload\_orderbook()}}
+{\footnotesize\ttfamily def exchange.\+Exchange.\+dnload\+\_\+orderbook (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
 
 
 
-References \hyperlink{exchange_8py_source_l00183}{exchange.\+Exchange.\+trades}.
+Definition at line \hyperlink{exchange_8py_source_l00222}{222} of file \hyperlink{exchange_8py_source}{exchange.\+py}.
+
+
+
+References \hyperlink{exchange_8py_source_l00211}{exchange.\+Exchange.\+trades}.
 
 
 \begin{DoxyCode}
-\hypertarget{classexchange_1_1_exchange.tex_l00194}{}\hyperlink{classexchange_1_1_exchange_a99f32c746467a00b455a97c7805fd710}{00194}     \textcolor{keyword}{def }\hyperlink{classexchange_1_1_exchange_a99f32c746467a00b455a97c7805fd710}{dnload\_orderbook} (self):
-00195         url = self.\_\_class\_\_.U\_ORDRBK
-00196         f = urllib.request.urlopen (url)
-00197         
-00198         line = f.readline ()
-00199 \textcolor{comment}{#        print (line)}
-00200         
-00201         self.\hyperlink{classexchange_1_1_exchange_a30e87a377320ce05bd956fb014683641}{trades} = json.loads (line.decode (encoding=\textcolor{stringliteral}{'utf-8'}))
-00202 \textcolor{comment}{#        print (self.ticker)}
-00203         
+00222     \textcolor{keyword}{def }dnload\_orderbook (self):
+00223         url = self.\_\_class\_\_.U\_ORDRBK
+00224         f = urllib.request.urlopen (url)
+00225         
+00226         line = f.readline ()
+00227 \textcolor{comment}{#        print (line)}
+00228         
+00229         self.trades = json.loads (line.decode (encoding=\textcolor{stringliteral}{'utf-8'}))
+00230 \textcolor{comment}{#        print (self.ticker)}
+00231         
 \end{DoxyCode}
+\mbox{\Hypertarget{classexchange_1_1_exchange_a9e700d31fd60de495956518436b6768a}\label{classexchange_1_1_exchange_a9e700d31fd60de495956518436b6768a}} 
 \index{exchange\+::\+Exchange@{exchange\+::\+Exchange}!dnload\+\_\+ticker@{dnload\+\_\+ticker}}
 \index{dnload\+\_\+ticker@{dnload\+\_\+ticker}!exchange\+::\+Exchange@{exchange\+::\+Exchange}}
-\subsubsection[{\texorpdfstring{dnload\+\_\+ticker(self)}{dnload_ticker(self)}}]{\setlength{\rightskip}{0pt plus 5cm}def exchange.\+Exchange.\+dnload\+\_\+ticker (
-\begin{DoxyParamCaption}
-\item[{}]{self}
-\end{DoxyParamCaption}
-)}\hypertarget{classexchange_1_1_exchange_a9e700d31fd60de495956518436b6768a}{}\label{classexchange_1_1_exchange_a9e700d31fd60de495956518436b6768a}
+\subsubsection{\texorpdfstring{dnload\+\_\+ticker()}{dnload\_ticker()}}
+{\footnotesize\ttfamily def exchange.\+Exchange.\+dnload\+\_\+ticker (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
 
 
-Definition at line \hyperlink{exchange_8py_source_l00151}{151} of file \hyperlink{exchange_8py_source}{exchange.\+py}.
+
+Definition at line \hyperlink{exchange_8py_source_l00179}{179} of file \hyperlink{exchange_8py_source}{exchange.\+py}.
 
 
 \begin{DoxyCode}
-\hypertarget{classexchange_1_1_exchange.tex_l00151}{}\hyperlink{classexchange_1_1_exchange_a9e700d31fd60de495956518436b6768a}{00151}     \textcolor{keyword}{def }\hyperlink{classexchange_1_1_exchange_a9e700d31fd60de495956518436b6768a}{dnload\_ticker} (self):
-00152         url = self.\_\_class\_\_.U\_TICKER
-00153 \textcolor{comment}{#        print (url)}
-00154         f = urllib.request.urlopen (url)
-00155         
-00156         line = f.readline ()
-00157 \textcolor{comment}{#        print (line)}
-\hypertarget{classexchange_1_1_exchange.tex_l00158}{}\hyperlink{classexchange_1_1_exchange_ae326ce8c325672f3f555af59f22fd9f6}{00158}         self.\hyperlink{classexchange_1_1_exchange_ae326ce8c325672f3f555af59f22fd9f6}{originalTicker} = line.decode (encoding = \textcolor{stringliteral}{'utf-8'})
-00159         
-\hypertarget{classexchange_1_1_exchange.tex_l00160}{}\hyperlink{classexchange_1_1_exchange_a7cf9e52f993627955a2e242c388daaeb}{00160}         self.\hyperlink{classexchange_1_1_exchange_a7cf9e52f993627955a2e242c388daaeb}{ticker} = json.loads (line.decode (encoding=\textcolor{stringliteral}{'utf-8'}))
-00161 \textcolor{comment}{#        print (self.ticker)}
-00162         
+00179     \textcolor{keyword}{def }dnload\_ticker (self):
+00180         url = self.\_\_class\_\_.U\_TICKER
+00181 \textcolor{comment}{#        print (url)}
+00182         f = urllib.request.urlopen (url)
+00183         
+00184         line = f.readline ()
+00185 \textcolor{comment}{#        print (line)}
+00186         self.originalTicker = line.decode (encoding = \textcolor{stringliteral}{'utf-8'})
+00187         
+00188         self.ticker = json.loads (line.decode (encoding=\textcolor{stringliteral}{'utf-8'}))
+00189 \textcolor{comment}{#        print (self.ticker)}
+00190         
 \end{DoxyCode}
+\mbox{\Hypertarget{classexchange_1_1_exchange_a202c8b57ffa0adcb830de89d6466fd60}\label{classexchange_1_1_exchange_a202c8b57ffa0adcb830de89d6466fd60}} 
 \index{exchange\+::\+Exchange@{exchange\+::\+Exchange}!dnload\+\_\+trades@{dnload\+\_\+trades}}
 \index{dnload\+\_\+trades@{dnload\+\_\+trades}!exchange\+::\+Exchange@{exchange\+::\+Exchange}}
-\subsubsection[{\texorpdfstring{dnload\+\_\+trades(self)}{dnload_trades(self)}}]{\setlength{\rightskip}{0pt plus 5cm}def exchange.\+Exchange.\+dnload\+\_\+trades (
-\begin{DoxyParamCaption}
-\item[{}]{self}
-\end{DoxyParamCaption}
-)}\hypertarget{classexchange_1_1_exchange_a202c8b57ffa0adcb830de89d6466fd60}{}\label{classexchange_1_1_exchange_a202c8b57ffa0adcb830de89d6466fd60}
+\subsubsection{\texorpdfstring{dnload\+\_\+trades()}{dnload\_trades()}}
+{\footnotesize\ttfamily def exchange.\+Exchange.\+dnload\+\_\+trades (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
 
 
-Definition at line \hyperlink{exchange_8py_source_l00175}{175} of file \hyperlink{exchange_8py_source}{exchange.\+py}.
+
+Definition at line \hyperlink{exchange_8py_source_l00203}{203} of file \hyperlink{exchange_8py_source}{exchange.\+py}.
 
 
 \begin{DoxyCode}
-\hypertarget{classexchange_1_1_exchange.tex_l00175}{}\hyperlink{classexchange_1_1_exchange_a202c8b57ffa0adcb830de89d6466fd60}{00175}     \textcolor{keyword}{def }\hyperlink{classexchange_1_1_exchange_a202c8b57ffa0adcb830de89d6466fd60}{dnload\_trades} (self):
-00176         url = self.\_\_class\_\_.U\_TRADES
-00177 \textcolor{comment}{#        print (url)}
-00178         f = urllib.request.urlopen (url)
-00179         
-00180         line = f.readline ()
-00181 \textcolor{comment}{#        print (line)}
-00182         
-\hypertarget{classexchange_1_1_exchange.tex_l00183}{}\hyperlink{classexchange_1_1_exchange_a30e87a377320ce05bd956fb014683641}{00183}         self.\hyperlink{classexchange_1_1_exchange_a30e87a377320ce05bd956fb014683641}{trades} = json.loads (line.decode (encoding=\textcolor{stringliteral}{'utf-8'}))
-00184 \textcolor{comment}{#        print (self.ticker)}
-00185         
+00203     \textcolor{keyword}{def }dnload\_trades (self):
+00204         url = self.\_\_class\_\_.U\_TRADES
+00205 \textcolor{comment}{#        print (url)}
+00206         f = urllib.request.urlopen (url)
+00207         
+00208         line = f.readline ()
+00209 \textcolor{comment}{#        print (line)}
+00210         
+00211         self.trades = json.loads (line.decode (encoding=\textcolor{stringliteral}{'utf-8'}))
+00212 \textcolor{comment}{#        print (self.ticker)}
+00213         
 \end{DoxyCode}
+\mbox{\Hypertarget{classexchange_1_1_exchange_a8f095bac98d7ad212f93bfcdff458bf7}\label{classexchange_1_1_exchange_a8f095bac98d7ad212f93bfcdff458bf7}} 
 \index{exchange\+::\+Exchange@{exchange\+::\+Exchange}!get\+\_\+exch\+\_\+name@{get\+\_\+exch\+\_\+name}}
 \index{get\+\_\+exch\+\_\+name@{get\+\_\+exch\+\_\+name}!exchange\+::\+Exchange@{exchange\+::\+Exchange}}
-\subsubsection[{\texorpdfstring{get\+\_\+exch\+\_\+name(self)}{get_exch_name(self)}}]{\setlength{\rightskip}{0pt plus 5cm}def exchange.\+Exchange.\+get\+\_\+exch\+\_\+name (
-\begin{DoxyParamCaption}
-\item[{}]{self}
-\end{DoxyParamCaption}
-)}\hypertarget{classexchange_1_1_exchange_a8f095bac98d7ad212f93bfcdff458bf7}{}\label{classexchange_1_1_exchange_a8f095bac98d7ad212f93bfcdff458bf7}
+\subsubsection{\texorpdfstring{get\+\_\+exch\+\_\+name()}{get\_exch\_name()}}
+{\footnotesize\ttfamily def exchange.\+Exchange.\+get\+\_\+exch\+\_\+name (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
 
 
-Definition at line \hyperlink{exchange_8py_source_l00212}{212} of file \hyperlink{exchange_8py_source}{exchange.\+py}.
+
+Definition at line \hyperlink{exchange_8py_source_l00240}{240} of file \hyperlink{exchange_8py_source}{exchange.\+py}.
 
 
 \begin{DoxyCode}
-\hypertarget{classexchange_1_1_exchange.tex_l00212}{}\hyperlink{classexchange_1_1_exchange_a8f095bac98d7ad212f93bfcdff458bf7}{00212}     \textcolor{keyword}{def }\hyperlink{classexchange_1_1_exchange_a8f095bac98d7ad212f93bfcdff458bf7}{get\_exch\_name} (self):
-00213         \textcolor{comment}{# TODO raise exception}
-00214         \textcolor{keywordflow}{pass}
-00215     
+00240     \textcolor{keyword}{def }get\_exch\_name (self):
+00241         \textcolor{comment}{# TODO raise exception}
+00242         \textcolor{keywordflow}{pass}
+00243     
 \end{DoxyCode}
+\mbox{\Hypertarget{classexchange_1_1_exchange_a5d0c05c289d664892ade5edb03adbd6b}\label{classexchange_1_1_exchange_a5d0c05c289d664892ade5edb03adbd6b}} 
 \index{exchange\+::\+Exchange@{exchange\+::\+Exchange}!get\+\_\+orderbook@{get\+\_\+orderbook}}
 \index{get\+\_\+orderbook@{get\+\_\+orderbook}!exchange\+::\+Exchange@{exchange\+::\+Exchange}}
-\subsubsection[{\texorpdfstring{get\+\_\+orderbook(self)}{get_orderbook(self)}}]{\setlength{\rightskip}{0pt plus 5cm}def exchange.\+Exchange.\+get\+\_\+orderbook (
-\begin{DoxyParamCaption}
-\item[{}]{self}
-\end{DoxyParamCaption}
-)}\hypertarget{classexchange_1_1_exchange_a5d0c05c289d664892ade5edb03adbd6b}{}\label{classexchange_1_1_exchange_a5d0c05c289d664892ade5edb03adbd6b}
+\subsubsection{\texorpdfstring{get\+\_\+orderbook()}{get\_orderbook()}}
+{\footnotesize\ttfamily def exchange.\+Exchange.\+get\+\_\+orderbook (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
 
 
-Definition at line \hyperlink{exchange_8py_source_l00208}{208} of file \hyperlink{exchange_8py_source}{exchange.\+py}.
+
+Definition at line \hyperlink{exchange_8py_source_l00236}{236} of file \hyperlink{exchange_8py_source}{exchange.\+py}.
 
 
 \begin{DoxyCode}
-\hypertarget{classexchange_1_1_exchange.tex_l00208}{}\hyperlink{classexchange_1_1_exchange_a5d0c05c289d664892ade5edb03adbd6b}{00208}     \textcolor{keyword}{def }\hyperlink{classexchange_1_1_exchange_a5d0c05c289d664892ade5edb03adbd6b}{get\_orderbook} (self):
-00209         self.\hyperlink{classexchange_1_1_exchange_a99f32c746467a00b455a97c7805fd710}{dnload\_orderbook} ()
-00210         self.\hyperlink{classexchange_1_1_exchange_a93c60cd18eab808d68191fb1d2d42cf8}{process\_orderbook} () 
-00211     
+00236     \textcolor{keyword}{def }get\_orderbook (self):
+00237         self.dnload\_orderbook ()
+00238         self.process\_orderbook () 
+00239     
 \end{DoxyCode}
-
-
-Here is the call graph for this function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{classexchange_1_1_exchange_a5d0c05c289d664892ade5edb03adbd6b_cgraph}
-\end{center}
-\end{figure}
-
-
+\mbox{\Hypertarget{classexchange_1_1_exchange_aabe7d5679cac0096bc54169cfceea536}\label{classexchange_1_1_exchange_aabe7d5679cac0096bc54169cfceea536}} 
 \index{exchange\+::\+Exchange@{exchange\+::\+Exchange}!get\+\_\+ticker@{get\+\_\+ticker}}
 \index{get\+\_\+ticker@{get\+\_\+ticker}!exchange\+::\+Exchange@{exchange\+::\+Exchange}}
-\subsubsection[{\texorpdfstring{get\+\_\+ticker(self)}{get_ticker(self)}}]{\setlength{\rightskip}{0pt plus 5cm}def exchange.\+Exchange.\+get\+\_\+ticker (
-\begin{DoxyParamCaption}
-\item[{}]{self}
-\end{DoxyParamCaption}
-)}\hypertarget{classexchange_1_1_exchange_aabe7d5679cac0096bc54169cfceea536}{}\label{classexchange_1_1_exchange_aabe7d5679cac0096bc54169cfceea536}
+\subsubsection{\texorpdfstring{get\+\_\+ticker()}{get\_ticker()}}
+{\footnotesize\ttfamily def exchange.\+Exchange.\+get\+\_\+ticker (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
 
 
-Definition at line \hyperlink{exchange_8py_source_l00167}{167} of file \hyperlink{exchange_8py_source}{exchange.\+py}.
+
+Definition at line \hyperlink{exchange_8py_source_l00195}{195} of file \hyperlink{exchange_8py_source}{exchange.\+py}.
 
 
 \begin{DoxyCode}
-\hypertarget{classexchange_1_1_exchange.tex_l00167}{}\hyperlink{classexchange_1_1_exchange_aabe7d5679cac0096bc54169cfceea536}{00167}     \textcolor{keyword}{def }\hyperlink{classexchange_1_1_exchange_aabe7d5679cac0096bc54169cfceea536}{get\_ticker} (self):
-00168         self.\hyperlink{classexchange_1_1_exchange_a9e700d31fd60de495956518436b6768a}{dnload\_ticker} ()
-00169         self.\hyperlink{classexchange_1_1_exchange_aa3f83a45154aa4a1b07010f74c2b37db}{process\_ticker} ()
-00170     
+00195     \textcolor{keyword}{def }get\_ticker (self):
+00196         self.dnload\_ticker ()
+00197         self.process\_ticker ()
+00198     
 \end{DoxyCode}
-
-
-Here is the call graph for this function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{classexchange_1_1_exchange_aabe7d5679cac0096bc54169cfceea536_cgraph}
-\end{center}
-\end{figure}
-
-
+\mbox{\Hypertarget{classexchange_1_1_exchange_a254bac1703de55674f5ebfbb03a95e74}\label{classexchange_1_1_exchange_a254bac1703de55674f5ebfbb03a95e74}} 
 \index{exchange\+::\+Exchange@{exchange\+::\+Exchange}!get\+\_\+trades@{get\+\_\+trades}}
 \index{get\+\_\+trades@{get\+\_\+trades}!exchange\+::\+Exchange@{exchange\+::\+Exchange}}
-\subsubsection[{\texorpdfstring{get\+\_\+trades(self)}{get_trades(self)}}]{\setlength{\rightskip}{0pt plus 5cm}def exchange.\+Exchange.\+get\+\_\+trades (
-\begin{DoxyParamCaption}
-\item[{}]{self}
-\end{DoxyParamCaption}
-)}\hypertarget{classexchange_1_1_exchange_a254bac1703de55674f5ebfbb03a95e74}{}\label{classexchange_1_1_exchange_a254bac1703de55674f5ebfbb03a95e74}
+\subsubsection{\texorpdfstring{get\+\_\+trades()}{get\_trades()}}
+{\footnotesize\ttfamily def exchange.\+Exchange.\+get\+\_\+trades (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
 
 
-Definition at line \hyperlink{exchange_8py_source_l00190}{190} of file \hyperlink{exchange_8py_source}{exchange.\+py}.
+
+Definition at line \hyperlink{exchange_8py_source_l00218}{218} of file \hyperlink{exchange_8py_source}{exchange.\+py}.
 
 
 \begin{DoxyCode}
-\hypertarget{classexchange_1_1_exchange.tex_l00190}{}\hyperlink{classexchange_1_1_exchange_a254bac1703de55674f5ebfbb03a95e74}{00190}     \textcolor{keyword}{def }\hyperlink{classexchange_1_1_exchange_a254bac1703de55674f5ebfbb03a95e74}{get\_trades} (self):
-00191         self.\hyperlink{classexchange_1_1_exchange_a202c8b57ffa0adcb830de89d6466fd60}{dnload\_trades} ()
-00192         self.\hyperlink{classexchange_1_1_exchange_a0e67454c7053807302be914376790484}{process\_trades} ()
-00193     
+00218     \textcolor{keyword}{def }get\_trades (self):
+00219         self.dnload\_trades ()
+00220         self.process\_trades ()
+00221     
 \end{DoxyCode}
+\mbox{\Hypertarget{classexchange_1_1_exchange_aa0c6b78e855daec381fe180fd4dbbf1e}\label{classexchange_1_1_exchange_aa0c6b78e855daec381fe180fd4dbbf1e}} 
+\index{exchange\+::\+Exchange@{exchange\+::\+Exchange}!get\+Coin\+Pair@{get\+Coin\+Pair}}
+\index{get\+Coin\+Pair@{get\+Coin\+Pair}!exchange\+::\+Exchange@{exchange\+::\+Exchange}}
+\subsubsection{\texorpdfstring{get\+Coin\+Pair()}{getCoinPair()}}
+{\footnotesize\ttfamily def exchange.\+Exchange.\+get\+Coin\+Pair (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
 
 
-Here is the call graph for this function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{classexchange_1_1_exchange_a254bac1703de55674f5ebfbb03a95e74_cgraph}
-\end{center}
-\end{figure}
+
+Definition at line \hyperlink{exchange_8py_source_l00248}{248} of file \hyperlink{exchange_8py_source}{exchange.\+py}.
 
 
+\begin{DoxyCode}
+00248     \textcolor{keyword}{def }getCoinPair (self):
+00249         \textcolor{comment}{# TODO raise exception}
+00250         \textcolor{keywordflow}{pass}
+00251         
+\end{DoxyCode}
+\mbox{\Hypertarget{classexchange_1_1_exchange_a6925ebc9654ca9120d70fd0105399dc3}\label{classexchange_1_1_exchange_a6925ebc9654ca9120d70fd0105399dc3}} 
 \index{exchange\+::\+Exchange@{exchange\+::\+Exchange}!get\+Original\+Ticker@{get\+Original\+Ticker}}
 \index{get\+Original\+Ticker@{get\+Original\+Ticker}!exchange\+::\+Exchange@{exchange\+::\+Exchange}}
-\subsubsection[{\texorpdfstring{get\+Original\+Ticker(self)}{getOriginalTicker(self)}}]{\setlength{\rightskip}{0pt plus 5cm}def exchange.\+Exchange.\+get\+Original\+Ticker (
-\begin{DoxyParamCaption}
-\item[{}]{self}
-\end{DoxyParamCaption}
-)}\hypertarget{classexchange_1_1_exchange_a6925ebc9654ca9120d70fd0105399dc3}{}\label{classexchange_1_1_exchange_a6925ebc9654ca9120d70fd0105399dc3}
+\subsubsection{\texorpdfstring{get\+Original\+Ticker()}{getOriginalTicker()}}
+{\footnotesize\ttfamily def exchange.\+Exchange.\+get\+Original\+Ticker (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
 
 
-Definition at line \hyperlink{exchange_8py_source_l00216}{216} of file \hyperlink{exchange_8py_source}{exchange.\+py}.
 
-
-\begin{DoxyCode}
-\hypertarget{classexchange_1_1_exchange.tex_l00216}{}\hyperlink{classexchange_1_1_exchange_a6925ebc9654ca9120d70fd0105399dc3}{00216}     \textcolor{keyword}{def }\hyperlink{classexchange_1_1_exchange_a6925ebc9654ca9120d70fd0105399dc3}{getOriginalTicker} (self):
-00217         \textcolor{comment}{# TODO raise exception}
-00218         \textcolor{keywordflow}{pass}
-00219         
-\end{DoxyCode}
-\index{exchange\+::\+Exchange@{exchange\+::\+Exchange}!mk\+\_\+ticker@{mk\+\_\+ticker}}
-\index{mk\+\_\+ticker@{mk\+\_\+ticker}!exchange\+::\+Exchange@{exchange\+::\+Exchange}}
-\subsubsection[{\texorpdfstring{mk\+\_\+ticker(self)}{mk_ticker(self)}}]{\setlength{\rightskip}{0pt plus 5cm}def exchange.\+Exchange.\+mk\+\_\+ticker (
-\begin{DoxyParamCaption}
-\item[{}]{self}
-\end{DoxyParamCaption}
-)}\hypertarget{classexchange_1_1_exchange_a31c0527e3a8a21fe74f9c24a79a86e6b}{}\label{classexchange_1_1_exchange_a31c0527e3a8a21fe74f9c24a79a86e6b}
-
-
-Definition at line \hyperlink{exchange_8py_source_l00171}{171} of file \hyperlink{exchange_8py_source}{exchange.\+py}.
+Definition at line \hyperlink{exchange_8py_source_l00244}{244} of file \hyperlink{exchange_8py_source}{exchange.\+py}.
 
 
 \begin{DoxyCode}
-\hypertarget{classexchange_1_1_exchange.tex_l00171}{}\hyperlink{classexchange_1_1_exchange_a31c0527e3a8a21fe74f9c24a79a86e6b}{00171}     \textcolor{keyword}{def }\hyperlink{classexchange_1_1_exchange_a31c0527e3a8a21fe74f9c24a79a86e6b}{mk\_ticker} (self): 
-00172         \textcolor{comment}{# TODO raise exception}
-00173         \textcolor{keywordflow}{pass}
-00174     
+00244     \textcolor{keyword}{def }getOriginalTicker (self):
+00245         \textcolor{comment}{# TODO raise exception}
+00246         \textcolor{keywordflow}{pass}
+00247     
 \end{DoxyCode}
+\mbox{\Hypertarget{classexchange_1_1_exchange_af7512183a26d97ea60a4f44608f40a0a}\label{classexchange_1_1_exchange_af7512183a26d97ea60a4f44608f40a0a}} 
+\index{exchange\+::\+Exchange@{exchange\+::\+Exchange}!mk\+Ticker@{mk\+Ticker}}
+\index{mk\+Ticker@{mk\+Ticker}!exchange\+::\+Exchange@{exchange\+::\+Exchange}}
+\subsubsection{\texorpdfstring{mk\+Ticker()}{mkTicker()}}
+{\footnotesize\ttfamily def exchange.\+Exchange.\+mk\+Ticker (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Definition at line \hyperlink{exchange_8py_source_l00199}{199} of file \hyperlink{exchange_8py_source}{exchange.\+py}.
+
+
+\begin{DoxyCode}
+00199     \textcolor{keyword}{def }mkTicker (self): 
+00200         \textcolor{comment}{# TODO raise exception}
+00201         \textcolor{keywordflow}{pass}
+00202     
+\end{DoxyCode}
+\mbox{\Hypertarget{classexchange_1_1_exchange_a93c60cd18eab808d68191fb1d2d42cf8}\label{classexchange_1_1_exchange_a93c60cd18eab808d68191fb1d2d42cf8}} 
 \index{exchange\+::\+Exchange@{exchange\+::\+Exchange}!process\+\_\+orderbook@{process\+\_\+orderbook}}
 \index{process\+\_\+orderbook@{process\+\_\+orderbook}!exchange\+::\+Exchange@{exchange\+::\+Exchange}}
-\subsubsection[{\texorpdfstring{process\+\_\+orderbook(self)}{process_orderbook(self)}}]{\setlength{\rightskip}{0pt plus 5cm}def exchange.\+Exchange.\+process\+\_\+orderbook (
-\begin{DoxyParamCaption}
-\item[{}]{self}
-\end{DoxyParamCaption}
-)}\hypertarget{classexchange_1_1_exchange_a93c60cd18eab808d68191fb1d2d42cf8}{}\label{classexchange_1_1_exchange_a93c60cd18eab808d68191fb1d2d42cf8}
-
-
-Definition at line \hyperlink{exchange_8py_source_l00204}{204} of file \hyperlink{exchange_8py_source}{exchange.\+py}.
+\subsubsection{\texorpdfstring{process\+\_\+orderbook()}{process\_orderbook()}}
+{\footnotesize\ttfamily def exchange.\+Exchange.\+process\+\_\+orderbook (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
 
 
 
-Referenced by \hyperlink{exchange_8py_source_l00208}{exchange.\+Exchange.\+get\+\_\+orderbook()}.
+Definition at line \hyperlink{exchange_8py_source_l00232}{232} of file \hyperlink{exchange_8py_source}{exchange.\+py}.
 
 
 \begin{DoxyCode}
-\hypertarget{classexchange_1_1_exchange.tex_l00204}{}\hyperlink{classexchange_1_1_exchange_a93c60cd18eab808d68191fb1d2d42cf8}{00204}     \textcolor{keyword}{def }\hyperlink{classexchange_1_1_exchange_a93c60cd18eab808d68191fb1d2d42cf8}{process\_orderbook} (self):
-00205         \textcolor{comment}{# TODO raise exception}
-00206         \textcolor{keywordflow}{pass}
-00207     
+00232     \textcolor{keyword}{def }process\_orderbook (self):
+00233         \textcolor{comment}{# TODO raise exception}
+00234         \textcolor{keywordflow}{pass}
+00235     
 \end{DoxyCode}
-
-
-Here is the caller graph for this function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{classexchange_1_1_exchange_a93c60cd18eab808d68191fb1d2d42cf8_icgraph}
-\end{center}
-\end{figure}
-
-
+\mbox{\Hypertarget{classexchange_1_1_exchange_aa3f83a45154aa4a1b07010f74c2b37db}\label{classexchange_1_1_exchange_aa3f83a45154aa4a1b07010f74c2b37db}} 
 \index{exchange\+::\+Exchange@{exchange\+::\+Exchange}!process\+\_\+ticker@{process\+\_\+ticker}}
 \index{process\+\_\+ticker@{process\+\_\+ticker}!exchange\+::\+Exchange@{exchange\+::\+Exchange}}
-\subsubsection[{\texorpdfstring{process\+\_\+ticker(self)}{process_ticker(self)}}]{\setlength{\rightskip}{0pt plus 5cm}def exchange.\+Exchange.\+process\+\_\+ticker (
-\begin{DoxyParamCaption}
-\item[{}]{self}
-\end{DoxyParamCaption}
-)}\hypertarget{classexchange_1_1_exchange_aa3f83a45154aa4a1b07010f74c2b37db}{}\label{classexchange_1_1_exchange_aa3f83a45154aa4a1b07010f74c2b37db}
-
-
-Definition at line \hyperlink{exchange_8py_source_l00163}{163} of file \hyperlink{exchange_8py_source}{exchange.\+py}.
+\subsubsection{\texorpdfstring{process\+\_\+ticker()}{process\_ticker()}}
+{\footnotesize\ttfamily def exchange.\+Exchange.\+process\+\_\+ticker (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
 
 
 
-Referenced by \hyperlink{exchange_8py_source_l00167}{exchange.\+Exchange.\+get\+\_\+ticker()}.
+Definition at line \hyperlink{exchange_8py_source_l00191}{191} of file \hyperlink{exchange_8py_source}{exchange.\+py}.
 
 
 \begin{DoxyCode}
-\hypertarget{classexchange_1_1_exchange.tex_l00163}{}\hyperlink{classexchange_1_1_exchange_aa3f83a45154aa4a1b07010f74c2b37db}{00163}     \textcolor{keyword}{def }\hyperlink{classexchange_1_1_exchange_aa3f83a45154aa4a1b07010f74c2b37db}{process\_ticker} (self):
-00164         \textcolor{comment}{# TODO raise exception}
-00165         \textcolor{keywordflow}{pass}
-00166     
+00191     \textcolor{keyword}{def }process\_ticker (self):
+00192         \textcolor{comment}{# TODO raise exception}
+00193         \textcolor{keywordflow}{pass}
+00194     
+\end{DoxyCode}
+\mbox{\Hypertarget{classexchange_1_1_exchange_a0e67454c7053807302be914376790484}\label{classexchange_1_1_exchange_a0e67454c7053807302be914376790484}} 
+\index{exchange\+::\+Exchange@{exchange\+::\+Exchange}!process\+\_\+trades@{process\+\_\+trades}}
+\index{process\+\_\+trades@{process\+\_\+trades}!exchange\+::\+Exchange@{exchange\+::\+Exchange}}
+\subsubsection{\texorpdfstring{process\+\_\+trades()}{process\_trades()}}
+{\footnotesize\ttfamily def exchange.\+Exchange.\+process\+\_\+trades (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Definition at line \hyperlink{exchange_8py_source_l00214}{214} of file \hyperlink{exchange_8py_source}{exchange.\+py}.
+
+
+\begin{DoxyCode}
+00214     \textcolor{keyword}{def }process\_trades (self):
+00215         \textcolor{comment}{# TODO raise exception}
+00216         \textcolor{keywordflow}{pass}
+00217     
 \end{DoxyCode}
 
 
-Here is the caller graph for this function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{classexchange_1_1_exchange_aa3f83a45154aa4a1b07010f74c2b37db_icgraph}
-\end{center}
-\end{figure}
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classexchange_1_1_exchange_ae326ce8c325672f3f555af59f22fd9f6}\label{classexchange_1_1_exchange_ae326ce8c325672f3f555af59f22fd9f6}} 
+\index{exchange\+::\+Exchange@{exchange\+::\+Exchange}!original\+Ticker@{original\+Ticker}}
+\index{original\+Ticker@{original\+Ticker}!exchange\+::\+Exchange@{exchange\+::\+Exchange}}
+\subsubsection{\texorpdfstring{original\+Ticker}{originalTicker}}
+{\footnotesize\ttfamily exchange.\+Exchange.\+original\+Ticker}
 
-
-\index{exchange\+::\+Exchange@{exchange\+::\+Exchange}!process\+\_\+trades@{process\+\_\+trades}}
-\index{process\+\_\+trades@{process\+\_\+trades}!exchange\+::\+Exchange@{exchange\+::\+Exchange}}
-\subsubsection[{\texorpdfstring{process\+\_\+trades(self)}{process_trades(self)}}]{\setlength{\rightskip}{0pt plus 5cm}def exchange.\+Exchange.\+process\+\_\+trades (
-\begin{DoxyParamCaption}
-\item[{}]{self}
-\end{DoxyParamCaption}
-)}\hypertarget{classexchange_1_1_exchange_a0e67454c7053807302be914376790484}{}\label{classexchange_1_1_exchange_a0e67454c7053807302be914376790484}
 
 
 Definition at line \hyperlink{exchange_8py_source_l00186}{186} of file \hyperlink{exchange_8py_source}{exchange.\+py}.
 
 
 
-Referenced by \hyperlink{exchange_8py_source_l00190}{exchange.\+Exchange.\+get\+\_\+trades()}.
+Referenced by \hyperlink{exchange_8py_source_l00476}{exchange.\+Bitfinex.\+get\+Original\+Ticker()}, \hyperlink{exchange_8py_source_l00548}{exchange.\+Bitstamp.\+get\+Original\+Ticker()}, \hyperlink{exchange_8py_source_l00625}{exchange.\+Fox\+Bit.\+get\+Original\+Ticker()}, \hyperlink{exchange_8py_source_l00688}{exchange.\+Mercado\+Bitcoin.\+get\+Original\+Ticker()}, and \hyperlink{exchange_8py_source_l00747}{exchange.\+Ok\+Coin.\+get\+Original\+Ticker()}.
 
-
-\begin{DoxyCode}
-\hypertarget{classexchange_1_1_exchange.tex_l00186}{}\hyperlink{classexchange_1_1_exchange_a0e67454c7053807302be914376790484}{00186}     \textcolor{keyword}{def }\hyperlink{classexchange_1_1_exchange_a0e67454c7053807302be914376790484}{process\_trades} (self):
-00187         \textcolor{comment}{# TODO raise exception}
-00188         \textcolor{keywordflow}{pass}
-00189     
-\end{DoxyCode}
-
-
-Here is the caller graph for this function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{classexchange_1_1_exchange_a0e67454c7053807302be914376790484_icgraph}
-\end{center}
-\end{figure}
+\mbox{\Hypertarget{classexchange_1_1_exchange_a62e9159cbcc09db3c06b1b5622da39d4}\label{classexchange_1_1_exchange_a62e9159cbcc09db3c06b1b5622da39d4}} 
+\index{exchange\+::\+Exchange@{exchange\+::\+Exchange}!start\+Dt@{start\+Dt}}
+\index{start\+Dt@{start\+Dt}!exchange\+::\+Exchange@{exchange\+::\+Exchange}}
+\subsubsection{\texorpdfstring{start\+Dt}{startDt}}
+{\footnotesize\ttfamily exchange.\+Exchange.\+start\+Dt}
 
 
 
-
-\subsection{Member Data Documentation}
-\index{exchange\+::\+Exchange@{exchange\+::\+Exchange}!original\+Ticker@{original\+Ticker}}
-\index{original\+Ticker@{original\+Ticker}!exchange\+::\+Exchange@{exchange\+::\+Exchange}}
-\subsubsection[{\texorpdfstring{original\+Ticker}{originalTicker}}]{\setlength{\rightskip}{0pt plus 5cm}exchange.\+Exchange.\+original\+Ticker}\hypertarget{classexchange_1_1_exchange_ae326ce8c325672f3f555af59f22fd9f6}{}\label{classexchange_1_1_exchange_ae326ce8c325672f3f555af59f22fd9f6}
-
-
-Definition at line \hyperlink{exchange_8py_source_l00158}{158} of file \hyperlink{exchange_8py_source}{exchange.\+py}.
+Definition at line \hyperlink{exchange_8py_source_l00177}{177} of file \hyperlink{exchange_8py_source}{exchange.\+py}.
 
 
 
-Referenced by \hyperlink{exchange_8py_source_l00377}{exchange.\+Bitfinex.\+get\+Original\+Ticker()}, \hyperlink{exchange_8py_source_l00446}{exchange.\+Bitstamp.\+get\+Original\+Ticker()}, \hyperlink{exchange_8py_source_l00511}{exchange.\+Fox\+Bit.\+get\+Original\+Ticker()}, \hyperlink{exchange_8py_source_l00580}{exchange.\+Mercado\+Bitcoin.\+get\+Original\+Ticker()}, and \hyperlink{exchange_8py_source_l00639}{exchange.\+Ok\+Coin.\+get\+Original\+Ticker()}.
+Referenced by \hyperlink{exchange_8py_source_l00385}{exchange.\+Diff\+Tracker.\+dumps()}.
 
+\mbox{\Hypertarget{classexchange_1_1_exchange_a7cf9e52f993627955a2e242c388daaeb}\label{classexchange_1_1_exchange_a7cf9e52f993627955a2e242c388daaeb}} 
 \index{exchange\+::\+Exchange@{exchange\+::\+Exchange}!ticker@{ticker}}
 \index{ticker@{ticker}!exchange\+::\+Exchange@{exchange\+::\+Exchange}}
-\subsubsection[{\texorpdfstring{ticker}{ticker}}]{\setlength{\rightskip}{0pt plus 5cm}exchange.\+Exchange.\+ticker}\hypertarget{classexchange_1_1_exchange_a7cf9e52f993627955a2e242c388daaeb}{}\label{classexchange_1_1_exchange_a7cf9e52f993627955a2e242c388daaeb}
-
-
-Definition at line \hyperlink{exchange_8py_source_l00160}{160} of file \hyperlink{exchange_8py_source}{exchange.\+py}.
+\subsubsection{\texorpdfstring{ticker}{ticker}}
+{\footnotesize\ttfamily exchange.\+Exchange.\+ticker}
 
 
 
-Referenced by \hyperlink{exchange_8py_source_l00482}{exchange.\+Fox\+Bit.\+mk\+\_\+ticker()}, and \hyperlink{exchange_8py_source_l00461}{exchange.\+Fox\+Bit.\+process\+\_\+ticker()}.
+Definition at line \hyperlink{exchange_8py_source_l00188}{188} of file \hyperlink{exchange_8py_source}{exchange.\+py}.
 
+
+
+Referenced by \hyperlink{exchange_8py_source_l00584}{exchange.\+Fox\+Bit.\+mk\+Ticker()}, and \hyperlink{exchange_8py_source_l00563}{exchange.\+Fox\+Bit.\+process\+\_\+ticker()}.
+
+\mbox{\Hypertarget{classexchange_1_1_exchange_a30e87a377320ce05bd956fb014683641}\label{classexchange_1_1_exchange_a30e87a377320ce05bd956fb014683641}} 
 \index{exchange\+::\+Exchange@{exchange\+::\+Exchange}!trades@{trades}}
 \index{trades@{trades}!exchange\+::\+Exchange@{exchange\+::\+Exchange}}
-\subsubsection[{\texorpdfstring{trades}{trades}}]{\setlength{\rightskip}{0pt plus 5cm}exchange.\+Exchange.\+trades}\hypertarget{classexchange_1_1_exchange_a30e87a377320ce05bd956fb014683641}{}\label{classexchange_1_1_exchange_a30e87a377320ce05bd956fb014683641}
-
-
-Definition at line \hyperlink{exchange_8py_source_l00183}{183} of file \hyperlink{exchange_8py_source}{exchange.\+py}.
+\subsubsection{\texorpdfstring{trades}{trades}}
+{\footnotesize\ttfamily exchange.\+Exchange.\+trades}
 
 
 
-Referenced by \hyperlink{exchange_8py_source_l00194}{exchange.\+Exchange.\+dnload\+\_\+orderbook()}.
+Definition at line \hyperlink{exchange_8py_source_l00211}{211} of file \hyperlink{exchange_8py_source}{exchange.\+py}.
 
+
+
+Referenced by \hyperlink{exchange_8py_source_l00222}{exchange.\+Exchange.\+dnload\+\_\+orderbook()}.
+
+\mbox{\Hypertarget{classexchange_1_1_exchange_a83174d2fe96a1c737231d3b8b18d9807}\label{classexchange_1_1_exchange_a83174d2fe96a1c737231d3b8b18d9807}} 
 \index{exchange\+::\+Exchange@{exchange\+::\+Exchange}!U\+\_\+\+O\+R\+D\+R\+BK@{U\+\_\+\+O\+R\+D\+R\+BK}}
 \index{U\+\_\+\+O\+R\+D\+R\+BK@{U\+\_\+\+O\+R\+D\+R\+BK}!exchange\+::\+Exchange@{exchange\+::\+Exchange}}
-\subsubsection[{\texorpdfstring{U\+\_\+\+O\+R\+D\+R\+BK}{U_ORDRBK}}]{\setlength{\rightskip}{0pt plus 5cm}string exchange.\+Exchange.\+U\+\_\+\+O\+R\+D\+R\+BK = \textquotesingle{}\textquotesingle{}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classexchange_1_1_exchange_a83174d2fe96a1c737231d3b8b18d9807}{}\label{classexchange_1_1_exchange_a83174d2fe96a1c737231d3b8b18d9807}
+\subsubsection{\texorpdfstring{U\+\_\+\+O\+R\+D\+R\+BK}{U\_ORDRBK}}
+{\footnotesize\ttfamily string exchange.\+Exchange.\+U\+\_\+\+O\+R\+D\+R\+BK = \textquotesingle{}\textquotesingle{}\hspace{0.3cm}{\ttfamily [static]}}
 
 
-Definition at line \hyperlink{exchange_8py_source_l00142}{142} of file \hyperlink{exchange_8py_source}{exchange.\+py}.
 
+Definition at line \hyperlink{exchange_8py_source_l00170}{170} of file \hyperlink{exchange_8py_source}{exchange.\+py}.
+
+\mbox{\Hypertarget{classexchange_1_1_exchange_ab16df02480d727c533b02b5b7afa053b}\label{classexchange_1_1_exchange_ab16df02480d727c533b02b5b7afa053b}} 
 \index{exchange\+::\+Exchange@{exchange\+::\+Exchange}!U\+\_\+\+T\+I\+C\+K\+ER@{U\+\_\+\+T\+I\+C\+K\+ER}}
 \index{U\+\_\+\+T\+I\+C\+K\+ER@{U\+\_\+\+T\+I\+C\+K\+ER}!exchange\+::\+Exchange@{exchange\+::\+Exchange}}
-\subsubsection[{\texorpdfstring{U\+\_\+\+T\+I\+C\+K\+ER}{U_TICKER}}]{\setlength{\rightskip}{0pt plus 5cm}string exchange.\+Exchange.\+U\+\_\+\+T\+I\+C\+K\+ER = \textquotesingle{}\textquotesingle{}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classexchange_1_1_exchange_ab16df02480d727c533b02b5b7afa053b}{}\label{classexchange_1_1_exchange_ab16df02480d727c533b02b5b7afa053b}
+\subsubsection{\texorpdfstring{U\+\_\+\+T\+I\+C\+K\+ER}{U\_TICKER}}
+{\footnotesize\ttfamily string exchange.\+Exchange.\+U\+\_\+\+T\+I\+C\+K\+ER = \textquotesingle{}\textquotesingle{}\hspace{0.3cm}{\ttfamily [static]}}
 
 
-Definition at line \hyperlink{exchange_8py_source_l00140}{140} of file \hyperlink{exchange_8py_source}{exchange.\+py}.
 
+Definition at line \hyperlink{exchange_8py_source_l00168}{168} of file \hyperlink{exchange_8py_source}{exchange.\+py}.
+
+\mbox{\Hypertarget{classexchange_1_1_exchange_aafa0e023de170f51cbf9d48e1154587a}\label{classexchange_1_1_exchange_aafa0e023de170f51cbf9d48e1154587a}} 
 \index{exchange\+::\+Exchange@{exchange\+::\+Exchange}!U\+\_\+\+T\+R\+A\+D\+ES@{U\+\_\+\+T\+R\+A\+D\+ES}}
 \index{U\+\_\+\+T\+R\+A\+D\+ES@{U\+\_\+\+T\+R\+A\+D\+ES}!exchange\+::\+Exchange@{exchange\+::\+Exchange}}
-\subsubsection[{\texorpdfstring{U\+\_\+\+T\+R\+A\+D\+ES}{U_TRADES}}]{\setlength{\rightskip}{0pt plus 5cm}string exchange.\+Exchange.\+U\+\_\+\+T\+R\+A\+D\+ES = \textquotesingle{}\textquotesingle{}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classexchange_1_1_exchange_aafa0e023de170f51cbf9d48e1154587a}{}\label{classexchange_1_1_exchange_aafa0e023de170f51cbf9d48e1154587a}
+\subsubsection{\texorpdfstring{U\+\_\+\+T\+R\+A\+D\+ES}{U\_TRADES}}
+{\footnotesize\ttfamily string exchange.\+Exchange.\+U\+\_\+\+T\+R\+A\+D\+ES = \textquotesingle{}\textquotesingle{}\hspace{0.3cm}{\ttfamily [static]}}
 
 
-Definition at line \hyperlink{exchange_8py_source_l00141}{141} of file \hyperlink{exchange_8py_source}{exchange.\+py}.
+
+Definition at line \hyperlink{exchange_8py_source_l00169}{169} of file \hyperlink{exchange_8py_source}{exchange.\+py}.
 
 
 

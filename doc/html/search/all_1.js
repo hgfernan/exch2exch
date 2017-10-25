@@ -7,6 +7,5 @@ var searchData=
   ['amax',['aMax',['../classexchange_1_1_diff_tracker.html#a3dcbc689ebb5ec6e0c8e600079d95de9',1,'exchange::DiffTracker']]],
   ['amin',['aMin',['../classexchange_1_1_diff_tracker.html#a65d042348359fa27a17e092e66405ae7',1,'exchange::DiffTracker']]],
   ['application',['Application',['../classe2e_1_1_application.html',1,'e2e']]],
-  ['args',['Args',['../classe2e_1_1_args.html',1,'e2e']]],
-  ['args',['args',['../classe2e_1_1_application.html#abade6fc2e2c04ddd7e48137a2a7721bd',1,'e2e::Application']]]
+  ['args',['Args',['../classe2e_1_1_args.html',1,'e2e.Args'],['../classe2e_1_1_application.html#abade6fc2e2c04ddd7e48137a2a7721bd',1,'e2e.Application.args()']]]
 ];

@@ -1,0 +1,4 @@
+<map id="type" name="type">
+<area shape="rect" id="node2" href="$classstart__time_1_1_singleton.html" title="{start_time.Singleton\n|&#45; _instances\l|+ __call__()\l}" alt="" coords="7,131,145,208"/>
+<area shape="rect" id="node3" href="$classstart__time_1_1_date_time.html" title="{start_time.DateTime\n|+ dt\l+ time\l|+ __init__()\l+ __str__()\l+ getDatetime()\l+ getTimeAsInt()\l}" alt="" coords="5,256,147,392"/>
+</map>

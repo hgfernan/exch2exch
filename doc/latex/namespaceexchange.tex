@@ -39,39 +39,38 @@ def \hyperlink{namespaceexchange_aa5b6297f878f52d360f5c42066aa097b}{main} ()
 
 
 \subsection{Function Documentation}
+\mbox{\Hypertarget{namespaceexchange_aa5b6297f878f52d360f5c42066aa097b}\label{namespaceexchange_aa5b6297f878f52d360f5c42066aa097b}} 
 \index{exchange@{exchange}!main@{main}}
 \index{main@{main}!exchange@{exchange}}
-\subsubsection[{\texorpdfstring{main()}{main()}}]{\setlength{\rightskip}{0pt plus 5cm}def exchange.\+main (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)}\hypertarget{namespaceexchange_aa5b6297f878f52d360f5c42066aa097b}{}\label{namespaceexchange_aa5b6297f878f52d360f5c42066aa097b}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily def exchange.\+main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
-Definition at line \hyperlink{exchange_8py_source_l00654}{654} of file \hyperlink{exchange_8py_source}{exchange.\+py}.
+
+Definition at line \hyperlink{exchange_8py_source_l00762}{762} of file \hyperlink{exchange_8py_source}{exchange.\+py}.
 
 
 \begin{DoxyCode}
-\hypertarget{namespaceexchange.tex_l00654}{}\hyperlink{namespaceexchange_aa5b6297f878f52d360f5c42066aa097b}{00654} \textcolor{keyword}{def }\hyperlink{namespaceexchange_aa5b6297f878f52d360f5c42066aa097b}{main} ():
-00655     exchanges = []
-00656     exchanges.append (Bitfinex ())
-00657     exchanges.append (Bitstamp ())
-00658     exchanges.append (FoxBit ())
-00659     exchanges.append (MercadoBitcoin ())
-00660     exchanges.append (OkCoin ())
-00661     
-00662     \textcolor{keywordflow}{for} exch \textcolor{keywordflow}{in} exchanges:
-00663         exch.get\_ticker ()
-00664         
-00665         \textcolor{keywordflow}{print} ( \textcolor{stringliteral}{"\{0\}:"}.format (exch.get\_exch\_name ()) )
-00666         \textcolor{keywordflow}{print} ( \textcolor{stringliteral}{"\(\backslash\)t\{0\}"}.format (exch) )
-00667         
-00668         ticker = exch.mk\_ticker ()
-00669         \textcolor{keywordflow}{print} ( \textcolor{stringliteral}{"\(\backslash\)t\{0\}"}.format (ticker) )
-00670         \textcolor{keywordflow}{print} ( \textcolor{stringliteral}{"\(\backslash\)tJSON: \{0\}"}.format (ticker.dumps ()) )
-00671         
-00672         \textcolor{keywordflow}{print} ( \textcolor{stringliteral}{'Original:\(\backslash\)n\(\backslash\)t\{0\}\(\backslash\)n'}.format (exch.getOriginalTicker ()) )
-00673     
-00674     \textcolor{keywordflow}{return} 0
-00675     
+00762 \textcolor{keyword}{def }\hyperlink{namespaceexchange_aa5b6297f878f52d360f5c42066aa097b}{main} ():
+00763     exchanges = []
+00764     exchanges.append (Bitfinex ())
+00765     exchanges.append (Bitstamp ())
+00766     exchanges.append (FoxBit ())
+00767     exchanges.append (MercadoBitcoin ())
+00768     exchanges.append (OkCoin ())
+00769     
+00770     \textcolor{keywordflow}{for} exch \textcolor{keywordflow}{in} exchanges:
+00771         exch.get\_ticker ()
+00772         
+00773         \textcolor{keywordflow}{print} ( \textcolor{stringliteral}{"\{0\}:"}.format (exch.get\_exch\_name ()) )
+00774         \textcolor{keywordflow}{print} ( \textcolor{stringliteral}{"\(\backslash\)t\{0\}"}.format (exch) )
+00775         
+00776         ticker = exch.mkTicker ()
+00777         \textcolor{keywordflow}{print} ( \textcolor{stringliteral}{"\(\backslash\)t\{0\}"}.format (ticker) )
+00778         \textcolor{keywordflow}{print} ( \textcolor{stringliteral}{"\(\backslash\)tJSON: \{0\}"}.format (ticker.dumps ()) )
+00779         
+00780         \textcolor{keywordflow}{print} ( \textcolor{stringliteral}{'Original:\(\backslash\)n\(\backslash\)t\{0\}\(\backslash\)n'}.format (exch.getOriginalTicker ()) )
+00781     
+00782     \textcolor{keywordflow}{return} 0
+00783     
 \end{DoxyCode}

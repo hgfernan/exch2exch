@@ -1,3 +1,3 @@
 <map id="exchange.DiffOrderbook" name="exchange.DiffOrderbook">
-<area shape="rect" id="node2" href="$classexchange_1_1_differences.html" title="{exchange.Differences\n|+ coinName\l+ destination\l+ origin\l+ rates\l|+ __init__()\l+ __str__()\l+ calc()\l+ dumps()\l}" alt="" coords="12,5,161,171"/>
+<area shape="rect" id="node2" href="$classexchange_1_1_differences.html" title="{exchange.Differences\n|+ coinPair\l+ dstTicker\l+ orgTicker\l+ rates\l|+ __init__()\l+ __str__()\l+ calc()\l+ dumps()\l}" alt="" coords="12,5,161,171"/>
 </map>

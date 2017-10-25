@@ -2,7 +2,8 @@
 \label{classexchange_1_1_diff_tracker}\index{exchange.\+Diff\+Tracker@{exchange.\+Diff\+Tracker}}
 
 
-Inheritance diagram for exchange.\+Diff\+Tracker\+:\nopagebreak
+Inheritance diagram for exchange.\+Diff\+Tracker\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -11,7 +12,8 @@ Inheritance diagram for exchange.\+Diff\+Tracker\+:\nopagebreak
 \end{figure}
 
 
-Collaboration diagram for exchange.\+Diff\+Tracker\+:\nopagebreak
+Collaboration diagram for exchange.\+Diff\+Tracker\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -21,7 +23,7 @@ Collaboration diagram for exchange.\+Diff\+Tracker\+:\nopagebreak
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-def \hyperlink{classexchange_1_1_diff_tracker_ab9d1d8ef6d877d209ace871e195b284c}{\+\_\+\+\_\+init\+\_\+\+\_\+} (self, \hyperlink{classexchange_1_1_differences_a821ecbc04dae3081f634a28d377c69c3}{rates}, \hyperlink{classexchange_1_1_differences_a0092f9963e867db55e7ea2f0bab1b07e}{destination}, \hyperlink{classexchange_1_1_differences_a25acbe37294f8b4eb5bf909cd84a0b9d}{origin})
+def \hyperlink{classexchange_1_1_diff_tracker_ab9d1d8ef6d877d209ace871e195b284c}{\+\_\+\+\_\+init\+\_\+\+\_\+} (self, \hyperlink{classexchange_1_1_differences_a821ecbc04dae3081f634a28d377c69c3}{rates}, destination, origin)
 \item 
 def \hyperlink{classexchange_1_1_diff_tracker_a72214c03506722b0554e433615bff766}{\+\_\+\+\_\+str\+\_\+\+\_\+} (self)
 \item 
@@ -40,13 +42,11 @@ def \hyperlink{classexchange_1_1_diff_tracker_aa3c9d92dbe7c7fcf25959fe55c6ba47d}
 \item 
 \hyperlink{classexchange_1_1_diff_tracker_a65d042348359fa27a17e092e66405ae7}{a\+Min}
 \item 
-\hyperlink{classexchange_1_1_diff_tracker_a8ee4999d420f124afa67ff2b131bbce5}{dmax}
+\hyperlink{classexchange_1_1_diff_tracker_a6adc6f18dd9b5d2d8ea8978235cb569d}{brl2usd}
 \item 
-\hyperlink{classexchange_1_1_diff_tracker_a0a1bbdbeeee705d2448d69e98f77a14c}{dmin}
+\hyperlink{classexchange_1_1_diff_tracker_a8eb45d1c936bc32a5732d59a387265dc}{conv\+Dst\+Ticker}
 \item 
-\hyperlink{classexchange_1_1_diff_tracker_a73f20240fb1d81a320a6f78aec022529}{gmax}
-\item 
-\hyperlink{classexchange_1_1_diff_tracker_a8c2277408ff52d5bb8913a98f4efe8b0}{gmin}
+\hyperlink{classexchange_1_1_diff_tracker_a3dac3e23c410307f41327725701fbd10}{converted}
 \item 
 \hyperlink{classexchange_1_1_diff_tracker_aab406fe7b4dc6d486c4a9fb65944a4df}{r\+Buy\+Sell}
 \item 
@@ -55,232 +55,378 @@ def \hyperlink{classexchange_1_1_diff_tracker_aa3c9d92dbe7c7fcf25959fe55c6ba47d}
 \hyperlink{classexchange_1_1_diff_tracker_ab4266c6d4fc968997e26044a7c827980}{r\+Max}
 \item 
 \hyperlink{classexchange_1_1_diff_tracker_ad3250cb94933244444942dec9199d362}{r\+Min}
+\item 
+\hyperlink{classexchange_1_1_diff_tracker_aa9d0293d5485e1f711db62e59ab11a8a}{start\+Dt}
 \end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
 
 
-Definition at line \hyperlink{exchange_8py_source_l00255}{255} of file \hyperlink{exchange_8py_source}{exchange.\+py}.
+Definition at line \hyperlink{exchange_8py_source_l00287}{287} of file \hyperlink{exchange_8py_source}{exchange.\+py}.
 
 
 
 \subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classexchange_1_1_diff_tracker_ab9d1d8ef6d877d209ace871e195b284c}\label{classexchange_1_1_diff_tracker_ab9d1d8ef6d877d209ace871e195b284c}} 
 \index{exchange\+::\+Diff\+Tracker@{exchange\+::\+Diff\+Tracker}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
 \index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!exchange\+::\+Diff\+Tracker@{exchange\+::\+Diff\+Tracker}}
-\subsubsection[{\texorpdfstring{\+\_\+\+\_\+init\+\_\+\+\_\+(self, rates, destination, origin)}{__init__(self, rates, destination, origin)}}]{\setlength{\rightskip}{0pt plus 5cm}def exchange.\+Diff\+Tracker.\+\_\+\+\_\+init\+\_\+\+\_\+ (
-\begin{DoxyParamCaption}
-\item[{}]{self, }
-\item[{}]{rates, }
-\item[{}]{destination, }
-\item[{}]{origin}
-\end{DoxyParamCaption}
-)}\hypertarget{classexchange_1_1_diff_tracker_ab9d1d8ef6d877d209ace871e195b284c}{}\label{classexchange_1_1_diff_tracker_ab9d1d8ef6d877d209ace871e195b284c}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+init\+\_\+\+\_\+()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def exchange.\+Diff\+Tracker.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{rates,  }\item[{}]{destination,  }\item[{}]{origin }\end{DoxyParamCaption})}
 
 
-Definition at line \hyperlink{exchange_8py_source_l00256}{256} of file \hyperlink{exchange_8py_source}{exchange.\+py}.
+
+Definition at line \hyperlink{exchange_8py_source_l00288}{288} of file \hyperlink{exchange_8py_source}{exchange.\+py}.
 
 
 \begin{DoxyCode}
-\hypertarget{classexchange_1_1_diff_tracker.tex_l00256}{}\hyperlink{classexchange_1_1_diff_tracker_ab9d1d8ef6d877d209ace871e195b284c}{00256}     \textcolor{keyword}{def }\hyperlink{classexchange_1_1_diff_tracker_ab9d1d8ef6d877d209ace871e195b284c}{\_\_init\_\_} (self, rates, destination, origin):
-00257         super ().\_\_init\_\_ ()
-00258         
-\hypertarget{classexchange_1_1_diff_tracker.tex_l00259}{}\hyperlink{classexchange_1_1_diff_tracker_a8ee4999d420f124afa67ff2b131bbce5}{00259}         self.\hyperlink{classexchange_1_1_diff_tracker_a8ee4999d420f124afa67ff2b131bbce5}{dmax} = 0
-\hypertarget{classexchange_1_1_diff_tracker.tex_l00260}{}\hyperlink{classexchange_1_1_diff_tracker_a0a1bbdbeeee705d2448d69e98f77a14c}{00260}         self.\hyperlink{classexchange_1_1_diff_tracker_a0a1bbdbeeee705d2448d69e98f77a14c}{dmin} = 0
-00261         
-\hypertarget{classexchange_1_1_diff_tracker.tex_l00262}{}\hyperlink{classexchange_1_1_diff_tracker_a8c2277408ff52d5bb8913a98f4efe8b0}{00262}         self.\hyperlink{classexchange_1_1_diff_tracker_a8c2277408ff52d5bb8913a98f4efe8b0}{gmin} = 0
-\hypertarget{classexchange_1_1_diff_tracker.tex_l00263}{}\hyperlink{classexchange_1_1_diff_tracker_a73f20240fb1d81a320a6f78aec022529}{00263}         self.\hyperlink{classexchange_1_1_diff_tracker_a73f20240fb1d81a320a6f78aec022529}{gmax} = 0
-00264         
-\hypertarget{classexchange_1_1_diff_tracker.tex_l00265}{}\hyperlink{classexchange_1_1_diff_tracker_ae6108d1ec0cdf3b195ed5bb7c8b529b2}{00265}         self.\hyperlink{classexchange_1_1_diff_tracker_ae6108d1ec0cdf3b195ed5bb7c8b529b2}{aBuySell}  = 0
-\hypertarget{classexchange_1_1_diff_tracker.tex_l00266}{}\hyperlink{classexchange_1_1_diff_tracker_aab406fe7b4dc6d486c4a9fb65944a4df}{00266}         self.\hyperlink{classexchange_1_1_diff_tracker_aab406fe7b4dc6d486c4a9fb65944a4df}{rBuySell} = 0
-00267         
-\hypertarget{classexchange_1_1_diff_tracker.tex_l00268}{}\hyperlink{classexchange_1_1_diff_tracker_ae428ab91ae6471c4ad8b566540fb035e}{00268}         self.\hyperlink{classexchange_1_1_diff_tracker_ae428ab91ae6471c4ad8b566540fb035e}{aLast} = 0
-\hypertarget{classexchange_1_1_diff_tracker.tex_l00269}{}\hyperlink{classexchange_1_1_diff_tracker_a4dbaf0a1192448101cb35eca617c7f0f}{00269}         self.\hyperlink{classexchange_1_1_diff_tracker_a4dbaf0a1192448101cb35eca617c7f0f}{rLast} = 0
-00270         
-00271         
+00288     \textcolor{keyword}{def }\hyperlink{namespacestart__time_a9c9bd378729a13c96a22c8b079ea172c}{\_\_init\_\_} (self, rates, destination, origin):
+00289         super ().\_\_init\_\_ (rates, destination, origin)
+00290         
+00291         self.converted = \textcolor{keyword}{False} 
+00292         self.brl2usd = 0.0
+00293         self.convDstTicker = \textcolor{keywordtype}{None}
+00294         
+00295         self.aMax = 0
+00296         self.aMin = 0
+00297         
+00298         self.rMin = 0
+00299         self.rMax = 0
+00300         
+00301         self.aBuySell  = 0
+00302         self.rBuySell = 0
+00303         
+00304         self.aLast = 0
+00305         self.rLast = 0
+00306         
+00307         self.startDt = start\_time.getTimeAsInt ()
+00308         
 \end{DoxyCode}
 
 
 \subsection{Member Function Documentation}
+\mbox{\Hypertarget{classexchange_1_1_diff_tracker_a72214c03506722b0554e433615bff766}\label{classexchange_1_1_diff_tracker_a72214c03506722b0554e433615bff766}} 
 \index{exchange\+::\+Diff\+Tracker@{exchange\+::\+Diff\+Tracker}!\+\_\+\+\_\+str\+\_\+\+\_\+@{\+\_\+\+\_\+str\+\_\+\+\_\+}}
 \index{\+\_\+\+\_\+str\+\_\+\+\_\+@{\+\_\+\+\_\+str\+\_\+\+\_\+}!exchange\+::\+Diff\+Tracker@{exchange\+::\+Diff\+Tracker}}
-\subsubsection[{\texorpdfstring{\+\_\+\+\_\+str\+\_\+\+\_\+(self)}{__str__(self)}}]{\setlength{\rightskip}{0pt plus 5cm}def exchange.\+Diff\+Tracker.\+\_\+\+\_\+str\+\_\+\+\_\+ (
-\begin{DoxyParamCaption}
-\item[{}]{self}
-\end{DoxyParamCaption}
-)}\hypertarget{classexchange_1_1_diff_tracker_a72214c03506722b0554e433615bff766}{}\label{classexchange_1_1_diff_tracker_a72214c03506722b0554e433615bff766}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+str\+\_\+\+\_\+()}{\_\_str\_\_()}}
+{\footnotesize\ttfamily def exchange.\+Diff\+Tracker.\+\_\+\+\_\+str\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Definition at line \hyperlink{exchange_8py_source_l00336}{336} of file \hyperlink{exchange_8py_source}{exchange.\+py}.
+
+
+
+References \hyperlink{exch2exch_8py_source_l00121}{exch2exch.\+Differences.\+a\+Buy\+Sell}, \hyperlink{exchange_8py_source_l00301}{exchange.\+Diff\+Tracker.\+a\+Buy\+Sell}, \hyperlink{exch2exch_8py_source_l00124}{exch2exch.\+Differences.\+a\+Last}, \hyperlink{exchange_8py_source_l00304}{exchange.\+Diff\+Tracker.\+a\+Last}, \hyperlink{exchange_8py_source_l00295}{exchange.\+Diff\+Tracker.\+a\+Max}, \hyperlink{exchange_8py_source_l00296}{exchange.\+Diff\+Tracker.\+a\+Min}, \hyperlink{exchange_8py_source_l00293}{exchange.\+Diff\+Tracker.\+conv\+Dst\+Ticker}, \hyperlink{exchange_8py_source_l00291}{exchange.\+Diff\+Tracker.\+converted}, \hyperlink{exchange_8py_source_l00265}{exchange.\+Differences.\+dst\+Ticker}, \hyperlink{exchange_8py_source_l00266}{exchange.\+Differences.\+org\+Ticker}, \hyperlink{exch2exch_8py_source_l00107}{exch2exch.\+Differences.\+rates}, \hyperlink{exchange_8py_source_l00264}{exchange.\+Differences.\+rates}, \hyperlink{exch2exch_8py_source_l00122}{exch2exch.\+Differences.\+r\+Buy\+Sell}, \hyperlink{exchange_8py_source_l00302}{exchange.\+Diff\+Tracker.\+r\+Buy\+Sell}, \hyperlink{exch2exch_8py_source_l00125}{exch2exch.\+Differences.\+r\+Last}, \hyperlink{exchange_8py_source_l00305}{exchange.\+Diff\+Tracker.\+r\+Last}, \hyperlink{exchange_8py_source_l00299}{exchange.\+Diff\+Tracker.\+r\+Max}, and \hyperlink{exchange_8py_source_l00298}{exchange.\+Diff\+Tracker.\+r\+Min}.
+
+
+\begin{DoxyCode}
+00336     \textcolor{keyword}{def }\hyperlink{namespacerates_a2f1a70c33ee9e255938e4c19fd207264}{\_\_str\_\_} (self):
+00337         \textcolor{comment}{# TODO create a report }
+00338     
+00339         \textcolor{comment}{# Calculation between Bitstamp and MercadoBitcoin rates, }
+00340         \textcolor{comment}{# with conversion from Google + XRate}
+00341         origin      = self.orgTicker.getExchName ()
+00342         destination = self.dstTicker.getExchName ()
+00343         rates       = self.rates.getServiceName ()
+00344         
+00345         result = \textcolor{stringliteral}{""}
+00346         
+00347         \textcolor{comment}{# If destination coin was converted}
+00348         \textcolor{keywordflow}{if} self.converted:
+00349             result += \textcolor{stringliteral}{"\(\backslash\)nConverted destination ticker\(\backslash\)n"}
+00350             result += str (self.convDstTicker) + \textcolor{stringliteral}{'\(\backslash\)n'}
+00351         
+00352         fmt     = \textcolor{stringliteral}{"Calculation between \{0\} and \{1\} rates, "}
+00353         fmt    += \textcolor{stringliteral}{"with conversion from \{2\}\(\backslash\)n"}
+00354         result += fmt.format (origin, destination, rates)
+00355         
+00356         result += \textcolor{stringliteral}{"Extrema\(\backslash\)n"}
+00357         
+00358         fmt = \textcolor{stringliteral}{"\(\backslash\)tAbsolute: Minimum \{0:.4f\}, Maximum \{1:.4f\}\(\backslash\)n"}
+00359         result += fmt.format (self.aMin, self.aMax)
+00360         
+00361         fmt = \textcolor{stringliteral}{"\(\backslash\)tRelative: Minimum \{0:.4f\}, Maximum \{1:.4f\}\(\backslash\)n"}
+00362         result += fmt.format (self.rMin, self.rMax)
+00363         
+00364         fmt = \textcolor{stringliteral}{"\(\backslash\)nBuy \{0\}, sell \{1\}\(\backslash\)n"}
+00365         result += fmt.format (origin, destination)
+00366         
+00367         fmt = \textcolor{stringliteral}{"\(\backslash\)tAbsolute: \{0:.4f\}\(\backslash\)n"}
+00368         result += fmt.format (self.aBuySell)
+00369         
+00370         fmt = \textcolor{stringliteral}{"\(\backslash\)tRelative: \{0:.4f\}\(\backslash\)n"}
+00371         result += fmt.format (self.rBuySell)
+00372         
+00373         fmt = \textcolor{stringliteral}{"\(\backslash\)nLast transactions at \{0\} and \{1\}\(\backslash\)n"}
+00374         result += fmt.format (origin, destination)
+00375         
+00376         fmt = \textcolor{stringliteral}{"\(\backslash\)tAbsolute: \{0:.4f\}\(\backslash\)n"}
+00377         result += fmt.format (self.aLast)
+00378         
+00379         fmt = \textcolor{stringliteral}{"\(\backslash\)tRelative: \{0:.4f\}\(\backslash\)n"}
+00380         result += fmt.format (self.rLast)
+00381                 
+00382         \textcolor{comment}{# Normal function termination}
+00383         \textcolor{keywordflow}{return} result
+00384     
+\end{DoxyCode}
+\mbox{\Hypertarget{classexchange_1_1_diff_tracker_a5289683bd2bd43e75e0062704df53736}\label{classexchange_1_1_diff_tracker_a5289683bd2bd43e75e0062704df53736}} 
+\index{exchange\+::\+Diff\+Tracker@{exchange\+::\+Diff\+Tracker}!calc@{calc}}
+\index{calc@{calc}!exchange\+::\+Diff\+Tracker@{exchange\+::\+Diff\+Tracker}}
+\subsubsection{\texorpdfstring{calc()}{calc()}}
+{\footnotesize\ttfamily def exchange.\+Diff\+Tracker.\+calc (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Definition at line \hyperlink{exchange_8py_source_l00309}{309} of file \hyperlink{exchange_8py_source}{exchange.\+py}.
+
+
+
+References \hyperlink{exch2exch_8py_source_l00121}{exch2exch.\+Differences.\+a\+Buy\+Sell}, \hyperlink{exchange_8py_source_l00301}{exchange.\+Diff\+Tracker.\+a\+Buy\+Sell}, \hyperlink{exch2exch_8py_source_l00124}{exch2exch.\+Differences.\+a\+Last}, \hyperlink{exchange_8py_source_l00304}{exchange.\+Diff\+Tracker.\+a\+Last}, \hyperlink{exchange_8py_source_l00295}{exchange.\+Diff\+Tracker.\+a\+Max}, \hyperlink{exchange_8py_source_l00296}{exchange.\+Diff\+Tracker.\+a\+Min}, \hyperlink{exch2exch_8py_source_l00030}{exch2exch.\+Rates.\+brl2usd}, \hyperlink{exchange_8py_source_l00292}{exchange.\+Diff\+Tracker.\+brl2usd}, \hyperlink{exchange_8py_source_l00293}{exchange.\+Diff\+Tracker.\+conv\+Dst\+Ticker}, \hyperlink{exchange_8py_source_l00291}{exchange.\+Diff\+Tracker.\+converted}, \hyperlink{exchange_8py_source_l00265}{exchange.\+Differences.\+dst\+Ticker}, \hyperlink{exchange_8py_source_l00266}{exchange.\+Differences.\+org\+Ticker}, \hyperlink{exch2exch_8py_source_l00107}{exch2exch.\+Differences.\+rates}, \hyperlink{exchange_8py_source_l00264}{exchange.\+Differences.\+rates}, \hyperlink{exch2exch_8py_source_l00122}{exch2exch.\+Differences.\+r\+Buy\+Sell}, \hyperlink{exchange_8py_source_l00302}{exchange.\+Diff\+Tracker.\+r\+Buy\+Sell}, \hyperlink{exch2exch_8py_source_l00125}{exch2exch.\+Differences.\+r\+Last}, \hyperlink{exchange_8py_source_l00305}{exchange.\+Diff\+Tracker.\+r\+Last}, \hyperlink{exchange_8py_source_l00299}{exchange.\+Diff\+Tracker.\+r\+Max}, and \hyperlink{exchange_8py_source_l00298}{exchange.\+Diff\+Tracker.\+r\+Min}.
+
+
+\begin{DoxyCode}
+00309     \textcolor{keyword}{def }calc (self):        
+00310         org = self.orgTicker
+00311         dst = self.dstTicker 
+00312         
+00313         \textcolor{comment}{# Check if the two tracks use the same pair}
+00314         \textcolor{keywordflow}{if} dst.getCoinPair () != org.getCoinPair ():
+00315             \textcolor{comment}{# TODO create a more generic way to convert currencies}
+00316             self.brl2usd = self.rates.getBrl2Usd ()
+00317             self.converted = \textcolor{keyword}{True} 
+00318             
+00319             pair = \textcolor{stringliteral}{"USDBTC"}
+00320             
+00321             self.convDstTicker = dst.convert (self.brl2usd, pair)
+00322             dst = self.convDstTicker
+00323     
+00324         self.aMax = dst.getHigh () - org.getLow ()
+00325         self.aMin = dst.getLow () - org.getHigh ()
+00326         
+00327         self.rMin = 100.0 * self.aMin / org.getHigh ()
+00328         self.rMax = 100.0 * self.aMax / org.getLow ()
+00329         
+00330         self.aBuySell  = dst.getBuy () - org.getSell ()
+00331         self.rBuySell = 100.0 * self.aBuySell / org.getBuy ()
+00332         
+00333         self.aLast = dst.getLast () - org.getLast ()
+00334         self.rLast = 100.0 * self.aLast / org.getLast ()
+00335    
+\end{DoxyCode}
+\mbox{\Hypertarget{classexchange_1_1_diff_tracker_aa3c9d92dbe7c7fcf25959fe55c6ba47d}\label{classexchange_1_1_diff_tracker_aa3c9d92dbe7c7fcf25959fe55c6ba47d}} 
+\index{exchange\+::\+Diff\+Tracker@{exchange\+::\+Diff\+Tracker}!dumps@{dumps}}
+\index{dumps@{dumps}!exchange\+::\+Diff\+Tracker@{exchange\+::\+Diff\+Tracker}}
+\subsubsection{\texorpdfstring{dumps()}{dumps()}}
+{\footnotesize\ttfamily def exchange.\+Diff\+Tracker.\+dumps (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Definition at line \hyperlink{exchange_8py_source_l00385}{385} of file \hyperlink{exchange_8py_source}{exchange.\+py}.
+
+
+
+References \hyperlink{exch2exch_8py_source_l00121}{exch2exch.\+Differences.\+a\+Buy\+Sell}, \hyperlink{exchange_8py_source_l00301}{exchange.\+Diff\+Tracker.\+a\+Buy\+Sell}, \hyperlink{exch2exch_8py_source_l00124}{exch2exch.\+Differences.\+a\+Last}, \hyperlink{exchange_8py_source_l00304}{exchange.\+Diff\+Tracker.\+a\+Last}, \hyperlink{exchange_8py_source_l00295}{exchange.\+Diff\+Tracker.\+a\+Max}, \hyperlink{exchange_8py_source_l00296}{exchange.\+Diff\+Tracker.\+a\+Min}, \hyperlink{exchange_8py_source_l00265}{exchange.\+Differences.\+dst\+Ticker}, \hyperlink{exchange_8py_source_l00266}{exchange.\+Differences.\+org\+Ticker}, \hyperlink{exch2exch_8py_source_l00107}{exch2exch.\+Differences.\+rates}, \hyperlink{exchange_8py_source_l00264}{exchange.\+Differences.\+rates}, \hyperlink{exch2exch_8py_source_l00122}{exch2exch.\+Differences.\+r\+Buy\+Sell}, \hyperlink{exchange_8py_source_l00302}{exchange.\+Diff\+Tracker.\+r\+Buy\+Sell}, \hyperlink{exch2exch_8py_source_l00125}{exch2exch.\+Differences.\+r\+Last}, \hyperlink{exchange_8py_source_l00305}{exchange.\+Diff\+Tracker.\+r\+Last}, \hyperlink{exchange_8py_source_l00299}{exchange.\+Diff\+Tracker.\+r\+Max}, \hyperlink{exchange_8py_source_l00298}{exchange.\+Diff\+Tracker.\+r\+Min}, \hyperlink{exchange_8py_source_l00067}{exchange.\+Ticker.\+start\+Dt}, \hyperlink{exchange_8py_source_l00177}{exchange.\+Exchange.\+start\+Dt}, and \hyperlink{exchange_8py_source_l00307}{exchange.\+Diff\+Tracker.\+start\+Dt}.
+
+
+\begin{DoxyCode}
+00385     \textcolor{keyword}{def }dumps (self):
+00386         \textcolor{comment}{# TODO create a report }
+00387     
+00388         fields = \{\}
+00389         fields[\textcolor{stringliteral}{"startDt"}]     = self.startDt
+00390         fields[\textcolor{stringliteral}{"origin"}]      = self.orgTicker.getExchName ()
+00391         fields[\textcolor{stringliteral}{"destination"}] = self.dstTicker.getExchName ()
+00392         fields[\textcolor{stringliteral}{"rates"}]       = self.rates.getServiceName ()
+00393         
+00394         fields[\textcolor{stringliteral}{"AbsMax"}] = self.aMax
+00395         fields[\textcolor{stringliteral}{"RelMax"}] = self.rMax
+00396         fields[\textcolor{stringliteral}{"AbsMin"}] = self.aMin
+00397         fields[\textcolor{stringliteral}{"RelMin"}] = self.rMin
+00398         
+00399         fields[\textcolor{stringliteral}{"AbsBuySell"}] = self.aBuySell
+00400         fields[\textcolor{stringliteral}{"RelBuySell"}] = self.rBuySell
+00401         
+00402         fields[\textcolor{stringliteral}{"AbsLast"}] = self.aLast
+00403         fields[\textcolor{stringliteral}{"RelLast"}] = self.rLast
+00404        
+00405         result = json.dumps (fields)
+00406          
+00407         \textcolor{comment}{# Normal function termination}
+00408         \textcolor{keywordflow}{return} result
+00409         
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classexchange_1_1_diff_tracker_ae6108d1ec0cdf3b195ed5bb7c8b529b2}\label{classexchange_1_1_diff_tracker_ae6108d1ec0cdf3b195ed5bb7c8b529b2}} 
+\index{exchange\+::\+Diff\+Tracker@{exchange\+::\+Diff\+Tracker}!a\+Buy\+Sell@{a\+Buy\+Sell}}
+\index{a\+Buy\+Sell@{a\+Buy\+Sell}!exchange\+::\+Diff\+Tracker@{exchange\+::\+Diff\+Tracker}}
+\subsubsection{\texorpdfstring{a\+Buy\+Sell}{aBuySell}}
+{\footnotesize\ttfamily exchange.\+Diff\+Tracker.\+a\+Buy\+Sell}
+
+
+
+Definition at line \hyperlink{exchange_8py_source_l00301}{301} of file \hyperlink{exchange_8py_source}{exchange.\+py}.
+
+
+
+Referenced by \hyperlink{exchange_8py_source_l00336}{exchange.\+Diff\+Tracker.\+\_\+\+\_\+str\+\_\+\+\_\+()}, \hyperlink{exchange_8py_source_l00309}{exchange.\+Diff\+Tracker.\+calc()}, and \hyperlink{exchange_8py_source_l00385}{exchange.\+Diff\+Tracker.\+dumps()}.
+
+\mbox{\Hypertarget{classexchange_1_1_diff_tracker_ae428ab91ae6471c4ad8b566540fb035e}\label{classexchange_1_1_diff_tracker_ae428ab91ae6471c4ad8b566540fb035e}} 
+\index{exchange\+::\+Diff\+Tracker@{exchange\+::\+Diff\+Tracker}!a\+Last@{a\+Last}}
+\index{a\+Last@{a\+Last}!exchange\+::\+Diff\+Tracker@{exchange\+::\+Diff\+Tracker}}
+\subsubsection{\texorpdfstring{a\+Last}{aLast}}
+{\footnotesize\ttfamily exchange.\+Diff\+Tracker.\+a\+Last}
+
+
+
+Definition at line \hyperlink{exchange_8py_source_l00304}{304} of file \hyperlink{exchange_8py_source}{exchange.\+py}.
+
+
+
+Referenced by \hyperlink{exchange_8py_source_l00336}{exchange.\+Diff\+Tracker.\+\_\+\+\_\+str\+\_\+\+\_\+()}, \hyperlink{exchange_8py_source_l00309}{exchange.\+Diff\+Tracker.\+calc()}, and \hyperlink{exchange_8py_source_l00385}{exchange.\+Diff\+Tracker.\+dumps()}.
+
+\mbox{\Hypertarget{classexchange_1_1_diff_tracker_a3dcbc689ebb5ec6e0c8e600079d95de9}\label{classexchange_1_1_diff_tracker_a3dcbc689ebb5ec6e0c8e600079d95de9}} 
+\index{exchange\+::\+Diff\+Tracker@{exchange\+::\+Diff\+Tracker}!a\+Max@{a\+Max}}
+\index{a\+Max@{a\+Max}!exchange\+::\+Diff\+Tracker@{exchange\+::\+Diff\+Tracker}}
+\subsubsection{\texorpdfstring{a\+Max}{aMax}}
+{\footnotesize\ttfamily exchange.\+Diff\+Tracker.\+a\+Max}
+
 
 
 Definition at line \hyperlink{exchange_8py_source_l00295}{295} of file \hyperlink{exchange_8py_source}{exchange.\+py}.
 
 
-\begin{DoxyCode}
-\hypertarget{classexchange_1_1_diff_tracker.tex_l00295}{}\hyperlink{classexchange_1_1_diff_tracker_a72214c03506722b0554e433615bff766}{00295}     \textcolor{keyword}{def }\hyperlink{classexchange_1_1_diff_tracker_a72214c03506722b0554e433615bff766}{\_\_str\_\_} (self):
-00296         \textcolor{comment}{# TODO create a report }
-00297     
-00298         result = \textcolor{stringliteral}{""} 
-00299         
-00300         \textcolor{comment}{# Normal function termination}
-00301         \textcolor{keywordflow}{return} result
-00302     
-\end{DoxyCode}
-\index{exchange\+::\+Diff\+Tracker@{exchange\+::\+Diff\+Tracker}!calc@{calc}}
-\index{calc@{calc}!exchange\+::\+Diff\+Tracker@{exchange\+::\+Diff\+Tracker}}
-\subsubsection[{\texorpdfstring{calc(self)}{calc(self)}}]{\setlength{\rightskip}{0pt plus 5cm}def exchange.\+Diff\+Tracker.\+calc (
-\begin{DoxyParamCaption}
-\item[{}]{self}
-\end{DoxyParamCaption}
-)}\hypertarget{classexchange_1_1_diff_tracker_a5289683bd2bd43e75e0062704df53736}{}\label{classexchange_1_1_diff_tracker_a5289683bd2bd43e75e0062704df53736}
 
+Referenced by \hyperlink{exchange_8py_source_l00336}{exchange.\+Diff\+Tracker.\+\_\+\+\_\+str\+\_\+\+\_\+()}, \hyperlink{exchange_8py_source_l00309}{exchange.\+Diff\+Tracker.\+calc()}, and \hyperlink{exchange_8py_source_l00385}{exchange.\+Diff\+Tracker.\+dumps()}.
 
-Definition at line \hyperlink{exchange_8py_source_l00272}{272} of file \hyperlink{exchange_8py_source}{exchange.\+py}.
-
-
-
-References \hyperlink{e2e_8py_source_l00032}{e2e.\+Parameters.\+destination}, \hyperlink{exchange_8py_source_l00233}{exchange.\+Differences.\+destination}, \hyperlink{e2e_8py_source_l00031}{e2e.\+Parameters.\+origin}, and \hyperlink{exchange_8py_source_l00234}{exchange.\+Differences.\+origin}.
-
-
-\begin{DoxyCode}
-\hypertarget{classexchange_1_1_diff_tracker.tex_l00272}{}\hyperlink{classexchange_1_1_diff_tracker_a5289683bd2bd43e75e0062704df53736}{00272}     \textcolor{keyword}{def }\hyperlink{classexchange_1_1_diff_tracker_a5289683bd2bd43e75e0062704df53736}{calc} (self):        
-00273         org = self.\hyperlink{classexchange_1_1_differences_a25acbe37294f8b4eb5bf909cd84a0b9d}{origin}
-00274         dst = self.\hyperlink{classexchange_1_1_differences_a0092f9963e867db55e7ea2f0bab1b07e}{destination} 
-00275         
-00276         \textcolor{comment}{# Check if the two tracks use the same pair}
-00277         \textcolor{keywordflow}{if} dst.getPair () != org.pair ():
-00278             \textcolor{comment}{# TODO create a more generic way to convert currencies}
-00279             brl2usd = self.rates.getBrl2Usd ()
-00280             pair = \textcolor{stringliteral}{"USDBTC"}
-00281             dst = dst.convert (brl2usd, pair)
-00282             
-\hypertarget{classexchange_1_1_diff_tracker.tex_l00283}{}\hyperlink{classexchange_1_1_diff_tracker_a3dcbc689ebb5ec6e0c8e600079d95de9}{00283}         self.\hyperlink{classexchange_1_1_diff_tracker_a3dcbc689ebb5ec6e0c8e600079d95de9}{aMax} = dst.getHigh () - org.getLow ()
-\hypertarget{classexchange_1_1_diff_tracker.tex_l00284}{}\hyperlink{classexchange_1_1_diff_tracker_a65d042348359fa27a17e092e66405ae7}{00284}         self.\hyperlink{classexchange_1_1_diff_tracker_a65d042348359fa27a17e092e66405ae7}{aMin} = dst.getLow () - org.getHigh ()
-00285         
-\hypertarget{classexchange_1_1_diff_tracker.tex_l00286}{}\hyperlink{classexchange_1_1_diff_tracker_ad3250cb94933244444942dec9199d362}{00286}         self.\hyperlink{classexchange_1_1_diff_tracker_ad3250cb94933244444942dec9199d362}{rMin} = 100.0 * self.\hyperlink{classexchange_1_1_diff_tracker_a0a1bbdbeeee705d2448d69e98f77a14c}{dmin} / org.getHigh ()
-\hypertarget{classexchange_1_1_diff_tracker.tex_l00287}{}\hyperlink{classexchange_1_1_diff_tracker_ab4266c6d4fc968997e26044a7c827980}{00287}         self.\hyperlink{classexchange_1_1_diff_tracker_ab4266c6d4fc968997e26044a7c827980}{rMax} = 100.0 * self.\hyperlink{classexchange_1_1_diff_tracker_a8ee4999d420f124afa67ff2b131bbce5}{dmax} / org.getLow ()
-00288         
-00289         self.\hyperlink{classexchange_1_1_diff_tracker_ae6108d1ec0cdf3b195ed5bb7c8b529b2}{aBuySell}  = dst.getBuy () - org.getSell ()
-00290         self.\hyperlink{classexchange_1_1_diff_tracker_aab406fe7b4dc6d486c4a9fb65944a4df}{rBuySell} = 100.0 * self.\hyperlink{classexchange_1_1_diff_tracker_ae6108d1ec0cdf3b195ed5bb7c8b529b2}{aBuySell} / org.getBuy ()
-00291         
-00292         self.\hyperlink{classexchange_1_1_diff_tracker_ae428ab91ae6471c4ad8b566540fb035e}{aLast} = dst.getLast () - org.getLast ()
-00293         self.\hyperlink{classexchange_1_1_diff_tracker_a4dbaf0a1192448101cb35eca617c7f0f}{rLast} = 100.0 * self.\hyperlink{classexchange_1_1_diff_tracker_ae428ab91ae6471c4ad8b566540fb035e}{aLast} / org.getLast ()
-00294    
-\end{DoxyCode}
-\index{exchange\+::\+Diff\+Tracker@{exchange\+::\+Diff\+Tracker}!dumps@{dumps}}
-\index{dumps@{dumps}!exchange\+::\+Diff\+Tracker@{exchange\+::\+Diff\+Tracker}}
-\subsubsection[{\texorpdfstring{dumps(self)}{dumps(self)}}]{\setlength{\rightskip}{0pt plus 5cm}def exchange.\+Diff\+Tracker.\+dumps (
-\begin{DoxyParamCaption}
-\item[{}]{self}
-\end{DoxyParamCaption}
-)}\hypertarget{classexchange_1_1_diff_tracker_aa3c9d92dbe7c7fcf25959fe55c6ba47d}{}\label{classexchange_1_1_diff_tracker_aa3c9d92dbe7c7fcf25959fe55c6ba47d}
-
-
-Definition at line \hyperlink{exchange_8py_source_l00303}{303} of file \hyperlink{exchange_8py_source}{exchange.\+py}.
-
-
-\begin{DoxyCode}
-\hypertarget{classexchange_1_1_diff_tracker.tex_l00303}{}\hyperlink{classexchange_1_1_diff_tracker_aa3c9d92dbe7c7fcf25959fe55c6ba47d}{00303}     \textcolor{keyword}{def }\hyperlink{classexchange_1_1_diff_tracker_aa3c9d92dbe7c7fcf25959fe55c6ba47d}{dumps} (self):
-00304         \textcolor{comment}{# TODO create a report }
-00305     
-00306         result = \textcolor{stringliteral}{""} 
-00307         
-00308         \textcolor{comment}{# Normal function termination}
-00309         \textcolor{keywordflow}{return} result
-00310         
-\end{DoxyCode}
-
-
-\subsection{Member Data Documentation}
-\index{exchange\+::\+Diff\+Tracker@{exchange\+::\+Diff\+Tracker}!a\+Buy\+Sell@{a\+Buy\+Sell}}
-\index{a\+Buy\+Sell@{a\+Buy\+Sell}!exchange\+::\+Diff\+Tracker@{exchange\+::\+Diff\+Tracker}}
-\subsubsection[{\texorpdfstring{a\+Buy\+Sell}{aBuySell}}]{\setlength{\rightskip}{0pt plus 5cm}exchange.\+Diff\+Tracker.\+a\+Buy\+Sell}\hypertarget{classexchange_1_1_diff_tracker_ae6108d1ec0cdf3b195ed5bb7c8b529b2}{}\label{classexchange_1_1_diff_tracker_ae6108d1ec0cdf3b195ed5bb7c8b529b2}
-
-
-Definition at line \hyperlink{exchange_8py_source_l00265}{265} of file \hyperlink{exchange_8py_source}{exchange.\+py}.
-
-\index{exchange\+::\+Diff\+Tracker@{exchange\+::\+Diff\+Tracker}!a\+Last@{a\+Last}}
-\index{a\+Last@{a\+Last}!exchange\+::\+Diff\+Tracker@{exchange\+::\+Diff\+Tracker}}
-\subsubsection[{\texorpdfstring{a\+Last}{aLast}}]{\setlength{\rightskip}{0pt plus 5cm}exchange.\+Diff\+Tracker.\+a\+Last}\hypertarget{classexchange_1_1_diff_tracker_ae428ab91ae6471c4ad8b566540fb035e}{}\label{classexchange_1_1_diff_tracker_ae428ab91ae6471c4ad8b566540fb035e}
-
-
-Definition at line \hyperlink{exchange_8py_source_l00268}{268} of file \hyperlink{exchange_8py_source}{exchange.\+py}.
-
-\index{exchange\+::\+Diff\+Tracker@{exchange\+::\+Diff\+Tracker}!a\+Max@{a\+Max}}
-\index{a\+Max@{a\+Max}!exchange\+::\+Diff\+Tracker@{exchange\+::\+Diff\+Tracker}}
-\subsubsection[{\texorpdfstring{a\+Max}{aMax}}]{\setlength{\rightskip}{0pt plus 5cm}exchange.\+Diff\+Tracker.\+a\+Max}\hypertarget{classexchange_1_1_diff_tracker_a3dcbc689ebb5ec6e0c8e600079d95de9}{}\label{classexchange_1_1_diff_tracker_a3dcbc689ebb5ec6e0c8e600079d95de9}
-
-
-Definition at line \hyperlink{exchange_8py_source_l00283}{283} of file \hyperlink{exchange_8py_source}{exchange.\+py}.
-
+\mbox{\Hypertarget{classexchange_1_1_diff_tracker_a65d042348359fa27a17e092e66405ae7}\label{classexchange_1_1_diff_tracker_a65d042348359fa27a17e092e66405ae7}} 
 \index{exchange\+::\+Diff\+Tracker@{exchange\+::\+Diff\+Tracker}!a\+Min@{a\+Min}}
 \index{a\+Min@{a\+Min}!exchange\+::\+Diff\+Tracker@{exchange\+::\+Diff\+Tracker}}
-\subsubsection[{\texorpdfstring{a\+Min}{aMin}}]{\setlength{\rightskip}{0pt plus 5cm}exchange.\+Diff\+Tracker.\+a\+Min}\hypertarget{classexchange_1_1_diff_tracker_a65d042348359fa27a17e092e66405ae7}{}\label{classexchange_1_1_diff_tracker_a65d042348359fa27a17e092e66405ae7}
-
-
-Definition at line \hyperlink{exchange_8py_source_l00284}{284} of file \hyperlink{exchange_8py_source}{exchange.\+py}.
-
-\index{exchange\+::\+Diff\+Tracker@{exchange\+::\+Diff\+Tracker}!dmax@{dmax}}
-\index{dmax@{dmax}!exchange\+::\+Diff\+Tracker@{exchange\+::\+Diff\+Tracker}}
-\subsubsection[{\texorpdfstring{dmax}{dmax}}]{\setlength{\rightskip}{0pt plus 5cm}exchange.\+Diff\+Tracker.\+dmax}\hypertarget{classexchange_1_1_diff_tracker_a8ee4999d420f124afa67ff2b131bbce5}{}\label{classexchange_1_1_diff_tracker_a8ee4999d420f124afa67ff2b131bbce5}
-
-
-Definition at line \hyperlink{exchange_8py_source_l00259}{259} of file \hyperlink{exchange_8py_source}{exchange.\+py}.
+\subsubsection{\texorpdfstring{a\+Min}{aMin}}
+{\footnotesize\ttfamily exchange.\+Diff\+Tracker.\+a\+Min}
 
 
 
-Referenced by \hyperlink{raw__urlparser_8py_source_l00097}{raw\+\_\+urlparser.\+Differences.\+get\+Max\+Delta()}.
-
-\index{exchange\+::\+Diff\+Tracker@{exchange\+::\+Diff\+Tracker}!dmin@{dmin}}
-\index{dmin@{dmin}!exchange\+::\+Diff\+Tracker@{exchange\+::\+Diff\+Tracker}}
-\subsubsection[{\texorpdfstring{dmin}{dmin}}]{\setlength{\rightskip}{0pt plus 5cm}exchange.\+Diff\+Tracker.\+dmin}\hypertarget{classexchange_1_1_diff_tracker_a0a1bbdbeeee705d2448d69e98f77a14c}{}\label{classexchange_1_1_diff_tracker_a0a1bbdbeeee705d2448d69e98f77a14c}
-
-
-Definition at line \hyperlink{exchange_8py_source_l00260}{260} of file \hyperlink{exchange_8py_source}{exchange.\+py}.
+Definition at line \hyperlink{exchange_8py_source_l00296}{296} of file \hyperlink{exchange_8py_source}{exchange.\+py}.
 
 
 
-Referenced by \hyperlink{raw__urlparser_8py_source_l00094}{raw\+\_\+urlparser.\+Differences.\+get\+Min\+Delta()}.
+Referenced by \hyperlink{exchange_8py_source_l00336}{exchange.\+Diff\+Tracker.\+\_\+\+\_\+str\+\_\+\+\_\+()}, \hyperlink{exchange_8py_source_l00309}{exchange.\+Diff\+Tracker.\+calc()}, and \hyperlink{exchange_8py_source_l00385}{exchange.\+Diff\+Tracker.\+dumps()}.
 
-\index{exchange\+::\+Diff\+Tracker@{exchange\+::\+Diff\+Tracker}!gmax@{gmax}}
-\index{gmax@{gmax}!exchange\+::\+Diff\+Tracker@{exchange\+::\+Diff\+Tracker}}
-\subsubsection[{\texorpdfstring{gmax}{gmax}}]{\setlength{\rightskip}{0pt plus 5cm}exchange.\+Diff\+Tracker.\+gmax}\hypertarget{classexchange_1_1_diff_tracker_a73f20240fb1d81a320a6f78aec022529}{}\label{classexchange_1_1_diff_tracker_a73f20240fb1d81a320a6f78aec022529}
-
-
-Definition at line \hyperlink{exchange_8py_source_l00263}{263} of file \hyperlink{exchange_8py_source}{exchange.\+py}.
-
-\index{exchange\+::\+Diff\+Tracker@{exchange\+::\+Diff\+Tracker}!gmin@{gmin}}
-\index{gmin@{gmin}!exchange\+::\+Diff\+Tracker@{exchange\+::\+Diff\+Tracker}}
-\subsubsection[{\texorpdfstring{gmin}{gmin}}]{\setlength{\rightskip}{0pt plus 5cm}exchange.\+Diff\+Tracker.\+gmin}\hypertarget{classexchange_1_1_diff_tracker_a8c2277408ff52d5bb8913a98f4efe8b0}{}\label{classexchange_1_1_diff_tracker_a8c2277408ff52d5bb8913a98f4efe8b0}
+\mbox{\Hypertarget{classexchange_1_1_diff_tracker_a6adc6f18dd9b5d2d8ea8978235cb569d}\label{classexchange_1_1_diff_tracker_a6adc6f18dd9b5d2d8ea8978235cb569d}} 
+\index{exchange\+::\+Diff\+Tracker@{exchange\+::\+Diff\+Tracker}!brl2usd@{brl2usd}}
+\index{brl2usd@{brl2usd}!exchange\+::\+Diff\+Tracker@{exchange\+::\+Diff\+Tracker}}
+\subsubsection{\texorpdfstring{brl2usd}{brl2usd}}
+{\footnotesize\ttfamily exchange.\+Diff\+Tracker.\+brl2usd}
 
 
-Definition at line \hyperlink{exchange_8py_source_l00262}{262} of file \hyperlink{exchange_8py_source}{exchange.\+py}.
 
+Definition at line \hyperlink{exchange_8py_source_l00292}{292} of file \hyperlink{exchange_8py_source}{exchange.\+py}.
+
+
+
+Referenced by \hyperlink{raw__urlparser_8py_source_l00038}{raw\+\_\+urlparser.\+Rates.\+\_\+\+\_\+str\+\_\+\+\_\+()}, \hyperlink{exchange_8py_source_l00309}{exchange.\+Diff\+Tracker.\+calc()}, and \hyperlink{raw__urlparser_8py_source_l00029}{raw\+\_\+urlparser.\+Rates.\+get\+Brl2\+Usd()}.
+
+\mbox{\Hypertarget{classexchange_1_1_diff_tracker_a8eb45d1c936bc32a5732d59a387265dc}\label{classexchange_1_1_diff_tracker_a8eb45d1c936bc32a5732d59a387265dc}} 
+\index{exchange\+::\+Diff\+Tracker@{exchange\+::\+Diff\+Tracker}!conv\+Dst\+Ticker@{conv\+Dst\+Ticker}}
+\index{conv\+Dst\+Ticker@{conv\+Dst\+Ticker}!exchange\+::\+Diff\+Tracker@{exchange\+::\+Diff\+Tracker}}
+\subsubsection{\texorpdfstring{conv\+Dst\+Ticker}{convDstTicker}}
+{\footnotesize\ttfamily exchange.\+Diff\+Tracker.\+conv\+Dst\+Ticker}
+
+
+
+Definition at line \hyperlink{exchange_8py_source_l00293}{293} of file \hyperlink{exchange_8py_source}{exchange.\+py}.
+
+
+
+Referenced by \hyperlink{exchange_8py_source_l00336}{exchange.\+Diff\+Tracker.\+\_\+\+\_\+str\+\_\+\+\_\+()}, and \hyperlink{exchange_8py_source_l00309}{exchange.\+Diff\+Tracker.\+calc()}.
+
+\mbox{\Hypertarget{classexchange_1_1_diff_tracker_a3dac3e23c410307f41327725701fbd10}\label{classexchange_1_1_diff_tracker_a3dac3e23c410307f41327725701fbd10}} 
+\index{exchange\+::\+Diff\+Tracker@{exchange\+::\+Diff\+Tracker}!converted@{converted}}
+\index{converted@{converted}!exchange\+::\+Diff\+Tracker@{exchange\+::\+Diff\+Tracker}}
+\subsubsection{\texorpdfstring{converted}{converted}}
+{\footnotesize\ttfamily exchange.\+Diff\+Tracker.\+converted}
+
+
+
+Definition at line \hyperlink{exchange_8py_source_l00291}{291} of file \hyperlink{exchange_8py_source}{exchange.\+py}.
+
+
+
+Referenced by \hyperlink{exchange_8py_source_l00336}{exchange.\+Diff\+Tracker.\+\_\+\+\_\+str\+\_\+\+\_\+()}, and \hyperlink{exchange_8py_source_l00309}{exchange.\+Diff\+Tracker.\+calc()}.
+
+\mbox{\Hypertarget{classexchange_1_1_diff_tracker_aab406fe7b4dc6d486c4a9fb65944a4df}\label{classexchange_1_1_diff_tracker_aab406fe7b4dc6d486c4a9fb65944a4df}} 
 \index{exchange\+::\+Diff\+Tracker@{exchange\+::\+Diff\+Tracker}!r\+Buy\+Sell@{r\+Buy\+Sell}}
 \index{r\+Buy\+Sell@{r\+Buy\+Sell}!exchange\+::\+Diff\+Tracker@{exchange\+::\+Diff\+Tracker}}
-\subsubsection[{\texorpdfstring{r\+Buy\+Sell}{rBuySell}}]{\setlength{\rightskip}{0pt plus 5cm}exchange.\+Diff\+Tracker.\+r\+Buy\+Sell}\hypertarget{classexchange_1_1_diff_tracker_aab406fe7b4dc6d486c4a9fb65944a4df}{}\label{classexchange_1_1_diff_tracker_aab406fe7b4dc6d486c4a9fb65944a4df}
+\subsubsection{\texorpdfstring{r\+Buy\+Sell}{rBuySell}}
+{\footnotesize\ttfamily exchange.\+Diff\+Tracker.\+r\+Buy\+Sell}
 
 
-Definition at line \hyperlink{exchange_8py_source_l00266}{266} of file \hyperlink{exchange_8py_source}{exchange.\+py}.
 
+Definition at line \hyperlink{exchange_8py_source_l00302}{302} of file \hyperlink{exchange_8py_source}{exchange.\+py}.
+
+
+
+Referenced by \hyperlink{exchange_8py_source_l00336}{exchange.\+Diff\+Tracker.\+\_\+\+\_\+str\+\_\+\+\_\+()}, \hyperlink{exchange_8py_source_l00309}{exchange.\+Diff\+Tracker.\+calc()}, and \hyperlink{exchange_8py_source_l00385}{exchange.\+Diff\+Tracker.\+dumps()}.
+
+\mbox{\Hypertarget{classexchange_1_1_diff_tracker_a4dbaf0a1192448101cb35eca617c7f0f}\label{classexchange_1_1_diff_tracker_a4dbaf0a1192448101cb35eca617c7f0f}} 
 \index{exchange\+::\+Diff\+Tracker@{exchange\+::\+Diff\+Tracker}!r\+Last@{r\+Last}}
 \index{r\+Last@{r\+Last}!exchange\+::\+Diff\+Tracker@{exchange\+::\+Diff\+Tracker}}
-\subsubsection[{\texorpdfstring{r\+Last}{rLast}}]{\setlength{\rightskip}{0pt plus 5cm}exchange.\+Diff\+Tracker.\+r\+Last}\hypertarget{classexchange_1_1_diff_tracker_a4dbaf0a1192448101cb35eca617c7f0f}{}\label{classexchange_1_1_diff_tracker_a4dbaf0a1192448101cb35eca617c7f0f}
+\subsubsection{\texorpdfstring{r\+Last}{rLast}}
+{\footnotesize\ttfamily exchange.\+Diff\+Tracker.\+r\+Last}
 
 
-Definition at line \hyperlink{exchange_8py_source_l00269}{269} of file \hyperlink{exchange_8py_source}{exchange.\+py}.
 
+Definition at line \hyperlink{exchange_8py_source_l00305}{305} of file \hyperlink{exchange_8py_source}{exchange.\+py}.
+
+
+
+Referenced by \hyperlink{exchange_8py_source_l00336}{exchange.\+Diff\+Tracker.\+\_\+\+\_\+str\+\_\+\+\_\+()}, \hyperlink{exchange_8py_source_l00309}{exchange.\+Diff\+Tracker.\+calc()}, and \hyperlink{exchange_8py_source_l00385}{exchange.\+Diff\+Tracker.\+dumps()}.
+
+\mbox{\Hypertarget{classexchange_1_1_diff_tracker_ab4266c6d4fc968997e26044a7c827980}\label{classexchange_1_1_diff_tracker_ab4266c6d4fc968997e26044a7c827980}} 
 \index{exchange\+::\+Diff\+Tracker@{exchange\+::\+Diff\+Tracker}!r\+Max@{r\+Max}}
 \index{r\+Max@{r\+Max}!exchange\+::\+Diff\+Tracker@{exchange\+::\+Diff\+Tracker}}
-\subsubsection[{\texorpdfstring{r\+Max}{rMax}}]{\setlength{\rightskip}{0pt plus 5cm}exchange.\+Diff\+Tracker.\+r\+Max}\hypertarget{classexchange_1_1_diff_tracker_ab4266c6d4fc968997e26044a7c827980}{}\label{classexchange_1_1_diff_tracker_ab4266c6d4fc968997e26044a7c827980}
+\subsubsection{\texorpdfstring{r\+Max}{rMax}}
+{\footnotesize\ttfamily exchange.\+Diff\+Tracker.\+r\+Max}
 
 
-Definition at line \hyperlink{exchange_8py_source_l00287}{287} of file \hyperlink{exchange_8py_source}{exchange.\+py}.
 
+Definition at line \hyperlink{exchange_8py_source_l00299}{299} of file \hyperlink{exchange_8py_source}{exchange.\+py}.
+
+
+
+Referenced by \hyperlink{exchange_8py_source_l00336}{exchange.\+Diff\+Tracker.\+\_\+\+\_\+str\+\_\+\+\_\+()}, \hyperlink{exchange_8py_source_l00309}{exchange.\+Diff\+Tracker.\+calc()}, and \hyperlink{exchange_8py_source_l00385}{exchange.\+Diff\+Tracker.\+dumps()}.
+
+\mbox{\Hypertarget{classexchange_1_1_diff_tracker_ad3250cb94933244444942dec9199d362}\label{classexchange_1_1_diff_tracker_ad3250cb94933244444942dec9199d362}} 
 \index{exchange\+::\+Diff\+Tracker@{exchange\+::\+Diff\+Tracker}!r\+Min@{r\+Min}}
 \index{r\+Min@{r\+Min}!exchange\+::\+Diff\+Tracker@{exchange\+::\+Diff\+Tracker}}
-\subsubsection[{\texorpdfstring{r\+Min}{rMin}}]{\setlength{\rightskip}{0pt plus 5cm}exchange.\+Diff\+Tracker.\+r\+Min}\hypertarget{classexchange_1_1_diff_tracker_ad3250cb94933244444942dec9199d362}{}\label{classexchange_1_1_diff_tracker_ad3250cb94933244444942dec9199d362}
+\subsubsection{\texorpdfstring{r\+Min}{rMin}}
+{\footnotesize\ttfamily exchange.\+Diff\+Tracker.\+r\+Min}
 
 
-Definition at line \hyperlink{exchange_8py_source_l00286}{286} of file \hyperlink{exchange_8py_source}{exchange.\+py}.
+
+Definition at line \hyperlink{exchange_8py_source_l00298}{298} of file \hyperlink{exchange_8py_source}{exchange.\+py}.
+
+
+
+Referenced by \hyperlink{exchange_8py_source_l00336}{exchange.\+Diff\+Tracker.\+\_\+\+\_\+str\+\_\+\+\_\+()}, \hyperlink{exchange_8py_source_l00309}{exchange.\+Diff\+Tracker.\+calc()}, and \hyperlink{exchange_8py_source_l00385}{exchange.\+Diff\+Tracker.\+dumps()}.
+
+\mbox{\Hypertarget{classexchange_1_1_diff_tracker_aa9d0293d5485e1f711db62e59ab11a8a}\label{classexchange_1_1_diff_tracker_aa9d0293d5485e1f711db62e59ab11a8a}} 
+\index{exchange\+::\+Diff\+Tracker@{exchange\+::\+Diff\+Tracker}!start\+Dt@{start\+Dt}}
+\index{start\+Dt@{start\+Dt}!exchange\+::\+Diff\+Tracker@{exchange\+::\+Diff\+Tracker}}
+\subsubsection{\texorpdfstring{start\+Dt}{startDt}}
+{\footnotesize\ttfamily exchange.\+Diff\+Tracker.\+start\+Dt}
+
+
+
+Definition at line \hyperlink{exchange_8py_source_l00307}{307} of file \hyperlink{exchange_8py_source}{exchange.\+py}.
+
+
+
+Referenced by \hyperlink{exchange_8py_source_l00385}{exchange.\+Diff\+Tracker.\+dumps()}.
 
 
 

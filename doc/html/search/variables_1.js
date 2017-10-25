@@ -1,7 +1,10 @@
 var searchData=
 [
-  ['brl2usd',['brl2usd',['../classexch2exch_1_1_rates.html#acc018dea09e825e18e91c73c5c63ab78',1,'exch2exch.Rates.brl2usd()'],['../classrates_1_1_google.html#a0979ffcb18b8bf3156cc5735c67ca6df',1,'rates.Google.brl2usd()'],['../classrates_1_1_x_rates.html#acb0a8b6ec059b823c8a46eb115341251',1,'rates.XRates.brl2usd()'],['../classraw__urlparser_1_1_rates.html#adc9df007bec75344f9f89cb631d1aeb3',1,'raw_urlparser.Rates.brl2usd()'],['../namespaceraw__urlparser.html#ae7e1c02df9ab0102e017e31885aa6431',1,'raw_urlparser.brl2usd()']]],
-  ['bs',['bs',['../namespaceexch2exch.html#a9cd4f02f37c459c12546f4552a54f5fc',1,'exch2exch']]],
-  ['bs_5ftupl',['bs_tupl',['../namespaceexch2exch.html#a6e4164ccd0ea412356d0b9e4bbe35847',1,'exch2exch']]],
-  ['buy',['buy',['../classexch2exch_1_1_xbt_prices.html#a8f1d8ac0ef114ea3645314578697b7ac',1,'exch2exch.XbtPrices.buy()'],['../classexchange_1_1_ticker.html#a2ca48c3fa9aba92241392a05bef39324',1,'exchange.Ticker.buy()'],['../classexchange_1_1_bitfinex.html#aed7ff0d2287aaf4d61985d6f11c23c98',1,'exchange.Bitfinex.buy()'],['../classexchange_1_1_bitstamp.html#a40aa1ff3335ef4c80a5107234e05e23e',1,'exchange.Bitstamp.buy()'],['../classexchange_1_1_fox_bit.html#acb7e709cc05e8314b1bdacd32e4dfc80',1,'exchange.FoxBit.buy()'],['../classexchange_1_1_mercado_bitcoin.html#ada27b62a35286b9f5dbb54590c5bacd2',1,'exchange.MercadoBitcoin.buy()'],['../classexchange_1_1_ok_coin.html#aaf828e37142a83cbfb12d193313f6d43',1,'exchange.OkCoin.buy()'],['../classraw__urlparser_1_1_xbt_prices.html#a87eba659d6598ffd66c694535e1b7a7a',1,'raw_urlparser.XbtPrices.buy()'],['../namespaceexch2exch.html#ab7eb5c06d25fed3d99f5817c49fc2b30',1,'exch2exch.buy()'],['../namespaceraw__urlparser.html#a2b9c66c8d5157cd95ecb738719c8a873',1,'raw_urlparser.buy()']]]
+  ['abuysell',['aBuySell',['../classexch2exch_1_1_differences.html#aac9b76364eb6e0ee83417c0128aaa001',1,'exch2exch.Differences.aBuySell()'],['../classexchange_1_1_diff_tracker.html#ae6108d1ec0cdf3b195ed5bb7c8b529b2',1,'exchange.DiffTracker.aBuySell()']]],
+  ['alast',['aLast',['../classexch2exch_1_1_differences.html#abd4dd96bd69025147d0bdb33d9c69345',1,'exch2exch.Differences.aLast()'],['../classexchange_1_1_diff_tracker.html#ae428ab91ae6471c4ad8b566540fb035e',1,'exchange.DiffTracker.aLast()']]],
+  ['allrates',['allRates',['../classe2e_1_1_parameters.html#a60eeea35185af8b13a6ea9d797a38dc7',1,'e2e::Parameters']]],
+  ['allratesoutput',['allRatesOutput',['../classe2e_1_1_parameters.html#ac5dfd879a297879921d905de68f7febb',1,'e2e::Parameters']]],
+  ['amax',['aMax',['../classexchange_1_1_diff_tracker.html#a3dcbc689ebb5ec6e0c8e600079d95de9',1,'exchange::DiffTracker']]],
+  ['amin',['aMin',['../classexchange_1_1_diff_tracker.html#a65d042348359fa27a17e092e66405ae7',1,'exchange::DiffTracker']]],
+  ['args',['args',['../classe2e_1_1_application.html#abade6fc2e2c04ddd7e48137a2a7721bd',1,'e2e::Application']]]
 ];

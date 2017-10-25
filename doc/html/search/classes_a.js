@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['ticker',['Ticker',['../classexchange_1_1_ticker.html',1,'exchange']]],
-  ['trades',['Trades',['../classexchange_1_1_trades.html',1,'exchange']]]
+  ['singleton',['Singleton',['../classstart__time_1_1_singleton.html',1,'start_time']]]
 ];

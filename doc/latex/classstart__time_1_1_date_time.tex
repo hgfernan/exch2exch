@@ -1,0 +1,167 @@
+\hypertarget{classstart__time_1_1_date_time}{}\section{start\+\_\+time.\+Date\+Time Class Reference}
+\label{classstart__time_1_1_date_time}\index{start\+\_\+time.\+Date\+Time@{start\+\_\+time.\+Date\+Time}}
+
+
+Inheritance diagram for start\+\_\+time.\+Date\+Time\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=264pt]{classstart__time_1_1_date_time__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for start\+\_\+time.\+Date\+Time\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=282pt]{classstart__time_1_1_date_time__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classstart__time_1_1_date_time_ac489a04fcc4ecce6b76bf69acc878cb6}{\+\_\+\+\_\+init\+\_\+\+\_\+} (self)
+\item 
+def \hyperlink{classstart__time_1_1_date_time_add3ddbc0a0bcd171e4a81b8d806d5801}{\+\_\+\+\_\+str\+\_\+\+\_\+} (self)
+\item 
+def \hyperlink{classstart__time_1_1_date_time_af7ca3b38639f6c06b75264ebf6e8884e}{get\+Datetime} (self)
+\item 
+def \hyperlink{classstart__time_1_1_date_time_a06ea03ca31a47c26c12dbaaefb6a9c6d}{get\+Time\+As\+Int} (self)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classstart__time_1_1_date_time_af228dfce33d0bfbb39fb4fc5dabc0d48}{dt}
+\item 
+\hyperlink{classstart__time_1_1_date_time_a0dae698e4497fabd9c0ff5066629e0ad}{time}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line \hyperlink{start__time_2____init_____8py_source_l00022}{22} of file \hyperlink{start__time_2____init_____8py_source}{\+\_\+\+\_\+init\+\_\+\+\_\+.\+py}.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classstart__time_1_1_date_time_ac489a04fcc4ecce6b76bf69acc878cb6}\label{classstart__time_1_1_date_time_ac489a04fcc4ecce6b76bf69acc878cb6}} 
+\index{start\+\_\+time\+::\+Date\+Time@{start\+\_\+time\+::\+Date\+Time}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!start\+\_\+time\+::\+Date\+Time@{start\+\_\+time\+::\+Date\+Time}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+init\+\_\+\+\_\+()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def start\+\_\+time.\+Date\+Time.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Definition at line \hyperlink{start__time_2____init_____8py_source_l00023}{23} of file \hyperlink{start__time_2____init_____8py_source}{\+\_\+\+\_\+init\+\_\+\+\_\+.\+py}.
+
+
+\begin{DoxyCode}
+00023     \textcolor{keyword}{def }\hyperlink{namespacestart__time_a9c9bd378729a13c96a22c8b079ea172c}{\_\_init\_\_} (self):
+00024         self.dt = datetime.datetime.now ()
+00025         
+00026         self.time = int (self.dt.timestamp () + 0.5)
+00027     
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classstart__time_1_1_date_time_add3ddbc0a0bcd171e4a81b8d806d5801}\label{classstart__time_1_1_date_time_add3ddbc0a0bcd171e4a81b8d806d5801}} 
+\index{start\+\_\+time\+::\+Date\+Time@{start\+\_\+time\+::\+Date\+Time}!\+\_\+\+\_\+str\+\_\+\+\_\+@{\+\_\+\+\_\+str\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+str\+\_\+\+\_\+@{\+\_\+\+\_\+str\+\_\+\+\_\+}!start\+\_\+time\+::\+Date\+Time@{start\+\_\+time\+::\+Date\+Time}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+str\+\_\+\+\_\+()}{\_\_str\_\_()}}
+{\footnotesize\ttfamily def start\+\_\+time.\+Date\+Time.\+\_\+\+\_\+str\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Definition at line \hyperlink{start__time_2____init_____8py_source_l00034}{34} of file \hyperlink{start__time_2____init_____8py_source}{\+\_\+\+\_\+init\+\_\+\+\_\+.\+py}.
+
+
+
+References \hyperlink{raw__urlparser_8py_source_l00024}{raw\+\_\+urlparser.\+Rates.\+dt}, \hyperlink{start__time_2____init_____8py_source_l00024}{start\+\_\+time.\+Date\+Time.\+dt}, \hyperlink{exch2exch_8py_source_l00028}{exch2exch.\+Rates.\+dt}, \hyperlink{raw__urlparser_8py_source_l00053}{raw\+\_\+urlparser.\+Xbt\+Prices.\+dt}, \hyperlink{exch2exch_8py_source_l00057}{exch2exch.\+Xbt\+Prices.\+dt}, \hyperlink{exchange_8py_source_l00059}{exchange.\+Ticker.\+dt}, \hyperlink{rates_8py_source_l00089}{rates.\+Google.\+dt}, \hyperlink{rates_8py_source_l00145}{rates.\+X\+Rates.\+dt}, \hyperlink{exchange_8py_source_l00437}{exchange.\+Bitfinex.\+dt}, \hyperlink{exchange_8py_source_l00509}{exchange.\+Bitstamp.\+dt}, \hyperlink{exchange_8py_source_l00573}{exchange.\+Fox\+Bit.\+dt}, \hyperlink{exchange_8py_source_l00649}{exchange.\+Mercado\+Bitcoin.\+dt}, and \hyperlink{exchange_8py_source_l00714}{exchange.\+Ok\+Coin.\+dt}.
+
+
+\begin{DoxyCode}
+00034     \textcolor{keyword}{def }\hyperlink{namespacerates_a2f1a70c33ee9e255938e4c19fd207264}{\_\_str\_\_} (self):
+00035         \textcolor{keywordflow}{return} self.dt.ctime ()
+00036 
+\end{DoxyCode}
+\mbox{\Hypertarget{classstart__time_1_1_date_time_af7ca3b38639f6c06b75264ebf6e8884e}\label{classstart__time_1_1_date_time_af7ca3b38639f6c06b75264ebf6e8884e}} 
+\index{start\+\_\+time\+::\+Date\+Time@{start\+\_\+time\+::\+Date\+Time}!get\+Datetime@{get\+Datetime}}
+\index{get\+Datetime@{get\+Datetime}!start\+\_\+time\+::\+Date\+Time@{start\+\_\+time\+::\+Date\+Time}}
+\subsubsection{\texorpdfstring{get\+Datetime()}{getDatetime()}}
+{\footnotesize\ttfamily def start\+\_\+time.\+Date\+Time.\+get\+Datetime (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Definition at line \hyperlink{start__time_2____init_____8py_source_l00031}{31} of file \hyperlink{start__time_2____init_____8py_source}{\+\_\+\+\_\+init\+\_\+\+\_\+.\+py}.
+
+
+
+References \hyperlink{raw__urlparser_8py_source_l00024}{raw\+\_\+urlparser.\+Rates.\+dt}, \hyperlink{start__time_2____init_____8py_source_l00024}{start\+\_\+time.\+Date\+Time.\+dt}, \hyperlink{exch2exch_8py_source_l00028}{exch2exch.\+Rates.\+dt}, \hyperlink{raw__urlparser_8py_source_l00053}{raw\+\_\+urlparser.\+Xbt\+Prices.\+dt}, \hyperlink{exch2exch_8py_source_l00057}{exch2exch.\+Xbt\+Prices.\+dt}, \hyperlink{exchange_8py_source_l00059}{exchange.\+Ticker.\+dt}, \hyperlink{rates_8py_source_l00089}{rates.\+Google.\+dt}, \hyperlink{rates_8py_source_l00145}{rates.\+X\+Rates.\+dt}, \hyperlink{exchange_8py_source_l00437}{exchange.\+Bitfinex.\+dt}, \hyperlink{exchange_8py_source_l00509}{exchange.\+Bitstamp.\+dt}, \hyperlink{exchange_8py_source_l00573}{exchange.\+Fox\+Bit.\+dt}, \hyperlink{exchange_8py_source_l00649}{exchange.\+Mercado\+Bitcoin.\+dt}, and \hyperlink{exchange_8py_source_l00714}{exchange.\+Ok\+Coin.\+dt}.
+
+
+\begin{DoxyCode}
+00031     \textcolor{keyword}{def }\hyperlink{namespacestart__time_a52171f611eeff20ff03fd88c834220b0}{getDatetime} (self):
+00032         \textcolor{keywordflow}{return} self.dt
+00033     
+\end{DoxyCode}
+\mbox{\Hypertarget{classstart__time_1_1_date_time_a06ea03ca31a47c26c12dbaaefb6a9c6d}\label{classstart__time_1_1_date_time_a06ea03ca31a47c26c12dbaaefb6a9c6d}} 
+\index{start\+\_\+time\+::\+Date\+Time@{start\+\_\+time\+::\+Date\+Time}!get\+Time\+As\+Int@{get\+Time\+As\+Int}}
+\index{get\+Time\+As\+Int@{get\+Time\+As\+Int}!start\+\_\+time\+::\+Date\+Time@{start\+\_\+time\+::\+Date\+Time}}
+\subsubsection{\texorpdfstring{get\+Time\+As\+Int()}{getTimeAsInt()}}
+{\footnotesize\ttfamily def start\+\_\+time.\+Date\+Time.\+get\+Time\+As\+Int (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Definition at line \hyperlink{start__time_2____init_____8py_source_l00028}{28} of file \hyperlink{start__time_2____init_____8py_source}{\+\_\+\+\_\+init\+\_\+\+\_\+.\+py}.
+
+
+
+References \hyperlink{start__time_2____init_____8py_source_l00026}{start\+\_\+time.\+Date\+Time.\+time}.
+
+
+\begin{DoxyCode}
+00028     \textcolor{keyword}{def }\hyperlink{namespacestart__time_a822927985dec03d75bfdf136d6ac6a97}{getTimeAsInt} (self):
+00029         \textcolor{keywordflow}{return} self.time
+00030     
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classstart__time_1_1_date_time_af228dfce33d0bfbb39fb4fc5dabc0d48}\label{classstart__time_1_1_date_time_af228dfce33d0bfbb39fb4fc5dabc0d48}} 
+\index{start\+\_\+time\+::\+Date\+Time@{start\+\_\+time\+::\+Date\+Time}!dt@{dt}}
+\index{dt@{dt}!start\+\_\+time\+::\+Date\+Time@{start\+\_\+time\+::\+Date\+Time}}
+\subsubsection{\texorpdfstring{dt}{dt}}
+{\footnotesize\ttfamily start\+\_\+time.\+Date\+Time.\+dt}
+
+
+
+Definition at line \hyperlink{start__time_2____init_____8py_source_l00024}{24} of file \hyperlink{start__time_2____init_____8py_source}{\+\_\+\+\_\+init\+\_\+\+\_\+.\+py}.
+
+
+
+Referenced by \hyperlink{start__time_2____init_____8py_source_l00034}{start\+\_\+time.\+Date\+Time.\+\_\+\+\_\+str\+\_\+\+\_\+()}, and \hyperlink{start__time_2____init_____8py_source_l00031}{start\+\_\+time.\+Date\+Time.\+get\+Datetime()}.
+
+\mbox{\Hypertarget{classstart__time_1_1_date_time_a0dae698e4497fabd9c0ff5066629e0ad}\label{classstart__time_1_1_date_time_a0dae698e4497fabd9c0ff5066629e0ad}} 
+\index{start\+\_\+time\+::\+Date\+Time@{start\+\_\+time\+::\+Date\+Time}!time@{time}}
+\index{time@{time}!start\+\_\+time\+::\+Date\+Time@{start\+\_\+time\+::\+Date\+Time}}
+\subsubsection{\texorpdfstring{time}{time}}
+{\footnotesize\ttfamily start\+\_\+time.\+Date\+Time.\+time}
+
+
+
+Definition at line \hyperlink{start__time_2____init_____8py_source_l00026}{26} of file \hyperlink{start__time_2____init_____8py_source}{\+\_\+\+\_\+init\+\_\+\+\_\+.\+py}.
+
+
+
+Referenced by \hyperlink{start__time_2____init_____8py_source_l00028}{start\+\_\+time.\+Date\+Time.\+get\+Time\+As\+Int()}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/hilton/github/exch2exh/start\+\_\+time/\hyperlink{start__time_2____init_____8py}{\+\_\+\+\_\+init\+\_\+\+\_\+.\+py}\end{DoxyCompactItemize}

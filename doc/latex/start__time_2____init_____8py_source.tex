@@ -1,0 +1,59 @@
+\hypertarget{start__time_2____init_____8py_source}{}\section{\+\_\+\+\_\+init\+\_\+\+\_\+.\+py}
+\label{start__time_2____init_____8py_source}\index{/home/hilton/github/exch2exh/start\+\_\+time/\+\_\+\+\_\+init\+\_\+\+\_\+.\+py@{/home/hilton/github/exch2exh/start\+\_\+time/\+\_\+\+\_\+init\+\_\+\+\_\+.\+py}}
+
+\begin{DoxyCode}
+\Hypertarget{start__time_2____init_____8py_source_l00001}\hyperlink{namespacestart__time}{00001} \textcolor{comment}{#!/usr/bin/env python3}
+00002 \textcolor{comment}{# -*- coding: utf-8 -*-}
+00003 \textcolor{stringliteral}{"""}
+00004 \textcolor{stringliteral}{Created on Wed Oct 25 12:52:06 2017}
+00005 \textcolor{stringliteral}{}
+00006 \textcolor{stringliteral}{@author: hilton}
+00007 \textcolor{stringliteral}{"""}
+00008 \textcolor{keyword}{import} datetime \textcolor{comment}{# datetime}
+00009 
+\Hypertarget{start__time_2____init_____8py_source_l00010}\hyperlink{classstart__time_1_1_singleton}{00010} \textcolor{keyword}{class }\hyperlink{classstart__time_1_1_singleton}{Singleton} (\hyperlink{classtype}{type}):
+\Hypertarget{start__time_2____init_____8py_source_l00011}\hyperlink{classstart__time_1_1_singleton_a541fb2b583fdf801b3c77804fe9900b1}{00011}     \_instances = \{\}
+\Hypertarget{start__time_2____init_____8py_source_l00012}\hyperlink{classstart__time_1_1_singleton_af0e193a3b8d4b62db86957e47c60e16f}{00012}     \textcolor{keyword}{def }\hyperlink{classstart__time_1_1_singleton_af0e193a3b8d4b62db86957e47c60e16f}{\_\_call\_\_}(self, *args, **kwargs):
+00013         cls = self.\_\_class\_\_
+00014         \textcolor{keywordflow}{if} cls \textcolor{keywordflow}{not} \textcolor{keywordflow}{in} cls.\hyperlink{classstart__time_1_1_singleton_a541fb2b583fdf801b3c77804fe9900b1}{\_instances}:
+00015             cls.\hyperlink{classstart__time_1_1_singleton_a541fb2b583fdf801b3c77804fe9900b1}{\_instances}[cls] = \(\backslash\)
+00016                 super (Singleton, cls).\_\_call\_\_ (self, *args, **kwargs)
+00017         \textcolor{keywordflow}{else}:
+00018             cls.\hyperlink{classstart__time_1_1_singleton_a541fb2b583fdf801b3c77804fe9900b1}{\_instances}[cls].\hyperlink{namespacestart__time_a9c9bd378729a13c96a22c8b079ea172c}{\_\_init\_\_}(*args, **kwargs)
+00019                     
+00020         \textcolor{keywordflow}{return} cls.\hyperlink{classstart__time_1_1_singleton_a541fb2b583fdf801b3c77804fe9900b1}{\_instances}[cls]
+00021     
+\Hypertarget{start__time_2____init_____8py_source_l00022}\hyperlink{classstart__time_1_1_date_time}{00022} \textcolor{keyword}{class }\hyperlink{classstart__time_1_1_date_time}{DateTime} (\hyperlink{classmetaclass}{metaclass} = Singleton):
+\Hypertarget{start__time_2____init_____8py_source_l00023}\hyperlink{classstart__time_1_1_date_time_ac489a04fcc4ecce6b76bf69acc878cb6}{00023}     \textcolor{keyword}{def }\hyperlink{classstart__time_1_1_date_time_ac489a04fcc4ecce6b76bf69acc878cb6}{\_\_init\_\_} (self):
+\Hypertarget{start__time_2____init_____8py_source_l00024}\hyperlink{classstart__time_1_1_date_time_af228dfce33d0bfbb39fb4fc5dabc0d48}{00024}         self.\hyperlink{classstart__time_1_1_date_time_af228dfce33d0bfbb39fb4fc5dabc0d48}{dt} = datetime.datetime.now ()
+00025         
+\Hypertarget{start__time_2____init_____8py_source_l00026}\hyperlink{classstart__time_1_1_date_time_a0dae698e4497fabd9c0ff5066629e0ad}{00026}         self.\hyperlink{classstart__time_1_1_date_time_a0dae698e4497fabd9c0ff5066629e0ad}{time} = int (self.\hyperlink{classstart__time_1_1_date_time_af228dfce33d0bfbb39fb4fc5dabc0d48}{dt}.timestamp () + 0.5)
+00027     
+\Hypertarget{start__time_2____init_____8py_source_l00028}\hyperlink{classstart__time_1_1_date_time_a06ea03ca31a47c26c12dbaaefb6a9c6d}{00028}     \textcolor{keyword}{def }\hyperlink{classstart__time_1_1_date_time_a06ea03ca31a47c26c12dbaaefb6a9c6d}{getTimeAsInt} (self):
+00029         \textcolor{keywordflow}{return} self.\hyperlink{classstart__time_1_1_date_time_a0dae698e4497fabd9c0ff5066629e0ad}{time}
+00030     
+\Hypertarget{start__time_2____init_____8py_source_l00031}\hyperlink{classstart__time_1_1_date_time_af7ca3b38639f6c06b75264ebf6e8884e}{00031}     \textcolor{keyword}{def }\hyperlink{classstart__time_1_1_date_time_af7ca3b38639f6c06b75264ebf6e8884e}{getDatetime} (self):
+00032         \textcolor{keywordflow}{return} self.\hyperlink{classstart__time_1_1_date_time_af228dfce33d0bfbb39fb4fc5dabc0d48}{dt}
+00033     
+\Hypertarget{start__time_2____init_____8py_source_l00034}\hyperlink{classstart__time_1_1_date_time_add3ddbc0a0bcd171e4a81b8d806d5801}{00034}     \textcolor{keyword}{def }\hyperlink{classstart__time_1_1_date_time_add3ddbc0a0bcd171e4a81b8d806d5801}{\_\_str\_\_} (self):
+00035         \textcolor{keywordflow}{return} self.\hyperlink{classstart__time_1_1_date_time_af228dfce33d0bfbb39fb4fc5dabc0d48}{dt}.ctime ()
+00036 
+\Hypertarget{start__time_2____init_____8py_source_l00037}\hyperlink{namespacestart__time_a9c9bd378729a13c96a22c8b079ea172c}{00037} \textcolor{keyword}{def }\hyperlink{namespacestart__time_a9c9bd378729a13c96a22c8b079ea172c}{\_\_init\_\_} ():
+00038     \_dt = DateTime ()
+00039     
+00040     fmt = \textcolor{stringliteral}{'\{0\}.\_\_init\_\_() was called at \{1\}'}
+00041     \textcolor{keywordflow}{print} ( fmt.format (\_\_package\_\_, str (\_dt)) )  
+00042     
+00043     \_dt == \_dt
+00044     
+\Hypertarget{start__time_2____init_____8py_source_l00045}\hyperlink{namespacestart__time_a822927985dec03d75bfdf136d6ac6a97}{00045} \textcolor{keyword}{def }\hyperlink{namespacestart__time_a822927985dec03d75bfdf136d6ac6a97}{getTimeAsInt} ():
+00046     \_dt = DateTime ()
+00047     \textcolor{keywordflow}{return} \_dt.getTimeAsInt ()
+00048 
+\Hypertarget{start__time_2____init_____8py_source_l00049}\hyperlink{namespacestart__time_a52171f611eeff20ff03fd88c834220b0}{00049} \textcolor{keyword}{def }\hyperlink{namespacestart__time_a52171f611eeff20ff03fd88c834220b0}{getDatetime} ():
+00050     \_dt = DateTime ()
+00051     \textcolor{keywordflow}{return} \_dt.getDatetime ()
+00052 
+00053 \textcolor{keywordflow}{if} \_\_name\_\_ == \_\_package\_\_:
+00054     \_\_init\_\_ ()
+\end{DoxyCode}

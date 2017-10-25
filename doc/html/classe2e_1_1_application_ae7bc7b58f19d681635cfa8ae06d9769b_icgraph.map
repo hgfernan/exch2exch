@@ -1,6 +1,7 @@
 <map id="e2e.Application.getParameters" name="e2e.Application.getParameters">
-<area shape="rect" id="node2" href="$classe2e_1_1_application.html#acd7798aa633d75001b6f6fde556b8a51" title="e2e.Application.outAllRates" alt="" coords="261,5,444,32"/>
-<area shape="rect" id="node3" href="$classe2e_1_1_application.html#a1b099bee6f8170c4c52e7ae884d95b27" title="e2e.Application.outDestination\lExchange" alt="" coords="253,57,452,98"/>
-<area shape="rect" id="node4" href="$classe2e_1_1_application.html#a3e33fd00d85637393d48ea3f7dbd95c7" title="e2e.Application.outMainRates" alt="" coords="255,123,451,149"/>
-<area shape="rect" id="node5" href="$classe2e_1_1_application.html#adfad90d64cddb8d751961202264ca489" title="e2e.Application.outOrigin\lExchange" alt="" coords="269,174,436,215"/>
+<area shape="rect" id="node2" href="$classe2e_1_1_application.html#a72b854da6d69dbcb5031f24dccf9cc71" title="e2e.Application.genExpectations" alt="" coords="253,5,465,32"/>
+<area shape="rect" id="node3" href="$classe2e_1_1_application.html#acd7798aa633d75001b6f6fde556b8a51" title="e2e.Application.outAllRates" alt="" coords="268,56,451,83"/>
+<area shape="rect" id="node4" href="$classe2e_1_1_application.html#a1b099bee6f8170c4c52e7ae884d95b27" title="e2e.Application.outDestination\lExchange" alt="" coords="260,107,459,149"/>
+<area shape="rect" id="node5" href="$classe2e_1_1_application.html#a3e33fd00d85637393d48ea3f7dbd95c7" title="e2e.Application.outMainRates" alt="" coords="261,173,457,200"/>
+<area shape="rect" id="node6" href="$classe2e_1_1_application.html#adfad90d64cddb8d751961202264ca489" title="e2e.Application.outOrigin\lExchange" alt="" coords="276,225,443,266"/>
 </map>

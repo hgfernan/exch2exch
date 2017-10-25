@@ -1,0 +1,88 @@
+\hypertarget{namespacestart__time}{}\section{start\+\_\+time Namespace Reference}
+\label{namespacestart__time}\index{start\+\_\+time@{start\+\_\+time}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classstart__time_1_1_date_time}{Date\+Time}
+\item 
+class \hyperlink{classstart__time_1_1_singleton}{Singleton}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespacestart__time_a9c9bd378729a13c96a22c8b079ea172c}{\+\_\+\+\_\+init\+\_\+\+\_\+} ()
+\item 
+def \hyperlink{namespacestart__time_a52171f611eeff20ff03fd88c834220b0}{get\+Datetime} ()
+\item 
+def \hyperlink{namespacestart__time_a822927985dec03d75bfdf136d6ac6a97}{get\+Time\+As\+Int} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespacestart__time_a9c9bd378729a13c96a22c8b079ea172c}\label{namespacestart__time_a9c9bd378729a13c96a22c8b079ea172c}} 
+\index{start\+\_\+time@{start\+\_\+time}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!start\+\_\+time@{start\+\_\+time}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+init\+\_\+\+\_\+()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def start\+\_\+time.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \hyperlink{start__time_2____init_____8py_source_l00037}{37} of file \hyperlink{start__time_2____init_____8py_source}{\+\_\+\+\_\+init\+\_\+\+\_\+.\+py}.
+
+
+
+Referenced by \hyperlink{start__time_2____init_____8py_source_l00012}{start\+\_\+time.\+Singleton.\+\_\+\+\_\+call\+\_\+\+\_\+()}.
+
+
+\begin{DoxyCode}
+00037 \textcolor{keyword}{def }\hyperlink{namespacestart__time_a9c9bd378729a13c96a22c8b079ea172c}{\_\_init\_\_} ():
+00038     \_dt = DateTime ()
+00039     
+00040     fmt = \textcolor{stringliteral}{'\{0\}.\_\_init\_\_() was called at \{1\}'}
+00041     \textcolor{keywordflow}{print} ( fmt.format (\_\_package\_\_, str (\_dt)) )  
+00042     
+00043     \_dt == \_dt
+00044     
+\end{DoxyCode}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=320pt]{namespacestart__time_a9c9bd378729a13c96a22c8b079ea172c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacestart__time_a52171f611eeff20ff03fd88c834220b0}\label{namespacestart__time_a52171f611eeff20ff03fd88c834220b0}} 
+\index{start\+\_\+time@{start\+\_\+time}!get\+Datetime@{get\+Datetime}}
+\index{get\+Datetime@{get\+Datetime}!start\+\_\+time@{start\+\_\+time}}
+\subsubsection{\texorpdfstring{get\+Datetime()}{getDatetime()}}
+{\footnotesize\ttfamily def start\+\_\+time.\+get\+Datetime (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \hyperlink{start__time_2____init_____8py_source_l00049}{49} of file \hyperlink{start__time_2____init_____8py_source}{\+\_\+\+\_\+init\+\_\+\+\_\+.\+py}.
+
+
+\begin{DoxyCode}
+00049 \textcolor{keyword}{def }\hyperlink{namespacestart__time_a52171f611eeff20ff03fd88c834220b0}{getDatetime} ():
+00050     \_dt = DateTime ()
+00051     \textcolor{keywordflow}{return} \_dt.getDatetime ()
+00052 
+\end{DoxyCode}
+\mbox{\Hypertarget{namespacestart__time_a822927985dec03d75bfdf136d6ac6a97}\label{namespacestart__time_a822927985dec03d75bfdf136d6ac6a97}} 
+\index{start\+\_\+time@{start\+\_\+time}!get\+Time\+As\+Int@{get\+Time\+As\+Int}}
+\index{get\+Time\+As\+Int@{get\+Time\+As\+Int}!start\+\_\+time@{start\+\_\+time}}
+\subsubsection{\texorpdfstring{get\+Time\+As\+Int()}{getTimeAsInt()}}
+{\footnotesize\ttfamily def start\+\_\+time.\+get\+Time\+As\+Int (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \hyperlink{start__time_2____init_____8py_source_l00045}{45} of file \hyperlink{start__time_2____init_____8py_source}{\+\_\+\+\_\+init\+\_\+\+\_\+.\+py}.
+
+
+\begin{DoxyCode}
+00045 \textcolor{keyword}{def }\hyperlink{namespacestart__time_a822927985dec03d75bfdf136d6ac6a97}{getTimeAsInt} ():
+00046     \_dt = DateTime ()
+00047     \textcolor{keywordflow}{return} \_dt.getTimeAsInt ()
+00048 
+\end{DoxyCode}

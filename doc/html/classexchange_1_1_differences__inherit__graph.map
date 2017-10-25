@@ -1,5 +1,5 @@
 <map id="exchange.Differences" name="exchange.Differences">
 <area shape="rect" id="node2" href="$classexchange_1_1_diff_orderbook.html" title="{exchange.DiffOrderbook\n||}" alt="" coords="5,321,168,399"/>
-<area shape="rect" id="node3" href="$classexchange_1_1_diff_tracker.html" title="{exchange.DiffTracker\n|+ aBuySell\l+ aLast\l+ aMax\l+ aMin\l+ dmax\l+ dmin\l+ gmax\l+ gmin\l+ rBuySell\l+ rLast\l+ rMax\l+ rMin\l|+ __init__()\l+ __str__()\l+ calc()\l+ dumps()\l}" alt="" coords="192,219,339,501"/>
+<area shape="rect" id="node3" href="$classexchange_1_1_diff_tracker.html" title="{exchange.DiffTracker\n|+ aBuySell\l+ aLast\l+ aMax\l+ aMin\l+ brl2usd\l+ convDstTicker\l+ converted\l+ rBuySell\l+ rLast\l+ rMax\l+ rMin\l+ startDt\l|+ __init__()\l+ __str__()\l+ calc()\l+ dumps()\l}" alt="" coords="192,219,339,501"/>
 <area shape="rect" id="node4" href="$classexchange_1_1_diff_trades.html" title="{exchange.DiffTrades\n||}" alt="" coords="363,321,506,399"/>
 </map>

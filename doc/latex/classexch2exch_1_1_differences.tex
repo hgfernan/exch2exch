@@ -71,65 +71,60 @@ Definition at line \hyperlink{exch2exch_8py_source_l00105}{105} of file \hyperli
 
 
 \subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classexch2exch_1_1_differences_a8fd6c2cfe882605393c297053b73326e}\label{classexch2exch_1_1_differences_a8fd6c2cfe882605393c297053b73326e}} 
 \index{exch2exch\+::\+Differences@{exch2exch\+::\+Differences}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
 \index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!exch2exch\+::\+Differences@{exch2exch\+::\+Differences}}
-\subsubsection[{\texorpdfstring{\+\_\+\+\_\+init\+\_\+\+\_\+(self, rates, mb, ok)}{__init__(self, rates, mb, ok)}}]{\setlength{\rightskip}{0pt plus 5cm}def exch2exch.\+Differences.\+\_\+\+\_\+init\+\_\+\+\_\+ (
-\begin{DoxyParamCaption}
-\item[{}]{self, }
-\item[{}]{rates, }
-\item[{}]{mb, }
-\item[{}]{ok}
-\end{DoxyParamCaption}
-)}\hypertarget{classexch2exch_1_1_differences_a8fd6c2cfe882605393c297053b73326e}{}\label{classexch2exch_1_1_differences_a8fd6c2cfe882605393c297053b73326e}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+init\+\_\+\+\_\+()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def exch2exch.\+Differences.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{rates,  }\item[{}]{mb,  }\item[{}]{ok }\end{DoxyParamCaption})}
+
 
 
 Definition at line \hyperlink{exch2exch_8py_source_l00106}{106} of file \hyperlink{exch2exch_8py_source}{exch2exch.\+py}.
 
 
 \begin{DoxyCode}
-\hypertarget{classexch2exch_1_1_differences.tex_l00106}{}\hyperlink{classexch2exch_1_1_differences_a8fd6c2cfe882605393c297053b73326e}{00106}     \textcolor{keyword}{def }\hyperlink{classexch2exch_1_1_differences_a8fd6c2cfe882605393c297053b73326e}{\_\_init\_\_} (self, rates, mb, ok):
-\hypertarget{classexch2exch_1_1_differences.tex_l00107}{}\hyperlink{classexch2exch_1_1_differences_a64aec2fc7f20028f0bd834908cbea116}{00107}         self.\hyperlink{classexch2exch_1_1_differences_a64aec2fc7f20028f0bd834908cbea116}{rates} = rates
-\hypertarget{classexch2exch_1_1_differences.tex_l00108}{}\hyperlink{classexch2exch_1_1_differences_a81c81e9c15b5ea8a5d39bb99d85250e1}{00108}         self.\hyperlink{classexch2exch_1_1_differences_a81c81e9c15b5ea8a5d39bb99d85250e1}{mb} = mb
-\hypertarget{classexch2exch_1_1_differences.tex_l00109}{}\hyperlink{classexch2exch_1_1_differences_a6de3ee563584c83a97ba815db8ec7831}{00109}         self.\hyperlink{classexch2exch_1_1_differences_a6de3ee563584c83a97ba815db8ec7831}{ok} = ok
+00106     \textcolor{keyword}{def }\hyperlink{namespacestart__time_a9c9bd378729a13c96a22c8b079ea172c}{\_\_init\_\_} (self, rates, mb, ok):
+00107         self.rates = rates
+00108         self.mb = mb
+00109         self.ok = ok
 00110         
 00111         \textcolor{comment}{# TODO check the two coins}
-\hypertarget{classexch2exch_1_1_differences.tex_l00112}{}\hyperlink{classexch2exch_1_1_differences_a0fb17548553b86b0ae62c2ef1a30981b}{00112}         self.\hyperlink{classexch2exch_1_1_differences_a0fb17548553b86b0ae62c2ef1a30981b}{coinName} = mb.getCoinName ()
+00112         self.coinName = mb.getCoinName ()
 00113         
 00114 \textcolor{comment}{#        self.dmin = mb.getLow ()  - ok.getLow ()   }
-\hypertarget{classexch2exch_1_1_differences.tex_l00115}{}\hyperlink{classexch2exch_1_1_differences_a261a74cc25d77b2608898fa5611f9f0b}{00115}         self.\hyperlink{classexch2exch_1_1_differences_a261a74cc25d77b2608898fa5611f9f0b}{dmax} = mb.getHigh () - ok.getLow ()
-\hypertarget{classexch2exch_1_1_differences.tex_l00116}{}\hyperlink{classexch2exch_1_1_differences_a7825bfca16b5775aa770c8810412b215}{00116}         self.\hyperlink{classexch2exch_1_1_differences_a7825bfca16b5775aa770c8810412b215}{dmin} = mb.getLow () - ok.getHigh ()
+00115         self.dmax = mb.getHigh () - ok.getLow ()
+00116         self.dmin = mb.getLow () - ok.getHigh ()
 00117         
-\hypertarget{classexch2exch_1_1_differences.tex_l00118}{}\hyperlink{classexch2exch_1_1_differences_a33c9add531b5b46c49ae322657343382}{00118}         self.\hyperlink{classexch2exch_1_1_differences_a33c9add531b5b46c49ae322657343382}{gmin} = 100.0 * self.\hyperlink{classexch2exch_1_1_differences_a7825bfca16b5775aa770c8810412b215}{dmin} / ok.getHigh ()
-\hypertarget{classexch2exch_1_1_differences.tex_l00119}{}\hyperlink{classexch2exch_1_1_differences_a569f2a6fa0e33ad725c3c3ada259ddcc}{00119}         self.\hyperlink{classexch2exch_1_1_differences_a569f2a6fa0e33ad725c3c3ada259ddcc}{gmax} = 100.0 * self.\hyperlink{classexch2exch_1_1_differences_a261a74cc25d77b2608898fa5611f9f0b}{dmax} / ok.getLow ()
+00118         self.gmin = 100.0 * self.dmin / ok.getHigh ()
+00119         self.gmax = 100.0 * self.dmax / ok.getLow ()
 00120         
-\hypertarget{classexch2exch_1_1_differences.tex_l00121}{}\hyperlink{classexch2exch_1_1_differences_aac9b76364eb6e0ee83417c0128aaa001}{00121}         self.\hyperlink{classexch2exch_1_1_differences_aac9b76364eb6e0ee83417c0128aaa001}{aBuySell}  = mb.getBuy () - ok.getSell ()
-\hypertarget{classexch2exch_1_1_differences.tex_l00122}{}\hyperlink{classexch2exch_1_1_differences_a3cbdf344e8e0b804c611e6b9e3a3d1bd}{00122}         self.\hyperlink{classexch2exch_1_1_differences_a3cbdf344e8e0b804c611e6b9e3a3d1bd}{rBuySell} = 100.0 * self.\hyperlink{classexch2exch_1_1_differences_aac9b76364eb6e0ee83417c0128aaa001}{aBuySell} / ok.getBuy ()
+00121         self.aBuySell  = mb.getBuy () - ok.getSell ()
+00122         self.rBuySell = 100.0 * self.aBuySell / ok.getBuy ()
 00123         
-\hypertarget{classexch2exch_1_1_differences.tex_l00124}{}\hyperlink{classexch2exch_1_1_differences_abd4dd96bd69025147d0bdb33d9c69345}{00124}         self.\hyperlink{classexch2exch_1_1_differences_abd4dd96bd69025147d0bdb33d9c69345}{aLast} = mb.getLast () - ok.getLast ()
-\hypertarget{classexch2exch_1_1_differences.tex_l00125}{}\hyperlink{classexch2exch_1_1_differences_a3c26c51929ce75e055f8a606aaeb849d}{00125}         self.\hyperlink{classexch2exch_1_1_differences_a3c26c51929ce75e055f8a606aaeb849d}{rLast} = 100.0 * self.\hyperlink{classexch2exch_1_1_differences_abd4dd96bd69025147d0bdb33d9c69345}{aLast} / ok.getLast ()
+00124         self.aLast = mb.getLast () - ok.getLast ()
+00125         self.rLast = 100.0 * self.aLast / ok.getLast ()
 00126         
 \end{DoxyCode}
 
 
 \subsection{Member Function Documentation}
+\mbox{\Hypertarget{classexch2exch_1_1_differences_af2d3dc1abc5bfb7f84192e03af199c5f}\label{classexch2exch_1_1_differences_af2d3dc1abc5bfb7f84192e03af199c5f}} 
 \index{exch2exch\+::\+Differences@{exch2exch\+::\+Differences}!\+\_\+\+\_\+str\+\_\+\+\_\+@{\+\_\+\+\_\+str\+\_\+\+\_\+}}
 \index{\+\_\+\+\_\+str\+\_\+\+\_\+@{\+\_\+\+\_\+str\+\_\+\+\_\+}!exch2exch\+::\+Differences@{exch2exch\+::\+Differences}}
-\subsubsection[{\texorpdfstring{\+\_\+\+\_\+str\+\_\+\+\_\+(self)}{__str__(self)}}]{\setlength{\rightskip}{0pt plus 5cm}def exch2exch.\+Differences.\+\_\+\+\_\+str\+\_\+\+\_\+ (
-\begin{DoxyParamCaption}
-\item[{}]{self}
-\end{DoxyParamCaption}
-)}\hypertarget{classexch2exch_1_1_differences_af2d3dc1abc5bfb7f84192e03af199c5f}{}\label{classexch2exch_1_1_differences_af2d3dc1abc5bfb7f84192e03af199c5f}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+str\+\_\+\+\_\+()}{\_\_str\_\_()}}
+{\footnotesize\ttfamily def exch2exch.\+Differences.\+\_\+\+\_\+str\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
 
 
 Definition at line \hyperlink{exch2exch_8py_source_l00154}{154} of file \hyperlink{exch2exch_8py_source}{exch2exch.\+py}.
 
 
 
-References \hyperlink{exch2exch_8py_source_l00139}{exch2exch.\+Differences.\+get\+A\+Buy\+Sell()}, \hyperlink{exch2exch_8py_source_l00145}{exch2exch.\+Differences.\+get\+A\+Last()}, \hyperlink{exch2exch_8py_source_l00088}{exch2exch.\+Xbt\+Prices.\+get\+Coin\+Name()}, \hyperlink{exch2exch_8py_source_l00151}{exch2exch.\+Differences.\+get\+Coin\+Name()}, \hyperlink{exch2exch_8py_source_l00130}{exch2exch.\+Differences.\+get\+Max\+Delta()}, \hyperlink{exch2exch_8py_source_l00136}{exch2exch.\+Differences.\+get\+Max\+Gain()}, \hyperlink{exch2exch_8py_source_l00127}{exch2exch.\+Differences.\+get\+Min\+Delta()}, \hyperlink{exch2exch_8py_source_l00133}{exch2exch.\+Differences.\+get\+Min\+Gain()}, \hyperlink{exch2exch_8py_source_l00142}{exch2exch.\+Differences.\+get\+R\+Buy\+Sell()}, and \hyperlink{exch2exch_8py_source_l00148}{exch2exch.\+Differences.\+get\+R\+Last()}.
+References \hyperlink{exch2exch_8py_source_l00139}{exch2exch.\+Differences.\+get\+A\+Buy\+Sell()}, \hyperlink{exch2exch_8py_source_l00145}{exch2exch.\+Differences.\+get\+A\+Last()}, \hyperlink{exch2exch_8py_source_l00088}{exch2exch.\+Xbt\+Prices.\+get\+Coin\+Name()}, \hyperlink{exch2exch_8py_source_l00151}{exch2exch.\+Differences.\+get\+Coin\+Name()}, \hyperlink{exch2exch_8py_source_l00130}{exch2exch.\+Differences.\+get\+Max\+Delta()}, \hyperlink{exch2exch_8py_source_l00136}{exch2exch.\+Differences.\+get\+Max\+Gain()}, \hyperlink{exch2exch_8py_source_l00127}{exch2exch.\+Differences.\+get\+Min\+Delta()}, \hyperlink{exch2exch_8py_source_l00133}{exch2exch.\+Differences.\+get\+Min\+Gain()}, \hyperlink{exch2exch_8py_source_l00142}{exch2exch.\+Differences.\+get\+R\+Buy\+Sell()}, \hyperlink{exch2exch_8py_source_l00148}{exch2exch.\+Differences.\+get\+R\+Last()}, \hyperlink{exch2exch_8py_source_l00108}{exch2exch.\+Differences.\+mb}, \hyperlink{exch2exch_8py_source_l00109}{exch2exch.\+Differences.\+ok}, and \hyperlink{exch2exch_8py_source_l00107}{exch2exch.\+Differences.\+rates}.
 
 
 \begin{DoxyCode}
-\hypertarget{classexch2exch_1_1_differences.tex_l00154}{}\hyperlink{classexch2exch_1_1_differences_af2d3dc1abc5bfb7f84192e03af199c5f}{00154}     \textcolor{keyword}{def }\hyperlink{classexch2exch_1_1_differences_af2d3dc1abc5bfb7f84192e03af199c5f}{\_\_str\_\_} (self):
+00154     \textcolor{keyword}{def }\hyperlink{namespacerates_a2f1a70c33ee9e255938e4c19fd207264}{\_\_str\_\_} (self):
 00155         result = \textcolor{stringliteral}{""}
 00156         
 00157         oname = self.ok.getExchangeName ()
@@ -142,24 +137,24 @@ References \hyperlink{exch2exch_8py_source_l00139}{exch2exch.\+Differences.\+get
 00164         \textcolor{comment}{# TODO create evaluation for 24h and for the most recent sell/buy}
 00165         
 00166         fmt = \textcolor{stringliteral}{"\(\backslash\)nExtrema:\(\backslash\)n\(\backslash\)tAbsolute: Minimum \{0:.4f\}, maximum \{1:.4f\}"}
-00167         result += fmt.format (self.\hyperlink{classexch2exch_1_1_differences_ad2c60e37e0a390dd89be5d9388e552a4}{getMinDelta} (), self.\hyperlink{classexch2exch_1_1_differences_a577c9c2cbc470643f7bff8fc50295816}{getMaxDelta} ())
+00167         result += fmt.format (self.getMinDelta (), self.getMaxDelta ())
 00168         
 00169         fmt = \textcolor{stringliteral}{"\(\backslash\)n\(\backslash\)tRelative: minimum \{0:.4f\} %, maximum \{1:.4f\} %"}
-00170         result += fmt.format (self.\hyperlink{classexch2exch_1_1_differences_a110cb3a79f744b6d3911b6669b8a0a89}{getMinGain} (), self.\hyperlink{classexch2exch_1_1_differences_a3b557469ba68c3041d6ef04dc847c77b}{getMaxGain} ())
+00170         result += fmt.format (self.getMinGain (), self.getMaxGain ())
 00171         
 00172         fmt = \textcolor{stringliteral}{"\(\backslash\)nBuy \{0\}, sell \{1\}:"}
 00173         result += fmt.format (oname, mname)
 00174         fmt = \textcolor{stringliteral}{"\(\backslash\)n\(\backslash\)tAbsolute: \{0:.4f\} \{1\}"}
-00175         result += fmt.format (self.\hyperlink{classexch2exch_1_1_differences_a5b1000fb221e0726fb36a8e9a0655d84}{getABuySell} (), self.\hyperlink{classexch2exch_1_1_differences_a27c3904cedfe6f58d750591c1f7c7879}{getCoinName} ())
+00175         result += fmt.format (self.getABuySell (), self.getCoinName ())
 00176         fmt = \textcolor{stringliteral}{"\(\backslash\)n\(\backslash\)tRelative: \{0:.4f\} %"}
-00177         result += fmt.format (self.\hyperlink{classexch2exch_1_1_differences_ae360dc9692075e21d0aafa2ff1dc23d4}{getRBuySell} ())
+00177         result += fmt.format (self.getRBuySell ())
 00178         
 00179         fmt = \textcolor{stringliteral}{"\(\backslash\)nLast transactions at \{0\} and \{1\}:"}
 00180         result += fmt.format (oname, mname)
 00181         fmt = \textcolor{stringliteral}{"\(\backslash\)n\(\backslash\)tAbsolute: \{0:.4f\} \{1\}"}
-00182         result += fmt.format (self.\hyperlink{classexch2exch_1_1_differences_ae65d1f91ffad5d587a564d7160263b83}{getALast} (), self.\hyperlink{classexch2exch_1_1_differences_a27c3904cedfe6f58d750591c1f7c7879}{getCoinName} ())
+00182         result += fmt.format (self.getALast (), self.getCoinName ())
 00183         fmt = \textcolor{stringliteral}{"\(\backslash\)n\(\backslash\)tRelative: \{0:.4f\} %"}
-00184         result += fmt.format (self.\hyperlink{classexch2exch_1_1_differences_ac4f1f695ff394d65cfb51ea55dc67fa5}{getRLast} ())
+00184         result += fmt.format (self.getRLast ())
 00185         
 00186         \textcolor{comment}{# Normal function termination}
 00187         \textcolor{keywordflow}{return} result
@@ -170,24 +165,20 @@ References \hyperlink{exch2exch_8py_source_l00139}{exch2exch.\+Differences.\+get
 00192 \textcolor{comment}{#}
 00193 
 \end{DoxyCode}
-
-
-Here is the call graph for this function\+:\nopagebreak
+Here is the call graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{classexch2exch_1_1_differences_af2d3dc1abc5bfb7f84192e03af199c5f_cgraph}
 \end{center}
 \end{figure}
-
-
+\mbox{\Hypertarget{classexch2exch_1_1_differences_a5b1000fb221e0726fb36a8e9a0655d84}\label{classexch2exch_1_1_differences_a5b1000fb221e0726fb36a8e9a0655d84}} 
 \index{exch2exch\+::\+Differences@{exch2exch\+::\+Differences}!get\+A\+Buy\+Sell@{get\+A\+Buy\+Sell}}
 \index{get\+A\+Buy\+Sell@{get\+A\+Buy\+Sell}!exch2exch\+::\+Differences@{exch2exch\+::\+Differences}}
-\subsubsection[{\texorpdfstring{get\+A\+Buy\+Sell(self)}{getABuySell(self)}}]{\setlength{\rightskip}{0pt plus 5cm}def exch2exch.\+Differences.\+get\+A\+Buy\+Sell (
-\begin{DoxyParamCaption}
-\item[{}]{self}
-\end{DoxyParamCaption}
-)}\hypertarget{classexch2exch_1_1_differences_a5b1000fb221e0726fb36a8e9a0655d84}{}\label{classexch2exch_1_1_differences_a5b1000fb221e0726fb36a8e9a0655d84}
+\subsubsection{\texorpdfstring{get\+A\+Buy\+Sell()}{getABuySell()}}
+{\footnotesize\ttfamily def exch2exch.\+Differences.\+get\+A\+Buy\+Sell (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
 
 
 Definition at line \hyperlink{exch2exch_8py_source_l00139}{139} of file \hyperlink{exch2exch_8py_source}{exch2exch.\+py}.
@@ -202,28 +193,24 @@ Referenced by \hyperlink{exch2exch_8py_source_l00154}{exch2exch.\+Differences.\+
 
 
 \begin{DoxyCode}
-\hypertarget{classexch2exch_1_1_differences.tex_l00139}{}\hyperlink{classexch2exch_1_1_differences_a5b1000fb221e0726fb36a8e9a0655d84}{00139}     \textcolor{keyword}{def }\hyperlink{classexch2exch_1_1_differences_a5b1000fb221e0726fb36a8e9a0655d84}{getABuySell} (self):
-00140         \textcolor{keywordflow}{return} self.\hyperlink{classexch2exch_1_1_differences_aac9b76364eb6e0ee83417c0128aaa001}{aBuySell}
+00139     \textcolor{keyword}{def }getABuySell (self):
+00140         \textcolor{keywordflow}{return} self.aBuySell
 00141         
 \end{DoxyCode}
-
-
-Here is the caller graph for this function\+:\nopagebreak
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{classexch2exch_1_1_differences_a5b1000fb221e0726fb36a8e9a0655d84_icgraph}
 \end{center}
 \end{figure}
-
-
+\mbox{\Hypertarget{classexch2exch_1_1_differences_ae65d1f91ffad5d587a564d7160263b83}\label{classexch2exch_1_1_differences_ae65d1f91ffad5d587a564d7160263b83}} 
 \index{exch2exch\+::\+Differences@{exch2exch\+::\+Differences}!get\+A\+Last@{get\+A\+Last}}
 \index{get\+A\+Last@{get\+A\+Last}!exch2exch\+::\+Differences@{exch2exch\+::\+Differences}}
-\subsubsection[{\texorpdfstring{get\+A\+Last(self)}{getALast(self)}}]{\setlength{\rightskip}{0pt plus 5cm}def exch2exch.\+Differences.\+get\+A\+Last (
-\begin{DoxyParamCaption}
-\item[{}]{self}
-\end{DoxyParamCaption}
-)}\hypertarget{classexch2exch_1_1_differences_ae65d1f91ffad5d587a564d7160263b83}{}\label{classexch2exch_1_1_differences_ae65d1f91ffad5d587a564d7160263b83}
+\subsubsection{\texorpdfstring{get\+A\+Last()}{getALast()}}
+{\footnotesize\ttfamily def exch2exch.\+Differences.\+get\+A\+Last (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
 
 
 Definition at line \hyperlink{exch2exch_8py_source_l00145}{145} of file \hyperlink{exch2exch_8py_source}{exch2exch.\+py}.
@@ -238,28 +225,24 @@ Referenced by \hyperlink{exch2exch_8py_source_l00154}{exch2exch.\+Differences.\+
 
 
 \begin{DoxyCode}
-\hypertarget{classexch2exch_1_1_differences.tex_l00145}{}\hyperlink{classexch2exch_1_1_differences_ae65d1f91ffad5d587a564d7160263b83}{00145}     \textcolor{keyword}{def }\hyperlink{classexch2exch_1_1_differences_ae65d1f91ffad5d587a564d7160263b83}{getALast} (self):
-00146         \textcolor{keywordflow}{return} self.\hyperlink{classexch2exch_1_1_differences_abd4dd96bd69025147d0bdb33d9c69345}{aLast}
+00145     \textcolor{keyword}{def }getALast (self):
+00146         \textcolor{keywordflow}{return} self.aLast
 00147         
 \end{DoxyCode}
-
-
-Here is the caller graph for this function\+:\nopagebreak
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{classexch2exch_1_1_differences_ae65d1f91ffad5d587a564d7160263b83_icgraph}
 \end{center}
 \end{figure}
-
-
+\mbox{\Hypertarget{classexch2exch_1_1_differences_a27c3904cedfe6f58d750591c1f7c7879}\label{classexch2exch_1_1_differences_a27c3904cedfe6f58d750591c1f7c7879}} 
 \index{exch2exch\+::\+Differences@{exch2exch\+::\+Differences}!get\+Coin\+Name@{get\+Coin\+Name}}
 \index{get\+Coin\+Name@{get\+Coin\+Name}!exch2exch\+::\+Differences@{exch2exch\+::\+Differences}}
-\subsubsection[{\texorpdfstring{get\+Coin\+Name(self)}{getCoinName(self)}}]{\setlength{\rightskip}{0pt plus 5cm}def exch2exch.\+Differences.\+get\+Coin\+Name (
-\begin{DoxyParamCaption}
-\item[{}]{self}
-\end{DoxyParamCaption}
-)}\hypertarget{classexch2exch_1_1_differences_a27c3904cedfe6f58d750591c1f7c7879}{}\label{classexch2exch_1_1_differences_a27c3904cedfe6f58d750591c1f7c7879}
+\subsubsection{\texorpdfstring{get\+Coin\+Name()}{getCoinName()}}
+{\footnotesize\ttfamily def exch2exch.\+Differences.\+get\+Coin\+Name (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
 
 
 Definition at line \hyperlink{exch2exch_8py_source_l00151}{151} of file \hyperlink{exch2exch_8py_source}{exch2exch.\+py}.
@@ -274,28 +257,24 @@ Referenced by \hyperlink{exch2exch_8py_source_l00154}{exch2exch.\+Differences.\+
 
 
 \begin{DoxyCode}
-\hypertarget{classexch2exch_1_1_differences.tex_l00151}{}\hyperlink{classexch2exch_1_1_differences_a27c3904cedfe6f58d750591c1f7c7879}{00151}     \textcolor{keyword}{def }\hyperlink{classexch2exch_1_1_differences_a27c3904cedfe6f58d750591c1f7c7879}{getCoinName} (self):
-00152         \textcolor{keywordflow}{return} self.\hyperlink{classexch2exch_1_1_differences_a0fb17548553b86b0ae62c2ef1a30981b}{coinName}
+00151     \textcolor{keyword}{def }getCoinName (self):
+00152         \textcolor{keywordflow}{return} self.coinName
 00153         
 \end{DoxyCode}
-
-
-Here is the caller graph for this function\+:\nopagebreak
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{classexch2exch_1_1_differences_a27c3904cedfe6f58d750591c1f7c7879_icgraph}
 \end{center}
 \end{figure}
-
-
+\mbox{\Hypertarget{classexch2exch_1_1_differences_a577c9c2cbc470643f7bff8fc50295816}\label{classexch2exch_1_1_differences_a577c9c2cbc470643f7bff8fc50295816}} 
 \index{exch2exch\+::\+Differences@{exch2exch\+::\+Differences}!get\+Max\+Delta@{get\+Max\+Delta}}
 \index{get\+Max\+Delta@{get\+Max\+Delta}!exch2exch\+::\+Differences@{exch2exch\+::\+Differences}}
-\subsubsection[{\texorpdfstring{get\+Max\+Delta(self)}{getMaxDelta(self)}}]{\setlength{\rightskip}{0pt plus 5cm}def exch2exch.\+Differences.\+get\+Max\+Delta (
-\begin{DoxyParamCaption}
-\item[{}]{self}
-\end{DoxyParamCaption}
-)}\hypertarget{classexch2exch_1_1_differences_a577c9c2cbc470643f7bff8fc50295816}{}\label{classexch2exch_1_1_differences_a577c9c2cbc470643f7bff8fc50295816}
+\subsubsection{\texorpdfstring{get\+Max\+Delta()}{getMaxDelta()}}
+{\footnotesize\ttfamily def exch2exch.\+Differences.\+get\+Max\+Delta (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
 
 
 Definition at line \hyperlink{exch2exch_8py_source_l00130}{130} of file \hyperlink{exch2exch_8py_source}{exch2exch.\+py}.
@@ -310,28 +289,24 @@ Referenced by \hyperlink{raw__urlparser_8py_source_l00100}{raw\+\_\+urlparser.\+
 
 
 \begin{DoxyCode}
-\hypertarget{classexch2exch_1_1_differences.tex_l00130}{}\hyperlink{classexch2exch_1_1_differences_a577c9c2cbc470643f7bff8fc50295816}{00130}     \textcolor{keyword}{def }\hyperlink{classexch2exch_1_1_differences_a577c9c2cbc470643f7bff8fc50295816}{getMaxDelta} (self): 
-00131         \textcolor{keywordflow}{return} self.\hyperlink{classexch2exch_1_1_differences_a261a74cc25d77b2608898fa5611f9f0b}{dmax}
+00130     \textcolor{keyword}{def }getMaxDelta (self): 
+00131         \textcolor{keywordflow}{return} self.dmax
 00132         
 \end{DoxyCode}
-
-
-Here is the caller graph for this function\+:\nopagebreak
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{classexch2exch_1_1_differences_a577c9c2cbc470643f7bff8fc50295816_icgraph}
 \end{center}
 \end{figure}
-
-
+\mbox{\Hypertarget{classexch2exch_1_1_differences_a3b557469ba68c3041d6ef04dc847c77b}\label{classexch2exch_1_1_differences_a3b557469ba68c3041d6ef04dc847c77b}} 
 \index{exch2exch\+::\+Differences@{exch2exch\+::\+Differences}!get\+Max\+Gain@{get\+Max\+Gain}}
 \index{get\+Max\+Gain@{get\+Max\+Gain}!exch2exch\+::\+Differences@{exch2exch\+::\+Differences}}
-\subsubsection[{\texorpdfstring{get\+Max\+Gain(self)}{getMaxGain(self)}}]{\setlength{\rightskip}{0pt plus 5cm}def exch2exch.\+Differences.\+get\+Max\+Gain (
-\begin{DoxyParamCaption}
-\item[{}]{self}
-\end{DoxyParamCaption}
-)}\hypertarget{classexch2exch_1_1_differences_a3b557469ba68c3041d6ef04dc847c77b}{}\label{classexch2exch_1_1_differences_a3b557469ba68c3041d6ef04dc847c77b}
+\subsubsection{\texorpdfstring{get\+Max\+Gain()}{getMaxGain()}}
+{\footnotesize\ttfamily def exch2exch.\+Differences.\+get\+Max\+Gain (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
 
 
 Definition at line \hyperlink{exch2exch_8py_source_l00136}{136} of file \hyperlink{exch2exch_8py_source}{exch2exch.\+py}.
@@ -346,28 +321,24 @@ Referenced by \hyperlink{exch2exch_8py_source_l00154}{exch2exch.\+Differences.\+
 
 
 \begin{DoxyCode}
-\hypertarget{classexch2exch_1_1_differences.tex_l00136}{}\hyperlink{classexch2exch_1_1_differences_a3b557469ba68c3041d6ef04dc847c77b}{00136}     \textcolor{keyword}{def }\hyperlink{classexch2exch_1_1_differences_a3b557469ba68c3041d6ef04dc847c77b}{getMaxGain} (self): 
-00137         \textcolor{keywordflow}{return} self.\hyperlink{classexch2exch_1_1_differences_a569f2a6fa0e33ad725c3c3ada259ddcc}{gmax}
+00136     \textcolor{keyword}{def }getMaxGain (self): 
+00137         \textcolor{keywordflow}{return} self.gmax
 00138         
 \end{DoxyCode}
-
-
-Here is the caller graph for this function\+:\nopagebreak
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{classexch2exch_1_1_differences_a3b557469ba68c3041d6ef04dc847c77b_icgraph}
 \end{center}
 \end{figure}
-
-
+\mbox{\Hypertarget{classexch2exch_1_1_differences_ad2c60e37e0a390dd89be5d9388e552a4}\label{classexch2exch_1_1_differences_ad2c60e37e0a390dd89be5d9388e552a4}} 
 \index{exch2exch\+::\+Differences@{exch2exch\+::\+Differences}!get\+Min\+Delta@{get\+Min\+Delta}}
 \index{get\+Min\+Delta@{get\+Min\+Delta}!exch2exch\+::\+Differences@{exch2exch\+::\+Differences}}
-\subsubsection[{\texorpdfstring{get\+Min\+Delta(self)}{getMinDelta(self)}}]{\setlength{\rightskip}{0pt plus 5cm}def exch2exch.\+Differences.\+get\+Min\+Delta (
-\begin{DoxyParamCaption}
-\item[{}]{self}
-\end{DoxyParamCaption}
-)}\hypertarget{classexch2exch_1_1_differences_ad2c60e37e0a390dd89be5d9388e552a4}{}\label{classexch2exch_1_1_differences_ad2c60e37e0a390dd89be5d9388e552a4}
+\subsubsection{\texorpdfstring{get\+Min\+Delta()}{getMinDelta()}}
+{\footnotesize\ttfamily def exch2exch.\+Differences.\+get\+Min\+Delta (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
 
 
 Definition at line \hyperlink{exch2exch_8py_source_l00127}{127} of file \hyperlink{exch2exch_8py_source}{exch2exch.\+py}.
@@ -382,28 +353,24 @@ Referenced by \hyperlink{raw__urlparser_8py_source_l00100}{raw\+\_\+urlparser.\+
 
 
 \begin{DoxyCode}
-\hypertarget{classexch2exch_1_1_differences.tex_l00127}{}\hyperlink{classexch2exch_1_1_differences_ad2c60e37e0a390dd89be5d9388e552a4}{00127}     \textcolor{keyword}{def }\hyperlink{classexch2exch_1_1_differences_ad2c60e37e0a390dd89be5d9388e552a4}{getMinDelta} (self):
-00128         \textcolor{keywordflow}{return} self.\hyperlink{classexch2exch_1_1_differences_a7825bfca16b5775aa770c8810412b215}{dmin}
+00127     \textcolor{keyword}{def }getMinDelta (self):
+00128         \textcolor{keywordflow}{return} self.dmin
 00129         
 \end{DoxyCode}
-
-
-Here is the caller graph for this function\+:\nopagebreak
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{classexch2exch_1_1_differences_ad2c60e37e0a390dd89be5d9388e552a4_icgraph}
 \end{center}
 \end{figure}
-
-
+\mbox{\Hypertarget{classexch2exch_1_1_differences_a110cb3a79f744b6d3911b6669b8a0a89}\label{classexch2exch_1_1_differences_a110cb3a79f744b6d3911b6669b8a0a89}} 
 \index{exch2exch\+::\+Differences@{exch2exch\+::\+Differences}!get\+Min\+Gain@{get\+Min\+Gain}}
 \index{get\+Min\+Gain@{get\+Min\+Gain}!exch2exch\+::\+Differences@{exch2exch\+::\+Differences}}
-\subsubsection[{\texorpdfstring{get\+Min\+Gain(self)}{getMinGain(self)}}]{\setlength{\rightskip}{0pt plus 5cm}def exch2exch.\+Differences.\+get\+Min\+Gain (
-\begin{DoxyParamCaption}
-\item[{}]{self}
-\end{DoxyParamCaption}
-)}\hypertarget{classexch2exch_1_1_differences_a110cb3a79f744b6d3911b6669b8a0a89}{}\label{classexch2exch_1_1_differences_a110cb3a79f744b6d3911b6669b8a0a89}
+\subsubsection{\texorpdfstring{get\+Min\+Gain()}{getMinGain()}}
+{\footnotesize\ttfamily def exch2exch.\+Differences.\+get\+Min\+Gain (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
 
 
 Definition at line \hyperlink{exch2exch_8py_source_l00133}{133} of file \hyperlink{exch2exch_8py_source}{exch2exch.\+py}.
@@ -418,28 +385,24 @@ Referenced by \hyperlink{exch2exch_8py_source_l00154}{exch2exch.\+Differences.\+
 
 
 \begin{DoxyCode}
-\hypertarget{classexch2exch_1_1_differences.tex_l00133}{}\hyperlink{classexch2exch_1_1_differences_a110cb3a79f744b6d3911b6669b8a0a89}{00133}     \textcolor{keyword}{def }\hyperlink{classexch2exch_1_1_differences_a110cb3a79f744b6d3911b6669b8a0a89}{getMinGain} (self):
-00134         \textcolor{keywordflow}{return} self.\hyperlink{classexch2exch_1_1_differences_a33c9add531b5b46c49ae322657343382}{gmin}
+00133     \textcolor{keyword}{def }getMinGain (self):
+00134         \textcolor{keywordflow}{return} self.gmin
 00135         
 \end{DoxyCode}
-
-
-Here is the caller graph for this function\+:\nopagebreak
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{classexch2exch_1_1_differences_a110cb3a79f744b6d3911b6669b8a0a89_icgraph}
 \end{center}
 \end{figure}
-
-
+\mbox{\Hypertarget{classexch2exch_1_1_differences_ae360dc9692075e21d0aafa2ff1dc23d4}\label{classexch2exch_1_1_differences_ae360dc9692075e21d0aafa2ff1dc23d4}} 
 \index{exch2exch\+::\+Differences@{exch2exch\+::\+Differences}!get\+R\+Buy\+Sell@{get\+R\+Buy\+Sell}}
 \index{get\+R\+Buy\+Sell@{get\+R\+Buy\+Sell}!exch2exch\+::\+Differences@{exch2exch\+::\+Differences}}
-\subsubsection[{\texorpdfstring{get\+R\+Buy\+Sell(self)}{getRBuySell(self)}}]{\setlength{\rightskip}{0pt plus 5cm}def exch2exch.\+Differences.\+get\+R\+Buy\+Sell (
-\begin{DoxyParamCaption}
-\item[{}]{self}
-\end{DoxyParamCaption}
-)}\hypertarget{classexch2exch_1_1_differences_ae360dc9692075e21d0aafa2ff1dc23d4}{}\label{classexch2exch_1_1_differences_ae360dc9692075e21d0aafa2ff1dc23d4}
+\subsubsection{\texorpdfstring{get\+R\+Buy\+Sell()}{getRBuySell()}}
+{\footnotesize\ttfamily def exch2exch.\+Differences.\+get\+R\+Buy\+Sell (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
 
 
 Definition at line \hyperlink{exch2exch_8py_source_l00142}{142} of file \hyperlink{exch2exch_8py_source}{exch2exch.\+py}.
@@ -454,28 +417,24 @@ Referenced by \hyperlink{exch2exch_8py_source_l00154}{exch2exch.\+Differences.\+
 
 
 \begin{DoxyCode}
-\hypertarget{classexch2exch_1_1_differences.tex_l00142}{}\hyperlink{classexch2exch_1_1_differences_ae360dc9692075e21d0aafa2ff1dc23d4}{00142}     \textcolor{keyword}{def }\hyperlink{classexch2exch_1_1_differences_ae360dc9692075e21d0aafa2ff1dc23d4}{getRBuySell} (self):
-00143         \textcolor{keywordflow}{return} self.\hyperlink{classexch2exch_1_1_differences_a3cbdf344e8e0b804c611e6b9e3a3d1bd}{rBuySell}
+00142     \textcolor{keyword}{def }getRBuySell (self):
+00143         \textcolor{keywordflow}{return} self.rBuySell
 00144         
 \end{DoxyCode}
-
-
-Here is the caller graph for this function\+:\nopagebreak
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{classexch2exch_1_1_differences_ae360dc9692075e21d0aafa2ff1dc23d4_icgraph}
 \end{center}
 \end{figure}
-
-
+\mbox{\Hypertarget{classexch2exch_1_1_differences_ac4f1f695ff394d65cfb51ea55dc67fa5}\label{classexch2exch_1_1_differences_ac4f1f695ff394d65cfb51ea55dc67fa5}} 
 \index{exch2exch\+::\+Differences@{exch2exch\+::\+Differences}!get\+R\+Last@{get\+R\+Last}}
 \index{get\+R\+Last@{get\+R\+Last}!exch2exch\+::\+Differences@{exch2exch\+::\+Differences}}
-\subsubsection[{\texorpdfstring{get\+R\+Last(self)}{getRLast(self)}}]{\setlength{\rightskip}{0pt plus 5cm}def exch2exch.\+Differences.\+get\+R\+Last (
-\begin{DoxyParamCaption}
-\item[{}]{self}
-\end{DoxyParamCaption}
-)}\hypertarget{classexch2exch_1_1_differences_ac4f1f695ff394d65cfb51ea55dc67fa5}{}\label{classexch2exch_1_1_differences_ac4f1f695ff394d65cfb51ea55dc67fa5}
+\subsubsection{\texorpdfstring{get\+R\+Last()}{getRLast()}}
+{\footnotesize\ttfamily def exch2exch.\+Differences.\+get\+R\+Last (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
 
 
 Definition at line \hyperlink{exch2exch_8py_source_l00148}{148} of file \hyperlink{exch2exch_8py_source}{exch2exch.\+py}.
@@ -490,13 +449,12 @@ Referenced by \hyperlink{exch2exch_8py_source_l00154}{exch2exch.\+Differences.\+
 
 
 \begin{DoxyCode}
-\hypertarget{classexch2exch_1_1_differences.tex_l00148}{}\hyperlink{classexch2exch_1_1_differences_ac4f1f695ff394d65cfb51ea55dc67fa5}{00148}     \textcolor{keyword}{def }\hyperlink{classexch2exch_1_1_differences_ac4f1f695ff394d65cfb51ea55dc67fa5}{getRLast} (self):
-00149         \textcolor{keywordflow}{return} self.\hyperlink{classexch2exch_1_1_differences_a3c26c51929ce75e055f8a606aaeb849d}{rLast}
+00148     \textcolor{keyword}{def }getRLast (self):
+00149         \textcolor{keywordflow}{return} self.rLast
 00150         
 \end{DoxyCode}
-
-
-Here is the caller graph for this function\+:\nopagebreak
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -505,34 +463,41 @@ Here is the caller graph for this function\+:\nopagebreak
 \end{figure}
 
 
-
-
 \subsection{Member Data Documentation}
+\mbox{\Hypertarget{classexch2exch_1_1_differences_aac9b76364eb6e0ee83417c0128aaa001}\label{classexch2exch_1_1_differences_aac9b76364eb6e0ee83417c0128aaa001}} 
 \index{exch2exch\+::\+Differences@{exch2exch\+::\+Differences}!a\+Buy\+Sell@{a\+Buy\+Sell}}
 \index{a\+Buy\+Sell@{a\+Buy\+Sell}!exch2exch\+::\+Differences@{exch2exch\+::\+Differences}}
-\subsubsection[{\texorpdfstring{a\+Buy\+Sell}{aBuySell}}]{\setlength{\rightskip}{0pt plus 5cm}exch2exch.\+Differences.\+a\+Buy\+Sell}\hypertarget{classexch2exch_1_1_differences_aac9b76364eb6e0ee83417c0128aaa001}{}\label{classexch2exch_1_1_differences_aac9b76364eb6e0ee83417c0128aaa001}
+\subsubsection{\texorpdfstring{a\+Buy\+Sell}{aBuySell}}
+{\footnotesize\ttfamily exch2exch.\+Differences.\+a\+Buy\+Sell}
+
 
 
 Definition at line \hyperlink{exch2exch_8py_source_l00121}{121} of file \hyperlink{exch2exch_8py_source}{exch2exch.\+py}.
 
 
 
-Referenced by \hyperlink{exch2exch_8py_source_l00139}{exch2exch.\+Differences.\+get\+A\+Buy\+Sell()}.
+Referenced by \hyperlink{exchange_8py_source_l00336}{exchange.\+Diff\+Tracker.\+\_\+\+\_\+str\+\_\+\+\_\+()}, \hyperlink{exchange_8py_source_l00309}{exchange.\+Diff\+Tracker.\+calc()}, \hyperlink{exchange_8py_source_l00385}{exchange.\+Diff\+Tracker.\+dumps()}, and \hyperlink{exch2exch_8py_source_l00139}{exch2exch.\+Differences.\+get\+A\+Buy\+Sell()}.
 
+\mbox{\Hypertarget{classexch2exch_1_1_differences_abd4dd96bd69025147d0bdb33d9c69345}\label{classexch2exch_1_1_differences_abd4dd96bd69025147d0bdb33d9c69345}} 
 \index{exch2exch\+::\+Differences@{exch2exch\+::\+Differences}!a\+Last@{a\+Last}}
 \index{a\+Last@{a\+Last}!exch2exch\+::\+Differences@{exch2exch\+::\+Differences}}
-\subsubsection[{\texorpdfstring{a\+Last}{aLast}}]{\setlength{\rightskip}{0pt plus 5cm}exch2exch.\+Differences.\+a\+Last}\hypertarget{classexch2exch_1_1_differences_abd4dd96bd69025147d0bdb33d9c69345}{}\label{classexch2exch_1_1_differences_abd4dd96bd69025147d0bdb33d9c69345}
+\subsubsection{\texorpdfstring{a\+Last}{aLast}}
+{\footnotesize\ttfamily exch2exch.\+Differences.\+a\+Last}
+
 
 
 Definition at line \hyperlink{exch2exch_8py_source_l00124}{124} of file \hyperlink{exch2exch_8py_source}{exch2exch.\+py}.
 
 
 
-Referenced by \hyperlink{exch2exch_8py_source_l00145}{exch2exch.\+Differences.\+get\+A\+Last()}.
+Referenced by \hyperlink{exchange_8py_source_l00336}{exchange.\+Diff\+Tracker.\+\_\+\+\_\+str\+\_\+\+\_\+()}, \hyperlink{exchange_8py_source_l00309}{exchange.\+Diff\+Tracker.\+calc()}, \hyperlink{exchange_8py_source_l00385}{exchange.\+Diff\+Tracker.\+dumps()}, and \hyperlink{exch2exch_8py_source_l00145}{exch2exch.\+Differences.\+get\+A\+Last()}.
 
+\mbox{\Hypertarget{classexch2exch_1_1_differences_a0fb17548553b86b0ae62c2ef1a30981b}\label{classexch2exch_1_1_differences_a0fb17548553b86b0ae62c2ef1a30981b}} 
 \index{exch2exch\+::\+Differences@{exch2exch\+::\+Differences}!coin\+Name@{coin\+Name}}
 \index{coin\+Name@{coin\+Name}!exch2exch\+::\+Differences@{exch2exch\+::\+Differences}}
-\subsubsection[{\texorpdfstring{coin\+Name}{coinName}}]{\setlength{\rightskip}{0pt plus 5cm}exch2exch.\+Differences.\+coin\+Name}\hypertarget{classexch2exch_1_1_differences_a0fb17548553b86b0ae62c2ef1a30981b}{}\label{classexch2exch_1_1_differences_a0fb17548553b86b0ae62c2ef1a30981b}
+\subsubsection{\texorpdfstring{coin\+Name}{coinName}}
+{\footnotesize\ttfamily exch2exch.\+Differences.\+coin\+Name}
+
 
 
 Definition at line \hyperlink{exch2exch_8py_source_l00112}{112} of file \hyperlink{exch2exch_8py_source}{exch2exch.\+py}.
@@ -541,9 +506,12 @@ Definition at line \hyperlink{exch2exch_8py_source_l00112}{112} of file \hyperli
 
 Referenced by \hyperlink{exch2exch_8py_source_l00151}{exch2exch.\+Differences.\+get\+Coin\+Name()}.
 
+\mbox{\Hypertarget{classexch2exch_1_1_differences_a261a74cc25d77b2608898fa5611f9f0b}\label{classexch2exch_1_1_differences_a261a74cc25d77b2608898fa5611f9f0b}} 
 \index{exch2exch\+::\+Differences@{exch2exch\+::\+Differences}!dmax@{dmax}}
 \index{dmax@{dmax}!exch2exch\+::\+Differences@{exch2exch\+::\+Differences}}
-\subsubsection[{\texorpdfstring{dmax}{dmax}}]{\setlength{\rightskip}{0pt plus 5cm}exch2exch.\+Differences.\+dmax}\hypertarget{classexch2exch_1_1_differences_a261a74cc25d77b2608898fa5611f9f0b}{}\label{classexch2exch_1_1_differences_a261a74cc25d77b2608898fa5611f9f0b}
+\subsubsection{\texorpdfstring{dmax}{dmax}}
+{\footnotesize\ttfamily exch2exch.\+Differences.\+dmax}
+
 
 
 Definition at line \hyperlink{exch2exch_8py_source_l00115}{115} of file \hyperlink{exch2exch_8py_source}{exch2exch.\+py}.
@@ -552,9 +520,12 @@ Definition at line \hyperlink{exch2exch_8py_source_l00115}{115} of file \hyperli
 
 Referenced by \hyperlink{raw__urlparser_8py_source_l00097}{raw\+\_\+urlparser.\+Differences.\+get\+Max\+Delta()}, and \hyperlink{exch2exch_8py_source_l00130}{exch2exch.\+Differences.\+get\+Max\+Delta()}.
 
+\mbox{\Hypertarget{classexch2exch_1_1_differences_a7825bfca16b5775aa770c8810412b215}\label{classexch2exch_1_1_differences_a7825bfca16b5775aa770c8810412b215}} 
 \index{exch2exch\+::\+Differences@{exch2exch\+::\+Differences}!dmin@{dmin}}
 \index{dmin@{dmin}!exch2exch\+::\+Differences@{exch2exch\+::\+Differences}}
-\subsubsection[{\texorpdfstring{dmin}{dmin}}]{\setlength{\rightskip}{0pt plus 5cm}exch2exch.\+Differences.\+dmin}\hypertarget{classexch2exch_1_1_differences_a7825bfca16b5775aa770c8810412b215}{}\label{classexch2exch_1_1_differences_a7825bfca16b5775aa770c8810412b215}
+\subsubsection{\texorpdfstring{dmin}{dmin}}
+{\footnotesize\ttfamily exch2exch.\+Differences.\+dmin}
+
 
 
 Definition at line \hyperlink{exch2exch_8py_source_l00116}{116} of file \hyperlink{exch2exch_8py_source}{exch2exch.\+py}.
@@ -563,9 +534,12 @@ Definition at line \hyperlink{exch2exch_8py_source_l00116}{116} of file \hyperli
 
 Referenced by \hyperlink{raw__urlparser_8py_source_l00094}{raw\+\_\+urlparser.\+Differences.\+get\+Min\+Delta()}, and \hyperlink{exch2exch_8py_source_l00127}{exch2exch.\+Differences.\+get\+Min\+Delta()}.
 
+\mbox{\Hypertarget{classexch2exch_1_1_differences_a569f2a6fa0e33ad725c3c3ada259ddcc}\label{classexch2exch_1_1_differences_a569f2a6fa0e33ad725c3c3ada259ddcc}} 
 \index{exch2exch\+::\+Differences@{exch2exch\+::\+Differences}!gmax@{gmax}}
 \index{gmax@{gmax}!exch2exch\+::\+Differences@{exch2exch\+::\+Differences}}
-\subsubsection[{\texorpdfstring{gmax}{gmax}}]{\setlength{\rightskip}{0pt plus 5cm}exch2exch.\+Differences.\+gmax}\hypertarget{classexch2exch_1_1_differences_a569f2a6fa0e33ad725c3c3ada259ddcc}{}\label{classexch2exch_1_1_differences_a569f2a6fa0e33ad725c3c3ada259ddcc}
+\subsubsection{\texorpdfstring{gmax}{gmax}}
+{\footnotesize\ttfamily exch2exch.\+Differences.\+gmax}
+
 
 
 Definition at line \hyperlink{exch2exch_8py_source_l00119}{119} of file \hyperlink{exch2exch_8py_source}{exch2exch.\+py}.
@@ -574,9 +548,12 @@ Definition at line \hyperlink{exch2exch_8py_source_l00119}{119} of file \hyperli
 
 Referenced by \hyperlink{exch2exch_8py_source_l00136}{exch2exch.\+Differences.\+get\+Max\+Gain()}.
 
+\mbox{\Hypertarget{classexch2exch_1_1_differences_a33c9add531b5b46c49ae322657343382}\label{classexch2exch_1_1_differences_a33c9add531b5b46c49ae322657343382}} 
 \index{exch2exch\+::\+Differences@{exch2exch\+::\+Differences}!gmin@{gmin}}
 \index{gmin@{gmin}!exch2exch\+::\+Differences@{exch2exch\+::\+Differences}}
-\subsubsection[{\texorpdfstring{gmin}{gmin}}]{\setlength{\rightskip}{0pt plus 5cm}exch2exch.\+Differences.\+gmin}\hypertarget{classexch2exch_1_1_differences_a33c9add531b5b46c49ae322657343382}{}\label{classexch2exch_1_1_differences_a33c9add531b5b46c49ae322657343382}
+\subsubsection{\texorpdfstring{gmin}{gmin}}
+{\footnotesize\ttfamily exch2exch.\+Differences.\+gmin}
+
 
 
 Definition at line \hyperlink{exch2exch_8py_source_l00118}{118} of file \hyperlink{exch2exch_8py_source}{exch2exch.\+py}.
@@ -585,48 +562,75 @@ Definition at line \hyperlink{exch2exch_8py_source_l00118}{118} of file \hyperli
 
 Referenced by \hyperlink{exch2exch_8py_source_l00133}{exch2exch.\+Differences.\+get\+Min\+Gain()}.
 
+\mbox{\Hypertarget{classexch2exch_1_1_differences_a81c81e9c15b5ea8a5d39bb99d85250e1}\label{classexch2exch_1_1_differences_a81c81e9c15b5ea8a5d39bb99d85250e1}} 
 \index{exch2exch\+::\+Differences@{exch2exch\+::\+Differences}!mb@{mb}}
 \index{mb@{mb}!exch2exch\+::\+Differences@{exch2exch\+::\+Differences}}
-\subsubsection[{\texorpdfstring{mb}{mb}}]{\setlength{\rightskip}{0pt plus 5cm}exch2exch.\+Differences.\+mb}\hypertarget{classexch2exch_1_1_differences_a81c81e9c15b5ea8a5d39bb99d85250e1}{}\label{classexch2exch_1_1_differences_a81c81e9c15b5ea8a5d39bb99d85250e1}
+\subsubsection{\texorpdfstring{mb}{mb}}
+{\footnotesize\ttfamily exch2exch.\+Differences.\+mb}
+
 
 
 Definition at line \hyperlink{exch2exch_8py_source_l00108}{108} of file \hyperlink{exch2exch_8py_source}{exch2exch.\+py}.
 
+
+
+Referenced by \hyperlink{exch2exch_8py_source_l00154}{exch2exch.\+Differences.\+\_\+\+\_\+str\+\_\+\+\_\+()}.
+
+\mbox{\Hypertarget{classexch2exch_1_1_differences_a6de3ee563584c83a97ba815db8ec7831}\label{classexch2exch_1_1_differences_a6de3ee563584c83a97ba815db8ec7831}} 
 \index{exch2exch\+::\+Differences@{exch2exch\+::\+Differences}!ok@{ok}}
 \index{ok@{ok}!exch2exch\+::\+Differences@{exch2exch\+::\+Differences}}
-\subsubsection[{\texorpdfstring{ok}{ok}}]{\setlength{\rightskip}{0pt plus 5cm}exch2exch.\+Differences.\+ok}\hypertarget{classexch2exch_1_1_differences_a6de3ee563584c83a97ba815db8ec7831}{}\label{classexch2exch_1_1_differences_a6de3ee563584c83a97ba815db8ec7831}
+\subsubsection{\texorpdfstring{ok}{ok}}
+{\footnotesize\ttfamily exch2exch.\+Differences.\+ok}
+
 
 
 Definition at line \hyperlink{exch2exch_8py_source_l00109}{109} of file \hyperlink{exch2exch_8py_source}{exch2exch.\+py}.
 
+
+
+Referenced by \hyperlink{raw__urlparser_8py_source_l00100}{raw\+\_\+urlparser.\+Differences.\+\_\+\+\_\+str\+\_\+\+\_\+()}, and \hyperlink{exch2exch_8py_source_l00154}{exch2exch.\+Differences.\+\_\+\+\_\+str\+\_\+\+\_\+()}.
+
+\mbox{\Hypertarget{classexch2exch_1_1_differences_a64aec2fc7f20028f0bd834908cbea116}\label{classexch2exch_1_1_differences_a64aec2fc7f20028f0bd834908cbea116}} 
 \index{exch2exch\+::\+Differences@{exch2exch\+::\+Differences}!rates@{rates}}
 \index{rates@{rates}!exch2exch\+::\+Differences@{exch2exch\+::\+Differences}}
-\subsubsection[{\texorpdfstring{rates}{rates}}]{\setlength{\rightskip}{0pt plus 5cm}exch2exch.\+Differences.\+rates}\hypertarget{classexch2exch_1_1_differences_a64aec2fc7f20028f0bd834908cbea116}{}\label{classexch2exch_1_1_differences_a64aec2fc7f20028f0bd834908cbea116}
+\subsubsection{\texorpdfstring{rates}{rates}}
+{\footnotesize\ttfamily exch2exch.\+Differences.\+rates}
+
 
 
 Definition at line \hyperlink{exch2exch_8py_source_l00107}{107} of file \hyperlink{exch2exch_8py_source}{exch2exch.\+py}.
 
+
+
+Referenced by \hyperlink{raw__urlparser_8py_source_l00100}{raw\+\_\+urlparser.\+Differences.\+\_\+\+\_\+str\+\_\+\+\_\+()}, \hyperlink{exch2exch_8py_source_l00154}{exch2exch.\+Differences.\+\_\+\+\_\+str\+\_\+\+\_\+()}, \hyperlink{exchange_8py_source_l00336}{exchange.\+Diff\+Tracker.\+\_\+\+\_\+str\+\_\+\+\_\+()}, \hyperlink{exchange_8py_source_l00309}{exchange.\+Diff\+Tracker.\+calc()}, and \hyperlink{exchange_8py_source_l00385}{exchange.\+Diff\+Tracker.\+dumps()}.
+
+\mbox{\Hypertarget{classexch2exch_1_1_differences_a3cbdf344e8e0b804c611e6b9e3a3d1bd}\label{classexch2exch_1_1_differences_a3cbdf344e8e0b804c611e6b9e3a3d1bd}} 
 \index{exch2exch\+::\+Differences@{exch2exch\+::\+Differences}!r\+Buy\+Sell@{r\+Buy\+Sell}}
 \index{r\+Buy\+Sell@{r\+Buy\+Sell}!exch2exch\+::\+Differences@{exch2exch\+::\+Differences}}
-\subsubsection[{\texorpdfstring{r\+Buy\+Sell}{rBuySell}}]{\setlength{\rightskip}{0pt plus 5cm}exch2exch.\+Differences.\+r\+Buy\+Sell}\hypertarget{classexch2exch_1_1_differences_a3cbdf344e8e0b804c611e6b9e3a3d1bd}{}\label{classexch2exch_1_1_differences_a3cbdf344e8e0b804c611e6b9e3a3d1bd}
+\subsubsection{\texorpdfstring{r\+Buy\+Sell}{rBuySell}}
+{\footnotesize\ttfamily exch2exch.\+Differences.\+r\+Buy\+Sell}
+
 
 
 Definition at line \hyperlink{exch2exch_8py_source_l00122}{122} of file \hyperlink{exch2exch_8py_source}{exch2exch.\+py}.
 
 
 
-Referenced by \hyperlink{exch2exch_8py_source_l00142}{exch2exch.\+Differences.\+get\+R\+Buy\+Sell()}.
+Referenced by \hyperlink{exchange_8py_source_l00336}{exchange.\+Diff\+Tracker.\+\_\+\+\_\+str\+\_\+\+\_\+()}, \hyperlink{exchange_8py_source_l00309}{exchange.\+Diff\+Tracker.\+calc()}, \hyperlink{exchange_8py_source_l00385}{exchange.\+Diff\+Tracker.\+dumps()}, and \hyperlink{exch2exch_8py_source_l00142}{exch2exch.\+Differences.\+get\+R\+Buy\+Sell()}.
 
+\mbox{\Hypertarget{classexch2exch_1_1_differences_a3c26c51929ce75e055f8a606aaeb849d}\label{classexch2exch_1_1_differences_a3c26c51929ce75e055f8a606aaeb849d}} 
 \index{exch2exch\+::\+Differences@{exch2exch\+::\+Differences}!r\+Last@{r\+Last}}
 \index{r\+Last@{r\+Last}!exch2exch\+::\+Differences@{exch2exch\+::\+Differences}}
-\subsubsection[{\texorpdfstring{r\+Last}{rLast}}]{\setlength{\rightskip}{0pt plus 5cm}exch2exch.\+Differences.\+r\+Last}\hypertarget{classexch2exch_1_1_differences_a3c26c51929ce75e055f8a606aaeb849d}{}\label{classexch2exch_1_1_differences_a3c26c51929ce75e055f8a606aaeb849d}
+\subsubsection{\texorpdfstring{r\+Last}{rLast}}
+{\footnotesize\ttfamily exch2exch.\+Differences.\+r\+Last}
+
 
 
 Definition at line \hyperlink{exch2exch_8py_source_l00125}{125} of file \hyperlink{exch2exch_8py_source}{exch2exch.\+py}.
 
 
 
-Referenced by \hyperlink{exch2exch_8py_source_l00148}{exch2exch.\+Differences.\+get\+R\+Last()}.
+Referenced by \hyperlink{exchange_8py_source_l00336}{exchange.\+Diff\+Tracker.\+\_\+\+\_\+str\+\_\+\+\_\+()}, \hyperlink{exchange_8py_source_l00309}{exchange.\+Diff\+Tracker.\+calc()}, \hyperlink{exchange_8py_source_l00385}{exchange.\+Diff\+Tracker.\+dumps()}, and \hyperlink{exch2exch_8py_source_l00148}{exch2exch.\+Differences.\+get\+R\+Last()}.
 
 
 
