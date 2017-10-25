@@ -17,12 +17,14 @@ import datetime # datetime
 import gen_factory # GenFactory
 import exchange    # Exchange
 
+import start_time
+
 class Args: 
     pass
 
 class Parameters:
     def __init__ (self):
-        self.summaryOutput        = None
+#        self.summaryOutput        = None
 #        self.conclusionOutput     = None
         self.mainRates            = None
         self.allRates             = None
@@ -38,12 +40,12 @@ class Parameters:
         self.jsonConclusionOutput = None
         self.verbose              = False
 
-    def setSummaryOutput (self, summaryOutput):
-        self.summaryOutput = summaryOutput
-
-    def getSummaryOutput (self):
-        return self.summaryOutput
-
+#    def setSummaryOutput (self, summaryOutput):
+#        self.summaryOutput = summaryOutput
+#
+#    def getSummaryOutput (self):
+#        return self.summaryOutput
+#
 #    def setConclusionOutput (self, conclusionOutput):
 #        self.conclusionOutput = conclusionOutput
 #
@@ -130,7 +132,7 @@ class Parameters:
         
 class Application:
     def __init__ (self):
-        d = datetime.datetime.now ()
+        d = start_time.getDatetime ()
         self.suffix = d.strftime ('%Y%m%d_%H%M')
         self.prefix = 'e2e'
         self.params = None
@@ -227,7 +229,7 @@ class Application:
             raise Exception (msg)
             
         # TODO validate origin exchange
-        if not gfExchange.isValidClassName (args.destination):
+        if not gfExchange.isValidClassName (args.origin):
             fmt  = 'ERROR: Origin exchange {0} is not a valid exchange name.\n'
             fmt += '\tShould be one of {1}'
             msg = fmt.format (args.origin, exchNames)
@@ -364,13 +366,19 @@ class Application:
         self.params = result
         
         args = self.args                
-        if args.verbose:            
-            print ('Verbose output enabled')
+        if args.verbose:
+            repFile = result.getRepConclusionOutput ()
+                        
             
-            print ('Main rate service: {0}'.format (args.mainRates))
-            print ('Exchanges')
-            print ('Origin:            {0}'.format (args.origin))
-            print ('Destination:       {0}'.format (args.destination))
+            lines = ['', '', '', '', '']
+            lines[0] = 'Verbose output enabled\n'
+            lines[1] = 'Main rate service: {0}'.format (args.mainRates)
+            lines[2] = 'Exchanges'
+            lines[3] = 'Origin:            {0}'.format (args.origin)
+            lines[4] = 'Destination:       {0}\n'.format (args.destination)
+
+            for line in lines:
+                repFile.write (line + '\n')
             
         # Normal function termination 
         return result 
@@ -388,14 +396,23 @@ class Application:
         outFile.close ()
     
     def outAllRates (self):
+        # TODO calculate average rate and individual differences
         params = self.getParameters ()
         allRates = params.getAllRates ()
         outFile = params.getAllRatesOutput ()
+        repFile = params.getRepConclusionOutput ()
+        
+        repFile.write ("\nExchange services\n") 
+        
         for theseRates in allRates:
             line = str (theseRates) + "\n"
             outFile.write (line)
+            repFile.write (line)
+
+        repFile.write ('\n')
         
         outFile.close ()
+        repFile.flush ()
     
     def outOriginExchange (self):
         params = self.getParameters ()
@@ -405,19 +422,29 @@ class Application:
         origin.get_ticker ()
         ticker = origin.mkTicker ()
 
-        # Output raw exchange data
+        # Output raw origin exchange data
         outFile = params.getRawOriginOutput ()
         line = str (origin.getOriginalTicker ()) + "\n"
         outFile.write (line)
         
         outFile.close ()
     
-        # TODO output e2e exchange data
+        # Output e2e origin exchange data
         outFile = params.getOriginOutput ()
         line = str (ticker.dumps ()) + "\n"
         outFile.write (line)
         
         outFile.close ()
+        
+        # TODO output origin data as report
+        repFile = params.getRepConclusionOutput ()
+        line = "\nOrigin exchange"
+        repFile.write (line + '\n')
+        
+        line = str (ticker) + "\n"
+        repFile.write (line)
+        
+        repFile.flush ()
     
         # Normal function termination 
         return 
@@ -443,6 +470,16 @@ class Application:
         outFile.write (line)
         
         outFile.close ()
+        
+        # TODO output origin data as report
+        repFile = params.getRepConclusionOutput ()
+        line = "\nDestination exchange"
+        repFile.write (line + '\n')
+        
+        line = str (ticker) + "\n"
+        repFile.write (line)
+        
+        repFile.flush ()
     
         # Normal function termination 
         return 
@@ -492,7 +529,7 @@ def main (argv):
     # TODO return according to error
     app.interpretArgs ()
     
-    # TODO consult main rate service
+    # Consult main rate service
     app.outMainRates ()
     
     # TODO consult all rate services

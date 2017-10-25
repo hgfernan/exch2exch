@@ -21,6 +21,8 @@ import json           # load(), dumps()
 import datetime       # class datetime
 import urllib.request # urlopen()
 
+import start_time
+
 # TODO refactor classes so they are lazy -- work only when necessary
 
 # TODO A class ExchangeData can encapsulate the returns of exchanges
@@ -60,7 +62,9 @@ class Ticker:
         self.high = high 
         self.low  = low 
         self.last = last 
-        self.vol  = vol 
+        self.vol  = vol
+        
+        self.startDt = start_time.getTimeAsInt ()
         
     def convert (self, rate, destination):
         # TODO create a truly generic way of convert currencies
@@ -110,6 +114,9 @@ class Ticker:
     
     def getVolume (self):
         return self.vol
+    
+    def getStartDt (self):
+        return self.startDt
 
     def mk_tuple (self): 
         result = (self.exch, self.pair, self.dt, self.buy, self.sell, \
@@ -129,20 +136,23 @@ class Ticker:
     def __str__ (self):
         result = ''
         
-        fmt    = 'Exchange: {0}, coin pair {1}, ' 
+        fmt    = '{0}, coin pair {1}\n' 
         result = fmt.format (self.exch, self.pair)
         
         gm = time.gmtime (self.dt)
-        result += 'timestamp: ' + time.strftime ('%Y-%m-%d %H:%M:%S', gm) 
-        result += ", "
+        result += '\ttimestamp: ' + time.strftime ('%Y-%m-%d %H:%M:%S', gm) 
+        gm = time.gmtime (self.startDt)
+        result += ", program started: " + \
+            time.strftime ('%Y-%m-%d %H:%M:%S', gm) 
+        result += "\n"
         
-        fmt     = 'buy/sell: {0:.8f}/{1:.8f}, '
+        fmt     = '\tbuy/sell: {0:.8f}/{1:.8f}, '
         result += fmt.format (self.buy, self.sell)
         
         fmt     = 'high/low: {0:.8f}/{1:.8f}, '
         result += fmt.format (self.high, self.low)
         
-        fmt     = 'last: {0:.8f}, volume: {1:.8f}'
+        fmt     = 'last: {0:.8f}, volume: {1:.8f}\n'
         result += fmt.format (self.last, self.vol)
         
         # Normal function termination
@@ -164,7 +174,7 @@ class Exchange:
     def __init__ (self):
 #        self.dnload_ticker ()
 #        self.process_ticker ()
-        pass
+        self.startDt = start_time.getTimeAsInt ()
     
     def dnload_ticker (self):
         url = self.__class__.U_TICKER
@@ -278,6 +288,10 @@ class DiffTracker (Differences):
     def __init__ (self, rates, destination, origin):
         super ().__init__ (rates, destination, origin)
         
+        self.converted = False 
+        self.brl2usd = 0.0
+        self.convDstTicker = None
+        
         self.aMax = 0
         self.aMin = 0
         
@@ -290,6 +304,7 @@ class DiffTracker (Differences):
         self.aLast = 0
         self.rLast = 0
         
+        self.startDt = start_time.getTimeAsInt ()
         
     def calc (self):        
         org = self.orgTicker
@@ -298,10 +313,14 @@ class DiffTracker (Differences):
         # Check if the two tracks use the same pair
         if dst.getCoinPair () != org.getCoinPair ():
             # TODO create a more generic way to convert currencies
-            brl2usd = self.rates.getBrl2Usd ()
-            pair = "USDBTC"
-            dst = dst.convert (brl2usd, pair)
+            self.brl2usd = self.rates.getBrl2Usd ()
+            self.converted = True 
             
+            pair = "USDBTC"
+            
+            self.convDstTicker = dst.convert (self.brl2usd, pair)
+            dst = self.convDstTicker
+    
         self.aMax = dst.getHigh () - org.getLow ()
         self.aMin = dst.getLow () - org.getHigh ()
         
@@ -323,9 +342,16 @@ class DiffTracker (Differences):
         destination = self.dstTicker.getExchName ()
         rates       = self.rates.getServiceName ()
         
+        result = ""
+        
+        # If destination coin was converted
+        if self.converted:
+            result += "\nConverted destination ticker\n"
+            result += str (self.convDstTicker) + '\n'
+        
         fmt     = "Calculation between {0} and {1} rates, "
         fmt    += "with conversion from {2}\n"
-        result  = fmt.format (origin, destination, rates)
+        result += fmt.format (origin, destination, rates)
         
         result += "Extrema\n"
         
@@ -360,6 +386,7 @@ class DiffTracker (Differences):
         # TODO create a report 
     
         fields = {}
+        fields["startDt"]     = self.startDt
         fields["origin"]      = self.orgTicker.getExchName ()
         fields["destination"] = self.dstTicker.getExchName ()
         fields["rates"]       = self.rates.getServiceName ()
