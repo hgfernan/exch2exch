@@ -12,11 +12,10 @@ From:
 import sys      # argv, exit()
 import rates    # Google, XRates
 import argparse # ArgumentParser, 
-import datetime # datetime
 
-import gen_factory # GenFactory
+import differences # DiffTickeer
 import exchange    # Exchange
-
+import gen_factory # GenFactory
 import start_time
 
 class Args: 
@@ -471,7 +470,7 @@ class Application:
         
         outFile.close ()
         
-        # TODO output origin data as report
+        # Output origin data as report
         repFile = params.getRepConclusionOutput ()
         line = "\nDestination exchange"
         repFile.write (line + '\n')
@@ -494,7 +493,7 @@ class Application:
         dstTicker   = destination.mkTicker ()
         mainRates   = params.getMainRates ()
         
-        diff = exchange.DiffTracker (mainRates, dstTicker, orgTicker)
+        diff = differences.DiffTicker (mainRates, dstTicker, orgTicker)
        
         # Generate the difference
         diff.calc ()
@@ -532,20 +531,18 @@ def main (argv):
     # Consult main rate service
     app.outMainRates ()
     
-    # TODO consult all rate services
+    # Consult all rate services
     app.outAllRates ()
     
-    # TODO consult origin exchange 
+    # Consult origin exchange 
     app.outOriginExchange ()
     
-    # TODO consult destination exchange
+    # Consult destination exchange
     app.outDestinationExchange ()
     
-    # TODO generate expectations
+    # Generate expectations
     app.genExpectations ()
     
-    # TODO generate summary
-
     # Normal function termination
     return 0
 

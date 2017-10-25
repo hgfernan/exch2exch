@@ -22,6 +22,7 @@ import datetime       # class datetime
 import urllib.request # urlopen()
 
 import start_time
+import ticker
 
 # TODO refactor classes so they are lazy -- work only when necessary
 
@@ -35,135 +36,7 @@ class DatetimeEncoder (json.JSONEncoder):
         # Let the base class default method raise the TypeError
         return json.JSONEncoder.default(self, obj)
 
-# Standard way of packing oderdebook information across all exchange classes
         
-class OrderBook:
-    pass
-
-# Standard way of packing ticker information across all exchange classes
-        
-class Ticker:
-    ## Constructor
-    # @param exch Name of the exchange, a string not the object 
-    # @param pair Pair of coins -- 1st target coin, 2nd source coin 
-    # @param dt Date and time as seconds since 1970/01/01 at zero hours
-    # @param buy Bid price
-    # @param sell Ask price
-    # @param high Highest price traded
-    # @param low Lowest price traded
-    # @param last Price of last trade
-    # @param vol Volume traded
-    def __init__ (self, exch, pair, dt, buy, sell, high, low, last, vol):
-        self.exch = exch
-        self.pair = pair
-        self.dt   = dt
-        self.buy  = buy 
-        self.sell = sell 
-        self.high = high 
-        self.low  = low 
-        self.last = last 
-        self.vol  = vol
-        
-        self.startDt = start_time.getTimeAsInt ()
-        
-    def convert (self, rate, destination):
-        # TODO create a truly generic way of convert currencies
-    
-        exch = self.exch
-        dt   = self.dt   * rate
-        buy  = self.buy  * rate
-        sell = self.sell * rate
-        high = self.high * rate
-        low  = self.low  * rate
-        last = self.last * rate
-        vol  = self.vol  * rate
-
-        # TODO compare source and target
-        pair = destination
-        
-        # TODO otherwise throw exception 
-        
-        result = Ticker (exch, pair, dt, buy, sell, high, low, last, vol)
-        
-        # Normal function termination
-        return result 
-        
-    def getExchName (self):
-        return self.exch
-        
-    def getCoinPair (self):
-        return self.pair
-        
-    def getDt (self):
-        return self.dt
-    
-    def getBuy (self):
-        return self.buy
-    
-    def getSell (self):
-        return self.sell
-    
-    def getHigh (self):
-        return self.high
-    
-    def getLow (self):
-        return self.low
-    
-    def getLast (self):
-        return self.last
-    
-    def getVolume (self):
-        return self.vol
-    
-    def getStartDt (self):
-        return self.startDt
-
-    def mk_tuple (self): 
-        result = (self.exch, self.pair, self.dt, self.buy, self.sell, \
-            self.high, self.low, self.last, self.vol)
-            
-        # Normal function termination 
-        return result
-        
-    def dumps (self):
-        result = ''
-        
-        result = json.dumps (self.__dict__)       
-        
-        # Normal function termination
-        return result
-    
-    def __str__ (self):
-        result = ''
-        
-        fmt    = '{0}, coin pair {1}\n' 
-        result = fmt.format (self.exch, self.pair)
-        
-        gm = time.gmtime (self.dt)
-        result += '\ttimestamp: ' + time.strftime ('%Y-%m-%d %H:%M:%S', gm) 
-        gm = time.gmtime (self.startDt)
-        result += ", program started: " + \
-            time.strftime ('%Y-%m-%d %H:%M:%S', gm) 
-        result += "\n"
-        
-        fmt     = '\tbuy/sell: {0:.8f}/{1:.8f}, '
-        result += fmt.format (self.buy, self.sell)
-        
-        fmt     = 'high/low: {0:.8f}/{1:.8f}, '
-        result += fmt.format (self.high, self.low)
-        
-        fmt     = 'last: {0:.8f}, volume: {1:.8f}\n'
-        result += fmt.format (self.last, self.vol)
-        
-        # Normal function termination
-        return result
-
-# Standard way of packing trades information across all exchange classes
-        
-        
-class Trades:
-    pass
-
 class Exchange:
     U_TICKER = ''
     U_TRADES = ''
@@ -258,157 +131,6 @@ class Exchange:
         
         # Normal function termination
         return result
-        
-class Differences:
-    def __init__ (self, rates, destination, origin):
-        self.rates     = rates
-        self.dstTicker = destination
-        self.orgTicker = origin
-        self.coinPair  = self.orgTicker.getCoinPair ()
-        
-    def calc (self):
-        pass
-    
-    def __str__ (self):
-        result = "" 
-        
-        # Normal function termination
-        return result
-    
-    def dumps (self):
-        result = "" 
-        
-        # Normal function termination
-        return result
-        
-class DiffOrderbook (Differences):
-    pass
-        
-class DiffTracker (Differences):
-    def __init__ (self, rates, destination, origin):
-        super ().__init__ (rates, destination, origin)
-        
-        self.converted = False 
-        self.brl2usd = 0.0
-        self.convDstTicker = None
-        
-        self.aMax = 0
-        self.aMin = 0
-        
-        self.rMin = 0
-        self.rMax = 0
-        
-        self.aBuySell  = 0
-        self.rBuySell = 0
-        
-        self.aLast = 0
-        self.rLast = 0
-        
-        self.startDt = start_time.getTimeAsInt ()
-        
-    def calc (self):        
-        org = self.orgTicker
-        dst = self.dstTicker 
-        
-        # Check if the two tracks use the same pair
-        if dst.getCoinPair () != org.getCoinPair ():
-            # TODO create a more generic way to convert currencies
-            self.brl2usd = self.rates.getBrl2Usd ()
-            self.converted = True 
-            
-            pair = "USDBTC"
-            
-            self.convDstTicker = dst.convert (self.brl2usd, pair)
-            dst = self.convDstTicker
-    
-        self.aMax = dst.getHigh () - org.getLow ()
-        self.aMin = dst.getLow () - org.getHigh ()
-        
-        self.rMin = 100.0 * self.aMin / org.getHigh ()
-        self.rMax = 100.0 * self.aMax / org.getLow ()
-        
-        self.aBuySell  = dst.getBuy () - org.getSell ()
-        self.rBuySell = 100.0 * self.aBuySell / org.getBuy ()
-        
-        self.aLast = dst.getLast () - org.getLast ()
-        self.rLast = 100.0 * self.aLast / org.getLast ()
-   
-    def __str__ (self):
-        # TODO create a report 
-    
-        # Calculation between Bitstamp and MercadoBitcoin rates, 
-        # with conversion from Google + XRate
-        origin      = self.orgTicker.getExchName ()
-        destination = self.dstTicker.getExchName ()
-        rates       = self.rates.getServiceName ()
-        
-        result = ""
-        
-        # If destination coin was converted
-        if self.converted:
-            result += "\nConverted destination ticker\n"
-            result += str (self.convDstTicker) + '\n'
-        
-        fmt     = "Calculation between {0} and {1} rates, "
-        fmt    += "with conversion from {2}\n"
-        result += fmt.format (origin, destination, rates)
-        
-        result += "Extrema\n"
-        
-        fmt = "\tAbsolute: Minimum {0:.4f}, Maximum {1:.4f}\n"
-        result += fmt.format (self.aMin, self.aMax)
-        
-        fmt = "\tRelative: Minimum {0:.4f}, Maximum {1:.4f}\n"
-        result += fmt.format (self.rMin, self.rMax)
-        
-        fmt = "\nBuy {0}, sell {1}\n"
-        result += fmt.format (origin, destination)
-        
-        fmt = "\tAbsolute: {0:.4f}\n"
-        result += fmt.format (self.aBuySell)
-        
-        fmt = "\tRelative: {0:.4f}\n"
-        result += fmt.format (self.rBuySell)
-        
-        fmt = "\nLast transactions at {0} and {1}\n"
-        result += fmt.format (origin, destination)
-        
-        fmt = "\tAbsolute: {0:.4f}\n"
-        result += fmt.format (self.aLast)
-        
-        fmt = "\tRelative: {0:.4f}\n"
-        result += fmt.format (self.rLast)
-                
-        # Normal function termination
-        return result
-    
-    def dumps (self):
-        # TODO create a report 
-    
-        fields = {}
-        fields["startDt"]     = self.startDt
-        fields["origin"]      = self.orgTicker.getExchName ()
-        fields["destination"] = self.dstTicker.getExchName ()
-        fields["rates"]       = self.rates.getServiceName ()
-        
-        fields["AbsMax"] = self.aMax
-        fields["RelMax"] = self.rMax
-        fields["AbsMin"] = self.aMin
-        fields["RelMin"] = self.rMin
-        
-        fields["AbsBuySell"] = self.aBuySell
-        fields["RelBuySell"] = self.rBuySell
-        
-        fields["AbsLast"] = self.aLast
-        fields["RelLast"] = self.rLast
-       
-        result = json.dumps (fields)
-         
-        # Normal function termination
-        return result
-        
-class DiffTrades (Differences):
-    pass
 
 class Bitfinex (Exchange):
     U_TICKER = 'https://api.bitfinex.com/v1/pubticker/btcusd'
@@ -463,7 +185,8 @@ class Bitfinex (Exchange):
         last = self.last
         vol  = self.vol
         
-        result = Ticker (exch, pair, dt, buy, sell, high, low, last, vol)
+        result = \
+            ticker.Ticker (exch, pair, dt, buy, sell, high, low, last, vol)
         
         return result
     
@@ -535,7 +258,8 @@ class Bitstamp (Exchange):
         last = self.last
         vol  = self.vol
         
-        result = Ticker (exch, pair, dt, buy, sell, high, low, last, vol)
+        result = \
+            ticker.Ticker (exch, pair, dt, buy, sell, high, low, last, vol)
         
         return result
     
@@ -594,7 +318,8 @@ class FoxBit (Exchange):
         last = float (self.ticker['last'])
         vol  = float (self.ticker['last'])
         
-        result = Ticker (exch, pair, ts, buy, sell, high, low, last, vol)
+        result = \
+            ticker.Ticker (exch, pair, ts, buy, sell, high, low, last, vol)
         
         return result
         
@@ -675,12 +400,13 @@ class MercadoBitcoin (Exchange):
         last = self.last
         vol  = self.vol
         
-        result = Ticker (exch, pair, dt, buy, sell, high, low, last, vol)
+        result = \
+            ticker.Ticker (exch, pair, dt, buy, sell, high, low, last, vol)
         
         return result
     
     def get_exch_name (self):
-        return "Mercado Bitcoin"
+        return "MercadoBitcoin"
     
     def get_exch_prefix (self):
         return "mb"
@@ -740,7 +466,8 @@ class OkCoin (Exchange):
         last = self.last
         vol  = self.vol
         
-        result = Ticker (exch, pair, dt, buy, sell, high, low, last, vol)
+        result = \
+            ticker.Ticker (exch, pair, dt, buy, sell, high, low, last, vol)
         
         return result
         
