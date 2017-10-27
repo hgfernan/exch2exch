@@ -110,11 +110,11 @@ class Ticker:
         fmt    = '{0}, coin pair {1}\n' 
         result = fmt.format (self.exch, self.pair)
         
-        gm = time.gmtime (self.dt)
-        result += '\ttimestamp: ' + time.strftime ('%Y-%m-%d %H:%M:%S', gm) 
-        gm = time.gmtime (self.startDt)
+        lt = time.localtime (self.dt)
+        result += '\ttimestamp: ' + time.strftime ('%Y-%m-%d %H:%M:%S', lt) 
+        lt = time.localtime (self.startDt)
         result += ", program started: " + \
-            time.strftime ('%Y-%m-%d %H:%M:%S', gm) 
+            time.strftime ('%Y-%m-%d %H:%M:%S', lt) 
         result += "\n"
         
         fmt     = '\tbuy/sell: {0:.8f}/{1:.8f}, '

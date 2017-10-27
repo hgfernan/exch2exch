@@ -4,6 +4,10 @@
 Created on Wed Oct 25 12:52:06 2017
 
 @author: hilton
+
+Minor changes from 
+https://stackoverflow.com/questions/6760685/creating-a-singleton-in-python
+
 """
 import datetime # datetime
 
