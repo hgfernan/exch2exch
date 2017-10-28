@@ -38,9 +38,10 @@ class DatetimeEncoder (json.JSONEncoder):
 
         
 class Exchange:
-    U_TICKER = ''
-    U_TRADES = ''
-    U_ORDRBK = ''
+    HEADERS   = None
+    U_TICKER  = ''
+    U_TRADES  = ''
+    U_ORDRBK  = ''
 
 # TODO implement orderbook and trades
     
@@ -48,11 +49,27 @@ class Exchange:
 #        self.dnload_ticker ()
 #        self.process_ticker ()
         self.startDt = start_time.getTimeAsInt ()
+        
+    def urlopen (self, url):
+        headers = self.__class__.HEADERS
+        if headers == None:
+            result = urllib.request.urlopen (url)
+
+            # Normal function termination
+            return result
+        
+        request = urllib.request.Request (url, headers = headers)
+    
+        # Open the URL as file
+        result = urllib.request.urlopen (request)
+
+        # Normal function termination
+        return result
     
     def dnload_ticker (self):
         url = self.__class__.U_TICKER
 #        print (url)
-        f = urllib.request.urlopen (url)
+        f = self.urlopen (url)
         
         line = f.readline ()
 #        print (line)
@@ -133,6 +150,7 @@ class Exchange:
         return result
 
 class Bitfinex (Exchange):
+    HEADER = None
     U_TICKER = 'https://api.bitfinex.com/v1/pubticker/btcusd'
     U_ORDRBK = 'https://api.bitfinex.com/v1/book/btcusd'
     U_TRADES = 'https://api.bitfinex.com/v1/trades/btcusd'
@@ -209,6 +227,7 @@ class Bitfinex (Exchange):
         return result      
         
 class Bitstamp (Exchange):
+    HEADER   = None
     U_TICKER = 'https://www.bitstamp.net/api/ticker/'
     U_ORDRBK = 'https://www.bitstamp.net/api/order_book/'
     U_TRADES = 'https://www.bitstamp.net/api/transactions/'
@@ -276,7 +295,81 @@ class Bitstamp (Exchange):
         result = json.dumps (self.__dict__, cls = DatetimeEncoder)
         
         # Normal function termination
-        return result       
+        return result     
+    
+class CexIo (Exchange):
+    HEADER   = {'User-Agent' : 'Mozilla 5.10'}
+    U_TICKER = 'https://cex.io/api/ticker/BTC/USD'
+    
+    def __init__ (self):
+        super ().__init__ ()
+        
+    def process_ticker (self):
+        tt = self.ticker['timestamp']
+        self.ticker['ts'] = tt
+        self.ticker['date'] = datetime.datetime.fromtimestamp (tt)
+        self.exch = self.get_exch_name ()
+     
+    def get_ticker (self):
+        super ().get_ticker ()
+        
+        self.dt   = self.ticker['date']
+        self.buy  = float (self.ticker['buy'])
+        self.sell = float (self.ticker['sell'])
+        self.high = float (self.ticker['high'])
+        self.low  = float (self.ticker['low'])
+        self.last = float (self.ticker['last'])
+        
+        result = (self.dt, self.sell, self.buy, self.high, self.low, self.last)
+        
+        return result
+    
+    def mkTicker (self): 
+        super ().get_ticker ()
+        
+        exch = self.exch
+        pair = self.pair
+        ts   = self.ticker['ts']
+        buy  = float (self.ticker['buy'])
+        sell = float (self.ticker['sell'])
+        high = float (self.ticker['high'])
+        low  = float (self.ticker['low'])
+        last = float (self.ticker['last'])
+        vol  = float (self.ticker['last'])
+        
+        result = \
+            ticker.Ticker (exch, pair, ts, buy, sell, high, low, last, vol)
+        
+        return result
+    
+    def process_trades (self):
+        # TODO raise exception non implemented
+        pass 
+    
+    def get_trades (self):
+        # TODO raise exception non implemented
+        pass 
+    
+    def get_exch_name (self):
+        return 'cex.io'
+    
+    def get_exch_prefix (self):
+        return "ci"
+        
+    def getOriginalTicker (self):
+        return self.originalTicker
+        
+    def __str__ (self):
+        result = '{'
+        
+        result += 'buy : ' + str (self.buy) + ', '
+        result += 'sell : ' + str (self.sell) + ', '
+        result += 'high : ' + str(self.high) + ', '
+        result += 'low  : ' + str (self.low) + ', '
+        result += 'dt :  ' + str (self.dt)
+        result += '}'
+        # Normal function termination
+        return result 
         
 class FoxBit (Exchange):
     U_TICKER = 'https://api.blinktrade.com/api/v1/BRL/ticker?crypto_currency=BTC'
@@ -331,6 +424,12 @@ class FoxBit (Exchange):
     
     def get_exch_name (self):
         return "FoxBit"
+    
+    def get_exch_prefix (self):
+        return "fb"
+        
+    def getOriginalTicker (self):
+        return self.originalTicker
         
     def __str__ (self):
         result = '{'
@@ -343,12 +442,6 @@ class FoxBit (Exchange):
         result += '}'
         # Normal function termination
         return result 
-    
-    def get_exch_prefix (self):
-        return "fb"
-        
-    def getOriginalTicker (self):
-        return self.originalTicker
                 
 class MercadoBitcoin (Exchange):
     U_TICKER = 'https://www.mercadobitcoin.net/api/ticker/'
@@ -490,6 +583,7 @@ def main ():
     exchanges = []
     exchanges.append (Bitfinex ())
     exchanges.append (Bitstamp ())
+    exchanges.append (CexIo ())
     exchanges.append (FoxBit ())
     exchanges.append (MercadoBitcoin ())
     exchanges.append (OkCoin ())
