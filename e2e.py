@@ -379,6 +379,8 @@ class Application:
             for line in lines:
                 repFile.write (line + '\n')
             
+            repFile.flush ()
+            
         # Normal function termination 
         return result 
         
@@ -401,7 +403,7 @@ class Application:
         outFile = params.getAllRatesOutput ()
         repFile = params.getRepConclusionOutput ()
         
-        repFile.write ("\nExchange services\n") 
+        repFile.write ("Exchange services\n") 
         
         for theseRates in allRates:
             line = str (theseRates) + "\n"
@@ -437,7 +439,7 @@ class Application:
         
         # TODO output origin data as report
         repFile = params.getRepConclusionOutput ()
-        line = "\nOrigin exchange"
+        line = "Origin exchange"
         repFile.write (line + '\n')
         
         line = str (ticker) + "\n"
@@ -472,7 +474,7 @@ class Application:
         
         # Output origin data as report
         repFile = params.getRepConclusionOutput ()
-        line = "\nDestination exchange"
+        line = "Destination exchange"
         repFile.write (line + '\n')
         
         line = str (ticker) + "\n"

@@ -97,7 +97,7 @@ class DiffTicker (Differences):
         
         # If destination coin was converted
         if self.converted:
-            result += "\nConverted destination ticker\n"
+            result += "Converted destination ticker\n"
             result += str (self.convDstTicker) + '\n'
         
         fmt     = "Calculation between {0} and {1} rates, "
