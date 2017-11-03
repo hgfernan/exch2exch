@@ -224,6 +224,7 @@ class Application:
         gfExchange = gen_factory.GenFactory (exchange.Exchange)
         exchNames = gfExchange.validClassNames ()
            
+        self.list = False
         if self.args.list:
             self.list = True
             result.rateNames = gfRates.validClassNames ()
@@ -380,7 +381,7 @@ class Application:
 
         result.setJsonConclusionOutput (conc_f)
         
-#        self.params = result
+        self.params = result
         
         args = self.args                
         if args.verbose:
@@ -424,9 +425,12 @@ class Application:
                 
             for line in lines:
                 print (line)
+                
+            # Normal function termination
+            return True
             
         # Normal function 
-        return True
+        return False
     
     def outMainRates (self):
         params = self.getParameters ()
