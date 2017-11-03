@@ -109,7 +109,7 @@ class DiffTicker (Differences):
         fmt = "\tAbsolute: Minimum {0:.4f}, Maximum {1:.4f}\n"
         result += fmt.format (self.aMin, self.aMax)
         
-        fmt = "\tRelative: Minimum {0:.4f}, Maximum {1:.4f}\n"
+        fmt = "\tRelative: Minimum {0:.4f} %, Maximum {1:.4f} %\n"
         result += fmt.format (self.rMin, self.rMax)
         
         fmt = "\nBuy {0}, sell {1}\n"
@@ -118,7 +118,7 @@ class DiffTicker (Differences):
         fmt = "\tAbsolute: {0:.4f}\n"
         result += fmt.format (self.aBuySell)
         
-        fmt = "\tRelative: {0:.4f}\n"
+        fmt = "\tRelative: {0:.4f} %\n"
         result += fmt.format (self.rBuySell)
         
         fmt = "\nLast transactions at {0} and {1}\n"
@@ -127,7 +127,7 @@ class DiffTicker (Differences):
         fmt = "\tAbsolute: {0:.4f}\n"
         result += fmt.format (self.aLast)
         
-        fmt = "\tRelative: {0:.4f}\n"
+        fmt = "\tRelative: {0:.4f} %\n"
         result += fmt.format (self.rLast)
                 
         # Normal function termination

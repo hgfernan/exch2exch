@@ -409,7 +409,7 @@ class FoxBit (Exchange):
         high = float (self.ticker['high'])
         low  = float (self.ticker['low'])
         last = float (self.ticker['last'])
-        vol  = float (self.ticker['last'])
+        vol  = float (self.ticker['vol_brl'])
         
         result = \
             ticker.Ticker (exch, pair, ts, buy, sell, high, low, last, vol)
