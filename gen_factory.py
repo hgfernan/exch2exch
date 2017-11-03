@@ -33,7 +33,7 @@ class GenFactory:
     def __init__ (self, cls):
         types = cls.__subclasses__ ()
         
-#        print (self.types)
+#       TODO debug class names in lowercase
         
         self.classes = {}
         classNames = []
@@ -60,7 +60,13 @@ class GenFactory:
             
             
     def validClassNames (self):
-        return self.classes.keys ()
+        result = []
+        for key in self.classes.keys ():
+            result.append (key)
+            
+        result.sort ()
+        
+        return result
     
     def isValidClassName (self, className):
         if not self.caseSignificant:

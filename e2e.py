@@ -25,6 +25,7 @@ class Parameters:
     def __init__ (self):
 #        self.summaryOutput        = None
 #        self.conclusionOutput     = None
+        self.list                 = None
         self.mainRates            = None
         self.allRates             = None
         self.mainRatesOutput      = None
@@ -38,6 +39,8 @@ class Parameters:
         self.repConclusionOutput  = None
         self.jsonConclusionOutput = None
         self.verbose              = False
+        self.rateNames            = None
+        self.exchNames            = None
 
 #    def setSummaryOutput (self, summaryOutput):
 #        self.summaryOutput = summaryOutput
@@ -137,7 +140,7 @@ class Application:
         self.params = None
     
     def parseCmdLine (self):
-        desc = 'Compare two exchanges for a round operation'
+        desc = 'Compare two exchanges for an arbitrage operation'
         parser = argparse.ArgumentParser (description = desc)
         
 #        desc = 'Summary report (Default is stdout)' 
@@ -146,17 +149,20 @@ class Application:
 #        desc = 'File name for the conclusion of the arbitrage'
 #        parser.add_argument ('-c', '--conclusion', required = True,
 #                             help = desc)
+        desc = 'List parameters (Bitcoin and fiat exchanges) in std output'
+        parser.add_argument ('-l', '--list', action = "store_true",
+                             help = desc)
         parser.add_argument ('-m', '--main', metavar = "RATES", 
                              default = 'Google',
                              help = 'Main rate service')
-#        parser.add_argument ('-a', '--alternative', metavar = "RATES",
+        parser.add_argument ('-a', '--alternative', metavar = "RATES",
 #                             default = 'XRates',
-#                             help = 'Alternative rate service')
+                             help = 'Alternative rate service')
         parser.add_argument ('-o', '--origin', metavar = "EXCHANGE",
-                             required = True,
+#                             required = True,
                              help = 'Origin exchange')
         parser.add_argument ('-d', '--destination', metavar = "EXCHANGE",
-                             required = True,
+#                             required = True,
                              help = 'Destination exchange')
         parser.add_argument ('-v', '--verbose', action = "store_true",
                              help = 'Increase output verbosity')
@@ -168,6 +174,7 @@ class Application:
         result = Args ()
 #        result.summary     = args.summary 
 #        result.conclusion  = args.conclusion 
+        result.list        = args.list
         result.mainRates   = args.main 
 #        result.altRates    = args.alternative 
         result.origin      = args.origin 
@@ -181,6 +188,7 @@ class Application:
         
     def interpretArgs (self):
         result = Parameters ()
+        self.params = result
         
 #        # Open summary file
 #        if self.args.summary == None:
@@ -207,6 +215,22 @@ class Application:
 #            raise
 #            
 #        result.setConclusionOutput (cnc_f)
+        
+        # Generate rates factory and its names 
+        gfRates = gen_factory.GenFactory (rates.Rates)
+        rates_names = gfRates.validClassNames ()
+
+        # Get exchange names 
+        gfExchange = gen_factory.GenFactory (exchange.Exchange)
+        exchNames = gfExchange.validClassNames ()
+           
+        if self.args.list:
+            self.list = True
+            result.rateNames = gfRates.validClassNames ()
+            result.exchNames = gfExchange.validClassNames ()
+            
+            # Normal function termination
+            return result
             
         # TODO confirm that destinatian and origin exchanges are not equal
         args = self.args 
@@ -214,10 +238,6 @@ class Application:
             fmt = 'ERROR: Origin exchange {0} equal to destination {1}'
             msg = fmt.format (args.origin, args.destination)
             raise Exception (msg)
-
-        # TODO get exchange names 
-        gfExchange = gen_factory.GenFactory (exchange.Exchange)
-        exchNames = gfExchange.validClassNames ()
         
         # TODO validate destination exchange
         if not gfExchange.isValidClassName (args.destination):
@@ -289,8 +309,6 @@ class Application:
         result.setRawOriginOutput (org_f)
             
         # TODO open connection with main rate service
-        gfRates = gen_factory.GenFactory (rates.Rates)
-        rates_names = gfRates.validClassNames ()
 
         # TODO validate main rate service
         if not gfRates.isValidClassName (args.mainRates):
@@ -362,7 +380,7 @@ class Application:
 
         result.setJsonConclusionOutput (conc_f)
         
-        self.params = result
+#        self.params = result
         
         args = self.args                
         if args.verbose:
@@ -387,6 +405,29 @@ class Application:
     def getParameters (self): 
         return self.params
             
+    def listParameters (self):
+        if self.list:
+            params = self.getParameters ()
+            lines = []
+            
+            lines.append ("Valid rate services\n\t")            
+            comma = ""
+            for rateName in params.rateNames:
+                lines[0] += comma + rateName
+                comma = ", "
+            
+            lines.append ("Valid exchanges\n\t")            
+            comma = ""
+            for exchName in params.exchNames:
+                lines[1] += comma + exchName
+                comma = ", "
+                
+            for line in lines:
+                print (line)
+            
+        # Normal function 
+        return True
+    
     def outMainRates (self):
         params = self.getParameters ()
         mainRates = params.getMainRates ()
@@ -529,6 +570,10 @@ def main (argv):
     # TODO catch exception
     # TODO return according to error
     app.interpretArgs ()
+    
+    # TODO if parameters should be listed
+    if app.listParameters ():
+        sys.exit (0)
     
     # Consult main rate service
     app.outMainRates ()
