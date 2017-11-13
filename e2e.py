@@ -155,9 +155,9 @@ class Application:
         parser.add_argument ('-m', '--main', metavar = "RATES", 
                              default = 'Google',
                              help = 'Main rate service')
-        parser.add_argument ('-a', '--alternative', metavar = "RATES",
+#        parser.add_argument ('-a', '--alternative', metavar = "RATES",
 #                             default = 'XRates',
-                             help = 'Alternative rate service')
+#                             help = 'Alternative rate service')
         parser.add_argument ('-o', '--origin', metavar = "EXCHANGE",
 #                             required = True,
                              help = 'Origin exchange')
